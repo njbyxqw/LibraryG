@@ -1,0 +1,31 @@
+{
+  "templates_folder": "04-TEMPLATES",
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "user_scripts_folder": "",
+  "enabled_templates_hotkeys": [
+    {
+      "template": "04-TEMPLATES/tp-daily.md",
+      "hotkey": ""
+    },
+    {
+      "template": "04-TEMPLATES/tp-tech-analysis.md",
+      "hotkey": ""
+    },
+    {
+      "template": "04-TEMPLATES/tp-project.md",
+      "hotkey": ""
+    },
+    {
+      "template": "04-TEMPLATES/tp-meeting.md",
+      "hotkey": ""
+    },
+    {
+      "template": "04-TEMPLATES/tp-quick.md",
+      "hotkey": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "shell_terminal": "bash"
+}

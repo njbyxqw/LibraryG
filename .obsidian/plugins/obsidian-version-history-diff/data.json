@@ -1,0 +1,6 @@
+{
+  "diffStyle": "word",
+  "matchWordsThreshold": 0.25,
+  "colorBlind": true,
+  "outputFormat": "line-by-line"
+}

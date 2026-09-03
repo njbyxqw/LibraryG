@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>TileV2 关卡可视化预览器</title>
+<style>
+  :root{--bg:#14161c;--panel:#1e2129;--line:#2c303c;--txt:#d7dae2;--sub:#8b90a0;--acc:#4da3ff;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:14px/1.5 "Segoe UI",system-ui,sans-serif;padding:16px}
+  h1{font-size:18px;margin-bottom:4px}
+  .sub{color:var(--sub);font-size:12px;margin-bottom:12px}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;background:var(--panel);
+    border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:10px}
+  .toolbar label{font-size:12px;color:var(--sub);white-space:nowrap}
+  button,input[type=text]{background:#262a35;color:var(--txt);border:1px solid var(--line);border-radius:6px;
+    padding:4px 8px;font-size:13px}
+  button{cursor:pointer}
+  button.active{background:var(--acc);color:#fff;border-color:var(--acc)}
+  input[type=range]{width:90px;vertical-align:middle;accent-color:var(--acc)}
+  input[type=file]{font-size:12px;color:var(--sub);max-width:200px}
+  .shiftVal{font-size:12px;color:var(--acc);min-width:20px;display:inline-block}
+  .legend{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+  .legend span{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--sub)}
+  .sw{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(255,255,255,.25)}
+  .wrap{display:flex;gap:14px;align-items:stretch;flex-wrap:wrap}
+  .filepanel{width:270px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;
+    display:flex;flex-direction:column;min-height:420px;max-height:860px}
+  .filepanel h3{font-size:13px;margin-bottom:8px;color:var(--acc);flex:none}
+  .filelist{list-style:none;overflow:auto;flex:1;min-height:0;font-size:12px}
+  .grp{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:5px 6px;border-radius:5px;
+    cursor:pointer;font-weight:600;color:var(--sub);margin:2px 0}
+  .grp:hover{background:#2c313d}
+  .grp.open{color:var(--acc)}
+  .grp .cnt,.subdir .cnt{color:var(--sub);font-weight:400}
+  .subdir{padding:3px 6px 3px 14px;cursor:pointer;border-radius:4px;display:flex;justify-content:space-between;
+    gap:6px;color:var(--sub)}
+  .subdir:hover{background:#2c313d}
+  .subdir.open{color:var(--acc)}
+  .fileitem{padding:2px 6px 2px 24px;cursor:pointer;border-radius:4px;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis}
+  .fileitem:hover{background:#2c313d}
+  .fileitem.active{background:var(--acc);color:#fff}
+  .grpbody{list-style:none}
+  .board-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;max-width:100%}
+  .side{width:270px;display:flex;flex-direction:column;gap:12px;overflow:auto;min-height:0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+  .card h3{font-size:13px;margin-bottom:8px;color:var(--acc)}
+  .card .row{display:flex;justify-content:space-between;font-size:13px;padding:2px 0}
+  .card .row b{font-weight:600}
+  #tileInfo .pos{color:var(--acc);font-weight:600}
+  ul.list{list-style:none;max-height:220px;overflow:auto;font-size:12px}
+  ul.list li{padding:2px 4px;border-radius:4px;cursor:pointer;display:flex;gap:6px}
+  ul.list li:hover{background:#2c313d}
+  .zbadge{display:inline-block;width:18px;text-align:center;border-radius:4px;font-weight:700}
+  svg text{user-select:none}
+  .tile-rect{cursor:pointer;transition:opacity .15s}
+  #loadState{font-size:12px;color:var(--sub);margin-left:auto}
+  #loadState.err{color:#ff6b6b}
+</style>
+</head>
+<body>
+<h1>TileV2 关卡可视化预览器</h1>
+<div class="sub" id="subInfo">点击左侧关卡列表加载 · 碾压规则：z 更高 且 |dx|≤1 且 |dy|≤1 · 平移/对比均为纯预览，不改动文件</div>
+
+<div class="toolbar">
+  <label>路径</label>
+  <input type="text" id="pathInput" placeholder="输入文件(如 20_TE.json) 或目录(如 TE复刻)">
+  <button id="btnLoad">加载</button>
+  <button id="btnScan" title="扫描该目录下所有 .json 关卡，填充到左侧列表">扫描目录</button>
+  <label>本地JSON</label>
+  <input type="file" id="filePicker" accept=".json,application/json">
+  <span id="loadState"></span>
+</div>
+
+<div class="toolbar">
+  <label>平移 X</label>
+  <input type="range" id="shiftX" min="-3" max="3" step="1" value="0">
+  <span class="shiftVal" id="shiftXVal">0</span>
+  <label>平移 Y</label>
+  <input type="range" id="shiftY" min="-3" max="3" step="1" value="0">
+  <span class="shiftVal" id="shiftYVal">0</span>
+  <label style="margin-left:10px"><input type="checkbox" id="chkBase"> 对比原位置</label>
+  <label style="margin-left:8px">视图</label>
+  <select id="viewMode">
+    <option value="stack">叠层总览</option>
+    <option value="layer">单层查看</option>
+  </select>
+  <select id="layerSel" style="display:none"></select>
+  <button id="btnTop" class="active" title="金框=顶部无压制，可点击">仅高亮可点牌</button>
+  <button id="btnReset" title="重置平移与视图">重置</button>
+  <div class="legend" id="legend"></div>
+</div>
+
+<div class="wrap">
+  <div class="filepanel">
+    <h3>关卡文件</h3>
+    <ul class="filelist" id="fileList"></ul>
+  </div>
+  <div class="board-panel"><svg id="board" width="620" height="700"></svg></div>
+  <div class="side">
+    <div class="card"><h3>关卡统计</h3><div id="statBox">未加载关卡</div></div>
+    <div class="card"><h3>选中牌信息</h3><div id="tileInfo">点击棋盘上的牌查看碾压关系</div></div>
+    <div class="card"><h3>层分布</h3><ul class="list" id="layerList"></ul></div>
+    <div class="card"><div id="tip">提示：叠层总览中，透明度越低表示被越多上层牌压制；金色描边为顶部可点牌（MaxIndex=0）。点击牌查看它压制的牌和压制它的牌。</div></div>
+  </div>
+</div>
+
+<script>
+const LAYER_COLORS=['#e05c5c','#e08b3a','#d4b13c','#7bb661','#4fb3a9','#4d8fd6','#8a6fd1','#d16fb0','#e05c8a','#9db65e','#5ec7c7','#7f7fd6','#c97f45','#a06fd1','#5eb8e0','#d65e5e','#7bb68a','#c7a64d','#8a5ec7','#d64d8a'];
+let cur={tiles:[],size:{x:12,y:14},name:'未加载',baseTiles:null};
+let viewMode='stack', layer=0, selTile=-1, onlyTop=true, showBase=false, shiftX=0, shiftY=0;
+let curU=40;
+const ALL_FILES={runtime:[],editor:[]};
+const SIDE={scan:null};
+
+const layerColor=z=>z<LAYER_COLORS.length?LAYER_COLORS[z]:`hsl(${(z*47+180)%360},62%,58%)`;
+// 自然排序比较：数字段按数值，字母段忽略大小写
+const natCmp=(a,b)=>{const pa=String(a).match(/\d+|\D+/g)||[],pb=String(b).match(/\d+|\D+/g)||[];
+  for(let i=0;i<Math.max(pa.length,pb.length);i++){
+    if(pa[i]===undefined)return -1; if(pb[i]===undefined)return 1;
+    if(pa[i]!==pb[i]){const na=+pa[i],nb=+pb[i];
+      if(!isNaN(na)&&!isNaN(nb))return na-nb;
+      return pa[i].toLowerCase()<pb[i].toLowerCase()?-1:1;}}
+  return 0;};
+const disp=t=>({x:t.x+shiftX,y:t.y+shiftY,z:t.z});
+function pressOf(ts){ // ts[i] 被哪些 j 压（平移不改变相对关系，用原始坐标）
+  const res=[];
+  for(let i=0;i<ts.length;i++){const c=[];
+    for(let j=0;j<ts.length;j++){
+      if(ts[j].z>ts[i].z && Math.abs(ts[j].x-ts[i].x)<=1 && Math.abs(ts[j].y-ts[i].y)<=1) c.push(j);
+    } res.push(c);}
+  return res;
+}
+function pressBy(ts){ // ts[i] 压哪些 j
+  const res=Array.from({length:ts.length},()=>[]);
+  pressOf(ts).forEach((lst,i)=>lst.forEach(j=>res[j].push(i)));
+  return res;
+}
+function cx(x){return 10+x*curU;}
+function cy(y){return 10+(cur.BH-2-y)*curU;} // y=0 在顶部（游戏内 y 大=屏幕下方）
+
+function parseTiles(d){
+  const ts=d.Tiles||[];
+  return ts.map(t=>{const p=t.Position||{};
+    return {x:+(p.x??0), y:+(p.y??0), z:+(p.z??t.z??0)};})
+    .filter(t=>Number.isFinite(t.x)&&Number.isFinite(t.y));
+}
+
+function render(){
+  const {tiles,size}=cur;
+  const svg=document.getElementById('board');
+  if(!tiles.length){svg.innerHTML='';document.getElementById('statBox').textContent='未加载关卡';return;}
+  const BW=size.x+2, BH=size.y+2; cur.BH=BH;
+  curU=Math.max(20,Math.min(44,Math.floor(860/BW)));
+  const W=20+BW*curU, H=20+BH*curU;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.setAttribute('width',W); svg.setAttribute('height',H);
+  const pressed=pressOf(tiles), by=pressBy(tiles);
+  let s='';
+  // 棋盘底
+  s+=`<rect x="10" y="10" width="${BW*curU}" height="${BH*curU}" fill="#181b22" stroke="#3a3f4e" stroke-width="1.5" rx="6"/>`;
+  // 网格
+  for(let i=0;i<=BW;i++) s+=`<line x1="${10+i*curU}" y1="10" x2="${10+i*curU}" y2="${10+BH*curU}" stroke="#22252e" stroke-width="1"/>`;
+  for(let i=0;i<=BH;i++) s+=`<line x1="10" y1="${10+i*curU}" x2="${10+BW*curU}" y2="${10+i*curU}" stroke="#22252e" stroke-width="1"/>`;
+  // 中心线（数据中心 = size.x/2）
+  const cxx=cx(size.x/2);
+  s+=`<line x1="${cxx}" y1="10" x2="${cxx}" y2="${10+BH*curU}" stroke="#4da3ff" stroke-dasharray="6 5" opacity=".5"/>`;
+  s+=`<text x="${cxx-4}" y="26" fill="#4da3ff" font-size="11" text-anchor="end">中心线x=${size.x/2}</text>`;
+  // 对比层：原位置（git 版本或当前未平移）灰色底
+  if(showBase){
+    const bts=cur.baseTiles||tiles.map(t=>({x:t.x,y:t.y,z:t.z}));
+    for(const t of bts){
+      s+=`<rect x="${cx(t.x)}" y="${cy(t.y)}" width="${2*curU}" height="${2*curU}" rx="10"
+        fill="#888" fill-opacity=".12" stroke="#999" stroke-width="1" stroke-dasharray="4 3"/>`;
+    }
+  }
+  // 牌（z 升序）
+  const idx=[...tiles.keys()].sort((a,b)=>tiles[a].z-tiles[b].z);
+  for(const i of idx){
+    const t=tiles[i], d=disp(t);
+    if(viewMode==='layer' && t.z!==layer) continue;
+    const nCover=pressed[i].length;
+    const isTop=nCover===0;
+    let op=1;
+    if(viewMode==='stack') op=isTop?1:Math.max(.18,.9-nCover*.18);
+    if(onlyTop && viewMode==='stack' && !isTop) op=Math.min(op,.25);
+    const isSel=(i===selTile);
+    let stroke='rgba(255,255,255,.35)', sw=1;
+    if(isTop&&viewMode==='stack'){stroke='#f5c542';sw=2;}
+    if(isSel){stroke='#fff';sw=3;}
+    let extra='';
+    if(isSel){
+      by[i].forEach(j=>{const q=disp(tiles[j]);extra+=`<rect x="${cx(q.x)}" y="${cy(q.y)}" width="${2*curU}" height="${2*curU}" rx="8" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-dasharray="7 4"/>`;});
+      pressed[i].forEach(j=>{const q=disp(tiles[j]);extra+=`<rect x="${cx(q.x)}" y="${cy(q.y)}" width="${2*curU}" height="${2*curU}" rx="8" fill="none" stroke="#4da3ff" stroke-width="2.5" stroke-dasharray="3 3"/>`;});
+    }
+    s+=`<g class="tile-rect" data-i="${i}">
+      <rect x="${cx(d.x)}" y="${cy(d.y)}" width="${2*curU}" height="${2*curU}" rx="10"
+        fill="${layerColor(t.z)}" fill-opacity="${op*.85}" stroke="${stroke}" stroke-width="${sw}"/>
+      <text x="${cx(d.x)+curU}" y="${cy(d.y)+curU+5}" text-anchor="middle" font-size="15" font-weight="700"
+        fill="#fff" opacity="${op}">${t.z}</text>
+      ${viewMode==='stack'&&nCover>0?`<text x="${cx(d.x)+2*curU-8}" y="${cy(d.y)+2*curU-8}" text-anchor="end" font-size="10" fill="#fff" opacity="${op}">▼${nCover}</text>`:''}
+    </g>`;
+    s=extra+s;
+  }
+  svg.innerHTML=s;
+  svg.querySelectorAll('.tile-rect').forEach(g=>g.addEventListener('click',e=>{
+    selTile=+g.dataset.i; render(); showInfo();
+  }));
+  // 统计
+  const nTop=pressed.filter(c=>c.length===0).length;
+  const totalPress=pressed.reduce((a,c)=>a+c.length,0);
+  const dxs=tiles.map(t=>disp(t).x), dys=tiles.map(t=>disp(t).y);
+  const minx=Math.min(...dxs), maxx=Math.max(...dxs);
+  const miny=Math.min(...dys), maxy=Math.max(...dys);
+  const over=(minx<0||maxx>size.x||miny<0||maxy>size.y);
+  const zmax=Math.max(...tiles.map(t=>t.z));
+  document.getElementById('statBox').innerHTML=`
+    <div class="row"><span>文件</span><b title="${cur.name}" style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${cur.name}</b></div>
+    <div class="row"><span>棋盘尺寸</span><b>${size.x}×${size.y}</b></div>
+    <div class="row"><span>总牌数</span><b>${tiles.length}</b></div>
+    <div class="row"><span>层数</span><b>${zmax+1} (z=0~${zmax})</b></div>
+    <div class="row"><span>顶部可点牌</span><b style="color:#f5c542">${nTop}</b></div>
+    <div class="row"><span>被压牌</span><b>${tiles.length-nTop}</b></div>
+    <div class="row"><span>碾压关系总数</span><b>${totalPress}</b></div>
+    <div class="row"><span>平移量</span><b style="color:#4da3ff">x${shiftX===0?'0':(shiftX>0?'+'+shiftX:shiftX)} y${shiftY===0?'0':(shiftY>0?'+'+shiftY:shiftY)}</b></div>
+    <div class="row"><span>x 使用范围</span><b>${minx}~${maxx}（棋盘0~${size.x}）${over?' <span style="color:#ff6b6b">越界!</span>':''}</b></div>`;
+  // 层列表
+  const zcnt={};tiles.forEach(t=>zcnt[t.z]=(zcnt[t.z]||0)+1);
+  document.getElementById('layerList').innerHTML=Object.keys(zcnt).map(z=>{
+    const zt=tiles.filter((t,i)=>t.z==+z&&pressed[i].length===0).length;
+    return `<li data-z="${z}"><span class="zbadge" style="background:${layerColor(+z)}">${z}</span>
+      <span>${zcnt[z]} 张</span><span style="margin-left:auto;color:#f5c542">可点${zt}</span></li>`;
+  }).join('');
+  document.getElementById('layerList').querySelectorAll('li').forEach(li=>
+    li.addEventListener('click',()=>{layer=+li.dataset.z;document.getElementById('viewMode').value='layer';viewMode='layer';syncLayerSel();render();}));
+}
+function showInfo(){
+  const {tiles}=cur;
+  const box=document.getElementById('tileInfo');
+  if(!tiles.length||selTile<0){box.innerHTML='点击棋盘上的牌查看碾压关系';return;}
+  const pressed=pressOf(tiles), by=pressBy(tiles);
+  const t=disp(tiles[selTile]);
+  const fmtList=arr=>arr.length?arr.map(j=>{const q=disp(tiles[j]);
+    return `<li data-j="${j}"><span class="zbadge" style="background:${layerColor(q.z)}">${q.z}</span> (${q.x},${q.y})</li>`;}).join('')
+    :'<li style="color:var(--sub)">无</li>';
+  box.innerHTML=`<div class="pos">牌 #${selTile} @ (${t.x}, ${t.y}, z=${t.z})</div>
+    <div style="margin:6px 0 2px">被 <b style="color:#4da3ff">${pressed[selTile].length}</b> 张上层牌压制（蓝虚框）</div>
+    <div>压制 <b style="color:#ff6b6b">${by[selTile].length}</b> 张下层牌（红虚框）</div>
+    <div style="margin-top:6px;color:var(--sub)">压制它的牌：</div><ul class="list">${fmtList(pressed[selTile])}</ul>
+    <div style="margin-top:6px;color:var(--sub)">它压制的牌：</div><ul class="list">${fmtList(by[selTile])}</ul>`;
+  box.querySelectorAll('li[data-j]').forEach(li=>li.addEventListener('click',()=>{selTile=+li.dataset.j;render();showInfo();}));
+}
+function syncLayerSel(){
+  const sel=document.getElementById('layerSel');
+  const zmax=cur.tiles.length?Math.max(...cur.tiles.map(t=>t.z)):7;
+  sel.innerHTML='';for(let z=0;z<=zmax;z++)sel.add(new Option('z='+z,z));
+  sel.style.display=viewMode==='layer'?'':'none';
+  sel.value=Math.min(layer,zmax);
+}
+function buildLegend(){
+  document.getElementById('legend').innerHTML=
+    `<span class="sw" style="background:#f5c542"></span>顶部可点`+
+    `<span class="sw" style="background:#888;opacity:.4"></span>被压(▼=压数)`+
+    `<span class="sw" style="border:2px solid #ff6b6b"></span>选中牌压制`+
+    `<span class="sw" style="border:2px solid #4da3ff"></span>压制选中牌`+
+    `<span class="sw" style="background:#888;opacity:.15;border:1px dashed #999"></span>原位置(对比)`;
+}
+function setLevel(data, name, base){
+  cur.tiles=parseTiles(data);
+  cur.size=(data.BoardSize&&data.BoardSize.x)?{x:+data.BoardSize.x,y:+data.BoardSize.y}:{x:12,y:14};
+  cur.name=name;
+  cur.baseTiles=base?parseTiles(base):null;
+  shiftX=0;shiftY=0;selTile=-1;showBase=false;viewMode='stack';onlyTop=true;
+  layer=cur.tiles.length?Math.max(...cur.tiles.map(t=>t.z)):0;
+  document.getElementById('viewMode').value='stack';
+  document.getElementById('btnTop').classList.add('active');
+  document.getElementById('shiftX').value=0;document.getElementById('shiftY').value=0;
+  document.getElementById('shiftXVal').textContent='0';document.getElementById('shiftYVal').textContent='0';
+  document.getElementById('chkBase').checked=false;
+  syncLayerSel(); render(); showInfo();
+}
+function setState(msg,err){const e=document.getElementById('loadState');e.textContent=msg;e.className=err?'err':'';}
+async function loadByPath(p){
+  if(!p){setState('请输入路径',true);return;}
+  setState('加载中…');
+  try{
+    const r=await fetch('/api/load?path='+encodeURIComponent(p)+'&base=1');
+    const j=await r.json();
+    if(j.error){setState(j.error,true);return;}
+    setLevel(j.data,p,j.base);
+    setState(j.base?'✓ 已加载（含原版对比）':'✓ 已加载');
+  }catch(e){setState('加载失败: '+e.message,true);}
+}
+
+/* ---------- 左侧关卡列表面板 ---------- */
+function fileLi(f){
+  const li=document.createElement('li');
+  li.className='fileitem'; li.title=f.path; li.dataset.path=f.path;
+  li.textContent=f.name;
+  li.onclick=()=>{
+    loadByPath(f.path);
+    document.querySelectorAll('#fileList .fileitem')
+      .forEach(e=>e.classList.toggle('active',e.dataset.path===f.path));
+  };
+  return li;
+}
+function grpHeader(key,label,cnt){
+  const li=document.createElement('li');
+  li.className='grp'; li.dataset.grp=key;
+  li.innerHTML=`<span>${label}</span><span class="cnt">${cnt}</span>`;
+  li.onclick=()=>toggleGrp(key,li);
+  return li;
+}
+function toggleGrp(key,li){
+  const ul=document.getElementById('fileList');
+  let el=li.nextElementSibling;
+  if(el && el.dataset.grp===key){ li.classList.remove('open'); el.remove(); return; }
+  li.classList.add('open');
+  const body=buildGrpBody(key);
+  const wrap=document.createElement('ul'); wrap.className='grpbody'; wrap.dataset.grp=key;
+  body.forEach(n=>wrap.appendChild(n));
+  li.after(wrap);
+}
+function buildGrpBody(key){
+  let files;
+  if(key==='scan') files=SIDE.scan?SIDE.scan.files:[];
+  else files=ALL_FILES[key];
+  if(!files) return [];
+  // 按顶层子目录分组（path 含 / 的归入目录组）
+  const dirs={};
+  files.forEach(f=>{const i=f.path.indexOf('/');const d=i<0?'':f.path.slice(0,i);(dirs[d]=dirs[d]||[]).push(f);});
+  const out=[];
+  (dirs['']||[]).forEach(f=>out.push(fileLi(f))); // 根目录文件（如运行时平铺）
+  Object.keys(dirs).filter(d=>d!=='').sort(natCmp).forEach(d=>{
+    const li=document.createElement('li'); li.className='subdir';
+    li.innerHTML=`<span>📂 ${d}</span><span class="cnt">${dirs[d].length}</span>`;
+    li.onclick=()=>{
+      let el=li.nextElementSibling;
+      if(el && el.dataset.sub===d){ li.classList.remove('open'); el.remove(); return; }
+      li.classList.add('open');
+      const wrap=document.createElement('ul'); wrap.className='grpbody'; wrap.dataset.sub=d;
+      dirs[d].forEach(f=>wrap.appendChild(fileLi(f)));
+      li.after(wrap);
+    };
+    out.push(li);
+  });
+  return out;
+}
+function buildSideList(){
+  const ul=document.getElementById('fileList');
+  ul.innerHTML='';
+  if(SIDE.scan){ // 扫描结果：默认展开，直接平铺文件
+    ul.appendChild(grpHeader('scan',`📂 扫描结果: ${SIDE.scan.dir}`,SIDE.scan.files.length));
+    const wrap=document.createElement('ul'); wrap.className='grpbody'; wrap.dataset.grp='scan';
+    SIDE.scan.files.forEach(f=>wrap.appendChild(fileLi(f)));
+    ul.appendChild(wrap);
+  }
+  ul.appendChild(grpHeader('runtime','📁 运行时配置',ALL_FILES.runtime.length));
+  ul.appendChild(grpHeader('editor','📁 编辑器关卡',ALL_FILES.editor.length));
+}
+function replaceScanGroup(files,dir){
+  SIDE.scan={dir,files};
+  buildSideList();
+}
+async function scanDir(p){
+  if(!p){setState('请输入目录路径',true);return;}
+  setState('扫描中…');
+  try{
+    const r=await fetch('/api/scan?dir='+encodeURIComponent(p)+'&recursive=1');
+    const j=await r.json();
+    if(j.error){setState(j.error,true);return;}
+    if(!j.files.length){setState('目录下没有 .json 关卡: '+j.dir,true);return;}
+    replaceScanGroup(j.files,j.dir);
+    setState('✓ 扫描 '+j.dir+' 共 '+j.files.length+' 个关卡，点击左侧列表加载');
+  }catch(e){setState('扫描失败: '+e.message,true);}
+}
+
+// 控件绑定
+document.getElementById('btnTop').onclick=e=>{onlyTop=!onlyTop;e.target.classList.toggle('active',onlyTop);render();};
+document.getElementById('viewMode').onchange=e=>{viewMode=e.target.value;syncLayerSel();render();};
+document.getElementById('layerSel').onchange=e=>{layer=+e.target.value;render();};
+document.getElementById('shiftX').oninput=e=>{shiftX=+e.target.value;document.getElementById('shiftXVal').textContent=shiftX;render();};
+document.getElementById('shiftY').oninput=e=>{shiftY=+e.target.value;document.getElementById('shiftYVal').textContent=shiftY;render();};
+document.getElementById('chkBase').onchange=e=>{showBase=e.target.checked;render();};
+document.getElementById('btnReset').onclick=()=>{
+  shiftX=0;shiftY=0;showBase=false;
+  document.getElementById('shiftX').value=0;document.getElementById('shiftY').value=0;
+  document.getElementById('shiftXVal').textContent='0';document.getElementById('shiftYVal').textContent='0';
+  document.getElementById('chkBase').checked=false;
+  render();};
+document.getElementById('btnLoad').onclick=()=>loadByPath(document.getElementById('pathInput').value.trim());
+document.getElementById('btnScan').onclick=()=>scanDir(document.getElementById('pathInput').value.trim());
+document.getElementById('pathInput').addEventListener('keydown',e=>{
+  if(e.key==='Enter'){e.preventDefault();loadByPath(e.target.value.trim());}
+});
+document.getElementById('filePicker').onchange=()=>{
+  const f=document.getElementById('filePicker').files[0]; if(!f)return;
+  const rd=new FileReader();
+  rd.onload=ev=>{try{const j=JSON.parse(ev.target.result);setLevel(j,'本地文件: '+f.name,null);setState('✓ 本地文件已加载');}catch(err){setState('JSON 解析失败: '+err.message,true);}};
+  rd.readAsText(f);
+};
+// 初始化：拉取文件列表（不自动加载，点击才加载）
+(async()=>{
+  try{
+    const r=await fetch('/api/list'); const j=await r.json();
+    j.groups.forEach(g=>{ALL_FILES[g.key]=g.files;});
+    buildSideList();
+    setState('✓ 已加载文件列表，点击左侧关卡加载');
+  }catch(e){setState('无法连接本地服务器，可用上方"本地JSON"直接选择文件',true);}
+})();
+buildLegend();
+</script>
+</body>
+</html>

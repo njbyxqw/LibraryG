@@ -1,0 +1,27 @@
+{
+  "editor:save-file": [],
+  "mouse-tooltip-translator:mtt-translate-page": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "9"
+    }
+  ],
+  "mouse-tooltip-translator:mtt-toggle-enabled": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "0"
+    }
+  ],
+  "mouse-tooltip-translator:mtt-translate-selection": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "8"
+    }
+  ]
+}

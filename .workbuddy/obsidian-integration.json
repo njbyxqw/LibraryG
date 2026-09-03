@@ -1,0 +1,57 @@
+# WorkBuddy + Obsidian 集成配置
+
+## 仓库信息
+- **Vault 路径**: `D:\LibraryG`
+- **Vault 名称**: LibraryG
+- **Obsidian 版本**: 1.12.7
+- **CLI 路径**: `D:\Obsidian\Obsidian.exe`
+- **CLI 启用**: 是 (设置 > 通用 > 启用 CLI)
+
+## 目录映射
+
+| Obsidian 目录 | 用途 | WorkBuddy 对应 |
+|--------------|------|----------------|
+| `00-INBOX/` | 快速捕获、未分类笔记 | WorkBuddy 临时输出 |
+| `01-DAILY/` | 每日笔记 | `.workbuddy/memory/YYYY-MM-DD.md` |
+| `02-PROJECTS/` | 项目笔记 | 项目级记忆 |
+| `03-KNOWLEDGE/` | 知识库、技术文档 | 长期分析文档 |
+| `04-TEMPLATES/` | 模板 | — |
+| `05-ARCHIVE/` | 归档 | 过期文档 |
+| `.workbuddy/memory/` | WorkBuddy 内部记忆 | 记忆系统核心 |
+
+## CLI 命令速查
+
+```bash
+# 设置 PATH
+export PATH="$PATH:/d/Obsidian"
+
+# 常用命令
+obsidian daily                          # 打开/创建今日日记
+obsidian daily:read                     # 读取今日日记
+obsidian daily:append content="内容"    # 追加到今日日记
+obsidian create name="笔记名" content="内容"  # 创建笔记
+obsidian read file="笔记名"             # 读取笔记
+obsidian search query="关键词"          # 搜索仓库
+obsidian search:context query="TODO"    # 带上下文搜索
+obsidian tags counts                    # 标签统计
+obsidian tasks todo                     # 未完成任务
+obsidian backlinks file="笔记名"        # 反向链接
+obsidian property:set name="status" value="done" file="笔记名"  # 设置属性
+```
+
+## 同步规则
+
+1. **WorkBuddy → Obsidian**: WorkBuddy 完成任务后，可将结果写入 Obsidian 笔记
+2. **Obsidian → WorkBuddy**: WorkBuddy 可搜索/读取 Obsidian 笔记作为上下文
+3. **日记同步**: WorkBuddy 的 `.workbuddy/memory/YYYY-MM-DD.md` 与 Obsidian 的 `01-DAILY/YYYY-MM-DD.md` 保持对应关系
+4. **标签约定**: `workbuddy_sync: true` 属性标记需要同步的笔记
+
+## 模板对应
+
+| 模板文件 | 触发场景 | Obsidian 命令 |
+|---------|---------|--------------|
+| `tp-daily.md` | 每日笔记 | `obsidian daily` |
+| `tp-tech-analysis.md` | 技术分析 | 创建笔记时选择模板 |
+| `tp-project.md` | 新项目 | 创建笔记时选择模板 |
+| `tp-meeting.md` | 会议记录 | 创建笔记时选择模板 |
+| `tp-quick.md` | 快速记录 | 创建笔记时选择模板 |

@@ -1,0 +1,15 @@
+{
+  "attachmentFolderPath": "00-INBOX/attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00-INBOX",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "showUnsupportedFiles": false,
+  "spellcheck": false,
+  "dailyNotes": {
+    "folder": "01-DAILY",
+    "format": "YYYY-MM-DD",
+    "template": "04-TEMPLATES/tp-daily"
+  }
+}

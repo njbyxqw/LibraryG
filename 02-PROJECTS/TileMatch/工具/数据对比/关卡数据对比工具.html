@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关卡数据对比工具</title>
+<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f0f2f5;--surface:#fff;--border:#e2e6ed;--text:#1a1d23;--text-2:#6b7280;--text-3:#9ca3af;--blue:#4f6ef7;--blue-light:#eef2ff;--green:#10b981;--green-light:#d1fae5;--amber:#f59e0b;--red:#ef4444;--purple:#a855f7}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+.topbar{background:#1a1d23;height:52px;display:flex;align-items:center;padding:0 32px;gap:16px;position:sticky;top:0;z-index:100}
+.topbar-brand{font-size:14px;font-weight:600;color:#fff}
+.topbar-brand em{color:#6c8ef5;font-style:normal}
+.topbar-divider{width:1px;height:18px;background:#333}
+.topbar-hint{font-size:12px;color:#6b7280}
+
+.tab-bar{display:flex;gap:0;margin-bottom:20px;border-bottom:2px solid var(--border)}
+.tab-btn{flex:1;padding:10px 16px;font-size:13px;font-weight:600;text-align:center;cursor:pointer;border:none;background:none;color:var(--text-3);border-bottom:2px solid transparent;margin-bottom:-2px;transition:.15s}
+.tab-btn.active{color:var(--blue);border-bottom-color:var(--blue)}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+.single-zone{text-align:center;padding:40px 20px}
+.single-zone .upload-zone{margin:0 auto;max-width:480px}
+.group-select-row{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:14px;margin-bottom:6px;flex-wrap:wrap}
+.group-select-row label{font-size:12px;font-weight:600;color:var(--text-2)}
+.group-select-row select{min-width:180px;padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:#fff}
+.group-meta{text-align:center;font-size:11px;color:var(--text-3);margin:8px 0}
+.group-meta.warn{color:var(--amber)}
+
+.warn-box{background:#fef3c7;border:1px solid #fcd34d;border-radius:8px;padding:8px 12px;font-size:11px;color:#92400e;margin-bottom:8px;text-align:center}
+
+.info-tip{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;background:var(--text-3);color:#fff;font-size:10px;font-weight:700;cursor:help;position:relative;margin-left:4px;vertical-align:middle}
+.info-tip:hover .info-pop{display:block}
+.info-pop{display:none;position:fixed;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.15);padding:14px 16px;font-size:12px;line-height:1.7;white-space:normal;z-index:999;width:340px;font-weight:400;color:var(--text);text-align:left;pointer-events:none}
+.info-pop b{color:var(--blue)}
+
+.upload-wrap{padding:32px;max-width:800px;margin:0 auto}
+.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.upload-zone{border:2px dashed #c7d2fe;border-radius:16px;background:#fff;padding:32px 24px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;transition:border-color .2s,background .2s}
+.upload-zone:hover{border-color:var(--blue);background:var(--blue-light)}
+.upload-zone.loaded{border-color:var(--green);background:var(--green-light)}
+.uz-icon{font-size:28px}
+.uz-name{font-size:13px;font-weight:600}
+.uz-status{font-size:11px;color:var(--text-3)}
+.uz-file{font-size:11px;color:var(--text-2)}
+.uz-label{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:600;position:absolute;top:8px;right:8px}
+.uz-label.v1{background:var(--blue-light);color:var(--blue)}
+.uz-label.v2{background:var(--green-light);color:#065f46}
+
+.settings-wrap{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin-bottom:16px}
+.settings-title{font-size:13px;font-weight:600;margin-bottom:14px}
+.settings-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:4px}
+.field{display:flex;flex-direction:column;gap:3px}
+.field label{font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.5px}
+.field input{border:1px solid var(--border);border-radius:8px;padding:7px 10px;font-size:13px;color:var(--text);background:var(--bg);outline:none;transition:border-color .15s}
+.field input:focus{border-color:var(--blue);background:#fff}
+
+.metric-list{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.metric-card{display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:10px;padding:10px 14px;border:1px solid var(--border)}
+.metric-name{font-size:13px;font-weight:600;flex:1}
+.dir-btn{border:1px solid var(--border);background:#fff;border-radius:6px;padding:3px 8px;font-size:12px;cursor:pointer;min-width:32px;text-align:center;transition:.15s}
+.dir-btn.up{color:var(--green)}.dir-btn.up.active{background:var(--green);color:#fff;border-color:var(--green)}
+.dir-btn.down{color:var(--red)}.dir-btn.down.active{background:var(--red);color:#fff;border-color:var(--red)}
+.metric-weight{display:flex;align-items:center;gap:6px}
+.metric-weight input[type=range]{width:130px;accent-color:var(--blue)}
+.metric-weight-num{font-size:12px;font-weight:600;color:var(--blue);width:48px;text-align:center;border:1px solid var(--border);border-radius:6px;padding:2px 4px;background:var(--bg);outline:none}
+.metric-weight-num:focus{border-color:var(--blue);background:#fff}
+.weight-sum{font-size:11px;color:var(--text-3);text-align:right}
+.weight-sum.ok{color:var(--green)}.weight-sum.bad{color:var(--red)}
+
+.add-metric-wrap{position:relative;margin-bottom:10px}
+.add-metric-btn{background:none;border:1px dashed var(--blue);color:var(--blue);border-radius:8px;padding:8px 16px;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;width:100%;text-align:center}
+.add-metric-btn:hover{background:var(--blue-light)}
+.metric-dropdown{position:absolute;top:100%;left:0;min-width:220px;max-width:360px;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.1);max-height:240px;overflow-y:auto;z-index:10;display:none;margin-top:4px}
+.metric-dropdown.show{display:block}
+.metric-dropdown-item{padding:8px 14px;font-size:12px;color:var(--text);cursor:pointer;transition:background .1s}
+.metric-dropdown-item:hover{background:var(--blue-light)}
+
+.run-btn{width:100%;margin-top:8px;background:var(--blue);color:#fff;border:none;border-radius:10px;padding:12px;font-size:14px;font-weight:700;cursor:pointer;transition:opacity .15s}
+.run-btn:hover{opacity:.88}
+.run-btn:disabled{opacity:.4;cursor:not-allowed}
+
+.result-wrap{padding:32px;max-width:1400px;margin:0 auto;display:none}
+.result-wrap.show{display:block}
+
+.summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.summary-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+.summary-card h3{font-size:13px;font-weight:600;margin-bottom:6px}
+.stats{font-size:12px;color:var(--text-2);line-height:1.8}
+
+.sec-title{font-size:14px;font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-title span{font-size:11px;font-weight:400;color:var(--text-3)}
+
+.filter-bar{display:flex;gap:10px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.filter-bar select,.filter-bar input{border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:12px;color:var(--text);background:var(--bg);outline:none}
+.filter-bar label{font-size:11px;color:var(--text-3);font-weight:600}
+
+.card{background:var(--surface);border-radius:14px;border:1px solid var(--border);overflow:hidden;margin-bottom:16px}
+.table-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--border)}
+.table-head h3{font-size:13px;font-weight:600}
+.export-btn{background:var(--bg);border:1px solid var(--border);color:var(--text-2);border-radius:6px;padding:6px 12px;font-size:11px;font-weight:500;cursor:pointer}
+.export-btn:hover{background:#e4e7ef}
+
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+thead th{font-size:10px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.5px;padding:9px 6px;text-align:left;background:#f8f9fb;border-bottom:1px solid var(--border);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+thead th:first-child{width:52px}
+thead th:nth-child(2){width:82px}
+thead th:nth-child(3){width:62px}
+thead th:nth-child(4){width:38px}
+thead th:nth-child(5){width:146px;white-space:normal}
+td{padding:8px 8px;font-size:12px;vertical-align:middle}
+th.r,td.r{text-align:right}
+tbody tr{border-bottom:1px solid #f2f4f7;cursor:pointer;transition:background .1s}
+tbody tr:hover{background:#f8f9ff}
+td{padding:8px 8px;font-size:12px;vertical-align:middle}
+tr.improved{background:#d1fae5!important}tr.declined{background:#fee2e2!important}
+
+.lv-tag{font-weight:700;font-size:12px;padding:2px 7px;border-radius:5px;display:inline-block;background:var(--blue-light);color:var(--blue)}
+.c-green{color:#059669;font-weight:600}.c-red{color:var(--red);font-weight:600}.c-amber{color:var(--amber);font-weight:600}
+.chip{font-size:10px;font-weight:600;padding:1px 5px;border-radius:4px;display:inline-block;margin:1px}
+.ch-red{background:#fee2e2;color:#991b1b}.ch-green{background:#d1fae5;color:#065f46}.ch-amber{background:#fff7ed;color:#9a3412}
+
+.delta-pos{color:#059669;font-weight:700}.delta-neg{color:var(--red);font-weight:700}.delta-zero{color:var(--text-3)}
+
+.footnote{font-size:11px;color:var(--text-3);margin-top:16px;line-height:1.8}
+.loading{display:none;text-align:center;padding:20px;font-size:13px;color:var(--text-2)}.loading.show{display:block}
+
+@media(max-width:768px){.upload-grid,.summary-grid,.settings-grid{grid-template-columns:1fr}.result-wrap{padding:16px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-brand">关卡<em>对比</em>工具</div>
+  <div class="topbar-divider"></div>
+  <div class="topbar-hint">上传两组关卡数据，对比同 Level 在不同版本的表现差异</div>
+</div>
+
+<div class="upload-wrap" id="upload-section">
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('single')">📊 单文件分组</button>
+    <button class="tab-btn" onclick="switchTab('dual')">📁 双文件独立</button>
+  </div>
+
+  <!-- 单文件模式 -->
+  <div class="tab-panel active" id="tab-single">
+    <div class="single-zone">
+      <div class="upload-zone" id="single-drop" onclick="document.getElementById('single-fin').click()">
+        <div class="uz-icon" id="single-icon">📋</div>
+        <div class="uz-name">拖入数数平台导出的 CSV（全列）</div>
+        <div class="uz-status" id="single-stat">自动按 lv_name 后缀分组，选两组对比</div>
+        <input type="file" id="single-fin" style="display:none" accept=".xlsx,.xls,.csv" onchange="loadSingleFile(this.files[0])">
+      </div>
+      <div id="single-meta" style="margin-top:8px;font-size:11px;color:var(--text-3)"></div>
+      <div class="group-select-row" id="group-selects" style="display:none">
+        <label>V1(基准):</label>
+        <select id="sel-group0" onchange="onGroupChange()"></select>
+        <label>V2(对比):</label>
+        <select id="sel-group1" onchange="onGroupChange()"></select>
+      </div>
+      <div id="single-warn" class="warn-box" style="display:none"></div>
+    </div>
+    <div class="group-select-row" id="group-selects" style="display:none">
+        <label>V1(基准):</label>
+        <select id="sel-group0" onchange="onGroupChange()"></select>
+        <label>V2(对比):</label>
+        <select id="sel-group1" onchange="onGroupChange()"></select>
+      </div>
+      <div id="single-warn" class="warn-box" style="display:none"></div>
+    </div>
+    <div class="settings-wrap">
+      <div class="settings-title">🔴 基础标准</div>
+      <div class="settings-grid">
+        <div class="field"><label>流失率上限 (%)</label><input type="number" id="mt-s" value="1.5" step="0.1" onchange="syncSettings()"></div>
+        <div class="field"><label>难度上限</label><input type="number" id="md-s" value="3.0" step="0.1" onchange="syncSettings()"></div>
+        <div class="field"><label>变异系数上限</label><input type="number" id="mv-s" value="1.2" step="0.1" onchange="syncSettings()"></div>
+      </div>
+    </div>
+    <div class="settings-wrap">
+      <div class="settings-title">🟡 进阶标准</div>
+      <div class="settings-grid">
+        <div class="field"><label>人均消耗下限</label><input type="number" id="mc-s" value="200" step="10" onchange="syncSettings()"></div>
+        <div class="field"><label>复活转化率下限 (%)</label><input type="number" id="mr-s" value="15" step="1" onchange="syncSettings()"></div>
+        <div class="field"><label>失败剩余率上限</label><input type="number" id="mm-s" value="0.44" step="0.01" onchange="syncSettings()"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 双文件模式 -->
+  <div class="tab-panel" id="tab-dual">
+    <div class="upload-grid">
+      <div class="upload-zone" id="drop-0" onclick="document.getElementById('fin-0').click()">
+        <div class="uz-icon" id="icon-0">📋</div>
+        <div class="uz-name">V1 基准版本</div>
+        <div class="uz-status" id="stat-0">拖拽或点击上传 Excel</div>
+        <div class="uz-file" id="file-0"></div>
+        <input type="file" id="fin-0" style="display:none" accept=".xlsx,.xls,.csv">
+      </div>
+      <div class="upload-zone" id="drop-1" onclick="document.getElementById('fin-1').click()">
+        <div class="uz-icon" id="icon-1">📁</div>
+        <div class="uz-name">V2 对比版本</div>
+        <div class="uz-status" id="stat-1">拖拽或点击上传 Excel</div>
+        <div class="uz-file" id="file-1"></div>
+        <input type="file" id="fin-1" style="display:none" accept=".xlsx,.xls,.csv">
+      </div>
+    </div>
+    <div class="settings-wrap">
+      <div class="settings-title">🔴 基础标准（标注 V1/V2 关卡定性）</div>
+      <div class="settings-grid">
+        <div class="field"><label>流失率上限 (%)</label><input type="number" id="max-turnover" value="1.5" step="0.1"></div>
+        <div class="field"><label>难度上限</label><input type="number" id="max-difficulty" value="3.0" step="0.1"></div>
+        <div class="field"><label>变异系数上限</label><input type="number" id="max-variance" value="1.2" step="0.1"></div>
+      </div>
+    </div>
+    <div class="settings-wrap">
+      <div class="settings-title">🟡 进阶标准（标注 V1/V2 关卡定性）</div>
+      <div class="settings-grid">
+        <div class="field"><label>人均消耗下限</label><input type="number" id="min-consume" value="200" step="10"></div>
+        <div class="field"><label>复活转化率下限 (%)</label><input type="number" id="min-revive" value="15" step="1"></div>
+        <div class="field"><label>失败剩余率上限</label><input type="number" id="min-remain" value="0.44" step="0.01"></div>
+      </div>
+    </div>
+  </div>
+  <div class="settings-wrap">
+    <div class="settings-title">评分指标与权重<span class="info-tip">?<span class="info-pop"><b>双因子指标得分</b><br>=(P5/P95归一×0.6+Δ调整×0.4)×权重<br>Δ调整: |指标Δ|查4档桶<br>波动0/轻25/中50/重100<br>V1 Δ调整=1.0 V2查桶<br>Δ=V2-V1(同公式减法)</span></span></div>
+    <div class="metric-list" id="weight-list"></div>
+    <div class="weight-sum ok" id="wsum">✓ 权重合计：100%</div>
+  </div>
+
+  <button class="run-btn" id="run-btn" onclick="run()" disabled>🔍 加载数据并对比</button>
+  <div class="loading" id="loading">⏳ 分析中…</div>
+</div>
+
+<div class="result-wrap" id="result">
+  <div class="summary-grid" id="summary"></div>
+
+  <div class="sec-title">对比明细 <span id="tinfo"></span></div>
+  <div class="filter-bar">
+    <label>筛选：</label>
+    <select id="f-status" onchange="renderT()">
+      <option value="all">全部</option>
+      <option value="improved">已修复</option>
+      <option value="stillbad">改善但未修复</option>
+      <option value="newbad">新问题</option>
+      <option value="clean">全部正常</option>
+    </select>
+    <label>排序：</label>
+    <select id="f-sort" onchange="renderT()">
+      <option value="delta">Δ 绝对值降序</option>
+      <option value="delta-pos">改善最大在前 (Δ降序)</option>
+      <option value="score1">质量分V1 降序</option>
+      <option value="score2">质量分V2 降序</option>
+      <option value="level">Level 升序</option>
+    </select>
+    <label>区间：</label>
+    <input type="number" id="f-start" placeholder="起始" style="width:70px" onchange="renderT()">
+    <span style="color:var(--text-3);font-size:12px">—</span>
+    <input type="number" id="f-end" placeholder="结束" style="width:70px" onchange="renderT()">
+    <label>搜索：</label>
+    <input type="text" id="f-search" placeholder="如 75,186" style="width:90px" oninput="renderT()">
+  </div>
+
+  <div class="filter-bar" style="padding-top:0">
+    <label>对比指标：</label>
+    <span id="chk-row"></span>
+    <span class="add-metric-wrap">
+      <button class="add-metric-btn" id="add-btn" onclick="toggleDrop()" style="width:auto;padding:5px 14px;font-size:12px">＋ 添加列</button>
+      <div class="metric-dropdown" id="dd"></div>
+    </span>
+    <button onclick="localStorage.removeItem('tile_compare_state');location.reload()" style="background:none;border:1px solid #ddd;border-radius:6px;padding:5px 12px;font-size:11px;color:var(--text-2);cursor:pointer">清除缓存</button>
+  </div>
+
+  <div class="card">
+    <div class="table-head">
+      <h3>V1(基准) vs V2(对比)</h3>
+      <button class="export-btn" onclick="expCSV()">⬇ 导出对比 CSV</button>
+    </div>
+    <div style="overflow-x:auto"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+  </div>
+  <div class="footnote" id="foot"></div>
+</div>
+
+<script>
+// ─── state ───
+var datasets=[[],[]], levels=[], customMetrics=[], availCols=[];
+var weights=[
+  {name:'流失率', key:'turnover', dir:'down', w:40},
+  {name:'体验方差', key:'variance', dir:'down', w:25},
+  {name:'难度', key:'difficulty', dir:'down', w:15},
+  {name:'人均消耗', key:'consume', dir:'up', w:10},
+  {name:'复活转化', key:'revive', dir:'up', w:5},
+  {name:'失败剩余率', key:'remain', dir:'down', w:5}
+];
+
+// ─── weight UI ───
+(function initWeights(){
+  var c=document.getElementById('weight-list');
+  function ren(){c.innerHTML=weights.map(function(m,i){return'<div class="metric-card"><span class="metric-name">'+m.name+'</span><button class="dir-btn up'+(m.dir=='up'?' active':'')+'" onclick="weights['+i+'].dir=\'up\';renW()">↑</button><button class="dir-btn down'+(m.dir=='down'?' active':'')+'" onclick="weights['+i+'].dir=\'down\';renW()">↓</button><div class="metric-weight"><input type="range" min="0" max="100" value="'+m.w+'" oninput="wsSlide('+i+',this.value)"><input type="number" min="0" max="100" value="'+m.w+'" class="metric-weight-num" id="wn'+i+'" oninput="wsSlide('+i+',this.value)"></div></div>'}).join('');wsSync()}
+  window.wsSlide=function(i,v){var n=Math.min(100,Math.max(0,parseInt(v)||0));weights[i].w=n;var s=document.getElementById('wn'+i);if(s)s.value=n;wsSync()}
+  window.wsSync=function(){var s=weights.reduce(function(a,b){return a+b.w},0),el=document.getElementById('wsum');el.textContent=(s==100?'✓':'⚠')+' 权重合计：'+s+'%';el.className='weight-sum '+(s==100?'ok':'bad')}
+  window.renW=ren;ren();
+})();
+
+// ─── tooltip: fixed-position popup ───
+document.addEventListener('mouseenter',function(e){var t=e.target.closest('.info-tip');if(t){var p=t.querySelector('.info-pop');if(p){var r=t.getBoundingClientRect();p.style.left=Math.min(r.left+14,window.innerWidth-350)+'px';p.style.top=r.bottom+'px';p.style.display='block'}}},true);
+document.addEventListener('mouseleave',function(e){var t=e.target.closest('.info-tip');if(t){var p=t.querySelector('.info-pop');if(p)p.style.display='none'}},true);
+
+// ─── 页签切换 ───
+var currentMode='single';
+window.switchTab=function(mode){
+  currentMode=mode;
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.toggle('active',b.textContent.indexOf(mode==='single'?'单文件':'双文件')>=0)});
+  document.getElementById('tab-single').classList.toggle('active',mode==='single');
+  document.getElementById('tab-dual').classList.toggle('active',mode==='dual');
+  var runBtn=document.getElementById('run-btn');
+  if(mode==='single'){runBtn.disabled=!rawGroups||Object.keys(rawGroups).length<2;syncSettings()}
+  else{runBtn.disabled=!datasets[0].length||!datasets[1].length}
+  document.getElementById('result').classList.remove('show');
+};
+// 单/双文件设置同步（-s后缀→原ID）
+window.syncSettings=function(){
+  var map={mt:'max-turnover',md:'max-difficulty',mv:'max-variance',mc:'min-consume',mr:'min-revive',mm:'min-remain'};
+  for(var k in map){var sEl=document.getElementById(k+'-s'),tEl=document.getElementById(map[k]);if(sEl&&tEl)tEl.value=sEl.value}
+};
+
+// ─── 分组检测 ───
+function detectGroupJS(name){var n=String(name).trim(),m=n.match(/^(\d+)(.*)$/);return m&&m[2]?m[2]:'base'}
+
+// ─── 单文件模式上传 ───
+var rawGroups=null;
+window.loadSingleFile=function(file){
+  document.getElementById('single-icon').textContent='⏳';
+  var r=new FileReader();
+  r.onload=function(e){
+    var d=new Uint8Array(e.target.result),wb=XLSX.read(d,{type:'array'});
+    var ws=wb.Sheets[wb.SheetNames[0]],jd=XLSX.utils.sheet_to_json(ws,{header:1,defval:''});
+    var hdr=jd[0].map(function(h){return String(h).trim()});
+    var groups={},order=[],total=jd.length-1,chunkSize=500;
+    var ri=1;
+    function nextChunk(){
+      var end=Math.min(ri+chunkSize,jd.length);
+      for(;ri<end;ri++){
+      var row=jd[i],lvStr=String(row[0]||'').trim();if(lvStr==='')continue;
+      var obj={};
+      for(var j=0;j<hdr.length;j++){var v=row[j];if(v===undefined||v===null)v='';obj[hdr[j]]=v;
+        var ns=String(v).trim();if(ns.endsWith('%'))ns=ns.slice(0,-1).trim();
+        if(ns!==''&&!isNaN(ns)&&ns!=='true'&&ns!=='false')obj[hdr[j]]=parseFloat(ns)}
+      // 列名映射: Level_ID → Level (对比工具 findLevelCol 兼容)
+      obj.Level=obj.Level_ID;
+      var lvName=String(row[1]||'').trim(),g=detectGroupJS(lvName);
+      if(!groups[g]){groups[g]=[];order.push(g)};groups[g].push(obj);
+      }
+      if(ri<jd.length){document.getElementById('single-stat').textContent='⏳ 解析中... ('+Math.round(ri/total*100)+'%)';setTimeout(nextChunk,0)}
+      else finishParse();
+    }
+    function finishParse(){
+      rawGroups=groups;
+    var s0=document.getElementById('sel-group0'),s1=document.getElementById('sel-group1');
+    s0.innerHTML='';s1.innerHTML='';
+    order.forEach(function(g){var cnt=groups[g].length,opt='<option value=\"'+g+'\">'+g+' ('+cnt+'关)</option>';s0.innerHTML+=opt;s1.innerHTML+=opt});
+    var def1=order.indexOf('_ab70C')>=0?'_ab70C':(order.indexOf('_ab70B')>=0?'_ab70B':order[Math.min(1,order.length-1)]);
+    if(order.indexOf('base')>=0)s0.value='base';else s0.selectedIndex=0;
+    s1.value=def1;
+    document.getElementById('group-selects').style.display='flex';
+    document.getElementById('single-icon').textContent='✅';
+    document.getElementById('single-stat').textContent='✓ '+(jd.length-1)+' 行, '+order.length+' 个分组';
+    document.getElementById('single-drop').classList.add('loaded');
+    var b=document.getElementById('run-btn');b.disabled=false;b.textContent='🔍 加载并对比';
+    onGroupChange();
+    }
+    nextChunk();
+  r.readAsArrayBuffer(file);
+};
+window.onGroupChange=function(){
+  var g0=document.getElementById('sel-group0').value,g1=document.getElementById('sel-group1').value;
+  document.getElementById('single-warn').style.display=g0===g1?'block':'none';
+  if(g0===g1)document.getElementById('single-warn').textContent='⚠️ 两组选择了相同的分组（'+g0+'），请选择不同分组进行对比';
+};
+
+// ─── dual-file upload (original) ───
+(function(){
+  // 单文件区拖放
+  var sd=document.getElementById('single-drop');if(sd){sd.addEventListener('dragover',function(e){e.preventDefault();sd.classList.add('drag')});sd.addEventListener('dragleave',function(){sd.classList.remove('drag')});sd.addEventListener('drop',function(e){e.preventDefault();sd.classList.remove('drag');if(e.dataTransfer.files[0])loadSingleFile(e.dataTransfer.files[0])})}
+  // 双文件区拖放
+  [0,1].forEach(function(x){
+    var z=document.getElementById('drop-'+x),f=document.getElementById('fin-'+x);
+    z.addEventListener('dragover',function(e){e.preventDefault();z.classList.add('drag')});
+    z.addEventListener('dragleave',function(){z.classList.remove('drag')});
+    z.addEventListener('drop',function(e){e.preventDefault();z.classList.remove('drag');if(e.dataTransfer.files[0])loadFile(e.dataTransfer.files[0],x)});
+    f.addEventListener('change',function(e){if(e.target.files[0])loadFile(e.target.files[0],x)});
+  });
+})();
+
+function loadFile(file,idx){
+  document.getElementById('icon-'+idx).textContent='⏳';
+  var r=new FileReader();
+  r.onload=function(e){
+    var d=new Uint8Array(e.target.result),wb=XLSX.read(d,{type:'array'});
+    var ws=wb.Sheets[wb.SheetNames[0]],jd=XLSX.utils.sheet_to_json(ws,{header:1,defval:''});
+    var hdr=jd[0].map(function(h){return String(h).trim()}),parsed=[];
+    for(var i=1;i<jd.length;i++){
+      var row=jd[i],lvStr=String(row[0]||'').trim();
+      if(lvStr==='')continue;
+      var obj={};
+      for(var j=0;j<hdr.length;j++){var v=row[j];if(v===undefined||v===null)v='';obj[hdr[j]]=v;
+        var ns=String(v).trim();if(ns.endsWith('%'))ns=ns.slice(0,-1).trim();
+        if(ns!==''&&!isNaN(ns)&&ns!=='true'&&ns!=='false'){obj[hdr[j]]=parseFloat(ns);obj['_r_'+hdr[j]]=ns}}
+      parsed.push(obj);
+    }
+    datasets[idx]=parsed;
+    document.getElementById('drop-'+idx).classList.add('loaded');
+    document.getElementById('stat-'+idx).textContent='✓ '+parsed.length+' 行';
+    document.getElementById('file-'+idx).textContent=file.name;
+    document.getElementById('icon-'+idx).textContent='✅';
+    if(datasets[0].length&&datasets[1].length){var b=document.getElementById('run-btn');b.disabled=false;b.textContent='🔍 加载并对比'}
+    scanColumns();
+  };r.readAsArrayBuffer(file);
+}
+
+// ─── custom metrics ───
+var builtinCols=['关内流失率(%)','关内流失率','难度变异系数(关内)','难度变异系数','难度','人均消耗','复活转化率','首次失败剩余率','平均失败剩余率','失败剩余率','Level','LevelID'];
+
+function scanColumns(){
+  var ds=datasets[0].length?datasets[0]:datasets[1].length?datasets[1]:[];
+  var hdr=Object.keys(ds[0]||{}).filter(function(c){return c.indexOf('_r_')!==0});
+  availCols=hdr.filter(function(c){return builtinCols.indexOf(c)<0});
+}
+
+function toggleDrop(){
+  var dd=document.getElementById('dd');
+  if(dd.classList.contains('show')){dd.classList.remove('show');return}
+  var used=weights.map(function(m){return m.name});
+  customMetrics.forEach(function(m){used.push(m.name)});
+  var unused=availCols.filter(function(c){return used.indexOf(c)<0});
+  dd.innerHTML='';
+  if(unused.length==0){dd.innerHTML='<div class="metric-dropdown-item" style="color:var(--text-3)">所有指标已添加</div>'}
+  else{unused.forEach(function(c){var dir=autoDir(c);var item=document.createElement('div');item.className='metric-dropdown-item';item.innerHTML=c+' <span class="auto-dir">(默认'+(dir=='up'?'↑越高越好':'↓越低越好')+')</span>';item.onclick=function(){addCustom(c,dir)};dd.appendChild(item)})}
+  dd.classList.add('show');
+}
+function autoDir(name){var l=name.toLowerCase();if(l.indexOf('流失')>=0||l.indexOf('变异')>=0||l.indexOf('难度')>=0||l.indexOf('死局')>=0||l.indexOf('退出')>=0||l.indexOf('剩余')>=0)return'down';return'up'}
+function addCustom(name,dir){customMetrics.push({name:name,dir:dir});document.getElementById('dd').classList.remove('show');if(levels.length)renderT()}
+
+// Hide dropdown on outside click
+document.addEventListener('click',function(e){var dd=document.getElementById('dd'),btn=document.getElementById('add-btn');if(dd&&btn&&!dd.contains(e.target)&&e.target!==btn)dd.classList.remove('show')});
+// ── Δ 分桶扣分表 ──
+var deltaBuckets=[[0.20,1.0,2.5],[0.1,0.35,0.85],[0.08,0.2,0.4],[30,120,300],[0.03,0.05,0.15],[0.02,0.05,0.12]];
+function deltaPenalty(rawD,i){var ad=Math.abs(rawD),b=deltaBuckets[i];return ad<=b[0]?0:ad<=b[1]?25:ad<=b[2]?50:100}
+
+function scoreDataset(ds,sharedNorms){
+  var mt=+document.getElementById('max-turnover').value,md=+document.getElementById('max-difficulty').value;
+  var mv=+document.getElementById('max-variance').value,mc=+document.getElementById('min-consume').value;
+  var mr=+document.getElementById('min-revive').value/100,mm=+document.getElementById('min-remain').value;
+  var lc=findLevelCol(ds);
+  var tC=findCol(ds,['关内流失率(%)','关内流失率']);
+  var vC=findCol(ds,['难度变异系数(关内)','难度变异系数']);
+  var dC=findCol(ds,['难度']);var cC=findCol(ds,['人均消耗']);
+  var rC=findCol(ds,['复活转化率']);var mC=findCol(ds,['首次失败剩余率']);
+
+  function sv(d,k){var v=d[k];return v!==undefined&&v!==null&&v!==''&&!isNaN(v)?v:null}
+  var cols=[tC,vC,dC,cC,rC,mC];
+  var norms=sharedNorms||cols.map(function(c){
+    var vs=ds.map(function(d){return sv(d,c)}).filter(function(v){return v!==null});
+    if(vs.length>=10){vs.sort(function(a,b){return a-b});var p5=vs[Math.floor(vs.length*0.05)],p95=vs[Math.floor(vs.length*0.95)];return p95>p5?{mn:p5,mx:p95}:{mn:0,mx:1}}
+    return vs.length?{mn:Math.min.apply(null,vs),mx:Math.max.apply(null,vs)}:{mn:0,mx:1};
+  });
+
+  return ds.map(function(d){
+    var lv=parseInt(d[lc])||0,tu=sv(d,tC),va=sv(d,vC),di=sv(d,dC)||1;
+    var co=sv(d,cC),re=sv(d,rC),rm=sv(d,mC);
+    var ann=[];if(tu>mt)ann.push('流失');if(di>md)ann.push('偏难');if(va>mv)ann.push('方差');
+    if(co!==null&&co<mc)ann.push('消耗');if(re!==null&&re<mr)ann.push('复活');if(rm!==null&&rm>mm)ann.push('剩余率');
+    var raw=[tu,va,di,co,re,rm],sc=0,tw=0;
+    weights.forEach(function(m,i){var v=raw[i];if(v===null){tw+=m.w;return}var n=norms[i];if(n.mx==n.mn){sc+=m.dir=='down'?m.w:0;tw+=m.w;return}
+      var nm=Math.max(0,Math.min(1,(v-n.mn)/(n.mx-n.mn||1)));if(m.dir=='down')nm=1-nm;sc+=nm*m.w;tw+=m.w});
+    var score=tw>0?Math.round(sc/tw*100):50;
+    return{lv:lv,tu:tu,va:va,di:di,co:co,re:re,rm:rm,ann:ann,score:score};
+  });
+}
+
+function findLevelCol(d){var ks=Object.keys(d[0]||{});for(var i=0;i<['Level','LevelID'].length;i++)if(ks.indexOf(['Level','LevelID'][i])>=0)return['Level','LevelID'][i];return null}
+function findCol(d,cl){var ks=Object.keys(d[0]||{});for(var i=0;i<cl.length;i++)if(ks.indexOf(cl[i])>=0)return cl[i];return cl[0]}
+function svRaw(d,k){var v=d[k];return v!==undefined&&v!==null&&v!==''&&!isNaN(v)?v:null}
+
+// ─── main ───
+function run(){
+  document.getElementById('loading').classList.add('show');
+  setTimeout(function(){
+  try{
+    // ── 单文件模式：从 rawGroups 取数据，Level 匹配 ──
+    if(currentMode==='single'){
+      var g0=document.getElementById('sel-group0').value,g1=document.getElementById('sel-group1').value;
+      var raw0=rawGroups[g0]||[],raw1=rawGroups[g1]||[];
+      // Level 匹配（obj.Level 已在 loadSingleFile 中设置）
+      var lvSet0={},lvSet1={};raw0.forEach(function(r,i){lvSet0[parseInt(r.Level)||0]=i});raw1.forEach(function(r,i){lvSet1[parseInt(r.Level)||0]=i});
+      var commonLvs=Object.keys(lvSet0).filter(function(k){return lvSet1[k]!==undefined}).map(function(k){return parseInt(k)}).sort(function(a,b){return a-b});
+      // 不连续检测
+      var gaps=[],miss0=[],miss1=[];
+      for(var k in lvSet0){if(!lvSet1[k])miss0.push(parseInt(k))}
+      for(var k in lvSet1){if(!lvSet0[k])miss1.push(parseInt(k))}
+      if(commonLvs.length>1){for(var i=1;i<commonLvs.length;i++){if(commonLvs[i]-commonLvs[i-1]>1)gaps.push(commonLvs[i-1]+1+'-'+(commonLvs[i]-1))}}
+      // 构建 datasets（取公共 Level）
+      datasets[0]=commonLvs.map(function(lv){return raw0[lvSet0[lv]]});
+      datasets[1]=commonLvs.map(function(lv){return raw1[lvSet1[lv]]});
+      // 警告信息（独有关卡 ≤50 展示具体关卡号，>50 只展示数量）
+      var warns=[];
+      if(gaps.length>0)warns.push('关卡不连续（缺失 Level '+gaps.slice(0,3).join(',')+(gaps.length>3?'...':'')+'）');
+      [['V1('+g0+')独有',miss0],['V2('+g1+')独有',miss1]].forEach(function(p){
+        var label=p[0],arr=p[1];if(!arr.length)return;arr.sort(function(a,b){return a-b});
+        if(arr.length<=50)warns.push(label+': '+arr.join(', '));
+        else warns.push(label+' '+arr.length+' 个未参与对比');
+      });
+      if(warns.length){var wEl=document.getElementById('single-warn');wEl.style.display='block';wEl.textContent='⚠️ '+warns.join(' · ')}
+      if(!commonLvs.length){document.getElementById('loading').classList.remove('show');alert('两组无公共 Level，无法对比');return}
+    }
+    // 从两组数据取统一 min/max
+    var sharedNorms=[];
+    var allCols=[
+      findCol(datasets[0]||datasets[1],['关内流失率(%)','关内流失率']),
+      findCol(datasets[0]||datasets[1],['难度变异系数(关内)','难度变异系数']),
+      findCol(datasets[0]||datasets[1],['难度']),
+      findCol(datasets[0]||datasets[1],['人均消耗']),
+      findCol(datasets[0]||datasets[1],['复活转化率']),
+      findCol(datasets[0]||datasets[1],['首次失败剩余率'])
+    ];
+    allCols.forEach(function(c,ci){
+      var vs=[];function add(ds){ds.forEach(function(d){var v=d[c];if(v!==undefined&&v!==null&&v!==''&&!isNaN(v))vs.push(v)})}
+      add(datasets[0]);add(datasets[1]);
+      if(vs.length>=10){vs.sort(function(a,b){return a-b});var p5=vs[Math.floor(vs.length*0.05)],p95=vs[Math.floor(vs.length*0.95)];sharedNorms.push(p95>p5?{mn:p5,mx:p95}:{mn:0,mx:1})}
+      else sharedNorms.push(vs.length?{mn:Math.min.apply(null,vs),mx:Math.max.apply(null,vs)}:{mn:0,mx:1});
+    });
+    s0=scoreDataset(datasets[0],sharedNorms);
+    s1=scoreDataset(datasets[1],sharedNorms);
+    var map0={},map1={};s0.forEach(function(r){map0[r.lv]=r});s1.forEach(function(r){map1[r.lv]=r});
+    var allLvs=[];Object.keys(map0).forEach(function(k){if(allLvs.indexOf(+k)<0)allLvs.push(+k)});
+    Object.keys(map1).forEach(function(k){if(allLvs.indexOf(+k)<0)allLvs.push(+k)});
+    allLvs.sort(function(a,b){return a-b});
+
+    // ── 双因子：V1/V2同公式重算 ──
+    var rk=['tu','va','di','co','re','rm'],dirs=['down','down','down','up','up','down'];
+    function dualScore(r,other){
+      var sc=0,tw=0;
+      rk.forEach(function(k,i){
+        var v=r[k];if(v===null){tw+=weights[i].w;return}
+        var n=sharedNorms[i],nm=(v-n.mn)/(n.mx-n.mn||1);nm=Math.max(0,Math.min(1,nm));
+        if(weights[i].dir=='down')nm=1-nm;
+        var dj=1;
+        if(other&&other[k]!==null){var d=v-other[k],pen=deltaPenalty(d,i);dj=(dirs[i]=='down'?d>0:d<0)?1-pen/100:1+pen/100}
+        sc+=(nm*0.6+dj*0.4)*weights[i].w;tw+=weights[i].w;
+      });return Math.round(sc/tw*100);
+    }
+    levels=allLvs.map(function(lv){
+      var r0=map0[lv]||null,r1=map1[lv]||null;
+      if(r0)r0.score=dualScore(r0,null);
+      if(r1)r1.score=dualScore(r1,r0);
+      var ds=(r1?r1.score:0)-(r0?r0.score:0);
+      var imp=[];
+      if(r0&&r1){['tu','va','di','co','re','rm'].forEach(function(k,i){
+        var labels=['流失','方差','难度','消耗','复活','剩余率'];
+        var v0=r0[k],v1=r1[k];if(v0===null||v1===null)return;
+        var better=dirs[i]=='down'?v1<v0:v1>v0;
+        if(better)imp.push(labels[i]+(dirs[i]=='down'?'↓':'↑'));
+      })}
+      var cm0={},cm1={},lc0=findLevelCol(datasets[0]),lc1=findLevelCol(datasets[1]);
+      customMetrics.forEach(function(cm){var raw0=datasets[0].find(function(d){return parseInt(d[lc0])===lv});cm0[cm.name]=raw0?raw0[cm.name]:null;var raw1=datasets[1].find(function(d){return parseInt(d[lc1])===lv});cm1[cm.name]=raw1?raw1[cm.name]:null});
+      return{lv:lv,r0:r0,r1:r1,delta:ds,imp:imp,_cm0:cm0,_cm1:cm1};
+    });
+
+    renderT();document.getElementById('result').classList.add('show');
+    saveState();
+    document.getElementById('loading').classList.remove('show');
+  }catch(e){
+    document.getElementById('loading').classList.remove('show');
+    alert('分析出错: '+e.message+'\n\n请检查上传文件格式或刷新重试');
+  }},50);
+}
+
+function renderT(){
+  var tot=levels.length;
+  var improved=levels.filter(function(r){return r.r0&&r.r1&&(r.r0.ann||[]).length>0&&(r.r1.ann||[]).length==0});
+  var stillBad=levels.filter(function(r){return r.r0&&r.r1&&(r.r0.ann||[]).length>0&&(r.r1.ann||[]).length>0});
+  var newBad=levels.filter(function(r){return r.r1&&(r.r1.ann||[]).length>0&&((r.r0&&(r.r0.ann||[]).length==0)||!r.r0)});
+  var clean=levels.filter(function(r){return r.r0&&r.r1&&(r.r0.ann||[]).length==0&&(r.r1.ann||[]).length==0});
+  var clean=levels.filter(function(r){return r.r0&&r.r1&&(r.r0.ann||[]).length==0&&(r.r1.ann||[]).length==0});
+
+  document.getElementById('summary').innerHTML=
+    '<div class="summary-card" style="border-left:4px solid var(--green)"><h3>已修复 ('+improved.length+')</h3><div class="stats">V1有标签 → V2无标签<br>平均提升 <b>'+(improved.length?Math.round(improved.reduce(function(s,r){return s+r.delta},0)/improved.length):'—')+'</b> 分</div></div>'+
+    '<div class="summary-card" style="border-left:4px solid var(--amber)"><h3>改善但未修复 ('+stillBad.length+')</h3><div class="stats">V1有标签 → V2仍有标签<br>平均提升 <b>'+(stillBad.length?Math.round(stillBad.reduce(function(s,r){return s+r.delta},0)/stillBad.length):'—')+'</b> 分</div></div>'+
+    '<div class="summary-card" style="border-left:4px solid var(--red)"><h3>新问题 ('+newBad.length+')</h3><div class="stats">V1无标签 → V2出现标签<br>需排查是否候选选错</div></div>';
+
+  var fs=document.getElementById('f-status').value,rs=+document.getElementById('f-start').value||0;
+  var re=+document.getElementById('f-end').value||9999,st=document.getElementById('f-search').value.trim();
+  var rows=levels;
+  if(fs=='improved')rows=improved;else if(fs=='stillbad')rows=stillBad;else if(fs=='newbad')rows=newBad;else if(fs=='clean')rows=clean;
+  if(rs)rows=rows.filter(function(r){return r.lv>=rs});if(re<9999)rows=rows.filter(function(r){return r.lv<=re});
+  if(st){var ns=st.split(',').map(function(s){return parseInt(s.trim())}).filter(function(n){return!isNaN(n)});if(ns.length)rows=rows.filter(function(r){return ns.indexOf(r.lv)>=0})}
+
+  var bs=['流失','难度','变异','消耗','复活转化','剩余率'];
+  // Regenerate checkboxes
+  var chkhtml='';
+  bs.forEach(function(l,i){chkhtml+='<label style="font-weight:400;cursor:pointer"><input type="checkbox" id="_cb_'+i+'" '+(document.getElementById('_cb_'+i)?document.getElementById('_cb_'+i).checked?'checked':'':'checked')+' onchange="renderT()">'+l+'</label>'});
+  customMetrics.forEach(function(cm,ci){chkhtml+='<label style="font-weight:400;cursor:pointer"><input type="checkbox" id="_cb_cm_'+ci+'" '+(document.getElementById('_cb_cm_'+ci)?document.getElementById('_cb_cm_'+ci).checked?'checked':'':'checked')+' onchange="renderT()">'+cm.name+'</label>'});
+  document.getElementById('chk-row').innerHTML=chkhtml;
+
+  var sortLabels={delta:'按 Δ 降序(改善→恶化)',level:'按 Level 升序','delta-pos':'改善最大在前','score1':'质量分V1 降序','score2':'质量分V2 降序'};
+  document.getElementById('tinfo').textContent='显示 '+rows.length+' / '+tot+' 关 · '+sortLabels[sortBy];
+  var sortBy=document.getElementById('f-sort').value;
+  if(sortBy==='level')rows.sort(function(a,b){return a.lv-b.lv});
+  else if(sortBy==='delta-pos')rows.sort(function(a,b){return b.delta-a.delta});
+  else if(sortBy==='score1')rows.sort(function(a,b){return(b.r0?b.r0.score:0)-(a.r0?a.r0.score:0)});
+  else if(sortBy==='score2')rows.sort(function(a,b){return(b.r1?b.r1.score:0)-(a.r1?a.r1.score:0)});
+  else rows.sort(function(a,b){return Math.abs(b.delta)-Math.abs(a.delta)});
+
+  var ml=[],mk=[],md=[],mc=[],mdir=[],bs=['流失','难度','变异','消耗','复活转化','剩余率'];
+  var bk=['tu','di','va','co','re','rm'],bd2=[2,2,3,0,2,3],bdr=['down','down','down','up','up','down'];
+  for(var i=0;i<6;i++){if(document.getElementById('_cb_'+i)&&!document.getElementById('_cb_'+i).checked)continue;ml.push(bs[i]);mk.push(bk[i]);md.push(bd2[i]);mc.push(false);mdir.push(bdr[i])}
+  customMetrics.forEach(function(cm,ci){if(document.getElementById('_cb_cm_'+ci)&&!document.getElementById('_cb_cm_'+ci).checked)return;ml.push(cm.name);mk.push('_cm_'+cm.name);md.push(2);mc.push(true);mdir.push(cm.dir)});
+
+  var hdr='<th>Level</th><th class="r">质量分V1<span class="info-tip">?<span class="info-pop"><b>双因子同算法</b><br>V1/V2同公式<br>(P5/P95归一×0.6+Δ调整×0.4)×权重<br>V1 Δ调整=1.0 V2查桶</span></span></th><th class="r">质量分V2</th><th class="r">Δ</th><th>标注</th>';
+  for(var i=0;i<ml.length;i++)hdr+='<th>'+ml[i]+' V1→V2</th>';
+  hdr+='</tr>';
+  document.getElementById('thead').innerHTML=hdr;
+
+  document.getElementById('tbody').innerHTML=rows.map(function(r){
+    var r0=r.r0,r1=r.r1,ds=r.delta;
+    var v1flags=(r0&&r0.ann||[]).length,v2flags=(r1&&r1.ann||[]).length;
+    var v1txt=v1flags?'V1:⚠'+r0.ann.join(' ⚠'):'V1:—';
+    var v2txt=v2flags?'V2:⚠'+r1.ann.join(' ⚠'):'V2:—';
+    var annTxt='<span style="color:#A32D2D">'+v1txt+'</span><br><span style="color:'+(v2flags?'#A32D2D':'#059669')+'">'+v2txt+'</span>';
+    
+    var cls='',deltaTxt='',deltaCls='';
+    if(r0&&r1){
+      deltaTxt=(ds>0?'+':'')+ds;
+      deltaCls=ds>0?'delta-pos':ds<0?'delta-neg':'delta-zero';
+      // 行色=标签驱动：清零→绿 新增→红 其余无色
+      if(v1flags&&!v2flags&&ds>=0){cls='improved'}
+      else if(v2flags&&!v1flags){cls='declined'}
+      else{cls=''}
+    }else if(r0){cls='declined';deltaTxt='V2缺失';deltaCls='delta-neg'}
+    else{cls='improved';deltaTxt='V1缺失';deltaCls='delta-pos'}
+
+    function fmtV(a,b,dec,dir){if(a===null||b===null||a===undefined||b===undefined)return'—';var d=b-a;var s=d>0?'↑':d<0?'↓':'=';var good=dir=='up'?d>0:d<0;return a.toFixed(dec)+'→'+b.toFixed(dec)+' <span style="font-size:10px;color:'+(good?'var(--green)':d==0?'var(--text-3)':'var(--red)')+'">'+s+'</span>'}
+    function getVal(obj,k,isCustom){if(!obj)return null;if(isCustom)return svRaw(obj,k);return obj[k]}
+    var mcells='';for(var i=0;i<ml.length;i++){var v0=mc[i]?(r._cm0||{})[mk[i].replace('_cm_','')]:r0?r0[mk[i]]:null;var v1=mc[i]?(r._cm1||{})[mk[i].replace('_cm_','')]:r1?r1[mk[i]]:null;v0=v0!==undefined&&v0!==null&&v0!==''&&!isNaN(v0)?v0:null;v1=v1!==undefined&&v1!==null&&v1!==''&&!isNaN(v1)?v1:null;mcells+='<td>'+(r0&&r1&&v0!==null&&v1!==null?fmtV(v0,v1,md[i],mdir[i]):'—')+'</td>'}
+
+    return'<tr class="'+cls+'"><td><span class="lv-tag">Lv.'+r.lv+'</span></td>'+
+      '<td class="r"><b>'+(r0?r0.score:'—')+'</b></td><td class="r"><b>'+(r1?r1.score:'—')+'</b></td>'+
+      '<td class="r"><b class="'+deltaCls+'">'+deltaTxt+'</b></td>'+
+      '<td>'+annTxt+'</td>'+mcells+'</tr>';
+  }).join('');
+
+  document.getElementById('foot').innerHTML='<b>双因子</b>=(P5/P95归一×0.6+Δ调整×0.4)×权重 · Δ=V2-V1 · 阈值:流失0.25/1.0/2.5 难度0.1/0.35/0.85 变异0.08/0.2/0.4 消耗30/120/300 复活0.03/0.05/0.15 剩余0.02/0.05/0.12<br><b>分类</b>: 已修复=V1有标签→V2无 改善未修复=均有 新问题=V2新增 正常=均无。';
+  document.getElementById('foot').innerHTML+='<br><b>扩展性</b>：评分引擎接受 datasets[] 数组，当前支持 2 组，扩展至 3+ 组需调整表格列宽和匹配逻辑，核心引擎无需改动。';
+}
+
+function expCSV(){
+  var bs=['流失','难度','变异','消耗','复活转化','剩余率'];
+  var bk=['tu','di','va','co','re','rm'],bd=[2,2,3,0,1,3];
+  var ml2=[],mk2=[],md2=[],mc2=[];
+  for(var i=0;i<6;i++){if(document.getElementById('_cb_'+i)&&!document.getElementById('_cb_'+i).checked)continue;ml2.push(bs[i]);mk2.push(bk[i]);md2.push(bd[i]);mc2.push(false)}
+  var cm=customMetrics;
+  for(var ci=0;ci<cm.length;ci++){if(document.getElementById('_cb_cm_'+ci)&&!document.getElementById('_cb_cm_'+ci).checked)continue;ml2.push(cm[ci].name);mk2.push('_cm_'+cm[ci].name);md2.push(2);mc2.push(true)}
+  var hdr=['Level','质量分V1','质量分V2','Δ','标注V1','标注V2'];
+  for(var i=0;i<ml2.length;i++){hdr.push(ml2[i]+'V1');hdr.push(ml2[i]+'V2')}
+  var rows=[hdr];
+  levels.forEach(function(r){
+    var r0=r.r0,r1=r.r1,row=[r.lv,(r0?r0.score:'—'),(r1?r1.score:'—'),r.delta,(r0&&r0.ann?r0.ann.join(';'):'—'),(r1&&r1.ann?r1.ann.join(';'):'—')];
+    for(var i=0;i<ml2.length;i++){var v0=mc2[i]?(r._cm0||{})[mk2[i].replace('_cm_','')]:r0?r0[mk2[i]]:null;var v1=mc2[i]?(r._cm1||{})[mk2[i].replace('_cm_','')]:r1?r1[mk2[i]]:null;v0=v0!==undefined&&v0!==null&&v0!==''&&!isNaN(v0)?v0:null;v1=v1!==undefined&&v1!==null&&v1!==''&&!isNaN(v1)?v1:null;row.push(v0!==null?(+v0).toFixed(md2[i]):'—');row.push(v1!==null?(+v1).toFixed(md2[i]):'—')}
+    rows.push(row);
+  });
+  if(rawGroups){
+    var s0=document.getElementById('sel-group0'),s1=document.getElementById('sel-group1');
+    if(s0&&s1){
+      rows.push([]);rows.push(['--- V1('+s0.value+'/'+rawGroups[s0.value].length+'关) ---'].concat(new Array(hdr.length-1).fill('')));
+      var rh=Object.keys(rawGroups[s0.value][0]||{});rows.push(rh);
+      rawGroups[s0.value].forEach(function(o){rows.push(rh.map(function(k){var v=o[k];return v!==undefined?v:''}))});
+      rows.push([]);rows.push(['--- V2('+s1.value+'/'+rawGroups[s1.value].length+'关) ---'].concat(new Array(hdr.length-1).fill('')));
+      rawGroups[s1.value].forEach(function(o){rows.push(rh.map(function(k){var v=o[k];return v!==undefined?v:''}))});
+    }
+  }
+  var csv=rows.map(function(r){return r.map(function(c){if(c===undefined||c===null)return'';return'"'+String(c).replace(/"/g,'""')+'"'}).join(',')}).join('\n');
+  var b=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(b);a.download='关卡数据对比_'+new Date().toISOString().slice(0,10)+'.csv';a.click();
+}
+
+// ─── localStorage persistence ───
+function saveState(){
+  var state={lv:levels,cm:customMetrics,ac:availCols,w:weights,fn:[],th:{}};
+  if(document.getElementById('file-0'))state.fn[0]=document.getElementById('file-0').textContent;
+  if(document.getElementById('file-1'))state.fn[1]=document.getElementById('file-1').textContent;
+  ['max-turnover','max-difficulty','max-variance','min-consume','min-revive','min-remain'].forEach(function(id){var el=document.getElementById(id);if(el)state.th[id]=el.value});
+  try{localStorage.setItem('tile_compare_state',JSON.stringify(state))}catch(e){}
+}
+function restoreState(){
+  var raw=localStorage.getItem('tile_compare_state');if(!raw)return;
+  var s=JSON.parse(raw);
+  datasets[0]=s.d0||[];datasets[1]=s.d1||[];levels=s.lv||[];customMetrics=s.cm||[];availCols=s.ac||[];
+  if(s.w){weights=s.w;renW()}
+  if(s.th){Object.keys(s.th).forEach(function(k){var el=document.getElementById(k);if(el)el.value=s.th[k]})}
+  if(s.fn[0]){document.getElementById('drop-0').classList.add('loaded');document.getElementById('stat-0').textContent='✓ 已恢复';document.getElementById('file-0').textContent=s.fn[0];document.getElementById('icon-0').textContent='💾'}
+  if(s.fn[1]){document.getElementById('drop-1').classList.add('loaded');document.getElementById('stat-1').textContent='✓ 已恢复';document.getElementById('file-1').textContent=s.fn[1];document.getElementById('icon-1').textContent='💾'}
+  if(levels.length){renderT();document.getElementById('result').classList.add('show');document.getElementById('run-btn').disabled=true;document.getElementById('run-btn').textContent='🔍 已恢复（重新上传可重新分析）'}
+  document.getElementById('upload-section').querySelector('.upload-grid').insertAdjacentHTML('beforebegin','<div style="font-size:11px;color:var(--text-3);margin-bottom:8px">💾 已从缓存恢复，重新上传数据可覆盖</div>');
+}
+restoreState();
+</script></body></html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI HOT 日报 · 2026-07-13</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f6f7f9;
+    --card-bg: #ffffff;
+    --text: #1f2328;
+    --text-2: #6b7280;
+    --text-3: #9ca3af;
+    --border: #e5e7eb;
+    --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+    --shadow-hover: 0 8px 24px rgba(0,0,0,.10), 0 4px 8px rgba(0,0,0,.06);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --maxw: 1200px;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ============ Hero ============ */
+  .hero {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    color: #fff; padding: 48px 24px 56px;
+  }
+  .hero-inner { max-width: var(--maxw); margin: 0 auto; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,.12); padding: 6px 14px; border-radius: 999px;
+    font-size: 13px; font-weight: 500; letter-spacing: .5px; margin-bottom: 18px;
+    border: 1px solid rgba(255,255,255,.15);
+  }
+  .hero-eyebrow::before { content: "📰"; }
+  .hero h1 {
+    font-size: clamp(28px, 4vw, 42px); font-weight: 700; margin-bottom: 10px;
+    letter-spacing: -.5px;
+  }
+  .hero-sub { font-size: 15px; color: rgba(255,255,255,.78); margin-bottom: 26px; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-bottom: 28px; font-size: 14px; }
+  .hero-meta-item { display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,.85); }
+  .hero-meta-item b { color: #fff; font-weight: 600; }
+  .hero-meta-item .lbl { color: rgba(255,255,255,.55); font-size: 12px; margin-right: 4px; }
+
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
+  }
+  .stat-chip {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
+    padding: 12px 14px; border-radius: var(--radius-sm);
+    transition: all .18s ease;
+  }
+  .stat-chip:hover { background: rgba(255,255,255,.16); transform: translateY(-2px); }
+  .stat-icon { font-size: 22px; line-height: 1; }
+  .stat-meta { display: flex; flex-direction: column; line-height: 1.2; }
+  .stat-count { font-size: 22px; font-weight: 700; color: #fff;
+                border-left: 3px solid var(--c); padding-left: 8px; }
+  .stat-label { font-size: 11px; color: rgba(255,255,255,.65); margin-top: 2px; }
+
+  /* ============ Anchor nav ============ */
+  .anchors {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,.92); backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .anchors-inner {
+    max-width: var(--maxw); margin: 0 auto; padding: 12px 24px;
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  .anchor-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 12px; border-radius: 999px;
+    background: #f3f4f6; font-size: 13px; font-weight: 500;
+    border: 1.5px solid transparent; transition: all .15s ease;
+  }
+  .anchor-chip:hover { border-color: var(--c); background: #fff; transform: translateY(-1px); }
+  .anchor-chip .anchor-n { color: var(--text-3); font-size: 11px; font-weight: 400; }
+  .anchors-spacer { flex: 1; }
+  .top-link { font-size: 13px; color: var(--text-2); padding: 6px 12px; }
+  .top-link:hover { color: var(--text); }
+
+  /* ============ Main ============ */
+  main { max-width: var(--maxw); margin: 0 auto; padding: 32px 24px 64px; }
+  .section { margin-bottom: 56px; scroll-margin-top: 80px; }
+  .section-head {
+    display: flex; align-items: baseline; gap: 12px;
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+    position: relative;
+  }
+  .section-head::before {
+    content: ""; position: absolute; left: 0; bottom: -2px;
+    width: 80px; height: 2px; background: var(--c);
+  }
+  .section-head h2 { font-size: 22px; font-weight: 700; padding-left: 12px; border-left: 4px solid var(--c); }
+  .section-icon { font-size: 20px; }
+  .section-count {
+    font-size: 13px; color: var(--text-2);
+    background: var(--card-bg); border: 1px solid var(--border);
+    padding: 3px 10px; border-radius: 999px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card-bg); border-radius: var(--radius);
+    padding: 18px 18px 14px; box-shadow: var(--shadow);
+    border: 1px solid var(--border); border-top: 3px solid var(--c);
+    display: flex; flex-direction: column; gap: 10px;
+    transition: all .2s ease;
+  }
+  .card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+  .card-head { display: flex; align-items: center; gap: 10px; }
+  .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 28px; height: 28px; padding: 0 8px;
+    color: #fff; font-weight: 700; font-size: 13px;
+    border-radius: 6px; flex-shrink: 0;
+  }
+  .src-chip {
+    font-size: 12px; color: var(--text-2); font-weight: 500;
+    background: #f3f4f6; padding: 3px 10px; border-radius: 999px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    max-width: 100%;
+  }
+  .card-title {
+    font-size: 16px; font-weight: 600; line-height: 1.45;
+    color: var(--text);
+  }
+  .card-summary {
+    font-size: 13.5px; color: var(--text-2); line-height: 1.6;
+    flex: 1;
+  }
+  .card-foot {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 4px; padding-top: 10px; border-top: 1px dashed var(--border);
+    gap: 8px;
+  }
+  .src-link {
+    font-size: 13px; font-weight: 600; color: var(--c);
+    padding: 4px 10px; border-radius: 6px;
+    transition: all .15s ease;
+  }
+  .src-link:hover { background: color-mix(in srgb, var(--c) 10%, transparent); }
+  .permalink {
+    font-size: 11px; color: var(--text-3);
+  }
+  .permalink:hover { color: var(--text-2); text-decoration: underline; }
+
+  /* ============ Footer ============ */
+  footer {
+    background: #1e293b; color: rgba(255,255,255,.7);
+    padding: 32px 24px; text-align: center; font-size: 13px;
+  }
+  footer .foot-stats {
+    display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    margin-bottom: 12px;
+  }
+  footer .foot-stats b { color: #fff; font-size: 16px; }
+  footer a { color: #93c5fd; }
+  footer a:hover { text-decoration: underline; }
+  footer .foot-source { font-size: 12px; color: rgba(255,255,255,.5); }
+
+  /* ============ Responsive ============ */
+  @media (max-width: 900px) {
+    .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 32px 18px 36px; }
+    .hero h1 { font-size: 24px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .stat-chip { padding: 10px; }
+    .stat-count { font-size: 18px; }
+    .anchors-inner { padding: 10px 16px; }
+    .anchor-chip { font-size: 12px; padding: 5px 10px; }
+    main { padding: 24px 16px 48px; }
+    .grid { grid-template-columns: 1fr; gap: 12px; }
+    .section { margin-bottom: 40px; }
+    .section-head h2 { font-size: 19px; }
+    .card { padding: 16px; }
+    .card-title { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">AI HOT · 每日精选</div>
+    <h1>AI 圈日报 · 2026年7月13日（周一）</h1>
+    <p class="hero-sub">覆盖模型 · 产品 · 行业 · 论文 · 观点 五大版块，一图速览今日 AI 圈</p>
+    <div class="hero-meta">
+      <span class="hero-meta-item"><span class="lbl">📊 总条数</span><b>11</b> 条</span>
+      <span class="hero-meta-item"><span class="lbl">🕐 数据窗口</span><b>7月12日 08:00 – 7月13日 08:00</b>（北京时间）</span>
+      <span class="hero-meta-item"><span class="lbl">⚡ 生成时间</span><b>2026年7月13日 08:00</b></span>
+    </div>
+    <div class="stats-grid">
+      <a href="#sec-models" class="stat-chip" style="--c:#ef4444"><span class="stat-icon">🧠</span><span class="stat-meta"><span class="stat-count">1</span><span class="stat-label">模型发布/更新</span></span></a><a href="#sec-products" class="stat-chip" style="--c:#3b82f6"><span class="stat-icon">🚀</span><span class="stat-meta"><span class="stat-count">3</span><span class="stat-label">产品发布/更新</span></span></a><a href="#sec-industry" class="stat-chip" style="--c:#14b8a6"><span class="stat-icon">📡</span><span class="stat-meta"><span class="stat-count">1</span><span class="stat-label">行业动态</span></span></a><a href="#sec-paper" class="stat-chip" style="--c:#8b5cf6"><span class="stat-icon">📄</span><span class="stat-meta"><span class="stat-count">1</span><span class="stat-label">论文研究</span></span></a><a href="#sec-tip" class="stat-chip" style="--c:#f59e0b"><span class="stat-icon">💡</span><span class="stat-meta"><span class="stat-count">5</span><span class="stat-label">技巧与观点</span></span></a>
+    </div>
+  </div>
+</header>
+
+<nav class="anchors">
+  <div class="anchors-inner">
+    <a href="#sec-models" class="anchor-chip" style="--c:#ef4444">🧠 模型发布/更新 <span class="anchor-n">(1)</span></a><a href="#sec-products" class="anchor-chip" style="--c:#3b82f6">🚀 产品发布/更新 <span class="anchor-n">(3)</span></a><a href="#sec-industry" class="anchor-chip" style="--c:#14b8a6">📡 行业动态 <span class="anchor-n">(1)</span></a><a href="#sec-paper" class="anchor-chip" style="--c:#8b5cf6">📄 论文研究 <span class="anchor-n">(1)</span></a><a href="#sec-tip" class="anchor-chip" style="--c:#f59e0b">💡 技巧与观点 <span class="anchor-n">(5)</span></a>
+    <span class="anchors-spacer"></span>
+    <a href="#top" class="top-link">↑ 返回顶部</a>
+  </div>
+</nav>
+
+<main id="top">
+<section id="sec-models" class="section" style="--c:#ef4444">
+  <header class="section-head">
+    <h2><span class="section-icon">🧠</span> 模型发布/更新</h2>
+    <span class="section-count">1 条</span>
+  </header>
+  <div class="grid">
+<article class="card" style="--c:#ef4444">
+  <div class="card-head">
+    <span class="num" style="background:#ef4444">1</span>
+    <span class="src-chip" title="X：阿易 AI Notes (@AYi_AInotes)">X</span>
+  </div>
+  <h3 class="card-title">腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户</h3>
+  <p class="card-summary" title="腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。">腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。H…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://x.com/AYi_AInotes/status/2076341952023310580" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+  </div>
+</section><section id="sec-products" class="section" style="--c:#3b82f6">
+  <header class="section-head">
+    <h2><span class="section-icon">🚀</span> 产品发布/更新</h2>
+    <span class="section-count">3 条</span>
+  </header>
+  <div class="grid">
+<article class="card" style="--c:#3b82f6">
+  <div class="card-head">
+    <span class="num" style="background:#3b82f6">2</span>
+    <span class="src-chip" title="Hacker News 热门（buzzing.cc 中文翻译）">Hacker News</span>
+  </div>
+  <h3 class="card-title">Mesh LLM：在 iroh 上进行分布式人工智能计算</h3>
+  <p class="card-summary" title="Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称“Skippy”）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost:9337/v1` 提供服务。">Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://www.iroh.computer/blog/mesh-llm" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+<article class="card" style="--c:#3b82f6">
+  <div class="card-head">
+    <span class="num" style="background:#3b82f6">3</span>
+    <span class="src-chip" title="X：Tibo (@thsottiaux)">X</span>
+  </div>
+  <h3 class="card-title">Codex与ChatGPT Work多项更新：取消5小时限制</h3>
+  <p class="card-summary" title="早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新： - 暂时取消所有Plus、Business和Pro计划的5小时使用限制 - 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布 - 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置 去创造吧。">早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新： - 暂时取消所有Plus、Busi…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://x.com/thsottiaux/status/2076365965915467978" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+<article class="card" style="--c:#3b82f6">
+  <div class="card-head">
+    <span class="num" style="background:#3b82f6">4</span>
+    <span class="src-chip" title="Hacker News 热门（buzzing.cc 中文翻译）">Hacker News</span>
+  </div>
+  <h3 class="card-title">Mindwalk：在代码库 3D 地图上回放编码代理会话</h3>
+  <p class="card-summary" title="Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放。它将仓库绘制成夜间地图，代理搜索、读取和编辑过的文件会发光，未触及区域保持黑暗，让用户一眼看清代理对任务的理解范围。单个 Go 二进制文件即可运行，所有会话数据完全本地处理，不会离开机器。支持树状图/地形图两种视图，文件触达状态分为未访问、已查看、已读取、已编辑四种颜色标记。播放界面包含错误率、文件修改量等摩擦信号面板，以及上下文压缩、子代理启动、用户交互等时间轴标记。支持键盘快捷键控制播放速度、跳转编辑点或错误点。">Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://github.com/cosmtrek/mindwalk" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+  </div>
+</section><section id="sec-industry" class="section" style="--c:#14b8a6">
+  <header class="section-head">
+    <h2><span class="section-icon">📡</span> 行业动态</h2>
+    <span class="section-count">1 条</span>
+  </header>
+  <div class="grid">
+<article class="card" style="--c:#14b8a6">
+  <div class="card-head">
+    <span class="num" style="background:#14b8a6">5</span>
+    <span class="src-chip" title="IT之家（RSS）">IT之家</span>
+  </div>
+  <h3 class="card-title">苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划</h3>
+  <p class="card-summary" title="苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使指控最终无法证实，OpenAI的硬件计划仍可能受拖累，双方本就脆弱的合作关系将进一步削弱。斯坦福大学教授Mark Lemley指出，若前苹果员工确实带走机密文件并在OpenAI使用，问题将变得严重。该案涉及消费级硬件产品，预计未来将有更多信息曝光。">苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://www.ithome.com/0/975/666.htm" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+  </div>
+</section><section id="sec-paper" class="section" style="--c:#8b5cf6">
+  <header class="section-head">
+    <h2><span class="section-icon">📄</span> 论文研究</h2>
+    <span class="section-count">1 条</span>
+  </header>
+  <div class="grid">
+<article class="card" style="--c:#8b5cf6">
+  <div class="card-head">
+    <span class="num" style="background:#8b5cf6">6</span>
+    <span class="src-chip" title="IT之家（RSS）">IT之家</span>
+  </div>
+  <h3 class="card-title">OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想</h3>
+  <p class="card-summary" title="OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题“循环双覆盖猜想”的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科“未解决数学问题”列表中的难题。">OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题“循环双覆盖猜想”的完整证明。…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://www.ithome.com/0/975/646.htm" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+  </div>
+</section><section id="sec-tip" class="section" style="--c:#f59e0b">
+  <header class="section-head">
+    <h2><span class="section-icon">💡</span> 技巧与观点</h2>
+    <span class="section-count">5 条</span>
+  </header>
+  <div class="grid">
+<article class="card" style="--c:#f59e0b">
+  <div class="card-head">
+    <span class="num" style="background:#f59e0b">7</span>
+    <span class="src-chip" title="X：Satya Nadella (@satyanadella)">X</span>
+  </div>
+  <h3 class="card-title">纳德拉提出“反向信息悖论”：企业使用AI时需保护自身知识</h3>
+  <p class="card-summary" title="微软CEO萨提亚·纳德拉提出“反向信息悖论”：AI时代，买家为使用AI支付金钱，同时必须暴露专有知识（提示词、工具使用、纠正反馈等），这些“智力废气”被模型学习，导致信息不对称向卖家倾斜。企业需要真正的信任边界，确保自身数据、痕迹、评估、适配权重和记忆在边界内积累，未经同意不得外泄。纳德拉呼吁企业拥有私有评估、保留组织记忆所有权，并主张企业应有权使用模型输出微调或训练自有模型，以控制自身学习循环。">微软CEO萨提亚·纳德拉提出“反向信息悖论”：AI时代，买家为使用AI支付金钱，同时必须暴露专有知识（提示词、工具使用、…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://x.com/satyanadella/status/2076323181154230284" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrhyer8a01q3biidlr8xr6rm" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+<article class="card" style="--c:#f59e0b">
+  <div class="card-head">
+    <span class="num" style="background:#f59e0b">8</span>
+    <span class="src-chip" title="X：Tibo (@thsottiaux)">X</span>
+  </div>
+  <h3 class="card-title">Tibo 分享通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法</h3>
+  <p class="card-summary" title="用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法。只需三步：安装 CLIProxyAPI、连接认证、设置环境变量别名 `claudex`。该别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。引用推文作者 Theo 补充，若已配置好代理，仅需约 2 条提示词即可完成设置。Tibo 称整个过程约 5 分钟，若被封锁可重置。">用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 So…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://x.com/thsottiaux/status/2076119366647894371" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrh57xvj00gvbir7awab8dgb" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+<article class="card" style="--c:#f59e0b">
+  <div class="card-head">
+    <span class="num" style="background:#f59e0b">9</span>
+    <span class="src-chip" title="Hacker News 热门（buzzing.cc 中文翻译）">Hacker News</span>
+  </div>
+  <h3 class="card-title">xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史</h3>
+  <p class="card-summary" title="对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件——即使提示“不要读取任何文件”，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces …">对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrhagju201pqbir7t0tnsgfy" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+<article class="card" style="--c:#f59e0b">
+  <div class="card-head">
+    <span class="num" style="background:#f59e0b">10</span>
+    <span class="src-chip" title="The Decoder：AI News（RSS）">The Decoder</span>
+  </div>
+  <h3 class="card-title">OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论</h3>
+  <p class="card-summary" title="OpenAI CEO Sam Altman 表示，他“相当确信”AI 迄今为止净创造了就业，并承认“这并非我预期”。此前他曾警告 AI 影响可能快得“有点吓人”。Anthropic CEO Dario Amodei 也修正了早期言论，将自动化描述为生产力倍增器而非岗位杀手。然而，多项研究未发现 AI 对整体生产力或劳动力市场产生显著影响。一项多校联合研究指出，程序员和文案的就业危机始于 2022 年初，早于 ChatGPT 发布。耶鲁预算实验室也未发现与 AI 相关的就业市场变化。">OpenAI CEO Sam Altman 表示，他“相当确信”AI 迄今为止净创造了就业，并承认“这并非我预期”。此前…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmrhlbx2v01a4bimnlcgw5m7y" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+<article class="card" style="--c:#f59e0b">
+  <div class="card-head">
+    <span class="num" style="background:#f59e0b">11</span>
+    <span class="src-chip" title="Nathan Lambert：Interconnects（RSS）">Nathan Lambert</span>
+  </div>
+  <h3 class="card-title">开源模型面临未来6个月的生存考验</h3>
+  <p class="card-summary" title="美国白宫正讨论通过新行政令管理开源模型，最可能在未来6个月内禁止或无限期延迟能力接近GPT 5.5、Claude Opus 4.8或GLM-5.2水平的开源权重模型发布。Anthropic主导的反中国模型政治运动以知识蒸馏为由推动监管，实质是监管捕获。Reflection AI代表在相关会议上主张开源模型应基于能力获得豁免，但该公司尚未发布公开模型。">美国白宫正讨论通过新行政令管理开源模型，最可能在未来6个月内禁止或无限期延迟能力接近GPT 5.5、Claude Opu…</p>
+  <div class="card-foot">
+    <a class="src-link" href="https://www.interconnects.ai/p/6-months-to-live-for-open-models" target="_blank" rel="noopener noreferrer">原文 ↗</a>
+    <a class="permalink" href="https://aihot.virxact.com/items/cmri2qrwo00arbi3hecomc7jd" target="_blank" rel="noopener noreferrer">AI HOT 条目</a>
+  </div>
+</article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-stats">
+    <span>📊 共 <b>11</b> 条</span>
+    <span>🗓️ 日报日期 <b>2026-07-13</b></span>
+    <span>🗂️ 五版块 <b>5</b></span>
+  </div>
+  <div class="foot-source">
+    数据源：<a href="https://aihot.virxact.com/daily/2026-07-13" target="_blank" rel="noopener noreferrer">AI HOT 日报 · 2026-07-13</a>
+    ｜ 站点：<a href="https://aihot.virxact.com" target="_blank" rel="noopener noreferrer">aihot.virxact.com</a>
+    ｜ 所有原文链接均以新标签页打开（target="_blank" rel="noopener noreferrer"）
+  </div>
+</footer>
+
+</body>
+</html>

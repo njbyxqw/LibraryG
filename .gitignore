@@ -1,0 +1,24 @@
+# === 系统垃圾 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === WorkBuddy 个人记忆（默认不进 git，隐私保护）===
+.workbuddy/memory/
+
+# === Smart Connections 插件缓存（embedding 向量/事件日志，可重建）===
+.smart-env/
+
+# === Obsidian 工作区状态（UI 布局，频繁变动）===
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# === SQLite 数据库（机器生成）===
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# === Obsidian 回收站 ===
+.trash/

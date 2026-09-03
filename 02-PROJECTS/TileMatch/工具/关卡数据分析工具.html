@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关卡数据分析工具</title>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #f0f2f5;
+  --surface: #ffffff;
+  --border: #e2e6ed;
+  --text: #1a1d23;
+  --text-2: #6b7280;
+  --text-3: #9aa3af;
+  --blue: #4f6ef7;
+  --blue-light: #eef2ff;
+  --green: #10b981;
+  --green-light: #d1fae5;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --purple: #a855f7;
+}
+body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+/* Topbar */
+.topbar { background: #1a1d23; height: 52px; display: flex; align-items: center; padding: 0 32px; gap: 16px; position: sticky; top: 0; z-index: 100; }
+.topbar-brand { font-size: 14px; font-weight: 600; color: #fff; }
+.topbar-brand em { color: #6c8ef5; font-style: normal; }
+.topbar-divider { width: 1px; height: 18px; background: #333; }
+.topbar-hint { font-size: 12px; color: #6b7280; }
+
+/* Upload */
+.upload-wrap { padding: 40px 32px; display: flex; flex-direction: column; align-items: center; }
+.upload-zone { width: 100%; max-width: 640px; border: 2px dashed #c7d2fe; border-radius: 16px; background: #fff; padding: 48px 32px; display: flex; flex-direction: column; align-items: center; gap: 14px; cursor: pointer; transition: border-color .2s, background .2s; }
+.upload-zone:hover, .upload-zone.drag { border-color: var(--blue); background: var(--blue-light); }
+.upload-icon { font-size: 40px; }
+.upload-title { font-size: 16px; font-weight: 600; color: var(--text); }
+.upload-sub { font-size: 13px; color: var(--text-2); text-align: center; line-height: 1.6; }
+.upload-btn { background: var(--blue); color: #fff; border: none; border-radius: 8px; padding: 10px 24px; font-size: 13px; font-weight: 600; cursor: pointer; transition: opacity .15s; }
+.upload-btn:hover { opacity: .88; }
+.upload-req { display: flex; gap: 10px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+.req-tag { font-size: 11px; font-weight: 500; background: #fff0f0; color: #be123c; border: 1px solid #fecdd3; border-radius: 12px; padding: 3px 10px; }
+#file-input { display: none; }
+
+/* Settings */
+.settings-wrap { width: 100%; max-width: 640px; margin-top: 24px; background: var(--surface); border-radius: 14px; border: 1px solid var(--border); padding: 22px 24px; }
+.settings-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 16px; }
+.settings-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label { font-size: 11px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px; }
+.field input[type=number] { border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font-size: 13px; color: var(--text); background: var(--bg); outline: none; width: 100%; transition: border-color .15s; }
+.field input[type=number]:focus { border-color: var(--blue); background: #fff; }
+
+/* Metric cards (dynamic weights) */
+.metric-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+.metric-card { display: flex; align-items: center; gap: 10px; background: var(--bg); border-radius: 10px; padding: 10px 14px; border: 1px solid var(--border); }
+.metric-card.locked { border-color: #c7d2fe; background: #f8faff; }
+.metric-name { font-size: 13px; font-weight: 600; color: var(--text); flex: 1; }
+.metric-card.locked .metric-name { color: #3730a3; }
+.dir-btn { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer; transition: all .15s; min-width: 32px; text-align: center; }
+.dir-btn.up { color: var(--green); }
+.dir-btn.up.active { background: var(--green); color: #fff; border-color: var(--green); }
+.dir-btn.down { color: var(--red); }
+.dir-btn.down.active { background: var(--red); color: #fff; border-color: var(--red); }
+.dir-btn:hover { opacity: .8; }
+.metric-weight { display: flex; align-items: center; gap: 6px; }
+.metric-weight input[type=range] { width: 130px; accent-color: var(--blue); }
+.metric-weight-val { font-size: 12px; font-weight: 600; color: var(--blue); min-width: 32px; text-align: center; }
+.remove-btn { background: none; border: none; color: var(--red); font-size: 16px; cursor: pointer; padding: 2px 6px; border-radius: 4px; transition: background .15s; }
+.remove-btn:hover { background: #fee2e2; }
+.lock-icon { color: #a5b4fc; font-size: 13px; cursor: default; }
+.add-metric-wrap { position: relative; }
+.add-metric-btn { background: none; border: 1px dashed var(--blue); color: var(--blue); border-radius: 8px; padding: 8px 16px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all .15s; width: 100%; text-align: center; }
+.add-metric-btn:hover { background: var(--blue-light); }
+.metric-dropdown { position: absolute; top: 100%; left: 0; right: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,.1); max-height: 200px; overflow-y: auto; z-index: 10; display: none; margin-top: 4px; }
+.metric-dropdown.show { display: block; }
+.metric-dropdown-item { padding: 8px 14px; font-size: 12px; color: var(--text); cursor: pointer; transition: background .1s; }
+.metric-dropdown-item:hover { background: var(--blue-light); }
+.metric-dropdown-item .auto-dir { font-size: 10px; color: var(--text-3); margin-left: 6px; }
+
+/* Result area */
+.result-wrap { padding: 0 32px 48px; display: none; }
+.result-wrap.show { display: block; }
+
+/* Dashboard (from v1) */
+.dash-section { margin-bottom: 24px; }
+.dash-section-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.dash-section-title span { font-size: 11px; font-weight: 400; color: var(--text-3); }
+
+/* 总览卡片 */
+.overview-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 12px; }
+.ov-card { background: var(--surface); padding: 16px 18px; }
+.ov-label { font-size: 11px; color: var(--text-3); margin-bottom: 4px; }
+.ov-val { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; line-height: 1; }
+.ov-val.blue { color: var(--blue); }
+.ov-val.green { color: var(--green); }
+.ov-val.amber { color: var(--amber); }
+.ov-val.purple { color: var(--purple); }
+.ov-sub { font-size: 11px; color: var(--text-3); margin-top: 4px; }
+
+/* 指标对比卡片 */
+.metric-compare-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 12px; }
+.mc-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+.mc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.mc-name { font-size: 12px; font-weight: 600; color: var(--text); }
+.mc-badge { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 4px; }
+.mc-badge.good { background: var(--green-light); color: #065f46; }
+.mc-badge.warn { background: #fef3c7; color: #92400e; }
+.mc-badge.bad { background: #fee2e2; color: #991b1b; }
+.mc-bars { display: flex; flex-direction: column; gap: 6px; }
+.mc-bar-row { display: flex; align-items: center; gap: 8px; }
+.mc-bar-label { font-size: 10px; color: var(--text-3); width: 42px; flex-shrink: 0; }
+.mc-bar-wrap { flex: 1; background: #f0f2f5; border-radius: 3px; height: 6px; overflow: hidden; }
+.mc-bar-fill { height: 6px; border-radius: 3px; }
+.mc-bar-val { font-size: 11px; font-weight: 600; color: var(--text); width: 52px; text-align: right; flex-shrink: 0; }
+.mc-footer { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text-3); line-height: 1.5; }
+.mc-footer b { color: var(--text-2); }
+
+/* 策划洞察卡片 */
+.insight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
+.ins-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+.ins-head { font-size: 11px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.ins-body { font-size: 12.5px; color: var(--text-2); line-height: 1.75; }
+.ins-body b { color: var(--text); font-weight: 600; }
+.ins-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.ins-chip { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 5px; }
+.ins-chip.blue { background: var(--blue-light); color: var(--blue); }
+.ins-chip.green { background: var(--green-light); color: #065f46; }
+.ins-chip.amber { background: #fef3c7; color: #92400e; }
+.ins-chip.purple { background: #ede9fe; color: #6b21a8; }
+
+/* 关卡列表 + 复制按钮 */
+.lvlist-box { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 22px; margin-bottom: 20px; }
+.lvlist-head { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
+.lvlist { display: flex; flex-wrap: wrap; gap: 8px; }
+.lv-chip { background: var(--blue-light); color: var(--blue); font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
+.copy-btn { font-size: 11px; font-weight: 500; color: var(--blue); background: var(--blue-light); border: none; border-radius: 6px; padding: 3px 10px; cursor: pointer; }
+.copy-btn:hover { opacity: .8; }
+
+/* Table */
+.table-section { }
+.table-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.table-title { font-size: 14px; font-weight: 600; color: var(--text); }
+.export-btn { background: #f0f2f5; border: 1px solid var(--border); color: var(--text-2); border-radius: 8px; padding: 7px 16px; font-size: 12px; font-weight: 500; cursor: pointer; transition: background .15s; }
+.export-btn:hover { background: #e4e7ef; }
+.card { background: var(--surface); border-radius: 14px; border: 1px solid var(--border); overflow: hidden; }
+table { width: 100%; border-collapse: collapse; }
+thead th { font-size: 10px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.6px; padding: 10px 12px; text-align: left; background: #f8f9fb; border-bottom: 1px solid var(--border); white-space: nowrap; }
+th.r, td.r { text-align: right; }
+tbody tr { border-bottom: 1px solid #f2f4f7; transition: background .1s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #f8f9ff; }
+td { padding: 11px 12px; font-size: 12.5px; color: var(--text); vertical-align: middle; }
+.rank-num { width: 24px; height: 24px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
+.rn-1 { background: #fef3c7; color: #d97706; }
+.rn-2 { background: #f1f5f9; color: #64748b; }
+.rn-3 { background: #ffedd5; color: #c2410c; }
+.rn-n { background: #f3f4f6; color: #9ca3af; }
+.lv-tag { background: var(--blue-light); color: var(--blue); font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 5px; display: inline-block; }
+.badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 4px; margin-left: 3px; vertical-align: middle; }
+.b-r { background: var(--green-light); color: #065f46; }
+.b-l { background: #ede9fe; color: #5b21b6; }
+.bar-v { font-size: 12px; font-weight: 500; margin-bottom: 3px; }
+.bar-bg { background: #f0f2f5; border-radius: 3px; height: 4px; overflow: hidden; }
+.bar-fill { height: 4px; border-radius: 3px; }
+.sc-num { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 2px; }
+.sc-bg { background: #e8edfe; border-radius: 3px; height: 4px; overflow: hidden; }
+.sc-fill { height: 4px; border-radius: 3px; background: var(--blue); }
+.c-green { color: #059669; font-weight: 500; }
+.c-red { color: var(--red); font-weight: 500; }
+.c-gray { color: var(--text-3); }
+.c-amber { color: var(--amber); font-weight: 600; }
+
+/* Footer note */
+.footnote { font-size: 11px; color: var(--text-3); margin-top: 16px; line-height: 1.8; }
+.footnote b { color: var(--text-2); }
+
+/* Status */
+.status { font-size: 13px; color: var(--text-2); margin-top: 12px; text-align: center; min-height: 20px; }
+.status.err { color: var(--red); }
+.status.ok { color: var(--green); }
+
+/* Run button */
+.run-btn { width: 100%; margin-top: 18px; background: var(--blue); color: #fff; border: none; border-radius: 10px; padding: 13px; font-size: 14px; font-weight: 700; cursor: pointer; letter-spacing: 0.3px; transition: opacity .15s; }
+.run-btn:hover { opacity: .88; }
+.run-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* Weight sum */
+.weight-sum { font-size: 11px; color: var(--text-3); margin-top: 8px; text-align: right; }
+.weight-sum.ok { color: var(--green); }
+.weight-sum.bad { color: var(--red); }
+
+/* Parse progress */
+#parse-progress-wrap { margin-top: 10px; }
+#parse-progress-text { font-size: 12px; color: var(--text-2); margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-brand">关卡<em>分析</em>工具</div>
+  <div class="topbar-divider"></div>
+  <div class="topbar-hint">上传 CSV → 自动筛选出策划视角的优质关卡</div>
+</div>
+
+<!-- Upload -->
+<div class="upload-wrap" id="upload-section">
+  <div class="upload-zone" id="drop-zone">
+    <div class="upload-icon">📊</div>
+    <div class="upload-title">上传关卡数据 CSV</div>
+    <div class="upload-sub">拖拽文件到此处，或点击下方按钮选择文件<br>支持任意关卡区间，上传后所有数值列均可加入评分</div>
+    <button class="upload-btn" onclick="document.getElementById('file-input').click()">选择 CSV 文件</button>
+    <div class="upload-req">
+      <span class="req-tag">必须列：Level</span>
+      <span class="req-tag">人均消耗</span>
+      <span class="req-tag">关内流失率(%)</span>
+    </div>
+    <input type="file" id="file-input" accept=".csv">
+  </div>
+
+  <div class="settings-wrap">
+    <div class="settings-title">⚙️ 筛选参数</div>
+    <div class="settings-grid">
+      <div class="field">
+        <label>关内流失率上限 (%)</label>
+        <input type="number" id="max-inner" value="1" step="0.1" min="0" max="100">
+      </div>
+      <div class="field">
+        <label>人均消耗下限</label>
+        <input type="number" id="min-consume" value="400" step="10" min="0">
+      </div>
+      <div class="field">
+        <label>筛选 Top N 关卡</label>
+        <input type="number" id="top-n" value="20" step="1" min="1" max="200">
+      </div>
+    </div>
+    <div class="weights-row">
+      <div class="weights-title">评分指标与权重</div>
+      <div class="metric-list" id="metric-list"></div>
+      <div class="add-metric-wrap">
+        <button class="add-metric-btn" id="add-metric-btn" onclick="toggleMetricDropdown()">＋ 添加指标</button>
+        <div class="metric-dropdown" id="metric-dropdown"></div>
+      </div>
+      <div class="weight-sum ok" id="wsum">✓ 权重合计：100%</div>
+    </div>
+    <button class="run-btn" id="run-btn" onclick="runAnalysis()">🔍 开始分析</button>
+    <div class="status" id="status"></div>
+    <div id="parse-progress-wrap" style="display:none;margin-top:10px;">
+      <div style="font-size:12px;color:var(--text-2);margin-bottom:4px;" id="parse-progress-text">正在解析…</div>
+      <div style="background:#e5e7eb;border-radius:4px;height:6px;overflow:hidden;">
+        <div id="parse-progress-bar" style="background:var(--blue);height:6px;width:0%;transition:width .15s;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Result -->
+<div class="result-wrap" id="result-wrap">
+
+  <!-- 总览 -->
+  <div class="dash-section">
+    <div class="dash-section-title">📊 总览 <span id="dash-subtitle"></span></div>
+    <div class="overview-grid" id="overview-grid"></div>
+  </div>
+
+  <!-- 指标对比 -->
+  <div class="dash-section">
+    <div class="dash-section-title">📈 各指标详情 <span>Top N 关卡 vs 全量关卡（CSV原始全部数据）均值对比</span></div>
+    <div class="metric-compare-grid" id="metric-grid"></div>
+  </div>
+
+  <!-- 策划洞察 -->
+  <div class="dash-section">
+    <div class="dash-section-title">💡 策划洞察</div>
+    <div class="insight-grid" id="insight-grid"></div>
+  </div>
+
+  <!-- 关卡号列表 -->
+  <div class="lvlist-box" id="lvlist-box">
+    <div class="lvlist-head" id="lvlist-head"></div>
+    <div class="lvlist" id="lv-list"></div>
+  </div>
+
+  <!-- 表格 -->
+  <div class="table-section">
+    <div class="table-head">
+      <div class="table-title" id="table-title">评分明细</div>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button class="export-btn" onclick="exportCSV()">⬇ 导出 CSV</button>
+      </div>
+    </div>
+    <div class="card">
+      <table>
+        <thead id="result-thead"></thead>
+        <tbody id="result-tbody"></tbody>
+      </table>
+    </div>
+    <div class="footnote" id="footnote"></div>
+  </div>
+
+</div>
+
+<script>
+let parsedData = [];
+let top20Data = [];
+let activeMetrics = [];
+let availableColumns = [];
+
+// 内置指标（锁定，不可删除）
+const BUILTIN_METRICS = ['人均消耗', '关内流失率(%)'];
+
+// 方向自动检测关键词
+function autoDetectDirection(colName) {
+  const lower = colName.toLowerCase();
+  if (lower.includes('流失') || lower.includes('失败') || lower.includes('剩余率') ||
+      lower.includes('难度') || lower.includes('放弃') || lower.includes('退出') ||
+      lower.includes('low') || lower.includes('loss') || lower.includes('fail')) {
+    return 'down';
+  }
+  return 'up';
+}
+
+function initMetrics(columns) {
+  activeMetrics = BUILTIN_METRICS.filter(m => columns.includes(m)).map(name => ({
+    name: name,
+    dir: autoDetectDirection(name),
+    weight: name === '人均消耗' ? 25 : 20,
+    locked: true
+  }));
+  const total = activeMetrics.reduce((s, m) => s + m.weight, 0);
+  if (total < 100) {
+    activeMetrics[0].weight += (100 - total);
+  }
+  availableColumns = columns;
+  renderMetricCards();
+}
+
+function renderMetricCards() {
+  const container = document.getElementById('metric-list');
+  container.innerHTML = '';
+  activeMetrics.forEach((metric, idx) => {
+    const card = document.createElement('div');
+    card.className = 'metric-card' + (metric.locked ? ' locked' : '');
+    card.innerHTML = `
+      <span class="metric-name">${metric.name}</span>
+      <button class="dir-btn up ${metric.dir==='up'?'active':''}" onclick="toggleDir(${idx},'up')">↑</button>
+      <button class="dir-btn down ${metric.dir==='down'?'active':''}" onclick="toggleDir(${idx},'down')">↓</button>
+      <div class="metric-weight">
+        <input type="range" min="0" max="50" value="${metric.weight}" step="1" oninput="onWeightInput(${idx}, this.value)" onchange="onWeightChange()">
+        <span class="metric-weight-val" id="wval-${idx}">${metric.weight}%</span>
+      </div>
+      ${metric.locked ? '<span class="lock-icon">🔒</span>' : '<button class="remove-btn" onclick="removeMetric(' + idx + ')">×</button>'}
+    `;
+    container.appendChild(card);
+  });
+  syncWeights();
+}
+
+function toggleDir(idx, dir) {
+  activeMetrics[idx].dir = dir;
+  renderMetricCards();
+}
+
+function onWeightInput(idx, val) {
+  activeMetrics[idx].weight = parseInt(val);
+  const valSpan = document.getElementById('wval-' + idx);
+  if (valSpan) valSpan.textContent = parseInt(val) + '%';
+  syncWeights();
+}
+
+function onWeightChange() {
+  renderMetricCards();
+}
+
+function removeMetric(idx) {
+  if (activeMetrics[idx].locked) return;
+  activeMetrics.splice(idx, 1);
+  renderMetricCards();
+}
+
+function toggleMetricDropdown() {
+  const dd = document.getElementById('metric-dropdown');
+  if (dd.classList.contains('show')) {
+    dd.classList.remove('show');
+    return;
+  }
+  const activeNames = activeMetrics.map(m => m.name);
+  const unused = availableColumns.filter(c => !activeNames.includes(c));
+  dd.innerHTML = '';
+  if (unused.length === 0) {
+    dd.innerHTML = '<div class="metric-dropdown-item" style="color:var(--text-3);">所有指标已添加</div>';
+  } else {
+    unused.forEach(col => {
+      const dir = autoDetectDirection(col);
+      const item = document.createElement('div');
+      item.className = 'metric-dropdown-item';
+      item.innerHTML = `${col} <span class="auto-dir">（默认${dir==='up'?'↑越高越好':'↓越低越好'}）</span>`;
+      item.onclick = () => addMetric(col);
+      dd.appendChild(item);
+    });
+  }
+  dd.classList.add('show');
+}
+
+function addMetric(colName) {
+  const dir = autoDetectDirection(colName);
+  activeMetrics.push({
+    name: colName,
+    dir: dir,
+    weight: 0,
+    locked: false
+  });
+  document.getElementById('metric-dropdown').classList.remove('show');
+  renderMetricCards();
+}
+
+// ── Drag & Drop ──
+const dropZone = document.getElementById('drop-zone');
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault(); dropZone.classList.remove('drag');
+  const file = e.dataTransfer.files[0];
+  if (file) handleFile(file);
+});
+document.getElementById('file-input').addEventListener('change', e => {
+  if (e.target.files[0]) handleFile(e.target.files[0]);
+});
+
+function handleFile(file) {
+  setStatus('正在解析 CSV，请稍候…', '');
+  const progWrap = document.getElementById('parse-progress-wrap');
+  const progBar = document.getElementById('parse-progress-bar');
+  const progText = document.getElementById('parse-progress-text');
+  progWrap.style.display = 'block';
+  progBar.style.width = '0%';
+  progText.textContent = '正在读取文件…';
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const text = e.target.result;
+    progText.textContent = `文件已读取（${Math.round(file.size/1024)} KB），正在解析…`;
+
+    const lines = text.split(/\r?\n/);
+    if (lines.length < 2) {
+      progWrap.style.display = 'none';
+      setStatus('❌ CSV 文件没有数据行', 'err');
+      return;
+    }
+
+    const headerLine = lines[0];
+    const headers = headerLine.split(',').map(h => h.replace(/^"|"$/g, '').trim());
+    const dataLines = lines.slice(1).filter(l => l.trim() !== '');
+
+    let parsed = [];
+    let minLv = Infinity, maxLv = -Infinity;
+    const total = dataLines.length;
+    const BATCH = 500;
+
+    function convertRowRaw(lineStr) {
+      const vals = [];
+      let cur = '';
+      let inQuote = false;
+      for (let i = 0; i < lineStr.length; i++) {
+        const c = lineStr[i];
+        if (inQuote) {
+          if (c === '"') {
+            if (i + 1 < lineStr.length && lineStr[i+1] === '"') {
+              cur += '"'; i++;
+            } else {
+              inQuote = false;
+            }
+          } else {
+            cur += c;
+          }
+        } else {
+          if (c === '"') {
+            inQuote = true;
+          } else if (c === ',') {
+            vals.push(cur);
+            cur = '';
+          } else {
+            cur += c;
+          }
+        }
+      }
+      vals.push(cur);
+
+      const obj = {};
+      for (let i = 0; i < headers.length; i++) {
+        let v = (vals[i] || '').trim();
+        let numStr = v;
+        const hasPct = v.endsWith('%');
+        if (hasPct) {
+          numStr = v.substring(0, v.length - 1).trim();
+        }
+        if (numStr !== '' && !isNaN(numStr) && numStr !== 'true' && numStr !== 'false') {
+          let parsed = parseFloat(numStr);
+          if (hasPct) parsed /= 100;
+          obj[headers[i]] = parsed;
+        } else {
+          obj[headers[i]] = v;
+        }
+      }
+      return obj;
+    }
+
+    function processBatch(idx) {
+      const end = Math.min(idx + BATCH, total);
+      for (let i = idx; i < end; i++) {
+        try {
+          const row = convertRowRaw(dataLines[i]);
+          const lv = row['Level'];
+          if (lv !== '' && !isNaN(lv)) {
+            if (lv < minLv) minLv = lv;
+            if (lv > maxLv) maxLv = lv;
+            parsed.push(row);
+          }
+        } catch(ex) {}
+      }
+
+      const pct = Math.round(end / total * 100);
+      progBar.style.width = Math.min(pct, 99) + '%';
+      progText.textContent = `正在解析…已处理 ${end.toLocaleString()} / ${total.toLocaleString()} 行（${pct}%）`;
+
+      if (end < total) {
+        requestAnimationFrame(function() { processBatch(end); });
+      } else {
+        progBar.style.width = '100%';
+        progText.textContent = '解析完成，正在检查数据…';
+
+        const required = ['Level', '人均消耗', '关内流失率(%)', '总流失率(%)'];
+        const missing = required.filter(c => !headers.includes(c));
+        if (missing.length) {
+          progWrap.style.display = 'none';
+          setStatus(`❌ 缺少必要列：${missing.join('、')}`, 'err');
+          return;
+        }
+        parsedData = parsed;
+        const sampleRow = parsedData[0] || {};
+        const allCols = Object.keys(sampleRow);
+        const numericCols = allCols.filter(c => {
+          if (c === 'Level') return false;
+          const v = parsedData.find(r => r[c] !== undefined && r[c] !== '');
+          return v && !isNaN(v[c]);
+        });
+        initMetrics(numericCols);
+        progWrap.style.display = 'none';
+        setStatus(`✓ 已加载 ${parsedData.length} 条关卡数据（Lv.${minLv} – Lv.${maxLv}）`, 'ok');
+        const btn = document.getElementById('run-btn');
+        btn.disabled = false;
+        btn.textContent = '🔍 开始分析';
+      }
+    }
+
+    requestAnimationFrame(function() { processBatch(0); });
+  };
+
+  reader.onerror = function() {
+    progWrap.style.display = 'none';
+    setStatus('❌ 文件读取失败', 'err');
+  };
+
+  reader.readAsText(file);
+}
+
+function setStatus(msg, cls) {
+  const el = document.getElementById('status');
+  el.textContent = msg; el.className = 'status ' + cls;
+}
+
+function syncWeights() {
+  const sum = activeMetrics.reduce((s, m) => s + m.weight, 0);
+  const el = document.getElementById('wsum');
+  el.textContent = (sum === 100 ? '✓' : '⚠') + ' 权重合计：' + sum + '%';
+  el.className = 'weight-sum ' + (sum === 100 ? 'ok' : 'bad');
+}
+
+function minmax(arr, reverse) {
+  let mn = Infinity, mx = -Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < mn) mn = arr[i];
+    if (arr[i] > mx) mx = arr[i];
+  }
+  if (mx === mn) return arr.map(() => 0.5);
+  return arr.map(v => { const s = (v - mn) / (mx - mn); return reverse ? 1 - s : s; });
+}
+
+function runAnalysis() {
+  if (!parsedData.length) return;
+  const maxInner = parseFloat(document.getElementById('max-inner').value);
+  const minConsume = parseFloat(document.getElementById('min-consume').value);
+  const weights = activeMetrics.map(m => m.weight / 100);
+  const wSum = weights.reduce((a,b) => a+b, 0);
+  if (Math.abs(wSum - 1) > 0.01) { setStatus('⚠ 权重合计不为100%，请调整后重试', 'err'); return; }
+
+  const filtered = parsedData.filter(r =>
+    r.Level !== '' && !isNaN(r.Level) &&
+    !isNaN(r['人均消耗']) && !isNaN(r['关内流失率(%)']) &&
+    r['关内流失率(%)'] <= maxInner && r['人均消耗'] >= minConsume
+  );
+  if (filtered.length < 3) { setStatus(`❌ 符合条件的关卡仅 ${filtered.length} 个，请放宽筛选条件`, 'err'); return; }
+
+  const metricScores = activeMetrics.map(m => {
+    const valid = filtered.filter(r => !isNaN(r[m.name]));
+    const hasData = valid.length > 0;
+    const avgVal = hasData ? valid.reduce((s,r) => s + r[m.name], 0) / valid.length : 0;
+    const values = filtered.map(r => !isNaN(r[m.name]) ? r[m.name] : avgVal);
+    return minmax(values, m.dir === 'down');
+  });
+
+  filtered.forEach((r, i) => {
+    r._score = metricScores.reduce((s, sArr, j) => s + sArr[i] * weights[j], 0);
+  });
+
+  const topN = Math.max(1, parseInt(document.getElementById('top-n').value) || 20);
+  const sorted = [...filtered].sort((a,b) => b._score - a._score);
+  top20Data = sorted.slice(0, Math.min(topN, sorted.length));
+
+  renderResult(filtered, top20Data, maxInner, minConsume, weights, topN);
+  setStatus('', '');
+}
+
+function renderResult(all, top20, maxInner, minConsume, weights, topN) {
+  const N = topN || top20.length;
+  if (!top20.length) return;
+
+  // 辅助：安全平均值
+  function safeAvg(arr, key) {
+    const vals = arr.filter(r => typeof r[key] === 'number' && !isNaN(r[key]));
+    return vals.length ? vals.reduce((s,r) => s + r[key], 0) / vals.length : NaN;
+  }
+  // 辅助：百分比差异
+  function pctDiff(tVal, aVal) {
+    if (isNaN(tVal) || isNaN(aVal) || aVal === 0) return null;
+    return ((tVal - aVal) / Math.abs(aVal) * 100);
+  }
+
+  // 1. 总览卡片
+  let lvMin = Infinity, lvMax = -Infinity;
+  for (let i = 0; i < parsedData.length; i++) {
+    const lv = parsedData[i].Level;
+    if (lv < lvMin) lvMin = lv;
+    if (lv > lvMax) lvMax = lv;
+  }
+  const maxC = top20.reduce((m,r) => r['人均消耗'] > m['人均消耗'] ? r : m, top20[0]) || {};
+  const minI = top20.reduce((m,r) => r['关内流失率(%)'] < m['关内流失率(%)'] ? r : m, top20[0]) || {};
+  const refCount = top20.filter(r => typeof r['总流失率(%)'] === 'number' && r['总流失率(%)'] < 0).length;
+
+  document.getElementById('dash-subtitle').textContent =
+    `CSV共 ${parsedData.length} 关 · 符合筛选条件并参与分析 ${all.length} 关 · 取前 ${N} 名`;
+  document.getElementById('overview-grid').innerHTML = `
+    <div class="ov-card">
+      <div class="ov-label">数据覆盖</div>
+      <div class="ov-val blue">Lv.${lvMin}–${lvMax}</div>
+      <div class="ov-sub">CSV共 ${parsedData.length} 关 / 符合条件并参与分析 ${all.length} 关 / 展示前 ${N} 名</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Top${N} 最高消耗关卡</div>
+      <div class="ov-val amber">Lv.${maxC.Level || '—'}</div>
+      <div class="ov-sub">人均消耗 ${maxC['人均消耗'] ? maxC['人均消耗'].toFixed(1) : '—'}，关内流失 ${maxC['关内流失率(%)'] != null ? (maxC['关内流失率(%)']*100).toFixed(2) + '%' : '—'}</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Top${N} 最低流失关卡</div>
+      <div class="ov-val green">Lv.${minI.Level || '—'}</div>
+      <div class="ov-sub">关内流失 ${(minI['关内流失率(%)'] != null ? (minI['关内流失率(%)']*100).toFixed(2) : '—')}%，人均消耗 ${minI['人均消耗'] ? minI['人均消耗'].toFixed(1) : '—'}</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">回流关卡数</div>
+      <div class="ov-val purple">${refCount} / ${N}</div>
+      <div class="ov-sub">总流失率为负，这些关卡能把流失玩家拉回来</div>
+    </div>
+  `;
+
+  // 2. 指标对比卡片（固定6个核心指标）
+  const compareMetrics = [
+    { key:'人均消耗',      label:'人均消耗',     dir:'up',   fmt:v => v.toFixed(1),     unit:'' },
+    { key:'关内流失率(%)', label:'关内流失率',   dir:'down', fmt:v => (v*100).toFixed(2) + '%', unit:'' },
+    { key:'总流失率(%)',   label:'总流失率',    dir:'down', fmt:v => (v>=0?'+':'') + v.toFixed(3), unit:'' },
+    { key:'复活转化率',    label:'复活转化率',   dir:'up',   fmt:v => (v*100).toFixed(1) + '%', unit:'' },
+    { key:'平均失败剩余率', label:'失败剩余率',   dir:'up',   fmt:v => v.toFixed(3),    unit:'' },
+    { key:'人均道具使用',   label:'道具使用',     dir:'up',   fmt:v => v.toFixed(2),    unit:'' },
+  ].filter(m => parsedData.some(r => typeof r[m.key] === 'number' && !isNaN(r[m.key])));
+
+  document.getElementById('metric-grid').innerHTML = compareMetrics.map(m => {
+    const allAvg = safeAvg(parsedData, m.key);
+    const topAvg = safeAvg(top20, m.key);
+    const allVals = parsedData.map(r => r[m.key]).filter(v => typeof v === 'number' && !isNaN(v));
+    const topVals = top20.map(r => r[m.key]).filter(v => typeof v === 'number' && !isNaN(v));
+    const allMax = allVals.length ? Math.max(...allVals) : 1;
+    const topMax = topVals.length ? Math.max(...topVals) : 1;
+    const topMin = topVals.length ? Math.min(...topVals) : 1;
+    const diff = pctDiff(topAvg, allAvg);
+    const better = m.dir === 'up' ? topAvg >= allAvg : topAvg <= allAvg;
+    const badgeText = diff === null ? '无数据' : (better ? `优于均值 ${Math.abs(diff).toFixed(1)}%` : `低于均值 ${Math.abs(diff).toFixed(1)}%`);
+    const badgeCls = diff === null ? 'warn' : (better ? 'good' : 'bad');
+    const base = allMax || 1;
+    const allAvgPct = Math.min(100, (allAvg / base * 100)).toFixed(1);
+    const topAvgPct = Math.min(100, (topAvg / base * 100)).toFixed(1);
+
+    const maxRow = topVals.length ? top20.reduce((mx,r) => {
+      const v = r[m.key]; return (typeof v === 'number' && !isNaN(v) && v >= (mx[m.key] || 0)) ? r : mx;
+    }, {}) : {};
+    const minRow = topVals.length ? top20.reduce((mn,r) => {
+      const v = r[m.key]; return (typeof v === 'number' && !isNaN(v) && v <= (mn[m.key] ?? Infinity)) ? r : mn;
+    }, {}) : {};
+
+    return `<div class="mc-card">
+      <div class="mc-top">
+        <span class="mc-name">${m.label}</span>
+        <span class="mc-badge ${badgeCls}">${badgeText}</span>
+      </div>
+      <div class="mc-bars">
+        <div class="mc-bar-row">
+          <span class="mc-bar-label">Top${N}均值</span>
+          <div class="mc-bar-wrap"><div class="mc-bar-fill" style="width:${topAvgPct}%;background:${better ? '#10b981' : '#f59e0b'};"></div></div>
+          <span class="mc-bar-val">${isNaN(topAvg) ? 'N/A' : m.fmt(topAvg)}</span>
+        </div>
+        <div class="mc-bar-row">
+          <span class="mc-bar-label">全量均值</span>
+          <div class="mc-bar-wrap"><div class="mc-bar-fill" style="width:${allAvgPct}%;background:#c7d2fe;"></div></div>
+          <span class="mc-bar-val">${isNaN(allAvg) ? 'N/A' : m.fmt(allAvg)}</span>
+        </div>
+      </div>
+      <div class="mc-footer">
+        最高：<b>${isNaN(topMax) ? 'N/A' : m.fmt(topMax)}</b>（Lv.${maxRow.Level || '—'}）&nbsp;
+        最低：<b>${isNaN(topMin) ? 'N/A' : m.fmt(topMin)}</b>（Lv.${minRow.Level || '—'}）
+      </div>
+    </div>`;
+  }).join('');
+
+  // 3. 策划洞察
+  const lvSorted = [...top20].sort((a,b) => a.Level - b.Level).map(r => r.Level);
+  const highConsume = top20.filter(r => r['人均消耗'] >= safeAvg(parsedData, '人均消耗') * 1.2);
+  const negTotal = top20.filter(r => typeof r['总流失率(%)'] === 'number' && r['总流失率(%)'] < 0);
+  const lowInner = top20.filter(r => r['关内流失率(%)'] < 0.003);
+  const highCVR = top20.filter(r => typeof r['复活转化率'] === 'number' && r['复活转化率'] >= 0.15);
+  const highFail = top20.filter(r => typeof r['平均失败剩余率'] === 'number' && r['平均失败剩余率'] >= 0.42);
+
+  document.getElementById('insight-grid').innerHTML = `
+    <div class="ins-card">
+      <div class="ins-head">💰 变现表现</div>
+      <div class="ins-body">
+        Top${N} 平均消耗 <b>${isNaN(safeAvg(top20, '人均消耗')) ? 'N/A' : safeAvg(top20, '人均消耗').toFixed(1)}</b>，
+        全量均值（CSV共${parsedData.length}关） <b>${isNaN(safeAvg(parsedData, '人均消耗')) ? 'N/A' : safeAvg(parsedData, '人均消耗').toFixed(1)}</b>。
+        ${highConsume.length > 0 ? `其中 <b>${highConsume.length}</b> 个关卡消耗显著高于全量均值（≥120%）。` : '消耗在均值附近，暂无突出高消耗关卡。'}
+        最高消耗：<b>Lv.${maxC.Level || '—'}（${maxC['人均消耗'] ? maxC['人均消耗'].toFixed(1) : '—'}）</b>。
+      </div>
+      <div class="ins-chips">${highConsume.map(r => `<span class="ins-chip blue">Lv.${r.Level}</span>`).join('')}</div>
+    </div>
+    <div class="ins-card">
+      <div class="ins-head">👥 留存 & 流失</div>
+      <div class="ins-body">
+        ${negTotal.length > 0 ? `<b>${negTotal.length}</b> 个关卡总流失率为负，具备<b>回流效果</b>。` : '本批关卡总流失率均为正，关注关间衔接。'}
+        ${lowInner.length > 0 ? `另有 <b>${lowInner.length}</b> 个关卡关内流失率 &lt;0.3%，体验极顺滑，适合作为"舒缓关"穿插节奏。` : '关内流失整体在合理范围内。'}
+      </div>
+      <div class="ins-chips">
+        ${negTotal.map(r => `<span class="ins-chip green">Lv.${r.Level}</span>`).join('')}
+        ${lowInner.map(r => `<span class="ins-chip purple">Lv.${r.Level}</span>`).join('')}
+      </div>
+    </div>
+    <div class="ins-card">
+      <div class="ins-head">🎯 卡点质量</div>
+      <div class="ins-body">
+        ${highFail.length > 0 ? `<b>${highFail.length}</b> 个关卡失败剩余率 ≥0.42，玩家"差一步"感强，复活意愿高。` : '失败剩余率整体适中，卡点有优化空间。'}
+        ${highCVR.length > 0 ? `<b>${highCVR.length}</b> 个关卡复活转化率 ≥15%，付费触发效果好，可作为卡点设计参考。` : ''}
+      </div>
+      <div class="ins-chips">
+        ${highFail.map(r => `<span class="ins-chip amber">Lv.${r.Level}</span>`).join('')}
+        ${highCVR.map(r => `<span class="ins-chip blue">Lv.${r.Level}</span>`).join('')}
+      </div>
+    </div>
+  `;
+
+  // 4. 关卡号列表 + 复制按钮
+  document.getElementById('lvlist-head').innerHTML =
+    `Top ${N} 关卡号（升序，共 ${N} 个）<button class="copy-btn" onclick="copyLevels()">复制关卡号</button>`;
+  document.getElementById('lv-list').innerHTML =
+    lvSorted.map(lv => `<span class="lv-chip">Lv.${lv}</span>`).join('');
+
+  // 5. 明细表
+  document.getElementById('table-title').textContent = `评分明细（Top ${N}）`;
+  const metricCols = activeMetrics.map(m => m.name);
+  document.getElementById('result-thead').innerHTML =
+    ['排名','关卡', ...metricCols, '综合得分'].map((h,i) => `<th ${i>1?'class="r"':''}>${h}</th>`).join('');
+
+  const maxScore = Math.max(...top20.map(r => r._score));
+  const minScore = Math.min(...top20.map(r => r._score));
+  const maxVals = activeMetrics.map(m => {
+    const vals = top20.map(r => r[m.name]).filter(v => typeof v === 'number' && !isNaN(v));
+    return vals.length ? Math.max(...vals) : 0;
+  });
+  const medals = ['🥇','🥈','🥉'];
+
+  document.getElementById('result-tbody').innerHTML = top20.map((d, i) => {
+    const rank = i + 1;
+    const sPct = maxScore === minScore ? 100 : ((d._score - minScore) / (maxScore - minScore) * 100).toFixed(1);
+    const rnCls = rank===1?'rn-1':rank===2?'rn-2':rank===3?'rn-3':'rn-n';
+    const rnLbl = medals[rank-1] || rank;
+    const isRefund = typeof d['总流失率(%)'] === 'number' && d['总流失率(%)'] < 0;
+    const isLowI = d['关内流失率(%)'] < 0.003;
+
+    const metricCells = activeMetrics.map((m, j) => {
+      const v = d[m.name];
+      const valid = typeof v === 'number' && !isNaN(v);
+      if (m.name === '人均消耗') {
+        const pct = maxVals[j] > 0 ? (v / maxVals[j] * 100).toFixed(1) : 0;
+        return `<td><div class="bar-v">${v.toFixed(1)}</div><div class="bar-bg"><div class="bar-fill" style="width:${pct}%;background:#4f6ef7;"></div></div></td>`;
+      }
+      let display = valid ? (typeof v === 'number' ? v.toFixed(3) : v) : 'N/A';
+      let color = '';
+      if (m.name === '关内流失率(%)') {
+        display = valid ? (v*100).toFixed(2) + '%' : 'N/A';
+        color = v < 0.002 ? '#7c3aed' : v < 0.005 ? '#059669' : '#374151';
+      }
+      if (m.name === '总流失率(%)') {
+        display = valid ? (v >=0?'+':'') + v.toFixed(3) : 'N/A';
+        color = v < 0 ? '#059669' : v > 0.5 ? '#ef4444' : '#374151';
+      }
+      if (m.name === '复活转化率') {
+        display = valid ? (v*100).toFixed(1) + '%' : 'N/A';
+        color = v >= 0.2 ? '#d97706' : '';
+      }
+      return `<td class="r ${valid && color ? '' : ''}" style="${color ? 'color:' + color + ';font-weight:500;' : ''}">${display}</td>`;
+    }).join('');
+
+    return `<tr>
+      <td><div class="rank-num ${rnCls}">${rnLbl}</div></td>
+      <td><span class="lv-tag">Lv.${d.Level}</span>${isRefund ? '<span class="badge b-r">回流</span>' : ''}${isLowI ? '<span class="badge b-l">低流失</span>' : ''}</td>
+      ${metricCells}
+      <td class="r"><div class="sc-num">${d._score.toFixed(3)}</div><div class="sc-bg"><div class="sc-fill" style="width:${sPct}%;"></div></div></td>
+    </tr>`;
+  }).join('');
+
+  // 6. 脚注
+  const wDesc = activeMetrics.map(m => `${m.name}[${m.dir === 'up' ? '↑' : '↓'}] ${m.weight}%`).join(' · ');
+  document.getElementById('footnote').innerHTML =
+    `<b>数据范围</b>：Lv.${lvMin}–Lv.${lvMax}，CSV共 ${parsedData.length} 关，符合硬条件（关内流失≤${maxInner}% & 消耗≥${minConsume}）并参与评分共 ${all.length} 关，取综合得分前 ${N} 名。「全量均值」指 CSV 中全部 ${parsedData.length} 关的均值（含未被筛选条件覆盖的关卡），用于和 Top${N} 做对比。<br>` +
+    `<b>评分权重</b>：${wDesc}。各指标 min-max 标准化后加权求和，缺失值以该指标均值填充。`;
+
+  document.getElementById('result-wrap').className = 'result-wrap show';
+  document.getElementById('result-wrap').scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+// 复制关卡号
+function copyLevels() {
+  const chips = [...document.querySelectorAll('#lv-list .lv-chip')].map(el => el.textContent.replace('Lv.',''));
+  if (!chips.length) return;
+  navigator.clipboard.writeText(chips.join(', ')).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    if (btn) { btn.textContent = '✓ 已复制'; setTimeout(() => btn.textContent = '复制关卡号', 1500); }
+  });
+}
+
+// 导出 CSV
+function exportCSV() {
+  if (!top20Data.length) return;
+  const metricNames = activeMetrics.map(m => m.name);
+  const header = ['排名','关卡', ...metricNames, '综合得分'];
+  const rows = top20Data.map((r,i) => {
+    const row = [i+1, r.Level];
+    metricNames.forEach(n => {
+      const v = r[n];
+      row.push(isNaN(v) ? '' : (typeof v === 'number' ? v.toFixed(4) : v));
+    });
+    row.push(r._score.toFixed(4));
+    return row;
+  });
+  const csv = [header, ...rows].map(r => r.join(',')).join('\n');
+  const blob = new Blob(['\uFEFF' + csv], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = `top${top20Data.length}_levels.csv`; a.click();
+}
+</script>
+
+</body>
+</html>
