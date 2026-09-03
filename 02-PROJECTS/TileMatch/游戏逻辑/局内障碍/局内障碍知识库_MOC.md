@@ -178,7 +178,7 @@ TileMatch 的障碍系统分为两大类：
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]] — 返回项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 返回项目总入口
 - [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]] — 高层综述（障碍系统章节）
 - [[分析-死局逻辑与改进方案-v1|死局逻辑与改进方案]] — 相关：障碍Tile 对死局的影响
 

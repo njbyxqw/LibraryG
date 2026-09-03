@@ -136,8 +136,6 @@ cat_order: 007
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-文档
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]文档
 
 - [[分析-局内道具逻辑梳理]] - 局内道具完整架构与逻辑分析

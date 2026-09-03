@@ -88,9 +88,7 @@ private List<TileTypeConfig> GetTileTypeListForNonBonus(out int levelConfigCount
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-文档
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]文档
 
 - [[分析-AssignTileTypeByDepth分池打乱策略-v1|AssignTileTypeByDepth 分池打乱策略]] — 完整算法流程
 - `AssignTileTypeByDepthStrategy.cs` — 源码文件

@@ -636,4 +636,4 @@ flowchart LR
 - [[工具-牌局生成深度显示-v1|牌局生成深度显示工具]] — Scene Gizmos + Console 统计，验证分池规则
 - [[分析-障碍Tile生成与序列逻辑-v1|障碍Tile生成与序列逻辑]] — 序列容器类型全览、DDA 调控
 - [[分析-死局逻辑与改进方案-v1|死局逻辑与改进方案]]
-- [[_MOC|TileMatch 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 项目总入口

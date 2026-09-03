@@ -253,4 +253,4 @@ public async Task ProcessAsync(ChainedAttackActionData data)
 - [[分析-RocketV2完整逻辑-v2（重构版）|RocketV2 完整逻辑]] — 配套分析文档
 - [[报告-RocketVL闪电球视觉替换|RocketVL 闪电球视觉替换]] — 相关视觉改造方案
 - [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]] — 高层综述
-- [[_MOC|TileMatch 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 项目总入口

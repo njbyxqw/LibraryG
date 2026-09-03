@@ -18,7 +18,7 @@ cat_order: 001
 
 | 链接 | 关联文档 | 说明 | 更新日期 |
 |------|---------|------|---------|
-| https://11fa2da1dd8e42aabc7fd8b8ee0848ab.app.codebuddy.work | [[报告-关卡文件追踪工具\|关卡文件追踪工具]] | Level Tracker 关卡文件变更追踪报告（CloudStudio 部署） | 2026-07-13 |
+| https://11fa2da1dd8e42aabc7fd8b8ee0848ab.app.codebuddy.work | [[报告-关卡文件追踪工具|关卡文件追踪工具]] | Level Tracker 关卡文件变更追踪报告（CloudStudio 部署） | 2026-07-13 |
 
 ---
 
@@ -49,7 +49,7 @@ cat_order: 001
 | `2026-06-29-11-45-23_关卡数据分析工具_v2.html` | `工具/` | V2 时间快照版 |
 | `2026-06-29-11-45-23_关卡数据分析工具_v3.html` | `工具/` | V3 时间快照版 |
 
-> 关联 Markdown 文档：[[报告-关卡数据分析工具]]、[[报告_关卡数据分析工具_V3_2026-07-02]]
+> 关联 Markdown 文档：[[报告-关卡数据分析工具]]、[[报告-关卡数据分析工具-V3-2026-07-02]]
 > 原始来源：`D:/Downloads/关卡数据分析工具.html`
 
 ---
@@ -64,6 +64,6 @@ cat_order: 001
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 项目总入口
 - [[报告-关卡文件追踪工具]] — Level Tracker 工具文档
 - [[报告-关卡数据分析工具]] — 关卡数据分析工具文档

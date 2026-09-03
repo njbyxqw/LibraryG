@@ -137,6 +137,4 @@ pandas, numpy, scikit-learn, lightgbm, xgboost, matplotlib, seaborn, joblib
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]

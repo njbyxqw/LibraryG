@@ -247,9 +247,7 @@ JOIN ta.v_user_48 u
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]
 
 - [[报告-Tile打点事件梳理_2026-06-08]]
 - [[分析-Tile打点解析-v1]]

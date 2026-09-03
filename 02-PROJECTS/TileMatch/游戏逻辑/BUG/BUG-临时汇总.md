@@ -20,6 +20,4 @@ date: 2026-07-24
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]

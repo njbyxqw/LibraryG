@@ -176,4 +176,4 @@ date: 2026-07-24
 - `D:\LibraryG\02-PROJECTS\TileMatch\打点\关卡数据报表_难度指标拓展版(lv_name).sql` — 关卡级聚合 SQL，部分逻辑可复用
 - `D:\LibraryG\02-PROJECTS\TileMatch\打点\报告-Tile打点事件梳理_2026-06-08.md` — 打点事件完整清单
 - `D:\meatloaf_client01\client\Assets\Game\TileV2\Scripts\UILogic\Data\TaDataManager.cs` — 打点代码实现
-- [[_MOC|TileMatch 知识库 MOC]]
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]

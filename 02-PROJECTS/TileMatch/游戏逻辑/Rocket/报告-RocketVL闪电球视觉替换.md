@@ -536,9 +536,7 @@ RocketVLLightningViewAction (执行视觉效果)
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]
 
 - [[分析-RocketV2完整逻辑-v2（重构版）]]
 - [[分析-RocketV2技术实现-v1]]

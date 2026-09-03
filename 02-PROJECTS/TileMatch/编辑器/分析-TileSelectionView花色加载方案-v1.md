@@ -222,4 +222,4 @@ AssetDatabase.LoadAssetAtPath() (加载图标资源)
 
 - [[规范-本地扩展开发|本地扩展开发规范]] — 后续转为本地扩展方案
 - [[分析-关卡编辑器界面与功能逻辑梳理-v1|关卡编辑器界面与功能逻辑梳理]] — 编辑器架构总览
-- [[_MOC|TileMatch 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 项目总入口

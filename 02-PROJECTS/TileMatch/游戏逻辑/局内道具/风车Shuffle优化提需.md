@@ -232,4 +232,4 @@ available = min(actualNeed, 非高亮层同花色数, 剩余可用高亮牌数)
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]] — 返回项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 返回项目总入口

@@ -6,6 +6,9 @@ tags:
   - docs-index
 type: index
 status: finalized
+project: TileScape
+lifecycle: current
+verification: index-only
 priority: medium
 cat_order: 020
 ---
@@ -128,5 +131,5 @@ cat_order: 020
 
 ## 关联
 
-- [[_MOC|TileScape 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileScape/_MOC|TileScape 知识库 MOC]] — 项目总入口
 - [[代码框架/代码框架总览|代码框架总览]] — 程序集/目录/关键类索引

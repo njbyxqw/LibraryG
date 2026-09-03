@@ -1,0 +1,17 @@
+# Keep shared text stable across macOS and Windows.
+* text=auto
+*.md text eol=lf
+*.json text eol=lf
+*.canvas text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.html text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.db binary

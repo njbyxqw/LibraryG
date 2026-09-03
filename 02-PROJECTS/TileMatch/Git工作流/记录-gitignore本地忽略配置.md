@@ -102,8 +102,6 @@ git status
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]]
-
-文档
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]文档
 
 - [[规范-本地扩展开发|本地扩展开发规范]] - 本地编辑器扩展开发规范（对应 `client/Assets/Editor/` 忽略项）

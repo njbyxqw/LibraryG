@@ -290,4 +290,4 @@ revive_count * 900 + shuffle_use * 900 + hint_use * 900 + remove_use * 1300 + re
 
 ## 关联
 
-- [[_MOC|TileMatch 知识库 MOC]] — 返回项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 返回项目总入口

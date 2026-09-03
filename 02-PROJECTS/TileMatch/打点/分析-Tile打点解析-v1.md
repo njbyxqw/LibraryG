@@ -165,7 +165,7 @@ GROUP BY level_id, result
 - [[分析-Tile打点事件文档SQL参考-v1|Tile 打点事件文档 SQL 参考]] — 配套 SQL 参考文档
 - [[报告-Tile打点事件梳理_2026-06-08|Tile 打点事件梳理]] — 打点事件梳理报告
 - [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]] — 高层综述
-- [[_MOC|TileMatch 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 项目总入口
 
 ---
 

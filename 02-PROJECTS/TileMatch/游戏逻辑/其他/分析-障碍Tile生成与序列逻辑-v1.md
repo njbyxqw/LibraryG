@@ -680,4 +680,4 @@ public Tile TryExchangeTile(Tile target, TileMatchGameContext context)
 - [[工具-牌局生成深度显示-v1|牌局生成深度显示工具]] — Scene Gizmos + Console 统计
 - [[分析-死局逻辑与改进方案-v1|死局逻辑与改进方案]] — 死局判定
 - [[局内障碍知识库_MOC|局内障碍知识库]] — 障碍 Tile 全览
-- [[_MOC|TileMatch 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]] — 项目总入口

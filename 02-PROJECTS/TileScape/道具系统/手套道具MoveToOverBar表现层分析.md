@@ -2,7 +2,9 @@
 title: 手套道具 MoveToOverBar 表现层分析
 tags: [TileScape, 道具, 表现层, MoveToOverBar, 手套]
 type: tech-analysis
-status: finalized
+status: historical
+lifecycle: historical
+source: "origin/main ae41b0e；基于 feat-new_movetooverbar_prop 的静态历史审计"
 date: 2026-08-10
 ---
 

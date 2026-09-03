@@ -81,24 +81,16 @@ status: active
 - 与核心 `templates` 插件共存：本项目以 Templater 为主（核心 templates 也启用但基本不用）。
 - `enable_system_commands: false` 是好的安全默认，保持。
 
-## 四、Excalidraw（v2.25.0）
+## 四、Excalidraw（本机临时区）
 
 **用途**：在 Obsidian 内画手绘图、流程图、架构图，可嵌入 Markdown 笔记。
 
-**当前配置**：
-- 绘图目录：`Excalidraw/`
-- 自动保存：开启（桌面 60s 间隔）
-- 模板：`Excalidraw/Template.excalidraw`（如不存在可自行创建）
-- AI 功能：已开启但**所有 provider 的 API key 均为空** → 实际不可用
-- CJK 字体：`loadChineseFonts: false`（中文渲染依赖系统字体）
-
-**当前使用情况**：仓库内已有 **1 张图** — `Excalidraw/Drawing 2026-07-08 20.39.06.excalidraw.md`（以 `.excalidraw.md` 形式存储，正文是 JSON）。
+**同步边界**：`Excalidraw/` 与仅用于该目录的 `路径图工作candy.canvas` 均为本机临时工作区，已排除出 Git；两台设备可各自保留不同内容。插件设置和可能的 API 凭据也不以共享库中的本节为依据。
 
 **使用指导**：
-1. 命令面板搜 `Excalidraw: Create a new drawing` 新建图；文件落在 `Excalidraw/`。
-2. 在 Markdown 中用 `![[图名.excalidraw]]` 嵌入，或 `[[图名]]` 链接。
-3. 想支持中文手写感，建议把 `loadChineseFonts` 打开，或放字体到 `Excalidraw/CJK Fonts`。
-4. AI 绘图需先在设置里填任一 provider 的 API key 才生效。
+1. 命令面板搜 `Excalidraw: Create a new drawing` 新建图；文件落在本机 `Excalidraw/`。
+2. 临时图可在本机笔记中嵌入或链接；不要让需要跨设备访问的共享笔记依赖其中的文件。
+3. 若图稿成为长期资料，先导出或整理为明确要共享的资源，再单独加入知识库。
 
 ## 五、Local REST API with MCP（v4.1.3，⚠️ 含密钥）
 

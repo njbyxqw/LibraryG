@@ -567,6 +567,6 @@ Board.InitializeFromLevelConfig()
 | shallowGroupsWinStreakGT2 | 1 | 连胜>2时浅层组数 |
 
 ## 关联
-- [[_MOC|TileMatch 知识库 MOC]]
+- [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]
 - [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]]
 - [[分析-RocketV2技术实现-v1|RocketV2 技术实现]]

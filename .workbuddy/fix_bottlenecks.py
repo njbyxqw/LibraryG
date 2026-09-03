@@ -159,54 +159,58 @@ lengqidong_file = VAULT / "HOME-冷启动指南.md"
 if lengqidong_file.exists():
     content = lengqidong_file.read_text(encoding='utf-8-sig')
     if 'workbuddy_sync' in content:
-        # Find and remove the workbuddy_sync line (only report if actually changed)
+        # Find and remove the workbuddy_sync line
         lines = content.split('\n')
         new_lines = []
-        changed = False
         for line in lines:
             if 'workbuddy_sync' in line and '废弃' not in line:
                 new_lines.append(line.replace('`workbuddy_sync: true`', '~~`workbuddy_sync: true`（已废弃）~~'))
-                changed = True
             else:
                 new_lines.append(line)
-        if changed:
-            content = '\n'.join(new_lines)
-            lengqidong_file.write_text(content, encoding='utf-8')
-            print(f"[FIX] HOME-冷启动指南: workbuddy_sync → 标记为已废弃")
-            fixes_applied.append("HOME-冷启动指南: workbuddy_sync marked deprecated")
-        else:
-            print(f"[SKIP] HOME-冷启动指南: workbuddy_sync already deprecated")
+        content = '\n'.join(new_lines)
+        lengqidong_file.write_text(content, encoding='utf-8')
+        print(f"[FIX] HOME-冷启动指南: workbuddy_sync → 标记为已废弃")
+        fixes_applied.append("HOME-冷启动指南: workbuddy_sync marked deprecated")
     else:
         print(f"[SKIP] HOME-冷启动指南: no workbuddy_sync")
 
-# ===== 7. Add [[_MOC]] backlinks to docs missing them (dynamic detection) =====
-# Mirror scan_vault_v2.py reverse-MOC check: any TileMatch doc (non-_trash, non-_) that
-# links to no _MOC (top-level or sub-MOC) gets a backlink appended. Replaces the former
-# hardcoded 12-file list so new docs are auto-covered every run.
-def _has_moc_backlink(content):
-    for m in re.finditer(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content):
-        if '_MOC' in m.group(1).strip():
-            return True
-    return False
+# ===== 7. Add [[_MOC]] backlinks to 12 docs missing them =====
+missing_moc = [
+    ("Git工作流/记录-gitignore本地忽略配置", TILEMATCH / "Git工作流" / "记录-gitignore本地忽略配置.md"),
+    ("参考/参考-关卡资源路径速查", TILEMATCH / "参考" / "参考-关卡资源路径速查.md"),
+    ("打点/分析-Tile打点事件文档SQL参考-v1", TILEMATCH / "打点" / "分析-Tile打点事件文档SQL参考-v1.md"),
+    ("打点/报告-关卡难度ML训练管线_Phase3", TILEMATCH / "打点" / "报告-关卡难度ML训练管线_Phase3.md"),
+    ("编辑器/分析-编辑器统计功能", TILEMATCH / "编辑器" / "分析-编辑器统计功能.md"),
+    ("游戏逻辑/BUG/BUG-临时汇总", TILEMATCH / "游戏逻辑" / "BUG" / "BUG-临时汇总.md"),
+    ("游戏逻辑/BUG/BUG-AssignTileTypeByDepth-单花色越界崩溃-v1", TILEMATCH / "游戏逻辑" / "BUG" / "BUG-AssignTileTypeByDepth-单花色越界崩溃-v1.md"),
+    ("游戏逻辑/Rocket/报告-RocketVL闪电球视觉替换", TILEMATCH / "游戏逻辑" / "Rocket" / "报告-RocketVL闪电球视觉替换.md"),
+    ("游戏逻辑/局内道具/Shuffle改造AB测试方案", TILEMATCH / "游戏逻辑" / "局内道具" / "Shuffle改造AB测试方案.md"),
+    ("游戏逻辑/局内障碍/障碍牌/报告-blockerdda分支调控逻辑变更排查", TILEMATCH / "游戏逻辑" / "局内障碍" / "障碍牌" / "报告-blockerdda分支调控逻辑变更排查.md"),
+    ("工具/数据对比/记录-关卡数据对比工具-工作记录", TILEMATCH / "工具" / "数据对比" / "记录-关卡数据对比工具-工作记录.md"),
+    ("工具/替换对照/记录-关卡替换对照表工具-工作记录", TILEMATCH / "工具" / "替换对照" / "记录-关卡替换对照表工具-工作记录.md"),
+]
 
-for fpath in sorted(TILEMATCH.rglob("*.md")):
-    rel = str(fpath.relative_to(VAULT))
-    if '_trash' in rel:
+for label, fpath in missing_moc:
+    if not fpath.exists():
+        fixes_errors.append(f"NOT FOUND: {fpath}")
+        print(f"[MISS] {label}: file not found")
         continue
-    if fpath.stem.startswith('_'):
+    
+    content = fpath.read_text(encoding='utf-8-sig')
+    
+    # Check if [[_MOC]] already exists
+    if '[[_MOC]]' in content:
+        print(f"[SKIP] {label}: already has [[_MOC]]")
         continue
-    try:
-        content = fpath.read_text(encoding='utf-8-sig')
-    except:
-        continue
-    if _has_moc_backlink(content):
-        continue
-
-    label = str(fpath.relative_to(TILEMATCH))
+    
+    # Check if it has a ## 关联 section
     if '## 关联' in content:
+        # Add before ## 关联
         content = content.replace('\n## 关联', '\n## 关联\n\n- [[_MOC|TileMatch 知识库 MOC]]')
     else:
+        # Append at end
         content = content.rstrip() + '\n\n---\n\n## 关联\n\n- [[_MOC|TileMatch 知识库 MOC]]\n'
+    
     fpath.write_text(content, encoding='utf-8')
     print(f"[FIX] {label}: added [[_MOC]] backlink")
     fixes_applied.append(f"MOC backlink: {label}")
