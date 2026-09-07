@@ -13,6 +13,9 @@ lifecycle: current-reference
 # INBOX 对话工作区工作流
 
 > 当前定位：仅在整理 `00-INBOX/`、处理临时对话产物或恢复旧 inbox-organizer 流程时读取；不作为日常 TS/MT 代码逻辑读取任务的必读规范。
+>
+> [!note] 落点修正（2026-09-04）
+> 规范/流程文档的落点已由旧的 `03-KNOWLEDGE/工作流/` 更正为 `02-PROJECTS/Agent/工作流/`，以 [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]] 为准。
 
 ## 定位
 
@@ -47,7 +50,7 @@ lifecycle: current-reference
 │       │                                                     │
 │       ▼  对话中形成规范/结论                                  │
 │       │                                                     │
-│       ├── 规范类 → 移动到 03-KNOWLEDGE/工作流/                │
+│       ├── 规范类 → 移动到 02-PROJECTS/Agent/工作流/           │
 │       ├── 项目类 → 移动到 02-PROJECTS/<项目名>/               │
 │       ├── 知识类 → 移动到 03-KNOWLEDGE/<主题>/                │
 │       └── 日志类 → 同步到 01-DAILY/YYYY-MM-DD.md              │
@@ -65,7 +68,7 @@ lifecycle: current-reference
 
 | 产物类型 | 目标目录 | 示例 |
 |---------|---------|------|
-| 规范/流程文档 | `03-KNOWLEDGE/工作流/` | 分类标准、同步流程 |
+| 规范/流程文档 | `02-PROJECTS/Agent/工作流/` | 分类标准、同步流程 |
 | 技术知识 | `03-KNOWLEDGE/<主题>/` | Unity 技巧、编辑器原理 |
 | 项目文档/报告 | `02-PROJECTS/<项目名>/` | TileMatch 功能分析 |
 | 日志 | `01-DAILY/YYYY-MM-DD.md` | 每日工作记录 |

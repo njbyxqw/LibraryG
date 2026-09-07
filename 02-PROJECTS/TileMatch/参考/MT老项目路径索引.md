@@ -1,6 +1,6 @@
 ---
 title: MT 老项目路径索引
-date: 2026-08-05
+date: 2026-09-03
 type: reference
 status: finalized
 priority: high
@@ -22,6 +22,7 @@ tags: [TileMatch, Meatloaf, MT, 路径索引, 迁移对照]
 | MT Unity Client | `/Users/dean/Downloads/meatloaf_client/client` | 主要 Unity 工程 |
 | MT Agent 入口 | `/Users/dean/Downloads/meatloaf_client/client/AGENTS.md` | 进入 MT 代码任务前优先读取 |
 | MT 记忆 | `/Users/dean/Downloads/meatloaf_client/.workbuddy/memory/` | 少量历史 memory |
+| MT AI 记忆同步 | `02-PROJECTS/TileMatch/参考/同步-项目AI记忆与源码旁文档-2026-09-03.md` | LG 中登记的项目 AI 记忆、源码旁文档与状态边界 |
 | LG 中 MT 知识库 | `02-PROJECTS/TileMatch/` | MT/TileMatch 逻辑、工具、复盘、报告沉淀 |
 
 ---
@@ -77,5 +78,6 @@ tags: [TileMatch, Meatloaf, MT, 路径索引, 迁移对照]
 ## 关联
 
 - [[02-PROJECTS/TileMatch/_MOC|TileMatch 知识库 MOC]]
+- [[02-PROJECTS/TileMatch/参考/同步-项目AI记忆与源码旁文档-2026-09-03|项目 AI 记忆与源码旁文档同步]]
 - [[02-PROJECTS/TileScape/_MOC|TileScape 知识库 MOC]]
 - [[规范-多项目工作流与复现|多项目工作流与复现]]

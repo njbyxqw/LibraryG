@@ -1,6 +1,6 @@
 ---
 title: Agent Memory
-date: 2026-08-05
+date: 2026-09-03
 type: memory
 status: current
 tags: [Agent, AI, LibraryG, MEMORY, 工作流]
@@ -16,11 +16,11 @@ tags: [Agent, AI, LibraryG, MEMORY, 工作流]
 
 | 简称 | 路径 | 当前定位 |
 |---|---|---|
-| LG / LibraryG | `/Users/dean/LibraryG` | 主控知识库、Obsidian vault、长期记忆、Daily、规范、复盘、跨项目检索 |
-| MT / TileMatch 老项目 | `/Users/dean/Downloads/meatloaf_client` | 旧项目、历史行为基线、旧代码来源 |
-| TS / TileScape | `/Users/dean/TileScape` | 从 MT 分离出的优化项目，承载 TileV2 主干迁移和后续优化 |
+| LG / LibraryG | `/Users/dean/LibraryG` | 唯一知识库与规范源、Obsidian vault、长期记忆、Daily、规范、复盘、跨项目检索 |
+| MT / TileMatch 老项目 | `/Users/dean/Downloads/meatloaf_client` | 项目执行空间、旧项目、历史行为基线、旧代码来源 |
+| TS / TileScape | `/Users/dean/TileScape` | 项目执行空间、从 MT 分离出的优化项目，承载 TileV2 主干迁移和后续优化 |
 
-项目之间不固定主次。旧知识库以 MT 内容居多是历史工作自然沉淀；后续 TS 内容增多也应随实际工作自然发生。
+项目之间不固定主次，但知识库和规范只有一个主源：LG。旧知识库以 MT 内容居多是历史工作自然沉淀；后续 TS 内容增多也应随实际工作自然发生。
 
 ---
 
@@ -41,12 +41,17 @@ tags: [Agent, AI, LibraryG, MEMORY, 工作流]
 ## AI 读取 LG 稳定协议
 
 - 先从 `HOME.md`、`工作空间总纲.md`、本文件和项目 `_MOC.md` 逐级定位，不默认全盘搜索。
+- LG 是 TS / MT 查找、归档、历史、资源定位、跨项目任务、知识入库、自动化和规范维护的唯一上层路由；项目内 `AGENTS.md`、`Docs/Knowledge/` 或 `.workbuddy/memory/` 是局部执行入口，不能替代 LG MOC 或 LG 规范。
+- TS / MT 必须同步并遵守 LG 最新规范；项目内 AI 记忆或代码旁文档如与 LG 冲突，只能作为差异线索，不能覆盖 LG。
+- 子项目当前代码事实优先于 LG 历史记录；发现差异时保留来源、状态和验证边界，不静默覆盖旧结论。
 - 明确任务域后，只在对应目录内局部检索；找不到再沿 MOC 上一级扩大范围。
 - 遇到 `_MOC.md`、`_项目概览.md` 等同名入口，跨项目链接和引用必须写完整 vault 路径。
 - 回答或写文档时说明依据文件；对话推断、草稿、旧方案不得写成正式规则。
-- 任务形成可复用代码逻辑、路径、配置、资源或稳定结论时，按入库规范更新 Daily、MOC 和必要索引；纯小问答或无新增事实时不强行造文档。
+- 有代码阅读、分析、实现、调研、方案或资料整理的任务，收尾前必须检查 Daily、稳定文档、MOC/索引和来源边界；纯小问答或无新增事实时不强行造文档。
+- 任务形成可复用代码逻辑、路径、配置、资源或稳定结论时，按入库规范更新 Daily、MOC 和必要索引；没有稳定结论时，也要在 Daily 写明“仅定位/未形成可入库结论”。
 - 周期巡检、自动化补漏或明显遗漏时，再按 [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]] 检查：Daily、游戏逻辑/代码定位落点、MOC/CodeMap 导航和来源/验证边界。
 - WorkBuddy 接管后，Codex 仍负责知识判断与取证；仅将含精确正文、目标、锚点、幂等标记和验证项的 `risk: low` 任务包放入 `.workbuddy/knowledge-closure/queue/ready/`。详见 [[02-PROJECTS/Agent/工作流/方案-WorkBuddy日志知识闭环自动化实施|WorkBuddy 日志知识闭环自动化实施方案]]。
+- 自动化提示必须固定读取 LG 当前规范，并把 TS / MT 当作事实来源和执行空间；自动化不得写 TS / MT 目录、不得用项目内记忆自行生成规范。
 
 ---
 

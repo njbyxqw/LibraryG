@@ -8,7 +8,7 @@ updated: 2026-08-05
 
 # LibraryG — Agent / AI + Obsidian 工作流
 
-> 个人知识管理 + 多 Agent / AI 协作工作流。以 Obsidian 为知识载体，LG 作为通用 AI 可读取、可写入、可检索的长期知识库。
+> 个人知识管理 + 多 Agent / AI 协作工作流。以 Obsidian 为知识载体；LG 是唯一知识库与规范源，TS / MT 仅为项目执行空间和事实来源，必须同步遵守 LG 当前规范。
 
 ---
 
@@ -31,9 +31,9 @@ updated: 2026-08-05
 
 | 空间 | 本机路径 | 定位 |
 |------|----------|------|
-| LibraryG | `/Users/dean/LibraryG` | 主控知识库 / 总纲空间 / Obsidian vault |
-| MT 老项目 | `/Users/dean/Downloads/meatloaf_client` | 旧项目代码与历史行为源 |
-| TileScape | `/Users/dean/TileScape` | 从 MT 分离出的优化项目，近期工作会更多 |
+| LibraryG | `/Users/dean/LibraryG` | 唯一知识库 / 唯一规范源 / Obsidian vault |
+| MT 老项目 | `/Users/dean/Downloads/meatloaf_client` | 项目执行空间、旧项目代码与历史行为源 |
+| TileScape | `/Users/dean/TileScape` | 项目执行空间、从 MT 分离出的优化项目 |
 | Obsidian 配置 | `/Users/dean/LibraryG/.obsidian` | 知识浏览、双链、模板、Dataview |
 
 ---
@@ -246,7 +246,7 @@ obsidian folders                              # 列出所有文件夹
 [[知识库文件污染事故总结_2026-07-03|知识库污染事故]] · [[复盘-牌底笔刷功能开发|牌底笔刷复盘]]
 
 ### 通用知识
-[[03-KNOWLEDGE/Unity/Unity 开发笔记|Unity 开发]] · [[03-KNOWLEDGE/Unity|Unity 速查]] · [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器]] · [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑]]
+[[03-KNOWLEDGE/Unity/Unity 开发笔记|Unity 开发]] · [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器]] · [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑]]
 
 ### 每日 & 模板
 [[01-DAILY/|每日日志]]（53 篇） · [[01-DAILY/summaries/近期工作进度与待办-2026-08-20|当前进度与待办]] · [[01-DAILY/summaries/阶段工作汇总-2026-07-02至2026-08-14|近期阶段汇总]] · [[01-DAILY/summaries/近期工作汇总-2026-07-01|上一阶段汇总]]

@@ -5,7 +5,7 @@ type: index
 status: finalized
 project: TileScape
 lifecycle: current
-date: 2026-08-04
+date: 2026-09-03
 aliases:
   - TileScape 知识库_MOC
 ---
@@ -16,6 +16,22 @@ aliases:
 
 ---
 
+## 任务路由
+
+| 需求 | 入口 |
+|---|---|
+| 项目概览 | [[02-PROJECTS/TileScape/_项目概览|项目概览]] |
+| 代码框架 | [[代码框架/代码框架总览|代码框架总览]] |
+| Docs 索引 | [[参考/Docs文档索引|Docs 文档索引]] |
+| 项目 AI 记忆 / Docs 入口 | [[参考/同步-项目AI记忆与Docs入口-2026-09-03|项目 AI 记忆与 Docs 入口同步]] |
+| 快速定位 / 资源替换 | [[参考/快速定位与资源替换索引|快速定位与资源替换索引]] |
+| GM 模块 | [[GM工具/_MOC|GM 工具 MOC]] |
+| 游戏逻辑 | 见下方「游戏逻辑」节（无独立 MOC，逐条列于本文档） |
+| 跨项目持续任务 | [[03-KNOWLEDGE/Game-Logic/任务-元素牌开发|元素牌开发任务]]：TS 当前实现、MT 历史机制对位 |
+| 可迁移知识 | [[03-KNOWLEDGE/_MOC|通用知识 MOC]] |
+
+---
+
 ## 快速入口
 
 - [[02-PROJECTS/TileScape/_项目概览|项目概览]] — TileScape 项目基本信息
@@ -23,6 +39,7 @@ aliases:
 - [[代码框架/梳理-GM工具注册与扩展链路-2026-08-26|GM 工具注册与扩展链路]] — `MODULE_GM` 门控、注册中心、面板执行与后续新增工具边界
 - [[GM工具/_MOC|GM 工具]] — 新增与使用规则、具体 GM 工具说明与验证边界
 - [[参考/Docs文档索引|Docs 文档索引]] — Docs/ + Doc/ 未迁移文档分类清单
+- [[参考/同步-项目AI记忆与Docs入口-2026-09-03|项目 AI 记忆与 Docs 入口同步]] — TS `AGENTS.md`、`Docs/Knowledge`、`.workbuddy/memory` 与 LG 的入口边界
 - [[参考/快速定位与资源替换索引|快速定位与资源替换索引]] — 多语言、配置、UI 与资源替换入口
 - [[规范-多项目工作流与复现|多项目工作流与复现]] — MT / TS 同源代码下的记录、对照与复现闭环
 

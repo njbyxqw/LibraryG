@@ -20,6 +20,7 @@ tags: [LibraryG, MOC, 导航, Obsidian, 工作流]
 - **项目 MOC 做目录**：项目 `_MOC.md` 负责模块导航、常用入口、索引，不写成长篇正文。
 - **子 MOC 做专题**：障碍、工具、MEMORY 等专题可以有子 MOC，但名称必须带领域前缀或唯一 alias。
 - **历史不硬删**：遇到大 MOC 或旧 MOC，优先增加路由表和别名说明，不直接删减有意义内容。
+- **项目 MOC 优先**：项目总 MOC 是项目事实的第一入口；Knowledge MOC 只路由可迁移知识，不能替代项目 MOC。
 
 ---
 
@@ -31,6 +32,8 @@ HOME.md                         # 全库主路由，只放项目入口和高价�
 工作空间总纲.md                  # 空间关系和工作原则
 02-PROJECTS/<项目>/_MOC.md       # 项目入口
 02-PROJECTS/<项目>/<专题>/*MOC.md # 专题入口
+03-KNOWLEDGE/_MOC.md              # 可迁移知识层入口
+02-PROJECTS/Agent/工作流/_MOC.md   # LG 工作流与维护规范入口
 02-PROJECTS/Agent/工作流/*       # 跨项目工作流、规范、导航规则
 ```
 
@@ -113,6 +116,8 @@ MOC 不宜承载：
 | 工作空间总纲 | `工作空间总纲.md` | 多空间职责边界 |
 | TileMatch MOC | `02-PROJECTS/TileMatch/_MOC.md` | MT/TileMatch 项目入口 |
 | TileScape MOC | `02-PROJECTS/TileScape/_MOC.md` | TS/TileScape 项目入口 |
+| 通用知识 MOC | `03-KNOWLEDGE/_MOC.md` | 可迁移知识层入口；只路由可迁移知识，不替代项目 MOC |
+| Agent 工作流 MOC | `02-PROJECTS/Agent/工作流/_MOC.md` | LG 工作流、维护规范、MOC/INBOX/Daily/复现入口 |
 | TileMatch 障碍系统 MOC | `02-PROJECTS/TileMatch/游戏逻辑/局内障碍/局内障碍知识库_MOC.md` | 障碍系统专题入口 |
 | Agent MEMORY MOC | `02-PROJECTS/Agent/WorkBuddy-MEMORY/WB-MEMORY_MOC.md` | Memory 蒸馏与存档入口；目录名保留 WorkBuddy 历史来源 |
 

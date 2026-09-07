@@ -1,6 +1,6 @@
 ---
 title: TileScape 项目文档索引
-date: 2026-08-04
+date: 2026-09-03
 tags:
   - tilescape
   - docs-index
@@ -17,7 +17,7 @@ cat_order: 020
 
 > 本文档是 `D:\TileScape\Docs\` 与 `D:\TileScape\Doc\` 下未迁移文档的**索引清单**。文档原文仍在项目内，仅做分类整理与价值备注；后续有需求再按主题迁移进知识库。
 
-## 一、Docs/（项目设计 / 迁移文档，58 项）
+## 一、Docs/（项目设计 / 迁移文档，58+ 项，持续补充）
 
 ### 1. 迁移总览 / 全局审计（7）
 | 文档 | 备注 |
@@ -27,6 +27,7 @@ cat_order: 020
 | `TileV2_Migration_V1_Phase_Report.md` | V1 阶段报告 |
 | `TileV2_NonMigrated_Content.md` | 未迁移内容清单 |
 | `TileV2_Old_vs_Current_Exhaustive_Behavior_Audit.md` | 新旧行为穷举审计 |
+| `Meatloaf_TileScape_Full_Parity_Audit_2026-08-04.md` | MT / TS 全量对齐审计 |
 | `Main_vs_Dev_Full_Code_Review_2026-08-01.md` | 主分支 vs dev 全量代码审查 |
 | `DELETION_LOG.md` | 删除记录 |
 
@@ -107,7 +108,19 @@ cat_order: 020
 |---|---|
 | `TileScape_GoogleDrive_Config_Profile_Full_Audit_2026-07-27.md` | 配置/Profile 审计 |
 | `TileScape_UserLayer_Config_Completeness_Audit_And_Repair_Plan_2026-08-03.md` | UserLayer 配置完整性审计与修复 |
+| `TileScape_UserLayer_MainThread_Performance_Optimization_Implementation_Plan_2026-08-04.md` | UserLayer 主线程性能优化实施计划 |
 | `UserLayer_Full_Migration_Implementation_Plan.md` | UserLayer 全量迁移计划 |
+
+### 12. 近期漏列补充（2026-08-04 之后）
+
+| 文档 | 备注 |
+|---|---|
+| `DLC_Full_Impact_And_Compatibility_Audit_2026-08-11.md` | DLC 全量影响与兼容性审计；后续稳定结论优先看 LG 游戏逻辑下的 DLC 文档。 |
+| `TileV2_Analytics_Meatloaf_Event_Field_Behavior_Parity_Audit_2026-08-06.md` | TileV2 打点事件字段行为与 MT 对齐审计。 |
+| `TileV2_Analytics_Meatloaf_Parity_Audit_2026-08-06.md` | TileV2 打点与 MT 对齐审计。 |
+| `TileScape_Local_Notification_Meatloaf_Alignment_Implementation_Plan_2026-08-06.md` | 本地通知与 Meatloaf 对齐实施计划。 |
+| `TileScape_Three_Subrepositories_Current_vs_Dev_Function_Update_Report_2026-08-13.md` | 三个子仓库 current/dev 功能更新差异报告。 |
+| `INTERFACE_REVIEW_REPORT.md` | 接口审查报告。 |
 
 ## 二、Doc/（Meatloaf 源项目迁移过程记录，12 项）
 
@@ -132,4 +145,5 @@ cat_order: 020
 ## 关联
 
 - [[02-PROJECTS/TileScape/_MOC|TileScape 知识库 MOC]] — 项目总入口
+- [[02-PROJECTS/TileScape/参考/同步-项目AI记忆与Docs入口-2026-09-03|项目 AI 记忆与 Docs 入口同步]] — TS 项目内 AI 记忆、Docs/Knowledge 与 LG 边界
 - [[代码框架/代码框架总览|代码框架总览]] — 程序集/目录/关键类索引

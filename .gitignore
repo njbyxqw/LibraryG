@@ -15,10 +15,19 @@ Excalidraw/
 .obsidian/workspace-mobile.json
 .obsidian/cache/
 
-# === SQLite runtime sidecars (the .db source is versioned) ===
+# === Obsidian device-private plugin state ===
+# Keep plugin manifests tracked as the cross-device install/version list.
+.obsidian/plugins/**/data.json
+.obsidian/plugins/**/main.js
+.obsidian/plugins/**/styles.css
+
+# === SQLite runtime sidecars ===
 *.db-journal
 *.db-wal
 *.db-shm
+
+# This tracker database is a local incremental cache. Its SQL snapshots are shared instead.
+/02-PROJECTS/TileMatch/工具/关卡文件追踪/level_tracker.db
 
 # === Obsidian trash ===
 .trash/

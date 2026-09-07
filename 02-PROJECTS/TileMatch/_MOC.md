@@ -3,7 +3,7 @@ title: TileMatch 知识库 MOC
 tags: [TileMatch, MOC]
 type: index
 status: finalized
-date: 2026-07-03
+date: 2026-09-03
 aliases:
   - TileMatch 知识库_MOC
 ---
@@ -14,14 +14,31 @@ aliases:
 
 ---
 
+## 任务路由
+
+| 需求 | 入口 |
+|---|---|
+| 项目概览 | [[02-PROJECTS/TileMatch/_项目概览|项目概览]] |
+| MT 路径 / 对位 | [[参考/MT老项目路径索引|MT 老项目路径索引]] |
+| 项目 AI 记忆 / 源码旁文档 | [[参考/同步-项目AI记忆与源码旁文档-2026-09-03|项目 AI 记忆与源码旁文档同步]] |
+| 顺序索引 | [[知识库文档顺序索引|知识库文档顺序索引]] |
+| 障碍模块 | [[局内障碍知识库_MOC|局内障碍知识库 MOC]] |
+| 编辑器 | [[分析-关卡编辑器界面与功能逻辑梳理-v1|关卡编辑器界面与功能逻辑梳理]] |
+| 活索引 / 快速查找 | [[参考-关卡资源路径速查|关卡资源路径速查]] · [[索引-HTML附件与外部链接汇总|HTML 附件与外部链接汇总]] |
+| 持续任务 | [[02-PROJECTS/TileMatch/任务/任务-关卡难度ML训练数据集|任务-关卡难度ML训练数据集]] |
+| 可迁移知识 | [[03-KNOWLEDGE/_MOC|通用知识 MOC]] |
+
+---
+
 ## 快速入口
 
 - [[02-PROJECTS/TileMatch/_项目概览|项目概览]] — TileMatch 项目基本信息
 - [[局内障碍知识库_MOC|局内障碍知识库 MOC]] — 障碍系统总入口
 - [[知识库文档顺序索引|知识库文档顺序索引]] — 按 cat_order 集中排序
 - [[参考/MT老项目路径索引|MT 老项目路径索引]] — 当前机器 MT 代码入口与 TS 对位路径
-- [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]] — 高层综述（03-KNOWLEDGE）
-- [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器概览]] — 编辑器高层综述
+- [[参考/同步-项目AI记忆与源码旁文档-2026-09-03|项目 AI 记忆与源码旁文档同步]] — MT `AGENTS.md`、`.workbuddy/memory` 与源码旁 Markdown 的 LG 入口
+- [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]] — 项目事实汇总，待提炼（历史/参考，非首选入口）
+- [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器概览]] — 混合条目，待拆分（历史/参考，非首选入口）
 
 ---
 
@@ -108,6 +125,7 @@ SORT date DESC
 - [[分析-跑关机器人逻辑分析-v1|跑关机器人逻辑分析]]
 - [[分析-障碍Tile生成与序列逻辑-v1|障碍Tile生成与序列逻辑]] — **2026-07-20 更新 V2 分池修复**，分池细节见 [[分析-AssignTileTypeByDepth分池打乱策略-v1|分池打乱策略]]
 - [[分析-局内道具逻辑梳理|局内道具逻辑梳理]]
+- [[游戏逻辑/其他/梳理-局内夸夸InLevelMotivation设计与发布门禁-2026-09-03|局内夸夸 InLevelMotivation 设计与发布门禁]] — MT 源码旁 V3 设计基线、deprecated 旧文档和发布门禁入口
 - [[Shuffle改造AB测试方案|Shuffle 改造 AB 测试方案]]
 - [[风车Shuffle优化提需|风车(Shuffle)优化提需]]
 
@@ -160,6 +178,7 @@ SORT date DESC
 
 - [[参考-关卡资源路径速查|关卡资源路径速查]] — **2026-07-28 新建** 花色 icon、背景、破碎特效、主题弹窗等全部磁盘路径与加载链路
 - [[参考/MT老项目路径索引|MT 老项目路径索引]] — 当前 macOS 路径、MT/TS TileV2 对位入口、对位文件表模板
+- [[参考/同步-项目AI记忆与源码旁文档-2026-09-03|项目 AI 记忆与源码旁文档同步]] — MT 项目规则、兼容 AI 记忆和源码旁工作文档状态
 
 ---
 
@@ -182,6 +201,7 @@ SORT date DESC
 ---
 
 ## 关联
-- [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]]
-- [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器概览]]
+- [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]]（项目事实汇总，待提炼）
+- [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器概览]]（混合条目，待拆分）
+- [[03-KNOWLEDGE/_MOC|通用知识 MOC]]
 - [[02-PROJECTS/TileMatch/_项目概览|返回项目概览]]
