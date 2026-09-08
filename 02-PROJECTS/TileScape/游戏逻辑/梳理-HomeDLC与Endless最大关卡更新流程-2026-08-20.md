@@ -2,15 +2,19 @@
 title: Home DLC 与 Endless 最大关卡更新流程梳理
 date: 2026-08-20
 type: analysis
-status: current
+status: historical
 project: TileScape
-lifecycle: current
+lifecycle: historical
 verification: static-analysis-runtime-pending
 tags: [TileScape, DLC, HomeScene, Endless, 最大关卡, 重启]
 source: "TS 当前工作区静态代码；用户确认的流程目标另行标注"
 ---
 
 # Home DLC 与 Endless 最大关卡更新流程梳理
+
+> [!info] 历史适用范围（2026-09-08 补注）
+> 本文正文保留 2026-08-20 的重启方案与当时结论，不能作为当前 dev 行为。2026-09-07 静态复核确认已改为胜利返回 Home 的两阶段 max 应用；缺资源时仍不主动下载或自动重应用。
+> 当前入口：[[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护|DLC 全链路梳理与维护]]。下方历史正文保留追溯。
 
 > 范围：HomeScene 章节 DLC、启动门禁、关卡入口、画廊，以及 Endless 结束后同步最大关卡并要求重启的当前行为。
 >

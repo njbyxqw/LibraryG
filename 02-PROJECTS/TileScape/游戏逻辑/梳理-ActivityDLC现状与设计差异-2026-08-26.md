@@ -2,14 +2,18 @@
 title: Activity DLC 现状与设计差异
 date: 2026-08-26
 type: audit
-status: current
-lifecycle: static-audit
+status: historical
+lifecycle: historical
 verification: code-and-config-static-only
 tags: [TileScape, Activity, DLC, static-audit]
 source: "TS feature-activityDLC @ 381f19f53、当前工作区静态代码与配置；未运行 Unity、构建、CDN 或真机验证"
 ---
 
 # Activity DLC 现状与设计差异
+
+> [!info] 历史适用范围（2026-09-08 补注）
+> 本文正文保留 feature-activityDLC @ 381f19f53 的 FirstPay 试点审计，不代表当前 dev。启动 Provider 已接入，当前资格仅 Open 未过期；活动与礼包目录已拆分，现行启用范围和参数以长期主档的二进制配置复核为准。
+> 当前入口：[[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护|DLC 全链路梳理与维护]]。下方历史正文保留追溯。
 
 > 本文记录当前 `feature-activityDLC` 的已实现能力和与 [[02-PROJECTS/TileScape/游戏逻辑/设计-活动DLC扩展框架-2026-08-25|活动 DLC 扩展框架]] 的差异；设计稿不等同于已实现规则。
 

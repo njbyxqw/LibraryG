@@ -41,6 +41,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | Obsidian 链接完整性审计 | [[02-PROJECTS/Agent/工作流/报告-Obsidian链接完整性审计-2026-08-10|Obsidian 链接完整性审计报告]] | report |
 | 内容归属与任务产出审查 | [[02-PROJECTS/Agent/工作流/审查-知识库内容与任务产出流程-2026-09-03|知识库内容与任务产出流程审查]] | report |
 | 维护降噪 / Obsidian 深化 | [[02-PROJECTS/Agent/工作流/计划-知识库维护降噪与Obsidian深化-2026-08-26|知识库维护降噪与 Obsidian 深化计划]] | plan |
+| 近期任务逐项归档与全量巡检 | [[02-PROJECTS/Agent/工作流/计划-近期任务归档全量巡检-2026-09-07|近期任务归档全量巡检计划]] | scheduled，执行结果以计划勾选项及报告为准 |
 
 ### 实施任务包（implementation-task）
 

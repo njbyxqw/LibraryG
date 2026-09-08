@@ -17,6 +17,14 @@ cat_order: 020
 
 > 本文档是 `D:\TileScape\Docs\` 与 `D:\TileScape\Doc\` 下未迁移文档的**索引清单**。文档原文仍在项目内，仅做分类整理与价值备注；后续有需求再按主题迁移进知识库。
 
+## DLC 当前入口与历史来源（2026-09-08）
+
+- **唯一长期主档**：[[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护|DLC 全链路梳理与维护]]。按玩家旅程维护当前实现、配置、需求差距与验证边界，不再新增日期快照。
+- **源码旁说明**：TS `Assets/Module/HomeHub/HomeScene/Scripts/DLC/DLC.md`，2026-09-07 标注 Ocean 迁移；部分路径/配置/启动选项已与代码不同，以主档当前复核为准。本轮仅只读，不修改该文件。
+- **本地 QA 来源**：TS `Docs/Knowledge/Local/Inbox/2026-09/Activity_DLC_QA_Functional_Test_Guide_2026-09-01.md`（ignored，使用显式路径）。其 Preview/Open 启动口径、23 关、签到启用和测试值均已漂移，不直接用于当前 dev 验收。
+- **发布契约来源**：TS `Doc/DownloadableContentUsageGuide.md`；开头 2026-08-10“配置为空/全 Embedded”是历史快照。最新 Manifest、Player、CDN 与设备证据仍待核验。
+- **历史 LG 材料**：[[02-PROJECTS/TileScape/游戏逻辑/梳理-HomeDLC与Endless最大关卡更新流程-2026-08-20|旧重启流程]]、[[02-PROJECTS/TileScape/游戏逻辑/梳理-ActivityDLC现状与设计差异-2026-08-26|FirstPay 试点审计]] 保留历史正文；[[02-PROJECTS/TileScape/游戏逻辑/设计-活动DLC扩展框架-2026-08-25|活动扩展框架]] 继续保留设计状态。
+
 ## 一、Docs/（项目设计 / 迁移文档，58+ 项，持续补充）
 
 ### 1. 迁移总览 / 全局审计（7）
