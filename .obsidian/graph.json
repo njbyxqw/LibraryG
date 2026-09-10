@@ -8,31 +8,31 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#游戏逻辑  ",
+      "query": "path:02-PROJECTS/TileScape  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 5431497
       }
     },
     {
-      "query": "tag:#打点  ",
+      "query": "path:02-PROJECTS/TileMatch  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 13726196
       }
     },
     {
-      "query": "tag:#编辑器  ",
+      "query": "path:02-PROJECTS/Agent  ",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 3825650
       }
     },
     {
-      "query": "tag:#工具  ",
+      "query": "path:03-KNOWLEDGE  ",
       "color": {
         "a": 1,
-        "rgb": 5410784
+        "rgb": 12723968
       }
     }
   ],
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.5364608780837182,
+  "scale": 0.8809288630862666,
   "close": true
 }

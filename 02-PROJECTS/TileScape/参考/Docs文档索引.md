@@ -19,6 +19,8 @@ cat_order: 020
 
 ## DLC 当前入口与历史来源（2026-09-08）
 
+- **当天 Home 增量**：[[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护#2026-09-08 Home 下载优化|2026-09-08 Home 下载优化]]；dev @ `1e323e6e8` / `12e6620af` 已改为状态进入前置调度、两 Handler 与共享串行队列。旧 Flow/协调器只作历史路径，Editor 测试未在本轮执行。
+
 - **唯一长期主档**：[[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护|DLC 全链路梳理与维护]]。按玩家旅程维护当前实现、配置、需求差距与验证边界，不再新增日期快照。
 - **源码旁说明**：TS `Assets/Module/HomeHub/HomeScene/Scripts/DLC/DLC.md`，2026-09-07 标注 Ocean 迁移；部分路径/配置/启动选项已与代码不同，以主档当前复核为准。本轮仅只读，不修改该文件。
 - **本地 QA 来源**：TS `Docs/Knowledge/Local/Inbox/2026-09/Activity_DLC_QA_Functional_Test_Guide_2026-09-01.md`（ignored，使用显式路径）。其 Preview/Open 启动口径、23 关、签到启用和测试值均已漂移，不直接用于当前 dev 验收。

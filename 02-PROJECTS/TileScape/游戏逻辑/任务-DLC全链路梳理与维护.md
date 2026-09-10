@@ -8,10 +8,12 @@ lifecycle: current
 verification: code-and-config-static-only-runtime-pending
 cat_order: 030
 tags: [TileScape, DLC, HomeScene, Endless, Activity, 长期任务]
-source: "2026-09-07 TS dev @ 8e730d376575e4cd67547fbdf60dcc2ee4b826d6 当前工作目录代码与二进制配置；历史设计与用户目标分开标注"
+source: "09-07 全链路基线 dev @ 8e730d376；09-08 Home 调度增量 dev @ 1e323e6e8 / 12e6620af；各节区分版本与静态验证范围"
 ---
 
 # DLC 全链路梳理与维护
+
+> 最新 Home 下载调度见 [[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护#2026-09-08 Home 下载优化|2026-09-08 Home 下载优化]]；下方 09-07 基线保留历史。其他主题仍按各自来源版本解读。
 
 ## 背景、目标与范围
 
@@ -44,7 +46,62 @@ source: "2026-09-07 TS dev @ 8e730d376575e4cd67547fbdf60dcc2ee4b826d6 当前工�
 
 所有实际 DLC 资源加载前，以 `CanUseAssets` / 底层 `CanUsePackageAssets` 为门禁。文件存在、下载百分比 100、已经发起请求都不能代替可用性校验；空 PackageId 的包体资源按可用处理。
 
-## 当前实现链路：按玩家旅程阅读
+## 2026-09-08 Home 下载优化
+
+> [!important] 当前 Home 下载入口
+> 本节取代下方 2026-09-07 基线中的协调器、两个 DLC Flow 与后台队列调度说明；旧正文保留供对照，不作当前调用入口。此次只增量复核 Home 下载优化及其相关门禁，活动构建配置等同期变化未在本节做完整复审。
+
+**来源与范围**：TS 当前 `dev @ 1e323e6e85949ed46f6bf25c0fc6049540f70ce9`；关键提交 `12e6620af86653c09c8b78470c546aaef8fce8ba`，2026-09-08 16:30:02 +0800，提交标题“关卡地图/画廊主题 DLC 下载逻辑优化”。本轮约 20:31（Asia/Shanghai）读取当前工作目录，相关 Home/接口目录无未提交修改。底层会话/调度器另核对 `Packages/BettaSDK @ fd285b92795531ed70218697ef8ad90903ef86db`。不把提交作者工作记为本轮实现；本轮只读复核与 LG 文档维护。
+
+### 职责拆分与真实路径
+
+旧 `HomeHubDlcCoordinator`、`FlowItemHomeDlcBackgroundPreload`、`FlowItemHomeDlcPreLevelDownload` 及两个 Flow 注册点已删除。当前由 `HomeHubDlcModule` 构造一个共享队列和两个策略，按 Gallery UI、章节地图顺序放入 `IHomeDlcPreloader[]`：
+
+- 组装与生命周期：`Assets/Module/HomeHub/HomeScene/Scripts/DLC/HomeHubDlcModule.cs`。
+- 策略接口：`Assets/Interface/HomeScene/DLC/IHomeDlcPreloader.cs`；业务入口仍通过 `IHomeHubDlc.RequestHomePreloads`。
+- UI 策略：`Assets/Module/HomeHub/HomeScene/Scripts/DLC/Preload/GalleryThemeDlcHandler.cs`，Id 为 `ThemeUI`。
+- 地图策略：`Assets/Module/HomeHub/HomeScene/Scripts/DLC/Preload/ChapterMapDlcHandler.cs`，Id 为 `PreLevelMap`；同时承接启动收集、前台进关/Gallery 门禁及地图快照查询。
+- 串行队列：`Assets/Module/HomeHub/HomeScene/Scripts/DLC/Download/HomeDlcBackgroundQueue.cs`，两策略共用实例，不各建下载队列。
+
+模块中仍保留 `StartHomeBackgroundPreload`、`RequestCurrentLevelChapterPreload` 的定向转发方法；删除的是旧 Flow 及集中协调器，不能误写为所有原有业务方法均删除。
+
+### 何时触发，哪些“回 Home”不触发
+
+`Assets/Module/HomeHub/State/HomeSceneState.cs:OnEnter` 开始阶段即调用 `RequestHomePreloads`，发生在 `IHomeScene.EnterHome(TransitionObj)`、打开 UIMain 和初始化/执行 HomeFlow 之前。只提交后台请求、不等待下载，首次进 Home、普通关或无尽关返回 Home 都会重新评估；即便随后 HomeScene 准备失败，也已经尝试过两类预下载。
+
+这里没有预下载“一次执行”标记。`_enterHomeReadyInvoked` 仅限制稍后的 UI/Flow 准备回调，不限制预下载；不能因名称相近混用两者语义。`RequestHomePreloads` 对两个策略分别 try/catch，一项抛异常仍运行另一项，下一次进入再次计算。没有按上次已评估跳过的持久标记。
+
+Gallery 章节预览返回当前 Home，走 `Assets/Module/UIMain/Script/UIMainPanel.cs:RestoreCurrentHome → IHomeScene.EnterHome()`；这是场景内容恢复，不重新调用 HomeSceneState.OnEnter，因此不会额外触发统一预下载。该区别不影响先前已提交的后台任务继续执行。
+
+### 候选、串行队列与重试
+
+Gallery 策略仍遍历所有主题 UI Package，过滤空值、在候选内去重。地图策略仍读取已完成普通进度 `ILeveledGame.CurrentLevel()`，取当前 Home 章节起点到 `completed+ChapterDLCPreLevel` 的连续章节窗口（沿用既有 50 关配置）；无尽局数不扩大窗口。
+
+两策略先提交候选，队列统一以 PackageId 去重，**执行单包时才再次 GetSnapshot 检查 CanUseAssets**。不要沿用旧稿“策略收集时已过滤全部 Ready”的实现描述。若排队期间前台已使地图 Ready，轮到它时直接跳过。队列串行调用 None + Low、`retryTimes:2`；没有前台提示，也不阻塞 Home 业务/动画。
+
+GetSnapshot 或 Ensure 同步/异步异常在单包内捕获，失败不阻断后续包；finally 移除该包的 scheduled 标记，所以后续 Home 进入可再次提交。成功后也移除标记，下次可以作为候选再进入并被 Ready 检查跳过；这不等于重新下载。两个策略间也共享去重，避免同时候选造成重复后台请求。
+
+前台 High 请求不等待 Home 业务队列轮到自己：它直接通过统一服务 Ensure。底层 `DownloadableContentManager` 按 Package 复用 ActiveDownloads 会话；`DownloadableContentDownloadScheduler` 仅调整等待项优先级、在当前 Lease 释放后选下一项，**不会抢占正在运行的 Low 下载**。若目标已在运行，前台加入该会话；如果仅在 Home 队列等待，前台可以先发起，后续后台执行时再看 Ready。
+
+### 生命周期、保留的门禁语义
+
+HomeSceneState.OnExit 不取消模块队列；进关或页面切换后，已提交任务仍由模块持有。只有 HomeHubDlcModule.Dispose 才清队列、取消 lifetime、解绑 PackageStateChanged；完成前台异步等待后也检查 disposed/取消，不能因晚到 Ready 继续进关/预览或提交后续地图预载。清队列与取消本模块等待不应笼统等同于取消其他订阅者共享的物理下载。
+
+本次保留启动窗口 `completed+10+1` 的终点算法（配置提前 10 关），以及前台检查待进关和后一关、一次处理一个缺包、成功后本次仍不进关的语义；方法迁到 ChapterMapDlcHandler。Gallery 仍先 None/High，失败再加前台选项；有实际 DownloadedBytes 时需再次点击，零下载字节的成功可继续预览。模块释放期间新增加的晚到结果保护不改变正常成功路径。
+
+### 测试来源、验收与下一步
+
+原 `HomeHubDlcCoordinatorTests.cs` 重命名/调整为 `Assets/Module/HomeHub/HomeScene/Tests/Editor/HomeDlcHandlerTests.cs`。新增同目录 `HomeDlcPreloadTests.cs`、`HomeDlcConfigScope.cs`、`HomeDlcTestDoubles.cs`；`HomeProgressFlowContractTests.cs` 与 `ChapterUnlockDlcAssetAccessTests.cs` 相应调整旧 Flow 契约和接口假实现。
+
+本轮静态阅读可看到测试意图包括：每次状态进入都先于场景准备请求、两策略异常隔离、同策略单包快照异常不丢后续候选、共享串行去重、失败下一次进入重试、异步异常继续、Dispose 取消/清队列、前台提前准备地图后后台跳过 Ready、前台晚到结果拒绝。测试源码存在不代表本轮已执行通过，状态测试也不能代替首次/普通/无尽三个真实玩家流程的设备证明。
+
+- [x] 当前实现与提交差异静态复核；旧 Flow/协调器入口标为历史，主档与速查入口更新。
+- [ ] 按实际交付需要运行相关 Editor 测试，验证首次/普通/无尽进 Home、Gallery 直接恢复、异常隔离、重复进入、Home 退出与模块 Dispose。
+- [ ] 最新资源构建、Player、CDN 与真机下载结果仍未验证；本节不解决既有“新 max 缺图时不主动下载、不自动重应用”的需求差距。
+
+下次查当前 Home 下载先读本节，再进 HomeSceneState、HomeHubDlcModule、两个 Handler 与共享队列；旧协调器/Flow 路径只用于 Git 历史追溯。本轮未修改 TS 代码、配置、资源、源码旁文档或团队规则，未 commit/push。
+
+## 2026-09-07 基线实现链路：按玩家旅程阅读
 
 ### 1. 安装资源与章节映射
 
@@ -220,9 +277,11 @@ Finish/Close 通过提高活动代次使旧任务失效，停止后续包与旧�
 
 ## 下次继续入口
 
+当前 Home 调度先读 [[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护#2026-09-08 Home 下载优化|2026-09-08 Home 下载优化]]；不要按下方基线路径寻找已删除的协调器或 Flow。
+
 先读本文“已确认目标、实现差距”与“阶段进展”，再核对 TS 当前分支/嵌套库/相关 diff；只重读改变的代码。默认下一步是收敛新 max 缺资源补齐流程的需求与方案，用户授权实现后才改业务。运行验收按实际交付需要推进，不要求用户逐项反馈所有清单。
 
-最短源码入口：
+09-07 基线源码入口（Home 协调器、两个 Flow 与旧测试已删除/重命名；当前路径见上方优化小节）：
 
 - Home 调度：`Assets/Module/HomeHub/HomeScene/Scripts/DLC/HomeHubDlcCoordinator.cs`、同目录 `HomeHubDlcModule.cs`、两个 `FlowItemHomeDlc*.cs`。
 - 启动/提示：`Assets/Scripts/GameMain.cs`、`Assets/Module/ApplicationLoading/ApplicationLoadingRequireDownloadableGate.cs`、`Assets/Module/DownloadableContent/DownloadableContentRequestCoordinator.cs`、同目录 `DownloadableContentNoticePresenter.cs`。

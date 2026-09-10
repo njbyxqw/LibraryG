@@ -72,7 +72,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | 跨 MT / TS 复现 | [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] |
 | Daily / 工作记录 | [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|工作内容日志同步规范]] |
 | 近期工作进度 / 待办 | [[01-DAILY/summaries/近期工作进度与待办-2026-08-20|近期工作进度与待办（08-05 至 08-25）]] |
-| 近期任务归档状态 / 今晚全量巡检 | [[02-PROJECTS/Agent/工作流/计划-近期任务归档全量巡检-2026-09-07|09-07 巡检计划与近期任务清单]]（待自动执行；历史汇总保留在上一行） |
+| 近期任务归档状态 / 全量巡检 | [[01-DAILY/summaries/近期任务归档巡检-2026-09-07|09-07 巡检状态表]] · [[02-PROJECTS/Agent/工作流/计划-近期任务归档全量巡检-2026-09-07|专项计划]]（已完成首批逐任务对位，专项持续处理中） |
 | INBOX 整理 | [[02-PROJECTS/Agent/工作流/INBOX对话工作区工作流|INBOX 对话工作区工作流]] |
 | WorkBuddy 历史记忆 | [[02-PROJECTS/Agent/WorkBuddy-MEMORY/WB-MEMORY_MOC|WorkBuddy MEMORY 历史归档]] |
 
