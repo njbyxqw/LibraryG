@@ -421,6 +421,13 @@ OverBarData按列存储，默认加入最少牌的一列，特定索引可覆盖
 
 静态策略整理的六项目标已完成并关闭本阶段研究推进。窗口提醒自动化继续按原时刻发送；后续只在用户明确恢复研究，或出现含 V3 控制器的可运行环境/新业务数据时继续相应运行验证，不重复扫描既有静态结论。
 
+### R17：当前 checkout 更新但仍无 V3 控制器（2026-09-15）
+
+- 当前 TileScape 已从 `feat-winStreak@3d1d339c7` 变为 `dev@34f709532`，HEAD 为合并 `feat-winStreak` 的提交；工作区另有未提交文件，本轮未触碰。
+- 对比 `DDA-V3-Test@cd3aea166` 与当前 HEAD 的 DDA 文件树，当前仍只有普通 `InLevelDDAV2Strategy.cs`，没有 `InLevelDDAV2SlackController.cs`；当前树也未检出 `FastNCD`、`HardSlack`、`SlackTuning`、`SlackController` 符号。`MeatloafDeltaDdaContractTests.cs` 仍存在，但不能证明 V3 Slack 已恢复。
+- 结论：这次分支变化不是 V3 运行环境出现，静态研究收尾状态与 Layer A/B、回放、性能、体验数据的待验证边界保持不变；无需重复旧源码检索。后续只有 V3 控制器合入、可运行 Unity 环境或用户明确恢复研究时再继续。
+- 来源：`git rev-parse HEAD`、`git log -1`、`git diff --name-status DDA-V3-Test...HEAD`、当前 HEAD 文件树/符号检索；未运行测试。
+
 ## 每轮记录协议
 
 - 记录批次、代码版本、目标编号、来源文件、已确认结论、推演与待验证项。

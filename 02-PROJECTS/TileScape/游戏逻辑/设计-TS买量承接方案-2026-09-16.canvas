@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {"id":"a10f01c2d3e4b501","type":"group","x":-80,"y":-100,"width":4260,"height":1940,"label":"TS 买量承接方案 · 竞品参考与主链路","color":"5"},
+    {"id":"a10f01c2d3e4b502","type":"text","x":0,"y":0,"width":780,"height":230,"color":"6","text":"# TS 买量承接方案\n\n**核心原则：素材爽点要在首局由 Tile 行为直接改变，而不是一段孤立的假玩法。**\n\n公开资料核对：2026-09-16\n\n说明：外部截图保留为可点击公开商店页参考；本 Canvas 不复制或归档第三方图片文件。"},
+    {"id":"a10f01c2d3e4b503","type":"group","x":-20,"y":300,"width":2340,"height":620,"label":"竞品承接方式 + 公开视觉参考","color":"4"},
+    {"id":"a10f01c2d3e4b504","type":"text","x":20,"y":360,"width":500,"height":440,"color":"1","text":"## Royal Match\n\n**强素材主题 + 三消 / 城堡任务 + 高密度 LiveOps**\n\n- 危机场景可转译为障碍、收集物、活动目标\n- 主题能沉到长期任务层\n- 风险：广告互动与真实关卡不一致会造成落差\n\n**TS 借鉴：** 以同一危机主题贯穿首局、前 10 关与活动。"},
+    {"id":"a10f01c2d3e4b505","type":"text","x":560,"y":360,"width":500,"height":440,"color":"6","text":"## Royal Kingdom\n\n**阵营冲突 + 区域建设 + 章节推进**\n\n- 通关与王国/黑暗王国对抗绑定\n- 解锁新区域有 Episode，剧情是阶段奖励\n- 不优先照搬完整地图：成本和认知负担都高\n\n**TS 借鉴：** 让救援结果落在一个可见的工程节点。"},
+    {"id":"a10f01c2d3e4b506","type":"text","x":1100,"y":360,"width":500,"height":440,"color":"3","text":"## Tile Family\n\n**Tile 核心先行 + 轻故事包装 + 快速内容供给**\n\n- 三消 Tile / 提示 / 关卡为核心\n- 新故事线、活动交互和持续加关是公开可见信号\n- 固定“广告 → 首局”链路缺乏公开确证\n\n**TS 机会：** 更早、更直接兑现素材承诺。"},
+    {"id":"a10f01c2d3e4b507","type":"link","x":1640,"y":360,"width":300,"height":175,"url":"https://game.royalmatch.com/"},
+    {"id":"a10f01c2d3e4b508","type":"link","x":1640,"y":565,"width":300,"height":175,"url":"https://apps.apple.com/us/app/royal-kingdom/id1606549505"},
+    {"id":"a10f01c2d3e4b509","type":"link","x":1980,"y":360,"width":300,"height":175,"url":"https://apps.apple.com/us/app/tile-family-match-puzzle-game/id6444056676"},
+    {"id":"a10f01c2d3e4b510","type":"text","x":1980,"y":565,"width":300,"height":175,"color":"2","text":"### 图片参考区\n\n右侧三张卡片分别打开三款产品的**公开商店视觉与截图**。\n\n如需把图片做成可离线查看的附件，请提供已获授权的素材包或允许使用的截图。"},
+    {"id":"a10f01c2d3e4b511","type":"group","x":2420,"y":-20,"width":1700,"height":840,"label":"主方案：Tile 救援工程","color":"1"},
+    {"id":"a10f01c2d3e4b512","type":"text","x":2480,"y":40,"width":480,"height":250,"color":"1","text":"## 1. 广告素材\n\n**危机钩子**\n\nTile 堆压住小动物 / 宝箱；倒计时、可见出口、差一步失败。"},
+    {"id":"a10f01c2d3e4b513","type":"text","x":3050,"y":40,"width":480,"height":250,"color":"5","text":"## 2. 首屏 · 0–5 秒\n\n**同图直入**\n\n同一角色、同一危机画面冻结；一句目标：\n\n“清出救援通道。”"},
+    {"id":"a10f01c2d3e4b514","type":"text","x":3620,"y":40,"width":440,"height":250,"color":"5","text":"## 3. 首局 · 5–60 秒\n\n**Tile 核心包装**\n\n三消指定牌 → 清覆盖层 / 充能救援条 → 角色脱险。\n\n不是另做拉针小游戏。"},
+    {"id":"a10f01c2d3e4b515","type":"text","x":2480,"y":390,"width":480,"height":250,"color":"4","text":"## 4. 前 2–10 关\n\n清障、找钥匙、收集补给；每 2–3 关推进一格场景。\n\n逐步教会道具与难点。"},
+    {"id":"a10f01c2d3e4b516","type":"text","x":3050,"y":390,"width":480,"height":250,"color":"4","text":"## 5. 活动 / Meta\n\n通关掉落“修复材料” → 工程节点 → 3–5 秒剧情与资源奖励。\n\n主题成为短周期目标。"},
+    {"id":"a10f01c2d3e4b517","type":"text","x":3620,"y":390,"width":440,"height":250,"color":"6","text":"## 6. 长期循环\n\n救援主题轮换为不同障碍皮肤、收集物与章节。\n\n核心关卡与经济不分叉。"},
+    {"id":"a10f01c2d3e4b518","type":"group","x":-20,"y":1020,"width":4140,"height":710,"label":"主方案与备选方案：投入前先验证承接链","color":"2"},
+    {"id":"a10f01c2d3e4b519","type":"text","x":20,"y":1090,"width":920,"height":490,"color":"1","text":"# 主方案 · Tile 救援工程\n\n广告危机 = 首局 Tile 清障 = 前 10 关救援进度 = 限时修复活动。\n\n用覆盖层、目标牌、救援条、结算演出形成同一因果链。\n\n**开发成本：中**\n**承接强度：高**\n**复用性：高**\n\n风险：题材重复；首局必须爽、可控、主题一致。"},
+    {"id":"a10f01c2d3e4b520","type":"text","x":1010,"y":1090,"width":920,"height":490,"color":"3","text":"# 备选 A · 剧情快速兑现\n\n素材角色 / 危机 → 10 秒开场动画 → 常规 Tile 新手关 → 每 5 关剧情节点。\n\n适合先验证角色钩子是否提升安装后留存。\n\n**开发成本：低**\n**承接强度：中**\n**复用性：高**\n\n风险：动画结束后容易割裂，不能替代局内兑现。"},
+    {"id":"a10f01c2d3e4b521","type":"text","x":2000,"y":1090,"width":920,"height":490,"color":"6","text":"# 备选 B · 独立小游戏闸门\n\n首屏先玩 20–40 秒救援小游戏，完成后奖励进入 Tile 主线；适合高承诺素材。\n\n**开发成本：高**\n**承接强度：高**\n**复用性：低**\n\n风险：两套玩法抢认知；需要验证 Tile 主线留存与付费没有被稀释。"},
+    {"id":"a10f01c2d3e4b522","type":"text","x":2990,"y":1090,"width":1050,"height":490,"color":"5","text":"# 首个可测 MVP\n\n只做一个“Tile 堆压住小动物”的主题：\n\n1. 同主题广告素材\n2. 首局 Tile 清障 + 救援条\n3. 3 个递进关\n4. 1 个工程节点\n\n**对照指标**\n安装后首局完成率 · 前 3 关完成率 · D1 · 主题活动进入率\n\n只有首局指标与 D1 同向，才扩到前 10 关和主题轮换。"}
+  ],
+  "edges": [
+    {"id":"b10f01c2d3e4b501","fromNode":"a10f01c2d3e4b512","fromSide":"right","toNode":"a10f01c2d3e4b513","toSide":"left","toEnd":"arrow","color":"1"},
+    {"id":"b10f01c2d3e4b502","fromNode":"a10f01c2d3e4b513","fromSide":"right","toNode":"a10f01c2d3e4b514","toSide":"left","toEnd":"arrow","color":"1"},
+    {"id":"b10f01c2d3e4b503","fromNode":"a10f01c2d3e4b514","fromSide":"bottom","toNode":"a10f01c2d3e4b515","toSide":"top","toEnd":"arrow","color":"4"},
+    {"id":"b10f01c2d3e4b504","fromNode":"a10f01c2d3e4b515","fromSide":"right","toNode":"a10f01c2d3e4b516","toSide":"left","toEnd":"arrow","color":"4"},
+    {"id":"b10f01c2d3e4b505","fromNode":"a10f01c2d3e4b516","fromSide":"right","toNode":"a10f01c2d3e4b517","toSide":"left","toEnd":"arrow","color":"6"},
+    {"id":"b10f01c2d3e4b506","fromNode":"a10f01c2d3e4b504","fromSide":"bottom","toNode":"a10f01c2d3e4b519","toSide":"top","toEnd":"arrow","label":"借鉴","color":"1"},
+    {"id":"b10f01c2d3e4b507","fromNode":"a10f01c2d3e4b505","fromSide":"bottom","toNode":"a10f01c2d3e4b519","toSide":"top","toEnd":"arrow","label":"借鉴","color":"6"},
+    {"id":"b10f01c2d3e4b508","fromNode":"a10f01c2d3e4b506","fromSide":"bottom","toNode":"a10f01c2d3e4b519","toSide":"top","toEnd":"arrow","label":"机会","color":"3"}
+  ]
+}
+

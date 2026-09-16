@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TS 买量承接方案</title>
+  <style>
+    :root{--ink:#172330;--muted:#637384;--line:#dbe4ea;--paper:#f6f8fa;--navy:#123049;--teal:#0b9c99;--blue:#3978df;--orange:#e87727;--red:#c94457;--green:#398a60}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}.page{max-width:1240px;margin:0 auto;padding:44px 28px 72px}.top{background:linear-gradient(120deg,#123049,#1f5b74);color:#fff;border-radius:18px;padding:38px 42px;margin-bottom:26px}.eyebrow{display:inline-block;background:#ffffff22;border:1px solid #ffffff4d;border-radius:999px;padding:4px 12px;font-size:13px;letter-spacing:.04em}.top h1{font-size:32px;line-height:1.2;margin:16px 0 12px}.top p{margin:0;color:#d8e9f0;max-width:790px}.note{font-size:13px;color:var(--muted);margin:0 0 24px}.section-title{display:flex;gap:12px;align-items:baseline;margin:32px 0 14px}.section-title b{font-size:21px}.section-title span{color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.shot{height:178px;background:#e8eef2;display:block;width:100%;object-fit:cover}.card-body{padding:16px 18px 18px}.card h3{margin:0 0 7px;font-size:18px}.card p{font-size:14px;margin:0 0 10px;color:#495968}.take{border-left:3px solid var(--teal);padding-left:10px;font-size:14px}.source{font-size:12px;color:var(--muted)}a{color:#176f9b;text-decoration:none}a:hover{text-decoration:underline}.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.flow-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 13px;min-height:178px}.flow-card:not(:last-child):after{content:"›";position:absolute;right:-17px;top:65px;font-size:30px;color:#8b9ca9;z-index:2}.n{font-size:12px;color:var(--teal);font-weight:700;letter-spacing:.08em}.flow-card h4{font-size:16px;margin:8px 0}.flow-card p{font-size:13px;margin:0;color:#526272}.flow-card.strong{border:2px solid var(--teal);background:#f1fbfb}.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.plan{border-radius:14px;padding:21px;background:#fff;border:1px solid var(--line)}.plan.recommended{border:2px solid var(--teal);background:#f3fbfa}.pill{font-size:12px;border-radius:999px;padding:4px 9px;background:#e5f5f3;color:#087c78;font-weight:700}.plan h3{margin:12px 0 7px}.plan p{font-size:14px;color:#526272;margin:0 0 12px}.metric{display:grid;grid-template-columns:80px 1fr;gap:5px;font-size:13px;margin-top:10px}.dots{color:var(--teal);letter-spacing:2px}.matrix{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.matrix th,.matrix td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}.matrix th{background:#eef3f6;color:#445362;font-weight:700}.matrix tr:last-child td{border-bottom:0}.callout{margin-top:22px;padding:20px 22px;border-radius:14px;background:#fff4e9;border-left:5px solid var(--orange)}.callout h3{margin:0 0 6px}.callout p{margin:0;color:#5a4a3b}.footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:32px}@media(max-width:900px){.grid,.plans{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}.flow-card:after{display:none}}@media(max-width:560px){.page{padding:18px 14px}.top{padding:28px 24px}.top h1{font-size:27px}.flow{grid-template-columns:1fr}.matrix{font-size:12px}.matrix th,.matrix td{padding:10px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <span class="eyebrow">TileScape · 设计草案 · 2026-09-16</span>
+      <h1>买量承接方案：小老鼠逃离猫追赶</h1>
+      <p>当前素材承诺是“玩 Tile 解锁逃跑路径”。产品内要让每一次 Tile 三消都点亮一段路径、移开一处障碍，最终让小老鼠逃离猫的追赶。</p>
+    </header>
+    <p class="note">证据边界：竞品结论来自公开商店页、官方帮助中心及公开截图；尚未对 TS 当前首屏、关卡与活动实现做代码/真机核对。本页是产品设计提案，不是已实施方案。</p>
+
+    <section>
+      <div class="section-title"><b>01 · 竞品拆解</b><span>拿走方法，不照搬产品形态</span></div>
+      <div class="grid">
+        <article class="card"><img class="shot" src="设计-TS买量承接方案-2026-09-16.assets/royal-match.jpg" alt="Royal Match 公开玩法截图"><div class="card-body"><h3>Royal Match</h3><p>强危机题材吸引点击，再由核心三消、城堡区域任务与密集活动延长主题寿命。</p><div class="take"><b>借鉴：</b>危机主题 → 障碍 / 收集物 / 活动目标的连续转译。</div><p class="source">本地保存的公开截图 · <a href="https://game.royalmatch.com/" target="_blank" rel="noreferrer">产品来源</a></p></div></article>
+        <article class="card"><img class="shot" src="设计-TS买量承接方案-2026-09-16.assets/royal-kingdom.jpg" alt="Royal Kingdom 公开商店截图"><div class="card-body"><h3>Royal Kingdom</h3><p>把通关与区域建设、阵营冲突、章节演出绑定；剧情是阶段奖励而不是孤立入口。</p><div class="take"><b>借鉴：</b>让救援结果落在可见的工程节点，而非只给一次结算。</div><p class="source">本地保存的公开截图 · <a href="https://apps.apple.com/us/app/royal-kingdom/id1606549505" target="_blank" rel="noreferrer">产品来源</a></p></div></article>
+        <article class="card"><img class="shot" src="设计-TS买量承接方案-2026-09-16.assets/tile-family.jpg" alt="Tile Family 公开剧情场景截图"><div class="card-body"><h3>Tile Family</h3><p>Tile 核心优先，用轻剧情和“帮助角色”情境包装，再持续补关与活动。</p><div class="take"><b>TS 机会：</b>在同类 Tile 核心上，更早、直接地兑现素材承诺。</div><p class="source">本地保存的公开截图 · <a href="https://apps.apple.com/us/app/tile-family-match-puzzle-game/id6444056676" target="_blank" rel="noreferrer">产品来源</a></p></div></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title"><b>02 · 推荐主链路</b><span>同一主题贯穿获取、首局、短期与长期循环</span></div>
+      <div class="flow">
+        <div class="flow-card"><span class="n">01 广告素材</span><h4>猫追鼠</h4><p>猫紧跟小老鼠；出口被箱子、柜门或杂物堵住。玩家点 Tile，路径逐段亮起。</p></div>
+        <div class="flow-card strong"><span class="n">02 首屏 0–5 秒</span><h4>同场景续接</h4><p>广告末帧直接接入：猫扑来，小老鼠跑到第一个岔口。目标明确写为“清出逃跑路线”。</p></div>
+        <div class="flow-card strong"><span class="n">03 首局 5–60 秒</span><h4>三消解锁路径</h4><p>每完成一组指定 Tile，就移开一块挡路杂物并点亮一格脚印。点亮 3 格后，小老鼠钻进洞口脱险。</p></div>
+        <div class="flow-card"><span class="n">04 前 2–10 关</span><h4>逃跑分段</h4><p>第 2–3 关找钥匙开柜门；第 4–6 关穿过厨房；第 7–10 关收集木屑修补鼠洞。每段有 3 秒推进。</p></div>
+        <div class="flow-card"><span class="n">05 活动 / Meta</span><h4>逃跑任务线</h4><p>普通通关掉落奶酪 / 木屑 / 钥匙；完成节点修好鼠洞、打开地道，并给道具或货币奖励。</p></div>
+        <div class="flow-card"><span class="n">06 长期循环</span><h4>主题轮换</h4><p>从厨房逃跑换成花园躲猫、阁楼找食物；只换场景、障碍和任务物，Tile 主循环保持不变。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title"><b>03 · 两条承接方案</b><span>独立小游戏作为特殊任务系统的阶段性活动，不单独立项</span></div>
+      <div class="plans">
+        <article class="plan"><span class="pill">方案一</span><h3>剧情衔接</h3><p><b>做法：</b>广告结束时，猫把小老鼠追到厨房柜前；首局完成后播 3 秒演出——小老鼠钻进柜缝。第 3 关结束开柜门，第 6 关结束躲进纸箱，第 10 关结束修好鼠洞。每个剧情节点都只解释下一段“为什么要继续消除”。</p><div class="metric"><span>首局</span><span>三消指定 Tile，连续点亮 3 格脚印并进入柜缝。</span><span>前 10 关</span><span>厨房 → 纸箱 → 鼠洞，三个逃跑场景依次切换。</span><span>素材映射</span><span>猫、小老鼠、被堵住的出口始终沿用同一角色与镜头。</span><span>开发成本</span><span class="dots">●○○</span></div></article>
+        <article class="plan recommended"><span class="pill">方案二 · 推荐</span><h3>特殊任务系统</h3><p><b>做法：</b>首局开一条“逃跑路线”任务：完成 Tile 关卡获得脚印，脚印填满后解锁下一段路径。完成 <b>N 关</b> 时开启一次 20–40 秒的“地道冲刺”小游戏：在已经被 Tile 点亮的道路上选择正确岔路、跳过猫爪，成功后获得钥匙 / 木屑等关键物，立即推进任务节点。</p><div class="metric"><span>任务结构</span><span>脚印解锁路径 → N 关后小游戏 → 关键物推进下一站。</span><span>小游戏示例</span><span>厨房地道冲刺：避开猫爪、选择钻洞方向，冲到鼠洞口。</span><span>前 10 关</span><span>每 3 关完成一个小目标；第 3、6、9 关后各解锁一次任务小游戏。</span><span>长期活动</span><span>把任务线复用为“花园躲猫”“阁楼找食物”等限时主题。</span><span>开发成本</span><span class="dots">●●○</span></div></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title"><b>04 · 实施取舍</b><span>先验承接链，再扩内容</span></div>
+      <table class="matrix"><thead><tr><th>模块</th><th>小老鼠逃跑的具体做法</th><th>与 Tile 的连接</th><th>先看什么</th></tr></thead><tbody><tr><td>剧情衔接</td><td>猫逼近 → 小老鼠到柜前 → 躲纸箱 → 修好鼠洞</td><td>每段剧情只在关卡结算后出现，并指向下一段逃跑目标</td><td>首屏跳过率、首局开始率</td></tr><tr><td>路径解锁</td><td>每组三消移开一处杂物、点亮一格脚印</td><td>指定 Tile / 障碍清除直接改变路径可见状态</td><td>首局完成率、路径目标理解</td></tr><tr><td>特殊任务</td><td>脚印、钥匙、木屑分别对应路线、柜门和鼠洞修复</td><td>普通关卡掉落任务物；不增加额外体力或独立入口</td><td>任务开启率、节点完成率、回流</td></tr><tr><td>阶段小游戏</td><td>每 3 关解锁一次“地道冲刺”：选岔路、躲猫爪、冲向洞口</td><td>小游戏用已解锁路线作为场景，奖励反哺任务节点</td><td>小游戏开启率、完成率、后续主线继续率</td></tr></tbody></table>
+      <div class="callout"><h3>首个可测 MVP</h3><p>只做厨房段：广告是猫追小老鼠、Tile 点亮逃跑路线；首局点亮 3 格脚印进入柜缝；连续 3 个 Tile 关卡收集脚印后，解锁一次“地道冲刺”小游戏，成功获得钥匙并打开鼠洞入口。用剧情衔接组作对照，比较首局完成率、前 3 关完成率、D1、小游戏开启 / 完成率与任务节点完成率。</p></div>
+    </section>
+    <footer class="footer">资料来源：<a href="https://game.royalmatch.com/">Royal Match</a> · <a href="https://dreamgames.helpshift.com/hc/en/3-royal-match/section/23-events-and-tournaments/">Royal Match 官方活动帮助</a> · <a href="https://apps.apple.com/us/app/royal-kingdom/id1606549505">Royal Kingdom</a> · <a href="https://dreamgames.helpshift.com/hc/en/6-royal-kingdom-1676903479/section/36-gameplay-guide/">Royal Kingdom 官方玩法帮助</a> · <a href="https://apps.apple.com/us/app/tile-family-match-puzzle-game/id6444056676">Tile Family</a>。三张竞品公开截图已作为本地参考附件随本页保存；来源链接仅用于追溯。</footer>
+  </main>
+</body>
+</html>

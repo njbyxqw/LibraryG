@@ -30,6 +30,13 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | 知识沉淀闭环 / 自动巡检 | [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]] |
 | AI 协作注意事项 | [[02-PROJECTS/Agent/工作流/规范-AI协作注意事项|AI 协作注意事项]] |
 
+### 协作草案（draft / needs-review）
+
+| 需求 | 入口 | 状态 |
+|---|---|---|
+| Chat、LG 与本地执行的日常分工 | [[02-PROJECTS/Agent/工作流/指南-LGChat与本地执行协作|LG、Chat 与本地执行协作实用指南]] | draft |
+| Chat → 本地核实 → Codex → LG 的执行边界 | [[02-PROJECTS/Agent/工作流/协议-LGChat与本地执行协作|LG、Chat 与本地执行协作协议]] | needs-review |
+
 ### 报告与计划（report / plan）
 
 | 需求 | 入口 | 状态 |
