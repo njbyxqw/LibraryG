@@ -18,6 +18,9 @@ Excalidraw/
 # === Obsidian device-private plugin state ===
 # Keep plugin manifests tracked as the cross-device install/version list.
 .obsidian/plugins/**/data.json
+
+# === INBOX receiver private replay state ===
+.inbox-receiver/
 .obsidian/plugins/**/main.js
 .obsidian/plugins/**/styles.css
 

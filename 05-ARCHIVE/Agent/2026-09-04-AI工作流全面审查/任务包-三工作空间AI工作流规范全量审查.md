@@ -3,6 +3,8 @@ title: 任务包：三工作空间 AI 工作流规范全量审查
 date: 2026-09-04
 type: audit-task
 status: completed
+lifecycle: historical
+archived: 2026-09-18
 priority: critical
 projects: [LibraryG, TileScape, TileMatch]
 risk: low
@@ -128,7 +130,7 @@ tags: [LibraryG, WorkBuddy, AI工作流, 规范审查, TileScape, TileMatch]
 
 允许在 LG 当前任务目录创建：
 
-`00-INBOX/2026-09-04-AI工作流全面审查/执行反馈-三工作空间AI工作流规范全量审查.md`
+`05-ARCHIVE/Agent/2026-09-04-AI工作流全面审查/执行反馈-三工作空间AI工作流规范全量审查.md`
 
 该反馈必须包括：
 

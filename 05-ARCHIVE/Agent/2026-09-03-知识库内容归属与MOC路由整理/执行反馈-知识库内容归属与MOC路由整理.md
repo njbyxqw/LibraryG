@@ -4,6 +4,10 @@ tags:
   - MOC
   - 知识库
 date: 2026-09-03
+type: execution-feedback
+status: completed
+lifecycle: historical
+archived: 2026-09-18
 source: 任务包-知识库内容归属与MOC路由整理-2026-09-03
 ---
 

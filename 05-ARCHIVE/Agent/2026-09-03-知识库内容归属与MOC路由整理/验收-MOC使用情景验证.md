@@ -2,7 +2,9 @@
 title: 验收：MOC 使用情景静态验证
 date: 2026-09-03
 type: 验收
-status: current
+status: accepted
+lifecycle: historical
+archived: 2026-09-18
 source: "AI任务规划-知识库后续治理.md · P2"
 tags: [LibraryG, P2, MOC, 验收, 链接验证]
 ---
@@ -117,6 +119,6 @@ tags: [LibraryG, P2, MOC, 验收, 链接验证]
 
 ## 关联
 
-- [[00-INBOX/2026-09-03-知识库内容归属与MOC路由整理/AI任务规划-知识库后续治理|AI 任务规划（P2）]]
+- [[05-ARCHIVE/Agent/2026-09-03-知识库内容归属与MOC路由整理/AI任务规划-知识库后续治理|AI 任务规划（P2）]]
 - [[03-KNOWLEDGE/_MOC|通用知识 MOC]]
 - [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]]

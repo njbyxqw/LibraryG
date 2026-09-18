@@ -36,6 +36,12 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 |---|---|---|
 | Chat、LG 与本地执行的日常分工 | [[02-PROJECTS/Agent/工作流/指南-LGChat与本地执行协作|LG、Chat 与本地执行协作实用指南]] | draft |
 | Chat → 本地核实 → Codex → LG 的执行边界 | [[02-PROJECTS/Agent/工作流/协议-LGChat与本地执行协作|LG、Chat 与本地执行协作协议]] | needs-review |
+| 个人 Plus 自动 INBOX 收件器 | [[02-PROJECTS/Agent/工作流/方案-ChatGPTPlus自动INBOX收件器|ChatGPT Plus 自动 INBOX 收件器设计]] | draft / needs-review |
+| 桌面端 WebMCP 自动 INBOX 理论预演 | [[02-PROJECTS/Agent/工作流/预演-ChatGPT桌面端WebMCP自动INBOX收件|ChatGPT 桌面端 WebMCP 自动 INBOX 收件理论预演]] | D1/D2 隔离实测通过；生产未接线 |
+| 桌面端 WebMCP 生产 INBOX 接线 | [[02-PROJECTS/Agent/工作流/方案-桌面端WebMCP生产INBOX接线|桌面端 WebMCP 生产 INBOX 接线设计]] | historical；已被自动通知模式替代 |
+| 桌面端 WebMCP 自动通知模式 | [[02-PROJECTS/Agent/工作流/方案-桌面端WebMCP自动通知模式|桌面端 WebMCP 自动通知模式]] | 复制导入与本机读取已验证；普通 Chat 自动交接待验收 |
+| 个人 Plus 下的 INBOX 收件与交接 | [[02-PROJECTS/Agent/工作流/方案-ChatGPTPlus环境INBOX收件与交接|ChatGPT Plus 环境的 INBOX 收件与交接方案]] | 被自动收件器设计细化，保留为决策记录 |
+| 本地 INBOX writer 组件 | [[02-PROJECTS/Agent/工作流/方案-自建INBOX收件工具|自建 INBOX 收件工具设计]] | local component；Plus 直连不适用 |
 
 ### 报告与计划（report / plan）
 

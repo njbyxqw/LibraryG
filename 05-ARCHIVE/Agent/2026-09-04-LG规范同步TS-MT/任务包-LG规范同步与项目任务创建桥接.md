@@ -3,6 +3,9 @@ title: 任务包：LG 规范同步与项目任务创建桥接
 date: 2026-09-04
 type: implementation-task
 status: superseded
+lifecycle: deprecated
+archived: 2026-09-18
+superseded_by: "[[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接]]"
 priority: critical
 projects: [LibraryG, TileScape, TileMatch]
 source: "用户 2026-09-04 明确确认：LG 是唯一知识库与规范源；TS / MT 必须同步 LG 最新规范"
@@ -164,4 +167,4 @@ LG 最新文件即时生效；本地不得复制完整规则正文或以本地�
 - [[AI总MOC|AI 总 MOC]]
 - [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]]
 - [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]]
-- [[00-INBOX/2026-09-03-知识库内容归属与MOC路由整理/AI任务规划-知识库后续治理|前序 AI 任务规划]]
+- [[05-ARCHIVE/Agent/2026-09-03-知识库内容归属与MOC路由整理/AI任务规划-知识库后续治理|前序 AI 任务规划]]

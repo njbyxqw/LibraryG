@@ -2,7 +2,10 @@
 title: AI 任务规划：知识库后续治理
 date: 2026-09-03
 type: task-plan
-status: current
+status: historical
+lifecycle: historical
+archived: 2026-09-18
+archive_reason: "任务已执行并验收；未决归属项已由通用知识 MOC 单独登记。"
 source: "用户 2026-09-03 确认：后续以 AI 规划与验收为主，WorkBuddy 执行明确操作；执行文档可留在任务 INBOX"
 tags: [LibraryG, AI, WorkBuddy, 任务规划, MOC, 知识归属]
 ---
@@ -29,7 +32,7 @@ tags: [LibraryG, AI, WorkBuddy, 任务规划, MOC, 知识归属]
 
 当前任务 INBOX：
 
-- [[00-INBOX/2026-09-03-知识库内容归属与MOC路由整理/执行反馈-知识库内容归属与MOC路由整理|WorkBuddy 执行反馈]]
+- [[05-ARCHIVE/Agent/2026-09-03-知识库内容归属与MOC路由整理/执行反馈-知识库内容归属与MOC路由整理|WorkBuddy 执行反馈]]
 - [[02-PROJECTS/Agent/工作流/任务包-知识库内容归属与MOC路由整理-2026-09-03|已执行任务包]]
 
 ## 后续任务队列

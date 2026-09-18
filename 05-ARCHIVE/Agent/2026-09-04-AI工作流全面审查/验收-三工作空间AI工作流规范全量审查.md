@@ -3,6 +3,8 @@ title: 验收：三工作空间 AI 工作流规范全量审查
 date: 2026-09-04
 type: acceptance
 status: accepted
+lifecycle: historical
+archived: 2026-09-18
 projects: [LibraryG, TileScape, TileMatch]
 source: "对执行反馈、LG 现行规范、TS/MT 入口文件及 WorkBuddy 已处理任务包的二次只读核验。"
 verification: "静态验收；未修改 TS / MT 文件，未 commit / push。"
@@ -49,6 +51,6 @@ P1/P2 的 LG-only 修订已在后续执行中完成，并通过下方收尾核�
 
 ## 关联
 
-- [[00-INBOX/2026-09-04-AI工作流全面审查/任务包-三工作空间AI工作流规范全量审查|审查任务包]]
-- [[00-INBOX/2026-09-04-AI工作流全面审查/执行反馈-三工作空间AI工作流规范全量审查|WorkBuddy 执行反馈]]
+- [[05-ARCHIVE/Agent/2026-09-04-AI工作流全面审查/任务包-三工作空间AI工作流规范全量审查|审查任务包]]
+- [[05-ARCHIVE/Agent/2026-09-04-AI工作流全面审查/执行反馈-三工作空间AI工作流规范全量审查|WorkBuddy 执行反馈]]
 - [[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接|本机项目执行与 LG 知识库桥接规范]]
