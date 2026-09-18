@@ -79,6 +79,7 @@ tags: [Agent, AI, LibraryG, MEMORY, 工作流]
 | MT 旧逻辑和历史行为分析 | `02-PROJECTS/TileMatch/` |
 | TS 项目知识和优化记录 | `02-PROJECTS/TileScape/` |
 | 跨项目通用知识 | `03-KNOWLEDGE/` |
+| 个人发展 / 职业战略复盘 | `02-PROJECTS/Agent/个人发展/` |
 
 ---
 
