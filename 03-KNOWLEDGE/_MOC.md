@@ -30,6 +30,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 
 | 主题 | 入口 | 状态 |
 |---|---|---|
+| 底层框架（跨项目） | [[03-KNOWLEDGE/底层框架/底层框架总览|底层框架总览]] · [[03-KNOWLEDGE/底层框架/BettaSDK/SDK总览|BettaSDK]] · [[03-KNOWLEDGE/底层框架/BettaFramework/框架总览|BettaFramework]] · [[03-KNOWLEDGE/底层框架/BettaInterface/契约总览|BettaInterface 契约]] | 新增（2026-09-18）：TS / MT 共用 submodule 同源；**以 TS 为基准**，MT 仅作参考。BettaInterface 契约层 + BettaFramework 核心机制 + BettaSDK 架构级均已细化到复刻级（静态扫描 + git 实测 + asmdef GUID 解析，未做运行时验证） |
 | Unity / 架构方法 | [[03-KNOWLEDGE/Unity/Unity 开发笔记|Unity 开发笔记]] | Knowledge 候选（来源 TileMatch，TileScape 未验证） |
 | 编辑器设计 | [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器概览]] | 混合条目，待拆分事实与通用方法 |
 | 游戏逻辑 | [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]]、[[03-KNOWLEDGE/Game-Logic/任务-元素牌开发|元素牌开发任务]] | 项目事实汇总；跨 TS / MT 元素牌持续任务 |
@@ -46,6 +47,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | `Unity/Unity 开发笔记.md` | 源自 TileMatch，MVC、asmdef、LocalExtensions 等可形成可迁移方法，仍混有项目例子。 | 保留为 Knowledge 候选；来源 TileMatch，TileScape 未验证。 |
 | `Obsidian插件使用指导.md` | LG vault 的操作与配置资料，属 Agent 工作流，不属通用项目知识。 | 本次不移动；待迁移到 Agent 工作流，正式入口见 [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]]。 |
 | `Unity.md` | 文件名 `Unity`，与 Knowledge 层语义错位；当前为空文件。 | **不进入任何 MOC 导航**；登记为 `needs-review`，不得删除或覆盖。 |
+| `底层框架/`（BettaSDK 子目录 + BettaFramework 子目录 + BettaInterface 子目录） | 2026-09-18 新增。来源 TS / MT 共用 submodule；职责与链路为包内 README + 静态扫描，版本与挂载差异为 git 实测，asmdef 依赖为 GUID 实测解析。BettaInterface 已细化到逐接口签名（契约总览 + 上下清单）；BettaFramework 已细化到核心机制（框架总览 + UIManager / MessageDispatch / Locale / StateMachine）；BettaSDK 已细化到架构级（SDK总览 + 启动与生命周期 / 能力注入-ImplementHub / 第三方服务-ServiceHub / 配置Schema）。 | 保留。**已定基准：以 TS 工作区现状为准**（与 HEAD 的旧命名差异不追回），MT 仅作参考；版本对照表在任一侧升级 submodule 后复核。 |
 
 > [!note]
 > 上表 `Unity.md` 仅作 `needs-review` 登记，不作为活动导航入口。
