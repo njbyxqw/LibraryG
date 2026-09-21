@@ -12,7 +12,7 @@ tags: [LibraryG, Codex, 本机流程, TileScape, TileMatch, 知识库]
 
 # 本机项目执行与 LG 知识库桥接规范
 
-> 本规范仅约束当前用户的本机 AI / Codex 工作流，不要求修改 TS、MT 团队仓库的 `AGENTS.md`、`.cursor/rules`、`Docs/` 或其他受远端协作影响的文件。
+> 本规范仅约束当前用户的本机 AI / Codex 工作流，不修改 TS、MT 的业务代码、团队 Docs、项目 `AGENTS.md` 或 `.cursor/rules`。项目 `AGENTS.md` 只读作团队约束；本机忽略的 `.agent/PROJECT.md` 与 `.worktreeinclude` 才可作为个人 Agent 入口，且只包含项目地图和 Worktree 所需上下文，不复制 LG 规则或任务进度。
 
 ## 唯一来源与分工
 
@@ -52,7 +52,7 @@ tags: [LibraryG, Codex, 本机流程, TileScape, TileMatch, 知识库]
 
 ## 禁止项
 
-- 不为同步个人知识库流程修改 TS / MT 团队规则、团队 Docs 或远端协作文件。
+- 不为同步个人知识库流程修改 TS / MT 的业务代码、团队 Docs 或 `.cursor/rules`；项目 Agent 入口文件仅在用户明确启用时维护，并保持最小、可审阅。
 - 不把项目 Docs 当作个人知识库或规范源，也不因其本地属性而拒绝读取/检索。
 - 不用事后迁移替代任务创建时应走的 LG 主档案。
 - 不自动 commit / push。

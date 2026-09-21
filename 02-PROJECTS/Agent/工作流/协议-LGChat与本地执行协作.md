@@ -2,8 +2,8 @@
 title: LG、Chat 与本地执行协作协议
 date: 2026-09-15
 type: protocol
-status: draft
-lifecycle: needs-review
+status: historical
+lifecycle: historical
 priority: high
 tags: [LibraryG, ChatGPT, Codex, 协作协议, Agent]
 source: "2026-09-15 用户草案与对话分析；未取代现有 finalized 工作流规范"
@@ -11,6 +11,9 @@ reviewed_at: 2026-09-15
 ---
 
 # LG、Chat 与本地执行协作协议
+
+> [!info] 已整合
+> 本文保留为 2026-09-15 的协议草案，不再作为执行入口。当前任务、Context、Worktree 和 Artifact 规则见 [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]]。
 
 > [!warning] 草案状态
 > 本协议定义 Chat、LG 与本地执行任务的协作分工。它补充而不覆盖 LG 既有的入库、MOC、Daily、项目桥接和权限规范；冲突时以现有 `finalized` / `current` 规范为准。

@@ -23,6 +23,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 |---|---|
 | 任务产出与入库 | [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]] |
 | 本机 TS / MT 执行与 LG 桥接 | [[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接|本机项目执行与 LG 知识库桥接规范]] |
+| 多 Agent Task / Context / Worktree / Artifact | [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]] |
 | MOC / 导航层级 | [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名与导航层级规范]] |
 | INBOX 整理 | [[02-PROJECTS/Agent/工作流/INBOX对话工作区工作流|INBOX 对话工作区工作流]] |
 | Daily / 日志同步 | [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|工作内容日志同步规范]] |
@@ -30,12 +31,12 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | 知识沉淀闭环 / 自动巡检 | [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]] |
 | AI 协作注意事项 | [[02-PROJECTS/Agent/工作流/规范-AI协作注意事项|AI 协作注意事项]] |
 
-### 协作草案（draft / needs-review）
+### 历史协作材料（historical / needs-review）
 
 | 需求 | 入口 | 状态 |
 |---|---|---|
-| Chat、LG 与本地执行的日常分工 | [[02-PROJECTS/Agent/工作流/指南-LGChat与本地执行协作|LG、Chat 与本地执行协作实用指南]] | draft |
-| Chat → 本地核实 → Codex → LG 的执行边界 | [[02-PROJECTS/Agent/工作流/协议-LGChat与本地执行协作|LG、Chat 与本地执行协作协议]] | needs-review |
+| Chat、LG 与本地执行的日常分工 | [[02-PROJECTS/Agent/工作流/指南-LGChat与本地执行协作|LG、Chat 与本地执行协作实用指南]] | historical / 已由多 Agent 规范整合 |
+| Chat → 本地核实 → Codex → LG 的执行边界 | [[02-PROJECTS/Agent/工作流/协议-LGChat与本地执行协作|LG、Chat 与本地执行协作协议]] | historical / 已由多 Agent 规范整合 |
 | 个人 Plus 自动 INBOX 收件器 | [[02-PROJECTS/Agent/工作流/方案-ChatGPTPlus自动INBOX收件器|ChatGPT Plus 自动 INBOX 收件器设计]] | draft / needs-review |
 | 桌面端 WebMCP 自动 INBOX 理论预演 | [[02-PROJECTS/Agent/工作流/预演-ChatGPT桌面端WebMCP自动INBOX收件|ChatGPT 桌面端 WebMCP 自动 INBOX 收件理论预演]] | D1/D2 隔离实测通过；生产未接线 |
 | 桌面端 WebMCP 生产 INBOX 接线 | [[02-PROJECTS/Agent/工作流/方案-桌面端WebMCP生产INBOX接线|桌面端 WebMCP 生产 INBOX 接线设计]] | historical；已被自动通知模式替代 |
@@ -53,6 +54,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | 初始工作空间评估 | [[02-PROJECTS/Agent/工作流/评估-工作空间与工作流程现状-2026-08-05|工作空间与工作流程现状评估]] | report |
 | Obsidian 链接完整性审计 | [[02-PROJECTS/Agent/工作流/报告-Obsidian链接完整性审计-2026-08-10|Obsidian 链接完整性审计报告]] | report |
 | 内容归属与任务产出审查 | [[02-PROJECTS/Agent/工作流/审查-知识库内容与任务产出流程-2026-09-03|知识库内容与任务产出流程审查]] | report |
+| LG 规范与入口降噪审查 | [[02-PROJECTS/Agent/工作流/审查-LG规范与入口降噪-2026-09-18|LG 规范与入口降噪审查]] | needs-review / 本次现状基线 |
 | 维护降噪 / Obsidian 深化 | [[02-PROJECTS/Agent/工作流/计划-知识库维护降噪与Obsidian深化-2026-08-26|知识库维护降噪与 Obsidian 深化计划]] | plan |
 | 近期任务逐项归档与全量巡检 | [[02-PROJECTS/Agent/工作流/计划-近期任务归档全量巡检-2026-09-07|近期任务归档全量巡检计划]] | scheduled，执行结果以计划勾选项及报告为准 |
 

@@ -23,6 +23,16 @@ source: "静态审计：main/origin/main @ c94c182；.gitignore、.gitattributes
 | 历史保全 | 旧 INBOX 已归档到 `05-ARCHIVE/Legacy-LG-remote-2026-09-03/`，而非直接删除。 | 归档仍含大附件，持续累积会拖慢克隆与历史操作。 |
 | 仓库健康 | `git fsck --full` 未见对象损坏；有 11 个 dangling 对象。 | dangling 对象通常来自近期重写/暂存操作，不是损坏；暂不清理。 |
 
+## 2026-09-20 本地工作区复核
+
+| 项目 | 已确认结论 | 验证边界 / 待处理 |
+|---|---|---|
+| 本地与远端 | `main` 与 `origin/main` 均在 `14b574b (备份)`；提交差异为 `0 / 0`。 | 当前没有本地提交待推送；以下内容均为工作区暂存变化。 |
+| 暂存范围 | 22 个文件已暂存，`1241 insertions(+), 32 deletions(-)`；未暂存 0、未跟踪 0。内容集中在 Daily、Agent 工作流、TileScape DDAV3 文档、INBOX/MOC、模板/归档及一个脚本。 | 暂存内容尚未形成提交；提交前仍需按主题复核。 |
+| 本机脚本 | `scripts/lg-mcp-auth-header.sh` 会读取 `.obsidian/plugins/obsidian-local-rest-api/data.json` 的 `apiKey` 并输出 Bearer Header。暂存文本未发现实际密钥。 | 脚本硬编码 `/Users/dean/LibraryG`，当前不兼容 Windows；凭据轮换与跨设备方案未验证。 |
+| SQLite | `02-PROJECTS/TileMatch/工具/关卡文件追踪/level_tracker.db` 被 `.gitignore` 忽略，不在 HEAD、暂存区或远端；当前规则将其定义为本机增量缓存。 | 这与此前“SQLite 不忽略”的用户意图存在差异；是否改为跨设备共享，待单独确认，未在本次归档中修改。 |
+| 临时画布 | `00-INBOX/未命名.canvas` 处于暂存删除状态；`Excalidraw/` 仍按约定不同步。 | 删除是否保留需提交前复核；本次不擅自恢复或清理。 |
+
 ## 优化优先级
 
 | 优先级 | 问题 | 风险 | 建议动作 |

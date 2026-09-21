@@ -31,6 +31,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | Core | [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]] | 需要归档、入库、维护、沉淀稳定结论时 |
 | Reference | [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名与导航层级规范]] | 处理 MOC、链接、同名入口、导航层级时 |
 | Reference | [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] | 涉及 MT / TS 对照、迁移、复现时 |
+| Reference | [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接]] | 涉及 Task、最小 Context、Worktree、Artifact、MCP 或 Agent 交接时 |
 | Reference | [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|工作内容日志同步规范]] | 需要确认 Daily 详细格式时 |
 | Reference | [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]] | 做周期巡检、补漏审计或自动化前置检查时 |
 | Reference | [[02-PROJECTS/Agent/工作流/INBOX对话工作区工作流|INBOX 对话工作区工作流]] | 整理 `00-INBOX/` 或处理临时产物时 |
@@ -54,6 +55,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 |---|---|
 | LibraryG 入库 / 归档 / 维护 | [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]] |
 | 在 TS / MT 执行任务、读取项目 Docs、创建个人任务档案 | [[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接|本机项目执行与 LG 知识库桥接规范]] |
+| 多 Agent 任务 / Worktree / Artifact 交接 | [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]] |
 | 可迁移 Unity / 编辑器 / 设计知识 | [[03-KNOWLEDGE/_MOC|通用知识 MOC]] |
 | LG 工作流 / Daily / INBOX / MOC 维护 | [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]] |
 | AI 注意事项 | [[02-PROJECTS/Agent/工作流/规范-AI协作注意事项|AI 注意事项]] |

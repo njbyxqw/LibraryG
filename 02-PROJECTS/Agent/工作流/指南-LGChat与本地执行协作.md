@@ -2,8 +2,8 @@
 title: LG、Chat 与本地执行协作实用指南
 date: 2026-09-15
 type: guide
-status: draft
-lifecycle: needs-review
+status: historical
+lifecycle: historical
 priority: high
 tags: [LibraryG, ChatGPT, Codex, 工作流, 协作指南]
 source: "2026-09-15 用户草案与对话分析；未取代现有 finalized 工作流规范"
@@ -11,6 +11,9 @@ reviewed_at: 2026-09-15
 ---
 
 # LG、Chat 与本地执行协作实用指南
+
+> [!info] 已整合
+> 本文保留为 2026-09-15 的试行记录，不再作为执行入口。当前任务、Context、Worktree 和 Artifact 规则见 [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]]。
 
 > [!warning] 草案状态
 > 本文用于试行“讨论—事实核实—执行—沉淀”的协作方式。入库、Daily、MOC、跨项目复现与项目写入边界仍以 [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]] 和 [[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接|本机项目执行与 LG 知识库桥接规范]] 为准。
