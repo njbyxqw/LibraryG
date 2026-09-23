@@ -16,6 +16,9 @@ source: "用户提出由 WorkBuddy 执行自动化、Codex 负责预处理；基
 > [!warning] 当前状态
 > 本文是休眠方案，不会启用、停用或替换既有自动化。只有用户明确要推进 WorkBuddy 交接时才读取和执行。旧 `.workbuddy/` 脚本和 TileMatch 的 v1 自动化规范仅作历史参考，不能直接复用。
 
+> [!note] 与 TileScape 产品任务的边界
+> 2026-09-03 的磁铁牌文档包只是一次小样本：Codex 派发了精确的文档写入动作，WorkBuddy 执行并报告。它不表示 WorkBuddy 参与磁铁牌代码实现，也不把磁铁牌归为 WorkBuddy 任务；当前产品持续任务仍独立由 TileScape MOC 路由。
+
 > [!important] 规范源
 > LG 是唯一知识库与规范源。WorkBuddy、Codex heartbeat 或任何后续自动化都必须先读取 LG 当前规范；TS / MT 只作为项目执行空间和事实来源，不从项目内 AI 记忆或源码旁文档自行派生规范。
 
@@ -233,7 +236,7 @@ flowchart LR
 
 ## 关联
 
-- [[AI总MOC|AI 总 MOC]]
+- [[AI总MOC.md|AI 总 MOC]]
 - [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]]
 - [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|工作内容日志同步规范]]
 - [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]]

@@ -1,3 +1,18 @@
+---
+title: "章节0前期剧情 × Tile玩法承接完整方案"
+type: reference-draft
+project: TileScape
+status: historical
+lifecycle: needs-review
+archive_candidate: true
+source: "历史原始方案材料；具体来源、验收记录与现行适用性待补"
+superseded_by: "00-INBOX/2026-09-21 - Chapter0关卡后可配置视频剧情方案.md"
+tags: [inbox, TileScape, Chapter0, StoryFlow, historical]
+---
+
+> [!warning] 历史材料
+> 本文固定 L1/L2 剧情承接的假设已被可配置视频剧情方案替代。保留原文用于追溯，不作为当前需求、资源生产或实现指令。
+
 ## 一、方案目标
 
 章节0共20关，定位为：

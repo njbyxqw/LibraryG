@@ -56,11 +56,11 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 
 ## 关联
 
-- [[AI总MOC|AI 总 MOC]]
+- [[AI总MOC.md|AI 总 MOC]]
 - [[02-PROJECTS/TileMatch/_MOC|TileMatch MOC]]
 - [[02-PROJECTS/TileScape/_MOC|TileScape MOC]]
 - [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]]
 - [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]]
 - [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名与导航层级规范]]
 <!-- kc:KC-20260903-001-magnet-card-design:A2 -->
-- [[03-KNOWLEDGE/Game-Logic/设计-磁铁牌元素-v1|磁铁牌元素方案 v1]] — 按关卡组数随机替换、点击后三张联动消除的设计稿；存在待确认的 OverBar / 三消语义。
+- [[03-KNOWLEDGE/Game-Logic/设计-磁铁牌元素-v1|磁铁牌元素方案 v1]] — TileScape 当前磁铁牌设计与 Trial 入口：直接放置，点击后 3 张进入 Bar 并触发匹配；组数改牌为未启用备选机制。
