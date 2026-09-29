@@ -35,6 +35,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 
 | 需求 | 入口 | 状态 |
 |---|---|---|
+| Chat 到本地 INBOX 长期任务 | [[02-PROJECTS/Agent/工作流/任务-Chat到本地INBOX交接长期任务|Chat 到本地 INBOX 交接长期任务]] | 当前主档；本地收件已通过，普通 Chat / Work 验收待完成 |
 | Chat、LG 与本地执行的日常分工 | [[02-PROJECTS/Agent/工作流/指南-LGChat与本地执行协作|LG、Chat 与本地执行协作实用指南]] | historical / 已由多 Agent 规范整合 |
 | Chat → 本地核实 → Codex → LG 的执行边界 | [[02-PROJECTS/Agent/工作流/协议-LGChat与本地执行协作|LG、Chat 与本地执行协作协议]] | historical / 已由多 Agent 规范整合 |
 | 个人 Plus 自动 INBOX 收件器 | [[02-PROJECTS/Agent/工作流/方案-ChatGPTPlus自动INBOX收件器|ChatGPT Plus 自动 INBOX 收件器设计]] | draft / needs-review |
