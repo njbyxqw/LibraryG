@@ -34,6 +34,7 @@ updated: 2026-08-05
 | LibraryG | `/Users/dean/LibraryG` | 唯一知识库 / 唯一规范源 / Obsidian vault |
 | MT 老项目 | `/Users/dean/Downloads/meatloaf_client` | 项目执行空间、旧项目代码与历史行为源 |
 | TileScape | `/Users/dean/TileScape` | 项目执行空间、从 MT 分离出的优化项目 |
+| Chuzzle | `/Users/dean/ChuzzleDemo` | Unity/C# 消除玩法项目；知识入口见 [[02-PROJECTS/Chuzzle/_MOC|Chuzzle MOC]] |
 | Obsidian 配置 | `/Users/dean/LibraryG/.obsidian` | 知识浏览、双链、模板、Dataview |
 
 ---
@@ -48,6 +49,7 @@ LibraryG/
 ├── 02-PROJECTS/     📁 项目笔记
 │   ├── TileMatch/      消除类游戏项目 (Unity/C#)
 │   ├── TileScape/      消除类独立项目 (Unity/C#，TileV2 主干)
+│   ├── Chuzzle/        Chuzzle Unity/C# 项目知识入口
 │   └── Agent/          AI 协作、工作流、记忆与自动化
 ├── 03-KNOWLEDGE/    📚 知识库
 │   ├── Unity/          Unity 开发知识
@@ -203,6 +205,7 @@ obsidian folders                              # 列出所有文件夹
 |---|---|---|
 | TileMatch / MT | [[02-PROJECTS/TileMatch/_MOC|项目 MOC]] · [[02-PROJECTS/TileMatch/_项目概览|项目概览]] | 历史工作主要沉淀区，旧项目逻辑与行为基线 |
 | TileScape / TS | [[02-PROJECTS/TileScape/_MOC|项目 MOC]] · [[02-PROJECTS/TileScape/_项目概览|项目概览]] | 从 MT 分离出的优化项目，近期工作会更多 |
+| Chuzzle | [[02-PROJECTS/Chuzzle/_MOC|项目 MOC]] · [[02-PROJECTS/Chuzzle/_项目概览|项目概览]] | Unity/C# 行列循环移动消除玩法；运行时、编辑器与验收任务已建立入口 |
 | Agent / LG 工作流 | [[02-PROJECTS/Agent/Memory|Agent Memory]] · [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] · [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名规范]] · [[02-PROJECTS/Agent/工作流/评估-工作空间与工作流程现状-2026-08-05|工作空间现状评估]] | 跨项目规范、记忆、复盘和流程沉淀 |
 
 ### TileScape · TS

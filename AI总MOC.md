@@ -58,6 +58,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | 多 Agent 任务 / Worktree / Artifact 交接 | [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]] |
 | 可迁移 Unity / 编辑器 / 设计知识 | [[03-KNOWLEDGE/_MOC|通用知识 MOC]] |
 | LG 工作流 / Daily / INBOX / MOC 维护 | [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]] |
+| 个人发展 / 策划职业竞争力 / 个人创作 | [[02-PROJECTS/Agent/个人发展/诊断-个人职业与发展-2026-09-13#10. 2026-10-09 基于岗位确认的重新诊断|职业诊断复核]] · [[02-PROJECTS/Agent/个人发展/诊断-个人职业与发展-2026-09-13#12. 2026-10-09 个人创作意向与对话存档|个人创作讨论（暂缓，未立项）]]；事实与建议分层，旧画像待复核 |
 | AI 注意事项 | [[02-PROJECTS/Agent/工作流/规范-AI协作注意事项|AI 注意事项]] |
 | 任务收尾 / 自动巡检 | [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]] |
 | WorkBuddy 执行交接 | [[02-PROJECTS/Agent/工作流/方案-WorkBuddy日志知识闭环自动化实施|WorkBuddy 日志知识闭环自动化实施方案]] |
@@ -70,6 +71,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | Obsidian 链接审计 | [[02-PROJECTS/Agent/工作流/报告-Obsidian链接完整性审计-2026-08-10|Obsidian 链接完整性审计报告]] |
 | TileMatch / MT 项目知识 | [[02-PROJECTS/TileMatch/_MOC|TileMatch MOC]] |
 | TileScape / TS 项目知识 | [[02-PROJECTS/TileScape/_MOC|TileScape MOC]] |
+| Chuzzle 项目知识 | [[02-PROJECTS/Chuzzle/_MOC|Chuzzle MOC]] |
 | 项目 AI 记忆同步 | [[02-PROJECTS/TileScape/参考/同步-项目AI记忆与Docs入口-2026-09-03|TS 项目 AI 记忆同步]] · [[02-PROJECTS/TileMatch/参考/同步-项目AI记忆与源码旁文档-2026-09-03|MT 项目 AI 记忆同步]] |
 | 跨 MT / TS 复现 | [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] |
 | Daily / 工作记录 | [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|工作内容日志同步规范]] |
