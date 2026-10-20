@@ -17,6 +17,9 @@ tags: [INBOX, LibraryG, MOC]
 
 | 任务卡 | 状态 | 下一步 | 关联 |
 |---|---|---|---|
+| [[00-INBOX/2026-10-16 - WorkBuddy MT MagicBox状态审查|WorkBuddy MT MagicBox 状态审查]] | 待派发 | 派到 WorkBuddy MT `meatloaf_client`；返回后由 Codex 验收 | [[00-INBOX/2026-10-16 - TileMatch障碍里牌状态梳理派发与进度|障碍梳理父任务]] |
+| [[00-INBOX/2026-10-16 - WorkBuddy MT Flip-JokerFlip状态审查|WorkBuddy MT Flip-JokerFlip 状态审查]] | 完成（有修正验收） | 下一组需另建任务卡；本轮不自动连续派发 | [[00-INBOX/2026-10-16 - TileMatch障碍里牌状态梳理派发与进度|障碍梳理父任务]] |
+| [[00-INBOX/2026-10-16 - TileMatch障碍里牌状态梳理派发与进度|TileMatch 障碍里牌状态梳理派发与进度]] | 进行中（单任务闭环） | Flip / JokerFlip 已验收；下一组需另建可见任务卡及正式任务 ID | [[02-PROJECTS/TileMatch/游戏逻辑/局内障碍/障碍里牌状态矩阵与审查计划|状态矩阵主档]] |
 | [[00-INBOX/2026-09-17 - INBOX 粘贴交接通道试用|INBOX 粘贴交接通道试用]] | 方案 | 用户确认未调用工具时的粘贴交接体验 | 无 |
 | [[00-INBOX/2026-09-17 - INBOX 完整交接验收|INBOX 完整交接验收]] | 方案 | 在普通 Chat 使用固定说明进行最终验收 | 无 |
 | [[00-INBOX/2026-09-17 - WebMCP 生产 INBOX 首次试用|WebMCP 生产 INBOX 首次试用]] | 方案 | 评审真实试用结果，决定是否纳入日常试用 | [[02-PROJECTS/Agent/工作流/方案-桌面端WebMCP生产INBOX接线]] |

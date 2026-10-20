@@ -50,6 +50,7 @@ LibraryG/
 │   ├── TileMatch/      消除类游戏项目 (Unity/C#)
 │   ├── TileScape/      消除类独立项目 (Unity/C#，TileV2 主干)
 │   ├── Chuzzle/        Chuzzle Unity/C# 项目知识入口
+│   ├── 产品分析/        竞品与外部产品的资源、活动和逻辑分析
 │   └── Agent/          AI 协作、工作流、记忆与自动化
 ├── 03-KNOWLEDGE/    📚 知识库
 │   ├── Unity/          Unity 开发知识
@@ -57,6 +58,7 @@ LibraryG/
 │   └── Game-Logic/     游戏逻辑分析
 ├── 04-TEMPLATES/    📋 模板 (5个)
 ├── 05-ARCHIVE/      🗄️ 归档
+├── 06-PRODUCT-ASSETS/ 📦 产品分析本机大文件区（Git 忽略）
 ├── .workbuddy/      ⚙️ 历史 WorkBuddy 兼容区 / 当前 AI 记忆入口
 └── .obsidian/       🔧 Obsidian 配置
 ```
@@ -206,6 +208,7 @@ obsidian folders                              # 列出所有文件夹
 | TileMatch / MT | [[02-PROJECTS/TileMatch/_MOC|项目 MOC]] · [[02-PROJECTS/TileMatch/_项目概览|项目概览]] | 历史工作主要沉淀区，旧项目逻辑与行为基线 |
 | TileScape / TS | [[02-PROJECTS/TileScape/_MOC|项目 MOC]] · [[02-PROJECTS/TileScape/_项目概览|项目概览]] | 从 MT 分离出的优化项目，近期工作会更多 |
 | Chuzzle | [[02-PROJECTS/Chuzzle/_MOC|项目 MOC]] · [[02-PROJECTS/Chuzzle/_项目概览|项目概览]] | Unity/C# 行列循环移动消除玩法；运行时、编辑器与验收任务已建立入口 |
+| 产品分析 | [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] | 竞品与外部产品的图片、动效、音效、活动和逻辑分析 |
 | Agent / LG 工作流 | [[02-PROJECTS/Agent/Memory|Agent Memory]] · [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] · [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名规范]] · [[02-PROJECTS/Agent/工作流/评估-工作空间与工作流程现状-2026-08-05|工作空间现状评估]] | 跨项目规范、记忆、复盘和流程沉淀 |
 
 ### TileScape · TS

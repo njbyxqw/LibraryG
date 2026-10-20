@@ -34,3 +34,7 @@ Excalidraw/
 
 # === Obsidian trash ===
 .trash/
+
+# === Device-local product analysis artifacts ===
+# Large XAPK/APK samples, decoded assets, media exports, and reverse-engineering outputs.
+/06-PRODUCT-ASSETS/

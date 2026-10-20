@@ -234,6 +234,20 @@ flowchart LR
 只自动生成报告和明确的 needs-review 任务包；不得移动、删除、覆盖或将文件时间/团队提交写成个人记录。可在已有 ready 任务包授权时执行无歧义链接补充。报告按优先级列出已修复、待用户确认、无证据/风险，并附精确路径。
 ```
 
+## 十二、当前能力核验（2026-10-19）
+
+| 项目 | 当前状态 | 可否直接使用 |
+|---|---|---|
+| LG 当前规范 | WorkBuddy 只要以 `/Users/dean/LibraryG` 为工作目录，并按本方案启动前清单读取 `AGENTS.md`、MOC、Memory 和工作流规范，即可按当前内容执行。 | **可读取；必须显式配置读取顺序与写入边界** |
+| `.workbuddy/knowledge-closure/` 队列 | 目录、模板、状态流转和执行说明已存在；`queue/ready/` 当前只有 `.gitkeep`，没有待执行任务包。 | **骨架可用；执行器未启用** |
+| WorkBuddy 自动化方案 | 本文 frontmatter 仍为 `status: dormant` / `lifecycle: dormant`。 | **不可视为已运行** |
+| 旧 Obsidian 集成配置 | `.workbuddy/obsidian-integration.json` 和历史 `inbox-organizer` Skill 仍引用 `D:\LibraryG` 等 Windows 路径，且旧 Skill 包含已被当前流程排除的移动/删除能力。 | **不可直接复用** |
+| WorkBuddy 自身 MCP / Skill | 本机 WorkBuddy 工具缓存可见若干已登记 MCP 工具，但未发现 REA 工具；本地 WorkBuddy Skill 仅发现 `aihot`，没有当前 Codex Skill 集合。 | **与 Codex 不共享，需在 WorkBuddy 单独安装、连接和授权** |
+| REA 本地程序 | `/Users/dean/.local/share/rea/` 下已有 Apktool、Cpp2IL、UnityPy 及导出脚本。 | **仅在 WorkBuddy 具备本地命令执行权限并显式使用绝对路径时可复用；这不等于拥有 REA MCP** |
+| REA MCP | 当前可用的 REA MCP 属于 Codex 会话的 MCP 配置；WorkBuddy 已登记工具列表中没有 REA。 | **目前不能直接调用；需在 WorkBuddy 侧单独配置并做只读验收** |
+
+因此，“复用规范”与“复用工具”必须分开判断：规范是共享文件，可通过冷启动说明直接复用；MCP、Skill、连接器、应用授权和会话权限均属于各自运行环境，不会因文件位于同一台机器而自动共享。
+
 ## 关联
 
 - [[AI总MOC.md|AI 总 MOC]]

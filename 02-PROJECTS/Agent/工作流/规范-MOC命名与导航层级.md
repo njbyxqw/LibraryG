@@ -116,6 +116,7 @@ MOC 不宜承载：
 | 工作空间总纲 | `工作空间总纲.md` | 多空间职责边界 |
 | TileMatch MOC | `02-PROJECTS/TileMatch/_MOC.md` | MT/TileMatch 项目入口 |
 | TileScape MOC | `02-PROJECTS/TileScape/_MOC.md` | TS/TileScape 项目入口 |
+| 产品分析 MOC | `02-PROJECTS/产品分析/_MOC.md` | 竞品与外部产品的资源、活动和逻辑分析入口 |
 | 通用知识 MOC | `03-KNOWLEDGE/_MOC.md` | 可迁移知识层入口；只路由可迁移知识，不替代项目 MOC |
 | Agent 工作流 MOC | `02-PROJECTS/Agent/工作流/_MOC.md` | LG 工作流、维护规范、MOC/INBOX/Daily/复现入口 |
 | TileMatch 障碍系统 MOC | `02-PROJECTS/TileMatch/游戏逻辑/局内障碍/局内障碍知识库_MOC.md` | 障碍系统专题入口 |
