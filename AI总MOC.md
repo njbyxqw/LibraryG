@@ -57,6 +57,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | 在 TS / MT 执行任务、读取项目 Docs、创建个人任务档案 | [[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接|本机项目执行与 LG 知识库桥接规范]] |
 | 多 Agent 任务 / Worktree / Artifact 交接 | [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]] |
 | 可迁移 Unity / 编辑器 / 设计知识 | [[03-KNOWLEDGE/_MOC|通用知识 MOC]] |
+| 跨项目工具仓库 / common_tools | [[07Tools/_MOC|Tools 工具集 MOC]] |
 | LG 工作流 / Daily / INBOX / MOC 维护 | [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]] |
 | 个人发展 / 策划职业竞争力 / 个人创作 | [[02-PROJECTS/Agent/个人发展/诊断-个人职业与发展-2026-09-13#10. 2026-10-09 基于岗位确认的重新诊断|职业诊断复核]] · [[02-PROJECTS/Agent/个人发展/诊断-个人职业与发展-2026-09-13#12. 2026-10-09 个人创作意向与对话存档|个人创作讨论（暂缓，未立项）]]；事实与建议分层，旧画像待复核 |
 | AI 注意事项 | [[02-PROJECTS/Agent/工作流/规范-AI协作注意事项|AI 注意事项]] |

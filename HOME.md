@@ -35,6 +35,7 @@ updated: 2026-08-05
 | MT 老项目 | `/Users/dean/Downloads/meatloaf_client` | 项目执行空间、旧项目代码与历史行为源 |
 | TileScape | `/Users/dean/TileScape` | 项目执行空间、从 MT 分离出的优化项目 |
 | Chuzzle | `/Users/dean/ChuzzleDemo` | Unity/C# 消除玩法项目；知识入口见 [[02-PROJECTS/Chuzzle/_MOC|Chuzzle MOC]] |
+| common_tools | `/Users/dean/common_tools` | 跨项目工具源码仓库；LG 导航入口见 [[07Tools/_MOC|Tools 工具集 MOC]] |
 | Obsidian 配置 | `/Users/dean/LibraryG/.obsidian` | 知识浏览、双链、模板、Dataview |
 
 ---
@@ -59,6 +60,7 @@ LibraryG/
 ├── 04-TEMPLATES/    📋 模板 (5个)
 ├── 05-ARCHIVE/      🗄️ 归档
 ├── 06-PRODUCT-ASSETS/ 📦 产品分析本机大文件区（Git 忽略）
+├── 07Tools/          🧰 跨项目工具仓库索引
 ├── .workbuddy/      ⚙️ 历史 WorkBuddy 兼容区 / 当前 AI 记忆入口
 └── .obsidian/       🔧 Obsidian 配置
 ```
@@ -210,6 +212,10 @@ obsidian folders                              # 列出所有文件夹
 | Chuzzle | [[02-PROJECTS/Chuzzle/_MOC|项目 MOC]] · [[02-PROJECTS/Chuzzle/_项目概览|项目概览]] | Unity/C# 行列循环移动消除玩法；运行时、编辑器与验收任务已建立入口 |
 | 产品分析 | [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] | 竞品与外部产品的图片、动效、音效、活动和逻辑分析 |
 | Agent / LG 工作流 | [[02-PROJECTS/Agent/Memory|Agent Memory]] · [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] · [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名规范]] · [[02-PROJECTS/Agent/工作流/评估-工作空间与工作流程现状-2026-08-05|工作空间现状评估]] | 跨项目规范、记忆、复盘和流程沉淀 |
+
+### 跨项目工具
+
+[[07Tools/_MOC|Tools 工具集 MOC]] · `/Users/dean/common_tools`：移动应用、Unity 资源及运行时分析工具入口。
 
 ### TileScape · TS
 入口：[[02-PROJECTS/TileScape/_MOC|项目 MOC]] · [[02-PROJECTS/TileScape/_项目概览|项目概览]]

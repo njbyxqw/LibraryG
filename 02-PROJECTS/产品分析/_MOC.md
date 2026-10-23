@@ -1,6 +1,6 @@
 ---
 title: 产品分析 MOC
-date: 2026-10-20
+date: 2026-10-21
 type: index
 status: current
 lifecycle: current
@@ -23,8 +23,16 @@ aliases:
 | 当前产品列表 | [[#产品入口|产品入口]] |
 | 大文件资源保存规则 | [[02-PROJECTS/产品分析/资源目录规范|产品分析资源目录规范]] |
 | APK / XAPK 静态分析方法 | [[02-PROJECTS/Agent/工具/指南-REA休闲游戏APK静态分析接入与边界|REA APK 分析指南]] |
+| Royal Match 资源与逻辑总览 | [[02-PROJECTS/产品分析/Royal Match/资源与逻辑分析总览-38911|Royal Match 38911 总览]] |
+| Royal Match 系统活动、关卡与主场景 | [[02-PROJECTS/产品分析/Royal Match/系统活动关卡与主场景框架-38911|Royal Match 38911 大体框架]] |
+| Royal Match 弹窗规则 | [[02-PROJECTS/产品分析/Royal Match/系统拆解-弹窗框架-38911|Royal Match 38911 弹窗框架与展示规则]] |
+| Royal Match 设备分辨率适配 | [[02-PROJECTS/产品分析/Royal Match/系统拆解-设备分辨率与横竖屏适配-38911|Royal Match 38911 设备分辨率与横竖屏适配]] |
+| Royal Match 活动清单 | [[02-PROJECTS/产品分析/Royal Match/活动清单与简述-38911|Royal Match 38911 活动清单与简述]] |
+| Royal Match Lava Quest / Ancient Adventure | [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911|两项连胜活动的规则、配置、分组协议与关卡回调边界]] |
+| Royal Match 本地资源路径 | [[02-PROJECTS/产品分析/Royal Match/资源路径索引|Royal Match 资源路径索引]] |
 | Match Villains 资源与逻辑总览 | [[02-PROJECTS/产品分析/Match Villains/资源与逻辑分析总览-7307|Match Villains 7307 总览]] |
 | Match Villains 活动系统 | [[02-PROJECTS/产品分析/Match Villains/活动系统总览-7307|Match Villains 7307 活动总览]] |
+| Match Villains 活动数值与策略 | [[02-PROJECTS/产品分析/Match Villains/活动数值与策略配置-7307|Match Villains 7307 活动数值与策略]] |
 | Match Villains 本地资源路径 | [[02-PROJECTS/产品分析/Match Villains/资源路径索引|Match Villains 资源路径索引]] |
 | Tile Kingdom 资源与逻辑总览 | [[02-PROJECTS/产品分析/Tile Kingdom/资源与逻辑分析总览-1.58|Tile Kingdom 1.58 总览]] |
 | Tile Kingdom 本地资源路径 | [[02-PROJECTS/产品分析/Tile Kingdom/资源路径索引|Tile Kingdom 资源路径索引]] |
@@ -35,10 +43,21 @@ aliases:
 
 资源与文档采用双层结构：原始包和各类大体积产物统一进入 `/Users/dean/LibraryG/06-PRODUCT-ASSETS/<Product>/<Version>/`；逻辑、框架、结论和索引继续维护在本项目目录。详见 [[02-PROJECTS/产品分析/资源目录规范|资源目录规范]]。
 
+### Royal Match
+
+- [[02-PROJECTS/产品分析/Royal Match/资源与逻辑分析总览-38911|38911 资源与逻辑分析总览]] — 包体、Android 启动、Unity 资源、三消棋盘、活动 Bundle 与难度随机入口的静态基线
+- [[02-PROJECTS/产品分析/Royal Match/系统活动关卡与主场景框架-38911|38911 系统活动、关卡与主场景框架]] — 活动分层与回流、关卡处理主链、Home Flow 和场景切换的大体结构
+- [[02-PROJECTS/产品分析/Royal Match/系统拆解-弹窗框架-38911|38911 弹窗框架与展示规则]] — 全屏/普通弹窗、活动状态触发、礼包规则、Flow 串行与同界面多级弹窗
+- [[02-PROJECTS/产品分析/Royal Match/系统拆解-设备分辨率与横竖屏适配-38911|38911 设备分辨率与横竖屏适配]] — 比例分档、相机视口、安全区、横竖屏广播，以及 Home、活动弹窗和关卡棋盘的局部适配
+- [[02-PROJECTS/产品分析/Royal Match/活动清单与简述-38911|38911 活动清单与简述]] — `EventsHelper` 中央 36 项活动，以及常驻、旧版和活动相关外围模块
+- [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911|Lava Quest 与 Ancient Adventure 活动规则]] — Lava 的模拟分组协议、7 连胜与奖池结算；Ancient 的阶段/奖励配置；两者的关卡回调和局内调控边界
+- [[02-PROJECTS/产品分析/Royal Match/资源路径索引|资源路径索引]] — 原始包、拆包、图片/音频导出与 IL2CPP 产物位置
+
 ### Match Villains
 
 - [[02-PROJECTS/产品分析/Match Villains/资源与逻辑分析总览-7307|7307 资源与逻辑分析总览]] — 包体、图片、动效、音频、关卡、DDA 与逻辑的静态基线
-- [[02-PROJECTS/产品分析/Match Villains/活动系统总览-7307|7307 活动系统总览]] — 49 个具体活动模块及计分、进度、奖励和联动关系
+- [[02-PROJECTS/产品分析/Match Villains/活动系统总览-7307|7307 活动系统总览]] — 七层活动框架、三类系统角色、49 个具体模块及统一下钻入口
+- [[02-PROJECTS/产品分析/Match Villains/活动数值与策略配置-7307|7307 活动数值与策略配置]] — 计分、概率、阶梯、失败补偿、Power Cards 与 DDA 本地基线
 - [[02-PROJECTS/产品分析/Match Villains/资源路径索引|资源路径索引]] — 原始包、拆包、Unity 导出与 IL2CPP 产物位置
 
 ### Tile Kingdom

@@ -1,7 +1,7 @@
 ---
 title: REA 休闲游戏 APK 静态分析接入与边界
 date: 2026-10-13
-updated: 2026-10-19
+updated: 2026-10-21
 type: guide
 status: current
 tags: [LibraryG, Agent, REA, APK, static-analysis]
@@ -69,7 +69,7 @@ REA 竞品 APK 分析默认不是“解包完成即结束”，而是围绕资�
 2. 先检查路径是否为真实 APK/XAPK 文件而非 Finder Alias；XAPK 应能识别为 ZIP 容器。再仅做包信息、Manifest、资源与依赖概览；样本不复制入 LibraryG。
 3. 需要 Java/Kotlin 代码检索时，使用 REA 的 Android 静态分析工具；需要解码 `resources.arsc` 或 XML 资源时，使用已校验的 Apktool JAR。
 4. Unity 美术资源优先从 Addressables bundle 用隔离的 UnityPy 导出；先按资源名小批量筛选，保留 JSON 报告和 path ID，避免把 Texture2D 与 Sprite 的重复导出误判为不同原画。
-5. Unity 音频同时检查 Addressables bundle 和 `assets/bin/Data` 的 AudioClip；导出时保留原名称、path ID、时长、声道、采样率和 JSON 报告。按时长生成的 Music/SFX 目录仅是浏览分类，不能据此推断实际播放总线。
+5. Unity 音频同时检查 Addressables bundle 和 `assets/bin/Data` 的 AudioClip；若 `AudioClip.m_Resource` 指向 `resources.resource` 等流式侧车，必须将主 Unity 文件与侧车一并交给 UnityPy，不能把单文件解码失败误判为音频缺失。共享脚本 `export_unity_audio.py` 支持可重复的 `--resource` 参数。导出时保留原名称、path ID、时长、声道、采样率和 JSON 报告；按时长生成的 Music/SFX 目录仅是浏览分类，不能据此推断实际播放总线。
 6. IL2CPP 逻辑以 `global-metadata.dat`、目标架构 `libil2cpp.so` 和准确 Unity 版本配对；先输出 Diffable C# 做类/字段/方法索引，再按具体问题查 ISIL/原生指令。Cpp2IL 的 `NotImplemented` 或匿名地址调用必须保留为未完全恢复，不强行翻译成源码事实。
 7. 将结论按游戏或专题归入 `02-PROJECTS/` 对应知识路径，并在当日 Daily 写清样本、证据边界和未验证项。
 
