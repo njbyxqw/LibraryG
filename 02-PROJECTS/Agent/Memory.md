@@ -14,6 +14,13 @@ tags: [Agent, AI, LibraryG, MEMORY, 工作流]
 
 ## 路径速查
 
+### 多设备使用边界（2026-10-26 用户确认）
+
+- LG 是 Windows 与 macOS 多设备、多项目的统一知识库；内容、规范和维护方案共用，设备后缀只区分日志来源。新日志按 Asia/Shanghai 日期写 `01-DAILY/YYYY-MM-DD-mac.md` / `YYYY-MM-DD-win.md`；共用 `YYYY-MM-DD.md` 总览由既有维护任务按设备分区汇集，保留源记录和实际项目分节。详见 [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|共用日志规则]]。现行自动化 prompt 尚待回读和补充，不以规则修改冒充任务配置已生效。
+- 两台设备的项目不完全一致，不默认代码、分支、依赖或资源同步；通用内容及后续需要记录的信息由用户继续补充。
+- 当前 Windows：LG 为 `D:\LibraryG`，MT 为 `D:\meatloaf_client01`，TS 为 `D:\TileScape_fresh`。本次仅确认三个目录存在，未检查项目内部结构或代码版本。
+- 下表保留 Mac 路径。执行任务时按当前设备选择根目录，并核实本机项目入口；不直接套用另一设备的绝对路径。
+
 | 简称 | 路径 | 当前定位 |
 |---|---|---|
 | LG / LibraryG | `/Users/dean/LibraryG` | 唯一知识库与规范源、Obsidian vault、长期记忆、Daily、规范、复盘、跨项目检索 |
@@ -74,7 +81,7 @@ tags: [Agent, AI, LibraryG, MEMORY, 工作流]
 | 当前通用 AI 记忆 | `02-PROJECTS/Agent/Memory.md` |
 | Codex / Agent 冷启动说明 | `AGENTS.md` |
 | WorkBuddy 历史原始记忆 | `02-PROJECTS/Agent/WorkBuddy-MEMORY/` |
-| 每日详细过程、备份追踪、成功记录 | `01-DAILY/YYYY-MM-DD.md` |
+| 每日工作记录及设备来源 | `01-DAILY/YYYY-MM-DD-mac.md` / `YYYY-MM-DD-win.md`；`YYYY-MM-DD.md` 为共用总览，历史记录保留 |
 | 临时对话材料和待整理草稿 | `00-INBOX/` |
 | MT 旧逻辑和历史行为分析 | `02-PROJECTS/TileMatch/` |
 | TS 项目知识和优化记录 | `02-PROJECTS/TileScape/` |
@@ -85,8 +92,11 @@ tags: [Agent, AI, LibraryG, MEMORY, 工作流]
 
 ## 用户偏好
 
+- 竞品调研为长期任务（2026-10-26 用户确认）：包含逆向采集从安装包扩展到运行内容、新方法实证分析、Obsidian 建档与持续维护三条主线。后续模块/功能分析参考 Lava Quest 范例；先读 [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] → [[02-PROJECTS/产品分析/任务-竞品调研体系建设与持续维护|长期任务]] / [[02-PROJECTS/产品分析/方法-竞品模块分析与持续维护|分析方法]]，再进入目标产品；不按每次深挖创建尾章。
+
 - 默认使用中文，简洁、结构化、高信号。
 - 对比类内容优先用表格。
+- 持续分析文档按主题迭代（2026-10-26 用户明确）：新发现先补充、修订或重排已有章节，合并重复内容并纠正旧结论；不按每次深挖新增文档/小节或不断续尾。过程留 Daily 和证据记录，主文档呈现当前完整认识；仅按稳定独立专题拆分。
 - 用户说“ok，执行吧”通常表示可以开始实施。
 - 用户说“存档 / 保存 / 归档 / 整理 INBOX”通常表示需要把对话产物落到 LG。
 - 长内容不要默认只给摘要；如内容太长需要落文档，应明确告诉用户保存路径，并在对话里给要点。

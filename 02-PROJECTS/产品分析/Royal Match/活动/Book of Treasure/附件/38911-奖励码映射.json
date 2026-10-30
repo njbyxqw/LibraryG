@@ -1,0 +1,815 @@
+{
+  "sourceBuild": "38911",
+  "scope": "Book of Treasure reward type codes; code-to-enum only, not an asset binding.",
+  "sources": {
+    "nativeElf": {
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\38911\\04-ReverseEngineering\\Windows-Audit\\libil2cpp.so",
+      "sha256": "017f7d4716f9375d86bbbe006740e8e68e65c776bad757d00d8a3c120ee8f5eb"
+    },
+    "dumperScript": {
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\38911\\04-ReverseEngineering\\CommonTools-Audit\\dump\\dump\\script.json",
+      "sha256": "18a3386e0b58c7631ce8122d1cfd61d5163d629291f11ceb5515d660754c6c88"
+    },
+    "dumperStringLiterals": {
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\38911\\04-ReverseEngineering\\CommonTools-Audit\\dump\\dump\\stringliteral.json",
+      "sha256": "01ca6779ad15883be6bdc0cad95acc8fcd48243d37f7acd1f63aa39405303f33"
+    },
+    "rewardEnum": {
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\38911\\04-ReverseEngineering\\Windows-Audit\\diffable\\DiffableCs\\Assembly-CSharp\\Royal\\Player\\Configs\\RewardType.cs",
+      "sha256": "6afa4b8f016f5e9a01c1c4f3672ef227a4fd7dddcb0481b8f2cc44d58e7915c7"
+    }
+  },
+  "method": {
+    "getRewardType": "Royal.Player.Configs.RewardConfigs.GetRewardType(System.String)",
+    "getRewardTypeEntryAddress": "0x029d18f8",
+    "toRewardTypeName": "Royal.Player.Configs.RewardConfigs.ToRewardTypeName(RewardType)",
+    "toRewardTypeNameEntryAddress": "0x029d2eb0",
+    "toRewardTypeNameTableAddress": "0x0512f700",
+    "toRewardTypeNameTableIndex": "(RewardType - 1) * 8; valid enums 1..53",
+    "equalityFunction": {
+      "Address": 30871916,
+      "Name": "System.String$$op_Equality",
+      "Signature": "bool System_String__op_Equality (System_String_o* a, System_String_o* b, const MethodInfo* method);",
+      "TypeSignature": "iiii"
+    },
+    "validation": "Native ELF table pointer resolves to identical literals in both Dumper files. Independent GetRewardType comparison block calls System.String.op_Equality; true branch returns the same enum value. Hash dispatch is not guessed."
+  },
+  "entries": [
+    {
+      "code": "C",
+      "rewardType": "Coins",
+      "value": 1,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Coins",
+        "value": 1,
+        "code": "C",
+        "tableEntryAddress": "0x512f700",
+        "stringLiteralAddress": "0x5604fd8"
+      },
+      "getRewardType": {
+        "rewardType": "Coins",
+        "value": 1,
+        "stringLiteralAddress": "0x5604fd8",
+        "literalReferenceAddress": "0x53e7c88",
+        "comparisonBlockStart": "0x29d232c",
+        "equalityCallAddress": "0x29d2340",
+        "returnEnumInstructionAddress": "0x29d2348",
+        "instructions": [
+          "0x029d232c adrp x8, #0x53e7000",
+          "0x029d2330 ldr x8, [x8, #0xc88]",
+          "0x029d2334 mov x0, x19",
+          "0x029d2338 mov x2, xzr",
+          "0x029d233c ldr x1, [x8]",
+          "0x029d2340 bl #0x1d7116c",
+          "0x029d2344 tbz w0, #0, #0x29d2494",
+          "0x029d2348 mov w0, #1",
+          "0x029d234c b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "T",
+      "rewardType": "Tnt",
+      "value": 11,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Tnt",
+        "value": 11,
+        "code": "T",
+        "tableEntryAddress": "0x512f750",
+        "stringLiteralAddress": "0x561c600"
+      },
+      "getRewardType": {
+        "rewardType": "Tnt",
+        "value": 11,
+        "stringLiteralAddress": "0x561c600",
+        "literalReferenceAddress": "0x53a7258",
+        "comparisonBlockStart": "0x29d1e28",
+        "equalityCallAddress": "0x29d1e3c",
+        "returnEnumInstructionAddress": "0x29d1e44",
+        "instructions": [
+          "0x029d1e28 adrp x8, #0x53a7000",
+          "0x029d1e2c ldr x8, [x8, #0x258]",
+          "0x029d1e30 mov x0, x19",
+          "0x029d1e34 mov x2, xzr",
+          "0x029d1e38 ldr x1, [x8]",
+          "0x029d1e3c bl #0x1d7116c",
+          "0x029d1e40 tbz w0, #0, #0x29d2494",
+          "0x029d1e44 mov w0, #0xb",
+          "0x029d1e48 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "R",
+      "rewardType": "Rocket",
+      "value": 13,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Rocket",
+        "value": 13,
+        "code": "R",
+        "tableEntryAddress": "0x512f760",
+        "stringLiteralAddress": "0x5616fe8"
+      },
+      "getRewardType": {
+        "rewardType": "Rocket",
+        "value": 13,
+        "stringLiteralAddress": "0x5616fe8",
+        "literalReferenceAddress": "0x5369720",
+        "comparisonBlockStart": "0x29d244c",
+        "equalityCallAddress": "0x29d2460",
+        "returnEnumInstructionAddress": "0x29d2468",
+        "instructions": [
+          "0x029d244c adrp x8, #0x5369000",
+          "0x029d2450 ldr x8, [x8, #0x720]",
+          "0x029d2454 mov x0, x19",
+          "0x029d2458 mov x2, xzr",
+          "0x029d245c ldr x1, [x8]",
+          "0x029d2460 bl #0x1d7116c",
+          "0x029d2464 tbz w0, #0, #0x29d2494",
+          "0x029d2468 mov w0, #0xd",
+          "0x029d246c b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "H",
+      "rewardType": "Hammer",
+      "value": 6,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Hammer",
+        "value": 6,
+        "code": "H",
+        "tableEntryAddress": "0x512f728",
+        "stringLiteralAddress": "0x560ca30"
+      },
+      "getRewardType": {
+        "rewardType": "Hammer",
+        "value": 6,
+        "stringLiteralAddress": "0x560ca30",
+        "literalReferenceAddress": "0x53794c0",
+        "comparisonBlockStart": "0x29d1f78",
+        "equalityCallAddress": "0x29d1f8c",
+        "returnEnumInstructionAddress": "0x29d1f94",
+        "instructions": [
+          "0x029d1f78 adrp x8, #0x5379000",
+          "0x029d1f7c ldr x8, [x8, #0x4c0]",
+          "0x029d1f80 mov x0, x19",
+          "0x029d1f84 mov x2, xzr",
+          "0x029d1f88 ldr x1, [x8]",
+          "0x029d1f8c bl #0x1d7116c",
+          "0x029d1f90 tbz w0, #0, #0x29d2494",
+          "0x029d1f94 mov w0, #6",
+          "0x029d1f98 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "ULV",
+      "rewardType": "UnlimitedLives",
+      "value": 2,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "UnlimitedLives",
+        "value": 2,
+        "code": "ULV",
+        "tableEntryAddress": "0x512f708",
+        "stringLiteralAddress": "0x561fdd8"
+      },
+      "getRewardType": {
+        "rewardType": "UnlimitedLives",
+        "value": 2,
+        "stringLiteralAddress": "0x561fdd8",
+        "literalReferenceAddress": "0x53a8980",
+        "comparisonBlockStart": "0x29d2020",
+        "equalityCallAddress": "0x29d2034",
+        "returnEnumInstructionAddress": "0x29d203c",
+        "instructions": [
+          "0x029d2020 adrp x8, #0x53a8000",
+          "0x029d2024 ldr x8, [x8, #0x980]",
+          "0x029d2028 mov x0, x19",
+          "0x029d202c mov x2, xzr",
+          "0x029d2030 ldr x1, [x8]",
+          "0x029d2034 bl #0x1d7116c",
+          "0x029d2038 tbz w0, #0, #0x29d2494",
+          "0x029d203c mov w0, #2",
+          "0x029d2040 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "Ca",
+      "rewardType": "Cannon",
+      "value": 8,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Cannon",
+        "value": 8,
+        "code": "Ca",
+        "tableEntryAddress": "0x512f738",
+        "stringLiteralAddress": "0x56052f0"
+      },
+      "getRewardType": {
+        "rewardType": "Cannon",
+        "value": 8,
+        "stringLiteralAddress": "0x56052f0",
+        "literalReferenceAddress": "0x53c05d8",
+        "comparisonBlockStart": "0x29d21e8",
+        "equalityCallAddress": "0x29d21fc",
+        "returnEnumInstructionAddress": "0x29d2204",
+        "instructions": [
+          "0x029d21e8 adrp x8, #0x53c0000",
+          "0x029d21ec ldr x8, [x8, #0x5d8]",
+          "0x029d21f0 mov x0, x19",
+          "0x029d21f4 mov x2, xzr",
+          "0x029d21f8 ldr x1, [x8]",
+          "0x029d21fc bl #0x1d7116c",
+          "0x029d2200 tbz w0, #0, #0x29d2494",
+          "0x029d2204 mov w0, #8",
+          "0x029d2208 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "A",
+      "rewardType": "Arrow",
+      "value": 7,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Arrow",
+        "value": 7,
+        "code": "A",
+        "tableEntryAddress": "0x512f730",
+        "stringLiteralAddress": "0x55ffcb0"
+      },
+      "getRewardType": {
+        "rewardType": "Arrow",
+        "value": 7,
+        "stringLiteralAddress": "0x55ffcb0",
+        "literalReferenceAddress": "0x5344848",
+        "comparisonBlockStart": "0x29d1cb8",
+        "equalityCallAddress": "0x29d1ccc",
+        "returnEnumInstructionAddress": "0x29d1cd4",
+        "instructions": [
+          "0x029d1cb8 adrp x8, #0x5344000",
+          "0x029d1cbc ldr x8, [x8, #0x848]",
+          "0x029d1cc0 mov x0, x19",
+          "0x029d1cc4 mov x2, xzr",
+          "0x029d1cc8 ldr x1, [x8]",
+          "0x029d1ccc bl #0x1d7116c",
+          "0x029d1cd0 tbz w0, #0, #0x29d2494",
+          "0x029d1cd4 mov w0, #7",
+          "0x029d1cd8 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "J",
+      "rewardType": "Jester",
+      "value": 9,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "Jester",
+        "value": 9,
+        "code": "J",
+        "tableEntryAddress": "0x512f740",
+        "stringLiteralAddress": "0x560f5a8"
+      },
+      "getRewardType": {
+        "rewardType": "Jester",
+        "value": 9,
+        "stringLiteralAddress": "0x560f5a8",
+        "literalReferenceAddress": "0x5395918",
+        "comparisonBlockStart": "0x29d220c",
+        "equalityCallAddress": "0x29d2220",
+        "returnEnumInstructionAddress": "0x29d2228",
+        "instructions": [
+          "0x029d220c adrp x8, #0x5395000",
+          "0x029d2210 ldr x8, [x8, #0x918]",
+          "0x029d2214 mov x0, x19",
+          "0x029d2218 mov x2, xzr",
+          "0x029d221c ldr x1, [x8]",
+          "0x029d2220 bl #0x1d7116c",
+          "0x029d2224 tbz w0, #0, #0x29d2494",
+          "0x029d2228 mov w0, #9",
+          "0x029d222c b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "IG",
+      "rewardType": "AllInGameBoosters",
+      "value": 10,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "AllInGameBoosters",
+        "value": 10,
+        "code": "IG",
+        "tableEntryAddress": "0x512f748",
+        "stringLiteralAddress": "0x560d910"
+      },
+      "getRewardType": {
+        "rewardType": "AllInGameBoosters",
+        "value": 10,
+        "stringLiteralAddress": "0x560d910",
+        "literalReferenceAddress": "0x539e188",
+        "comparisonBlockStart": "0x29d2404",
+        "equalityCallAddress": "0x29d2418",
+        "returnEnumInstructionAddress": "0x29d2420",
+        "instructions": [
+          "0x029d2404 adrp x8, #0x539e000",
+          "0x029d2408 ldr x8, [x8, #0x188]",
+          "0x029d240c mov x0, x19",
+          "0x029d2410 mov x2, xzr",
+          "0x029d2414 ldr x1, [x8]",
+          "0x029d2418 bl #0x1d7116c",
+          "0x029d241c tbz w0, #0, #0x29d2494",
+          "0x029d2420 mov w0, #0xa",
+          "0x029d2424 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "UR",
+      "rewardType": "UnlimitedRocket",
+      "value": 3,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "UnlimitedRocket",
+        "value": 3,
+        "code": "UR",
+        "tableEntryAddress": "0x512f710",
+        "stringLiteralAddress": "0x561fee0"
+      },
+      "getRewardType": {
+        "rewardType": "UnlimitedRocket",
+        "value": 3,
+        "stringLiteralAddress": "0x561fee0",
+        "literalReferenceAddress": "0x53e6880",
+        "comparisonBlockStart": "0x29d229c",
+        "equalityCallAddress": "0x29d22b0",
+        "returnEnumInstructionAddress": "0x29d22b8",
+        "instructions": [
+          "0x029d229c adrp x8, #0x53e6000",
+          "0x029d22a0 ldr x8, [x8, #0x880]",
+          "0x029d22a4 mov x0, x19",
+          "0x029d22a8 mov x2, xzr",
+          "0x029d22ac ldr x1, [x8]",
+          "0x029d22b0 bl #0x1d7116c",
+          "0x029d22b4 tbz w0, #0, #0x29d2494",
+          "0x029d22b8 mov w0, #3",
+          "0x029d22bc b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "ULB",
+      "rewardType": "UnlimitedLightball",
+      "value": 5,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "UnlimitedLightball",
+        "value": 5,
+        "code": "ULB",
+        "tableEntryAddress": "0x512f720",
+        "stringLiteralAddress": "0x561fdc8"
+      },
+      "getRewardType": {
+        "rewardType": "UnlimitedLightball",
+        "value": 5,
+        "stringLiteralAddress": "0x561fdc8",
+        "literalReferenceAddress": "0x5383160",
+        "comparisonBlockStart": "0x29d2230",
+        "equalityCallAddress": "0x29d2244",
+        "returnEnumInstructionAddress": "0x29d224c",
+        "instructions": [
+          "0x029d2230 adrp x8, #0x5383000",
+          "0x029d2234 ldr x8, [x8, #0x160]",
+          "0x029d2238 mov x0, x19",
+          "0x029d223c mov x2, xzr",
+          "0x029d2240 ldr x1, [x8]",
+          "0x029d2244 bl #0x1d7116c",
+          "0x029d2248 tbz w0, #0, #0x29d2494",
+          "0x029d224c mov w0, #5",
+          "0x029d2250 b #0x29d2498"
+        ]
+      }
+    },
+    {
+      "code": "UT",
+      "rewardType": "UnlimitedTnt",
+      "value": 4,
+      "status": "verified-bidirectionally-against-original-native-code",
+      "toRewardTypeName": {
+        "rewardType": "UnlimitedTnt",
+        "value": 4,
+        "code": "UT",
+        "tableEntryAddress": "0x512f718",
+        "stringLiteralAddress": "0x561ff30"
+      },
+      "getRewardType": {
+        "rewardType": "UnlimitedTnt",
+        "value": 4,
+        "stringLiteralAddress": "0x561ff30",
+        "literalReferenceAddress": "0x53838a8",
+        "comparisonBlockStart": "0x29d22c0",
+        "equalityCallAddress": "0x29d22d4",
+        "returnEnumInstructionAddress": "0x29d22dc",
+        "instructions": [
+          "0x029d22c0 adrp x8, #0x5383000",
+          "0x029d22c4 ldr x8, [x8, #0x8a8]",
+          "0x029d22c8 mov x0, x19",
+          "0x029d22cc mov x2, xzr",
+          "0x029d22d0 ldr x1, [x8]",
+          "0x029d22d4 bl #0x1d7116c",
+          "0x029d22d8 tbz w0, #0, #0x29d2494",
+          "0x029d22dc mov w0, #4",
+          "0x029d22e0 b #0x29d2498"
+        ]
+      }
+    }
+  ],
+  "toRewardTypeNameTable": [
+    {
+      "rewardType": "Coins",
+      "value": 1,
+      "code": "C",
+      "tableEntryAddress": "0x512f700",
+      "stringLiteralAddress": "0x5604fd8"
+    },
+    {
+      "rewardType": "UnlimitedLives",
+      "value": 2,
+      "code": "ULV",
+      "tableEntryAddress": "0x512f708",
+      "stringLiteralAddress": "0x561fdd8"
+    },
+    {
+      "rewardType": "UnlimitedRocket",
+      "value": 3,
+      "code": "UR",
+      "tableEntryAddress": "0x512f710",
+      "stringLiteralAddress": "0x561fee0"
+    },
+    {
+      "rewardType": "UnlimitedTnt",
+      "value": 4,
+      "code": "UT",
+      "tableEntryAddress": "0x512f718",
+      "stringLiteralAddress": "0x561ff30"
+    },
+    {
+      "rewardType": "UnlimitedLightball",
+      "value": 5,
+      "code": "ULB",
+      "tableEntryAddress": "0x512f720",
+      "stringLiteralAddress": "0x561fdc8"
+    },
+    {
+      "rewardType": "Hammer",
+      "value": 6,
+      "code": "H",
+      "tableEntryAddress": "0x512f728",
+      "stringLiteralAddress": "0x560ca30"
+    },
+    {
+      "rewardType": "Arrow",
+      "value": 7,
+      "code": "A",
+      "tableEntryAddress": "0x512f730",
+      "stringLiteralAddress": "0x55ffcb0"
+    },
+    {
+      "rewardType": "Cannon",
+      "value": 8,
+      "code": "Ca",
+      "tableEntryAddress": "0x512f738",
+      "stringLiteralAddress": "0x56052f0"
+    },
+    {
+      "rewardType": "Jester",
+      "value": 9,
+      "code": "J",
+      "tableEntryAddress": "0x512f740",
+      "stringLiteralAddress": "0x560f5a8"
+    },
+    {
+      "rewardType": "AllInGameBoosters",
+      "value": 10,
+      "code": "IG",
+      "tableEntryAddress": "0x512f748",
+      "stringLiteralAddress": "0x560d910"
+    },
+    {
+      "rewardType": "Tnt",
+      "value": 11,
+      "code": "T",
+      "tableEntryAddress": "0x512f750",
+      "stringLiteralAddress": "0x561c600"
+    },
+    {
+      "rewardType": "Lightball",
+      "value": 12,
+      "code": "L",
+      "tableEntryAddress": "0x512f758",
+      "stringLiteralAddress": "0x560ff40"
+    },
+    {
+      "rewardType": "Rocket",
+      "value": 13,
+      "code": "R",
+      "tableEntryAddress": "0x512f760",
+      "stringLiteralAddress": "0x5616fe8"
+    },
+    {
+      "rewardType": "Prelevel",
+      "value": 14,
+      "code": "PL",
+      "tableEntryAddress": "0x512f768",
+      "stringLiteralAddress": "0x56155e8"
+    },
+    {
+      "rewardType": "UnlimitedPrelevel",
+      "value": 15,
+      "code": "ULP",
+      "tableEntryAddress": "0x512f770",
+      "stringLiteralAddress": "0x561fdd0"
+    },
+    {
+      "rewardType": "PinkGiftbox",
+      "value": 16,
+      "code": "",
+      "tableEntryAddress": "0x512f778",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "RedGiftbox",
+      "value": 17,
+      "code": "",
+      "tableEntryAddress": "0x512f780",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "PurpleGiftbox",
+      "value": 18,
+      "code": "",
+      "tableEntryAddress": "0x512f788",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "SmallChest",
+      "value": 19,
+      "code": "",
+      "tableEntryAddress": "0x512f790",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "MediumChest",
+      "value": 20,
+      "code": "",
+      "tableEntryAddress": "0x512f798",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "BigChest",
+      "value": 21,
+      "code": "",
+      "tableEntryAddress": "0x512f7a0",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "EventMultiplier",
+      "value": 22,
+      "code": "2xE",
+      "tableEntryAddress": "0x512f7a8",
+      "stringLiteralAddress": "0x55ff148"
+    },
+    {
+      "rewardType": "Token",
+      "value": 23,
+      "code": "",
+      "tableEntryAddress": "0x512f7b0",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "WildCard",
+      "value": 24,
+      "code": "",
+      "tableEntryAddress": "0x512f7b8",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "Card",
+      "value": 25,
+      "code": "",
+      "tableEntryAddress": "0x512f7c0",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "NicknameStyle",
+      "value": 26,
+      "code": "SNS",
+      "tableEntryAddress": "0x512f7c8",
+      "stringLiteralAddress": "0x5618e30"
+    },
+    {
+      "rewardType": "FrameStyle",
+      "value": 27,
+      "code": "SFS",
+      "tableEntryAddress": "0x512f7d0",
+      "stringLiteralAddress": "0x5618d30"
+    },
+    {
+      "rewardType": "Pickaxe",
+      "value": 28,
+      "code": "Px",
+      "tableEntryAddress": "0x512f7d8",
+      "stringLiteralAddress": "0x5616e68"
+    },
+    {
+      "rewardType": "Elixir",
+      "value": 29,
+      "code": "Ex",
+      "tableEntryAddress": "0x512f7e0",
+      "stringLiteralAddress": "0x560abd0"
+    },
+    {
+      "rewardType": "MagicBall",
+      "value": 30,
+      "code": "Mb",
+      "tableEntryAddress": "0x512f7e8",
+      "stringLiteralAddress": "0x5612660"
+    },
+    {
+      "rewardType": "FortuneToken",
+      "value": 31,
+      "code": "Dft",
+      "tableEntryAddress": "0x512f7f0",
+      "stringLiteralAddress": "0x5608dd8"
+    },
+    {
+      "rewardType": "SeasonalCardPack2",
+      "value": 32,
+      "code": "CP2",
+      "tableEntryAddress": "0x512f7f8",
+      "stringLiteralAddress": "0x56051f8"
+    },
+    {
+      "rewardType": "SeasonalCardPack3",
+      "value": 33,
+      "code": "CP3",
+      "tableEntryAddress": "0x512f800",
+      "stringLiteralAddress": "0x5605228"
+    },
+    {
+      "rewardType": "SeasonalCardPack4",
+      "value": 34,
+      "code": "CP4",
+      "tableEntryAddress": "0x512f808",
+      "stringLiteralAddress": "0x5605230"
+    },
+    {
+      "rewardType": "SeasonalCardPack6",
+      "value": 35,
+      "code": "CP6",
+      "tableEntryAddress": "0x512f810",
+      "stringLiteralAddress": "0x5605240"
+    },
+    {
+      "rewardType": "SeasonalCardPackGuaranteed",
+      "value": 36,
+      "code": "CPG",
+      "tableEntryAddress": "0x512f818",
+      "stringLiteralAddress": "0x5605260"
+    },
+    {
+      "rewardType": "ProfileBadge",
+      "value": 37,
+      "code": "PB",
+      "tableEntryAddress": "0x512f820",
+      "stringLiteralAddress": "0x5615550"
+    },
+    {
+      "rewardType": "Ticket",
+      "value": 38,
+      "code": "Tk",
+      "tableEntryAddress": "0x512f828",
+      "stringLiteralAddress": "0x561f078"
+    },
+    {
+      "rewardType": "StyledName",
+      "value": 39,
+      "code": "SSN",
+      "tableEntryAddress": "0x512f830",
+      "stringLiteralAddress": "0x5618ed0"
+    },
+    {
+      "rewardType": "EgoToken",
+      "value": 40,
+      "code": "",
+      "tableEntryAddress": "0x512f838",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "Ship",
+      "value": 41,
+      "code": "OOs",
+      "tableEntryAddress": "0x512f840",
+      "stringLiteralAddress": "0x5614820"
+    },
+    {
+      "rewardType": "PuzzlePiece",
+      "value": 42,
+      "code": "Pzl",
+      "tableEntryAddress": "0x512f848",
+      "stringLiteralAddress": "0x5616e70"
+    },
+    {
+      "rewardType": "MultiplierToken",
+      "value": 43,
+      "code": "2xT",
+      "tableEntryAddress": "0x512f850",
+      "stringLiteralAddress": "0x55ff158"
+    },
+    {
+      "rewardType": "Anvil",
+      "value": 44,
+      "code": "Msa",
+      "tableEntryAddress": "0x512f858",
+      "stringLiteralAddress": "0x56134f0"
+    },
+    {
+      "rewardType": "UnlimitedHammer",
+      "value": 45,
+      "code": "UH",
+      "tableEntryAddress": "0x512f860",
+      "stringLiteralAddress": "0x561fc38"
+    },
+    {
+      "rewardType": "UnlimitedArrow",
+      "value": 46,
+      "code": "UA",
+      "tableEntryAddress": "0x512f868",
+      "stringLiteralAddress": "0x561fbf0"
+    },
+    {
+      "rewardType": "UnlimitedCannon",
+      "value": 47,
+      "code": "UCa",
+      "tableEntryAddress": "0x512f870",
+      "stringLiteralAddress": "0x561fc00"
+    },
+    {
+      "rewardType": "UnlimitedJester",
+      "value": 48,
+      "code": "UJ",
+      "tableEntryAddress": "0x512f878",
+      "stringLiteralAddress": "0x561fdc0"
+    },
+    {
+      "rewardType": "UnlimitedInGameBooster",
+      "value": 49,
+      "code": "UIG",
+      "tableEntryAddress": "0x512f880",
+      "stringLiteralAddress": "0x561fca0"
+    },
+    {
+      "rewardType": "Life",
+      "value": 50,
+      "code": "",
+      "tableEntryAddress": "0x512f888",
+      "stringLiteralAddress": "0x55fc738"
+    },
+    {
+      "rewardType": "GoldenBall",
+      "value": 51,
+      "code": "GB",
+      "tableEntryAddress": "0x512f890",
+      "stringLiteralAddress": "0x560bfa0"
+    },
+    {
+      "rewardType": "EnergyCrystal",
+      "value": 52,
+      "code": "EEc",
+      "tableEntryAddress": "0x512f898",
+      "stringLiteralAddress": "0x5609c18"
+    },
+    {
+      "rewardType": "AvatarStyle",
+      "value": 53,
+      "code": "SAS",
+      "tableEntryAddress": "0x512f8a0",
+      "stringLiteralAddress": "0x5618978"
+    }
+  ],
+  "limitations": [
+    "Native verification is for build 38911. Build 39781 must be compared separately before claiming version equivalence.",
+    "The 53-entry forward table is included as evidence; only the twelve requested codes are asserted bidirectionally in entries.",
+    "Empty strings in the forward table do not identify a unique reward type and must not be used for reverse lookup.",
+    "This verifies reward type only. Reward amount, duration units, server cohorts, and sprite/prefab bindings are outside this result.",
+    "IG is AllInGameBoosters; do not replace it with an arbitrary single booster icon. ULV is UnlimitedLives, not Life."
+  ]
+}

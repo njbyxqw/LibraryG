@@ -1,0 +1,17 @@
+{
+  "device1": {
+    "DynamicOfferSegment": "0",
+    "DynamicOfferSegmentVersion": "1383",
+    "UserOfferSegment": "0",
+    "UserSegmentVersion": "1183"
+  },
+  "history39781": {
+    "UserSpecialOfferSegment": "0",
+    "UserSpecialOfferSegmentVersion": "50",
+    "DynamicOfferSegment": "0",
+    "DynamicOfferSegmentVersion": "1382",
+    "UserOfferSegment": "0",
+    "UserSegmentVersion": "1182",
+    "CurrentEventSegmentKey": "0"
+  }
+}

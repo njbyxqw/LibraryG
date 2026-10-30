@@ -210,7 +210,7 @@ obsidian folders                              # 列出所有文件夹
 | TileMatch / MT | [[02-PROJECTS/TileMatch/_MOC|项目 MOC]] · [[02-PROJECTS/TileMatch/_项目概览|项目概览]] | 历史工作主要沉淀区，旧项目逻辑与行为基线 |
 | TileScape / TS | [[02-PROJECTS/TileScape/_MOC|项目 MOC]] · [[02-PROJECTS/TileScape/_项目概览|项目概览]] | 从 MT 分离出的优化项目，近期工作会更多 |
 | Chuzzle | [[02-PROJECTS/Chuzzle/_MOC|项目 MOC]] · [[02-PROJECTS/Chuzzle/_项目概览|项目概览]] | Unity/C# 行列循环移动消除玩法；运行时、编辑器与验收任务已建立入口 |
-| 产品分析 | [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] | 竞品与外部产品的图片、动效、音效、活动和逻辑分析 |
+| 产品分析 | [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] | 长期竞品调研：包体与运行内容采集、模块/功能分析、档案持续维护；含 Lava Quest 范例 |
 | Agent / LG 工作流 | [[02-PROJECTS/Agent/Memory|Agent Memory]] · [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] · [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名规范]] · [[02-PROJECTS/Agent/工作流/评估-工作空间与工作流程现状-2026-08-05|工作空间现状评估]] | 跨项目规范、记忆、复盘和流程沉淀 |
 
 ### 跨项目工具
@@ -275,7 +275,7 @@ obsidian folders                              # 列出所有文件夹
 | 模板引擎 | Templater (community) |
 | 模板目录 | `04-TEMPLATES/` |
 | 日记目录 | `01-DAILY/` |
-| 日记格式 | `YYYY-MM-DD` |
+| 日记格式 | 源日志 `YYYY-MM-DD-mac` / `YYYY-MM-DD-win`（Asia/Shanghai）；共用总览 `YYYY-MM-DD`，按设备分区。见 [[02-PROJECTS/Agent/工作流/工作内容日志同步规范]] |
 | 新文件位置 | `00-INBOX/` |
 | 附件路径 | `00-INBOX/attachments/` |
 | 链接格式 | Wikilink (`[[ ]]`) |

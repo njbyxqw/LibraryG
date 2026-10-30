@@ -1,0 +1,13 @@
+{
+  "source": "history39781",
+  "sample_time": "2026-10-28T14:46:21+08:00",
+  "table": "App.KeyValue",
+  "key": "NewUserNewUxThreeColorConfig",
+  "config": {
+    "b": [
+      "5v03",
+      "10"
+    ],
+    "moves": "10"
+  }
+}

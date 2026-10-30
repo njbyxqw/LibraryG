@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-29T18:44:18+08:00",
+  "device": "MuMu device-1",
+  "version": "versionName=38911",
+  "clockCheck": {
+    "automaticTime": true,
+    "deviceMinusHostSeconds": -0.59
+  },
+  "events": [
+    {
+      "key": "ancient",
+      "id": 317,
+      "end": 1793347199470,
+      "source": "AncientAdventureTableItem.ServerEventEndDate"
+    },
+    {
+      "key": "book",
+      "id": 717,
+      "end": 1793347199468,
+      "source": "App.KeyValue.Madness[1,2]"
+    }
+  ],
+  "catalog": [
+    {
+      "key": "BalloonRise",
+      "id": 337,
+      "end": 1793347199471,
+      "field": "EndDate",
+      "source": "BalloonRiseTableItem.EndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "DailyLightningRush",
+      "id": 524,
+      "end": 1793347199469,
+      "field": "ServerEventEndDate",
+      "source": "DailyLightningRushTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "DailyLightningRush",
+      "id": 524,
+      "end": 1793272379878,
+      "field": "UserEventEndDate",
+      "source": "DailyLightningRushTableItem.UserEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "DukesTreats",
+      "id": 46,
+      "end": 1793347199222,
+      "field": "ServerEventEndDate",
+      "source": "DukesTreatsTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "HiddenTemple",
+      "id": 181,
+      "end": 1793347199471,
+      "field": "ServerEventEndDate",
+      "source": "HiddenTempleTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "MagicCauldron",
+      "id": 169,
+      "end": 1793347199471,
+      "field": "ServerEventEndDate",
+      "source": "MagicCauldronTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "OceanOdyssey",
+      "id": 79,
+      "end": 1793347199469,
+      "field": "ServerEventEndDate",
+      "source": "OceanOdysseyTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "SeasonalCardCollection",
+      "id": 20,
+      "end": 1793519999469,
+      "field": "ServerEventEndDate",
+      "source": "SeasonalCardCollectionTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "WeeklyMission",
+      "id": 6,
+      "end": 1793606399469,
+      "field": "ServerEventEndDate",
+      "source": "WeeklyMissionTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "AncientAdventure",
+      "id": 317,
+      "end": 1793347199470,
+      "field": "ServerEventEndDate",
+      "source": "AncientAdventureTableItem.ServerEventEndDate",
+      "kind": "deadline"
+    },
+    {
+      "key": "UpcomingEvents",
+      "id": 0,
+      "end": 1793347260000,
+      "field": "TeamTournamentStartDate",
+      "source": "UpcomingEventsTableItem.TeamTournamentStartDate",
+      "kind": "upcoming"
+    },
+    {
+      "key": "RoyalPass",
+      "id": 214,
+      "end": 1793519999469,
+      "field": "serialized deadline",
+      "source": "App.KeyValue.RoyalPass[0,1]",
+      "kind": "deadline"
+    },
+    {
+      "key": "LadderOffer",
+      "id": 452,
+      "end": 1793606399469,
+      "field": "serialized deadline",
+      "source": "App.KeyValue.LadderOffer[0,1]",
+      "kind": "deadline"
+    }
+  ],
+  "selectedFields": [
+    {
+      "table": "LavaQuestTableItem",
+      "values": {}
+    },
+    {
+      "table": "AncientAdventureTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199470",
+        "ServerEventId": "317"
+      }
+    },
+    {
+      "table": "BalloonRiseTableItem",
+      "values": {
+        "EndDate": "1793347199471",
+        "ServerEventId": "337"
+      }
+    },
+    {
+      "table": "DailyLightningRushTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199469",
+        "ServerEventId": "524",
+        "UserEventEndDate": "1793272379878"
+      }
+    },
+    {
+      "table": "DukesTreatsTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199222",
+        "ServerEventId": "46"
+      }
+    },
+    {
+      "table": "HiddenTempleTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199471",
+        "ServerEventId": "181"
+      }
+    },
+    {
+      "table": "MagicCauldronTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199471",
+        "ServerEventId": "169"
+      }
+    },
+    {
+      "table": "OceanOdysseyTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199469",
+        "ServerEventId": "79"
+      }
+    },
+    {
+      "table": "SeasonalCardCollectionTableItem",
+      "values": {
+        "ServerEventEndDate": "1793519999469",
+        "ServerEventId": "20"
+      }
+    },
+    {
+      "table": "WeeklyMissionTableItem",
+      "values": {
+        "ServerEventEndDate": "1793606399469",
+        "ServerEventId": "6"
+      }
+    },
+    {
+      "table": "WeeklyLeaderboardTableItem",
+      "values": {
+        "ServerEventId": "224"
+      }
+    },
+    {
+      "table": "LavaQuestTableItem",
+      "values": {}
+    },
+    {
+      "table": "AncientAdventureTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199470",
+        "ServerEventId": "317"
+      }
+    },
+    {
+      "table": "UpcomingEventsTableItem",
+      "values": {
+        "TeamTournamentStartDate": "1793347260000"
+      }
+    }
+  ],
+  "boundary": "Read-only local cache; not a decoded server response. End dates do not establish starts, weekly recurrence, or full schedules. Import replays snapshot time, not current wall time."
+}

@@ -1,0 +1,156 @@
+{
+  "source": "device1",
+  "sample_time": "2026-10-28T21:04:54.301051+08:00",
+  "table": "User.HiddenTempleTableItem",
+  "key": "ServerEventConfig",
+  "config": {
+    "stages": [
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "R"
+          }
+        ],
+        "gridX": 4,
+        "gridY": 4,
+        "gateId": 1
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "H"
+          },
+          {
+            "a": 10,
+            "t": "Px"
+          }
+        ],
+        "gridX": 4,
+        "gridY": 4,
+        "gateId": 6
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "Ca"
+          }
+        ],
+        "gridX": 5,
+        "gridY": 5,
+        "gateId": 2
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "A"
+          },
+          {
+            "a": 1,
+            "t": "L"
+          },
+          {
+            "a": 15,
+            "t": "Px"
+          }
+        ],
+        "gridX": 5,
+        "gridY": 5,
+        "gateId": 7
+      },
+      {
+        "r": [
+          {
+            "a": 250,
+            "t": "C"
+          }
+        ],
+        "gridX": 6,
+        "gridY": 6,
+        "gateId": 3
+      },
+      {
+        "r": [
+          {
+            "a": 20,
+            "t": "Px"
+          },
+          {
+            "a": 1,
+            "t": "T"
+          }
+        ],
+        "gridX": 6,
+        "gridY": 6,
+        "gateId": 8
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "A"
+          }
+        ],
+        "gridX": 7,
+        "gridY": 7,
+        "gateId": 4
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "H"
+          },
+          {
+            "a": 1,
+            "t": "J"
+          },
+          {
+            "a": 1,
+            "t": "Ca"
+          },
+          {
+            "a": 30,
+            "t": "Px"
+          }
+        ],
+        "gridX": 7,
+        "gridY": 7,
+        "gateId": 9
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "J"
+          }
+        ],
+        "gridX": 8,
+        "gridY": 8,
+        "gateId": 5
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "PL"
+          },
+          {
+            "a": 1,
+            "t": "IG"
+          },
+          {
+            "a": 500,
+            "t": "C"
+          }
+        ],
+        "gridX": 8,
+        "gridY": 8,
+        "gateId": 10
+      }
+    ]
+  }
+}

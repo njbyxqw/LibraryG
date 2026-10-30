@@ -1,0 +1,65 @@
+{
+  "source": "device1",
+  "sample_time": "2026-10-28T21:04:54.301051+08:00",
+  "table": "User.DailyLightningRushTableItem",
+  "key": "ServerEventConfig",
+  "config": {
+    "prize": [
+      {
+        "a": 1,
+        "t": "H"
+      },
+      {
+        "a": 1,
+        "t": "R"
+      },
+      {
+        "a": 1,
+        "t": "T"
+      },
+      {
+        "a": 1,
+        "t": "L"
+      },
+      {
+        "a": 1,
+        "t": "J"
+      }
+    ],
+    "stageDurations": [
+      30,
+      30,
+      30
+    ],
+    "threeStageRewards": [
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "PL"
+          }
+        ]
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "IG"
+          }
+        ]
+      },
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "PL"
+          },
+          {
+            "a": 1,
+            "t": "IG"
+          }
+        ]
+      }
+    ]
+  }
+}

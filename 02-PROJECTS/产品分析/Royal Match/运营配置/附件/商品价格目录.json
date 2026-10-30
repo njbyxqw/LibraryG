@@ -1,0 +1,1970 @@
+[
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.13",
+    "price": "14.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.16",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.16",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.32",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.55",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.55",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.75",
+    "price": "79.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.single.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.bundle.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.19",
+    "price": "16.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.38",
+    "price": "39.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.60",
+    "price": "69.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.ladder.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.laddercoin.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.pass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.pass.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.stagedpass1.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.stagedpass2.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.stagedpass2.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.weeklypass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.weeklypass.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.9",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.45",
+    "price": "49.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.60",
+    "price": "69.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.75",
+    "price": "79.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.90",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.offer.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.teamoffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.teamoffer.13",
+    "price": "14.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.teamoffer.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.teamoffer.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.teamoffer.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.teamoffer.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.egooffer.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.egooffer.9",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.egooffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.egooffer.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.seasonaloffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.seasonaloffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.seasonaloffer.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.conversionoffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.conversionoffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.multiplier.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.multipliertoken.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.progressoffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.progressoffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.progressoffer.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.progressoffer.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.progressoffer.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.progressoffer.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.starfalloffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.starfalloffer.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.starfalloffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.starfalloffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.starfalloffer.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.anvilpass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.anvilpass.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.extremelyhardleveloffer.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.extremelyhardleveloffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.noads.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.noadsbundle.12",
+    "price": "12.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.worldcupcosmetic.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.worldcupcosmetic2.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.worldcupcosmetic.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.9",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energyoffer.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energypass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energypass.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle3.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.energysingle.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.13",
+    "price": "14.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.16",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.32",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.45",
+    "price": "49.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.55",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.60",
+    "price": "69.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.75",
+    "price": "79.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.dynamic.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "device1",
+    "product_id": "com.dreamgames.royal.hiddentempleoffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.13",
+    "price": "14.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.16",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.16",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.32",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.55",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.55",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.75",
+    "price": "79.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.single.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.bundle.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.19",
+    "price": "16.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.38",
+    "price": "39.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.60",
+    "price": "69.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.ladder.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.laddercoin.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.pass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.pass.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.stagedpass1.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.stagedpass2.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.stagedpass2.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.weeklypass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.weeklypass.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.9",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.45",
+    "price": "49.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.60",
+    "price": "69.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.75",
+    "price": "79.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.90",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.offer.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.teamoffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.teamoffer.13",
+    "price": "14.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.teamoffer.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.teamoffer.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.teamoffer.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.teamoffer.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.egooffer.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.egooffer.9",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.egooffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.egooffer.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.seasonaloffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.seasonaloffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.seasonaloffer.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.conversionoffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.conversionoffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.multiplier.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.multipliertoken.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.progressoffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.progressoffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.progressoffer.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.progressoffer.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.progressoffer.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.progressoffer.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.starfalloffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.starfalloffer.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.starfalloffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.starfalloffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.starfalloffer.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.anvilpass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.anvilpass.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.extremelyhardleveloffer.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.extremelyhardleveloffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.noads.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.noadsbundle.12",
+    "price": "12.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.worldcupcosmetic.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.worldcupcosmetic2.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.worldcupcosmetic.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.9",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energyoffer.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energypass.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energypass.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle3.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.energysingle.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.1",
+    "price": "0.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.2",
+    "price": "1.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.4",
+    "price": "3.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.5",
+    "price": "5.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.6",
+    "price": "6.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.7",
+    "price": "7.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.8",
+    "price": "8.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.13",
+    "price": "14.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.15",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.16",
+    "price": "17.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.20",
+    "price": "22.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.25",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.30",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.32",
+    "price": "34.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.40",
+    "price": "44.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.45",
+    "price": "49.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.50",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.55",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.60",
+    "price": "69.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.75",
+    "price": "79.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.80",
+    "price": "89.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.dynamic.100",
+    "price": "99.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.hiddentempleoffer.10",
+    "price": "9.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.superfavor.3",
+    "price": "2.99",
+    "currency": "EUR"
+  },
+  {
+    "source": "history39781",
+    "product_id": "com.dreamgames.royal.superfavor.4",
+    "price": "3.99",
+    "currency": "EUR"
+  }
+]

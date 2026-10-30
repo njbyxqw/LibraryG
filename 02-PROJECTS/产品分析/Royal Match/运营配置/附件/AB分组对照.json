@@ -1,0 +1,971 @@
+[
+  {
+    "id": 4,
+    "device1": 6,
+    "history39781": 6,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 9,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 11,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 15,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 17,
+    "device1": 1,
+    "history39781": 1,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 18,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 20,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 22,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 24,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 25,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 26,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 28,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 32,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 42,
+    "device1": 6,
+    "history39781": 6,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 44,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 54,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 56,
+    "device1": 1,
+    "history39781": 1,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 94,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 98,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 104,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 108,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 116,
+    "device1": null,
+    "history39781": 4,
+    "constant_names_38911": [
+      "AgeConsentV2NewUserAbId"
+    ],
+    "constant_names_39781": [
+      "AgeConsentV2NewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsAgePopupV2Enabled()",
+      "System.Boolean IsAgeRangeButtonEnabled()",
+      "System.Boolean IsAgeSliderEnabled()",
+      "System.Boolean IsAgeYearDropdownEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 118,
+    "device1": null,
+    "history39781": 1,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 125,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 127,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [
+      "PrivacySettingsRedesignOldUser"
+    ],
+    "constant_names_39781": [
+      "PrivacySettingsRedesignOldUser"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsPrivacySettingsRedesignEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 129,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [
+      "RewardReductionOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "RewardReductionOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsEventRewardReductionAbEnabled()",
+      "System.Boolean IsLevelEndRewardReductionAbEnabled()",
+      "System.Boolean IsMultiplierRewardReductionAbEnabled()",
+      "System.Boolean IsRewardReductionAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 131,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 133,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 137,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [
+      "PropellerRush3StepOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "PropellerRush3StepOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 141,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [
+      "NewLeagueV2OldUserAbId"
+    ],
+    "constant_names_39781": [
+      "NewLeagueV2OldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 147,
+    "device1": 5,
+    "history39781": 5,
+    "constant_names_38911": [
+      "AncientAdventureOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "AncientAdventureOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsAncientAdventureHeistEnabled()",
+      "System.Boolean IsAncientAdventureOneStaged()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 149,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [
+      "SeasonalCardCollectionImprovementOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "SeasonalCardCollectionImprovementOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 153,
+    "device1": 3,
+    "history39781": 3,
+    "constant_names_38911": [
+      "AncientAdventureV2OldUserAbId"
+    ],
+    "constant_names_39781": [
+      "AncientAdventureV2OldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsAncientAdventureHeistEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 155,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 156,
+    "device1": 3,
+    "history39781": null,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 157,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 159,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [
+      "RobotRivalsOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "RobotRivalsOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsRobotRivalsEventEnabled()",
+      "System.Boolean IsSkyRaceAndSpaceMissionEventsInLessRewardAb()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 161,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [
+      "MultiplierTokenV2OldUserAbId"
+    ],
+    "constant_names_39781": [
+      "MultiplierTokenV2OldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Int32 GetMultiplierTokenV2Ab()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 165,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [
+      "DailySkyRaceSpaceMissionOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "DailySkyRaceSpaceMissionOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsDailySkyRaceSpaceMissionEnabled()",
+      "System.Boolean IsSkyRaceAndSpaceMissionEventsInLessRewardAb()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 171,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 173,
+    "device1": 2,
+    "history39781": null,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 174,
+    "device1": null,
+    "history39781": 2,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 175,
+    "device1": 2,
+    "history39781": null,
+    "constant_names_38911": [
+      "PrivacySettingsKoreaNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "PrivacySettingsKoreaNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsPrivacySettingsKoreaEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 176,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [
+      "PrivacySettingsKoreaOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "PrivacySettingsKoreaOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsPrivacySettingsKoreaEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 177,
+    "device1": 2,
+    "history39781": null,
+    "constant_names_38911": [
+      "NotificationReductionNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "NotificationReductionNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsNotificationReductionEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 178,
+    "device1": null,
+    "history39781": 2,
+    "constant_names_38911": [
+      "NotificationReductionOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "NotificationReductionOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsNotificationReductionEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 179,
+    "device1": 5,
+    "history39781": null,
+    "constant_names_38911": [
+      "ClashOfChampionsNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "ClashOfChampionsNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsClashOfChampionsLowRewardReplayableEnabled()",
+      "System.Boolean IsClashOfChampionsReplayableEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 180,
+    "device1": null,
+    "history39781": 5,
+    "constant_names_38911": [
+      "ClashOfChampionsOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "ClashOfChampionsOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsClashOfChampionsLowRewardReplayableEnabled()",
+      "System.Boolean IsClashOfChampionsReplayableEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 184,
+    "device1": null,
+    "history39781": 4,
+    "constant_names_38911": [
+      "BoosterRewardReductionOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "BoosterRewardReductionOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsBoosterRewardReductionEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 189,
+    "device1": 4,
+    "history39781": null,
+    "constant_names_38911": [
+      "MergeSmithNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "MergeSmithNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsMergeSmithEnabled()",
+      "System.Int32 GetMergeSmithAb()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 190,
+    "device1": null,
+    "history39781": 4,
+    "constant_names_38911": [
+      "MergeSmithOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "MergeSmithOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsMergeSmithEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 192,
+    "device1": 2,
+    "history39781": 2,
+    "constant_names_38911": [
+      "RushEventsReplayableOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "RushEventsReplayableOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean AreRushEventsReplayable()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 194,
+    "device1": 6,
+    "history39781": 6,
+    "constant_names_38911": [
+      "SuperchargeOfferOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "SuperchargeOfferOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsSuperchargeOfferAbEnabled()",
+      "System.Boolean IsSuperchargeOfferNoPopupAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 200,
+    "device1": 4,
+    "history39781": 4,
+    "constant_names_38911": [
+      "MultiplePurchaseDynamicOfferOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "MultiplePurchaseDynamicOfferOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsLowDiscountEnabledAsAlternative()",
+      "System.Boolean IsMultiplePurchaseDynamicOfferAvailabilityOverrideEnabled()",
+      "System.Boolean IsMultiplePurchaseEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 208,
+    "device1": 1,
+    "history39781": 1,
+    "constant_names_38911": [
+      "LadderOfferShopCardOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "LadderOfferShopCardOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsLadderOfferShopCardEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 209,
+    "device1": 4,
+    "history39781": null,
+    "constant_names_38911": [
+      "AgeConsentV5NewUserAbId"
+    ],
+    "constant_names_39781": [
+      "AgeConsentV5NewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsAgeConsentV5Enabled()",
+      "System.Boolean IsAgeConsentV5NewRestrictionsEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 214,
+    "device1": null,
+    "history39781": 6,
+    "constant_names_38911": [
+      "MultiplierLevelTypeOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "MultiplierLevelTypeOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 219,
+    "device1": null,
+    "history39781": 7,
+    "constant_names_38911": [
+      "ShortExpeditionEventOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "ShortExpeditionEventOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 225,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [
+      "NextEventCollectibleOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "NextEventCollectibleOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsRemainingCollectablesConversionAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 226,
+    "device1": 4,
+    "history39781": null,
+    "constant_names_38911": [
+      "SuperLightballLevelChangeV2NewUserAbId"
+    ],
+    "constant_names_39781": [
+      "SuperLightballLevelChangeV2NewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Int32 GetSlbLevelChangeAbGroup()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 228,
+    "device1": 2,
+    "history39781": null,
+    "constant_names_38911": [
+      "DailyRewardsNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "DailyRewardsNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "Royal.Player.Context.Data.Persistent.AbTestUserGroup GetDailyRewardsAbGroup()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 229,
+    "device1": null,
+    "history39781": 2,
+    "constant_names_38911": [
+      "DailyRewardsOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "DailyRewardsOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 232,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 233,
+    "device1": 4,
+    "history39781": null,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 234,
+    "device1": null,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 238,
+    "device1": 8,
+    "history39781": 3,
+    "constant_names_38911": [
+      "DukesTreatsOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "DukesTreatsOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 243,
+    "device1": 3,
+    "history39781": null,
+    "constant_names_38911": [
+      "Single4PackageNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "Single4PackageNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsSingle4PackageAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 244,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [
+      "Single4PackageOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "Single4PackageOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsSingle4PackageAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 245,
+    "device1": 4,
+    "history39781": null,
+    "constant_names_38911": [
+      "StarfallOfferNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "StarfallOfferNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Int32 GetStarfallOfferAbGroup()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 246,
+    "device1": null,
+    "history39781": 4,
+    "constant_names_38911": [
+      "StarfallOfferOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "StarfallOfferOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 247,
+    "device1": 3,
+    "history39781": null,
+    "constant_names_38911": [
+      "LiveActivityNewUserAbId"
+    ],
+    "constant_names_39781": [
+      "LiveActivityNewUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsInLiveActivityAbGroupC()",
+      "System.Boolean IsLiveActivityAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 248,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [
+      "LiveActivityOldUserAbId"
+    ],
+    "constant_names_39781": [
+      "LiveActivityOldUserAbId"
+    ],
+    "candidate_consumers_38911": [
+      "System.Boolean IsInLiveActivityAbGroupC()",
+      "System.Boolean IsLiveActivityAbEnabled()"
+    ],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 250,
+    "device1": null,
+    "history39781": 1,
+    "constant_names_38911": [],
+    "constant_names_39781": [
+      "NewUserNewUxV3OldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 252,
+    "device1": null,
+    "history39781": 5,
+    "constant_names_38911": [],
+    "constant_names_39781": [
+      "ElementHuntOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 253,
+    "device1": 3,
+    "history39781": null,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 254,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 256,
+    "device1": null,
+    "history39781": 6,
+    "constant_names_38911": [],
+    "constant_names_39781": [
+      "WebStoreOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 260,
+    "device1": null,
+    "history39781": 4,
+    "constant_names_38911": [],
+    "constant_names_39781": [
+      "ConsecutiveEventsOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 262,
+    "device1": null,
+    "history39781": 7,
+    "constant_names_38911": [],
+    "constant_names_39781": [
+      "SuperfavorOfferOldUserAbId"
+    ],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 263,
+    "device1": 1,
+    "history39781": null,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  },
+  {
+    "id": 264,
+    "device1": null,
+    "history39781": 3,
+    "constant_names_38911": [],
+    "constant_names_39781": [],
+    "candidate_consumers_38911": [],
+    "boundary": "constant names exact for each version; consumers inferred from immediate argument; names do not prove branch activation"
+  }
+]

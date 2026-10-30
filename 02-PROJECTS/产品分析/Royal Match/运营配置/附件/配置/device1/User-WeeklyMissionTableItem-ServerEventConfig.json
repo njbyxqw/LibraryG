@@ -1,0 +1,380 @@
+{
+  "source": "device1",
+  "sample_time": "2026-10-28T21:04:54.301051+08:00",
+  "table": "User.WeeklyMissionTableItem",
+  "key": "ServerEventConfig",
+  "config": {
+    "fallbackTask": {
+      "missionId": 24,
+      "targets": [
+        500,
+        1000,
+        2000,
+        4000,
+        6000,
+        7000,
+        8000
+      ]
+    },
+    "stages": [
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 10,
+            "alternativeTarget": 0,
+            "target": 1
+          },
+          {
+            "missionId": 50,
+            "scrollAmount": 15,
+            "alternativeTarget": 0,
+            "target": 1000
+          },
+          {
+            "missionId": 21,
+            "scrollAmount": 20,
+            "alternativeTarget": 0,
+            "target": 4000
+          },
+          {
+            "missionId": 12,
+            "scrollAmount": 20,
+            "alternativeTarget": 0,
+            "target": 15
+          },
+          {
+            "missionId": 46,
+            "scrollAmount": 30,
+            "alternativeTarget": 500,
+            "target": 20
+          }
+        ]
+      },
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 10,
+            "alternativeTarget": 0,
+            "target": 2
+          },
+          {
+            "missionId": 50,
+            "scrollAmount": 20,
+            "alternativeTarget": 0,
+            "target": 3000
+          },
+          {
+            "missionId": 39,
+            "scrollAmount": 25,
+            "alternativeTarget": 20,
+            "target": 5
+          },
+          {
+            "missionId": 47,
+            "scrollAmount": 25,
+            "alternativeTarget": 4,
+            "target": 4
+          },
+          {
+            "missionId": 10,
+            "scrollAmount": 35,
+            "alternativeTarget": 0,
+            "target": 20
+          }
+        ]
+      },
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 10,
+            "alternativeTarget": 0,
+            "target": 3
+          },
+          {
+            "missionId": 50,
+            "scrollAmount": 20,
+            "alternativeTarget": 0,
+            "target": 5000
+          },
+          {
+            "missionId": 21,
+            "scrollAmount": 25,
+            "alternativeTarget": 0,
+            "target": 10000
+          },
+          {
+            "missionId": 12,
+            "scrollAmount": 30,
+            "alternativeTarget": 0,
+            "target": 40
+          },
+          {
+            "missionId": 46,
+            "scrollAmount": 45,
+            "alternativeTarget": 2000,
+            "target": 60
+          }
+        ]
+      },
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 15,
+            "alternativeTarget": 0,
+            "target": 4
+          },
+          {
+            "missionId": 50,
+            "scrollAmount": 25,
+            "alternativeTarget": 0,
+            "target": 10000
+          },
+          {
+            "missionId": 39,
+            "scrollAmount": 30,
+            "alternativeTarget": 70,
+            "target": 7
+          },
+          {
+            "missionId": 47,
+            "scrollAmount": 35,
+            "alternativeTarget": 8,
+            "target": 8
+          },
+          {
+            "missionId": 10,
+            "scrollAmount": 50,
+            "alternativeTarget": 0,
+            "target": 60
+          }
+        ]
+      },
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 15,
+            "alternativeTarget": 0,
+            "target": 5
+          },
+          {
+            "missionId": 16,
+            "scrollAmount": 25,
+            "alternativeTarget": 0,
+            "target": 6
+          },
+          {
+            "missionId": 21,
+            "scrollAmount": 35,
+            "alternativeTarget": 0,
+            "target": 20000
+          },
+          {
+            "missionId": 12,
+            "scrollAmount": 45,
+            "alternativeTarget": 0,
+            "target": 80
+          },
+          {
+            "missionId": 44,
+            "scrollAmount": 55,
+            "alternativeTarget": 0,
+            "target": 8
+          }
+        ]
+      },
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 20,
+            "alternativeTarget": 0,
+            "target": 6
+          },
+          {
+            "missionId": 16,
+            "scrollAmount": 30,
+            "alternativeTarget": 0,
+            "target": 8
+          },
+          {
+            "missionId": 39,
+            "scrollAmount": 40,
+            "alternativeTarget": 100,
+            "target": 10
+          },
+          {
+            "missionId": 47,
+            "scrollAmount": 50,
+            "alternativeTarget": 12,
+            "target": 12
+          },
+          {
+            "missionId": 10,
+            "scrollAmount": 60,
+            "alternativeTarget": 0,
+            "target": 100
+          }
+        ]
+      },
+      {
+        "tasks": [
+          {
+            "missionId": 45,
+            "scrollAmount": 25,
+            "alternativeTarget": 0,
+            "target": 7
+          },
+          {
+            "missionId": 16,
+            "scrollAmount": 35,
+            "alternativeTarget": 0,
+            "target": 10
+          },
+          {
+            "missionId": 21,
+            "scrollAmount": 45,
+            "alternativeTarget": 0,
+            "target": 25000
+          },
+          {
+            "missionId": 12,
+            "scrollAmount": 55,
+            "alternativeTarget": 0,
+            "target": 130
+          },
+          {
+            "missionId": 44,
+            "scrollAmount": 65,
+            "alternativeTarget": 0,
+            "target": 12
+          }
+        ]
+      }
+    ],
+    "alternativeIds": [
+      {
+        "missionId": 46,
+        "alternativeMissionId": 25
+      },
+      {
+        "missionId": 39,
+        "alternativeMissionId": 11
+      },
+      {
+        "missionId": 47,
+        "alternativeMissionId": 14
+      }
+    ],
+    "chestRewards": [
+      {
+        "r": [
+          {
+            "a": 1,
+            "t": "R"
+          },
+          {
+            "a": 1,
+            "t": "T"
+          }
+        ],
+        "target": 100
+      },
+      {
+        "r": [
+          {
+            "a": 250,
+            "t": "C"
+          },
+          {
+            "a": 1,
+            "t": "T"
+          },
+          {
+            "a": 1,
+            "t": "L"
+          },
+          {
+            "a": 1,
+            "t": "A"
+          },
+          {
+            "a": 1,
+            "t": "Ca"
+          }
+        ],
+        "target": 300
+      },
+      {
+        "r": [
+          {
+            "a": 500,
+            "t": "C"
+          },
+          {
+            "a": 1,
+            "t": "R"
+          },
+          {
+            "a": 1,
+            "t": "T"
+          },
+          {
+            "a": 1,
+            "t": "L"
+          },
+          {
+            "a": 1,
+            "t": "H"
+          },
+          {
+            "a": 1,
+            "t": "J"
+          }
+        ],
+        "target": 600
+      },
+      {
+        "r": [
+          {
+            "a": 1000,
+            "t": "C"
+          },
+          {
+            "a": 1,
+            "t": "R"
+          },
+          {
+            "a": 1,
+            "t": "T"
+          },
+          {
+            "a": 1,
+            "t": "L"
+          },
+          {
+            "a": 1,
+            "t": "H"
+          },
+          {
+            "a": 1,
+            "t": "A"
+          },
+          {
+            "a": 1,
+            "t": "Ca"
+          },
+          {
+            "a": 1,
+            "t": "J"
+          }
+        ],
+        "target": 1000
+      }
+    ]
+  }
+}

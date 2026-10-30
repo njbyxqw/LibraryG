@@ -1,0 +1,9 @@
+{
+  "source": "device1",
+  "sample_time": "2026-10-28T21:04:54.301051+08:00",
+  "table": "App.KeyValue",
+  "key": "ThreeColorMoveConfig",
+  "config": {
+    "b": []
+  }
+}

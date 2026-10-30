@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-29T18:16:45+08:00",
+  "device": "MuMu device-1",
+  "version": "versionName=38911",
+  "clockCheck": {
+    "automaticTime": true,
+    "deviceMinusHostSeconds": -0.69
+  },
+  "events": [
+    {
+      "key": "ancient",
+      "id": 317,
+      "end": 1793347199702,
+      "source": "AncientAdventureTableItem.ServerEventEndDate"
+    },
+    {
+      "key": "book",
+      "id": 717,
+      "end": 1793347199701,
+      "source": "App.KeyValue.Madness[1,2]"
+    }
+  ],
+  "selectedFields": [
+    {
+      "table": "LavaQuestTableItem",
+      "values": {}
+    },
+    {
+      "table": "AncientAdventureTableItem",
+      "values": {
+        "ServerEventEndDate": "1793347199702",
+        "ServerEventId": "317"
+      }
+    }
+  ],
+  "boundary": "Read-only local cache; not a decoded server response. End dates do not establish starts, weekly recurrence, or full schedules. Import replays snapshot time, not current wall time."
+}

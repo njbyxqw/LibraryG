@@ -73,7 +73,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | TileMatch / MT 项目知识 | [[02-PROJECTS/TileMatch/_MOC|TileMatch MOC]] |
 | TileScape / TS 项目知识 | [[02-PROJECTS/TileScape/_MOC|TileScape MOC]] |
 | Chuzzle 项目知识 | [[02-PROJECTS/Chuzzle/_MOC|Chuzzle MOC]] |
-| 竞品 / 外部产品资源与逻辑分析 | [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] |
+| 竞品长期调研 / 外部产品资源与逻辑分析 | [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]] → 长期任务、方法、产品/模块档案；Lava Quest 为新方法范例 |
 | 项目 AI 记忆同步 | [[02-PROJECTS/TileScape/参考/同步-项目AI记忆与Docs入口-2026-09-03|TS 项目 AI 记忆同步]] · [[02-PROJECTS/TileMatch/参考/同步-项目AI记忆与源码旁文档-2026-09-03|MT 项目 AI 记忆同步]] |
 | 跨 MT / TS 复现 | [[02-PROJECTS/Agent/工作流/规范-多项目工作流与复现|多项目工作流与复现]] |
 | Daily / 工作记录 | [[02-PROJECTS/Agent/工作流/工作内容日志同步规范|工作内容日志同步规范]] |

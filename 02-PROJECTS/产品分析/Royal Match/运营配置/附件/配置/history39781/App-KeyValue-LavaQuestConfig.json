@@ -1,0 +1,14 @@
+{
+  "source": "history39781",
+  "sample_time": "2026-10-28T14:46:21+08:00",
+  "table": "App.KeyValue",
+  "key": "LavaQuestConfig",
+  "config": {
+    "r": {
+      "a": 10000,
+      "t": "C"
+    },
+    "c": 1800,
+    "d": 86400
+  }
+}

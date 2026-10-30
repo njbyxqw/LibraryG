@@ -1,0 +1,330 @@
+{
+  "built_at": "2026-10-28T22:45:16.4236210+08:00",
+  "scope": "Curated report attachments; no account databases or authentication data",
+  "files": [
+    {
+      "file": "分层与AB实验.md",
+      "sha256": "a0a020e3a6789a19afa42360173cd7763daede74dc60c5675717d476a03e592d"
+    },
+    {
+      "file": "附件/分层字段.json",
+      "sha256": "357aea65f432712d933b740296578d802e1be7d367f931883cb61322c89789f2"
+    },
+    {
+      "file": "附件/排期字段.json",
+      "sha256": "75bb794e51ddcc5d4efae01f4ae475ad193e61ba2caac8524121ced800e7c8dc"
+    },
+    {
+      "file": "附件/配置/device1/App-KeyValue-RoyalPassConfig.json",
+      "sha256": "551f29374c49949f05f1cc6f5e39c98cc1249d1867b97864f4c8df73503aa45a"
+    },
+    {
+      "file": "附件/配置/device1/App-KeyValue-SLBMoveConfig.json",
+      "sha256": "eda9460e9f78a3ad12629038252bce5f2906654b1b08b929f60b7ac665168a56"
+    },
+    {
+      "file": "附件/配置/device1/App-KeyValue-TeamTreasureConfig.json",
+      "sha256": "c7f3696b3b50c6ad023d0d83f8317c65a3e5577e5107abbbb62f2638286b2ee0"
+    },
+    {
+      "file": "附件/配置/device1/App-KeyValue-ThreeColorMoveConfig.json",
+      "sha256": "57f82a6acbf03b5c82c767d45131557433fef077e01efa358df22ee6a715c15d"
+    },
+    {
+      "file": "附件/配置/device1/User-AncientAdventureTableItem-ServerEventConfig.json",
+      "sha256": "2d5f75bd7d5080dbe3704c77c05bf8d72ca031cc549d155e3ef81e12d130ef8c"
+    },
+    {
+      "file": "附件/配置/device1/User-AncientAdventureTableItem-UserEventConfig.json",
+      "sha256": "2c03e5047beb15af36aae7c8b74aa8ba40fd54e4a77c7703ed4b1d07712ea492"
+    },
+    {
+      "file": "附件/配置/device1/User-BalloonRiseTableItem-ServerEventConfig.json",
+      "sha256": "2df4b130784ef8de8dfc44ac873fcf58ea7742369c5a3ec569f730caeee35a3e"
+    },
+    {
+      "file": "附件/配置/device1/User-DailyLightningRushTableItem-ServerEventConfig.json",
+      "sha256": "e6b781bf2eb0c88d6af5d998b33e770fe2762668073f3a9311e8a7262ff1f4e4"
+    },
+    {
+      "file": "附件/配置/device1/User-DailyRewardsTableItem-ServerEventConfig.json",
+      "sha256": "ea517f5a745e3c3bcbbce5ac15676a1a91e740d0e70788bb8d2fab1eea2ff292"
+    },
+    {
+      "file": "附件/配置/device1/User-DailyRewardsTableItem-UserEventConfig.json",
+      "sha256": "ee84023d75cf6d958e2be12bb915475edfe1a4feef6a0760a9f518967674b32b"
+    },
+    {
+      "file": "附件/配置/device1/User-DukesTreatsTableItem-ServerEventConfig.json",
+      "sha256": "4b56f5c96d45e147117a2095ce7402d40e0f59a82f42baef7a066522d5f15a08"
+    },
+    {
+      "file": "附件/配置/device1/User-HiddenTempleTableItem-ServerEventConfig.json",
+      "sha256": "847f2826a2137bb505262bfc35b11223b8066b8a0d75cb4d6292e840609912ee"
+    },
+    {
+      "file": "附件/配置/device1/User-HiddenTempleTableItem-UserEventConfig.json",
+      "sha256": "45df458ba59d7429d1526107a0e5c8eeb0dc65f52efc2e0bf35d48eed04cacfc"
+    },
+    {
+      "file": "附件/配置/device1/User-InviteFriendsTableItem-Config.json",
+      "sha256": "6c4494c130ac0794b415336cf5259166e8affe6e92db94fdce4af5db9b67dcf6"
+    },
+    {
+      "file": "附件/配置/device1/User-KeyValue-LadderOfferConfig.json",
+      "sha256": "205a0aefc6302d704d75f2f91e72758ad78c326b2596be679c85b351d75d7f20"
+    },
+    {
+      "file": "附件/配置/device1/User-KeyValue-MadnessConfig.json",
+      "sha256": "97bb0919b9cd4588b03bae86b47bafe0a6ac4e12ea17dfa7d0907a3d03431326"
+    },
+    {
+      "file": "附件/配置/device1/User-KeyValue-MadnessConfig2.json",
+      "sha256": "25315f175112a241f6ed1671b98a5d0d732782f73be4e6c751d44b2877b3edbc"
+    },
+    {
+      "file": "附件/配置/device1/User-KeyValue-MissionOverrideConfig.json",
+      "sha256": "4e1f51d918536b569fadccf0cf14592b92e88462a2f7e9aa9ae64d9d54d0ddca"
+    },
+    {
+      "file": "附件/配置/device1/User-MagicCauldronTableItem-ServerEventConfig.json",
+      "sha256": "9deb206f3eaee7a0aa0b46f7ce9481a3b5cf29fda5102accbcaf7a458dae3b84"
+    },
+    {
+      "file": "附件/配置/device1/User-MagicCauldronTableItem-UserEventConfig.json",
+      "sha256": "c18d1a4ba01a49da910de61131e9c80dde7ee67473947021c864cc9e3b880ace"
+    },
+    {
+      "file": "附件/配置/device1/User-OceanOdysseyTableItem-ServerEventConfig.json",
+      "sha256": "53ecffc245cff3aaf5d96b4dc794ca9fb272877cd2f0b6b7443380a72fb95d6b"
+    },
+    {
+      "file": "附件/配置/device1/User-SeasonalCardCollectionTableItem-CollectionConfig.json",
+      "sha256": "af172887289bb1e729476ce0de42063d2a2fea86886690333adf07874f3319be"
+    },
+    {
+      "file": "附件/配置/device1/User-WeeklyMissionTableItem-ServerEventConfig.json",
+      "sha256": "f6a74b3ab25603ae8e7a3dfef503e55558a60c0f72bdf4b242b44850518f62d4"
+    },
+    {
+      "file": "附件/配置/device1/User-WeeklyMissionTableItem-UserEventConfig.json",
+      "sha256": "bf35c2626ff77730e0d617cf290043e1fa91580c70fa211b09f75779c756e298"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-LavaQuestConfig.json",
+      "sha256": "f9ca40924c7b95e0ac72caf5a1078c74d917725b3626acb6a2279f18c5ffc5b3"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-NewUserNewUxThreeColorConfig.json",
+      "sha256": "9416c6599aba42ed8df2872da5b91fd53d8273165e23bc77d3a36dfc4cda14f1"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-OfferConfig.json",
+      "sha256": "988bf6c45edb77ca1156a530f8bfea263e52f3525501d8d6ba758424d9a01829"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-PinataConfig.json",
+      "sha256": "d89dc159cfac645b8759c6ba059e3467adedb7e9d45573d9be5ec00217e05b7b"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-RoyalPassConfig.json",
+      "sha256": "b391517f2a200ae53c7090f9216e39b35120a397164c34f336ee85f60d6632ae"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-SLBMoveConfig.json",
+      "sha256": "b7d18870139ff0c7bcdf75399f41f5175d90d73665330b73dcaff65d80280302"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-SpaceMissionConfig.json",
+      "sha256": "e8229056e516bdd8ff5899ec27c83dd78eae5f57a650dfc2ce15f2643b886036"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-TeamTreasureConfig.json",
+      "sha256": "f5afb8d4714e990dba93edc2ed55759a95f99bec4883f845cfa3459bef5612c4"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-ThreeColorMoveConfig.json",
+      "sha256": "3eafe85f439191f23404d67156c0eecb93669273dffa8c94ffc7ceb436e95d56"
+    },
+    {
+      "file": "附件/配置/history39781/App-KeyValue-WeeklyLeaderboardConfig.json",
+      "sha256": "3a35aec2b2acf21d459b4858266566f77992ba831bd291ec50f10fd9923e14ff"
+    },
+    {
+      "file": "附件/配置/history39781/User-AncientAdventureTableItem-ServerEventConfig.json",
+      "sha256": "4462451c566bfc4091655a95c9b3f8c2f95289307d6d553a6126b319a5c56719"
+    },
+    {
+      "file": "附件/配置/history39781/User-AncientAdventureTableItem-UserEventConfig.json",
+      "sha256": "125b886d3a4c8988d6a873a71456ed04202192570fdc9e9e32972db2900513f5"
+    },
+    {
+      "file": "附件/配置/history39781/User-ArcheryArenaTableItem-ServerEventConfig.json",
+      "sha256": "24b88ae50076012b1ff21b5b60f99868086d8ebee6d95672b60913bee11f924c"
+    },
+    {
+      "file": "附件/配置/history39781/User-BalloonRiseTableItem-ServerEventConfig.json",
+      "sha256": "b43f6ab756e1d13ccbb57da847d563670379743faecf64f53817932a10429e15"
+    },
+    {
+      "file": "附件/配置/history39781/User-DailyLightningRushTableItem-ServerEventConfig.json",
+      "sha256": "5bb6b561af3d6aeb3751151fa89bb261bfc44e62b2f962b1db3e8127fcd1c49e"
+    },
+    {
+      "file": "附件/配置/history39781/User-DailyLightningRushTableItem-UserEventConfig.json",
+      "sha256": "2038fa318907d77038461bf237a0c901cfc5c0b378b410a6cb1cb537ae0acb8a"
+    },
+    {
+      "file": "附件/配置/history39781/User-DailyRewardsTableItem-ServerEventConfig.json",
+      "sha256": "34b7f501e5ddd9edd53f9f4d3d937b715c80e447470016ea8133c9fd1270b70b"
+    },
+    {
+      "file": "附件/配置/history39781/User-DailyRewardsTableItem-UserEventConfig.json",
+      "sha256": "ad49b7bbea22f387bb749875bbb7688c8065cda1aae8e4c2736688e6971f7055"
+    },
+    {
+      "file": "附件/配置/history39781/User-DukesTreatsTableItem-ServerEventConfig.json",
+      "sha256": "0a31aca11ec7a63defced83f3523cea29f91ffb13b4026fb14deedc85aa5e330"
+    },
+    {
+      "file": "附件/配置/history39781/User-DukesTreatsTableItem-UserEventConfig.json",
+      "sha256": "86c4c6de67b6ef9406b1d4b94f9099d45b55bb93c5e21adaf75d202d29bbc7c6"
+    },
+    {
+      "file": "附件/配置/history39781/User-ElementHuntTableItem-ServerEventConfig.json",
+      "sha256": "ed0a327b35c65c56fc1f91eecc36a8e2a4157e035b66e418a38d2c934b1b32c1"
+    },
+    {
+      "file": "附件/配置/history39781/User-ElementHuntTableItem-UserEventConfig.json",
+      "sha256": "a95b37084a17c65d2926b08ff2b2251b1d01684796790d61e7ce87b1e2e1d714"
+    },
+    {
+      "file": "附件/配置/history39781/User-HiddenTempleTableItem-ServerEventConfig.json",
+      "sha256": "ca3034a9b3d777f5ed3fd7d33a940f5bfa1d13452d2daad8e17bcfd5007f0584"
+    },
+    {
+      "file": "附件/配置/history39781/User-HiddenTempleTableItem-UserEventConfig.json",
+      "sha256": "bf7d05beb8c3ec6a250117d7ac5fba11207e45408bb863c80c3727effbae51e3"
+    },
+    {
+      "file": "附件/配置/history39781/User-InviteFriendsTableItem-Config.json",
+      "sha256": "deca14d7aa14fa7537aafb1ed96953ad47701df6b64e2d94d45fe74d3d57667d"
+    },
+    {
+      "file": "附件/配置/history39781/User-JourneyOfferTableItem-ServerEventConfig.json",
+      "sha256": "3cf0af6f4f0ba71afffbfeb7c1c37b6dfe7c8c87491636d4554ab63a364cbec5"
+    },
+    {
+      "file": "附件/配置/history39781/User-JourneyOfferTableItem-UserEventConfig.json",
+      "sha256": "21ff72254d9dd13637cf1999534d11476d64848ec060944665be88e0f3cfe89b"
+    },
+    {
+      "file": "附件/配置/history39781/User-KeyValue-LadderOfferConfig.json",
+      "sha256": "58e1314898215d503e5d4cb9983b5376cee75ce43f82ac493f0128156bd959d6"
+    },
+    {
+      "file": "附件/配置/history39781/User-KeyValue-MadnessConfig.json",
+      "sha256": "ad0f5d47598b2c033be5c8daaa94ee7f0a411d069893bda77b432bf6023aa675"
+    },
+    {
+      "file": "附件/配置/history39781/User-KeyValue-MadnessConfig2.json",
+      "sha256": "5e714f753bcb694de8375275f20bef8b1c48df30e95ba969f0baa64ba2fd4eaa"
+    },
+    {
+      "file": "附件/配置/history39781/User-KeyValue-MissionOverrideConfig.json",
+      "sha256": "84034b0d5c0e39fa815ab654bb8e511efa3089d124e7992b506c73e681b14416"
+    },
+    {
+      "file": "附件/配置/history39781/User-KeyValue-TeamBattleConfig.json",
+      "sha256": "7cd9b1b29f153d3df713172f091bc6c242def235f0f56a008219788ec6c325e4"
+    },
+    {
+      "file": "附件/配置/history39781/User-KeyValue-TeamOfferConfig.json",
+      "sha256": "c0eeea082c3e60e2c5d64258a6e36d6ffbe9c813a38c00b892327a6f57d10823"
+    },
+    {
+      "file": "附件/配置/history39781/User-MagicCauldronTableItem-ServerEventConfig.json",
+      "sha256": "1e503c7a3f7314bb100dabad8965fb6110ab5095e2823df5a777318e2a7e734f"
+    },
+    {
+      "file": "附件/配置/history39781/User-MagicCauldronTableItem-UserEventConfig.json",
+      "sha256": "97e017b06f737f371554b1406bf64ae6f4d949c06569864d0610837635a7c08b"
+    },
+    {
+      "file": "附件/配置/history39781/User-MergeSmithTableItem-ServerEventConfig.json",
+      "sha256": "da5c5155d62cea5f51744ea3a9f4bc82907b09295a010d269023fc6c27207738"
+    },
+    {
+      "file": "附件/配置/history39781/User-OceanOdysseyTableItem-ServerEventConfig.json",
+      "sha256": "ee13ac85f3f5893ef1b8c651ed795933857372404f1834d49b0472d79929157f"
+    },
+    {
+      "file": "附件/配置/history39781/User-PuzzleBreakTableItem-ServerEventConfig.json",
+      "sha256": "4716d9576ad9d607f01994450c85d43c8ea4e1dac139b5a9520d1e4fc74598ee"
+    },
+    {
+      "file": "附件/配置/history39781/User-SeasonalCardCollectionTableItem-CollectionConfig.json",
+      "sha256": "197092dffdc852bd5396793a47386f7160634849d21f2bdd4d1f3adfff15601c"
+    },
+    {
+      "file": "附件/配置/history39781/User-StarfallOfferTableItem-ServerEventConfig.json",
+      "sha256": "e289f3465b5a58f996b90eaf32d4204d05bef841bbaef9bf3d94dda33617c71a"
+    },
+    {
+      "file": "附件/配置/history39781/User-StarfallOfferTableItem-UserEventConfig.json",
+      "sha256": "aff7af991428d7e3b0b8c90cd2625e36bc95ce27848b9543ea7264e3144085a1"
+    },
+    {
+      "file": "附件/配置/history39781/User-TrainJourneyTableItem-ServerEventConfig.json",
+      "sha256": "6a7754fb10aeb0e6269f92f1605d240a6cfeb67a4ecf191ccf3a2b264f090358"
+    },
+    {
+      "file": "附件/配置/history39781/User-TrainJourneyTableItem-UserEventConfig.json",
+      "sha256": "663908940dcf9b5d02288048966e2175c34f8de2a9342e6c2d00ba25922ab798"
+    },
+    {
+      "file": "附件/配置/history39781/User-WeeklyMissionTableItem-ServerEventConfig.json",
+      "sha256": "ac80f5eed7ddb5a5e370e07bb8d2f17b37feef20c506a07afcf972e6499b5fd9"
+    },
+    {
+      "file": "附件/配置/history39781/User-WeeklyMissionTableItem-UserEventConfig.json",
+      "sha256": "20769592e3a5a41b2c46f07b65b62abf9722ffdcb21c3f44cdc7378c2a938285"
+    },
+    {
+      "file": "附件/配置索引.json",
+      "sha256": "239e65dcd1ee591c049ecb17ccb497f78ff504aacdd8e9c4dd8a4c8297f7ab5a"
+    },
+    {
+      "file": "附件/商品价格目录.json",
+      "sha256": "ffcc58cef15c7aea1ca321aafb7dd41916941cbcbcda939e9725655277683e92"
+    },
+    {
+      "file": "附件/时间改写对照.json",
+      "sha256": "03cd000be81179d87dc5b6a271ef4d89777e4d3dc42e558c63699e1db585dd8a"
+    },
+    {
+      "file": "附件/AB分组对照.json",
+      "sha256": "ae0a70e5a561946a9b792432171948ecd1d3dce8993f1d7f32d482620f6fbbe4"
+    },
+    {
+      "file": "附件/outputs/royalmatch-schedule-20261028/来源预览.png",
+      "sha256": "e2b8d96721047913ab882f16316c91bd8a36d4b3099445a35bc93ce4f2c94c6b"
+    },
+    {
+      "file": "附件/outputs/royalmatch-schedule-20261028/排期预览.png",
+      "sha256": "32c82061a2d42220ae46b2a399112b00f5193ebfffb4605cacc707a2de3fb2b7"
+    },
+    {
+      "file": "附件/outputs/royalmatch-schedule-20261028/RoyalMatch-活动与礼包排期.xlsx",
+      "sha256": "2feeb7493dd9c23f7bf60a6f37946d0772a021005a42774d1f29afcfd88a3cff"
+    },
+    {
+      "file": "礼包数值与商品目录.md",
+      "sha256": "ff06e00a61706ce97ee85adcaf2b54353cd908220224fedb8fc4e5fc10016e64"
+    },
+    {
+      "file": "排期与配置总览.md",
+      "sha256": "99a4328a2cbd271ef05282f76b0587ad87001ed45285c9ac2dbb956d103e87ad"
+    }
+  ]
+}

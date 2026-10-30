@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "scope": "Read-only research for original Mikado + Lava static text. No dist files changed by this task.",
+  "codeBuild": 38911,
+  "sources": [
+    {
+      "path": "evidence/static-ui/mikado-font.json",
+      "sha256": "ed6c8beedc3d9ad7cf391c32126ac5831f2ad375d064b456b08bf388ff34ec76"
+    },
+    {
+      "path": "evidence/static-ui/mikado-font-full.json",
+      "sha256": "7bd0e9ff4d57caaa59fc2958775a3bee2bd35e59c8aea8662ce63b34b3cd1b8a"
+    },
+    {
+      "path": "evidence/static-ui/data.unity3d",
+      "sha256": "f4e34bc72c5a50b85150a144849a90d3a44afa05e372cc35d86b0638c7667fd3"
+    },
+    {
+      "path": "evidence/layout-audit-v03/lava-layout-rules.json",
+      "sha256": "7d3c65aeb8f7438bd86c97f41e1515e9de43f712885c37721d4fd5e7aecb3e95"
+    },
+    {
+      "path": "evidence/layout-audit-v03/text-layout-native/method-index.json",
+      "sha256": "7ba92eec87dbde2c2e1a2a48883f8ea70e42fca376013ee808a977915ac99998"
+    }
+  ],
+  "originalElf": {
+    "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\38911\\04-ReverseEngineering\\Windows-Audit\\libil2cpp.so",
+    "sha256": "017f7d4716f9375d86bbbe006740e8e68e65c776bad757d00d8a3c120ee8f5eb"
+  },
+  "font": {
+    "name": "MikadoBlack SDF",
+    "objectId": "8",
+    "serializedFile": "sharedassets0.assets",
+    "source": "com.dreamgames.royalmatch.apk/assets/bin/Data/data.unity3d",
+    "faceInfo": {
+      "m_FaceIndex": 0,
+      "m_FamilyName": "Mikado",
+      "m_StyleName": "Black",
+      "m_PointSize": 100,
+      "m_Scale": 1.0,
+      "m_UnitsPerEM": 0,
+      "m_LineHeight": 134.6999969482422,
+      "m_AscentLine": 100.5999984741211,
+      "m_CapLine": 72.0,
+      "m_MeanLine": 53.0,
+      "m_Baseline": 0.0,
+      "m_DescentLine": -34.099998474121094,
+      "m_SuperscriptOffset": 100.5999984741211,
+      "m_SuperscriptSize": 0.5,
+      "m_SubscriptOffset": -34.099998474121094,
+      "m_SubscriptSize": 0.5,
+      "m_UnderlineOffset": -10.0,
+      "m_UnderlineThickness": 5.0,
+      "m_StrikethroughOffset": 21.200000762939453,
+      "m_StrikethroughThickness": 5.0,
+      "m_TabWidth": 17.0
+    },
+    "sdfChannel": "alpha",
+    "atlasPadding": 15
+  },
+  "sizing": {
+    "formula": "glyphLocalUnit = fontSize / faceInfo.m_PointSize * faceInfo.m_Scale * (TMP.m_isOrthographic ? 1 : 0.1)",
+    "lavaFormula": "fontSize / 1000",
+    "nativeFunction": "TMPro.TextMeshPro.GenerateTextMesh",
+    "entry": "0x023b65ac",
+    "nativeRange": [
+      "0x023b69cc",
+      "0x023b6a50"
+    ],
+    "nativeProof": "text-layout-native/TextMeshPro.GenerateTextMesh.txt",
+    "offsets": {
+      "m_fontSize": "0x1dc",
+      "m_isOrthographic": "0x2fd"
+    },
+    "constant": {
+      "address": "0x03fb253c",
+      "value": 0.10000000149011612
+    },
+    "warning": "m_isOrthographic is a TMP component flag, not Camera.orthographic. All 12 exported Lava Competition/Start TMP records are false although the Home camera is orthographic.",
+    "worldProjection": "Apply each glyph/character scale and the TMP world2d matrix once. Under no rotation and uniform scale: canvasGlyphUnit = glyphLocalUnit * worldScale * canvasBackingPixelsPerWorldUnit.",
+    "currentBoxAdapter": "If HTML box height represents TMP rectSize.y transformed to world and projected, unitHeight=glyphLocalUnit/rectSize.y; unit=unitHeight*canvasBackingHeight. worldScale is already included in box height: do not multiply it again.",
+    "nonUniformOrRotatedBoundary": "A scalar unit cannot preserve nonuniform scale or rotation. Use local canvas geometry then the full world2d matrix, or separately preserve scaleX/scaleY and rotation.",
+    "canvasBackingScale": "setup(el) backs the canvas at min(3,devicePixelRatio||1)*2 times CSS pixels. Use backing pixels throughout; do not mix CSS pixels and backing pixels.",
+    "minimumChange": "Use original glyphLocalUnit as the requested size. Any width/height fit must only shrink, never enlarge to fill the box. Existing unitHeight support can implement this without rebuilding the renderer.",
+    "autoSizeBoundary": "The saved m_fontSize values provide the original authored/resolved starting sizes. Auto-sizing remains enabled; language, runtime content, material and layout changes can recalculate them. Do not substitute m_fontSizeBase or m_fontSizeMax, or claim these are live sampled sizes."
+  },
+  "characterSpacing": {
+    "formula": "characterSpacingLocal = m_characterSpacing * currentFontSize * 0.01 * (m_isOrthographic ? 1 : 0.1)",
+    "fontIndependentWarning": "currentEmScale does not divide by font face pointSize. Its numerical equality to glyphLocalUnit here relies on Mikado pointSize=100 and faceScale=1.",
+    "nativeEmScaleRange": [
+      "0x023b72e8",
+      "0x023b7330"
+    ],
+    "nativeSpacingLoad": "0x023b8134: [this+0x2a0] -> s8 -> [sp+0xe4]",
+    "nativeAdvanceRange": [
+      "0x023ba080",
+      "0x023ba0b0"
+    ],
+    "nativeLineEndSpacingRemovalRange": [
+      "0x023ba524",
+      "0x023ba594"
+    ],
+    "simpleSingleLineImplementation": "For these plain regular-font samples, add characterSpacingLocal after each character; remove the final extra spacing when measuring the centered line. Equivalently add it only between adjacent characters. At Mikado pointSize100/scale1 use spacing * canvasGlyphUnit.",
+    "boundary": "General TMP also adds font normalStyleSpacing, bold adjustment, rich-text cspace and glyph-feature adjustments, and can suppress spacing by pair lookup flags. Those are zero or absent for these selected plain Lava text samples.",
+    "startExample": {
+      "fontSize": 11.300000190734863,
+      "spacing": -1.5,
+      "localPerGap": -0.016950000286102294,
+      "pixelsPerGapAt1080": -1.9683870896290792,
+      "gapCount": 4
+    }
+  },
+  "sampleViewport": {
+    "nativeProof": "CameraManager.UpdateSizeParameters.txt",
+    "aspect": 0.5625,
+    "portraitWidth": 9.300000190734863,
+    "portraitHeight": 16.533333672417534,
+    "orthographicSize": 8.266666836208767,
+    "center": [
+      0,
+      0
+    ],
+    "safeTopY": 8.266666836208767,
+    "uiScaleFactor": 1,
+    "examplePixels": [
+      1080,
+      1920
+    ],
+    "pixelsPerUnit": 116.12902987635972,
+    "formula": "For portrait aspect < 0.57: camera width=9.3; height=width/aspect. Home GetUiScaleFactor=1. No additional uniform height fitting."
+  },
+  "samples": [
+    {
+      "node": "LavaQuestCompetitionDialog/Root/Top/Header/Title",
+      "objectId": "-6617191190306338607",
+      "text": "Lava Quest",
+      "fontSize": 8.899999618530273,
+      "fontSizeBase": 10.880000114440918,
+      "autoSizing": true,
+      "fontSizeMin": 4.0,
+      "fontSizeMax": 9.0,
+      "isOrthographic": false,
+      "characterSpacing": 0.0,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 6.400000095367432,
+        "y": 1.2000000476837158
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        7.1966678566402855
+      ],
+      "glyphLocalUnit": 0.008899999618530273,
+      "unitHeight": 0.007416666054063397,
+      "rawAdvanceFontUnits": 499.09375,
+      "visibleHeightFontUnits": 93.296875,
+      "unspacedAdvanceWorld": 4.441934184610843,
+      "unspacedAdvancePixelsAt1080": 515.8375076334961,
+      "characterSpacingLocal": 0.0,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 515.8375076334961,
+      "uncurvedVisibleHeightPixelsAt1080": 96.42682856676494,
+      "rectPixelsAt1080": [
+        743.2258022836296,
+        139.35484138909533
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    },
+    {
+      "node": "LavaQuestStartDialog/Root/Top/Title",
+      "objectId": "5246719494451287417",
+      "text": "Lava Quest",
+      "fontSize": 9.550000190734863,
+      "fontSizeBase": 10.880000114440918,
+      "autoSizing": true,
+      "fontSizeMin": 5.0,
+      "fontSizeMax": 10.300000190734863,
+      "isOrthographic": false,
+      "characterSpacing": 0.0,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 6.548600196838379,
+        "y": 1.2926000356674194
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        6.905504941940308
+      ],
+      "glyphLocalUnit": 0.009550000190734863,
+      "unitHeight": 0.007388209753378065,
+      "rawAdvanceFontUnits": 499.09375,
+      "visibleHeightFontUnits": 93.296875,
+      "unspacedAdvanceWorld": 4.766345407694578,
+      "unspacedAdvancePixelsAt1080": 553.5110682512136,
+      "characterSpacingLocal": 0.0,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 553.5110682512136,
+      "uncurvedVisibleHeightPixelsAt1080": 103.4692438960615,
+      "rectPixelsAt1080": [
+        760.4825879069792,
+        150.1083881602054
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    },
+    {
+      "node": "LavaQuestStartDialog/Root/Bottom/StartButton/Start/Text",
+      "objectId": "-655755001527987545",
+      "text": "Start",
+      "fontSize": 11.300000190734863,
+      "fontSizeBase": 11.300000190734863,
+      "autoSizing": true,
+      "fontSizeMin": 1.0,
+      "fontSizeMax": 11.300000190734863,
+      "isOrthographic": false,
+      "characterSpacing": -1.5,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 3.690000057220459,
+        "y": 1.573099970817566
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -6.370504787191749
+      ],
+      "glyphLocalUnit": 0.011300000190734863,
+      "unitHeight": 0.0071832689596085025,
+      "rawAdvanceFontUnits": 232.40625,
+      "visibleHeightFontUnits": 72.390625,
+      "unspacedAdvanceWorld": 2.626190669327974,
+      "unspacedAdvancePixelsAt1080": 304.97697469940545,
+      "characterSpacingLocal": -0.016950000286102298,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 297.10342634088914,
+      "uncurvedVisibleHeightPixelsAt1080": 94.99518110678672,
+      "rectPixelsAt1080": [
+        428.51612688872376,
+        182.68257350957373
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    },
+    {
+      "node": "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Levels/Title",
+      "objectId": "-8141682874472743091",
+      "text": "Levels",
+      "fontSize": 3.700000047683716,
+      "fontSizeBase": 10.880000114440918,
+      "autoSizing": true,
+      "fontSizeMin": 2.0,
+      "fontSizeMax": 4.0,
+      "isOrthographic": false,
+      "characterSpacing": 0.0,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 2.333199977874756,
+        "y": 0.5026999711990356
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        -1.902999997138977,
+        4.778765863842434
+      ],
+      "glyphLocalUnit": 0.003700000047683716,
+      "unitHeight": 0.007360255141567858,
+      "rawAdvanceFontUnits": 284.296875,
+      "visibleHeightFontUnits": 78.3125,
+      "unspacedAdvanceWorld": 1.0518984510563314,
+      "unspacedAdvancePixelsAt1080": 122.15594664961722,
+      "characterSpacingLocal": 0.0,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 122.15594664961722,
+      "uncurvedVisibleHeightPixelsAt1080": 33.649112646764586,
+      "rectPixelsAt1080": [
+        270.95224993813935,
+        58.37805997421798
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    },
+    {
+      "node": "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Players/Title",
+      "objectId": "1976481672952475304",
+      "text": "Players",
+      "fontSize": 3.700000047683716,
+      "fontSizeBase": 10.880000114440918,
+      "autoSizing": true,
+      "fontSizeMin": 2.0,
+      "fontSizeMax": 4.0,
+      "isOrthographic": false,
+      "characterSpacing": 0.0,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 2.333199977874756,
+        "y": 0.5026999711990356
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.906999945640564,
+        4.778765863842434
+      ],
+      "glyphLocalUnit": 0.003700000047683716,
+      "unitHeight": 0.007360255141567858,
+      "rawAdvanceFontUnits": 333.59375,
+      "visibleHeightFontUnits": 99.203125,
+      "unspacedAdvanceWorld": 1.2342968909069896,
+      "unspacedAdvancePixelsAt1080": 143.3377005204357,
+      "characterSpacingLocal": 0.0,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 143.3377005204357,
+      "uncurvedVisibleHeightPixelsAt1080": 42.62534241706072,
+      "rectPixelsAt1080": [
+        270.95224993813935,
+        58.37805997421798
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    },
+    {
+      "node": "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Levels/Steps",
+      "objectId": "-3455276638587512735",
+      "text": "5/7",
+      "fontSize": 5.599999904632568,
+      "fontSizeBase": 5.599999904632568,
+      "autoSizing": false,
+      "fontSizeMin": 3.0,
+      "fontSizeMax": 5.0,
+      "isOrthographic": false,
+      "characterSpacing": 0.0,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 2.333199977874756,
+        "y": 0.669700026512146
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        -1.902999997138977,
+        4.055266088909573
+      ],
+      "glyphLocalUnit": 0.005599999904632568,
+      "unitHeight": 0.008361952639897356,
+      "rawAdvanceFontUnits": 152.484375,
+      "visibleHeightFontUnits": 85.296875,
+      "unspacedAdvanceWorld": 0.8539124854579567,
+      "unspacedAdvancePixelsAt1080": 99.16402853554365,
+      "characterSpacingLocal": 0.0,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 99.16402853554365,
+      "uncurvedVisibleHeightPixelsAt1080": 55.47048178865998,
+      "rectPixelsAt1080": [
+        270.95224993813935,
+        77.7716143870279
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    },
+    {
+      "node": "LavaQuestCompetitionDialog/Root/Top/Header/Center/BackgroundHolder/Counter/Time",
+      "objectId": "4633413509067630998",
+      "text": "00:00:10",
+      "fontSize": 3.9000000953674316,
+      "fontSizeBase": 3.9000000953674316,
+      "autoSizing": false,
+      "fontSizeMin": 2.5,
+      "fontSizeMax": 4.699999809265137,
+      "isOrthographic": false,
+      "characterSpacing": -1.5,
+      "fontStyle": 0,
+      "rectSize": {
+        "x": 1.7999999523162842,
+        "y": 0.6000000238418579
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.44999998807907104,
+        2.9066659874386254
+      ],
+      "glyphLocalUnit": 0.0039000000953674317,
+      "unitHeight": 0.00649999990065893,
+      "rawAdvanceFontUnits": 407.125,
+      "visibleHeightFontUnits": 72.703125,
+      "unspacedAdvanceWorld": 1.5877875388264655,
+      "unspacedAdvancePixelsAt1080": 184.3882265336903,
+      "characterSpacingLocal": -0.005850000143051148,
+      "advanceWithBetweenCharacterSpacingPixelsAt1080": 179.63274264396662,
+      "uncurvedVisibleHeightPixelsAt1080": 32.927479968577714,
+      "rectPixelsAt1080": [
+        209.03224823998383,
+        69.67742069454766
+      ],
+      "fontFeaturePairMatches": [],
+      "widthBoundary": "Advance before TMP character spacing, material padding/outline, curvature and any runtime auto-size recalculation. This is a sizing diagnostic, not a measured screenshot ink width."
+    }
+  ],
+  "curve": {
+    "parameters": [
+      {
+        "node": "LavaQuestCompetitionDialog/Root/Top/Header/Title",
+        "script": "TextProOnAnAnimationCurve",
+        "enabled": true,
+        "curveScale": 1.2000000476837158,
+        "maxThreeCheckDisabled": true,
+        "vertexCurve": {
+          "m_Curve": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": "Infinity",
+              "outSlope": 0.18817351758480072,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.03128824010491371
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": -0.20729297399520874,
+              "outSlope": -0.995363712310791,
+              "weightedMode": 0,
+              "inWeight": 0.01835578680038452,
+              "outWeight": 0.0
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        },
+        "hermite": {
+          "m0": 0.18817351758480072,
+          "m1": -0.20729297399520874,
+          "formula": "C(t)=(t^3-2*t^2+t)*m0+(t^3-t^2)*m1; 0<=t<=1"
+        },
+        "peak": {
+          "t": 0.5120655330850845,
+          "curveValue": 0.04946216404306697,
+          "riseLocalWorldUnits": 0.05935459921022014,
+          "risePixelsAt1080ForUnitWorldScale": 6.892792024983012
+        }
+      },
+      {
+        "node": "LavaQuestStartDialog/Root/Top/Title",
+        "script": "TextProOnAnAnimationCurve",
+        "enabled": true,
+        "curveScale": 3.4000000953674316,
+        "maxThreeCheckDisabled": true,
+        "vertexCurve": {
+          "m_Curve": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": "Infinity",
+              "outSlope": 0.18817351758480072,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.03128824010491371
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": -0.20729297399520874,
+              "outSlope": -0.995363712310791,
+              "weightedMode": 0,
+              "inWeight": 0.01835578680038452,
+              "outWeight": 0.0
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        },
+        "hermite": {
+          "m0": 0.18817351758480072,
+          "m1": -0.20729297399520874,
+          "formula": "C(t)=(t^3-2*t^2+t)*m0+(t^3-t^2)*m1; 0<=t<=1"
+        },
+        "peak": {
+          "t": 0.5120655330850845,
+          "curveValue": 0.04946216404306697,
+          "riseLocalWorldUnits": 0.16817136246350725,
+          "risePixelsAt1080ForUnitWorldScale": 19.529577175872753
+        }
+      }
+    ],
+    "native": {
+      "computeEntry": "0x029dc4a4",
+      "updateTextEntry": "0x029dbbdc",
+      "updateVerticesEntry": "0x029dc72c",
+      "getCharScaleEntry": "0x029dc460",
+      "files": [
+        "TextProOnACurve.UpdateText.txt",
+        "TextProOnAnAnimationCurve.Start.txt",
+        "TextProOnAnAnimationCurve.GetCharScale.txt",
+        "TextProOnAnAnimationCurve.ComputeTransformationMatrix.txt",
+        "TextProOnAnAnimationCurve.UpdateVertices.txt"
+      ]
+    },
+    "algorithm": [
+      "Generate the uncurved TMP mesh; skip invisible characters (spaces still affect pen advance).",
+      "For each visible character use pivot=((quadBottomLeft.x+quadTopRight.x)/2, characterInfo.baseLine, 0). Subtract this pivot from its four vertices.",
+      "Compute t=(pivot.x-textBounds.min.x)/(textBounds.max.x-textBounds.min.x); this uses actual TMP mesh bounds, not RectTransform width or the sum of advances.",
+      "Evaluate dy=CurveScale*C(t). Evaluate the tangent using dt=0.00009999999747378752: dx=(textBounds.max.x-textBounds.min.x)*dt; ddy=CurveScale*(C(t+dt)-C(t)).",
+      "Apply T(0,dy,0)*Rz(atan2(ddy,dx))*S(1,1,1) to the centered quad; add original pivot back. Native GetCharScale returns Vector3.one (static field offset0x0c).",
+      "Finally apply the TMP world transform and camera. For a Y-down canvas, the curve goes upward (-dy) and the Z angle changes sign."
+    ],
+    "boundaries": [
+      "weightedMode=0 on both keys: ordinary cubic Hermite; serialized weights must not be used as weighted Bezier controls.",
+      "CurveScale is already in text-local Unity units after glyph sizing. Do not multiply the rise by fontSize/1000 again.",
+      "The Start title runtime ArrangeTitle writes CurveScale=3.4 and localY=5.007999897; Competition retains1.2. Both MaxThreeCheckDisabled=true; short-string curve suppression does not disable them.",
+      "The Start button has no TextProOnAnAnimationCurve component.",
+      "Using raw glyph ink bounds instead of the original TMP mesh bounds introduces a small curve/pivot difference because the mesh can include material padding. Preserve this distinction until exact mesh/material padding is implemented.",
+      "Curved text needs vertical headroom. Do not independently re-center each raised glyph or normalize the curved group to fill its box."
+    ]
+  },
+  "runtimeDataAudit": {
+    "filesRead": [
+      "dist/runtime-data.js",
+      "dist/static-data.js",
+      "dist/royal-art.js"
+    ],
+    "existingTextFields": [
+      "matrix",
+      "size",
+      "value",
+      "fontSize",
+      "spacing (some records only)"
+    ],
+    "existingFontFields": [
+      "static-data.font.faceInfo.m_PointSize",
+      "static-data.font.faceInfo.m_Scale",
+      "static-data.font.chars",
+      "static-data.font.glyphPairAdjustmentRecords"
+    ],
+    "sufficientForMinimumLavaSizingWithExplicitFalseFlag": true,
+    "recommendedAdditions": [
+      "isOrthographic per TMP record",
+      "characterSpacing on all runtime override records",
+      "curveScale + vertexCurve for the two Title records"
+    ],
+    "fontFaceInfoAlreadyAvailable": true,
+    "lavaTMPFlags": {
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Levels/Title": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Title": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Levels/Steps": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Info": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Players/PlayerCount": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Players/Title": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/BackgroundHolder/Counter/Time": false,
+      "LavaQuestCompetitionDialog/Root/Bottom/TapToContinueText": false,
+      "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Players/textRef": false,
+      "LavaQuestStartDialog/Root/Bottom/StartButton/Start/Text": false,
+      "LavaQuestStartDialog/Root/Bottom/InfoText": false,
+      "LavaQuestStartDialog/Root/Top/Title": false
+    },
+    "perRecordOmissions": [
+      {
+        "node": "LavaQuestCompetitionDialog/Root/Top/Header/Center/BackgroundHolder/Counter/Time",
+        "runtimeFieldsObserved": [
+          "matrix",
+          "size",
+          "value",
+          "fontSize",
+          "spacing",
+          "orthographic"
+        ],
+        "originalSpacing": -1.5,
+        "runtimeEnglishFontSize": null
+      },
+      {
+        "node": "LavaQuestCompetitionDialog/Root/Top/Header/Center/Container/Players/textRef",
+        "runtimeFieldsObserved": [
+          "matrix",
+          "size",
+          "value",
+          "fontSize",
+          "spacing",
+          "orthographic"
+        ],
+        "originalSpacing": -1.5,
+        "runtimeEnglishFontSize": null
+      },
+      {
+        "node": "LavaQuestStartDialog/Root/Bottom/StartButton/Start/Text",
+        "runtimeFieldsObserved": [
+          "matrix",
+          "size",
+          "value",
+          "fontSize",
+          "spacing",
+          "orthographic"
+        ],
+        "originalSpacing": -1.5,
+        "runtimeEnglishFontSize": null
+      },
+      {
+        "node": "LavaQuestStartDialog/Root/Bottom/InfoText",
+        "runtimeFieldsObserved": [
+          "matrix",
+          "size",
+          "value",
+          "fontSize",
+          "spacing",
+          "orthographic"
+        ],
+        "originalSpacing": 0.20000000298023224,
+        "runtimeEnglishFontSize": 3.549999952316284
+      }
+    ]
+  },
+  "verificationBoundary": [
+    "Formula and curve implementation checked against original38911 ARM64 and cached original bundle fields. No emulator mutation or live runtime-size memory sampling.",
+    "Font metric example widths exclude custom character spacing and effects. Start has spacing-1.5; its final native line is slightly narrower than the raw305px advance diagnostic.",
+    "Line breaking, TMP exact vertical alignment, rich text, material padding, gradients and outline shaders are separate from this bounded size/curve fix.",
+    "This evidence does not establish byte identity with39781 or any subsequently updated binary."
+  ]
+}

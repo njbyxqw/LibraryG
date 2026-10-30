@@ -1,0 +1,41 @@
+{
+  "source": "history39781",
+  "sample_time": "2026-10-28T14:46:21+08:00",
+  "table": "User.StarfallOfferTableItem",
+  "key": "ServerEventConfig",
+  "config": {
+    "r2": [
+      {
+        "a": 1000,
+        "t": "C"
+      }
+    ],
+    "cd": 1200,
+    "offerPriorityHomescene": 27,
+    "t": 10,
+    "od": 120,
+    "v": 1,
+    "segment": 1,
+    "l": 1,
+    "offerPriorityFavor": 33,
+    "offerPriorityShop": 33,
+    "r1": [
+      {
+        "a": 1000,
+        "t": "C"
+      },
+      {
+        "a": 30,
+        "t": "ULV"
+      },
+      {
+        "a": 30,
+        "t": "ULB"
+      },
+      {
+        "a": 1,
+        "t": "H"
+      }
+    ]
+  }
+}

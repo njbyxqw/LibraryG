@@ -1,0 +1,49 @@
+{
+  "source": "history39781",
+  "sample_time": "2026-10-28T14:46:21+08:00",
+  "table": "User.DukesTreatsTableItem",
+  "key": "ServerEventConfig",
+  "config": {
+    "cd": 3600,
+    "csc": 250,
+    "s": [
+      {
+        "r": [
+          {
+            "a": 5,
+            "t": "UR"
+          }
+        ]
+      },
+      {
+        "r": [
+          {
+            "a": 5,
+            "t": "UT"
+          }
+        ]
+      },
+      {
+        "r": [
+          {
+            "a": 5,
+            "t": "ULB"
+          }
+        ]
+      },
+      {
+        "r": [
+          {
+            "a": 5,
+            "t": "ULP"
+          }
+        ]
+      }
+    ],
+    "csd": 50,
+    "v": 0,
+    "ls": 900,
+    "csi": 900,
+    "ed": 1440
+  }
+}

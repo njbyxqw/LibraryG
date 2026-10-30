@@ -1,0 +1,180 @@
+{
+  "source": "history39781",
+  "sample_time": "2026-10-28T14:46:21+08:00",
+  "table": "User.KeyValue",
+  "key": "MissionOverrideConfig",
+  "config": {
+    "overridenMissions": [
+      {
+        "isMp": false,
+        "configVersion": 360,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 361,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 362,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 363,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 364,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 365,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 366,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 367,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 368,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      },
+      {
+        "isMp": false,
+        "configVersion": 369,
+        "overridenTasks": [
+          {
+            "taskId": 42,
+            "forceComplete": false,
+            "newTaskId": 10,
+            "newTargets": [
+              10,
+              20,
+              40,
+              60
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

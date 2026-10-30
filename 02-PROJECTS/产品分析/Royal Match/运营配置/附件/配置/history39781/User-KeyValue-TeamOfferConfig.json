@@ -1,0 +1,12 @@
+{
+  "source": "history39781",
+  "sample_time": "2026-10-28T14:46:21+08:00",
+  "table": "User.KeyValue",
+  "key": "TeamOfferConfig",
+  "config": {
+    "version": 2,
+    "offerPriorityHomescene": 80,
+    "offerPriorityFavor": 0,
+    "offerPriorityShop": 10
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "date": "2026-10-28",
+  "sample_scope": "Device-1, guest test account, installed version 38911; original device off",
+  "matrix": {
+    "samples": [
+      {
+        "label": "00-normal",
+        "device_time": "2026-10-28T22:27:41+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-29T16:00:00+08:00",
+        "ancient_remaining_seconds": 63139.87,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-10-30T16:00:00+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": []
+      },
+      {
+        "label": "fri-before-offline",
+        "device_time": "2026-10-30T15:59:36+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-29T16:00:00+08:00",
+        "ancient_remaining_seconds": -86375.13,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-10-30T16:00:00+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": []
+      },
+      {
+        "label": "fri-before-online",
+        "device_time": "2026-10-30T16:00:02+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-31T09:31:33+08:00",
+        "ancient_remaining_seconds": 63091.93,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-01T09:31:33+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "fri-after-offline",
+        "device_time": "2026-10-30T16:02:16+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-31T09:31:33+08:00",
+        "ancient_remaining_seconds": 62957.93,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-01T09:31:33+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "fri-after-online",
+        "device_time": "2026-10-30T16:02:42+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-31T09:33:27+08:00",
+        "ancient_remaining_seconds": 63045.91,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-01T09:33:27+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "sat-offline",
+        "device_time": "2026-10-31T16:02:16+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-31T09:33:27+08:00",
+        "ancient_remaining_seconds": -23328.09,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-01T09:33:27+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "sat-online",
+        "device_time": "2026-10-31T16:02:42+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-11-01T09:32:42+08:00",
+        "ancient_remaining_seconds": 63000.4,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-02T09:32:42+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "mon-offline",
+        "device_time": "2026-11-02T16:02:16+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-11-01T09:32:42+08:00",
+        "ancient_remaining_seconds": -109773.6,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-02T09:32:42+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "mon-online",
+        "device_time": "2026-11-02T16:02:42+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-11-03T09:31:56+08:00",
+        "ancient_remaining_seconds": 62954.53,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-11-04T09:31:56+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      },
+      {
+        "label": "99-restored",
+        "device_time": "2026-10-28T22:31:10+08:00",
+        "ancient_id": "316",
+        "ancient_deadline": "2026-10-29T16:00:00+08:00",
+        "ancient_remaining_seconds": 62930.19,
+        "ancient_config_version": "323",
+        "book_state": "3",
+        "book_id": "717",
+        "book_deadline": "2026-10-30T16:00:00+08:00",
+        "upcoming": {
+          "TeamTournamentStartDate": "1793347260000"
+        },
+        "config_hash_changes": [
+          "User.HiddenTempleTableItem.UserEventConfigVersion",
+          "User.AncientAdventureTableItem.UserEventConfigVersion"
+        ]
+      }
+    ],
+    "cleanup_seen": true,
+    "watchdog_seen": false,
+    "scope": "Existing populated table/key set sampled during paired phases; final full inventory separately checks newly introduced keys. Raw deadlines from shifted clocks are experiment artifacts, not newly confirmed schedule."
+  },
+  "refetch": [
+    {
+      "sample": "00-before",
+      "device_epoch": "1793197979",
+      "ancient_id": "316",
+      "ancient_version": "323",
+      "book_versions": [
+        2203,
+        2203
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": []
+    },
+    {
+      "sample": "01-future-invalidated",
+      "device_epoch": "1793607001",
+      "ancient_id": "316",
+      "ancient_version": "0",
+      "book_versions": [
+        0,
+        0
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": [
+        "User.KeyValue.MadnessConfig",
+        "User.KeyValue.MadnessConfig2"
+      ]
+    },
+    {
+      "sample": "02-future-online-0",
+      "device_epoch": "1793607018",
+      "ancient_id": "316",
+      "ancient_version": "323",
+      "book_versions": [
+        2203,
+        2203
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfig",
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": [
+        "User.BalloonRiseTableItem.UserEventConfig"
+      ]
+    },
+    {
+      "sample": "02-future-online-1",
+      "device_epoch": "1793607035",
+      "ancient_id": "316",
+      "ancient_version": "323",
+      "book_versions": [
+        2203,
+        2203
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfig",
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": [
+        "User.BalloonRiseTableItem.UserEventConfig"
+      ]
+    },
+    {
+      "sample": "02-future-online-2",
+      "device_epoch": "1793607053",
+      "ancient_id": "316",
+      "ancient_version": "323",
+      "book_versions": [
+        2203,
+        2203
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfig",
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": [
+        "User.BalloonRiseTableItem.UserEventConfig"
+      ]
+    },
+    {
+      "sample": "100-final-cache-restored",
+      "device_epoch": "1793198522",
+      "ancient_id": "316",
+      "ancient_version": "323",
+      "book_versions": [
+        2203,
+        2203
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfig",
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": [
+        "User.BalloonRiseTableItem.UserEventConfig"
+      ]
+    },
+    {
+      "sample": "99-restored",
+      "device_epoch": "1793198061",
+      "ancient_id": "316",
+      "ancient_version": "323",
+      "book_versions": [
+        2203,
+        2203
+      ],
+      "book_id": "717",
+      "new_keys": [
+        "User.BalloonRiseTableItem.UserEventConfig",
+        "User.BalloonRiseTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.FinalListEventId",
+        "User.ClashOfChampionsTableItem.ServerEventConfig",
+        "User.ClashOfChampionsTableItem.ServerEventConfigVersion",
+        "User.ClashOfChampionsTableItem.ServerEventEndDate",
+        "User.ClashOfChampionsTableItem.ServerEventId",
+        "User.ClashOfChampionsTableItem.UserEventConfig",
+        "User.ClashOfChampionsTableItem.UserEventConfigVersion",
+        "User.ClashOfChampionsTableItem.UserEventEndDate",
+        "User.MergeSmithTableItem.UserEventConfigVersion",
+        "User.MissionControlTableItem.UserEventConfigVersion",
+        "User.MissionPursuitTableItem.UserEventConfigVersion",
+        "User.OceanOdysseyTableItem.UserEventConfigVersion",
+        "User.PuzzleBreakTableItem.UserEventConfigVersion",
+        "User.RobotRivalsTableItem.FinalListEventId",
+        "User.RobotRivalsTableItem.LastTooltipShownEventId",
+        "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion",
+        "User.ShortExpeditionEventTableItem.UserEventConfigVersion",
+        "User.StarfallOfferTableItem.UserEventConfigVersion"
+      ],
+      "lava_keys": [],
+      "config_body_changes": [
+        "User.SeasonalCardCollectionTableItem.CollectionConfig",
+        "User.BalloonRiseTableItem.UserEventConfig"
+      ]
+    }
+  ],
+  "new_keys": {
+    "User.BalloonRiseTableItem.UserEventConfig": {
+      "length": 416,
+      "sha256": "13c89158fa1337ed390163d6340c89c3852c44421ac22db118c6e510cff4291a"
+    },
+    "User.BalloonRiseTableItem.UserEventConfigVersion": "448",
+    "User.MissionPursuitTableItem.UserEventConfigVersion": "0",
+    "User.MissionControlTableItem.UserEventConfigVersion": "0",
+    "User.OceanOdysseyTableItem.UserEventConfigVersion": "0",
+    "User.PuzzleBreakTableItem.UserEventConfigVersion": "0",
+    "User.StarfallOfferTableItem.UserEventConfigVersion": "0",
+    "User.RobotRivalsTableItem.FinalListEventId": "0",
+    "User.RobotRivalsTableItem.LastTooltipShownEventId": "0",
+    "User.MergeSmithTableItem.UserEventConfigVersion": "0",
+    "User.ClashOfChampionsTableItem.ServerEventEndDate": "0",
+    "User.ClashOfChampionsTableItem.ServerEventId": "0",
+    "User.ClashOfChampionsTableItem.ServerEventConfig": "",
+    "User.ClashOfChampionsTableItem.ServerEventConfigVersion": "0",
+    "User.ClashOfChampionsTableItem.UserEventConfig": "",
+    "User.ClashOfChampionsTableItem.UserEventConfigVersion": "0",
+    "User.ClashOfChampionsTableItem.UserEventEndDate": "0",
+    "User.ClashOfChampionsTableItem.FinalListEventId": "0",
+    "User.ShortExpeditionEventTableItem.UserEventConfigVersion": "0",
+    "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion": "0"
+  },
+  "restoration": {
+    "started": "2026-10-28T22:32:58.723518+08:00",
+    "manual_restored": [],
+    "clock_restored": true,
+    "auto": "1",
+    "wifi": "1",
+    "mobile": "1",
+    "finished": "2026-10-28T22:34:28.460859+08:00"
+  },
+  "caveats": [
+    "Time manipulation can invalidate local user activity configuration versions; restoring the clock does not automatically restore participation state.",
+    "Paired phases sample pre-existing populated keys; refetch and restored snapshots enumerate all eligible tables and detect new keys.",
+    "Initial host-controlled offline run lost ADB before time modification; restarted device-1, restored networking, and used a device-local script.",
+    "Paired phase refetch attempt hit database lock; subsequent dedicated refetch with busy timeout succeeded.",
+    "Zero-byte initial packet capture is not network-response evidence. No decrypted response captured."
+  ],
+  "final_cleanup": {
+    "scope": "Restore only public collection config cache cleared by clock experiment; no activity progress, IDs, rewards or user config-version restoration",
+    "restored_keys": [
+      "CollectionConfig",
+      "CollectionConfigVersion"
+    ],
+    "before": {
+      "config_length": 0,
+      "version": "0"
+    },
+    "after": {
+      "config_length": 28533,
+      "version": "325"
+    },
+    "auto": "1",
+    "wifi": "1",
+    "mobile": "1",
+    "clock_difference_to_host_seconds": -7,
+    "level": "82",
+    "finished": "2026-10-28T22:42:09.436595+08:00"
+  },
+  "changes_after_clock_restore_before_cache_cleanup": {
+    "User.SeasonalCardCollectionTableItem.CollectionConfig": {
+      "before": {
+        "length": 28533,
+        "sha256": "9df37be5059356db357c841c42e29db91529642c8a81e7715d1dcf5acb620486",
+        "raw_snapshot": "schedule-probe-matrix/00-before.json or schedule-refetch/99-restored.json"
+      },
+      "after": ""
+    },
+    "User.SeasonalCardCollectionTableItem.CollectionConfigVersion": {
+      "before": "325",
+      "after": "0"
+    },
+    "User.BalloonRiseTableItem.UserEventConfig": {
+      "before": null,
+      "after": {
+        "length": 416,
+        "sha256": "13c89158fa1337ed390163d6340c89c3852c44421ac22db118c6e510cff4291a",
+        "raw_snapshot": "schedule-probe-matrix/00-before.json or schedule-refetch/99-restored.json"
+      }
+    },
+    "User.BalloonRiseTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "448"
+    },
+    "User.HiddenTempleTableItem.UserEventConfigVersion": {
+      "before": "550",
+      "after": "0"
+    },
+    "User.MissionPursuitTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.MissionControlTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.OceanOdysseyTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.PuzzleBreakTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.AncientAdventureTableItem.UserEventConfigVersion": {
+      "before": "323",
+      "after": "0"
+    },
+    "User.StarfallOfferTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.RobotRivalsTableItem.FinalListEventId": {
+      "before": null,
+      "after": "0"
+    },
+    "User.RobotRivalsTableItem.LastTooltipShownEventId": {
+      "before": null,
+      "after": "0"
+    },
+    "User.MergeSmithTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.ClashOfChampionsTableItem.ServerEventId": {
+      "before": null,
+      "after": "0"
+    },
+    "User.ClashOfChampionsTableItem.ServerEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.ClashOfChampionsTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.ClashOfChampionsTableItem.FinalListEventId": {
+      "before": null,
+      "after": "0"
+    },
+    "User.ShortExpeditionEventTableItem.UserEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    },
+    "User.ShortExpeditionEventTableItem.DailyOfferServerEventConfigVersion": {
+      "before": null,
+      "after": "0"
+    }
+  },
+  "balloon_user_config_equals_existing_public": true
+}
