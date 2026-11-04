@@ -79,6 +79,21 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 
 ---
 
+## 外部 Skills 参考入口
+
+共享执行入口：[[02-PROJECTS/Agent/Skills/README|Agent 跨设备技能库]]。2026-11-04 用户确认个人技能统一从 LG 读取，已收录本机全部 14 项个人技能（含依赖），覆盖方案与架构、归档、多语言、Obsidian、网页提取和 REA；完整清单、来源与设备依赖由共享入口维护。根 AGENTS 和 AI 总 MOC 已接入；Mac 的 14 个个人发现目录已改为指向 LG 的链接，原目录保留可回退副本。系统/插件托管技能维持原管理方式；跨设备传输与 Windows 实际执行未核验。
+
+| Skill | 来源 | 用途与使用边界 |
+|---|---|---|
+| find-skills | [vercel-labs/skills](https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md) | 查找可安装技能并提供安装入口；是工具发现流程，不是外部工具本身。 |
+| grill-me | [mattpocock/skills](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) | 显式触发的方案追问入口，依赖同仓库 `skills/productivity/grilling/`；当前版按决策依赖分轮提问，同轮可有多个问题，附推荐答案。 |
+| grill-with-docs | [mattpocock/skills](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) | 调用 grilling 和 domain-modeling，随讨论维护术语表与有价值的架构决策记录；若采用，须适配 LG 的已有文档归属，不能默认在 TS/MT 新建独立知识规范源。 |
+| improve-codebase-architecture | [mattpocock/skills](https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md) | 探查架构摩擦、生成含前后对比的 HTML 候选报告，用户选择后再讨论；依赖 codebase-design、grilling、domain-modeling，不等于自动完成重构。 |
+
+选型建议：grill-me 用于有实质分歧或高返工成本的方案，避免用于普通定位和已明确授权的执行；find-skills 用于明确出现能力缺口时。后两项按专题需要使用，不改变现行 LG 工作流。
+
+产品分析适用性评估：improve-codebase-architecture 面向可读源码的改进机会发现，适合竞品结论迁移到 TS/MT 后的模块拆分、依赖和可测试性审查。对竞品包体的活动规则、资源链路、数值和服务器策略还原帮助有限；反编译碎片缺少完整实现、历史与运行证据，不宜用“浅模块”判断替代事实还原。此为结合 [[02-PROJECTS/产品分析/方法-竞品模块分析与持续维护|竞品分析方法]] 的用途判断，未在竞品样本运行该技能。
+
 ## 关联
 
 - [[AI总MOC|AI 总 MOC]]

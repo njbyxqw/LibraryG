@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>TS 休闲 Tile 游戏 · 双目标线流程图</title>
+  <style>
+    :root {
+      --ink: #18324a;
+      --muted: #66798c;
+      --paper: #f7f4ea;
+      --surface: rgba(255,255,255,.86);
+      --line: #d8dfdf;
+      --main: #6958d9;
+      --main-soft: #eeeafd;
+      --side: #e66a4e;
+      --side-soft: #fff0ea;
+      --shared: #17888a;
+      --shared-soft: #e5f5f2;
+      --gold: #efb64c;
+      --shadow: 0 14px 40px rgba(23, 47, 68, .09);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 4% 0%, rgba(255, 216, 123, .24), transparent 29rem),
+        radial-gradient(circle at 96% 4%, rgba(112, 212, 196, .20), transparent 30rem),
+        var(--paper);
+      min-height: 100vh;
+      line-height: 1.65;
+    }
+
+    button { font: inherit; }
+    .shell { width: min(1440px, calc(100% - 36px)); margin: 0 auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(247,244,234,.78);
+      border-bottom: 1px solid rgba(24,50,74,.08);
+    }
+    .topbar-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .02em; }
+    .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; color: white; border-radius: 12px; background: linear-gradient(135deg, var(--main), var(--shared)); box-shadow: 0 7px 18px rgba(53,82,154,.22); }
+    .nav-tabs { display: flex; gap: 6px; background: rgba(255,255,255,.7); padding: 5px; border: 1px solid rgba(24,50,74,.09); border-radius: 14px; }
+    .nav-btn { border: 0; background: transparent; color: var(--muted); padding: 8px 13px; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 700; }
+    .nav-btn:hover { color: var(--ink); background: rgba(24,50,74,.04); }
+    .nav-btn.active { color: white; background: var(--ink); box-shadow: 0 5px 14px rgba(24,50,74,.18); }
+
+    .hero { padding: 66px 0 38px; display: grid; grid-template-columns: minmax(0,1.2fr) minmax(300px,.8fr); gap: 36px; align-items: end; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: var(--shared); letter-spacing: .12em; font-size: 12px; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: currentColor; }
+    h1 { font-size: clamp(38px, 6vw, 76px); line-height: 1.04; letter-spacing: -.055em; margin: 15px 0 20px; max-width: 850px; }
+    .hero p { color: var(--muted); max-width: 780px; font-size: 17px; margin: 0; }
+    .hero-aside { background: #18324a; color: white; padding: 24px; border-radius: var(--radius); box-shadow: var(--shadow); position: relative; overflow: hidden; }
+    .hero-aside::after { content: "★"; position: absolute; right: -5px; bottom: -46px; font-size: 150px; color: rgba(255,255,255,.06); line-height: 1; }
+    .hero-aside strong { font-size: 15px; }
+    .hero-aside p { color: rgba(255,255,255,.7); font-size: 14px; margin-top: 7px; position: relative; z-index: 1; }
+    .legend { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 18px; }
+    .legend span { font-size: 13px; color: rgba(255,255,255,.86); display: flex; align-items: center; gap: 7px; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 24%, transparent); }
+
+    .view { display: none; animation: reveal .34s ease both; }
+    .view.active { display: block; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(8px); } }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin: 26px 0 16px; }
+    .kicker { color: var(--muted); font-size: 13px; font-weight: 800; letter-spacing: .08em; }
+    h2 { font-size: clamp(25px, 3.2vw, 40px); line-height: 1.18; margin: 4px 0 0; letter-spacing: -.035em; }
+    .section-head > p { max-width: 520px; margin: 0; color: var(--muted); font-size: 14px; }
+
+    .shared-start { margin: 14px 0 18px; padding: 18px 22px; border: 1px solid #c6e3de; background: linear-gradient(90deg, var(--shared-soft), rgba(255,255,255,.75)); border-radius: 20px; display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: center; box-shadow: var(--shadow); }
+    .shared-icon { width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center; background: var(--shared); color: white; font-weight: 900; }
+    .shared-start h3 { margin: 0; font-size: 17px; }
+    .shared-start p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+    .branch { color: var(--shared); font-size: 13px; font-weight: 800; white-space: nowrap; }
+
+    .dual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+    .lane { background: var(--surface); border: 1px solid rgba(24,50,74,.11); border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); }
+    .lane-head { padding: 24px 26px 20px; display: flex; justify-content: space-between; gap: 18px; align-items: start; border-bottom: 1px solid rgba(24,50,74,.08); }
+    .lane-label { font-size: 12px; font-weight: 900; letter-spacing: .12em; color: var(--accent); }
+    .lane h3 { font-size: 24px; margin: 4px 0 5px; }
+    .lane-head p { margin: 0; color: var(--muted); font-size: 14px; }
+    .lane-symbol { width: 56px; height: 56px; flex: 0 0 auto; border-radius: 18px; color: var(--accent); background: var(--soft); display: grid; place-items: center; font-size: 27px; }
+    .lane-main { --accent: var(--main); --soft: var(--main-soft); }
+    .lane-side { --accent: var(--side); --soft: var(--side-soft); }
+
+    .flow { padding: 20px 22px 24px; }
+    .flow-node { width: 100%; position: relative; border: 1px solid rgba(24,50,74,.11); background: white; border-radius: 17px; padding: 15px 15px 15px 64px; min-height: 70px; text-align: left; color: var(--ink); cursor: pointer; transition: .18s ease; }
+    .flow-node:hover, .flow-node:focus-visible { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 55%, white); box-shadow: 0 10px 22px rgba(24,50,74,.10); outline: none; }
+    .flow-node.selected { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent); }
+    .node-num { position: absolute; left: 14px; top: 14px; width: 36px; height: 36px; display: grid; place-items: center; color: var(--accent); background: var(--soft); border-radius: 12px; font-size: 12px; font-weight: 900; }
+    .node-title { display: block; font-weight: 850; font-size: 15px; }
+    .node-sub { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .connector { height: 26px; width: 2px; background: linear-gradient(var(--accent), color-mix(in srgb, var(--accent) 30%, white)); margin: 0 auto; position: relative; opacity: .65; }
+    .connector::after { content: ""; position: absolute; left: 50%; bottom: -1px; width: 7px; height: 7px; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: translateX(-50%) rotate(45deg); }
+    .reward-node { background: linear-gradient(135deg, #fff, var(--soft)); }
+    .tag { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 850; border-radius: 999px; padding: 4px 8px; color: var(--accent); background: var(--soft); }
+    .tag.confirmed::before { content: "✓"; }
+    .tag.boundary { color: #8a6824; background: #fff3ce; }
+    .tag.boundary::before { content: "?"; }
+
+    .detail-panel { position: fixed; right: 22px; bottom: 22px; z-index: 30; width: min(620px, calc(100% - 44px)); border: 1px solid rgba(24,50,74,.12); background: rgba(255,255,255,.96); backdrop-filter: blur(14px); box-shadow: 0 20px 50px rgba(24,50,74,.18); border-radius: 22px; padding: 20px 58px 20px 24px; display: grid; grid-template-columns: 82px 1fr auto; gap: 18px; align-items: center; opacity: 0; pointer-events: none; transform: translateY(calc(100% + 40px)); transition: transform .28s ease, opacity .2s ease; }
+    .detail-panel.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    .detail-id { color: var(--panel-accent, var(--shared)); background: color-mix(in srgb, var(--panel-accent, var(--shared)) 12%, white); border-radius: 16px; padding: 10px; text-align: center; font-size: 11px; font-weight: 900; }
+    .detail-id strong { display: block; font-size: 24px; line-height: 1.1; }
+    .detail-panel h4 { margin: 0 0 4px; font-size: 17px; }
+    .detail-panel p { margin: 0; color: var(--muted); font-size: 14px; }
+    .detail-status { white-space: nowrap; }
+    .detail-close { position: absolute; right: 15px; top: 14px; width: 32px; height: 32px; border: 0; border-radius: 10px; background: rgba(24,50,74,.06); color: var(--muted); cursor: pointer; font-size: 18px; }
+    .detail-close:hover { background: rgba(24,50,74,.1); color: var(--ink); }
+
+    .full-card { background: var(--surface); border: 1px solid rgba(24,50,74,.11); border-radius: 28px; box-shadow: var(--shadow); overflow: hidden; margin-bottom: 22px; }
+    .main-map { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px,.92fr); }
+    .map-visual { min-height: 610px; position: relative; overflow: hidden; background: linear-gradient(160deg, #e6f0ea, #f5ead5); }
+    .map-zone { position: absolute; inset: 0; transition: opacity .25s ease; }
+    .terrain { position: absolute; inset: 0; background: radial-gradient(ellipse at 24% 78%, #7ac88d 0 17%, transparent 18%), radial-gradient(ellipse at 68% 53%, #e9bd62 0 19%, transparent 20%), radial-gradient(ellipse at 45% 18%, #57aeb1 0 14%, transparent 15%); filter: saturate(.95); }
+    .path-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .path-line { stroke: rgba(255,255,255,.94); stroke-width: 20; fill: none; stroke-linecap: round; stroke-dasharray: 1 34; filter: drop-shadow(0 3px 2px rgba(24,50,74,.14)); }
+    .path-guide { stroke: rgba(67,91,95,.22); stroke-width: 4; fill: none; stroke-linecap: round; }
+    .map-point { position: absolute; width: 46px; height: 46px; border: 4px solid white; box-shadow: 0 7px 14px rgba(24,50,74,.18); border-radius: 50%; display: grid; place-items: center; font-size: 17px; background: var(--gold); color: white; }
+    .p1 { left: 21%; bottom: 12%; } .p2 { left: 54%; bottom: 28%; } .p3 { left: 34%; top: 30%; } .p4 { right: 16%; top: 10%; width: 64px; height: 64px; font-size: 28px; background: #6d61c7; }
+    .cloud-bank { position: absolute; inset: -4%; background: radial-gradient(ellipse at 20% 20%, rgba(255,255,255,.95) 0 12%, transparent 13%), radial-gradient(ellipse at 46% 34%, rgba(255,255,255,.96) 0 17%, transparent 18%), radial-gradient(ellipse at 73% 21%, rgba(255,255,255,.94) 0 18%, transparent 19%), radial-gradient(ellipse at 90% 50%, rgba(255,255,255,.92) 0 20%, transparent 21%), radial-gradient(ellipse at 40% 72%, rgba(255,255,255,.95) 0 25%, transparent 26%), radial-gradient(ellipse at 80% 84%, rgba(255,255,255,.96) 0 20%, transparent 21%); filter: blur(3px); transition: transform .6s ease, opacity .6s ease; }
+    .map-visual[data-state="locked"] .terrain { filter: grayscale(1) brightness(.94); }
+    .map-visual[data-state="locked"] .cloud-bank { transform: translate(33%, -20%); opacity: .88; }
+    .map-visual[data-state="done"] .cloud-bank { transform: translate(90%, -45%); opacity: 0; }
+    .state-chip { position: absolute; left: 22px; top: 22px; border-radius: 999px; padding: 8px 12px; font-weight: 850; font-size: 12px; background: rgba(255,255,255,.9); backdrop-filter: blur(8px); box-shadow: 0 8px 20px rgba(24,50,74,.12); }
+    .map-caption { position: absolute; left: 22px; bottom: 20px; max-width: 360px; background: rgba(24,50,74,.9); color: white; border-radius: 16px; padding: 14px 16px; font-size: 13px; }
+    .map-copy { padding: 30px; }
+    .map-copy h3 { font-size: 26px; margin: 0 0 8px; }
+    .map-copy > p { color: var(--muted); margin-top: 0; }
+    .state-controls { display: grid; gap: 10px; margin-top: 22px; }
+    .state-btn { border: 1px solid rgba(24,50,74,.12); border-radius: 15px; padding: 13px 14px; display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 12px; text-align: left; color: var(--ink); background: white; cursor: pointer; }
+    .state-btn:hover, .state-btn.active { border-color: var(--main); background: var(--main-soft); }
+    .state-btn b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 10px; background: #edf0ef; }
+    .state-btn span { display: block; font-size: 13px; color: var(--muted); }
+
+    .chapter-card { padding: 28px 30px; }
+    .chapter-card h3 { margin: 0; }
+    .chapter-card > p { color: var(--muted); margin: 4px 0 24px; }
+    .chapter-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; align-items: end; }
+    .chapter { min-height: var(--h); padding: 14px; background: linear-gradient(180deg, color-mix(in srgb, var(--main) 12%, white), #fff); border: 1px solid color-mix(in srgb, var(--main) 24%, white); border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; }
+    .chapter strong { font-size: 24px; color: var(--main); }
+    .chapter span { color: var(--muted); font-size: 12px; }
+    .chapter small { margin-top: 8px; color: var(--ink); font-weight: 800; }
+
+    .side-journey { padding: 30px; }
+    .side-journey > p { color: var(--muted); margin-top: 4px; }
+    .theme-switch { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 24px; }
+    .theme-btn { border: 1px solid rgba(24,50,74,.13); background: white; color: var(--muted); border-radius: 999px; padding: 8px 13px; cursor: pointer; font-weight: 800; font-size: 13px; }
+    .theme-btn.active { color: white; background: var(--side); border-color: var(--side); }
+    .collection-stage { display: grid; grid-template-columns: 1fr 72px 1fr; align-items: center; gap: 20px; }
+    .tile-tray { min-height: 290px; border-radius: 24px; display: grid; place-items: center; padding: 26px; background: var(--theme-bg); position: relative; overflow: hidden; }
+    .tile-tray::after { content: var(--theme-icon); position: absolute; right: -12px; bottom: -38px; font-size: 150px; opacity: .09; }
+    .tiles { width: min(280px,100%); display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; transform: rotate(-2deg); }
+    .tile { aspect-ratio: 1; border-radius: 15px; background: white; box-shadow: 0 7px 14px rgba(24,50,74,.12); display: grid; place-items: center; font-size: 27px; border: 1px solid rgba(24,50,74,.07); }
+    .progress-arrow { display: grid; gap: 8px; place-items: center; color: var(--side); font-size: 22px; }
+    .progress-arrow span { writing-mode: vertical-rl; letter-spacing: .12em; font-size: 11px; font-weight: 900; color: var(--muted); }
+    .album { min-height: 290px; border-radius: 24px; padding: 24px; background: #233b55; color: white; position: relative; overflow: hidden; }
+    .album > small { color: rgba(255,255,255,.65); font-weight: 800; }
+    .album h4 { font-size: 22px; margin: 3px 0 18px; }
+    .cards { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; }
+    .collect-card { aspect-ratio: .72; border-radius: 12px; padding: 8px; display: flex; align-items: end; font-weight: 850; font-size: 10px; color: white; background: linear-gradient(160deg, var(--card-a), var(--card-b)); box-shadow: 0 10px 18px rgba(0,0,0,.18); position: relative; overflow: hidden; }
+    .collect-card::before { content: var(--theme-icon); position: absolute; top: 18%; left: 50%; transform: translateX(-50%); font-size: 30px; }
+    .collect-card.preview { border: 1px dashed rgba(255,255,255,.62); background: rgba(255,255,255,.08); color: rgba(255,255,255,.74); }
+    .collect-card.preview::before { content: "?"; }
+    .album-note { margin-top: 15px; color: rgba(255,255,255,.68); font-size: 12px; }
+
+    .compare-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; margin-bottom: 18px; }
+    .compare-card { background: var(--surface); border: 1px solid rgba(24,50,74,.11); border-radius: 22px; padding: 22px; box-shadow: var(--shadow); }
+    .compare-card h3 { margin: 8px 0 7px; }
+    .compare-card p { color: var(--muted); font-size: 14px; margin: 0; }
+    .matrix { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 22px; }
+    .matrix th, .matrix td { padding: 16px 18px; border-bottom: 1px solid rgba(24,50,74,.09); text-align: left; vertical-align: top; font-size: 14px; }
+    .matrix th { color: var(--muted); font-size: 12px; letter-spacing: .06em; background: rgba(24,50,74,.035); }
+    .matrix tr:last-child td { border-bottom: 0; }
+    .matrix td:first-child { font-weight: 850; width: 18%; }
+    .matrix td:nth-child(2) { color: var(--main); width: 30%; }
+    .matrix td:nth-child(3) { color: var(--side); width: 30%; }
+    .matrix td:last-child { color: var(--muted); }
+    .boundary-box { border: 1px solid #ead8a1; background: #fff9e7; border-radius: 22px; padding: 22px; margin-bottom: 50px; }
+    .boundary-box h3 { margin: 0 0 10px; }
+    .boundary-list { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .boundary-item { background: rgba(255,255,255,.7); border-radius: 14px; padding: 13px; font-size: 13px; color: #6f602c; }
+
+    footer { padding: 12px 0 44px; color: var(--muted); font-size: 12px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid rgba(24,50,74,.08); }
+    .mobile-nav { display: none; }
+
+    @media (max-width: 900px) {
+      .shell { width: min(100% - 24px, 760px); }
+      .topbar { position: static; }
+      .nav-tabs { display: none; }
+      .mobile-nav { display: grid; grid-template-columns: repeat(4,1fr); position: sticky; bottom: 10px; z-index: 25; background: rgba(255,255,255,.92); backdrop-filter: blur(16px); border: 1px solid rgba(24,50,74,.12); padding: 5px; border-radius: 14px; box-shadow: var(--shadow); margin: 16px auto; }
+      .hero { grid-template-columns: 1fr; padding-top: 40px; }
+      .dual-grid, .main-map, .compare-grid { grid-template-columns: 1fr; }
+      .shared-start { grid-template-columns: auto 1fr; }
+      .branch { grid-column: 1/-1; padding-left: 64px; }
+      .collection-stage { grid-template-columns: 1fr; }
+      .progress-arrow { transform: rotate(90deg); height: 50px; }
+      .progress-arrow span { display: none; }
+      .boundary-list { grid-template-columns: 1fr; }
+      .detail-panel { grid-template-columns: 68px 1fr; bottom: 82px; right: 12px; width: calc(100% - 24px); }
+      .detail-status { grid-column: 2; }
+    }
+    @media (max-width: 560px) {
+      .topbar-inner { min-height: 62px; }
+      .brand { font-size: 14px; }
+      .hero { padding-bottom: 22px; }
+      h1 { font-size: 42px; }
+      .section-head { display: block; }
+      .section-head > p { margin-top: 10px; }
+      .lane-head { padding: 20px; }
+      .flow { padding: 16px; }
+      .map-visual { min-height: 480px; }
+      .map-copy, .chapter-card, .side-journey { padding: 22px; }
+      .chapter-steps { grid-template-columns: repeat(2,1fr); align-items: stretch; }
+      .chapter { min-height: 128px; }
+      .cards { grid-template-columns: repeat(4, minmax(55px,1fr)); }
+      .matrix { display: block; overflow-x: auto; }
+      footer { display: block; }
+    }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="brand-mark">TS</span><span>双目标线 · 交互流程图</span></div>
+      <nav class="nav-tabs" aria-label="视图切换">
+        <button class="nav-btn active" data-view="overview">总览</button>
+        <button class="nav-btn" data-view="main">主线详图</button>
+        <button class="nav-btn" data-view="side">支线详图</button>
+        <button class="nav-btn" data-view="compare">跨线关系</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">TS Casual Tile · Goal System</div>
+        <h1>一次消除，<br />两条目标线。</h1>
+        <p>主线让世界从灰色走向彩色，支线把指定 Tile 花色沉淀为主题收藏。二者从同一局内行为出发，各自形成节奏与回报。</p>
+      </div>
+      <aside class="hero-aside">
+        <strong>阅读方式</strong>
+        <p>先看总览理解双线，再进入详图查看地图状态与画册结构。点击任意流程节点，可在下方查看节点说明。</p>
+        <div class="legend">
+          <span><i class="dot" style="--c:var(--main)"></i>章节主线</span>
+          <span><i class="dot" style="--c:var(--side)"></i>收藏支线</span>
+          <span><i class="dot" style="--c:var(--shared)"></i>共同起点</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="overview" class="view active">
+      <div class="section-head">
+        <div><div class="kicker">OVERVIEW</div><h2>双线总览</h2></div>
+        <p>两条线共享“局内消除”入口，但进度独立。紫色是章节地图推进，橙色是花色收藏推进。</p>
+      </div>
+      <div class="shared-start">
+        <div class="shared-icon">▦</div>
+        <div><h3>共同起点：局内完成 Tile 消除</h3><p>同一次玩法行为，可同时承载地图目标与指定花色收集。</p></div>
+        <div class="branch">分流为两种进度 →</div>
+      </div>
+      <div class="dual-grid">
+        <article class="lane lane-main">
+          <div class="lane-head"><div><div class="lane-label">MAIN LINE · 必得章节回报</div><h3>世界上色主线</h3><p>以关卡、路径和章节终点形成连续目标感。</p></div><div class="lane-symbol">★</div></div>
+          <div class="flow">
+            <button class="flow-node" data-node="m1"><span class="node-num">01</span><span class="node-title">消除产生能量</span><span class="node-sub">局内完成 Tile 消除</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="m2"><span class="node-num">02</span><span class="node-title">能量汇成魔法星星</span><span class="node-sub">局内视觉目标完成</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="m3"><span class="node-num">03</span><span class="node-title">通关后点亮路径星星</span><span class="node-sub">节点向周围扩散染色</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="m4"><span class="node-num">04</span><span class="node-title">镜头向上推进 · 云层揭示</span><span class="node-sub">沿弯曲路径看到下一段未知</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="m5"><span class="node-num">05</span><span class="node-title">抵达主题地图终点城堡</span><span class="node-sub">完成章节最后一次染色</span></button><div class="connector"></div>
+            <button class="flow-node reward-node" data-node="m6"><span class="node-num">06</span><span class="node-title">获得章节明信片 → 下一章</span><span class="node-sub">章节完成后的必得纪念物</span></button>
+          </div>
+        </article>
+
+        <article class="lane lane-side">
+          <div class="lane-head"><div><div class="lane-label">SIDE LINE · 花色兑换收藏</div><h3>主题卡片支线</h3><p>独立于关卡主线，贯穿游戏生命周期。</p></div><div class="lane-symbol">▤</div></div>
+          <div class="flow">
+            <button class="flow-node" data-node="s1"><span class="node-num">01</span><span class="node-title">消除指定 Tile 花色</span><span class="node-sub">收集目标来自局内可控花色</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="s2"><span class="node-num">02</span><span class="node-title">累计对应花色进度</span><span class="node-sub">不同花色对应自己的收集目标</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="s3"><span class="node-num">03</span><span class="node-title">兑换当前主题收藏卡</span><span class="node-sub">森林、沙漠、海洋等主题内容物</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="s4"><span class="node-num">04</span><span class="node-title">每章约 3–4 张</span><span class="node-sub">过程收集，尾部可与章节结束汇合</span></button><div class="connector"></div>
+            <button class="flow-node" data-node="s5"><span class="node-num">05</span><span class="node-title">常驻画册入口查看</span><span class="node-sub">已获历史 + 下一张 / 后续预告</span></button><div class="connector"></div>
+            <button class="flow-node reward-node" data-node="s6"><span class="node-num">∞</span><span class="node-title">跨章节持续积累</span><span class="node-sub">独立收藏线，贯穿游戏生命周期</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="main" class="view">
+      <div class="section-head"><div><div class="kicker">MAIN LINE</div><h2>主线 · 从灰色地图到章节明信片</h2></div><p>点击三种状态，观察云层、灰色待解锁区和彩色已完成区在地图阅读中的职责。</p></div>
+      <div class="full-card main-map">
+        <div class="map-visual" data-state="locked" aria-live="polite">
+          <div class="terrain"></div>
+          <svg class="path-svg" viewBox="0 0 600 720" preserveAspectRatio="none" aria-hidden="true"><path class="path-guide" d="M115 650 C 180 560, 420 590, 355 455 S 115 355, 245 235 S 475 180, 490 70"/><path class="path-line" d="M115 650 C 180 560, 420 590, 355 455 S 115 355, 245 235 S 475 180, 490 70"/></svg>
+          <div class="map-point p1">★</div><div class="map-point p2">★</div><div class="map-point p3">★</div><div class="map-point p4">♜</div>
+          <div class="cloud-bank"></div>
+          <div class="state-chip">状态 02 · 灰色待解锁</div>
+          <div class="map-caption">路径节点在通关后化为星星，向周围扩散染色；镜头沿弯曲向上路径继续推进。</div>
+        </div>
+        <div class="map-copy">
+          <span class="tag confirmed">已确认结构</span>
+          <h3>地图的三种可读状态</h3>
+          <p>云负责遮挡未知，灰色负责表达“已揭示但未完成”，彩色负责表达“已经完成”。三者各司其职。</p>
+          <div class="state-controls">
+            <button class="state-btn" data-state="unknown"><b>☁</b><div><strong>云遮挡未知</strong><span>未揭示区域；承担短期阶段分割。</span></div></button>
+            <button class="state-btn active" data-state="locked"><b>◐</b><div><strong>灰色待解锁</strong><span>已经露出，但尚未由路径星星染色。</span></div></button>
+            <button class="state-btn" data-state="done"><b>●</b><div><strong>彩色已完成</strong><span>已完成区域；形成持续可见的成果反馈。</span></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="full-card chapter-card">
+        <span class="tag confirmed">章节长度规划</span>
+        <h3>章节节奏逐步拉长</h3>
+        <p>章节以主题地图和终点城堡为边界，长度按 20 → 30 → 50 → 100 关演进。</p>
+        <div class="chapter-steps">
+          <div class="chapter" style="--h:120px"><span>阶段 01</span><strong>20</strong><small>关 / 章</small></div>
+          <div class="chapter" style="--h:145px"><span>阶段 02</span><strong>30</strong><small>关 / 章</small></div>
+          <div class="chapter" style="--h:175px"><span>阶段 03</span><strong>50</strong><small>关 / 章</small></div>
+          <div class="chapter" style="--h:220px"><span>阶段 04</span><strong>100</strong><small>关 / 章</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="side" class="view">
+      <div class="section-head"><div><div class="kicker">SIDE LINE</div><h2>支线 · 花色收集与主题画册</h2></div><p>选择主题查看示意内容。卡片内容与主题相关，但具体卡面、花色映射与兑换数值仍留给后续配置。</p></div>
+      <div class="full-card side-journey">
+        <span class="tag confirmed">每章约 3–4 张</span>
+        <h3>从指定 Tile 到长期收藏</h3>
+        <p>局内收集指定花色，累计对应进度，兑换主题卡片；画册负责承载历史与预告。</p>
+        <div class="theme-switch" aria-label="主题切换"><button class="theme-btn active" data-theme="forest">森林</button><button class="theme-btn" data-theme="desert">沙漠</button><button class="theme-btn" data-theme="ocean">海洋</button></div>
+        <div class="collection-stage" data-theme-stage="forest" style="--theme-bg:#dff2df;--theme-icon:'🌲';--card-a:#56a06b;--card-b:#234d42">
+          <div class="tile-tray"><div class="tiles"><div class="tile">🍃</div><div class="tile">🍄</div><div class="tile">🍃</div><div class="tile">🪵</div><div class="tile">🍃</div><div class="tile">🌼</div><div class="tile">🍃</div><div class="tile">🪵</div><div class="tile">🍃</div></div></div>
+          <div class="progress-arrow">→<span>对应花色进度</span></div>
+          <div class="album"><small>常驻画册 · 当前章节</small><h4><span class="theme-name">森林</span>收藏</h4><div class="cards"><div class="collect-card">已获得</div><div class="collect-card">已获得</div><div class="collect-card">已获得</div><div class="collect-card preview">下一张</div></div><div class="album-note">已获历史可回看；下一张 / 后续内容可预告。</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="view">
+      <div class="section-head"><div><div class="kicker">RELATIONSHIP</div><h2>跨线联系与边界</h2></div><p>共同起点不代表强制同步。这里把共用点、差异和暂不设定的关系拆开呈现。</p></div>
+      <div class="compare-grid">
+        <div class="compare-card"><span class="tag confirmed">共用</span><h3>同源行为</h3><p>两条线都以局内 Tile 消除为起点；同一局可提供两种目标感。</p></div>
+        <div class="compare-card"><span class="tag confirmed">独立</span><h3>异步进度</h3><p>主线按通关和路径推进；支线按指定花色累计，不要求同步完成。</p></div>
+        <div class="compare-card"><span class="tag confirmed">区分</span><h3>两类收藏物</h3><p>章节明信片是章节终点必得；主题卡片是花色进度兑换。</p></div>
+      </div>
+      <table class="matrix">
+        <thead><tr><th>维度</th><th>世界上色主线</th><th>主题卡片支线</th><th>关系</th></tr></thead>
+        <tbody>
+          <tr><td>局内输入</td><td>完成 Tile 消除，产生并汇聚能量</td><td>消除指定 Tile 花色，累计对应进度</td><td>共同依附核心玩法</td></tr>
+          <tr><td>进度单位</td><td>关卡 / 路径节点 / 章节</td><td>花色收集进度 / 收藏卡</td><td>不要求同步</td></tr>
+          <tr><td>可见反馈</td><td>星星、局部染色、云层揭示、镜头推进</td><td>进度累积、卡片兑换、画册填充</td><td>一条塑造世界，一条沉淀收藏</td></tr>
+          <tr><td>章节回报</td><td>终点最后一次染色后，必得章节明信片</td><td>每章约 3–4 张主题卡片</td><td>尾部可汇合，但回报类型不同</td></tr>
+          <tr><td>长期角色</td><td>串联主题地图与章节成长</td><td>常驻导航入口，贯穿生命周期</td><td>主线推进 + 独立收藏</td></tr>
+        </tbody>
+      </table>
+      <div class="boundary-box"><h3>暂不写死的设定</h3><div class="boundary-list"><div class="boundary-item">不预设每关固定获得多少花色、兑换需要多少数量。</div><div class="boundary-item">不预设花色与卡片是一对一、轮换或可自由选择。</div><div class="boundary-item">不预设两线必须同一时间收尾，只保留“尾部可统一”的空间。</div></div></div>
+    </section>
+
+    <aside class="detail-panel" aria-live="polite">
+      <button class="detail-close" aria-label="关闭节点说明">×</button>
+      <div class="detail-id"><strong>▦</strong>节点说明</div>
+      <div><h4>点击任意流程节点查看说明</h4><p>这里会解释该节点在目标感、反馈和进度结构中的作用。</p></div>
+      <div class="detail-status"><span class="tag confirmed">已确认结构</span></div>
+    </aside>
+
+    <nav class="mobile-nav" aria-label="移动端视图切换"><button class="nav-btn active" data-view="overview">总览</button><button class="nav-btn" data-view="main">主线</button><button class="nav-btn" data-view="side">支线</button><button class="nav-btn" data-view="compare">关系</button></nav>
+  </main>
+
+  <footer class="shell"><span>TS 休闲 Tile 游戏 · 双目标线结构稿</span><span>内容基于当前已确认描述；具体数值与映射关系保持开放。</span></footer>
+
+  <script>
+    const nodeDetails = {
+      m1:["01","消除产生能量","主线在局内先把核心消除行为转译为可见能量，为“魔法星星”建立来源。","main"],
+      m2:["02","能量汇成魔法星星","能量在局内完成汇聚，让本关的主线目标在出关前形成一次完整反馈。","main"],
+      m3:["03","点亮路径星星并染色","通关后，地图上的路径节点化为星星，并从节点向周围扩散颜色，把单局胜利沉淀为世界变化。","main"],
+      m4:["04","镜头推进与云层揭示","镜头沿弯曲向上路径移动，云层揭开下一段区域；云承担未知与阶段分割，不等同于灰色待解锁。","main"],
+      m5:["05","主题地图终点城堡","城堡是当前章节的空间终点。抵达后完成本章最后一次染色，形成明确收束。","main"],
+      m6:["06","章节明信片","章节终点的必得纪念物，用于记录已完成章节；它不是花色兑换的主题卡片。","main"],
+      s1:["01","消除指定 Tile 花色","支线直接利用局内花色作为可控收集对象，与主线共享玩法入口，但目标选择可以不同。","side"],
+      s2:["02","累计花色进度","每类指定花色推进对应收集进度；具体数值、映射和重置方式尚未写死。","side"],
+      s3:["03","兑换主题收藏卡","达到条件后兑换与当前主题相关的收藏卡，例如森林、沙漠或海洋内容。","side"],
+      s4:["04","每章约 3–4 张","卡片散布在章节过程中，数量保持轻量；当前描述为约 3–4 张，而非固定硬规则。","side"],
+      s5:["05","常驻画册入口","画册是贯穿生命周期的独立入口，可查看历史已获内容，并承载下一张或后续预告。","side"],
+      s6:["∞","跨章节持续积累","支线不是单章一次性活动，而是随主题章节持续扩展的长期收藏线。","side"]
+    };
+
+    const views = document.querySelectorAll('.view');
+    const navButtons = document.querySelectorAll('[data-view]');
+    function switchView(id) {
+      views.forEach(v => v.classList.toggle('active', v.id === id));
+      navButtons.forEach(b => b.classList.toggle('active', b.dataset.view === id));
+      document.querySelector('.detail-panel').classList.remove('show');
+      document.querySelectorAll('[data-node]').forEach(n => n.classList.remove('selected'));
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    navButtons.forEach(btn => btn.addEventListener('click', () => switchView(btn.dataset.view)));
+
+    const detail = document.querySelector('.detail-panel');
+    document.querySelectorAll('[data-node]').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-node]').forEach(n => n.classList.remove('selected'));
+      btn.classList.add('selected');
+      const [num,title,copy,line] = nodeDetails[btn.dataset.node];
+      const color = line === 'main' ? 'var(--main)' : 'var(--side)';
+      detail.style.setProperty('--panel-accent', color);
+      detail.classList.add('show');
+      detail.querySelector('.detail-id').innerHTML = `<strong>${num}</strong>${line === 'main' ? '主线节点' : '支线节点'}`;
+      detail.querySelector('h4').textContent = title;
+      detail.querySelector('p').textContent = copy;
+      detail.querySelector('.detail-status').innerHTML = `<span class="tag confirmed" style="--accent:${color};--soft:${line === 'main' ? 'var(--main-soft)' : 'var(--side-soft)'}">${line === 'main' ? '章节主线' : '收藏支线'}</span>`;
+    }));
+    detail.querySelector('.detail-close').addEventListener('click', () => detail.classList.remove('show'));
+
+    const map = document.querySelector('.map-visual');
+    const stateCopy = {
+      unknown:["状态 01 · 云遮挡未知","云层覆盖尚未揭示的区域；当镜头推进时，云层退开以展示下一段地图。"],
+      locked:["状态 02 · 灰色待解锁","路径节点在通关后化为星星，向周围扩散染色；镜头沿弯曲向上路径继续推进。"],
+      done:["状态 03 · 彩色已完成","颜色保留玩家已经完成的区域，持续显示本章累积成果。"]
+    };
+    document.querySelectorAll('[data-state]').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.state-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      map.dataset.state = btn.dataset.state;
+      map.querySelector('.state-chip').textContent = stateCopy[btn.dataset.state][0];
+      map.querySelector('.map-caption').textContent = stateCopy[btn.dataset.state][1];
+    }));
+
+    const themes = {
+      forest:{name:'森林',bg:'#dff2df',icon:'🌲',a:'#56a06b',b:'#234d42',tiles:['🍃','🍄','🍃','🪵','🍃','🌼','🍃','🪵','🍃']},
+      desert:{name:'沙漠',bg:'#f7e5b8',icon:'🌵',a:'#dc9a43',b:'#91543b',tiles:['☀️','🌵','☀️','🏺','☀️','🪨','☀️','🏺','☀️']},
+      ocean:{name:'海洋',bg:'#d9eef5',icon:'🐚',a:'#44a7ba',b:'#315d8c',tiles:['🐚','🐠','🐚','🪸','🐚','⭐','🐚','🪸','🐚']}
+    };
+    const stage = document.querySelector('[data-theme-stage]');
+    document.querySelectorAll('[data-theme]').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const t = themes[btn.dataset.theme];
+      stage.dataset.themeStage = btn.dataset.theme;
+      stage.style.cssText = `--theme-bg:${t.bg};--theme-icon:'${t.icon}';--card-a:${t.a};--card-b:${t.b}`;
+      stage.querySelector('.theme-name').textContent = t.name;
+      stage.querySelector('.tiles').innerHTML = t.tiles.map(x => `<div class="tile">${x}</div>`).join('');
+    }));
+  </script>
+</body>
+</html>

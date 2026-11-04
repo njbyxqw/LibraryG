@@ -1,0 +1,253 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-04",
+  "role": "LG canonical executable skill library; device discovery entries link here",
+  "skills": [
+    {
+      "name": "find-skills",
+      "repository": "https://github.com/vercel-labs/skills",
+      "source_path": "skills/find-skills",
+      "source_ref": null,
+      "source_note": "Installed from main on 2026-11-04; commit not captured; file hashes identify this copy.",
+      "dependencies": [],
+      "files_sha256": {
+        "SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
+      }
+    },
+    {
+      "name": "grill-me",
+      "repository": "https://github.com/mattpocock/skills",
+      "source_path": "skills/productivity/grill-me",
+      "source_ref": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "source_note": "Pinned commit",
+      "dependencies": [
+        "grilling"
+      ],
+      "files_sha256": {
+        "SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      }
+    },
+    {
+      "name": "grilling",
+      "repository": "https://github.com/mattpocock/skills",
+      "source_path": "skills/productivity/grilling",
+      "source_ref": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "source_note": "Pinned commit",
+      "dependencies": [],
+      "files_sha256": {
+        "SKILL.md": "a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2",
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      }
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "repository": "https://github.com/mattpocock/skills",
+      "source_path": "skills/engineering/improve-codebase-architecture",
+      "source_ref": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "source_note": "Pinned commit",
+      "dependencies": [
+        "codebase-design",
+        "grilling",
+        "domain-modeling"
+      ],
+      "files_sha256": {
+        "HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+        "SKILL.md": "35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
+        "agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1"
+      }
+    },
+    {
+      "name": "codebase-design",
+      "repository": "https://github.com/mattpocock/skills",
+      "source_path": "skills/engineering/codebase-design",
+      "source_ref": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "source_note": "Pinned commit",
+      "dependencies": [],
+      "files_sha256": {
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "c222ab5a82e0405672eb9062d62496139a08828e45d07fc5f18e4952c10fac1a",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      }
+    },
+    {
+      "name": "domain-modeling",
+      "repository": "https://github.com/mattpocock/skills",
+      "source_path": "skills/engineering/domain-modeling",
+      "source_ref": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "source_note": "Pinned commit",
+      "dependencies": [],
+      "files_sha256": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      }
+    },
+    {
+      "name": "archive-lookup-findings",
+      "repository": null,
+      "source_path": "~/.codex/skills/archive-lookup-findings",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [],
+      "imported_files_sha256": {
+        "SKILL.md": "394de68a235f928ea469343806c5913c24f1b9c112b6a7dd4e1a9dc558b483ca",
+        "agents/openai.yaml": "be38ab0d99e50b45cb91dc9d1b2901d47c8e377d2f64d3f0a722c72f8f1fda52"
+      },
+      "files_sha256": {
+        "SKILL.md": "394de68a235f928ea469343806c5913c24f1b9c112b6a7dd4e1a9dc558b483ca",
+        "agents/openai.yaml": "be38ab0d99e50b45cb91dc9d1b2901d47c8e377d2f64d3f0a722c72f8f1fda52"
+      }
+    },
+    {
+      "name": "defuddle",
+      "repository": null,
+      "source_path": "~/.codex/skills/defuddle",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [
+        "Defuddle CLI; Node/npm if acquisition is needed"
+      ],
+      "imported_files_sha256": {
+        "SKILL.md": "10673a4dc70a0a057612d443243ab7a5aa4abdd4a0fadc3f6eec5fd71ad5a971"
+      },
+      "files_sha256": {
+        "SKILL.md": "10673a4dc70a0a057612d443243ab7a5aa4abdd4a0fadc3f6eec5fd71ad5a971"
+      }
+    },
+    {
+      "name": "json-canvas",
+      "repository": null,
+      "source_path": "~/.codex/skills/json-canvas",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [],
+      "imported_files_sha256": {
+        "SKILL.md": "97d1ae0728955c4203922753d5656890e5e4dd371b8306ea11884f9b510f1b85",
+        "references/EXAMPLES.md": "f5ce15a4b74643122396265e8c37c828874a4005794de2aee7030662968768eb"
+      },
+      "files_sha256": {
+        "SKILL.md": "97d1ae0728955c4203922753d5656890e5e4dd371b8306ea11884f9b510f1b85",
+        "references/EXAMPLES.md": "f5ce15a4b74643122396265e8c37c828874a4005794de2aee7030662968768eb"
+      }
+    },
+    {
+      "name": "localization-config",
+      "repository": null,
+      "source_path": "~/.codex/skills/localization-config",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [
+        "LG workflow and local workbook; spreadsheet editing capability"
+      ],
+      "imported_files_sha256": {
+        "SKILL.md": "22337f5e7870dd92a87686974f5dce65d11a70085424e68747820a9da2d734e6",
+        "agents/openai.yaml": "83305f7844a92ea1dd3f38601d0b95351a8e2b8e6b56c34d842cf443108ed90b"
+      },
+      "files_sha256": {
+        "SKILL.md": "ee0f392c169a93719b1ea4b57c2f2eae61226a7c6ff4d76e2cafc9ce76ab419b",
+        "agents/openai.yaml": "83305f7844a92ea1dd3f38601d0b95351a8e2b8e6b56c34d842cf443108ed90b"
+      },
+      "local_changes": [
+        "2026-11-04: replaced Mac-specific LG specification/workbook paths with current-device vault-root resolution; language order and append-only behavior unchanged."
+      ]
+    },
+    {
+      "name": "obsidian-bases",
+      "repository": null,
+      "source_path": "~/.codex/skills/obsidian-bases",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [],
+      "imported_files_sha256": {
+        "SKILL.md": "c0037f20926c7d8591cdd040365e4c0e4c0c4146386a506f28f241faee9a27d9",
+        "references/FUNCTIONS_REFERENCE.md": "208fd63aead9bca1975626fea52605e6ab9434dc0529d923feb36b18b8877d3b"
+      },
+      "files_sha256": {
+        "SKILL.md": "c0037f20926c7d8591cdd040365e4c0e4c0c4146386a506f28f241faee9a27d9",
+        "references/FUNCTIONS_REFERENCE.md": "208fd63aead9bca1975626fea52605e6ab9434dc0529d923feb36b18b8877d3b"
+      }
+    },
+    {
+      "name": "obsidian-cli",
+      "repository": null,
+      "source_path": "~/.codex/skills/obsidian-cli",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [
+        "Obsidian running with usable obsidian CLI"
+      ],
+      "imported_files_sha256": {
+        "SKILL.md": "b54257cdc0e5d04488b35b0c797bfe427b24359f0848d3c73924dcacf8da6358"
+      },
+      "files_sha256": {
+        "SKILL.md": "b54257cdc0e5d04488b35b0c797bfe427b24359f0848d3c73924dcacf8da6358"
+      }
+    },
+    {
+      "name": "obsidian-markdown",
+      "repository": null,
+      "source_path": "~/.codex/skills/obsidian-markdown",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [],
+      "imported_files_sha256": {
+        "SKILL.md": "7ad72e1f0a9081ed325e76b6402ad5de50a00e63e2341fd403a92f147234a007",
+        "references/CALLOUTS.md": "9912ec2e3f8711f65b8ceb82cc19cbffc5e6f8ccf2ab627e18926c522c383d8b",
+        "references/EMBEDS.md": "63b6205507e28fb58cf200bc348a2b139e50ae739743e2e6316732148973cb7a",
+        "references/PROPERTIES.md": "392953b5838c3ab3df135b5a914f100ae7b95e4501b6a2e5c8dc63da3ac7558b"
+      },
+      "files_sha256": {
+        "SKILL.md": "7ad72e1f0a9081ed325e76b6402ad5de50a00e63e2341fd403a92f147234a007",
+        "references/CALLOUTS.md": "9912ec2e3f8711f65b8ceb82cc19cbffc5e6f8ccf2ab627e18926c522c383d8b",
+        "references/EMBEDS.md": "63b6205507e28fb58cf200bc348a2b139e50ae739743e2e6316732148973cb7a",
+        "references/PROPERTIES.md": "392953b5838c3ab3df135b5a914f100ae7b95e4501b6a2e5c8dc63da3ac7558b"
+      }
+    },
+    {
+      "name": "reverse-engineer-anything",
+      "repository": null,
+      "source_path": "~/.agents/skills/reverse-engineer-anything",
+      "source_ref": null,
+      "source_note": "Imported from existing personal installation on 2026-11-04; upstream commit and license not recorded in installation. No upstream provenance inferred.",
+      "dependencies": [],
+      "environment_requirements": [
+        "REA MCP/CLI and target-specific analysis providers"
+      ],
+      "imported_files_sha256": {
+        "SKILL.md": "46b495fe6459c283c1432294ebe67799a54391cd2ded197ee7df3f8ac0a8ac8f",
+        "references/javascript-applications.md": "04cc298e2485d1db7925b8789097fc5fdd042e937ed11980d3eabc29cb176e59",
+        "references/runtime-observation.md": "b3eea94dd7d0c6474634de22ac3ccae317f42ba1ba2389d93535ee8dae7d94e1",
+        "references/native-and-artifacts.md": "1947af57448ba7be6a0736ffbe976c7ecdab4105f315ecc06c830727cc5205fe",
+        "references/evidence-workflows.md": "dd23217d55342bbe3e98a2bf47a7f208b35a4b41c98645ac160a4d0aac5316f9",
+        "references/connection-and-recovery.md": "668e421e2a27b63058f42ebd36bec04db73404c136e5f47611119ab9d4b4f607",
+        "references/android-applications.md": "412d9cb462d85b07f6fdbc2453dd741ca3da2c0dbba627867d5624df94afa74c"
+      },
+      "files_sha256": {
+        "SKILL.md": "46b495fe6459c283c1432294ebe67799a54391cd2ded197ee7df3f8ac0a8ac8f",
+        "references/android-applications.md": "412d9cb462d85b07f6fdbc2453dd741ca3da2c0dbba627867d5624df94afa74c",
+        "references/connection-and-recovery.md": "668e421e2a27b63058f42ebd36bec04db73404c136e5f47611119ab9d4b4f607",
+        "references/evidence-workflows.md": "dd23217d55342bbe3e98a2bf47a7f208b35a4b41c98645ac160a4d0aac5316f9",
+        "references/javascript-applications.md": "04cc298e2485d1db7925b8789097fc5fdd042e937ed11980d3eabc29cb176e59",
+        "references/native-and-artifacts.md": "1947af57448ba7be6a0736ffbe976c7ecdab4105f315ecc06c830727cc5205fe",
+        "references/runtime-observation.md": "b3eea94dd7d0c6474634de22ac3ccae317f42ba1ba2389d93535ee8dae7d94e1"
+      }
+    }
+  ],
+  "local_binding": {
+    "device": "mac",
+    "date": "2026-11-04",
+    "mode": "directory symlinks to current LG root",
+    "rollback_root": "~/.codex/skill-migration-backups/2026-11-04-lg-shared",
+    "client_discovery_tested": false
+  }
+}

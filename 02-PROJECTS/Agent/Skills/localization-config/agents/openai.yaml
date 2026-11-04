@@ -1,0 +1,7 @@
+interface:
+  display_name: "Localization Config"
+  short_description: "Create and append game localization configuration rows"
+  default_prompt: "Use $localization-config to translate this game text and append it to the localization workbook."
+
+policy:
+  allow_implicit_invocation: true

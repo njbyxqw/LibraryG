@@ -1,0 +1,200 @@
+{
+  "archived_on": "2026-11-04",
+  "source_thread_id": "01a18137-c7f6-7830-8a3e-d8e37b625c4c",
+  "source_root_mac": "/Users/dean/Documents/Codex/2026-10-28/referenced-chatgpt-conversation-this-is-an",
+  "canonical_html": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.html",
+  "files": [
+    {
+      "source_relative": "outputs/TS前期任务.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.html",
+      "bytes": 10771643,
+      "sha256": "989d157996e87773ef274dd984dca535c5c6e4f3a250a7bc7a7f323579fe6898"
+    },
+    {
+      "source_relative": "outputs/assets/bird-shelter-concept.png",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/bird-shelter-concept.png",
+      "bytes": 2678797,
+      "sha256": "c27576a77e3469ebe7c67c959d810e46322d2301faf227039aee8f43be0f14a5"
+    },
+    {
+      "source_relative": "outputs/assets/map-concept.png",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/map-concept.png",
+      "bytes": 2801184,
+      "sha256": "6bb7ef6db2269ba20676150779ad04349afe67a8bcefddb4a4b26b1998341a47"
+    },
+    {
+      "source_relative": "outputs/assets/rabbit-concept.png",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/rabbit-concept.png",
+      "bytes": 2196188,
+      "sha256": "304255f17f2344414f3a89a57b8bdba3e8b307118b0248ca1f276a177ff8c153"
+    },
+    {
+      "source_relative": "outputs/assets/rewards-concept.png",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/rewards-concept.png",
+      "bytes": 2775821,
+      "sha256": "b031df4f97c00456b1ed074664a7d6c449925dc6335b5ca15bf116c8306293c2"
+    },
+    {
+      "source_relative": "outputs/assets/star-storyboard.png",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/star-storyboard.png",
+      "bytes": 2212418,
+      "sha256": "5da6a5d15c0b1bcdd75231eb11918e0d9e313cb6e612898bb2aad06da1579ba4"
+    },
+    {
+      "source_relative": "outputs/assets/小兔子概念图生成说明.txt",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/小兔子概念图生成说明.txt",
+      "bytes": 1562,
+      "sha256": "d119f0936ed21c44b447cce2db0dacbdbabbdd46d2197a9ac589f8b4a7bc3398"
+    },
+    {
+      "source_relative": "outputs/assets/小鸟筑巢概念图生成说明.txt",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/小鸟筑巢概念图生成说明.txt",
+      "bytes": 1727,
+      "sha256": "d3f7626ec7319a45a17af27d155bb03f1bc0439ecd472b5729aa2bc0fe2949ad"
+    },
+    {
+      "source_relative": "outputs/assets/生成说明.txt",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/assets/生成说明.txt",
+      "bytes": 4065,
+      "sha256": "ed666d7d2fa9f5f6ef2041032bb336bbc88cdfe83c2d7cb677d1f275d4c69fb2"
+    },
+    {
+      "source_relative": "outputs/三类卡片统一图鉴预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/三类卡片统一图鉴预览.jpg",
+      "bytes": 175297,
+      "sha256": "2b13a45c45e0836ff78de48c3e2576af2c89e58482360b2b121a0498ac019ee7"
+    },
+    {
+      "source_relative": "outputs/卡片图鉴界面预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/卡片图鉴界面预览.jpg",
+      "bytes": 178325,
+      "sha256": "b72a9b2519601b92b21e2f9fb1d0fe2a7b6a98585c26a2deebade2ab19285b24"
+    },
+    {
+      "source_relative": "outputs/原版图鉴保留预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/原版图鉴保留预览.jpg",
+      "bytes": 137287,
+      "sha256": "1081c9dd49e83f3b585cac1ebcdb8ac9293937ff7a46064d7efb200be58c3a54"
+    },
+    {
+      "source_relative": "outputs/地图区域与关卡状态预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/地图区域与关卡状态预览.jpg",
+      "bytes": 121628,
+      "sha256": "396142fba404a1377974ca96035469ff5b0a8a062ad8b951dde382e751fa0eb4"
+    },
+    {
+      "source_relative": "outputs/小鸟筑巢前后对照预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/小鸟筑巢前后对照预览.jpg",
+      "bytes": 171641,
+      "sha256": "686173b0bee2b0d3ac8748af8c376de70271a8b59b16a130549dae79373e935a"
+    },
+    {
+      "source_relative": "outputs/小鸟筑巢完整页面预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/小鸟筑巢完整页面预览.jpg",
+      "bytes": 426815,
+      "sha256": "cd688058dd30cc44bc2f2c20fe668c080b16d08970b1ee4ca4d362804654bbd4"
+    },
+    {
+      "source_relative": "outputs/意外事件弹窗预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/意外事件弹窗预览.jpg",
+      "bytes": 34615,
+      "sha256": "b83f19e380bf4af946553964e2835e9a45bdde2b4da950b8831b91ccab9148d1"
+    },
+    {
+      "source_relative": "outputs/概念图页面预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/概念图页面预览.jpg",
+      "bytes": 61538,
+      "sha256": "c26e07dba41bf875501a8921e0d6aac23ab0ac0a4fe203e995d6f181a9b07738"
+    },
+    {
+      "source_relative": "outputs/阶段任务界面预览.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/outputs/阶段任务界面预览.jpg",
+      "bytes": 197205,
+      "sha256": "d9b5ebb3e91128a42a01bcffdf997034cf72cf74a2a61e3f33d04b1d868796da"
+    },
+    {
+      "source_relative": "work/bird-shelter-concept.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/bird-shelter-concept.jpg",
+      "bytes": 596059,
+      "sha256": "4c69855a5dd7f6e65e11497e1c13085099fde93b9adacd0f2a76f54b0f7d7be1"
+    },
+    {
+      "source_relative": "work/build-standalone.mjs",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/build-standalone.mjs",
+      "bytes": 673,
+      "sha256": "dc61ac695356edabd83a234172c96b01a6b242938136830cc0c0824ecf5cdbb1"
+    },
+    {
+      "source_relative": "work/map-concept.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/map-concept.jpg",
+      "bytes": 659969,
+      "sha256": "081a7acd81d44f1ea6728abb5eaf69be9c6437b624d48e08cb2e2f5dda28e81a"
+    },
+    {
+      "source_relative": "work/rabbit-concept.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/rabbit-concept.jpg",
+      "bytes": 423751,
+      "sha256": "c0c70e364bc230bbb62df3fdcd3a4edebe98bcd98027817c524d583d66a37de8"
+    },
+    {
+      "source_relative": "work/rewards-concept.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/rewards-concept.jpg",
+      "bytes": 634309,
+      "sha256": "1ac174a8dfead43522faa21444d000744577b525885e5400295fd15337354da4"
+    },
+    {
+      "source_relative": "work/star-storyboard.jpg",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/star-storyboard.jpg",
+      "bytes": 478977,
+      "sha256": "185dc66f3238bbf3b2b09003294ea2f3d81ae3884b1dec7b031def07c8ed17e4"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-template.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-template.html",
+      "bytes": 132931,
+      "sha256": "fb73adaeda9e2b754b827beed27fbb1e59acd3126307c74e9a15689b9ed0fce9"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v1.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v1.html",
+      "bytes": 39695,
+      "sha256": "40c460903282d26e4102ccabde1208ac5ab01afad5af3e20e216e90de946f34c"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v2.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v2.html",
+      "bytes": 4147167,
+      "sha256": "f7af1433d13aea2b5bde0e719fb23e1d7b0c19393c44e8a22ae701c53274f3a5"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v3.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v3.html",
+      "bytes": 5298136,
+      "sha256": "4b1d238a4efa13cb50c8a057432011e509814be737073ce217b0280912f6ecf1"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v4.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v4.html",
+      "bytes": 91591,
+      "sha256": "3c9958578d09be5dd7e6d3ec9b19fccb19e2df5b21476bbf7fbff84faf93a323"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v5.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v5.html",
+      "bytes": 106868,
+      "sha256": "ad4f3b370e9e64d3886ef99fb2ba46ad797f6530decc967fad102fc8e3cff6da"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v6.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v6.html",
+      "bytes": 109010,
+      "sha256": "fcd71c6e074e54f8602cec627681a0fb23060ffcfd59e1b8eb57826d7725b85d"
+    },
+    {
+      "source_relative": "work/ts-tile-goal-lines-v7.html",
+      "lg_relative": "02-PROJECTS/TileScape/游戏逻辑/TS前期任务.assets/work/ts-tile-goal-lines-v7.html",
+      "bytes": 125319,
+      "sha256": "1d96b8e5ea46456d4043215be76eb1b71f0f0275f89a08ddf68d0aaf966d721c"
+    }
+  ]
+}

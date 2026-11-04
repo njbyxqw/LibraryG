@@ -1,0 +1,7 @@
+小兔子阶段任务卡片概念图
+工具：内置 imagegen
+用途：当前目标卡片展示与图鉴缩略图，仅为概念美术。
+参考范围：用户提供的两张界面截图用于网页布局参考（目标大图＋任务清单、独立图鉴网格）；未将参考截图作为本图编辑目标。
+
+最终提示词：
+Use case: stylized-concept. Asset type: original hero art for a Chinese casual Tile game's collectible stage-task screen. One portrait 4:5 illustration. A charming small white rabbit with long pink inner ears, expressive warm brown eyes, fluffy rounded cheeks and tiny paws, sitting in a lush forest clearing surrounded by delicate white daisies with yellow centers. Rabbit centered, whole body visible, occupying about 60 percent of image, face in upper-middle. A few sunlit flowers in foreground make flower collecting thematically coherent. Soft toy-like 3D casual mobile puzzle game rendering, high-quality rounded forms, sage and emerald greens, cream white, gentle warm sunlight, pale blue sky visible between leaves, softly blurred background. Friendly and calm, inviting player to collect the rabbit card. Composition designed to sit behind an HTML UI: leave top 12 percent and bottom 18 percent visually quiet for overlaid title and card label, keep all ears inside margins. No text, no logos, no currency, no numbers, no badges, no borders, no UI controls, no timers, no rescue danger or trapped animals. This is a concept illustration for the user's small rabbit collectible, not copied from another game's character.

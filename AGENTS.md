@@ -29,6 +29,12 @@ LG 是唯一知识库与规范源。项目之间不固定主次，但 TS / MT �
 6. 复杂跨项目任务：`02-PROJECTS/Agent/工作流/规范-多项目工作流与复现.md`
 7. MOC 或导航问题：`02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级.md`
 
+## 跨设备共享技能
+
+- 共享技能入口：`02-PROJECTS/Agent/Skills/README.md`。个人技能统一以此为正文读取与维护源，涵盖技能查找、方案与架构、归档、多语言、Obsidian、网页提取和 REA。任务需要时先按入口的触发边界选择，再读取对应完整 `SKILL.md` 与必要依赖执行；不要每次启动读取全部技能。
+- 即使本机未安装技能，也可从 LG 文件直接读取执行。上游要求调用其他技能而宿主没有 Skill 工具时，按 README 的依赖映射继续读取；不得把未安装等同于不可用。
+- 本机发现入口优先链接至 LG，同名未链接的安装副本不另作正文源；系统内置和插件托管技能仍由其安装机制管理。路径以当前设备的 LG 根目录解析；工具权限、同步状态和外部运行环境仍需实际确认。
+
 ## 代码任务入口
 
 - TS 代码任务：先读 `/Users/dean/TileScape/AGENTS.md`，再读 `/Users/dean/TileScape/Docs/Knowledge/README.md`、`Memory.md`、`CodeMap.md`。

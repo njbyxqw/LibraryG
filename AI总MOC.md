@@ -59,6 +59,7 @@ tags: [LibraryG, AI, MOC, Obsidian, 知识库维护]
 | 可迁移 Unity / 编辑器 / 设计知识 | [[03-KNOWLEDGE/_MOC|通用知识 MOC]] |
 | 跨项目工具仓库 / common_tools | [[07Tools/_MOC|Tools 工具集 MOC]] |
 | LG 工作流 / Daily / INBOX / MOC 维护 | [[02-PROJECTS/Agent/工作流/_MOC|Agent 工作流 MOC]] |
+| 个人技能统一读取 / 跨设备使用 | [[02-PROJECTS/Agent/Skills/README|Agent 跨设备技能库]]；含方案与架构、归档、多语言、Obsidian、网页提取与 REA；按需读取正文与依赖，外部工具按设备核验 |
 | 个人发展 / 策划职业竞争力 / 个人创作 | [[02-PROJECTS/Agent/个人发展/诊断-个人职业与发展-2026-09-13#10. 2026-10-09 基于岗位确认的重新诊断|职业诊断复核]] · [[02-PROJECTS/Agent/个人发展/诊断-个人职业与发展-2026-09-13#12. 2026-10-09 个人创作意向与对话存档|个人创作讨论（暂缓，未立项）]]；事实与建议分层，旧画像待复核 |
 | AI 注意事项 | [[02-PROJECTS/Agent/工作流/规范-AI协作注意事项|AI 注意事项]] |
 | 任务收尾 / 自动巡检 | [[02-PROJECTS/Agent/工作流/规范-任务知识沉淀闭环与自动巡检|任务知识沉淀闭环与自动巡检]] |

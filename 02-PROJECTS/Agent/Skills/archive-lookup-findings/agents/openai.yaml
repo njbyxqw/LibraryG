@@ -1,0 +1,4 @@
+interface:
+  display_name: "Archive Lookup Findings"
+  short_description: "Archive reusable project lookup findings"
+  default_prompt: "Use $archive-lookup-findings to archive this conversation’s verified lookup findings."
