@@ -12,6 +12,33 @@ source: "本机 REA 6.4.0 接入与环境预检"
 
 ## 当前状态
 
+> 设备边界（2026-11-04）：首次检查 Windows 尚无 REA 注册项，随后按用户授权已完成下述 Windows 接入与目标验收。后面的 6.4.0 / Mac 路径记录保留为历史环境，不代表当前 Windows 配置。
+
+### Windows 接入与目标验收（2026-11-04）
+
+| 项目 | 实际状态 |
+|---|---|
+| REA | 固定 `6.8.0`，位于 `D:\LibraryG\06-PRODUCT-ASSETS\_Tools\REA\runtime\node_modules\rea-agents\` |
+| Node | 复用 `C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe`，v24.22.1；未升级系统 Node |
+| Codex 配置 | `C:\Users\Administrator\.codex\config.toml`；setup 仅新增/更新 rea，语义比对确认其余配置保持一致；codex mcp list 为 enabled |
+| 备份 | 初始 `config.toml.rea.backup`；补 Android 环境时另留 `config.toml.rea.backup.9f03196959c37651cde8fd8fe26a85192f2103be23c1e5ff095181d851199d2d.recovery` |
+| 匹配 Skill | `C:\Users\Administrator\.agents\skills\reverse-engineer-anything\SKILL.md`，来自 REA 6.8.0，skill metadata version=49、tool_count=229；不替代 LG 产品分析 skill |
+| 核心 MCP | 当前聊天实际出现 REA 工具，binary_session 成功；open_binary / inspect_artifact 成功解析 MatchVillains 7315 XAPK，5 个图节点、4 条边、0 个完整性矛盾 |
+| JDK | 复用 `D:\LibraryG\06-PRODUCT-ASSETS\_Tools\jdk21\temurin\jdk-21.0.12.1+1` |
+| JADX | `D:\LibraryG\06-PRODUCT-ASSETS\_Tools\REA\jadx-0.7.1-verified.jar`；42,619,858 bytes；SHA-256 `6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75`，与官方 pinned 值一致 |
+| Android 目标验收 | 从最终 Codex 配置启动的新 MCP 进程，通过 initialize / tools/list / tools/call 实际完成 inspect_android_package；MatchVillains 主 APK 7315，30,697 类、1,489 资源，Manifest complete；完整 Evidence 已保存 |
+| 当前连接验收 | 用户重启 Codex 后，本产品分析聊天直接调用 inspect_android_package 成功，7315 主包返回30,697类、1,489资源；原始结果 rea-apk-after-restart.json，summary Evidence `ev_0f477e672a89731ff66edbc67e3c427a73139dc838229282eccaf8adcaf0d4be`。旧进程环境未更新的阻塞已解除 |
+| ADB / Apktool 后续补齐 | 另一技能维护对话已补齐并在重启后验收，记录见下述技能评估页；本产品分析轮未操作模拟器，不将工具检查算作游戏运行取证 |
+| 剩余边界 | Ghidra / IDA 本轮未配置；Frida 安装脚本被 npm 默认策略阻止，本轮未启用动态注入。IL2CPP 本轮使用 Cpp2IL 索引及 Capstone 原始指令核验，不冒充 REA 原生反编译器已就绪 |
+
+工具审计与复现记录在 `D:\LibraryG\06-PRODUCT-ASSETS\_Tools\REA\`：setup-plan/result、setup-android-plan/result、mcp-initialize、mcp-tools、verify_mcp.py。独立验证进程初次在受限临时目录写 engine.jar 被拒，改为正常本机权限后同目标解析成功；不是 JADX 内容或包体不支持。所有验证进程均已结束。
+
+目标证据见 [[02-PROJECTS/产品分析/Match Villains/整体框架初扫-7315#可复核证据位置|7315 证据索引]]。主包完整 Evidence：`ev_92656186a11de6d48ca4f002c7a3b2c3028ef37ebbd3b795bf58fc705e29771e`；XAPK inspection：`ev_8fe02eb6b886497bb4f305fde269b68ad9045740c33970dacacdec37d1c35b64`。仅静态观察，未安装或运行 APK、未验证签名。
+
+ADB / Apktool 的配置与重启后验收来源：[[02-PROJECTS/产品分析/技能/评估-Android产品拆解技能的工具与适用边界-2026-11-03#2026-11-04 重启后当前聊天内置 REA 验收通过|技能维护对话的工具补齐与验收记录]]。
+
+### 历史 Mac 接入状态
+
 - REA 已登记为本机 Codex MCP：`npx -y rea-agents@6.4.0 mcp`。
 - REA 操作技能已安装于 `~/.agents/skills/reverse-engineer-anything`；Codex 配置备份为 `~/.codex/config.toml.rea.backup`。
 - REA 专用环境已就绪：Eclipse Temurin JDK `21.0.12.1`、`jadx-headless-mcp 0.7.1` 和 Apktool `3.0.3` 均已下载并校验。

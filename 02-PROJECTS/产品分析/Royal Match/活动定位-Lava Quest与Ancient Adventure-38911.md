@@ -209,7 +209,42 @@ FailStep = 9
 | 旧期结算如何影响新期 | 对话关闭时若仍有可领取奖励则保留；进入ProceedLastSession后InvalidateEvent，LastSessionCompleted再清缓存/过渡标志；最终由UnblockAndTryEnterEvent尝试入场 | 0x034E523C、0x034E3C94、0x034E3CBC、0x034E5498；具体过期奖励到账仍未实测 |
 | 阶段何时开启 | 按完成/结算推进，三阶段共用活动期限；不是每天解锁一阶段 | 38911阶段推进已复核；39781导出含ProceedNextStage，周期结论不冒充全部奖励逻辑已重验 |
 
+**倒计时归零后的玩家流程（39781）**。三个阶段共用本期截止。当前用户期与服务器期号不一致，或同一期剩余毫秒数≤0，客户端就按用户期结束处理。普通关卡胜负回调在结算时重新检查这个条件。
+
+![[02-PROJECTS/产品分析/Royal Match/可视化/Ancient-到期气泡与领奖入口.png]]
+
+左图是**活动主界面内的即时提示**，定位在顶部倒计时的 `TopUI/Counter/FinishTooltipParent`。背景取自已有活动页复刻，气泡轮廓和中文为示意。右图是**首页图标的可打开状态**：皇冠和平台保留，切换绿色底板和绿色横幅，横幅预设文字为 `OPEN`。这是阶段奖励待处理时的入口样式，活动仍在进行时也可出现。到期后入口刷新先查待领奖励，再查结束状态，因此第一阶段已保存5/5时优先显示可打开入口，3/5则走普通结束分支。两幅图代表不同场景，玩家可以只遇到其中一种。
+
+拼图素材来自 `LocalReplica/evidence/browser/ancient-active-phone.png` 及10月29日设备1的 `ancient_adventure_icon_v3`、`ancient_adventure_dialog_v3`。右图按 `activity-layouts/ancient_adventure_icon_v3/layers.json` 中 OpenState 和公共图层的位置、翻转及顺序拼合，未加入按条件显示的红点。挂点和 OPEN 预设文案分别可在两份 `layout.json` 核对。图示为素材拼合，未取得这两个状态的实机同屏截图。
+
+| 到期时玩家在哪里 | 界面怎样变化 |
+|---|---|
+| 开启介绍弹窗（尚未点“继续”） | 计时结束回调绑定弹窗的 `Close`。关闭时“继续”标志仍为假，销毁介绍上下文，返回原界面。 |
+| 活动主界面（看阶段、进度或宝藏） | 计时文字切到结束态并播放动画。到期回调发起后约0.3秒检查主界面仍打开、主教程和 Heist 教程都未展示，满足才在当前页显示到期气泡。检查未通过，本次气泡流程结束。关闭主界面时会收起提示。 |
+| 首页，当前阶段为0步且没有待领奖励 | 首页激活或入口刷新会处理旧期。活动页已关闭时，客户端可以直接清理旧期、停用旧入口，无须显示全屏结束页。 |
+| 首页，当前阶段走了一部分且未达标（如3/5） | 未锁定、资源就绪的旧入口可进入结束态，时间文字显示 `Finished`，并按到期红点规则提示。该分支保留最后一次查看的机会，玩家仍可点有效入口查看。关掉活动页后按旧期收尾逻辑清理。 |
+| 首页，已经达到阶段领奖点（如5/5） | 入口先检查待领奖励，优先进入 `Open` 可打开状态。符合自动弹窗、资源等条件时，首页结算检查可安排活动主界面处理旧期奖励。跨截止末局已有专门展示入口时，首页的这一项让位。 |
+| 进普通关时还有时间，出关时已到期 | 游戏在出关时另查 Ancient 收尾展示：已参与、配置有效、主教程已看且资源就绪时，即使没有待播进度动画也可安排活动主界面。关卡胜负仍按正常关卡流程处理，但本期 Ancient 不再因这次胜利加一步，也不因这次失败新建普通断连胜动画。 |
+
+**区分“差一步”和“已经达标”**。`HasClaimableReward` 读取保存的当前阶段和步数，39781 此处判断第1阶段步数等于5、第2阶段等于7、其余阶段等于10。若进关前为4/5，截止后才结算胜利，此次普通推进会提前返回，不能靠这局补成5/5。若截止前已保存5/5且仍待处理，则保留阶段结算机会。是否已加到账号余额需看实际领取结果。
+
+**气泡的时间口径**。通用计时组件看到剩余不足1秒时先切换结束文字。两个 Ancient 界面都未启用“立即回调”和“持续回调”，后续计时刷新触发一次结束动作；0.3秒是主界面收到回调后再尝试气泡的等待值。提示文案键为 `AncientAdventureSceneLoseSceneTimeoutText`。没有据此推算从服务器截止时刻到屏幕实际曝光的精确时延。
+
+**首页入口红点与直接关闭介绍（39781）**。默认分支在活动界面上下文关闭后重新判断：活动可推进且开启介绍已见位为假，或用户期已到期，都可点亮红点。按叉只关闭介绍、销毁界面上下文；在所查路径不写 `IsStartDialogSeen`。所以若本来是首次介绍红点，直接关闭后还会亮，再点入口仍可进介绍。按“继续”则先关闭介绍再安排活动主界面，`TryPushDialog` 此时写已见，返回后首次介绍红点消失。Ancient 满足资格后已自动入场。通知精简实验下跳过首次介绍红点，过期红点还要求公共开关允许；两条分支都要求活动页未打开、入口未呈锁定态。此红点判断本身不检查是否有待领奖励。
+
+证据：39781 `Period-Audit/entry-red-dot-39781.txt` 的 `AncientAdventureIcon.UpdateNotification 0x35F84B4`、`OnClick 0x35F8DC0`、`get_ShouldShowIconNotification 0x34E3238`；`Ancient-Fail-Popup-Audit` 的 `OnContinueClicked 0x38D929C`、`OnClose 0x38D94C0`，以及 `Period-Audit/methods` 的 `TryPushDialog 0x34E4BE0`。未逐帧实测红点刷新。
+
+到期证据来自39781 `Period-Audit/countdown-ui-39781.txt` 的 `OnTimeFinished 0x386852C`、`TryOpenEventEndTooltip.MoveNext 0x35EE2F8`（等待常量地址 `0x40CCA88`）；`ancient-countdown-detail-39781.txt` 的 `StartDialog.Init 0x38D8144`（计时委托对应 UiDialog.Close 槽24）、`UpdateSeconds 0x2700684`、`HasClaimableReward 0x3864A6C`；`entry-red-dot-39781.txt` 的 `SetIconState 0x35F7E80`；同目录 methods 的 `TryPushAncientAdventureLevelEndFlow 0x34E49D0`、`TryAddClaimDialog 0x34E4EA4`、`OnHomeContextActivated 0x34E5314`。以上为客户端展示路径，未实拍归零或跨期领奖。
+
 **与Lava的关键区别**：Lava当前轮是否有效不要求个人ID等于最新服务器ID；Ancient用户期的时间有效性明确检查ID一致性。因而“服务器已给新期，旧挑战还能靠自己的24小时继续”的Lava机制不能直接套到Ancient。Ancient存在旧期结算/奖励处理状态，不应把“时间结束”与“立即删掉所有旧数据”混为一谈。
+
+**新一期介绍的自动与手动入口（39781）**：新期自动入场不等于自动弹介绍。`TryAddStartDialog 0x34E4DBC`要求允许自动弹窗、未被依赖阻断、资源/活动可用、ShouldProgress成立，且**IsMainTutorialSeen=false**；已看主教程时返回false。`EnterEvent 0x2A3D030`重置本期介绍位bit27（0x1b），但不重置主教程位bit26（0x1a）；分别由`get_IsStartDialogSeen 0x2A3CCEC`和`get_IsMainTutorialSeen 0x2A3CB6C`确认。因此普通新期不会仅因本期介绍位重置，就让老玩家在这条自动入口再次首弹。主教程被专门重置或外部状态覆盖属于其他条件，不能泛化为永不自动弹。
+
+手动点有效首页图标走另一条判断：`AncientAdventureIcon.OnClick 0x35F8DC0`查本期介绍已见位，未见则安排StartDialog，已见则进入活动主界面。故老玩家新一期仍可在**首次点图标时看到介绍→点击继续→活动页**；直接叉掉介绍不写本期已见，后续点击仍可能再见。新期正常过关可走图标进度面板，不应把它叫新期开启全屏弹窗。`TryAddFlowActions 0x34E4FA8`在ShouldProgressFromLevel成立时安排`PlayAncientAdventureIconPanelAction`；不成立的分支另转虚调用，未将此处扩大为全部入口的穷尽否定。
+
+到期收尾也没有在已查`LastSessionCompleted 0x34E3CBC`中直接安排新期Start；该方法在条件通过后清用户缓存。新期仍需中央选择／解除阻断／入场，以及相应展示入口。登录或失败回首页的自动链可以检查本活动，胜利的30项补开启介绍名单不包含Ancient；胜利阶段进度/领奖有独立路径。不能承诺关闭旧期页面后立刻连续弹新期介绍。
+
+上述为2026-11-05回读既有39781原生方法；证据在`Period-Audit/methods/`、`Period-Audit/entry-red-dot-39781.txt`及`Popup-Representative/methods/`，未做新期实拍。与旧期结算同队列的边界见[[02-PROJECTS/产品分析/Royal Match/系统拆解-弹窗框架-38911#同一活动的旧期结算与下一期开启（39781）]]。
 
 **下发条件与时机**：39781的Ping、UpdateUserProgress响应和SyncManager处理UserProgress均能更新Ancient活动信息；专用GetAncientAdventureInfo主要补账号配置。普通同步可以携带新ID/剩余时间；资格满足后仍受活动依赖/展示流程安排，并非在某个固定时刻无条件自动参加。未取得服务端星期规则、复开算法或固定推送频率。
 
@@ -307,9 +342,77 @@ flowchart TD
 
 例：本阶段目标5，之前走到3后失败并显示断连胜页；假设没有新的中途奖励，重新获胜后的1/5、2/5、3/5、4/5均自动累计，以图标表现为主，到5/5才准备阶段完成活动页。这里的数字用于解释分支，不代表所有账号的奖励覆盖表相同。`ProceedNextStep 0x3864F84`明确区分普通步、新奖励、阶段终点，以及旧Step=0且失败动画标记未设的首次进度展示；`ProceedNextStage 0x38655DC`在切换阶段时重置失败动画标记，因此“已看失败动画后不重复展示”的范围不能泛化为整期所有阶段。以上为生成展示动作的条件，实际弹出仍由关卡结束入口、队列和资源状态决定。
 
-**失败页的具体位置**：`WinFailManager.StartFailFlow`先尝试Lava关卡结束流程；未被Lava接管才调用Ancient的`TryPushAncientAdventureLevelEndFlow(isFromLevelFail=true)`，未接管再`ShowFailDialog`。因此Ancient这类失败展示可以在本次关卡失败流程、普通失败对话框之前被安排，不能一概放入“回首页自动活动组”。主动退出入口`LevelQuitDialog.StartQuitFlow`也调用同一Ancient结束入口。活动在场、用户配置有效、主教程已看、资源就绪等门槛仍有效；跨期末局还有独立分支，不属于本表的未过期普通失败。
+**失败页的具体位置（39781）**。普通关卡最终失败时先检查 Lava，Lava 未接管才检查 Ancient。若 Ancient 有本次 Fail 动画且活动、配置、主教程及资源条件满足，则在 Ancient 活动主界面播放断连胜动画，动画结束提示点击继续，再接关卡失败窗口。两个活动都未接管时直接进入该窗口。两者拿到的完成回调均为 `WinFailManager.ShowFailDialog`，其中先检查极高难关失败礼包，命中安排专属礼包，否则安排普通失败框。见[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/逻辑与配置-38911#失败结算的重试窗口|普通输关的互斥顺序与回调地址]]。主动退出入口 `LevelQuitDialog.StartQuitFlow` 也调用 Ancient 结束入口，其后续应按退出流程另看。跨期末局另有分支。
 
 证据：39781 `FailedLevel 0x34E44E0`、`SetDialogAnimationDataForFail 0x3864DB8`、`FailStep 0x3864F18`、`TryPushAncientAdventureLevelEndFlow 0x34E49D0`、`TryAddStartDialog 0x34E4DBC`、`WinFailManager.StartFailFlow 0x27F811C`。新导出与指纹保存在`06-PRODUCT-ASSETS/RoyalMatch/39781/04-ReverseEngineering/Ancient-Fail-Popup-Audit/`，已有管理器与显示动作证据沿用Period-Audit/Popup-Representative。仅静态核对，未新增账号实际失败/曝光实验；不保证每个符合条件的动作最终显示，也不据此推断后续补弹。
+
+#### 活动页进入与胜利跳台的表现参数（39781）
+
+2026-11-05静态核对。这里说的是动画被执行后的表现参数；哪些胜利会展示全页仍按本节前述分支，不能解读成“每赢一关都弹页跳台”。时间单位为秒，坐标为Unity单位，缩放以对应Transform为准。
+
+| 项目／动作名称 | 具体表现参数 | 来源与解释 |
+|---|---|---|
+| 活动主界面进入：轻微弹性缩放 | 初始1.0065，依次到1.012／0.996／1.000；每段0.05／0.12／0.065秒，总0.235秒；均为OutQuad（逐渐减速） | `AncientAdventureDialog.OnShow 0x3868000`。0.0065／0.012／0.004是缩放增减量，不是秒数；位置另加`Vector3.back×5`，这是层级深度位置设置，不是向上滑5像素 |
+| 玩家起跳前准备 | 序列先等待0.4秒，再调用玩家StepUp动作；之后等待0.133秒，条件性调用前一台阶动作，再等0.027秒 | `SceneView.AnimatePlayerToStep 0x38D6F60`；位移实际从序列约0.56秒开始，玩家自身动作比位移提前0.16秒 |
+| 玩家向下一台阶跳跃 | `DOLocalJump`时长0.256秒、jumpPower=1.2、numJumps=1、snapping=false | 同上`0x38D71AC～0x38D71CC`。1.2是跳跃高度参数，非速度；目标位置由目标台阶与玩家落点计算，不是固定水平距离 |
+| 跳跃同时适配远近大小 | 缩放到目标台阶的`ColumnViewScale`，用时0.256秒，与跳跃Join并行 | 同上`0x38D7204～0x38D7224`；不能写成全阶段固定缩放值 |
+| 跳跃位移结束 | 上述等待0.56＋位移0.256＝约0.816秒；末尾回调把玩家挂到目标台阶下 | `AnimatePlayerToStep`与`<AnimatePlayerToStep>b__1 0x38D7DE4`；只指这段序列，不含活动页入场、后续台阶跌落及奖励 |
+| 目标台阶联动 | 序列局部t=0.75秒插入目标台阶回调 | 同上`0x38D72A4～0x38D72B4`；与末段跳跃重叠，不是再等0.75秒 |
+| 跳台后的流程衔接 | 控制器有按当前Sequence.Duration安排台阶跌落的分支，也有追加0.9秒等待再回调的分支 | `SceneController.PlayStepUpAnimations 0x35FF1E4`；属于分支节奏，不能把0.9秒无条件加到每次跳跃 |
+
+因此“跳台速度”应拆成**起跳准备、空中移动、同步缩放、落地联动、后续等待**。这里已确认前三者的代码参数；角色本身的逐帧动作、台阶形变完整曲线和屏幕像素轨迹仍需与当前Bundle及运行画面对位。
+
+**两点坐标＋代码控制跳跃**：Ancient已确认采用这一方式。`PlayStepUpAnimations`先把玩家放在旧台阶，目标点来自新台阶`playerPositionReference.position`，再用场景root的`InverseTransformPoint`换算到统一局部坐标。第1阶段且CurrentStep和animationStep均非0时，目标y另减0.1。起跳时从玩家当前局部位置出发，调用`DOLocalJump(target, 1.2, 1, 0.256, false)`，同时用0.256秒缩放到目标台阶`playerScaleReference.localScale.x`；结束后再挂到目标台阶下。不能把世界坐标直接传给局部跳跃接口。
+
+可参考的控制输入为：**起点、终点、跳高、空中时长、目标缩放、起跳前等待、落地回调**。这条位移并不要求为每两个台子制作一份路径动画；玩家头像自身的朝向／形变仍可叠加资源动画。38911已保存`PPStepUpLeftAnimation`／`RightAnimation`各长约1.067秒，和39781代码的0.256秒空中位移不是同一层动作，更不能将两个时长互相替换。上面的调用仅为机制表达，不代表已修改任何项目。
+
+#### 台阶下沉、破裂与对象处理参数（39781代码／38911资源）
+
+| 项目／动作名称 | 具体参数与顺序 | 证据 |
+|---|---|---|
+| 胜利后旧台子下沉时机 | 目标step的前一台阶索引≥1时，先播放跳到新台阶的序列，再以该Sequence.Duration作为下沉前等待；此路径`isFail=false`。旧索引<1时改为等待0.9秒后继续，不走该下沉协程 | `SceneController.PlayStepUpAnimations 0x35FF1E4` |
+| 选择台子下沉／破裂样式 | 候选动画编号先排除该台子`unavailableFallAnimationNumbers`，然后RandomFromList选一个；播放状态名`AncientAdventureStepFall{编号}` | `SceneView.<PlayStepFallAnimation>.MoveNext 0x38D7E3C`；这是外观变体选择，不是胜率或奖励概率调控 |
+| 失败时玩家随台下沉 | `isFail=true`时把玩家挂到该台子的`playerFallParent`，局部位置归零并调整遮罩；`frameFallParticleParent`按isFail开关 | 同上＋`SceneStep.PlayStepFallAnimation 0x36008F4`；胜利旧台下沉不把已跳走的玩家再挂回来 |
+| 台子水波淡出 | alpha降到0，用时0.3秒，完成后停止波纹扭曲 | `SceneStep.PlayStepFallAnimation`；不是整个台子下沉只需0.3秒 |
+| 下沉结束等待 | Animator.Play后Update(0)，读取当前状态length，协程等待这个长度后调用后续回调 | 同上；代码未写死统一下沉秒数；Animator缺失时返回0 |
+| 头像落影消失／缩小 | 淡出到alpha0用0.07秒，同步从缩放1降到0.7；用于起跳前后关联阴影表现 | `AnimateFrameShadowFadeOut 0x35FFEC4`；不是台子整体缩小到70% |
+| 破裂时台阶数字跟随碎块 | 5号动画有`UpdateStepNumberParentForBreakAnimation`事件；旧资源阶段1/2在约0.083秒，阶段3在约0.033秒触发 | 38911三个stage Bundle的Fall5片段＋`SceneStep.UpdateStepNumberParentForBreakAnimation 0x3600C00` |
+| 真正销毁对象 | 以上播放方法／协程没有直接Destroy台子调用；已证实的是动画播放、部件开关、等待和回调 | 不据此宣称对象永不销毁；关闭整个活动、池回收和动画曲线控制可见性应另行区分 |
+
+38911已保存三个阶段资源中的片段长度如下（秒）；同样编号由各阶段Animator映射到不同片段。已核对这些下沉状态的序列化Speed=1、SpeedParamID=0，但尚未据此核定39781实机播放耗时。
+
+| 动画编号 | 阶段1片段 | 阶段2片段 | 阶段3片段 |
+|---|---:|---:|---:|
+| Fall1 | 3.500 | 3.500 | 2.900 |
+| Fall2 | 2.950 | 2.933 | 2.950 |
+| Fall3 | 3.150 | 3.150 | 3.050 |
+| Fall4 | 3.400 | 3.400 | 2.833 |
+| Fall5（带破裂数字换父节点事件） | 3.583 | 3.583 | 3.333 |
+
+因此能确认**台子表现由预制动画控制，跳跃位移由代码控制**。资源来自2026-10-29设备1保存的38911 Bundle，记录于`Motion-Parameters/ancient-fall-resources-38911.json`，含Bundle哈希、对象path ID、片段长度、事件和原文路径；`resource_audit.py`可重建清单。
+
+**五种下沉的实际差异与资源可视化**。2026-11-05继续解码15个片段的streamed／constant曲线，使用路径CRC关联Prefab节点，以原Sprite顶点、骨骼权重和bind pose重放可匹配的台柱与碎块。下面的中文名是分析说明名，原资源仅命名Fall1～Fall5。
+
+| 样式 | 可以直接观察的区别 | 已解码的代表参数 |
+|---|---|---|
+| Fall1：轻侧倾下沉 | 整体下移为主，侧倾较轻 | 第一阶段整体控制节点Δy约−3.320，Z旋转最终+11.903°，同时有X轴−14.530°翻转 |
+| Fall2：右侧倾倒下沉 | 向画面右侧明显倾倒，左右侧倾幅度最大 | 第一阶段Δx约+0.514、Δy约−2.500，Z旋转最终−36.813°；三个阶段该Z终值相同 |
+| Fall3：左侧倾倒下沉 | 向画面左侧倾倒，整体与Fall2方向相反 | 第一阶段Δx约−0.258、Δy约−2.908；三个阶段Z旋转终值分别约+17.057°／+17.782°／+23.263° |
+| Fall4：纵向翻转下沉 | 主要是前后方向的翻转，前段左右侧倾很小；第一阶段后段还有反向动作 | X轴先到约−31.283°。第一阶段随后反转至X约+17.960°、Z约+25.632°；第二／三阶段保持负X方向结束。不是三个皮肤共用完全相同的轨迹 |
+| Fall5：分块破裂下沉 | 完整柱体切换为多个独立碎块，各块分别位移、旋转、下落 | 当前选取的三阶段Prefab分别匹配13／8／8条碎块节点位移轨道；这些计数不是全活动统一的碎块数。保留前述阶段数字跟随碎块事件 |
+
+上表位移为第一阶段`Root/ColumnView/STEP_1_MASTER/STEP_1_CTRL`的**局部坐标变化**，旋转为控制节点局部Euler值，不能直接当作屏幕倾角或像素距离。具体样式的视差、阶段皮肤、父变换和水面遮挡仍影响最终可见画面。
+
+- [交互对比：三个阶段、五种样式、完整跳跃衔接](可视化/Ancient-跳跃与台子下沉对比.html)。支持0.25×／0.5×／1×、暂停、时间轴、完整水下轨迹开关；单文件离线打开。
+- [五种下沉并排慢放](可视化/Ancient-五种台子下沉-慢放.gif)；[跳跃→落地→旧台下沉慢放](可视化/Ancient-跳跃落地与旧台下沉-慢放.gif)。均为第一阶段资源、0.5×演示时间，结尾额外停留1秒。
+
+**完整顺序的读法**：以普通胜利、旧台阶索引≥1分支为例，t=0开始等待，0.400秒启动头像动作，0.560秒开始代码位移，0.816秒到新台并更换父节点；旧台下沉协程等待同一跳跃序列长度后开始，再等待选中动画状态的length进入后续流程。0.816秒处不是新增固定停顿；示意图按这一衔接点画出顺序。旧索引<1时不套用此链。
+
+**还原边界**：台柱与可匹配碎块使用38911资源的原始曲线／蒙皮数据，以60Hz采样播放；匹配到的GameObject开关同步应用。Fall5存在无法匹配到所选Prefab节点的轨道，逐项留在审计中并跳过，不宣称全通道完整恢复。Unity粒子模拟、水面折射／遮罩Shader、音效未重放，水下裁切与着色仅作说明；可以关闭简化水面以观察完整轨迹。头像用中性圆点，起终点重新布局，0.256秒／1.2跳高等数值来自39781代码，但空间轨迹为示意、未核定运行时全局缓动及头像形变。这是跨版本证据驱动的说明，不是39781实机录像，也不证明台子对象销毁时点。
+
+复现与核验：`Motion-Parameters/build_fall_visual.py`、`fall-viewer.html`、`fall-curve-audit.json`、`fall-visual-manifest.json`；浏览器交互／截图验收见`check_fall_visual.mjs`与`fall-browser-validation.json`，动图来源和哈希见`fall-preview-manifest.json`。原生／资源原文不被这些可视化派生物替代。
+
+证据：`06-PRODUCT-ASSETS/RoyalMatch/39781/04-ReverseEngineering/Motion-Parameters/`的同名方法摘录、`audit.py`与`manifest.json`，绑定Period-Audit二进制SHA-256 `ea4eaf596b64ff255cc042d52d32e44078ed773d70be6c3368db9459a12b3a22`。此节为代码静态参数，未实机逐帧测量；与Lava对照见[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#5. 动效、Spine 与粒子|Lava界面、跳台与发奖参数]]。
 
 ### 3.4 配置来源、覆盖顺序与实际数值
 
@@ -346,6 +449,32 @@ flowchart TD
 **隐藏的奖励覆盖层**：`EventRewardOverrider.GetOverriddenAncientAdventureStepReward` 按 eventId、活动类型 **36** 和步数键查覆盖项。单阶段键为 `step`，三阶段键为 `stage×1000+step`；存在覆盖时替换奖励，否则返回原奖励。`GetRewardsOfSteps` 对未配基础奖励的位置也会以空原奖励查询覆盖，故 **`str=[]` 不等于最终没有中途奖励**。后续 15:17:34 +08:00 定向采样已读取集卡 CollectionConfig 版本325：两套 eventRewardOverrideConfigs 各34项；以及 TrainJourney 公共/用户配置版本46：覆盖表各22项。以上四表均未出现 Ancient 的 eventType=36，因此这些缓存表没有提供 Ancient 覆盖项。DragonNest 当前保存表未见配置键，ShortExpedition 仅有版本键；仍不能扩大成所有来源、所有时刻均无覆盖，也未实测实际领奖。证据见 CommonTools-Audit/config-snapshot/ancient-overrides.json。
 
 ### 3.5 Heist 牌局、种子与教程策略
+
+**阶段领奖的界面层级（39781）**。Ancient 的已确认入场链是介绍→活动主界面，未定位到 Lava 式寻找玩家／匹配页。阶段达标后，带 Heist 模式在活动主界面内部切换到翻牌视图，翻牌完成后显示阶段领奖面板；无 Heist 模式直接进入阶段宝箱领奖。两条领奖分支均将 `AncientAdventureRewardClaimPanel` 实例化在活动 FlowController 的 Transform 下，活动界面作为底层保留，面板自带背景遮罩。奖励面板完成回调绑定活动主对话框 `ForceClose`，随后继续原关卡结束或首页流程。首页 OPEN 入口也先打开活动主界面，再走对应结算。
+
+来源为39781 `Period-Audit/activity-ui-layering-39781.txt`，`ShowHeistView 0x35EF578`、`PlayStageCompleteAnimationForHeist 0x35F0AF0`、`PlayStageCompleteAnimationForChest 0x35F0FD4`、`RewardClaimPanel.Init 0x35F0CD8`。Heist 路径 `0x35F0C30` 取控制器 Transform，`0x35F0C58` 带父节点实例化，完成委托槽 `0x54C1750` 解析为 UiDialog.ForceClose。`RewardClaimPanel` 另按当前场景选择金币收集动画位置，不能仅据金币飞往首页余额把领奖面板定位到首页。未实拍验证层级和切换帧。
+
+#### 阶段发奖动画参数（39781）
+
+以下定位到`AncientAdventureRewardClaimPanel`的阶段完成表现，不把它外推为所有中途奖励、Heist翻牌或首页金币飞行动画的参数。
+
+| 项目／动作名称 | 具体表现参数 | 来源与边界 |
+|---|---|---|
+| 领奖背景变暗 | alpha目标0.8，淡入0.2秒 | `PlayStageCompleteAnimation 0x35FCFF8`，`backgroundRenderer`的DOFade；该Tween独立启动，不占后续序列的Append等待 |
+| 领奖说明文字出现 | 序列等待0.1秒后启动，0→预存目标缩放，0.5秒 | 同上＋`<PlayStageCompleteAnimation>b__44_0 0x35FEC74`，字段`infoText` |
+| 金币爆发粒子／Heist结果显示 | 序列再等待0.1秒，即局部t=0.2秒，调用`PlayBurstCoinParticles`和`EnableHeistResult` | 同上；这是启动点，粒子持续时间和是否有Heist结果依资源与分支，未把0.2秒当特效长度 |
+| 宝箱弹跳放大 | 目标缩放1.15，用时0.3秒 | 同上，`chest`从局部t=0.2秒开始；OutSine（正弦减速） |
+| 宝箱回缩与回正 | 依次到0.95／1.05／1.00，分别0.16／0.10／0.066秒，均OutSine | 同上；四段缩放运动合计0.626秒，**不等于整场序列长度**，中间还有回调插入及后续等待 |
+| 胜利文字出现 | 序列局部t=0.45秒启动，缩放0.5秒 | 同上＋`b__44_1 0x35FECA4`，字段`winText`；与宝箱动作重叠 |
+| 宝箱粒子播放 | 序列局部t=0.6秒的ParticleSystem.Play回调 | 同上；该插入点也影响Sequence长度，不可只把Append时长机械相加 |
+| 点击继续文字出现／允许继续 | 宝箱序列后处理回调之后，先等待0.3秒启动tapText缩放；再等0.4秒恢复触摸并设`isOpenAnimationCompleted=true` | 同上＋`b__44_2 0x35FECB0`、`b__44_3 0x35FECE0`。tapText缩放自身0.5秒，因此恢复触摸与文字Tween完全结束不是同一个时点 |
+| 说明／胜利／继续文字的弹性 | 公共缩放时长0.5秒，OutBack，overshoot=1.25，初始缩放0 | `CreateDoScaleFromInitialScale 0x35FDDA4`；1.25是回弹曲线系数，不是最大125%缩放 |
+| 奖励金币数字滚动 | Tween持续0.75秒，OutQuad；该方法内没有Lava的0.35秒SetDelay | `AnimateRewardTextCounter 0x35FD8EC`；触发此方法之前的序列时间另算 |
+| 奖励容器弹跳 | 以当前缩放为基准到110%→90%→100%，每段0.1秒，合计0.3秒 | `AnimateCoinArrangement 0x35FDE58`；该方法未显式SetEase，不能直接标成OutBack |
+
+来源为本节前述39781二进制，摘录与哈希同`Motion-Parameters/manifest.json`。这些是客户端表现常量；尚未形成服务端可配置证据，也未测设备掉帧、时间缩放或提前点击的最终可见时长。金币收集飞往首页属于另一条表现链，不用本表的数字滚动／容器缩放时长替代其飞行时间。
+
+#### Heist牌面与种子
 
 `PrepareHeistView` 先取当前阶段 `hd`，按金币额构造有序字典；本样本对应低、中、高三档。把各档按 `oc` 展开为 12 张，再调用 `ShuffleWithSeed`，最后恢复已选位置。翻牌前牌面已经排定，选择矩阵保存到进度中。
 

@@ -35,6 +35,10 @@ Ancient Adventure 在 [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Q
 
 ## 每个活动的交付结构
 
+动作表现参数入口：[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#5. 动效、Spine 与粒子|Lava界面进入、跳台、台子下沉与发奖]]；[[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#活动页进入与胜利跳台的表现参数（39781）|Ancient两点代码跳跃与台子下沉]]；[[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#阶段发奖动画参数（39781）|Ancient阶段发奖参数]]。39781代码和38911资源分别标注，非实机计时。
+
+Ancient动作可视化：[五种下沉并排＋跳跃落地衔接](../可视化/Ancient-跳跃与台子下沉对比.html)，可切换三个阶段、慢放和拖动时间；使用原资源曲线／蒙皮，水面与头像位移保留示意边界。
+
 机制与配置主文档按主题持续修订：新证据先判断应补充、替换还是重排已有章节，合并重复内容并同步纠正旧结论。不因每次深挖新增文档或尾部章节；调查过程留 Daily/原始证据。仅当出现独立且稳定的专题边界时拆分文档。
 
 1. `README.md`：玩家规则、核心判断、证据层级、当前结论与后续入口。
@@ -52,3 +56,11 @@ Ancient Adventure 在 [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Q
 - [[02-PROJECTS/产品分析/_MOC|产品分析 MOC]]
 - [[02-PROJECTS/产品分析/Royal Match/活动清单与简述-38911|活动总清单]]
 - [[02-PROJECTS/产品分析/Royal Match/资源路径索引|资源路径索引]]
+
+## 赛季卡册：Holiday Collection（第 16 季）
+
+[玩家卡册目录](https://royalmatch.wiki/collections/holiday-collection-season-16) 是早期标题线索。本地 [[02-PROJECTS/产品分析/Royal Match/运营配置/附件/配置/history39781/User-SeasonalCardCollectionTableItem-CollectionConfig.json|39781历史卡册配置]]（2026-10-28）记录下一季编号16。11-03实例1实采及11-04实拍已确认38911中Holiday Collection实际开放，首轮15套135张，第二轮Grand为16套144张。
+数值主档：[[02-PROJECTS/产品分析/Royal Match/活动/Holiday Collection/README|本季卡池、历史奖励及抽卡权重对照]]。
+2026-11-03 实例 1 实采修正：第 16 季当前展示 15 套；配置三档 15 / 16 / 16。上文的 16 套指全目录。
+2026-11-04 实例1按用户要求补齐缺卡，经过游戏结算进入Grand第二轮，阶段0→1已实拍和回读核验。该账号后续样本应标记人工补卡。详见[[02-PROJECTS/产品分析/Royal Match/活动/Holiday Collection/README#一、活动框架与流程|首轮结算与进度位域]]。
+跨季入口：[[02-PROJECTS/产品分析/Royal Match/活动/赛季卡册历史/README|赛季卡册历史：Science、Holiday 与早期主题]]。

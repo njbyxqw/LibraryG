@@ -1,0 +1,1154 @@
+[
+  {
+    "setId": 1,
+    "cardId": 1,
+    "setName": "Dimensions",
+    "name": "Ruler",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 2,
+    "setName": "Dimensions",
+    "name": "Protractor",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 3,
+    "setName": "Dimensions",
+    "name": "Shapes",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 4,
+    "setName": "Dimensions",
+    "name": "Calipers",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 5,
+    "setName": "Dimensions",
+    "name": "Glass Cylinder",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 6,
+    "setName": "Dimensions",
+    "name": "Grid Mat",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 7,
+    "setName": "Dimensions",
+    "name": "Tape Measure",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 8,
+    "setName": "Dimensions",
+    "name": "Blueprint Sheet",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 1,
+    "cardId": 9,
+    "setName": "Dimensions",
+    "name": "Cube Model",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 1,
+    "setName": "Memory",
+    "name": "Memory Card",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 2,
+    "setName": "Memory",
+    "name": "Pattern Blocks",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 3,
+    "setName": "Memory",
+    "name": "Reactions",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 4,
+    "setName": "Memory",
+    "name": "Science Book",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 5,
+    "setName": "Memory",
+    "name": "Magic Cube",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 6,
+    "setName": "Memory",
+    "name": "Matching Game",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 7,
+    "setName": "Memory",
+    "name": "Puzzle",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 8,
+    "setName": "Memory",
+    "name": "Timer",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 2,
+    "cardId": 9,
+    "setName": "Memory",
+    "name": "Abacus",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 1,
+    "setName": "Optics",
+    "name": "Prism",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 2,
+    "setName": "Optics",
+    "name": "Convex Lens",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 3,
+    "setName": "Optics",
+    "name": "Mirror",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 4,
+    "setName": "Optics",
+    "name": "Light Sensor",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 5,
+    "setName": "Optics",
+    "name": "Color Filter",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 6,
+    "setName": "Optics",
+    "name": "Projector",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 7,
+    "setName": "Optics",
+    "name": "Optical Glass",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 8,
+    "setName": "Optics",
+    "name": "Beamstop",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 3,
+    "cardId": 9,
+    "setName": "Optics",
+    "name": "Focus Gear",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 1,
+    "setName": "Earth",
+    "name": "Crystal",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 2,
+    "setName": "Earth",
+    "name": "Rocks",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 3,
+    "setName": "Earth",
+    "name": "River Delta",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 4,
+    "setName": "Earth",
+    "name": "Sediment Chart",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 5,
+    "setName": "Earth",
+    "name": "Plateau",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 6,
+    "setName": "Earth",
+    "name": "Basalt Column",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 7,
+    "setName": "Earth",
+    "name": "Sand Dune",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 8,
+    "setName": "Earth",
+    "name": "Canyon",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 4,
+    "cardId": 9,
+    "setName": "Earth",
+    "name": "Strata Diagram",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 1,
+    "setName": "Exploration",
+    "name": "Globe",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 2,
+    "setName": "Exploration",
+    "name": "Magnifier",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 3,
+    "setName": "Exploration",
+    "name": "Chisel",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 4,
+    "setName": "Exploration",
+    "name": "Camera",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 5,
+    "setName": "Exploration",
+    "name": "Fossil Map",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 6,
+    "setName": "Exploration",
+    "name": "Brush",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 7,
+    "setName": "Exploration",
+    "name": "Dinasour Egg",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 8,
+    "setName": "Exploration",
+    "name": "Journal",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 5,
+    "cardId": 9,
+    "setName": "Exploration",
+    "name": "T-Rex Fossil",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 1,
+    "setName": "Meteorology",
+    "name": "Weather Balloon",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 2,
+    "setName": "Meteorology",
+    "name": "Clouds",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 3,
+    "setName": "Meteorology",
+    "name": "Rain Gauge",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 4,
+    "setName": "Meteorology",
+    "name": "Barometer",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 5,
+    "setName": "Meteorology",
+    "name": "Wind Vane",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 6,
+    "setName": "Meteorology",
+    "name": "Atmosphere",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 7,
+    "setName": "Meteorology",
+    "name": "Thermometer",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 8,
+    "setName": "Meteorology",
+    "name": "Solar Panel",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 6,
+    "cardId": 9,
+    "setName": "Meteorology",
+    "name": "Wind Turbine",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 1,
+    "setName": "Experiment",
+    "name": "Test Tubes",
+    "stars": 1,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 2,
+    "setName": "Experiment",
+    "name": "Dropper",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 3,
+    "setName": "Experiment",
+    "name": "Scale",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 4,
+    "setName": "Experiment",
+    "name": "Lab Coat",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 5,
+    "setName": "Experiment",
+    "name": "Microscope",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 6,
+    "setName": "Experiment",
+    "name": "Workbench",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 7,
+    "setName": "Experiment",
+    "name": "Beaker",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 8,
+    "setName": "Experiment",
+    "name": "Pipettes",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 7,
+    "cardId": 9,
+    "setName": "Experiment",
+    "name": "Mix!",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 8,
+    "cardId": 1,
+    "setName": "Botany",
+    "name": "Plant Pod",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 2,
+    "setName": "Botany",
+    "name": "Watering Can",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 3,
+    "setName": "Botany",
+    "name": "Seeds",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 4,
+    "setName": "Botany",
+    "name": "Plant Tags",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 5,
+    "setName": "Botany",
+    "name": "Grass Man",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 6,
+    "setName": "Botany",
+    "name": "Tree Rings",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 7,
+    "setName": "Botany",
+    "name": "Seed Tray",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 8,
+    "setName": "Botany",
+    "name": "Leaf Sample",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 8,
+    "cardId": 9,
+    "setName": "Botany",
+    "name": "Gardening",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 9,
+    "cardId": 1,
+    "setName": "Computer",
+    "name": "Monitor",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 2,
+    "setName": "Computer",
+    "name": "CPU Chip",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 3,
+    "setName": "Computer",
+    "name": "Computer Tower",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 4,
+    "setName": "Computer",
+    "name": "Cable",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 5,
+    "setName": "Computer",
+    "name": "Cooling Fan",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 6,
+    "setName": "Computer",
+    "name": "USB",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 7,
+    "setName": "Computer",
+    "name": "Hard Disk",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 8,
+    "setName": "Computer",
+    "name": "Keyboard",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 9,
+    "cardId": 9,
+    "setName": "Computer",
+    "name": "Cyber Duke",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 10,
+    "cardId": 1,
+    "setName": "Mechanics",
+    "name": "Locomotive",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 2,
+    "setName": "Mechanics",
+    "name": "Autogyro",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 3,
+    "setName": "Mechanics",
+    "name": "Airship",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 4,
+    "setName": "Mechanics",
+    "name": "Steam Boat",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 5,
+    "setName": "Mechanics",
+    "name": "Submarine",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 6,
+    "setName": "Mechanics",
+    "name": "Airplane",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 7,
+    "setName": "Mechanics",
+    "name": "Motor Car",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 10,
+    "cardId": 8,
+    "setName": "Mechanics",
+    "name": "Speedy",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 10,
+    "cardId": 9,
+    "setName": "Mechanics",
+    "name": "Fly!",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 11,
+    "cardId": 1,
+    "setName": "Research",
+    "name": "Ice Axe",
+    "stars": 2,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 2,
+    "setName": "Research",
+    "name": "Icebreaker",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 3,
+    "setName": "Research",
+    "name": "Snowmobile",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 4,
+    "setName": "Research",
+    "name": "Data Logger",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 5,
+    "setName": "Research",
+    "name": "Ice Drill",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 6,
+    "setName": "Research",
+    "name": "Walkie-Talkie",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 7,
+    "setName": "Research",
+    "name": "Polar Station",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 11,
+    "cardId": 8,
+    "setName": "Research",
+    "name": "Arctic Work",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 11,
+    "cardId": 9,
+    "setName": "Research",
+    "name": "Aurora",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 12,
+    "cardId": 1,
+    "setName": "Quantum",
+    "name": "Wave Diagram",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 2,
+    "setName": "Quantum",
+    "name": "Particle Model",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 3,
+    "setName": "Quantum",
+    "name": "Pointer",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 4,
+    "setName": "Quantum",
+    "name": "Atom",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 5,
+    "setName": "Quantum",
+    "name": "Quantum Chip",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 6,
+    "setName": "Quantum",
+    "name": "Wormhole",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 7,
+    "setName": "Quantum",
+    "name": "Energy Field",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 12,
+    "cardId": 8,
+    "setName": "Quantum",
+    "name": "Portal",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 12,
+    "cardId": 9,
+    "setName": "Quantum",
+    "name": "Floating",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 13,
+    "cardId": 1,
+    "setName": "Momentum",
+    "name": "Ramp",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 13,
+    "cardId": 2,
+    "setName": "Momentum",
+    "name": "Barrier",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 13,
+    "cardId": 3,
+    "setName": "Momentum",
+    "name": "Pendulum",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 13,
+    "cardId": 4,
+    "setName": "Momentum",
+    "name": "Gyroscope",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 13,
+    "cardId": 5,
+    "setName": "Momentum",
+    "name": "Metal Spheres",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 13,
+    "cardId": 6,
+    "setName": "Momentum",
+    "name": "Speed Meter",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 13,
+    "cardId": 7,
+    "setName": "Momentum",
+    "name": "Falling!",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 13,
+    "cardId": 8,
+    "setName": "Momentum",
+    "name": "Going Down",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 13,
+    "cardId": 9,
+    "setName": "Momentum",
+    "name": "Throw!",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 14,
+    "cardId": 1,
+    "setName": "Robotics",
+    "name": "Battery",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 14,
+    "cardId": 2,
+    "setName": "Robotics",
+    "name": "Robot Tank",
+    "stars": 3,
+    "type": "silver"
+  },
+  {
+    "setId": 14,
+    "cardId": 3,
+    "setName": "Robotics",
+    "name": "Robotic Arm",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 14,
+    "cardId": 4,
+    "setName": "Robotics",
+    "name": "Panel",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 14,
+    "cardId": 5,
+    "setName": "Robotics",
+    "name": "Drone",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 14,
+    "cardId": 6,
+    "setName": "Robotics",
+    "name": "Robot",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 14,
+    "cardId": 7,
+    "setName": "Robotics",
+    "name": "Vacuum",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 14,
+    "cardId": 8,
+    "setName": "Robotics",
+    "name": "Final Touch",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 14,
+    "cardId": 9,
+    "setName": "Robotics",
+    "name": "Game Time",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 15,
+    "cardId": 1,
+    "setName": "Cosmos",
+    "name": "Nebula",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 15,
+    "cardId": 2,
+    "setName": "Cosmos",
+    "name": "Orbit",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 15,
+    "cardId": 3,
+    "setName": "Cosmos",
+    "name": "Satellite",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 15,
+    "cardId": 4,
+    "setName": "Cosmos",
+    "name": "Space Station",
+    "stars": 4,
+    "type": "silver"
+  },
+  {
+    "setId": 15,
+    "cardId": 5,
+    "setName": "Cosmos",
+    "name": "Galaxy",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 15,
+    "cardId": 6,
+    "setName": "Cosmos",
+    "name": "Eclipse",
+    "stars": 5,
+    "type": "silver"
+  },
+  {
+    "setId": 15,
+    "cardId": 7,
+    "setName": "Cosmos",
+    "name": "Catch!",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 15,
+    "cardId": 8,
+    "setName": "Cosmos",
+    "name": "Stargazing",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 15,
+    "cardId": 9,
+    "setName": "Cosmos",
+    "name": "Moon Walk",
+    "stars": 5,
+    "type": "gold"
+  },
+  {
+    "setId": 16,
+    "cardId": 1,
+    "setName": "Discovery",
+    "name": "Magnetic",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 2,
+    "setName": "Discovery",
+    "name": "Giant Leaf",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 3,
+    "setName": "Discovery",
+    "name": "Robo-Barber",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 4,
+    "setName": "Discovery",
+    "name": "Crown Study",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 5,
+    "setName": "Discovery",
+    "name": "Underwater",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 6,
+    "setName": "Discovery",
+    "name": "Magnified",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 7,
+    "setName": "Discovery",
+    "name": "Artifact",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 8,
+    "setName": "Discovery",
+    "name": "Its's Moving!",
+    "stars": 5,
+    "type": "diamond"
+  },
+  {
+    "setId": 16,
+    "cardId": 9,
+    "setName": "Discovery",
+    "name": "So Shiny!",
+    "stars": 5,
+    "type": "diamond"
+  }
+]

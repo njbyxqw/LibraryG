@@ -25,6 +25,8 @@ aliases: [Royal Match 产品分析入口]
 | Book of Treasure | [[02-PROJECTS/产品分析/Royal Match/活动/Book of Treasure/逻辑与配置-38911|25阶段数值与分层]]：两套目标+43.17%、超级光球门槛与当前阶段档位保存；设备-1版本补取及时间对照 |
 | 新方法首例 | [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/README|Lava Quest]] → [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/逻辑与配置-38911|持续主文档]] |
 | Ancient Adventure | [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#三、Ancient Adventure|持续主章节]]：10-27 配置与位域实读、连胜检查点、防重复领奖、教程种子和条件概率 |
+| Ancient到期与新期流程说明 | [资料空间独立页面](https://chatgpt.com/space/page_3bc17d3c39ac8191a493bf01babb0cbe)：六类到期场景、旧期奖励收尾、新期自动参加与自动／手动介绍，含两张流程图；39781静态证据，实机跨期曝光待验证 |
+| Ancient动作对比 | [五种台子下沉＋跳跃落地顺序](可视化/Ancient-跳跃与台子下沉对比.html)：三个阶段的原资源曲线与蒙皮可视化，慢放、拖动、完整流程；非实机录像 |
 | 本机资源、配置与代码证据 | [[02-PROJECTS/产品分析/Royal Match/资源路径索引|资源路径索引]] |
 | 本地系统与表现复刻 | [[02-PROJECTS/产品分析/Royal Match/本地复刻/任务-系统框架与表现复刻#分阶段计划与验收|长期任务、里程碑与验收]] · [[02-PROJECTS/产品分析/Royal Match/本地复刻/任务-系统框架与表现复刻#注意事项与操作边界|操作注意事项]]：M0六入口＋狗狗占位已完成；当前M1静态收敛，随后M2流程/M3逐活动内容；现实采样贯穿，无建造和复杂动效 |
 

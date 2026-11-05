@@ -19,6 +19,8 @@ aliases:
 
 ## 任务路由
 
+本机 Windows 产品分析使用名为“产品分析”的专用 MuMu 实例（原名“设备-1”，历史记录对应实例编号 `1`）。每次连接前核对实例与实际 ADB 端口，绑定 serial；原实例 `0` 及其他实例须经用户明确指定才可使用。具体约定见 [[02-PROJECTS/Agent/Memory#Windows 产品分析专用 MuMu（2026-11-04 用户确认）]]。
+
 | 需求 | 入口 |
 |---|---|
 | 长期任务、三条主线与持续队列 | [[02-PROJECTS/产品分析/任务-竞品调研体系建设与持续维护|竞品调研体系建设与持续维护]] |
@@ -27,6 +29,7 @@ aliases:
 | 当前产品列表 | [[#产品入口|产品入口]] |
 | 大文件资源保存规则 | [[02-PROJECTS/产品分析/资源目录规范|产品分析资源目录规范]] |
 | APK / XAPK 静态分析方法 | [[02-PROJECTS/Agent/工具/指南-REA休闲游戏APK静态分析接入与边界|REA APK 分析指南]] |
+| 调用 Android 产品拆解 Skill（AAP） | [[02-PROJECTS/产品分析/技能/analyze-android-product/SKILL|analyze-android-product]] · [[02-PROJECTS/产品分析/技能/Android产品拆解指南（REA MCP 与 MuMu）|单文件版]] · 包体、MuMu 运行材料与代码消费者对位，含 Lava 与 Ancient 案例 |
 | MuMu 运行后存储与配置补全 | [[02-PROJECTS/产品分析/评估-MuMu运行后存储采集与REA分析-2026-10-26|MuMu 沙盒采集可行性与 Windows 预检]] |
 | Royal Match 资源与逻辑总览 | [[02-PROJECTS/产品分析/Royal Match/资源与逻辑分析总览-38911|Royal Match 38911 总览]] |
 | Royal Match 系统活动、关卡与主场景 | [[02-PROJECTS/产品分析/Royal Match/系统活动关卡与主场景框架-38911|Royal Match 38911 大体框架]] |
@@ -47,6 +50,10 @@ aliases:
 
 ## 产品入口
 
+### Tile Family（TF）
+
+- [[02-PROJECTS/产品分析/Tile Family/_MOC|TF 产品分析入口]] — 2.12.0 / 21200 系统框架、37个LiveOps实现、首页编排与关卡回流；已核关键原生调用和部分结算实拍；125份配置已解密，新增副本解锁、排期、奖励和弹窗参数，在线选组待证。
+
 资源与文档采用双层结构：原始包和大体积产物进入当前设备 LG 根目录下的 `06-PRODUCT-ASSETS/<Product>/<Version>/`（Windows：`D:\LibraryG`；Mac：`/Users/dean/LibraryG`）；正文与索引维护在本项目目录。大文件不默认跨设备同步。详见 [[02-PROJECTS/产品分析/资源目录规范|资源目录规范]]。
 
 ### Royal Match
@@ -63,6 +70,7 @@ aliases:
 
 ### Match Villains
 
+- [[02-PROJECTS/产品分析/Match Villains/整体框架初扫-7315|7315 整体框架与活动流程]] — Windows 新样本：49 个活动管理器；已核验 REA 重启后主包解析、活动状态/资格、胜负分发、收集杯与奖励队列。当前重点为系统活动和流程，实机与跨期恢复待证
 - [[02-PROJECTS/产品分析/Match Villains/资源与逻辑分析总览-7307|7307 资源与逻辑分析总览]] — 包体、图片、动效、音频、关卡、DDA 与逻辑的静态基线
 - [[02-PROJECTS/产品分析/Match Villains/活动系统总览-7307|7307 活动系统总览]] — 七层活动框架、三类系统角色、49 个具体模块及统一下钻入口
 - [[02-PROJECTS/产品分析/Match Villains/活动数值与策略配置-7307|7307 活动数值与策略配置]] — 计分、概率、阶梯、失败补偿、Power Cards 与 DDA 本地基线
@@ -97,3 +105,5 @@ aliases:
 - [[02-PROJECTS/Agent/工具/指南-REA休闲游戏APK静态分析接入与边界|REA APK 分析指南]]
 - [[02-PROJECTS/产品分析/资源目录规范|产品分析资源目录规范]]
 
+
+- [[02-PROJECTS/产品分析/技能/评估-Android产品拆解技能的工具与适用边界-2026-11-03|Android 产品拆解技能评估]]

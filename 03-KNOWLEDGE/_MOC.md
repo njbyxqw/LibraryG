@@ -32,6 +32,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 |---|---|---|
 | 底层框架（跨项目） | [[03-KNOWLEDGE/底层框架/底层框架总览|底层框架总览]] · [[03-KNOWLEDGE/底层框架/BettaSDK/SDK总览|BettaSDK]] · [[03-KNOWLEDGE/底层框架/BettaFramework/框架总览|BettaFramework]] · [[03-KNOWLEDGE/底层框架/BettaInterface/契约总览|BettaInterface 契约]] | 新增（2026-09-18）：TS / MT 共用 submodule 同源；**以 TS 为基准**，MT 仅作参考。BettaInterface 契约层 + BettaFramework 核心机制 + BettaSDK 架构级均已细化到复刻级（静态扫描 + git 实测 + asmdef GUID 解析，未做运行时验证） |
 | Unity / 架构方法 | [[03-KNOWLEDGE/Unity/Unity 开发笔记|Unity 开发笔记]] | Knowledge 候选（来源 TileMatch，TileScape 未验证） |
+| Unity / Spine / AI 动画工具 | [[03-KNOWLEDGE/Unity/参考-Unity与Spine及AI动画工具|动画工具选型参考]] | 2026-11-02 GitHub 来源与星数快照；未安装或验证项目兼容性 |
 | 编辑器设计 | [[03-KNOWLEDGE/TileV2-Editor/TileV2 编辑器概览|TileV2 编辑器概览]] | 混合条目，待拆分事实与通用方法 |
 | 游戏逻辑 | [[03-KNOWLEDGE/Game-Logic/游戏逻辑分析|游戏逻辑分析]]、[[03-KNOWLEDGE/Game-Logic/任务-元素牌开发|元素牌开发任务]] | 项目事实汇总；跨 TS / MT 元素牌持续任务 |
 | Obsidian / LG 工具 | [[03-KNOWLEDGE/Obsidian插件使用指导|Obsidian 插件使用指导]] | 工作流资料，待迁移到 Agent 工作流 |
