@@ -35,7 +35,12 @@ Ancient Adventure 在 [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Q
 
 ## 每个活动的交付结构
 
-动作表现参数入口：[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#5. 动效、Spine 与粒子|Lava界面进入、跳台、台子下沉与发奖]]；[[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#活动页进入与胜利跳台的表现参数（39781）|Ancient两点代码跳跃与台子下沉]]；[[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#阶段发奖动画参数（39781）|Ancient阶段发奖参数]]。39781代码和38911资源分别标注，非实机计时。
+动作表现参数入口：[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#5. 动效、Spine 与粒子|Lava界面进入、跳台、台子下沉与发奖]]（含[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#胜利失败与倒计时结束的动作顺序|胜负／超时头像先后]]与[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#Levels与Players数字如何配合跳跃|Levels／Players刷新时间线]]）；[[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#活动页进入与胜利跳台的表现参数（39781）|Ancient两点代码跳跃与台子下沉]]；[[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#阶段发奖动画参数（39781）|Ancient阶段发奖参数]]。39781代码和38911资源分别标注，非实机计时。
+
+
+Ancient复刻参数：[[02-PROJECTS/产品分析/Royal Match/参考/Ancient Adventure跳跃与台子下沉复刻参数|逐台限制、胜负时序和代码实现参数]]，附资料空间页面及曲线参数包。
+
+Lava动作可视化：[胜利／失败并排与数字时间线](../可视化/Lava-胜利失败与数字时间线.html)，原代表台资源＋已核验时序，支持慢放、暂停与拖动；[TS在线页](https://chatgpt.com/space/page_bc06b2daa1788191bfe7ff487a7f2f0d)内嵌同版。
 
 Ancient动作可视化：[五种下沉并排＋跳跃落地衔接](../可视化/Ancient-跳跃与台子下沉对比.html)，可切换三个阶段、慢放和拖动时间；使用原资源曲线／蒙皮，水面与头像位移保留示意边界。
 

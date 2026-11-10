@@ -342,9 +342,32 @@ flowchart TD
 
 例：本阶段目标5，之前走到3后失败并显示断连胜页；假设没有新的中途奖励，重新获胜后的1/5、2/5、3/5、4/5均自动累计，以图标表现为主，到5/5才准备阶段完成活动页。这里的数字用于解释分支，不代表所有账号的奖励覆盖表相同。`ProceedNextStep 0x3864F84`明确区分普通步、新奖励、阶段终点，以及旧Step=0且失败动画标记未设的首次进度展示；`ProceedNextStage 0x38655DC`在切换阶段时重置失败动画标记，因此“已看失败动画后不重复展示”的范围不能泛化为整期所有阶段。以上为生成展示动作的条件，实际弹出仍由关卡结束入口、队列和资源状态决定。
 
-**失败页的具体位置（39781）**。普通关卡最终失败时先检查 Lava，Lava 未接管才检查 Ancient。若 Ancient 有本次 Fail 动画且活动、配置、主教程及资源条件满足，则在 Ancient 活动主界面播放断连胜动画，动画结束提示点击继续，再接关卡失败窗口。两个活动都未接管时直接进入该窗口。两者拿到的完成回调均为 `WinFailManager.ShowFailDialog`，其中先检查极高难关失败礼包，命中安排专属礼包，否则安排普通失败框。见[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/逻辑与配置-38911#失败结算的重试窗口|普通输关的互斥顺序与回调地址]]。主动退出入口 `LevelQuitDialog.StartQuitFlow` 也调用 Ancient 结束入口，其后续应按退出流程另看。跨期末局另有分支。
+**失败页的具体位置（39781）**。普通关卡最终失败时先检查 Lava，Lava 未接管才检查 Ancient。若 Ancient 有本次 Fail 动画且活动、配置、主教程及资源条件满足，则在 Ancient 活动主界面播放断连胜动画；独立界面时钟等待1.7秒后开放点击继续并播放提示文字，并不等待台子下沉片段结束，用户继续后再接关卡失败窗口。两个活动都未接管时直接进入该窗口。两者拿到的完成回调均为 `WinFailManager.ShowFailDialog`，其中先检查极高难关失败礼包，命中安排专属礼包，否则安排普通失败框。见[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/逻辑与配置-38911#失败结算的重试窗口|普通输关的互斥顺序与回调地址]]。主动退出入口 `LevelQuitDialog.StartQuitFlow` 也调用 Ancient 结束入口，其后续应按退出流程另看。跨期末局另有分支。
 
 证据：39781 `FailedLevel 0x34E44E0`、`SetDialogAnimationDataForFail 0x3864DB8`、`FailStep 0x3864F18`、`TryPushAncientAdventureLevelEndFlow 0x34E49D0`、`TryAddStartDialog 0x34E4DBC`、`WinFailManager.StartFailFlow 0x27F811C`。新导出与指纹保存在`06-PRODUCT-ASSETS/RoyalMatch/39781/04-ReverseEngineering/Ancient-Fail-Popup-Audit/`，已有管理器与显示动作证据沿用Period-Audit/Popup-Representative。仅静态核对，未新增账号实际失败/曝光实验；不保证每个符合条件的动作最终显示，也不据此推断后续补弹。
+
+#### 失败前挽留样式（39781）
+
+Ancient与Lava均由续步页／主动退出确认里的`ExtraWarn`承载放弃前警告。续步页点退出时尝试活动警告，命中后可隐藏续步套餐内容并显示警告模块；最终放弃后的断连胜活动页是另一阶段。当前未实拍按钮文案、颜色与完整布局，不把代码结构示意当截图。
+
+| 项目 | Ancient表现与条件 |
+|---|---|
+| 基础构图 | `AncientAdventureWarningView`绑定totemRoot图腾、stepText进度、infoText文案、otherEventImage及secondCrossSign组合损失标记 |
+| 进度 | 当前阶段CurrentStep／GetStepCount(CurrentStage)，格式`{0}/{1}`；三阶段可对应x/5、x/7、x/10，不显示累计22步 |
+| 单活动 | 无Cloche且无超级光球时使用单活动布局，隐藏第二叉号、图腾根x=0；文案键AncientAdventureEgoText |
+| 双损失 | Cloche或超级光球条件命中则进入组合布局；分别用AncientAdventureEgoButlerText或AncientAdventureEgoSuperLightballText；实际选择仍由ExtraWarn外层条件决定 |
+| 触发资格 | `ShouldWarnOnLevelQuit 0x34E477C`要求图标有效、ShouldProgressFromLevel成立，且CurrentStep>0。因此当前阶段0步、已达标或旧期失效时不符合本活动这项警告资格；其他活动／增益警告仍可能显示 |
+| 提示含义 | 结合失败规则，针对当前阶段已取得的连胜进度；已完成阶段不回退。此为含义概括，未取得正式本地化正文，不能加引号冒充原文 |
+
+外层另有Ancient＋倍率选择、Ancient＋ElementHunt组合警告方法，不将基础单／双版式当作所有组合的穷尽清单。主动退出与续步退出通过isOriginQuitButton切换图腾位置／文字区域，共用主题并不代表两个宿主框的按钮完全一样。
+
+证据：2026-11-09导出39781 `Retention-Audit/`，包括`EgoDialog.OnExitButton 0x141567C`、`TryShowEventWarning 0x1413EC4`、`LevelQuitDialog.TryShowEventWarning 0x140FD74`、`ExtraWarn.ShowAncientAdventureWarn 0x15D8158`、`AncientAdventureWarningView.Show 0x38D989C`、`SetAncientAdventureStepText 0x38D9920`、`UpdateLocalization 0x38D9DD4`。本地化键由ELF重定位与ScriptString对位，候选提取后人工核对实际Localize参数。未连接模拟器、未取得Ancient当前警告Prefab截图或正式文案；Lava对照见[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#失败前挽留样式（39781代码，38911素材）]]。
+
+2026-11-09补充原资源预览：已从2026-10-28的39781存储备份取得`ancient_adventure_gameplay`，导出皇冠图腾、红叉与蓝边浅黄进度牌。按Prefab活动图层位置、镜像和九宫格尺寸生成下图；进度3/5为示例、字体近似，白底为资料展示底板。仅展示单活动内容区，不含宿主弹窗、按钮、正式文案、组合增益或运行时调整，不是实机截图。上述“未取得Prefab”状态已由本次缓存资源补齐，实拍仍未取得。
+
+![[02-PROJECTS/产品分析/Royal Match/可视化/失败挽留/Lava与Ancient挽留内容区.png]]
+
+来源与复现：`Retention-Audit/visuals/manifest.json`记录归档成员和SHA256，`layouts/`保存精灵及层级，`render-manifest.json`记录选用子树；Ancient Bundle SHA256为`18036ef532302b5360e6a5944112e9734608d9cd1260217925d364afe5b104c2`。备份中的缓存不等同于39781新增美术。
 
 #### 活动页进入与胜利跳台的表现参数（39781）
 
@@ -373,11 +396,34 @@ flowchart TD
 | 胜利后旧台子下沉时机 | 目标step的前一台阶索引≥1时，先播放跳到新台阶的序列，再以该Sequence.Duration作为下沉前等待；此路径`isFail=false`。旧索引<1时改为等待0.9秒后继续，不走该下沉协程 | `SceneController.PlayStepUpAnimations 0x35FF1E4` |
 | 选择台子下沉／破裂样式 | 候选动画编号先排除该台子`unavailableFallAnimationNumbers`，然后RandomFromList选一个；播放状态名`AncientAdventureStepFall{编号}` | `SceneView.<PlayStepFallAnimation>.MoveNext 0x38D7E3C`；这是外观变体选择，不是胜率或奖励概率调控 |
 | 失败时玩家随台下沉 | `isFail=true`时把玩家挂到该台子的`playerFallParent`，局部位置归零并调整遮罩；`frameFallParticleParent`按isFail开关 | 同上＋`SceneStep.PlayStepFallAnimation 0x36008F4`；胜利旧台下沉不把已跳走的玩家再挂回来 |
-| 台子水波淡出 | alpha降到0，用时0.3秒，完成后停止波纹扭曲 | `SceneStep.PlayStepFallAnimation`；不是整个台子下沉只需0.3秒 |
-| 下沉结束等待 | Animator.Play后Update(0)，读取当前状态length，协程等待这个长度后调用后续回调 | 同上；代码未写死统一下沉秒数；Animator缺失时返回0 |
+| 台子水波淡出 | 下沉启动时立即并行将alpha降到0，用时0.3秒，完成后停止原有波纹扭曲；不是下沉结束再淡出 | `SceneStep.PlayStepFallAnimation`；不是整个台子下沉只需0.3秒 |
+| 下沉结束等待 | Animator.Play后Update(0)，读取当前状态length并等待；胜利这条调用链的完成回调最终仅SetStepText，失败传入null | 同上；点击继续／阶段奖励另由界面时钟处理，不等待此协程；Animator缺失时返回0 |
 | 头像落影消失／缩小 | 淡出到alpha0用0.07秒，同步从缩放1降到0.7；用于起跳前后关联阴影表现 | `AnimateFrameShadowFadeOut 0x35FFEC4`；不是台子整体缩小到70% |
 | 破裂时台阶数字跟随碎块 | 5号动画有`UpdateStepNumberParentForBreakAnimation`事件；旧资源阶段1/2在约0.083秒，阶段3在约0.033秒触发 | 38911三个stage Bundle的Fall5片段＋`SceneStep.UpdateStepNumberParentForBreakAnimation 0x3600C00` |
 | 真正销毁对象 | 以上播放方法／协程没有直接Destroy台子调用；已证实的是动画播放、部件开关、等待和回调 | 不据此宣称对象永不销毁；关闭整个活动、池回收和动画曲线控制可见性应另行区分 |
+
+**随机选择及逐台限制**（2026-11-09复核）。39781构造候选固定为`[1,2,3,4,5]`；`Except(unavailableFallAnimationNumbers)`后，`RandomFromList<int> → Next(0,Count) → UnityEngine.Random.Range(int,int)`等概率抽索引。胜负参数不参与选样式；已核路径无权重、连胜偏置或历史去重，可以连续重复。38911资源通过SceneView.steps组件引用逐项对位如下：
+
+| 资源阶段 | 台子索引 | 允许的Fall编号 |
+|---|---|---|
+| 全部 | Step0 | 无Animator，不播放下沉；禁用表空不等于五种均可播 |
+| 阶段1 | Step1 | 1、5，各50% |
+| 阶段1 | Step4 | 1、3、4、5，各25% |
+| 阶段1 | Step2、3、5 | 1～5，各20% |
+| 阶段2 | Step1 | 1、3、5，各约33.33% |
+| 阶段2 | Step2～7 | 1～5，各20% |
+| 阶段3 | Step1 | 1、3、5，各约33.33% |
+| 阶段3 | Step3、8、9 | 1、2、4、5，各25% |
+| 阶段3 | Step5、6 | 1、3、4、5，各25% |
+| 阶段3 | Step2、4、7、10 | 1～5，各20% |
+
+这里是资源场景阶段及台子列表索引，终点台有候选表不表示正常流程一定调用其下沉。单阶段布局裁剪`GetRange(0,8)`只保留Step0～7并重排位置缩放，不改禁用表；若使用阶段3场景就取该阶段保留对象的限制。
+
+**胜负表现与界面后续的并行关系**。胜利旧台索引≥1时约0.816秒后开始下沉，玩家已归到新台；旧索引0不下沉，跳跃后额外0.9秒才执行步数文字回调。失败用同套FallN，但在等待0.25秒前先把玩家挂到`playerFallParent`、局部位置清零并调整头像遮罩；开始下沉时开启失败粒子。`playerFallParent`有独立动画曲线，不能简化成头像与台柱刚性同幅运动。`CallFrameHaptic`还要求isFail与事件参数非0；阶段3相应事件参数全0。
+
+`ShowSceneView`启动表现后立即另开`PlaySceneAnimationEndActions`。失败等待1.7秒后启动点击继续；普通胜利展示用currentStep=1等0.9秒，否则普通步等1秒、阶段完成等1.2秒后进入提示/阶段后续判断。普通步还要求canAnimateTapToContinue；阶段完成再分Heist镜头或奖励（金币宝箱还有资源准备与0.75秒延时），不是到点直接发奖。点击继续文字用0.5秒OutBack、overshoot=1.25从0缩放到原大小，按钮在文字动画开始时启用。因此不能把“下沉结束”当作统一按钮解锁/发奖节点。
+
+复刻参数、两条胜负流程图、逐项实现与附件见[[02-PROJECTS/产品分析/Royal Match/参考/Ancient Adventure跳跃与台子下沉复刻参数|跳跃与下沉复刻参数]]；[资料空间页面](https://chatgpt.com/space/page_0f8bc53c1958819180467c117333a73c)。新增证据位于`Motion-Parameters/replication-20261109/`：资源引用/哈希清单、53份原生方法摘录、15片段922条已匹配轨道及17片段事件；Fall5未匹配绑定保留，不宣称完整原作重建。原生地址：候选构造0x38D7AF8、RandomFromList0x23D0E84、Next0x2700CF8、失败调度0x35FF528、界面独立计时0x35F1B78、胜利末尾文字回调0x35FF6CC。
 
 38911已保存三个阶段资源中的片段长度如下（秒）；同样编号由各阶段Animator映射到不同片段。已核对这些下沉状态的序列化Speed=1、SpeedParamID=0，但尚未据此核定39781实机播放耗时。
 
@@ -406,7 +452,7 @@ flowchart TD
 - [交互对比：三个阶段、五种样式、完整跳跃衔接](可视化/Ancient-跳跃与台子下沉对比.html)。支持0.25×／0.5×／1×、暂停、时间轴、完整水下轨迹开关；单文件离线打开。
 - [五种下沉并排慢放](可视化/Ancient-五种台子下沉-慢放.gif)；[跳跃→落地→旧台下沉慢放](可视化/Ancient-跳跃落地与旧台下沉-慢放.gif)。均为第一阶段资源、0.5×演示时间，结尾额外停留1秒。
 
-**完整顺序的读法**：以普通胜利、旧台阶索引≥1分支为例，t=0开始等待，0.400秒启动头像动作，0.560秒开始代码位移，0.816秒到新台并更换父节点；旧台下沉协程等待同一跳跃序列长度后开始，再等待选中动画状态的length进入后续流程。0.816秒处不是新增固定停顿；示意图按这一衔接点画出顺序。旧索引<1时不套用此链。
+**完整顺序的读法**：以普通胜利、旧台阶索引≥1分支为例，t=0开始等待，0.400秒启动头像动作，0.560秒开始代码位移，0.816秒到新台并更换父节点；旧台下沉协程等待同一跳跃序列长度后开始，再等待选中动画状态的length调用步数文字更新回调；页面提示和阶段后续走独立时钟，不等待这段length。0.816秒处不是新增固定停顿；示意图按这一衔接点画出顺序。旧索引<1时不套用此链。
 
 **还原边界**：台柱与可匹配碎块使用38911资源的原始曲线／蒙皮数据，以60Hz采样播放；匹配到的GameObject开关同步应用。Fall5存在无法匹配到所选Prefab节点的轨道，逐项留在审计中并跳过，不宣称全通道完整恢复。Unity粒子模拟、水面折射／遮罩Shader、音效未重放，水下裁切与着色仅作说明；可以关闭简化水面以观察完整轨迹。头像用中性圆点，起终点重新布局，0.256秒／1.2跳高等数值来自39781代码，但空间轨迹为示意、未核定运行时全局缓动及头像形变。这是跨版本证据驱动的说明，不是39781实机录像，也不证明台子对象销毁时点。
 

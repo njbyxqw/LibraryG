@@ -50,6 +50,11 @@ aliases:
 
 ## 产品入口
 
+### Toy Story Drop（玩具总动员大世界）
+
+- [[02-PROJECTS/产品分析/Toy Story Drop/Collection内容拆解-1.20.0|Collection 内容拆解 1.20.0 / 737]] — 四页签、14 组 Playsets 与 59 个部件、Inventory 和 Achievements 内置清单；实机曝光待验证。
+- [[02-PROJECTS/产品分析/Toy Story Drop/资源路径索引|资源路径索引]] — Windows 专用模拟器安装包、Mono 逻辑与运行数据路径。
+
 ### Tile Family（TF）
 
 - [[02-PROJECTS/产品分析/Tile Family/_MOC|TF 产品分析入口]] — 2.12.0 / 21200 系统框架、37个LiveOps实现、首页编排与关卡回流；已核关键原生调用和部分结算实拍；125份配置已解密，新增副本解锁、排期、奖励和弹窗参数，在线选组待证。
