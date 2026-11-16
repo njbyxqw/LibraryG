@@ -25,6 +25,11 @@ aliases: [Royal Match 产品分析入口]
 | Book of Treasure | [[02-PROJECTS/产品分析/Royal Match/活动/Book of Treasure/逻辑与配置-38911|25阶段数值与分层]]：两套目标+43.17%、超级光球门槛与当前阶段档位保存；设备-1版本补取及时间对照 |
 | 新方法首例 | [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/README|Lava Quest]] → [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/逻辑与配置-38911|持续主文档]] |
 | Ancient Adventure | [[02-PROJECTS/产品分析/Royal Match/活动定位-Lava Quest与Ancient Adventure-38911#三、Ancient Adventure|持续主章节]]：10-27 配置与位域实读、连胜检查点、防重复领奖、教程种子和条件概率 |
+| Ancient到期与新期流程说明 | [资料空间独立页面](https://chatgpt.com/space/page_3bc17d3c39ac8191a493bf01babb0cbe)：六类到期场景、旧期奖励收尾、新期自动参加与自动／手动介绍，含两张流程图；39781静态证据，实机跨期曝光待验证 |
+| Ancient跳跃与下沉复刻 | [TS空间文档与附件入口](https://chatgpt.com/space/page_6aec790fa76c81918408b13d39d710ed) · [在线参数页面](https://chatgpt.com/space/page_0f8bc53c1958819180467c117333a73c) · [[02-PROJECTS/产品分析/Royal Match/参考/Ancient Adventure跳跃与台子下沉复刻参数|LG参数与实现说明]]：逐台随机限制、胜负并行时序、跳跃/阴影/水波/碎块参数；TS保存11-09文档和15片段曲线附件快照，在线页因跨空间移动受限仍归个人 |
+| Ancient动作对比 | [五种台子下沉＋跳跃落地顺序](可视化/Ancient-跳跃与台子下沉对比.html)：三个阶段的原资源曲线与蒙皮可视化，慢放、拖动、完整流程；非实机录像 |
+| Lava跳台与数字时序 | [TS空间说明与证据附件](https://chatgpt.com/space/page_bc06b2daa1788191bfe7ff487a7f2f0d) · [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#胜利失败与倒计时结束的动作顺序|LG持续维护章节]]：胜利本人先跳、失败幸存头像先跳，超时不直接令本人跌落；Levels→Players独立数字时钟、旧台下沉与七胜收尾。39781静态核验 |
+| Lava头像跳跃层级 | [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#头像跳跃的层级切换与穿帮排查|逐片段切层与穿帮排查]]：头像整组排序、动画层与排序值区别、Step2／5具体切换点；失败遮罩与粒子单独联动。39781代码／38911原资源 |
 | 本机资源、配置与代码证据 | [[02-PROJECTS/产品分析/Royal Match/资源路径索引|资源路径索引]] |
 | 本地系统与表现复刻 | [[02-PROJECTS/产品分析/Royal Match/本地复刻/任务-系统框架与表现复刻#分阶段计划与验收|长期任务、里程碑与验收]] · [[02-PROJECTS/产品分析/Royal Match/本地复刻/任务-系统框架与表现复刻#注意事项与操作边界|操作注意事项]]：M0六入口＋狗狗占位已完成；当前M1静态收敛，随后M2流程/M3逐活动内容；现实采样贯穿，无建造和复杂动效 |
 
