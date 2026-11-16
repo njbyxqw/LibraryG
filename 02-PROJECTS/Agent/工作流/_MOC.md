@@ -53,6 +53,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 |---|---|---|
 | LG Git 化评估 | [[02-PROJECTS/Agent/工作流/评估-LibraryG知识库Git化现状与使用规范-2026-09-03|LibraryG Git 化现状与使用规范]] | report |
 | LG 结构与 AI 读取稳定性 | [[02-PROJECTS/Agent/工作流/评估-LibraryG结构与AI读取稳定性-2026-08-10|LibraryG 结构与 AI 读取稳定性评估]] | report |
+| 近期工作复盘与建议（2026-11-10） | [[01-DAILY/summaries/近期工作复盘与建议-2026-11-10|Mac／Windows 工作复盘与设计建议]] | review / 建议未转为排期；Windows源日志可见至11-02 |
 | 多项目协同阶段复盘 | [[02-PROJECTS/Agent/工作流/评估-多项目工作空间协同阶段复盘-2026-08-26|多项目工作空间协同阶段复盘]] | report |
 | 初始工作空间评估 | [[02-PROJECTS/Agent/工作流/评估-工作空间与工作流程现状-2026-08-05|工作空间与工作流程现状评估]] | report |
 | Obsidian 链接完整性审计 | [[02-PROJECTS/Agent/工作流/报告-Obsidian链接完整性审计-2026-08-10|Obsidian 链接完整性审计报告]] | report |

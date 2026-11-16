@@ -1,0 +1,154 @@
+{
+  "status": "completed",
+  "source": "Unity TestResults.xml; API status remained stale running",
+  "startTime": "2026-11-10 03:53:31Z",
+  "endTime": "2026-11-10 03:53:33Z",
+  "summary": {
+    "total": 35,
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0
+  },
+  "cases": [
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.EliminationUsesExactlyTwoAvailableSlotsIncludingPlayer(0,False,0)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.EliminationUsesExactlyTwoAvailableSlotsIncludingPlayer(0,True,1)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.EliminationUsesExactlyTwoAvailableSlotsIncludingPlayer(1,False,1)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.EliminationUsesExactlyTwoAvailableSlotsIncludingPlayer(1,True,2)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.EliminationUsesExactlyTwoAvailableSlotsIncludingPlayer(5,False,2)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.EliminationUsesExactlyTwoAvailableSlotsIncludingPlayer(5,True,2)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.FailedPortraitAndPlatformUseFastMigratedFinish(5,0,0.45f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.FailedPortraitAndPlatformUseFastMigratedFinish(7,1,0.45f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.FailedPortraitAndPlatformUseFastMigratedFinish(10,2,0.45f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.FallKeepsItsWorldPathAfterGoingBehindBoatAndCanReturnToPortraitGroup(5,-1)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.FallKeepsItsWorldPathAfterGoingBehindBoatAndCanReturnToPortraitGroup(7,1)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.FallKeepsItsWorldPathAfterGoingBehindBoatAndCanReturnToPortraitGroup(10,-1)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.JumpUsesExistingLandingPointsAndSurvivesInterruption(5)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.JumpUsesExistingLandingPointsAndSurvivesInterruption(7)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.JumpUsesExistingLandingPointsAndSurvivesInterruption(10)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.LevelsFinishBeforePlayersChangeAndInterruptedCountersRestoreScale",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.MovingGroupBetweenPlatformsPreservesWorldPositionsAndRestoresForReuse(5)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.MovingGroupBetweenPlatformsPreservesWorldPositionsAndRestoresForReuse(7)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.MovingGroupBetweenPlatformsPreservesWorldPositionsAndRestoresForReuse(10)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SettlingSurvivorsDoesNotCoverPlayerAfterPortraitsLeaveTheGroup(5)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SettlingSurvivorsDoesNotCoverPlayerAfterPortraitsLeaveTheGroup(7)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SettlingSurvivorsDoesNotCoverPlayerAfterPortraitsLeaveTheGroup(10)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SplitPortraitsKeepsFailedAvatarsOnCurrentLevelWithoutPositionOrScaleJump(5,False)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SplitPortraitsKeepsFailedAvatarsOnCurrentLevelWithoutPositionOrScaleJump(7,False)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SplitPortraitsKeepsFailedAvatarsOnCurrentLevelWithoutPositionOrScaleJump(10,False)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SplitPortraitsKeepsFailedAvatarsOnCurrentLevelWithoutPositionOrScaleJump(5,True)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SplitPortraitsKeepsFailedAvatarsOnCurrentLevelWithoutPositionOrScaleJump(7,True)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.SplitPortraitsKeepsFailedAvatarsOnCurrentLevelWithoutPositionOrScaleJump(10,True)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.StartRaftStaysVisibleWhenFailedPortraitSinksAndStopsOnRelease",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.WinsUseNormalBatchTimingAtEveryStepAndFailureKeepsItsTiming(0,0.4166667f,1.083333f,0.8333333f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.WinsUseNormalBatchTimingAtEveryStepAndFailureKeepsItsTiming(1,0.4166667f,1.083333f,0.8333333f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.WinsUseNormalBatchTimingAtEveryStepAndFailureKeepsItsTiming(2,0.4166667f,1.083333f,1.0f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.WinsUseNormalBatchTimingAtEveryStepAndFailureKeepsItsTiming(3,0.4166667f,1.083333f,0.8333333f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.WinsUseNormalBatchTimingAtEveryStepAndFailureKeepsItsTiming(5,0.4166667f,1.083333f,1.0f)",
+      "result": "Passed"
+    },
+    {
+      "name": "Module.Activity.Tests.EditMode.SplashQuestMotionTests.WinsUseNormalBatchTimingAtEveryStepAndFailureKeepsItsTiming(6,0.4166667f,1.083333f,0.8333333f)",
+      "result": "Passed"
+    }
+  ]
+}

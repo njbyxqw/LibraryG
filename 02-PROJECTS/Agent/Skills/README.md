@@ -10,7 +10,7 @@ tags: [Agent, Skills, 跨设备]
 
 本目录是可直接读取、按步骤执行的共享技能库。任意设备的 Agent 取得完整 LG 并能读取文件后，可从本入口选择技能，不要求先安装到本机技能目录。只有本机菜单发现、快捷调用等体验依赖具体客户端的安装机制；文件可读不代表客户端会自动登记技能。
 
-LG 是个人技能的正文维护与执行读取源。现收录本机两个个人技能目录中全部 14 项技能（含依赖）；本机发现入口通过目录链接指向本库，避免维护第二份正文。除 localization-config 的设备路径适配外，正文保留本次收录时的原文；来源与差异记录见 `sources.json`。系统内置和插件托管技能继续由各自安装机制维护，不复制其运行环境到 LG。
+LG 是个人技能的正文维护与执行读取源。现收录本机两个个人技能目录中原有 14 项技能及新增蓝湖工具技能（含依赖）；本机发现入口通过目录链接指向本库，避免维护第二份正文。除 localization-config 的设备路径适配外，正文保留本次收录时的原文；来源与差异记录见 `sources.json`。系统内置和插件托管技能继续由各自安装机制维护，不复制其运行环境到 LG。
 
 ## 按需选择
 
@@ -30,6 +30,7 @@ LG 是个人技能的正文维护与执行读取源。现收录本机两个个�
 | 操作已打开的 Obsidian vault | [obsidian-cli/SKILL.md](obsidian-cli/SKILL.md) | Obsidian 程序与可用 CLI | 目标设备须有可用的 `obsidian` 命令；无 CLI 时普通文件操作可改用文件工具，但不能冒充应用操作 |
 | 网页正文提取 | [defuddle/SKILL.md](defuddle/SKILL.md) | Defuddle CLI，安装时可能需要 Node/npm | 工具按设备检测；正文共享不等于命令已安装 |
 | 包体、二进制、反编译与运行证据分析 | [reverse-engineer-anything/SKILL.md](reverse-engineer-anything/SKILL.md) | REA MCP/CLI、任务所需分析引擎 | 原有六份参考文件已收录；注册、引擎和系统支持按设备核对，普通源码阅读不触发 REA |
+| 蓝湖到 Unity 正式 UI 接入 | [lanhu-unity-import/SKILL.md](lanhu-unity-import/SKILL.md) | Python 3.9+ 标准库；目标设备另需蓝湖读取与 Unity 验收能力 | 原始标注与手动切图→显式映射→预演/应用/回滚，保留业务绑定；静态验证不能代替运行验收 |
 
 ## Agent 直接执行协议
 

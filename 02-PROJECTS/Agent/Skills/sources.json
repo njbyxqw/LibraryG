@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "role": "LG canonical executable skill library; device discovery entries link here",
   "skills": [
     {
@@ -240,6 +240,29 @@
         "references/javascript-applications.md": "04cc298e2485d1db7925b8789097fc5fdd042e937ed11980d3eabc29cb176e59",
         "references/native-and-artifacts.md": "1947af57448ba7be6a0736ffbe976c7ecdab4105f315ecc06c830727cc5205fe",
         "references/runtime-observation.md": "b3eea94dd7d0c6474634de22ac3ccae317f42ba1ba2389d93535ee8dae7d94e1"
+      }
+    },
+    {
+      "name": "lanhu-unity-import",
+      "repository": null,
+      "source_path": "lanhu-unity-import",
+      "source_ref": null,
+      "source_note": "Original local workflow created 2026-11-05 for authorized Lanhu-to-existing-UGUI integration. UnityLanhuImporter was evaluated as prior context; this tool does not embed or install that repository.",
+      "dependencies": [],
+      "environment": [
+        "Python 3.9+ standard library",
+        "Unity text Prefab and single-sprite PNG inputs",
+        "Authorized Lanhu data access and Unity runtime validation are separate capabilities"
+      ],
+      "files_sha256": {
+        ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+        "SKILL.md": "33c5a3c99eb21244a27f8006d5d233a58c680f8db40a57d6d79475a839d6095b",
+        "agents/openai.yaml": "77ae5fb8ce9e99ef84cd1b6d23c75b56174a7c1ab7c06e25c97b2c866b4189d9",
+        "references/manifest.md": "79cdf672f224f3d97843c34fae6d56ba1a249d26139bbfdb3de367b951ecce90",
+        "scripts/import_sprites.py": "e3e8c0a38d0be5069a0962e18c2a2b834be95e571e2274da78e8e5c061305712",
+        "scripts/lanhu_unity.py": "b74095ac482105bd4e312b64a1d6cc94eeb4721f528e1bcbd49d76e83f80e8f6",
+        "scripts/nested.py": "3fc0a9a747b08e8b058ba782403d7a82961d5991b70714547abfa24b0ca6ead1",
+        "scripts/test_lanhu_unity.py": "ab748852ef83db1f20fe163d1e35fb698a8a02351477f4d8d2e5556b591a10a1"
       }
     }
   ],

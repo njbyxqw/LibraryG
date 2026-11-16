@@ -1,0 +1,4 @@
+interface:
+  display_name: "蓝湖到Unity资源与布局接入"
+  short_description: "按蓝湖原始标注导入切图和布局，保留现有业务绑定并生成可审计差异清单"
+  default_prompt: "使用 $lanhu-unity-import 将蓝湖界面接入当前 Unity 项目，保留现有交互与业务绑定。"
