@@ -37,10 +37,20 @@ tags: [TileScape, DDA, 持续研究]
 
 研究文档完成与算法运行有效性分别登记。R16 完成了旧 V3 静态研究；R18 发现当前 dev 已具备独立 V3 和测试源码，故任务重新进入运行验证阶段。只有六项目标对应产出齐全、关键未决项已说明依据/影响/处理方式，才能结束本研究；不能因已有摘要或达到某个运行窗口而标完成。若关键结论依赖运行数据而暂不可得，保留证据不足状态，不虚构结果。
 
+## 活动策略接入边界
+
+2026-11-16 针对 SplashQuest 数值评估补充，来源为用户确认及 TS `migrate-diamondchampion@85f197e95` 的局部源码静态核对。本次不重做下方九月版研究，也不把旧版本称为当前完整基线。
+
+- 当前关间链路为：V3及关间开关 → 新循环默认1／Coins按统一存量覆盖，已有循环沿用 → 回收缺口选择基础／回收1／回收2 → Retry修改本关参数 → 局内消费保护与目标达标。当前没有 SplashQuest 活动策略。
+- 存量和有效消费按 DDAV3 的配置与冻结快照折算；道具及复活包含对应来源规则，回收值不等于真实钻石扣减。源码入口为 `Assets/Game/TileV2/Scripts/DataCenter/TileMatchDataCenter.Recovery.cs` 的 `TryPrepareDdaV3Configuration`、`GetDdaV3AssetValue`、`ResolveDdaV3Recovery`。
+- 历史多策略覆盖设想见 TS `Docs/TileV2_DDAV3_InterLevel_Recovery_Plan_2026-10-14.md`；后续正式需求 `Docs/TileV2_DDAV3_InterLevel_Recovery/Requirements_2026-10-20.md` 收敛为 Coins 覆盖、Retry 修改，不能当作通用优先级执行器已落地。
+- 2026-11-16 最新决定：SplashQuest 旧数值体系及三档／系数试算停止沿用，见 [[02-PROJECTS/TileScape/游戏逻辑/归档-SplashQuest旧数值体系问题与重设计交接-2026-11-16|旧数值体系问题与重设计交接]]。保留统一资源估值及后续研究 DDAV3 策略接入的方向；不把旧复活补偿公式、回收门禁或阈值作为新设计约束。新数值设计由用户另起对话，当前不实施活动策略。
+- 活动参数、任务与数据观察集中维护在 [[02-PROJECTS/TileScape/游戏逻辑/任务-钻石联盟每日三阶段改造#数值后续任务（2026-11-16）|SplashQuest 数值任务]]；本主档只保留 DDA 接缝和后续研究入口。本次没有 Unity、设备或线上验证。
+
 ## 当前版本与事实
 
-> [!info] 现行基准
-> 运行和策略判断以 `dev@842093623` 为准，详见 [[02-PROJECTS/TileScape/游戏逻辑/更新-DDAV3-dev逻辑与策略评估-2026-09-20|dev 逻辑与策略评估]] 与 [[02-PROJECTS/TileScape/游戏逻辑/核对-DDAV3旧文档与dev实现-2026-09-20|旧文档核对]]。下列内容在 R18 以前均是历史版本记录。
+> [!info] 九月研究基准（历史）
+> 以下九月研究以 `dev@842093623` 为准，不代表当前完整实现；2026-11-16 的活动接缝增量见上节。详见 [[02-PROJECTS/TileScape/游戏逻辑/更新-DDAV3-dev逻辑与策略评估-2026-09-20|dev 逻辑与策略评估]] 与 [[02-PROJECTS/TileScape/游戏逻辑/核对-DDAV3旧文档与dev实现-2026-09-20|旧文档核对]]。下列内容在 R18 以前均是历史版本记录。
 
 - 原始基线：`DDA-V3-Test @ 9be729cb3223169ce85b4b0bf67b52314926a2f5`。
 - 最近审计的 V3 版本：`DDA-V3-Test @ cd3aea16656814e0e226205c3c225c36a94deded`。

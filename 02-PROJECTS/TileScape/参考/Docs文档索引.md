@@ -17,6 +17,12 @@ cat_order: 020
 
 > 本文档是 `D:\TileScape\Docs\` 与 `D:\TileScape\Doc\` 下未迁移文档的**索引清单**。文档原文仍在项目内，仅做分类整理与价值备注；后续有需求再按主题迁移进知识库。
 
+## SplashQuest 数值任务与交付副本
+
+- TS `Docs/SplashQuest_Implementation_Plan.md`：活动项目交付副本；LG 持续主入口为 [[02-PROJECTS/TileScape/游戏逻辑/任务-钻石联盟每日三阶段改造]]，策划稿为 [[02-PROJECTS/TileScape/游戏逻辑/需求-钻石联盟每日三阶段活动]]。
+- 数值状态（2026-11-16）：旧体系及 B1～V1.1 试算已归档，停止沿用；见 [[02-PROJECTS/TileScape/游戏逻辑/归档-SplashQuest旧数值体系问题与重设计交接-2026-11-16|旧数值体系问题与重设计交接]]。TS plan 与旧系数报告已同步历史状态。
+- DDAV3 当前代码接缝与旧研究的适用边界见 [[02-PROJECTS/TileScape/游戏逻辑/任务-DDAV3逻辑策略持续研究#活动策略接入边界]]；源码仍是行为事实来源。
+
 ## DLC 当前入口与历史来源（2026-09-08）
 
 - **当天 Home 增量**：[[02-PROJECTS/TileScape/游戏逻辑/任务-DLC全链路梳理与维护#2026-09-08 Home 下载优化|2026-09-08 Home 下载优化]]；dev @ `1e323e6e8` / `12e6620af` 已改为状态进入前置调度、两 Handler 与共享串行队列。旧 Flow/协调器只作历史路径，Editor 测试未在本轮执行。
