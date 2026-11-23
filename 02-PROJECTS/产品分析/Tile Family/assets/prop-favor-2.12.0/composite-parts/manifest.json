@@ -1,0 +1,198 @@
+[
+  {
+    "name": "ui_iapbanner_board_yellow",
+    "path_id": -1980748452498858989,
+    "bundle": "snap_art_iap_assets_ref_assets_all_be66864cbde9e9af5605f4664a383c93.bundle",
+    "size": [
+      249,
+      250
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 120.0,
+      "y": 119.0,
+      "z": 120.0,
+      "w": 119.0
+    },
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 250.0,
+      "height": 250.0
+    },
+    "ppu": 100.0,
+    "sha256": "122a3aebbd5e3ac6ee6982cbf98b7008ecbed01dff2a0c78a1ceed035aaf17f8"
+  },
+  {
+    "name": "img_banner_lable_red",
+    "path_id": 327668923598063866,
+    "bundle": "snap_art_iap_assets_ref_assets_all_be66864cbde9e9af5605f4664a383c93.bundle",
+    "size": [
+      234,
+      234
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    },
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 234.0,
+      "height": 234.0
+    },
+    "ppu": 100.0,
+    "sha256": "2b28cfc82345272ff917ba5cc165235766b3d3a05116897be78e0e7253d31bbf"
+  },
+  {
+    "name": "ui_banner_bg_yellow",
+    "path_id": 4300143922883918781,
+    "bundle": "snap_art_iap_assets_ref_assets_all_be66864cbde9e9af5605f4664a383c93.bundle",
+    "size": [
+      150,
+      392
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 149.0,
+      "y": 237.0,
+      "z": 0.0,
+      "w": 154.0
+    },
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 150.0,
+      "height": 392.0
+    },
+    "ppu": 100.0,
+    "sha256": "2c29766989684d54bb71f9374ceda0d61a93fbd637204413defdf1ac36c0489e"
+  },
+  {
+    "name": "ui_banner_bg_iap",
+    "path_id": 5047321844233468344,
+    "bundle": "snap_art_iap_assets_ref_assets_all_be66864cbde9e9af5605f4664a383c93.bundle",
+    "size": [
+      1063,
+      322
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    },
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1063.0,
+      "height": 322.0
+    },
+    "ppu": 100.0,
+    "sha256": "049dd492f26efb1eb9d623bb2e8cef4208103c55ed0faf22177972d87f2f6fd1"
+  },
+  {
+    "name": "btn_green",
+    "path_id": -2272732401229033244,
+    "bundle": "snap_art_view_assets_ref_assets_all_75f0f7e66da6403ef61f8f965f0b40a7.bundle",
+    "size": [
+      72,
+      212
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 90.0,
+      "y": 130.0,
+      "z": 0.0,
+      "w": 130.0
+    },
+    "pivot": {
+      "x": 1.0,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 96.0,
+      "height": 270.0
+    },
+    "ppu": 100.0,
+    "sha256": "2054cb952b867a8be22641dabea7dbb345142b42a8b9b5f62d19a7a28f4c6cdf"
+  },
+  {
+    "name": "btn_dark_bottom3",
+    "path_id": 3982877880533433173,
+    "bundle": "snap_art_view_assets_ref_assets_all_75f0f7e66da6403ef61f8f965f0b40a7.bundle",
+    "size": [
+      85,
+      238
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 90.0,
+      "y": 130.0,
+      "z": 0.0,
+      "w": 130.0
+    },
+    "pivot": {
+      "x": 1.0,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 96.0,
+      "height": 270.0
+    },
+    "ppu": 100.0,
+    "sha256": "b647af210ac55103335f4504e463f2f10f351ac8fc8bfa348802f0a7c559dd6e"
+  },
+  {
+    "name": "big_coins_shop",
+    "path_id": 2595583283673586233,
+    "bundle": "defaultlocalgroup_assets_all.bundle",
+    "size": [
+      362,
+      211
+    ],
+    "export": "Sprite",
+    "border": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+    },
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "rect": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 400.0,
+      "height": 250.0
+    },
+    "ppu": 100.0,
+    "sha256": "6d4ed7c3c293201e92a5e220a21c8ab8ae4970bc7b7f2ade76f7b19f41e0af6e"
+  }
+]

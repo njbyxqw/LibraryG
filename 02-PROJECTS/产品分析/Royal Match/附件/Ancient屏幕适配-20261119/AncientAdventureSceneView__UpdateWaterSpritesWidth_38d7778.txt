@@ -1,0 +1,104 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$UpdateWaterSpritesWidth
+void Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureSceneView__UpdateWaterSpritesWidth (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureSceneView_o* __this, float screenWidth, float rootScale, const MethodInfo* method);
+0x38D7778; next named boundary 0x38D790C
+038D7778 stp      d9, d8, [sp, #-0x50]!
+038D777C str      x24, [sp, #0x10]
+038D7780 stp      x23, x22, [sp, #0x20]
+038D7784 stp      x21, x20, [sp, #0x30]
+038D7788 stp      x19, x30, [sp, #0x40]
+038D778C adrp     x20, #0x58c8000
+038D7790 ldrb     w8, [x20, #0x712]
+038D7794 mov      v8.16b, v1.16b
+038D7798 mov      v9.16b, v0.16b
+038D779C mov      x19, x0
+038D77A0 tbnz     w8, #0, #0x38d77b8
+038D77A4 adrp     x0, #0x54be000
+038D77A8 ldr      x0, [x0, #0x3b8] ; UnityEngine.Object_TypeInfo
+038D77AC bl       #0x1043220
+038D77B0 mov      w8, #1
+038D77B4 strb     w8, [x20, #0x712]
+038D77B8 mov      x0, xzr
+038D77BC bl       #0x2708e28 ; Royal.Infrastructure.Utils.Native.DeviceHelper$$get_IsLowEnd
+038D77C0 tbz      w0, #0, #0x38d7878
+038D77C4 mov      x0, xzr
+038D77C8 bl       #0x27088c4 ; Royal.Infrastructure.Utils.Native.DeviceHelper$$get_IsIos
+038D77CC tbnz     w0, #0, #0x38d7878
+038D77D0 ldr      x20, [x19, #0x60]
+038D77D4 cbz      x20, #0x38d7904
+038D77D8 ldr      w8, [x20, #0x18]
+038D77DC cmp      w8, #1
+038D77E0 b.lt     #0x38d7818
+038D77E4 mov      w21, wzr
+038D77E8 cmp      w21, w8
+038D77EC b.hs     #0x38d7908
+038D77F0 add      x8, x20, w21, sxtw #3
+038D77F4 ldr      x0, [x8, #0x20]
+038D77F8 cbz      x0, #0x38d7904
+038D77FC ldr      x1, [x19, #0x68]
+038D7800 mov      x2, xzr
+038D7804 bl       #0x3f56ecc ; UnityEngine.SpriteRenderer$$set_sprite
+038D7808 ldr      w8, [x20, #0x18]
+038D780C add      w21, w21, #1
+038D7810 cmp      w21, w8
+038D7814 b.lt     #0x38d77e8
+038D7818 ldr      x21, [x19, #0x70]
+038D781C cbz      x21, #0x38d7904
+038D7820 ldr      x8, [x21, #0x18]
+038D7824 cmp      w8, #1
+038D7828 b.lt     #0x38d7878
+038D782C adrp     x23, #0x54be000
+038D7830 ldr      x23, [x23, #0x3b8] ; UnityEngine.Object_TypeInfo
+038D7834 mov      x22, xzr
+038D7838 and      x8, x8, #0xffffffff
+038D783C add      x24, x21, #0x20
+038D7840 cmp      x22, w8, uxtw
+038D7844 b.hs     #0x38d7908
+038D7848 ldr      x0, [x23]
+038D784C ldr      x20, [x24, x22, lsl #3]
+038D7850 ldr      w8, [x0, #0xe0]
+038D7854 cbnz     w8, #0x38d785c
+038D7858 bl       #0x1043324
+038D785C mov      x0, x20
+038D7860 mov      x1, xzr
+038D7864 bl       #0x3f536f4 ; UnityEngine.Object$$Destroy
+038D7868 ldr      w8, [x21, #0x18]
+038D786C add      x22, x22, #1
+038D7870 cmp      x22, w8, sxtw
+038D7874 b.lt     #0x38d7840
+038D7878 ldr      x8, [x19, #0x60]
+038D787C cbz      x8, #0x38d7904
+038D7880 ldr      w9, [x8, #0x18]
+038D7884 cmp      w9, #1
+038D7888 b.lt     #0x38d78ec
+038D788C fmov     s0, #1.25000000
+038D7890 scvtf    s1, w9
+038D7894 fmul     s0, s9, s0
+038D7898 fmul     s1, s1, s8
+038D789C mov      w21, wzr
+038D78A0 fdiv     s8, s0, s1
+038D78A4 cmp      w21, w9
+038D78A8 b.hs     #0x38d7908
+038D78AC add      x8, x8, w21, sxtw #3
+038D78B0 ldr      x20, [x8, #0x20]
+038D78B4 cbz      x20, #0x38d7904
+038D78B8 mov      x0, x20
+038D78BC mov      x1, xzr
+038D78C0 bl       #0x3f56f90 ; UnityEngine.SpriteRenderer$$get_size
+038D78C4 mov      x0, x20
+038D78C8 mov      v0.16b, v8.16b
+038D78CC mov      x1, xzr
+038D78D0 bl       #0x3f57020 ; UnityEngine.SpriteRenderer$$set_size
+038D78D4 ldr      x8, [x19, #0x60]
+038D78D8 cbz      x8, #0x38d7904
+038D78DC ldr      w9, [x8, #0x18]
+038D78E0 add      w21, w21, #1
+038D78E4 cmp      w21, w9
+038D78E8 b.lt     #0x38d78a4
+038D78EC ldp      x19, x30, [sp, #0x40]
+038D78F0 ldp      x21, x20, [sp, #0x30]
+038D78F4 ldp      x23, x22, [sp, #0x20]
+038D78F8 ldr      x24, [sp, #0x10]
+038D78FC ldp      d9, d8, [sp], #0x50
+038D7900 ret      
+038D7904 bl       #0x1043348
+038D7908 bl       #0x1043350

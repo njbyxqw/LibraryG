@@ -1,0 +1,1006 @@
+[
+  {
+    "path": "/ActivitySeasonEndPanel_m2",
+    "gameobject_id": 6706670065830833026,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/BG",
+    "gameobject_id": 5025978463553960518,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent",
+    "gameobject_id": 1976324707912617855,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme",
+    "gameobject_id": 471337266177746064,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0",
+    "gameobject_id": -7191692852426952067,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg",
+    "gameobject_id": -5507853864803234832,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 264.0
+      },
+      "m_SizeDelta": {
+        "x": 930.0,
+        "y": 929.4000244140625
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject",
+    "gameobject_id": 5237191898828530374,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/Image",
+    "gameobject_id": 183216985413938194,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -68.0
+      },
+      "m_SizeDelta": {
+        "x": 1152.0,
+        "y": 1152.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/Image/par_bg",
+    "gameobject_id": -5135650808514477499,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -179.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/Image/par_bg/Particle System (1)",
+    "gameobject_id": -4111044708436862720,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 248.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/Image/par_bg/Particle System (2)",
+    "gameobject_id": 4088403319656133032,
+    "active": false,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -67.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/Image/par_bg/Particle System (3)",
+    "gameobject_id": -6097604364988064763,
+    "active": false,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/Image/par_bg/Particle System (4)",
+    "gameobject_id": -7191179665255341148,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 348.0
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/SkeletonGraphic (SeasonEnd)",
+    "gameobject_id": -140899363177793577,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -248.0
+      },
+      "m_SizeDelta": {
+        "x": 927.3299560546875,
+        "y": 894.8800048828125
+      },
+      "m_Pivot": {
+        "x": 0.5003827810287476,
+        "y": 0.2270360141992569
+      },
+      "m_LocalScale": {
+        "x": 0.7799999713897705,
+        "y": 0.7799999713897705,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg (1)",
+    "gameobject_id": -134755558706141164,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 272.44000244140625
+      },
+      "m_SizeDelta": {
+        "x": 934.0,
+        "y": 909.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (2)",
+    "gameobject_id": 7686454904114894300,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 31.5
+      },
+      "m_SizeDelta": {
+        "x": 489.0,
+        "y": 1500.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (2)/Btn_Add (1)",
+    "gameobject_id": -4350498939582306888,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -3.0517578125e-05
+      },
+      "m_SizeDelta": {
+        "x": 489.0,
+        "y": 1500.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": -1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (1)",
+    "gameobject_id": 5551139031625050675,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 9.0,
+        "y": 647.0004272460938
+      },
+      "m_SizeDelta": {
+        "x": 500.0,
+        "y": 290.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (1)/Btn_Add (1)",
+    "gameobject_id": 4093926515582643326,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -3.0517578125e-05
+      },
+      "m_SizeDelta": {
+        "x": 500.0,
+        "y": 290.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": -1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Tx_Level",
+    "gameobject_id": 2587660930856264162,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 646.0
+      },
+      "m_SizeDelta": {
+        "x": 660.0,
+        "y": 150.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    "text": "Piggy Pass",
+    "text_enabled": 1,
+    "localization_key": "season_piggy"
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Tx_Desc",
+    "gameobject_id": -6214784911485466661,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -357.0
+      },
+      "m_SizeDelta": {
+        "x": 766.9000244140625,
+        "y": 198.5
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    "text": "The Piggy Pass has ended! New Piggy Pass will start soon!",
+    "text_enabled": 1,
+    "localization_key": "season_endDes"
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg",
+    "gameobject_id": 8252171633855926539,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 21.0,
+        "y": -213.5
+      },
+      "m_SizeDelta": {
+        "x": 280.70001220703125,
+        "y": 92.76000213623047
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.2000000476837158,
+        "y": 1.2000000476837158,
+        "z": 1.0006641149520874
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg/Image",
+    "gameobject_id": 3475690978067832500,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -117.4000015258789,
+        "y": 6.79931640625
+      },
+      "m_SizeDelta": {
+        "x": 78.12999725341797,
+        "y": 78.76000213623047
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg/Image/Image",
+    "gameobject_id": 844709101233396356,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 56.0,
+        "y": 56.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 0.7799999713897705,
+        "y": 0.7799999713897705,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg/Image/Tx_time",
+    "gameobject_id": -9135669499225606314,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 133.1999969482422,
+        "y": -3.299999952316284
+      },
+      "m_SizeDelta": {
+        "x": 184.5800018310547,
+        "y": 80.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    "text": "00:00:00",
+    "text_enabled": 1,
+    "localization_key": ""
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Close",
+    "gameobject_id": -457617500894854752,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 469.1000061035156,
+        "y": 697.7999877929688
+      },
+      "m_SizeDelta": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Close/BG_A_A_Half",
+    "gameobject_id": 5216205592775243180,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 50.0,
+        "y": -1.899999976158142
+      },
+      "m_SizeDelta": {
+        "x": 204.0,
+        "y": 208.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 0.800000011920929,
+        "y": 0.800000011920929,
+        "z": 0.800000011920929
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play",
+    "gameobject_id": -6723584643347704779,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.699999988079071,
+        "y": -624.0
+      },
+      "m_SizeDelta": {
+        "x": 570.1632080078125,
+        "y": 202.5
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play/BG_A_A_Half",
+    "gameobject_id": 1521114809135276248,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.001220703125
+      },
+      "m_SizeDelta": {
+        "x": 564.1400146484375,
+        "y": 260.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.2999999523162842,
+        "y": 1.2999999523162842,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play/BG_A_A_Half (1)",
+    "gameobject_id": 9168943788349552596,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 16.499170303344727
+      },
+      "m_SizeDelta": {
+        "x": 504.760009765625,
+        "y": 198.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.2999999523162842,
+        "y": 1.2999999523162842,
+        "z": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play/Tx_Play",
+    "gameobject_id": -8980375843659811557,
+    "active": true,
+    "rect": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -2.38420000187034e-07,
+        "y": 12.199999809265137
+      },
+      "m_SizeDelta": {
+        "x": 480.0,
+        "y": 130.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    "text": "Continue",
+    "text_enabled": 1,
+    "localization_key": "rank_continue"
+  }
+]

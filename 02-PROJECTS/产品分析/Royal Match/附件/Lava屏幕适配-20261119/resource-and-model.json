@@ -1,0 +1,1472 @@
+{
+  "version": "38911 resources; 39781 formulas used only for illustrative calculation",
+  "layout": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\activity-layouts\\lavaquestcompetition\\layout.json",
+  "layout_sha256": "23588b96535c6f099a35fa0db973654a6971f4196b484ee16bb313e1fa8b6eb2",
+  "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\38911\\05-Runtime\\20261026-lavaquest\\bundles\\lavaquestcompetition",
+  "bundle_sha256": "06a11920b7a47a822937328f7dc8bda2e866133ccf730485d043c1f81cb10d77",
+  "nodes": [
+    {
+      "id": "-4083788507601632002",
+      "name": "BottomBound",
+      "path": "LavaQuestCompetitionScene/Background/BottomBound",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -4083788507601632002
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": -10.593000411987305,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 575568226831868658
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -10.177000403404236
+      ],
+      "components": []
+    },
+    {
+      "id": "1004170048576906136",
+      "name": "LavaQuestCompetitionDialog",
+      "path": "LavaQuestCompetitionDialog",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 1004170048576906136
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -1868463971824370385
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "type": "SortingGroup",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1004170048576906136
+            },
+            "m_Enabled": 1,
+            "m_SortingLayerID": 487648401,
+            "m_SortingLayer": 6,
+            "m_SortingOrder": 4500
+          }
+        },
+        {
+          "type": "MonoBehaviour",
+          "script": "LavaQuestCompetitionDialog",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1004170048576906136
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -2680839104770037864
+            },
+            "m_Name": "",
+            "zIndex": -11,
+            "dialogSorting": {
+              "m_FileID": 0,
+              "m_PathID": -6608426897135409941
+            },
+            "dialogCollider": {
+              "m_FileID": 0,
+              "m_PathID": 2220053151927683228
+            },
+            "header": {
+              "m_FileID": 0,
+              "m_PathID": -3372798404611607431
+            },
+            "infoButton": {
+              "m_FileID": 0,
+              "m_PathID": -448606851666228560
+            },
+            "closeButton": {
+              "m_FileID": 0,
+              "m_PathID": 2751598430479384040
+            },
+            "topBackgroundParent": {
+              "m_FileID": 0,
+              "m_PathID": -1095220583314956763
+            },
+            "topBackground": {
+              "m_FileID": 0,
+              "m_PathID": 2829414160571825774
+            },
+            "topBackgroundMask": {
+              "m_FileID": 0,
+              "m_PathID": 1601001504288817406
+            },
+            "levelsParent": {
+              "m_FileID": 0,
+              "m_PathID": -3186986594139456797
+            },
+            "playersParent": {
+              "m_FileID": 0,
+              "m_PathID": 5858242901421282851
+            },
+            "timeCounter": {
+              "m_FileID": 0,
+              "m_PathID": 4872231433306761129
+            },
+            "remainingTextPositioner": {
+              "m_FileID": 0,
+              "m_PathID": 2894497828697360964
+            },
+            "sceneHolder": {
+              "m_FileID": 0,
+              "m_PathID": 9044467535795261706
+            },
+            "tapToContinueText": {
+              "m_FileID": 0,
+              "m_PathID": 361246246644805703
+            },
+            "tapToContinueCollider": {
+              "m_FileID": 0,
+              "m_PathID": 7293523581889090969
+            },
+            "infoText": {
+              "m_FileID": 0,
+              "m_PathID": -4699851048681480929
+            },
+            "levelsText": {
+              "m_FileID": 0,
+              "m_PathID": -3237097585189647481
+            },
+            "playersText": {
+              "m_FileID": 0,
+              "m_PathID": -5242988017723429476
+            },
+            "levelsParticle": {
+              "m_FileID": 0,
+              "m_PathID": -5741499811258361948
+            },
+            "playersParticle": {
+              "m_FileID": 0,
+              "m_PathID": 8029930595792161487
+            },
+            "tutorial": {
+              "m_FileID": 0,
+              "m_PathID": -82772083141305893
+            },
+            "tooltipConfigs": [
+              {
+                "tooltipOffset": {
+                  "x": 1.2000000476837158,
+                  "y": 3.5999999046325684,
+                  "z": 0.0
+                },
+                "bodyXOffset": -1.2000000476837158
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.2000000476837158,
+                  "y": 2.75,
+                  "z": 0.0
+                },
+                "bodyXOffset": 0.0
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": 2.6549999713897705,
+                  "z": 0.0
+                },
+                "bodyXOffset": 1.0
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": 2.6700000762939453,
+                  "z": 0.0
+                },
+                "bodyXOffset": 1.0
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": 2.549999952316284,
+                  "z": 0.0
+                },
+                "bodyXOffset": 0.0
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": 2.450000047683716,
+                  "z": 0.0
+                },
+                "bodyXOffset": -0.5
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": 2.5999999046325684,
+                  "z": 0.0
+                },
+                "bodyXOffset": -0.5
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": 2.5,
+                  "z": 0.0
+                },
+                "bodyXOffset": 0.0
+              },
+              {
+                "tooltipOffset": {
+                  "x": 1.399999976158142,
+                  "y": -1.0,
+                  "z": 0.0
+                },
+                "bodyXOffset": 0.0
+              }
+            ],
+            "sceneState": 0
+          }
+        },
+        {
+          "type": "MonoBehaviour",
+          "script": "LavaQuestTutorial",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1004170048576906136
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4000708683210810873
+            },
+            "m_Name": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "4028793870204951868",
+      "name": "Background",
+      "path": "LavaQuestCompetitionScene/Background",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 4028793870204951868
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.41600000858306885,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 935655694901269134
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6992865338920437847
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -3206555297845412131
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5019563331641141145
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4925360703047809465
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4154078109926347471
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7778300745322240980
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 7409307524413780577
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.41600000858306885
+      ],
+      "components": []
+    },
+    {
+      "id": "5376947130094743207",
+      "name": "Step0",
+      "path": "LavaQuestCompetitionScene/Background/Animations/Rocks/Step0",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 5376947130094743207
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 3.2200000286102295,
+          "y": -9.479999542236328,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -7549012537175570601
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -4840198337435721961
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -3277611152071047884
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4285401180866729754
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5281487954195862135
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7637360519791828635
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6076224521932284434
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 6851008083755038760
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7058216733650113453
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -7531362612560676089
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -1744839352911164971
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5505236338797107401
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 6091017423606573549
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7714641686078446073
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 5316816671257520748
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        3.2200000286102295,
+        -9.06399953365326
+      ],
+      "components": [
+        {
+          "type": "MonoBehaviour",
+          "script": "LavaQuestStepRoll",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 5376947130094743207
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 6095049607977919821
+            },
+            "m_Name": "",
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": 1743705470584684405
+            },
+            "profilePictureSingleData": [
+              {
+                "localPos": {
+                  "x": 0.5445727109909058,
+                  "y": 0.6751217246055603,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.5445727705955505,
+                  "y": 0.6751216650009155,
+                  "z": -2.0845025705540365e-10
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": -0.5603832006454468,
+                  "y": 0.6258044838905334,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 359.4396057128906,
+                  "y": 0.6258045434951782,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": 0.47639989852905273,
+                  "y": 0.7475659847259521,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.47639989852905273,
+                  "y": 0.7475660443305969,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": 0.86350417137146,
+                  "y": 0.3754385709762573,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.8635042309761047,
+                  "y": 0.3754385709762573,
+                  "z": 2.0846450954348228e-10
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9900
+              },
+              {
+                "localPos": {
+                  "x": 1.0525901317596436,
+                  "y": 0.9129045605659485,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 1.0525901317596436,
+                  "y": 0.9129045009613037,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9650
+              },
+              {
+                "localPos": {
+                  "x": 1.2094669342041016,
+                  "y": 0.550000011920929,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 1.2094671726226807,
+                  "y": 0.550000011920929,
+                  "z": -4.169745104753986e-10
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": 0.31231579184532166,
+                  "y": 0.2383597493171692,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.31231585144996643,
+                  "y": 0.23835977911949158,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9950
+              }
+            ],
+            "profilePictureSingleExtraData": [
+              {
+                "localPos": {
+                  "x": -0.14000000059604645,
+                  "y": 0.75,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 359.8599853515625,
+                  "y": 0.75,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.8000410795211792,
+                  "y": 0.8000410795211792,
+                  "z": 1.0
+                },
+                "sortingOrder": 9650
+              },
+              {
+                "localPos": {
+                  "x": 0.30000001192092896,
+                  "y": 1.0099999904632568,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.30000001192092896,
+                  "y": 1.0100001096725464,
+                  "z": 6.253311202186751e-10
+                },
+                "scale": {
+                  "x": 0.8000410795211792,
+                  "y": 0.8000410795211792,
+                  "z": 1.0
+                },
+                "sortingOrder": 9550
+              }
+            ],
+            "profilePictureDoubleData": [
+              {
+                "localPos": {
+                  "x": -0.6100000143051147,
+                  "y": 0.1599999964237213,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 359.3900146484375,
+                  "y": 0.15999998152256012,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.949999988079071,
+                  "y": 0.949999988079071,
+                  "z": 1.0
+                },
+                "sortingOrder": 10000
+              },
+              {
+                "localPos": {
+                  "x": -0.9999998807907104,
+                  "y": 0.47000014781951904,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 359.0,
+                  "y": 0.47000014781951904,
+                  "z": 4.1694517283197285e-10
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 1.0
+                },
+                "sortingOrder": 9900
+              },
+              {
+                "localPos": {
+                  "x": 0.12999999523162842,
+                  "y": 0.550000011920929,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.12999999523162842,
+                  "y": 0.550000011920929,
+                  "z": 5.211034381780166e-11
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 0.0
+                },
+                "sortingOrder": 9800
+              },
+              {
+                "localPos": {
+                  "x": -0.14000000059604645,
+                  "y": 0.75,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 359.8599853515625,
+                  "y": 0.75,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 1.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": 0.30000001192092896,
+                  "y": 1.0099999904632568,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": 0.29999998211860657,
+                  "y": 1.0099999904632568,
+                  "z": 2.0844369286177056e-10
+                },
+                "scale": {
+                  "x": 0.800041139125824,
+                  "y": 0.800041139125824,
+                  "z": 1.0
+                },
+                "sortingOrder": 9600
+              }
+            ],
+            "ppCardFallParticleHolder": {
+              "m_FileID": 0,
+              "m_PathID": 6851008083755038760
+            },
+            "rockFallParticleHolder": {
+              "m_FileID": 0,
+              "m_PathID": 7058216733650113453
+            },
+            "ppCardMasks": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6439636540139555998
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5034994284589047323
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 1930307538266531131
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -2283652014275017027
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4827864068154566824
+              }
+            ],
+            "tooltipCollider": {
+              "m_FileID": 0,
+              "m_PathID": -2807229625962660156
+            },
+            "stepParticles": [],
+            "particlesPositions": [
+              {
+                "x": -4.150000095367432,
+                "y": -0.6499999761581421,
+                "z": 0.0
+              },
+              {
+                "x": -6.199999809265137,
+                "y": 0.3799999952316284,
+                "z": 0.0
+              },
+              {
+                "x": -1.090000033378601,
+                "y": 1.6100000143051147,
+                "z": 0.0
+              },
+              {
+                "x": -2.7899999618530273,
+                "y": 0.11999999731779099,
+                "z": 0.0
+              },
+              {
+                "x": -0.09000000357627869,
+                "y": 2.440000057220459,
+                "z": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "type": "MonoBehaviour",
+          "script": "UiButton",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 5376947130094743207
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 3354703477690387963
+            },
+            "m_Name": "",
+            "zIndex": -13,
+            "scaleDown": 0,
+            "isSilentButton": 0,
+            "shouldPlayHapticNew": 0,
+            "immediateCancelOnScroll": 0,
+            "overrideScaleFactor": 0.0,
+            "colliderBox": {
+              "m_FileID": 0,
+              "m_PathID": -2807229625962660156
+            },
+            "onClick": {
+              "m_PersistentCalls": {
+                "m_Calls": [
+                  {
+                    "m_Target": {
+                      "m_FileID": 0,
+                      "m_PathID": 2522130008609806917
+                    },
+                    "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView, Assembly-CSharp",
+                    "m_MethodName": "OpenTooltip",
+                    "m_Mode": 3,
+                    "m_Arguments": {
+                      "m_ObjectArgument": {
+                        "m_FileID": 0,
+                        "m_PathID": 0
+                      },
+                      "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                      "m_IntArgument": 0,
+                      "m_FloatArgument": 0.0,
+                      "m_StringArgument": "",
+                      "m_BoolArgument": 0
+                    },
+                    "m_CallState": 2
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": "SortingGroup",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 5376947130094743207
+            },
+            "m_Enabled": 0,
+            "m_SortingLayerID": 2046106761,
+            "m_SortingLayer": 7,
+            "m_SortingOrder": 8100
+          }
+        }
+      ]
+    },
+    {
+      "id": "5777448089239854503",
+      "name": "Step7",
+      "path": "LavaQuestCompetitionScene/Background/Animations/Rocks/Step7",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 5777448089239854503
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": -0.05000000074505806,
+          "y": -0.25,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 632418176206684214
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5143773450025976968
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2611969181457098476
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -2320705897231391555
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 5316816671257520748
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.05000000074505806,
+        0.16600000858306885
+      ],
+      "components": [
+        {
+          "type": "MonoBehaviour",
+          "script": "LavaQuestStepRoll",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 5777448089239854503
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 6095049607977919821
+            },
+            "m_Name": "",
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": 9121023554762478395
+            },
+            "profilePictureSingleData": [],
+            "profilePictureSingleExtraData": [
+              {
+                "localPos": {
+                  "x": 0.7521635890007019,
+                  "y": 0.2699779272079468,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.75,
+                  "y": 0.75,
+                  "z": 1.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": -0.6596807837486267,
+                  "y": 0.2713773250579834,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.7501087784767151,
+                  "y": 0.7501087784767151,
+                  "z": 1.0
+                },
+                "sortingOrder": 9600
+              }
+            ],
+            "profilePictureDoubleData": [
+              {
+                "localPos": {
+                  "x": 0.06809596717357635,
+                  "y": -0.013657212257385254,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.8999999761581421,
+                  "y": 0.8999999761581421,
+                  "z": 1.0
+                },
+                "sortingOrder": 10000
+              },
+              {
+                "localPos": {
+                  "x": 0.5293763279914856,
+                  "y": 0.01896369457244873,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.7500972151756287,
+                  "y": 0.7500972151756287,
+                  "z": 1.0
+                },
+                "sortingOrder": 9900
+              },
+              {
+                "localPos": {
+                  "x": -0.45348256826400757,
+                  "y": 0.019581913948059082,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.750037670135498,
+                  "y": 0.750037670135498,
+                  "z": 1.0
+                },
+                "sortingOrder": 9800
+              },
+              {
+                "localPos": {
+                  "x": 0.7521635890007019,
+                  "y": 0.2699779272079468,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.75,
+                  "y": 0.75,
+                  "z": 1.0
+                },
+                "sortingOrder": 9700
+              },
+              {
+                "localPos": {
+                  "x": -0.6596807837486267,
+                  "y": 0.2713773250579834,
+                  "z": 0.0
+                },
+                "rotation": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "scale": {
+                  "x": 0.7501087784767151,
+                  "y": 0.7501087784767151,
+                  "z": 1.0
+                },
+                "sortingOrder": 9600
+              }
+            ],
+            "ppCardFallParticleHolder": {
+              "m_FileID": 0,
+              "m_PathID": -2320705897231391555
+            },
+            "rockFallParticleHolder": {
+              "m_FileID": 0,
+              "m_PathID": 5143773450025976968
+            },
+            "ppCardMasks": [],
+            "tooltipCollider": {
+              "m_FileID": 0,
+              "m_PathID": -3069655427726600606
+            },
+            "stepParticles": [],
+            "particlesPositions": []
+          }
+        },
+        {
+          "type": "MonoBehaviour",
+          "script": "UiButton",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 5777448089239854503
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 3354703477690387963
+            },
+            "m_Name": "",
+            "zIndex": -13,
+            "scaleDown": 0,
+            "isSilentButton": 0,
+            "shouldPlayHapticNew": 0,
+            "immediateCancelOnScroll": 0,
+            "overrideScaleFactor": 0.0,
+            "colliderBox": {
+              "m_FileID": 0,
+              "m_PathID": -3069655427726600606
+            },
+            "onClick": {
+              "m_PersistentCalls": {
+                "m_Calls": [
+                  {
+                    "m_Target": {
+                      "m_FileID": 0,
+                      "m_PathID": 2522130008609806917
+                    },
+                    "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView, Assembly-CSharp",
+                    "m_MethodName": "OpenTooltip",
+                    "m_Mode": 3,
+                    "m_Arguments": {
+                      "m_ObjectArgument": {
+                        "m_FileID": 0,
+                        "m_PathID": 0
+                      },
+                      "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                      "m_IntArgument": 7,
+                      "m_FloatArgument": 0.0,
+                      "m_StringArgument": "",
+                      "m_BoolArgument": 0
+                    },
+                    "m_CallState": 2
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "6557691355884040822",
+      "name": "LavaQuestCompetitionScene",
+      "path": "LavaQuestCompetitionScene",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 6557691355884040822
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1105779031626965132
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 575568226831868658
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "components": [
+        {
+          "type": "MonoBehaviour",
+          "script": "LavaQuestCompetitionSceneView",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 6557691355884040822
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -2789728779724851475
+            },
+            "m_Name": "",
+            "levelBackgroundFade": {
+              "m_FileID": 0,
+              "m_PathID": -4465705596567437972
+            },
+            "profilePictureHolder": {
+              "m_FileID": 0,
+              "m_PathID": 1105779031626965132
+            },
+            "stepRolls": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 8382904049892034177
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 8728574526549335891
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -8523146544780372771
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -7538368683965655499
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -8897216683844204762
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 914465984746576239
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 3498311997162542957
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -6023149792249098260
+              }
+            ],
+            "sceneBackground": {
+              "m_FileID": 0,
+              "m_PathID": 575568226831868658
+            },
+            "maxTopPoint": {
+              "m_FileID": 0,
+              "m_PathID": -3206555297845412131
+            },
+            "topPoint": {
+              "m_FileID": 0,
+              "m_PathID": 5019563331641141145
+            },
+            "bottomPoint": {
+              "m_FileID": 0,
+              "m_PathID": 4925360703047809465
+            },
+            "middleRock": {
+              "m_FileID": 0,
+              "m_PathID": -4531177190127736882
+            },
+            "middleRockBottomPart": {
+              "m_FileID": 0,
+              "m_PathID": -8733173599905859452
+            },
+            "rewardChest": {
+              "m_FileID": 0,
+              "m_PathID": 890510863841791822
+            },
+            "distortionAnimations": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -2774209884712123851
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7646256152858132581
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 2473356103940057199
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4490139194117311177
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -1487365773638174410
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7332048498802789043
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3989835955117835196
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4710905693602480301
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3113482102191929638
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -7015573951065636983
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -745945866934468536
+              }
+            ],
+            "backgroundAnimators": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 4785520267651323589
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -839704407837877406
+              }
+            ],
+            "leftLavaFountainParticleHolder": {
+              "m_FileID": 0,
+              "m_PathID": -8570940875432303941
+            },
+            "rightLavaFountainParticleHolder": {
+              "m_FileID": 0,
+              "m_PathID": 21399668198861694
+            },
+            "lavaCaustic": {
+              "m_FileID": 0,
+              "m_PathID": -5521570143171300255
+            },
+            "prizeText": {
+              "m_FileID": 0,
+              "m_PathID": -1639875555324468144
+            },
+            "sortingGroup": {
+              "m_FileID": 0,
+              "m_PathID": -4229005002700953664
+            },
+            "backgroundExtraHolder": {
+              "m_FileID": 0,
+              "m_PathID": -6642754862446092464
+            },
+            "shouldAnimate": 0
+          }
+        },
+        {
+          "type": "SortingGroup",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 6557691355884040822
+            },
+            "m_Enabled": 0,
+            "m_SortingLayerID": 2046106761,
+            "m_SortingLayer": 7,
+            "m_SortingOrder": 11
+          }
+        }
+      ]
+    },
+    {
+      "id": "7338472612806417695",
+      "name": "TopBound",
+      "path": "LavaQuestCompetitionScene/Background/TopBound",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 7338472612806417695
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 3.5299999713897705,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 575568226831868658
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.9459999799728394
+      ],
+      "components": []
+    }
+  ],
+  "illustration_assumptions": {
+    "width_pixels": 1080,
+    "camera_width": 9.3,
+    "ui_scale": 1,
+    "safe_top_inset": 0,
+    "scene_parent_scale": 1,
+    "reference_height": 14.123000383377075
+  },
+  "examples": [
+    {
+      "height": 2560,
+      "camera_height": 22.044444444444444,
+      "available_height": 16.344444444444445,
+      "scene_scale": 1,
+      "min_scale_hit": false
+    },
+    {
+      "height": 2160,
+      "camera_height": 18.6,
+      "available_height": 12.900000000000002,
+      "scene_scale": 0.9134036429810936,
+      "min_scale_hit": false
+    },
+    {
+      "height": 1920,
+      "camera_height": 16.533333333333335,
+      "available_height": 10.833333333333336,
+      "scene_scale": 0.7670702428135799,
+      "min_scale_hit": false
+    }
+  ]
+}

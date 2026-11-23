@@ -1,0 +1,293 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$Init
+void Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialog__Init (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialog_o* __this, Royal_Scenes_Start_Context_Units_RoyalBundle_RoyalEventBundle_o* sceneBundleParameter, Royal_Scenes_Start_Context_Units_RoyalBundle_RoyalEventBundle_o* stageBundleParameter, System_Action_o* onDialogClosedParameter, bool isFromLevelWinParameter, bool isFromLevelEnd, bool isFromStoryLevelWinParameter, const MethodInfo* method);
+0x3867428; next named boundary 0x38678B0
+03867428 sub      sp, sp, #0x70
+0386742C stp      x28, x27, [sp, #0x10]
+03867430 stp      x26, x25, [sp, #0x20]
+03867434 stp      x24, x23, [sp, #0x30]
+03867438 stp      x22, x21, [sp, #0x40]
+0386743C stp      x20, x19, [sp, #0x50]
+03867440 stp      x29, x30, [sp, #0x60]
+03867444 str      w5, [sp, #0xc]
+03867448 adrp     x27, #0x58c8000
+0386744C adrp     x26, #0x54d2000
+03867450 ldrb     w8, [x27, #0x3ae]
+03867454 ldr      x26, [x26, #0x6f8] ; Royal.Player.Context.UserContext_TypeInfo
+03867458 mov      w20, w6
+0386745C mov      w25, w4
+03867460 mov      x22, x3
+03867464 mov      x23, x2
+03867468 mov      x24, x1
+0386746C mov      x19, x0
+03867470 tbnz     w8, #0, #0x3867548
+03867474 adrp     x0, #0x54db000
+03867478 ldr      x0, [x0, #0x4f8] ; System.Action_TypeInfo
+0386747C bl       #0x1043220
+03867480 adrp     x0, #0x5558000
+03867484 ldr      x0, [x0, #0x428] ; Method$Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog.GetRemainingTime()
+03867488 bl       #0x1043220
+0386748C adrp     x0, #0x555c000
+03867490 ldr      x0, [x0, #0x298] ; Method$Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog.OnOrientationChange()
+03867494 bl       #0x1043220
+03867498 adrp     x0, #0x553c000
+0386749C ldr      x0, [x0, #0x890] ; Method$Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog.OnTimeFinished()
+038674A0 bl       #0x1043220
+038674A4 adrp     x0, #0x5505000
+038674A8 ldr      x0, [x0, #0xa98] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<AudioManager>()
+038674AC bl       #0x1043220
+038674B0 adrp     x0, #0x54c4000
+038674B4 ldr      x0, [x0, #0xd80] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<CameraManager>()
+038674B8 bl       #0x1043220
+038674BC adrp     x0, #0x54c0000
+038674C0 ldr      x0, [x0, #0x9c0] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<DialogManager>()
+038674C4 bl       #0x1043220
+038674C8 adrp     x0, #0x5552000
+038674CC ldr      x0, [x0, #0xc68] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<FlowManager>()
+038674D0 bl       #0x1043220
+038674D4 adrp     x0, #0x5516000
+038674D8 ldr      x0, [x0, #0xd08] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<SceneChangeManager>()
+038674DC bl       #0x1043220
+038674E0 adrp     x0, #0x54b8000
+038674E4 ldr      x0, [x0, #0x140] ; Royal.Scenes.Start.Context.ApplicationContext_TypeInfo
+038674E8 bl       #0x1043220
+038674EC adrp     x0, #0x54c0000
+038674F0 ldr      x0, [x0, #0xea0] ; Royal.Infrastructure.Contexts.Units.CameraManager_TypeInfo
+038674F4 bl       #0x1043220
+038674F8 adrp     x0, #0x54d1000
+038674FC ldr      x0, [x0, #0x2e0] ; System.Func<long>_TypeInfo
+03867500 bl       #0x1043220
+03867504 adrp     x0, #0x551e000
+03867508 ldr      x0, [x0, #0xed0] ; Method$Royal.Scenes.Home.Context.HomeContext.Get<AreaManager>()
+0386750C bl       #0x1043220
+03867510 adrp     x0, #0x553b000
+03867514 ldr      x0, [x0, #0x8f8] ; Royal.Scenes.Home.Context.HomeContext_TypeInfo
+03867518 bl       #0x1043220
+0386751C adrp     x0, #0x54c8000
+03867520 ldr      x0, [x0, #0x398] ; Royal.Infrastructure.Contexts.Units.CameraManager.OrientationChange_TypeInfo
+03867524 bl       #0x1043220
+03867528 adrp     x0, #0x54d5000
+0386752C ldr      x0, [x0, #0xae8] ; Method$Royal.Player.Context.UserContext.Get<AncientAdventureManager>()
+03867530 bl       #0x1043220
+03867534 adrp     x0, #0x54d2000
+03867538 ldr      x0, [x0, #0x6f8] ; Royal.Player.Context.UserContext_TypeInfo
+0386753C bl       #0x1043220
+03867540 mov      w8, #1
+03867544 strb     w8, [x27, #0x3ae]
+03867548 ldr      x0, [x26]
+0386754C adrp     x21, #0x54d5000
+03867550 ldr      w8, [x0, #0xe0]
+03867554 ldr      x21, [x21, #0xae8] ; Method$Royal.Player.Context.UserContext.Get<AncientAdventureManager>()
+03867558 cbnz     w8, #0x3867560
+0386755C bl       #0x1043324
+03867560 ldr      x1, [x21]
+03867564 mov      w0, #0x44
+03867568 bl       #0x2a617ac ; Royal.Player.Context.UserContext$$Get<object>
+0386756C mov      x26, x19
+03867570 str      x0, [x26, #0xa8]!
+03867574 mov      x1, x0
+03867578 mov      x0, x26
+0386757C bl       #0x10431cc
+03867580 ldr      x8, [x26]
+03867584 cbz      x8, #0x38678ac
+03867588 adrp     x29, #0x54b8000
+0386758C adrp     x27, #0x54c4000
+03867590 ldr      x29, [x29, #0x140] ; Royal.Scenes.Start.Context.ApplicationContext_TypeInfo
+03867594 ldr      x27, [x27, #0xd80] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<CameraManager>()
+03867598 ldr      x1, [x8, #0x38]
+0386759C adrp     x26, #0x5505000
+038675A0 adrp     x21, #0x5552000
+038675A4 adrp     x28, #0x553b000
+038675A8 ldr      x26, [x26, #0xa98] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<AudioManager>()
+038675AC ldr      x21, [x21, #0xc68] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<FlowManager>()
+038675B0 ldr      x28, [x28, #0x8f8] ; Royal.Scenes.Home.Context.HomeContext_TypeInfo
+038675B4 mov      x0, x19
+038675B8 str      x1, [x0, #0xb0]!
+038675BC bl       #0x10431cc
+038675C0 ldr      x0, [x29]
+038675C4 ldr      w8, [x0, #0xe0]
+038675C8 cbnz     w8, #0x38675d0
+038675CC bl       #0x1043324
+038675D0 ldr      x1, [x27]
+038675D4 adrp     x29, #0x551e000
+038675D8 adrp     x27, #0x54c0000
+038675DC ldr      x29, [x29, #0xed0] ; Method$Royal.Scenes.Home.Context.HomeContext.Get<AreaManager>()
+038675E0 ldr      x27, [x27, #0x9c0] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<DialogManager>()
+038675E4 mov      w0, #1
+038675E8 bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+038675EC mov      x1, x0
+038675F0 mov      x0, x19
+038675F4 str      x1, [x0, #0xc0]!
+038675F8 bl       #0x10431cc
+038675FC ldr      x1, [x26]
+03867600 mov      w0, #0x12
+03867604 bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+03867608 mov      x26, x19
+0386760C str      x0, [x26, #0xc8]!
+03867610 mov      x1, x0
+03867614 mov      x0, x26
+03867618 bl       #0x10431cc
+0386761C ldr      x1, [x21]
+03867620 mov      w0, #0xe
+03867624 bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+03867628 mov      x1, x0
+0386762C mov      x0, x19
+03867630 str      x1, [x0, #0xd0]!
+03867634 bl       #0x10431cc
+03867638 ldr      x0, [x28]
+0386763C ldr      w8, [x0, #0xe0]
+03867640 cbnz     w8, #0x3867648
+03867644 bl       #0x1043324
+03867648 ldr      x1, [x29]
+0386764C mov      w0, wzr
+03867650 bl       #0x270cdcc ; Royal.Scenes.Home.Context.HomeContext$$Get<object>
+03867654 mov      x1, x0
+03867658 mov      x0, x19
+0386765C str      x1, [x0, #0xd8]!
+03867660 bl       #0x10431cc
+03867664 ldr      x1, [x27]
+03867668 mov      w0, #0xf
+0386766C bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+03867670 cbz      x0, #0x38678ac
+03867674 ldr      x1, [x0, #0x48]
+03867678 and      w21, w25, #1
+0386767C adrp     x25, #0x5516000
+03867680 ldr      x25, [x25, #0xd08] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<SceneChangeManager>()
+03867684 mov      x0, x19
+03867688 str      x1, [x0, #0xe0]!
+0386768C and      w27, w20, #1
+03867690 bl       #0x10431cc
+03867694 ldr      x1, [x25]
+03867698 mov      w0, #2
+0386769C bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+038676A0 mov      x25, x19
+038676A4 str      x0, [x25, #0xe8]!
+038676A8 mov      x1, x0
+038676AC mov      x0, x25
+038676B0 bl       #0x10431cc
+038676B4 mov      x0, x19
+038676B8 str      x24, [x0, #0xf0]!
+038676BC mov      x1, x24
+038676C0 bl       #0x10431cc
+038676C4 mov      x24, x19
+038676C8 str      x23, [x24, #0xf8]!
+038676CC mov      x0, x24
+038676D0 mov      x1, x23
+038676D4 bl       #0x10431cc
+038676D8 add      x0, x24, #0x18
+038676DC mov      x1, x22
+038676E0 str      x22, [x24, #0x18]
+038676E4 bl       #0x10431cc
+038676E8 ldur     x0, [x24, #-0xa8]
+038676EC strb     w21, [x24, #0x15]
+038676F0 strb     w27, [x24, #0x16]
+038676F4 cbz      x0, #0x38678ac
+038676F8 adrp     x21, #0x54db000
+038676FC ldp      x3, x4, [x19, #0xf0]
+03867700 ldr      x1, [x19, #0xa8]
+03867704 ldr      x21, [x21, #0x4f8] ; System.Action_TypeInfo
+03867708 ldr      w8, [sp, #0xc]
+0386770C and      w6, w20, #1
+03867710 mov      x2, x19
+03867714 mov      x7, xzr
+03867718 and      w5, w8, #1
+0386771C bl       #0x35eec10 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$Init
+03867720 ldr      x0, [x21]
+03867724 ldr      x20, [x19, #0x58]
+03867728 bl       #0x1043338
+0386772C cbz      x0, #0x38678ac
+03867730 adrp     x8, #0x553c000
+03867734 ldr      x8, [x8, #0x890] ; Method$Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog.OnTimeFinished()
+03867738 adrp     x22, #0x54d1000
+0386773C mov      x1, x19
+03867740 mov      x3, xzr
+03867744 ldr      x2, [x8]
+03867748 ldr      x22, [x22, #0x2e0] ; System.Func<long>_TypeInfo
+0386774C mov      x21, x0
+03867750 bl       #0x20cebdc ; System.Action$$.ctor
+03867754 ldr      x0, [x22]
+03867758 bl       #0x1043338
+0386775C cbz      x0, #0x38678ac
+03867760 adrp     x8, #0x5558000
+03867764 ldr      x8, [x8, #0x428] ; Method$Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog.GetRemainingTime()
+03867768 mov      x1, x19
+0386776C mov      x3, xzr
+03867770 mov      x22, x0
+03867774 ldr      x2, [x8]
+03867778 bl       #0x2497f9c ; System.Func<long>$$.ctor
+0386777C cbz      x20, #0x38678ac
+03867780 mov      x0, x20
+03867784 mov      x1, x21
+03867788 mov      x2, x22
+0386778C mov      w3, wzr
+03867790 mov      w4, wzr
+03867794 mov      w5, wzr
+03867798 mov      x6, xzr
+0386779C bl       #0x2700054 ; Royal.Infrastructure.Utils.RemainingText.RemainingTextPositioner$$Init
+038677A0 mov      x0, x19
+038677A4 bl       #0x38678b0 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$UpdateLocalization
+038677A8 ldr      x0, [x19, #0xb0]
+038677AC cbz      x0, #0x38678ac
+038677B0 bl       #0x3864c5c ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureCommonModel$$SyncDialogAnimationData
+038677B4 ldr      x0, [x25]
+038677B8 cbz      x0, #0x38678ac
+038677BC mov      x1, xzr
+038677C0 bl       #0x3a1fda8 ; Royal.Scenes.Start.Context.Units.Scene.SceneChangeManager$$get_IsGameScene
+038677C4 tbz      w0, #0, #0x38677d8
+038677C8 mov      w1, #1
+038677CC mov      w0, wzr
+038677D0 mov      x2, xzr
+038677D4 bl       #0x3068848 ; Royal.Scenes.Home.Ui.Sections.Home.Landscape.LandscapeFlagsView$$TryShow
+038677D8 ldrb     w8, [x19, #0x10e]
+038677DC cbz      w8, #0x38677f0
+038677E0 ldr      x0, [x26]
+038677E4 cbz      x0, #0x38678ac
+038677E8 mov      x1, xzr
+038677EC bl       #0x3f19d10 ; Royal.Scenes.Start.Context.Units.Audio.AudioManager$$StopHomeMusic
+038677F0 ldr      x0, [x25]
+038677F4 cbz      x0, #0x38678ac
+038677F8 mov      x1, xzr
+038677FC bl       #0x3a1fda8 ; Royal.Scenes.Start.Context.Units.Scene.SceneChangeManager$$get_IsGameScene
+03867800 and      w1, w0, #1
+03867804 mov      x0, x19
+03867808 bl       #0x38679dc ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$TryArrangeLandscapeFlags
+0386780C ldr      x0, [x19, #0x40]
+03867810 cbz      x0, #0x38678ac
+03867814 adrp     x20, #0x54c8000
+03867818 ldr      x20, [x20, #0x398] ; Royal.Infrastructure.Contexts.Units.CameraManager.OrientationChange_TypeInfo
+0386781C mov      x1, xzr
+03867820 bl       #0x3f54660 ; UnityEngine.Transform$$get_localPosition
+03867824 str      s0, [x19, #0x100]
+03867828 str      s1, [x19, #0x104]
+0386782C str      s2, [x19, #0x108]
+03867830 ldr      x0, [x20]
+03867834 bl       #0x1043338
+03867838 cbz      x0, #0x38678ac
+0386783C adrp     x8, #0x555c000
+03867840 ldr      x8, [x8, #0x298] ; Method$Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog.OnOrientationChange()
+03867844 adrp     x21, #0x54c0000
+03867848 mov      x1, x19
+0386784C mov      x3, xzr
+03867850 ldr      x2, [x8]
+03867854 ldr      x21, [x21, #0xea0] ; Royal.Infrastructure.Contexts.Units.CameraManager_TypeInfo
+03867858 mov      x20, x0
+0386785C bl       #0x1e351c8 ; Royal.Infrastructure.Contexts.Units.CameraManager.OrientationChange$$.ctor
+03867860 ldr      x0, [x21]
+03867864 ldr      w8, [x0, #0xe0]
+03867868 cbnz     w8, #0x3867870
+0386786C bl       #0x1043324
+03867870 mov      x0, x20
+03867874 mov      x1, xzr
+03867878 bl       #0x3388354 ; Royal.Infrastructure.Contexts.Units.CameraManager$$add_OnOrientationChange
+0386787C mov      x0, xzr
+03867880 bl       #0x33882e8 ; Royal.Infrastructure.Contexts.Units.CameraManager$$get_IsLandscape
+03867884 and      w1, w0, #1
+03867888 mov      x0, x19
+0386788C ldp      x29, x30, [sp, #0x60]
+03867890 ldp      x20, x19, [sp, #0x50]
+03867894 ldp      x22, x21, [sp, #0x40]
+03867898 ldp      x24, x23, [sp, #0x30]
+0386789C ldp      x26, x25, [sp, #0x20]
+038678A0 ldp      x28, x27, [sp, #0x10]
+038678A4 add      sp, sp, #0x70
+038678A8 b        #0x3867b60 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnOrientationChange
+038678AC bl       #0x1043348

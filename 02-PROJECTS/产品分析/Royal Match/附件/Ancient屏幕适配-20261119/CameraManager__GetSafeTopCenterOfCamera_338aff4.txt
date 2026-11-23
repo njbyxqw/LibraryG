@@ -1,0 +1,51 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeTopCenterOfCamera
+UnityEngine_Vector3_o Royal_Infrastructure_Contexts_Units_CameraManager__GetSafeTopCenterOfCamera (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x338AFF4; next named boundary 0x338B0B4
+0338AFF4 str      d14, [sp, #-0x50]!
+0338AFF8 stp      d13, d12, [sp, #0x10]
+0338AFFC stp      d11, d10, [sp, #0x20]
+0338B000 stp      d9, d8, [sp, #0x30]
+0338B004 stp      x19, x30, [sp, #0x40]
+0338B008 mov      x19, x0
+0338B00C bl       #0x338b0b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeCenterWorldPoint
+0338B010 add      x0, x19, #0x4c
+0338B014 mov      x1, xzr
+0338B018 mov      v8.16b, v0.16b
+0338B01C mov      v10.16b, v1.16b
+0338B020 mov      v9.16b, v2.16b
+0338B024 bl       #0x3722a5c ; UnityEngine.Rect$$get_height
+0338B028 ldr      x0, [x19, #0x18]
+0338B02C cbz      x0, #0x338b0b0
+0338B030 mov      x1, xzr
+0338B034 mov      v11.16b, v0.16b
+0338B038 bl       #0x3f48a50 ; UnityEngine.Camera$$get_orthographicSize
+0338B03C mov      x0, xzr
+0338B040 mov      v12.16b, v0.16b
+0338B044 bl       #0x3f461a4 ; UnityEngine.Screen$$get_height
+0338B048 ldr      s13, [x19, #0x10]
+0338B04C fmul     s0, s11, s12
+0338B050 scvtf    s1, w0
+0338B054 mov      x0, xzr
+0338B058 fdiv     s11, s0, s1
+0338B05C bl       #0x2709970 ; Royal.Infrastructure.Utils.Native.DeviceHelper$$GetLegacyNotchHeight
+0338B060 ldr      s12, [x19, #0x24]
+0338B064 scvtf    s14, w0
+0338B068 mov      x0, xzr
+0338B06C bl       #0x3f4617c ; UnityEngine.Screen$$get_width
+0338B070 scvtf    s0, w0
+0338B074 ldr      s1, [x19, #0x14]
+0338B078 fdiv     s0, s12, s0
+0338B07C fmul     s0, s0, s14
+0338B080 fadd     s2, s13, s11
+0338B084 fsub     s0, s2, s0
+0338B088 fadd     s0, s1, s0
+0338B08C fadd     s1, s10, s0
+0338B090 mov      v0.16b, v8.16b
+0338B094 mov      v2.16b, v9.16b
+0338B098 ldp      x19, x30, [sp, #0x40]
+0338B09C ldp      d9, d8, [sp, #0x30]
+0338B0A0 ldp      d11, d10, [sp, #0x20]
+0338B0A4 ldp      d13, d12, [sp, #0x10]
+0338B0A8 ldr      d14, [sp], #0x50
+0338B0AC ret      
+0338B0B0 bl       #0x1043348

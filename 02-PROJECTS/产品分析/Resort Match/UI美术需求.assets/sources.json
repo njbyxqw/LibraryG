@@ -1,0 +1,19 @@
+{
+  "version": "1.18.0/1084",
+  "date": "2026-11-18",
+  "sources": [
+    {
+      "file": "六页相册参考.webp",
+      "source": "06-PRODUCT-ASSETS/Resort Match/1.18.0/Album/captions-six-pages.jpg",
+      "type": "browser reconstruction screenshot, not game capture"
+    },
+    {
+      "file": "组件素材参考.webp",
+      "source": [
+        "06-PRODUCT-ASSETS/Resort Match/1.18.0/StoryUI",
+        "06-PRODUCT-ASSETS/Resort Match/1.18.0/Album/SceneUI"
+      ],
+      "type": "contact sheet of selected exported sprites; sizes in report are originals"
+    }
+  ]
+}

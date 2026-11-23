@@ -1,0 +1,69 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$AlignSceneBackgroundToBottom
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView__AlignSceneBackgroundToBottom (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView_o* __this, const MethodInfo* method);
+0x382DD3C; next named boundary 0x382DE44
+0382DD3C stp      d11, d10, [sp, #-0x40]!
+0382DD40 stp      d9, d8, [sp, #0x10]
+0382DD44 stp      x21, x20, [sp, #0x20]
+0382DD48 stp      x19, x30, [sp, #0x30]
+0382DD4C mov      x20, x0
+0382DD50 ldr      x0, [x0, #0x118]
+0382DD54 cbz      x0, #0x382de40
+0382DD58 ldr      x19, [x20, #0x38]
+0382DD5C mov      x1, xzr
+0382DD60 bl       #0x338ae8c ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetBottomCenterOfCamera
+0382DD64 adrp     x21, #0x58b6000
+0382DD68 ldrb     w8, [x21, #0x750]
+0382DD6C mov      v8.16b, v1.16b
+0382DD70 cbnz     w8, #0x382dd88
+0382DD74 adrp     x0, #0x554e000
+0382DD78 ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0382DD7C bl       #0x1043220
+0382DD80 mov      w8, #1
+0382DD84 strb     w8, [x21, #0x750]
+0382DD88 cbz      x19, #0x382de40
+0382DD8C adrp     x21, #0x554e000
+0382DD90 ldr      x21, [x21, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0382DD94 mov      x0, x19
+0382DD98 mov      x1, xzr
+0382DD9C ldr      x8, [x21]
+0382DDA0 ldr      x8, [x8, #0xb8]
+0382DDA4 ldp      s0, s1, [x8, #0xc]
+0382DDA8 ldr      s2, [x8, #0x14]
+0382DDAC bl       #0x3f54c58 ; UnityEngine.Transform$$set_localScale
+0382DDB0 ldr      x0, [x20, #0x50]
+0382DDB4 cbz      x0, #0x382de40
+0382DDB8 mov      x1, xzr
+0382DDBC bl       #0x3f54528 ; UnityEngine.Transform$$get_position
+0382DDC0 mov      x0, x19
+0382DDC4 mov      x1, xzr
+0382DDC8 fsub     s11, s8, s1
+0382DDCC bl       #0x3f54528 ; UnityEngine.Transform$$get_position
+0382DDD0 adrp     x20, #0x58b6000
+0382DDD4 ldrb     w8, [x20, #0x754]
+0382DDD8 mov      v8.16b, v0.16b
+0382DDDC mov      v9.16b, v1.16b
+0382DDE0 mov      v10.16b, v2.16b
+0382DDE4 cbnz     w8, #0x382ddfc
+0382DDE8 adrp     x0, #0x554e000
+0382DDEC ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0382DDF0 bl       #0x1043220
+0382DDF4 mov      w8, #1
+0382DDF8 strb     w8, [x20, #0x754]
+0382DDFC ldr      x8, [x21]
+0382DE00 mov      x0, x19
+0382DE04 ldp      x19, x30, [sp, #0x30]
+0382DE08 ldp      x21, x20, [sp, #0x20]
+0382DE0C ldr      x8, [x8, #0xb8]
+0382DE10 mov      x1, xzr
+0382DE14 ldp      s0, s1, [x8, #0x18]
+0382DE18 ldr      s2, [x8, #0x20]
+0382DE1C fmul     s0, s11, s0
+0382DE20 fmul     s1, s11, s1
+0382DE24 fadd     s0, s8, s0
+0382DE28 fadd     s1, s9, s1
+0382DE2C ldp      d9, d8, [sp, #0x10]
+0382DE30 fmul     s2, s11, s2
+0382DE34 fadd     s2, s10, s2
+0382DE38 ldp      d11, d10, [sp], #0x40
+0382DE3C b        #0x3f545c8 ; UnityEngine.Transform$$set_position
+0382DE40 bl       #0x1043348

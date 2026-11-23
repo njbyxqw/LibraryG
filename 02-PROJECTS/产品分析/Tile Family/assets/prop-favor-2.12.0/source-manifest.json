@@ -1,0 +1,89 @@
+{
+  "version": "2.12.0 / 21200",
+  "exports": [
+    {
+      "name": "icon_shuffle_big",
+      "bundle": "01-Decoded\\UnityDataAssetPack\\assets\\aa\\Android\\defaultlocalgroup_assets_all.bundle",
+      "bundle_sha256": "826944abd8e85579ff71a2f858291cc644c7eca95ca955617cf131e95a5384db",
+      "serialized_file": "CAB-a7fceb40ccaeb3a9950db088a7c72118",
+      "path_id": -6676457419342429591,
+      "output": "icon_shuffle_big.png",
+      "size": [
+        301,
+        328
+      ],
+      "sha256": "647e626782ed2a2ec75fe6a37a7a8df6711033793b87db4eec5f02badff62e12",
+      "boundary": "Original extracted Sprite; icon/name candidate, not a verified Prop Favor runtime screenshot or exclusive prefab binding."
+    },
+    {
+      "name": "crane_prop_shop",
+      "bundle": "01-Decoded\\UnityDataAssetPack\\assets\\aa\\Android\\defaultlocalgroup_assets_all.bundle",
+      "bundle_sha256": "826944abd8e85579ff71a2f858291cc644c7eca95ca955617cf131e95a5384db",
+      "serialized_file": "CAB-a7fceb40ccaeb3a9950db088a7c72118",
+      "path_id": -264649413233705162,
+      "output": "crane_prop_shop.png",
+      "size": [
+        127,
+        132
+      ],
+      "sha256": "fb4977f32e5361dd3ac5728e8afa9bbd9f648a20b5f715c424df9b108200c7b3",
+      "boundary": "Original extracted Sprite; icon/name candidate, not a verified Prop Favor runtime screenshot or exclusive prefab binding."
+    },
+    {
+      "name": "extraspace_prop_shop",
+      "bundle": "01-Decoded\\UnityDataAssetPack\\assets\\aa\\Android\\defaultlocalgroup_assets_all.bundle",
+      "bundle_sha256": "826944abd8e85579ff71a2f858291cc644c7eca95ca955617cf131e95a5384db",
+      "serialized_file": "CAB-a7fceb40ccaeb3a9950db088a7c72118",
+      "path_id": 1520142091945460079,
+      "output": "extraspace_prop_shop.png",
+      "size": [
+        130,
+        140
+      ],
+      "sha256": "b85dca901931babc29539b1ecbbaa5f210da0b5ea8cec39b9c1d149e3418ea2a",
+      "boundary": "Original extracted Sprite; icon/name candidate, not a verified Prop Favor runtime screenshot or exclusive prefab binding."
+    },
+    {
+      "name": "magnet_prop_shop",
+      "bundle": "01-Decoded\\UnityDataAssetPack\\assets\\aa\\Android\\defaultlocalgroup_assets_all.bundle",
+      "bundle_sha256": "826944abd8e85579ff71a2f858291cc644c7eca95ca955617cf131e95a5384db",
+      "serialized_file": "CAB-a7fceb40ccaeb3a9950db088a7c72118",
+      "path_id": 5573901784943408087,
+      "output": "magnet_prop_shop.png",
+      "size": [
+        124,
+        132
+      ],
+      "sha256": "62d92c8a0bb8706f1643310f5a60afbf04ed64524a9a12cc12b7b3ba91b9d963",
+      "boundary": "Original extracted Sprite; icon/name candidate, not a verified Prop Favor runtime screenshot or exclusive prefab binding."
+    },
+    {
+      "name": "ui_banner_propbg_blue01",
+      "bundle": "01-Decoded\\UnityDataAssetPack\\assets\\aa\\Android\\defaultlocalgroup_assets_all.bundle",
+      "bundle_sha256": "826944abd8e85579ff71a2f858291cc644c7eca95ca955617cf131e95a5384db",
+      "serialized_file": "CAB-a7fceb40ccaeb3a9950db088a7c72118",
+      "path_id": 7912350776457304646,
+      "output": "ui_banner_propbg_blue01.png",
+      "size": [
+        98,
+        268
+      ],
+      "sha256": "e183bcb064cbcc66b6443e2e948c18fb4068bb144bddcb571e4798c4bbdf6068",
+      "boundary": "Original extracted Sprite; icon/name candidate, not a verified Prop Favor runtime screenshot or exclusive prefab binding."
+    },
+    {
+      "name": "undo_prop_shop",
+      "bundle": "01-Decoded\\UnityDataAssetPack\\assets\\aa\\Android\\defaultlocalgroup_assets_all.bundle",
+      "bundle_sha256": "826944abd8e85579ff71a2f858291cc644c7eca95ca955617cf131e95a5384db",
+      "serialized_file": "CAB-a7fceb40ccaeb3a9950db088a7c72118",
+      "path_id": 8720530774525250842,
+      "output": "undo_prop_shop.png",
+      "size": [
+        127,
+        135
+      ],
+      "sha256": "60882bfcbc498519c691b5331b428553c328de78cccb79b634639de2d19b36b7",
+      "boundary": "Original extracted Sprite; icon/name candidate, not a verified Prop Favor runtime screenshot or exclusive prefab binding."
+    }
+  ]
+}

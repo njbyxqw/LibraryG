@@ -1,0 +1,34 @@
+{
+  "sampled_at": "2026-11-23T11:44:28+08:00",
+  "source_kind": "read-only device cache",
+  "instance": {
+    "info_source": "rpc",
+    "name": "产品分析",
+    "serial": "127.0.0.1:16416",
+    "android_user": 0,
+    "index": 1
+  },
+  "app": {
+    "versionName": "2.7.3",
+    "versionCode": 203,
+    "package": "com.olleyo.piggy.king.free"
+  },
+  "source_path": "/storage/emulated/0/Android/data/com.olleyo.piggy.king.free/files/bundle/ui_season_v6",
+  "bytes": 3768252,
+  "sha256": "5deb95262a12c80494cb29aac828f269646035fd311cc8dfb870d2316d249c88",
+  "compare_info": "ui_season_v6 3768252 633ae99a0bfc3efc8698be599c0399a",
+  "parser": "UnityPy 1.25.4 / Python 3.12.14",
+  "end_prefab": "assets/m3res/bundleres/ui/ui_season/activityseasonendpanel_m2.prefab",
+  "end_gameobject_id": "6706670065830833026",
+  "limitations": [
+    "Cached bundle presence does not prove current runtime selection or exposure.",
+    "No scene navigation, save modification, clock modification or purchase was performed.",
+    "Prefab active and text values are serialized defaults, not runtime screenshot."
+  ],
+  "outputs": [
+    "prefab-trees.json",
+    "end-panel-node-summary.json",
+    "resource-localization-subset.json",
+    "inspect_resources.py"
+  ]
+}

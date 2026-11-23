@@ -1,0 +1,36 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$OnOrientationChange
+void Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureSceneController__OnOrientationChange (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureSceneController_o* __this, float rootScale, const MethodInfo* method);
+0x35F1A88; next named boundary 0x35F1B0C
+035F1A88 stp      d9, d8, [sp, #-0x20]!
+035F1A8C stp      x19, x30, [sp, #0x10]
+035F1A90 mov      x19, x0
+035F1A94 ldr      x0, [x0, #0xc0]
+035F1A98 cbz      x0, #0x35f1b08
+035F1A9C mov      x1, xzr
+035F1AA0 mov      v8.16b, v0.16b
+035F1AA4 bl       #0x338ad68 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitWidthOrLandscapeFlagsGap
+035F1AA8 mov      x0, x19
+035F1AAC mov      x1, xzr
+035F1AB0 mov      v9.16b, v0.16b
+035F1AB4 bl       #0x3f4d5dc ; UnityEngine.Component$$get_transform
+035F1AB8 cbz      x0, #0x35f1b08
+035F1ABC mov      x1, xzr
+035F1AC0 bl       #0x3f55c14 ; UnityEngine.Transform$$get_lossyScale
+035F1AC4 ldr      x8, [x19, #0xc0]
+035F1AC8 cbz      x8, #0x35f1b08
+035F1ACC ldr      x0, [x19, #0x68]
+035F1AD0 cbz      x0, #0x35f1b08
+035F1AD4 ldr      s2, [x8, #0x20]
+035F1AD8 fdiv     s0, s9, s0
+035F1ADC mov      x1, xzr
+035F1AE0 fdiv     s1, s2, s1
+035F1AE4 bl       #0x2dbe544 ; UnityEngine.BoxCollider2D$$set_size
+035F1AE8 ldr      x0, [x19, #0xa0]
+035F1AEC cbz      x0, #0x35f1b08
+035F1AF0 ldp      x19, x30, [sp, #0x10]
+035F1AF4 mov      v0.16b, v9.16b
+035F1AF8 mov      v1.16b, v8.16b
+035F1AFC mov      x1, xzr
+035F1B00 ldp      d9, d8, [sp], #0x20
+035F1B04 b        #0x38d7778 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$UpdateWaterSpritesWidth
+035F1B08 bl       #0x1043348

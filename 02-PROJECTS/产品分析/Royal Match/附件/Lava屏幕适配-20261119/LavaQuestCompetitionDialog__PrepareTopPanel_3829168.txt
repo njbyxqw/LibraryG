@@ -1,0 +1,75 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$PrepareTopPanel
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog__PrepareTopPanel (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x3829168; next named boundary 0x3829288
+03829168 stp      x19, x30, [sp, #-0x10]!
+0382916C mov      x19, x0
+03829170 bl       #0x382a0d0 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$SetInfoText
+03829174 ldr      w8, [x19, #0x118]
+03829178 cmp      w8, #3
+0382917C b.ne     #0x38291ac
+03829180 ldr      x0, [x19, #0x50]
+03829184 cbz      x0, #0x3829284
+03829188 mov      w1, wzr
+0382918C mov      x2, xzr
+03829190 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+03829194 ldr      x0, [x19, #0x58]
+03829198 cbz      x0, #0x3829284
+0382919C mov      w1, wzr
+038291A0 mov      x2, xzr
+038291A4 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+038291A8 ldr      w8, [x19, #0x118]
+038291AC cmp      w8, #5
+038291B0 b.ne     #0x38291dc
+038291B4 ldr      x0, [x19, #0x50]
+038291B8 cbz      x0, #0x3829284
+038291BC mov      w1, wzr
+038291C0 mov      x2, xzr
+038291C4 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+038291C8 ldr      x0, [x19, #0x88]
+038291CC cbz      x0, #0x3829284
+038291D0 mov      w1, wzr
+038291D4 mov      x2, xzr
+038291D8 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+038291DC ldr      w8, [x19, #0x158]
+038291E0 cbz      w8, #0x38291f8
+038291E4 ldr      x0, [x19, #0x50]
+038291E8 cbz      x0, #0x3829284
+038291EC mov      w1, wzr
+038291F0 mov      x2, xzr
+038291F4 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+038291F8 ldr      w8, [x19, #0x118]
+038291FC cmp      w8, #4
+03829200 b.hi     #0x3829250
+03829204 adrp     x9, #0x418b000
+03829208 add      x9, x9, #0xd38
+0382920C adr      x10, #0x382921c
+03829210 ldrb     w11, [x9, x8]
+03829214 add      x10, x10, x11, lsl #2
+03829218 br       x10
+0382921C ldr      x8, [x19, #0x110]
+03829220 cbz      x8, #0x3829284
+03829224 ldr      w8, [x8, #0x10]
+03829228 mov      x0, x19
+0382922C sub      w1, w8, #1
+03829230 bl       #0x382a310 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$SetLevelsText
+03829234 ldr      x8, [x19, #0x110]
+03829238 cbz      x8, #0x3829284
+0382923C ldr      w1, [x8, #0x14]
+03829240 b        #0x3829274
+03829244 mov      x0, x19
+03829248 ldp      x19, x30, [sp], #0x10
+0382924C b        #0x382a4c8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<PrepareTopPanel>g__PrepareFailState|58_0
+03829250 ldr      x8, [x19, #0x110]
+03829254 cbz      x8, #0x3829284
+03829258 ldr      w8, [x8, #0x18]
+0382925C mov      x0, x19
+03829260 sub      w1, w8, #1
+03829264 bl       #0x382a310 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$SetLevelsText
+03829268 ldr      x8, [x19, #0x110]
+0382926C cbz      x8, #0x3829284
+03829270 ldr      w1, [x8, #0x1c]
+03829274 mov      x0, x19
+03829278 mov      w2, wzr
+0382927C ldp      x19, x30, [sp], #0x10
+03829280 b        #0x382a3b8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$SetPlayersText
+03829284 bl       #0x1043348

@@ -1,0 +1,790 @@
+{
+  "binary_sha256": "ea4eaf596b64ff255cc042d52d32e44078ed773d70be6c3368db9459a12b3a22",
+  "script_json_sha256": "e522e23f32ec092b1d6f7102d75fcf97ac0f53bdd9efa72b57dbada9192bebe7",
+  "audit_script_sha256": "8ff97dda7c7076cdf9ed91e5a20bb1de0462eb3321efdba4f7d7b5d13a56c164",
+  "tools": {
+    "capstone": "5.0.9",
+    "pyelftools": "0.33"
+  },
+  "methods": [
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.DialogManager$$SetGame",
+      "address": "0x2ab32b4",
+      "file": "DialogManager__SetGame_2ab32b4.txt",
+      "sha256": "67860b771ed01d03922192c5108c56b4c9392276eed10796c7c9b97be2e7fa8d"
+    },
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.DialogManager$$SetHome",
+      "address": "0x2ab3478",
+      "file": "DialogManager__SetHome_2ab3478.txt",
+      "sha256": "98c7214a3dd6db7c822b97ee9aa2bcbde01fbf60e9c9773b10eaf085c488ff6a"
+    },
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.DialogManager$$ShowDialog",
+      "address": "0x2ab3784",
+      "file": "DialogManager__ShowDialog_2ab3784.txt",
+      "sha256": "f7ae345019b6d3e2421127b31c7c8c133df0fca58e237e81d54a65114b92cc59"
+    },
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.UiDialog$$Show",
+      "address": "0x2ab52d8",
+      "file": "UiDialog__Show_2ab52d8.txt",
+      "sha256": "5b6059431f3feacfd8601c063313fec587a685e575be281146390fdb245f5343"
+    },
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.UiDialog$$UpdateParent",
+      "address": "0x2ab5420",
+      "file": "UiDialog__UpdateParent_2ab5420.txt",
+      "sha256": "d5ff8888c1afe0b1bf985ff0410c8579915126ad7ca4ff3a593b289519565bef"
+    },
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.UiDialog$$Reset",
+      "address": "0x2ab5d18",
+      "file": "UiDialog__Reset_2ab5d18.txt",
+      "sha256": "f67ecc20a486b148a357209349e5e25210b37d69ce0935f2f8e75c49a97ad72d"
+    },
+    {
+      "name": "Royal.Infrastructure.UiComponents.Dialog.UiDialog$$GetConfig",
+      "address": "0x2ab5dfc",
+      "file": "UiDialog__GetConfig_2ab5dfc.txt",
+      "sha256": "79978dd1cb2ccea08f03a76bd89afa435feca0c2a1ca073a2799d6dcdc7c3a6d"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$get_IsLandscape",
+      "address": "0x33882e8",
+      "file": "CameraManager__get_IsLandscape_33882e8.txt",
+      "sha256": "1c26b3e0264f8deff6b29b881a7646d8bc103ee9ba3bb1a4937d35d31c6601c2"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetIsLandscape",
+      "address": "0x3388344",
+      "file": "CameraManager__GetIsLandscape_3388344.txt",
+      "sha256": "bf2134b8b705c1b840f4e49ad38eac9596f5132da37bb2e294e2a8928f012078"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceSupportLandscape",
+      "address": "0x33883b8",
+      "file": "CameraManager__IsDeviceSupportLandscape_33883b8.txt",
+      "sha256": "4884f49520b736da428eff65b00a0c4b64973c5983eebf9ee788354158d127a7"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$DisableOrientation",
+      "address": "0x3388424",
+      "file": "CameraManager__DisableOrientation_3388424.txt",
+      "sha256": "62fe8ca0853d5136deab79ac82923800400e696e7fd8b150856195a4aa858ccf"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetOrientationActive",
+      "address": "0x3388480",
+      "file": "CameraManager__SetOrientationActive_3388480.txt",
+      "sha256": "4fb5b908c6436a1f30d6c335cb05d94a61d1e4cb3ace3c3ebbabf34e37af1b1b"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$EnableOrientation",
+      "address": "0x338850c",
+      "file": "CameraManager__EnableOrientation_338850c.txt",
+      "sha256": "9556422a96ba28d81266b1b66671de9b61d106cc6501f3f67b850967b0659dff"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$get_IsOrientationEnabled",
+      "address": "0x33887d4",
+      "file": "CameraManager__get_IsOrientationEnabled_33887d4.txt",
+      "sha256": "bd5cbcdd83ec25513185d3b595b0e0a7cbf86e2827103bf35d5723dece80973c"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$OnAppResumed",
+      "address": "0x33889fc",
+      "file": "CameraManager__OnAppResumed_33889fc.txt",
+      "sha256": "b5b918e4e47428c93ddef42ef5cd23f3f9a1fc5a564fe9ffecada690b1735850"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetDeviceToAutoRotation",
+      "address": "0x3388a00",
+      "file": "CameraManager__SetDeviceToAutoRotation_3388a00.txt",
+      "sha256": "2064bd2ae024301f5287ab6e81c6f402f57af26fa41fb20a4c1ef942e739cce4"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$EnableOrientation",
+      "address": "0x3388df0",
+      "file": "CameraManager__EnableOrientation_3388df0.txt",
+      "sha256": "e470d21035b61c041a2c3bdffe99969e15ab8cef585a4c283fdbc8a430e32884"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetReliableScreenOrientation",
+      "address": "0x3388e80",
+      "file": "CameraManager__GetReliableScreenOrientation_3388e80.txt",
+      "sha256": "bcd57dcc67b728999ae3995c6667b5299ff4ab37efacfa50e4eafd290218778c"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$InitOrientation",
+      "address": "0x338920c",
+      "file": "CameraManager__InitOrientation_338920c.txt",
+      "sha256": "4d7f2f02290efa9e460dbef560a703553e4bf16f8dfab2e0be4b87d2e78c7cdd"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$ManualUpdate",
+      "address": "0x33894f0",
+      "file": "CameraManager__ManualUpdate_33894f0.txt",
+      "sha256": "b356458a1279e669b5c3e674932512b850185b498e56e372c5f588e79c7918aa"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$ArrangeOrientation",
+      "address": "0x3389548",
+      "file": "CameraManager__ArrangeOrientation_3389548.txt",
+      "sha256": "6c796068aba338bcdf0942b86732b463f1dd7132559d2a2a06d5c932cfb3a70c"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters",
+      "address": "0x3389b6c",
+      "file": "CameraManager__UpdateSizeParameters_3389b6c.txt",
+      "sha256": "0497c7f3c84a5553feb198a464aadd5dbe179abc45aa8879d74d19c4a1bc9b7b"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetSceneCamera",
+      "address": "0x338a29c",
+      "file": "CameraManager__SetSceneCamera_338a29c.txt",
+      "sha256": "4d3eb8eb5a1b3ccade2b83cb65966c5432f7e7258bfdf2607a5c6a0b4775e8be"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetSafeAreaOffset",
+      "address": "0x338a2f0",
+      "file": "CameraManager__SetSafeAreaOffset_338a2f0.txt",
+      "sha256": "f3f3cd5f0d1b0699f4531a96fc811b0bd61815144b1551e81f2e165a41b19333"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$ResetSizeForScaledGame",
+      "address": "0x338abfc",
+      "file": "CameraManager__ResetSizeForScaledGame_338abfc.txt",
+      "sha256": "73bea92406bd53c0928b1b3fef8caf754cbc70f3414f33e9115a19fd876261a2"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetHeight",
+      "address": "0x338ad30",
+      "file": "CameraManager__GetHeight_338ad30.txt",
+      "sha256": "dc504addb56fd1958ca611191ade58ae7eee1a4634939d016c229a3880fc6d8a"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetWidth",
+      "address": "0x338ad38",
+      "file": "CameraManager__GetWidth_338ad38.txt",
+      "sha256": "04100963b955a9deff05ecdb4d0c4356c9223e1976d8dda4ca30444990821cf2"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetBottomCenterOfCamera",
+      "address": "0x338ae8c",
+      "file": "CameraManager__GetBottomCenterOfCamera_338ae8c.txt",
+      "sha256": "b352133c9e0fabe850c2bb21aea917cbce0e7db92d41d88deb8133982ba1d286"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeTopCenterOfCamera",
+      "address": "0x338aff4",
+      "file": "CameraManager__GetSafeTopCenterOfCamera_338aff4.txt",
+      "sha256": "40e8e62fee5184f77d152c2c7e060661ae5ce564c3cb6f0aa235a76a3d5f6085"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeBottomCenterOfCamera",
+      "address": "0x338b164",
+      "file": "CameraManager__GetSafeBottomCenterOfCamera_338b164.txt",
+      "sha256": "1312e26124d70575e717cd0a7425a2b09da22514674985a44e13b27d39330785"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$CalculateReliableSafeArea",
+      "address": "0x338b1ec",
+      "file": "CameraManager__CalculateReliableSafeArea_338b1ec.txt",
+      "sha256": "06676db41e774a0153bfc7de5f0ac62fb68d8006865a20b83184185daff3fea0"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$get_CanCloseDialog",
+      "address": "0x35eeb60",
+      "file": "AncientAdventureDialogFlowController__get_CanCloseDialog_35eeb60.txt",
+      "sha256": "800ddd0c312b6db151b4a19100758534c0cdce6fb6611e5a2110827c8634b786"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$get_ShouldPreventCloseForLoadingSceneCardFlipAnimationBug",
+      "address": "0x35eeb88",
+      "file": "AncientAdventureDialogFlowController__get_ShouldPreventCloseForLoadingSceneCardFlipAnimationBug_35eeb88.txt",
+      "sha256": "de04af6efe1f3763375631f2efc05cf40e68cee6add9d5048ab28fb2a1948cf2"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$Init",
+      "address": "0x35eec10",
+      "file": "AncientAdventureDialogFlowController__Init_35eec10.txt",
+      "sha256": "70068fdfab44965b876ba3026a95941d670d52bff6b1fadf93f675eeb7665735"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$Init",
+      "address": "0x35ef104",
+      "file": "AncientAdventureSceneController__Init_35ef104.txt",
+      "sha256": "3826938d30f5544bd2eea2233165b50c47bee8d43bb986af00827306edd56c11"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$SetCloseButton",
+      "address": "0x35ef30c",
+      "file": "AncientAdventureDialogFlowController__SetCloseButton_35ef30c.txt",
+      "sha256": "f280b1a5f78ee96ee6f57c08a2a29f058f22d09a8dd2bacd27e70147859fa16e"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$SetInfoButton",
+      "address": "0x35ef32c",
+      "file": "AncientAdventureDialogFlowController__SetInfoButton_35ef32c.txt",
+      "sha256": "a8327396661c6421af48c828972147be9226ad366a57bcdf0fe4dfef4ba3d4e3"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$EnableAllTooltipButtons",
+      "address": "0x35ef34c",
+      "file": "AncientAdventureDialogFlowController__EnableAllTooltipButtons_35ef34c.txt",
+      "sha256": "dc2e53689d3ad033a2d45842b5896944d8c765f6a74cec7abbdc4f85973d48c8"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$ShowSceneView",
+      "address": "0x35ef3e8",
+      "file": "AncientAdventureDialogFlowController__ShowSceneView_35ef3e8.txt",
+      "sha256": "171ce59bb4cf301483a51cfd3afd759ea63f10239a8bc9e8ca3299b5df9edf4a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$ShowHeistView",
+      "address": "0x35ef578",
+      "file": "AncientAdventureDialogFlowController__ShowHeistView_35ef578.txt",
+      "sha256": "20e84efa06bc51485ad20be958875f4c06c13a6a45aae2a5d3f51600acf0789f"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$PrepareSceneViewForActiveHeist",
+      "address": "0x35eff5c",
+      "file": "AncientAdventureSceneController__PrepareSceneViewForActiveHeist_35eff5c.txt",
+      "sha256": "ff7f8b4df710e229d5c7b8782de45cb3721abf3aa3c7a55ae7b87dca96dab949"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$PrepareSceneViewForSceneAnimation",
+      "address": "0x35f0098",
+      "file": "AncientAdventureSceneController__PrepareSceneViewForSceneAnimation_35f0098.txt",
+      "sha256": "2514720fabbdcb7e7438264a6a1ef93d8a94603ce175e1651e3acca1b4a1bf05"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$PlaySceneAnimationEndActions",
+      "address": "0x35f065c",
+      "file": "AncientAdventureDialogFlowController__PlaySceneAnimationEndActions_35f065c.txt",
+      "sha256": "e953ede8034cb0611ae1cd875b239d90d337c81cf80eb92866eb5ca8def99b0f"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController.<PlaySceneAnimationEndActions>d__27$$.ctor",
+      "address": "0x35f0714",
+      "file": "ctor_35f0714.txt",
+      "sha256": "956e569b5a35059e4a5271b4c88aa88f9db8f1d6d818a73d79194de9e43d48e3"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$PlaySceneZoomAnimationForHeist",
+      "address": "0x35f073c",
+      "file": "AncientAdventureDialogFlowController__PlaySceneZoomAnimationForHeist_35f073c.txt",
+      "sha256": "14dff0aa23470aca38002a1b1a04e8a7ba80165de80ad23606a3ccc417bb0ac5"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnStepUpAnimationsCompleted",
+      "address": "0x35f07d8",
+      "file": "AncientAdventureDialogFlowController__OnStepUpAnimationsCompleted_35f07d8.txt",
+      "sha256": "7d5ad4c093ccb40d88c730a65b7951486e584e90f8157c05a8724dd77cb7cfa3"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$AnimateTapToContinue",
+      "address": "0x35f09c4",
+      "file": "AncientAdventureSceneController__AnimateTapToContinue_35f09c4.txt",
+      "sha256": "039c78cf93866421f9a47b1acde6d1935a688668238dfd105aeae5429178c25a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnFailAnimationsCompleted",
+      "address": "0x35f0a4c",
+      "file": "AncientAdventureDialogFlowController__OnFailAnimationsCompleted_35f0a4c.txt",
+      "sha256": "c0ea3a09f73796ad613a2411cc4e21bdfd82b207e7db06e92cfbc9822e1340cf"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnHeistCompleted",
+      "address": "0x35f0a7c",
+      "file": "AncientAdventureDialogFlowController__OnHeistCompleted_35f0a7c.txt",
+      "sha256": "41778f400b4dcce707c9f252785fe34355140be90967d437d4cdb8e17e49b6db"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$PlayStageCompleteAnimationForHeist",
+      "address": "0x35f0af0",
+      "file": "AncientAdventureDialogFlowController__PlayStageCompleteAnimationForHeist_35f0af0.txt",
+      "sha256": "7cc1cdbeb86442b7deec48ea181548cabef3fbfdcc05a0eea7b13a1364bf6a79"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$PlayStageCompleteAnimationForChest",
+      "address": "0x35f0fd4",
+      "file": "AncientAdventureDialogFlowController__PlayStageCompleteAnimationForChest_35f0fd4.txt",
+      "sha256": "44ccd6640784ef750b7634c6bac780f0768ad0d9e6ed926e3aab74222e50a5f2"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$TryPrepareWideScreenUI",
+      "address": "0x35f11dc",
+      "file": "AncientAdventureDialogFlowController__TryPrepareWideScreenUI_35f11dc.txt",
+      "sha256": "a2d720c6ebbc9781fb071fc3d3159b9ec7fd6638d19b6ecc0dc89daa41cce8f1"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$GetBottomBorderPosition",
+      "address": "0x35f1520",
+      "file": "AncientAdventureDialogFlowController__GetBottomBorderPosition_35f1520.txt",
+      "sha256": "d88df947985455036d15b672a3c0d0485edfdfaeffbc452684efe1f0d9a57b2a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$get_BottomBorder",
+      "address": "0x35f1598",
+      "file": "AncientAdventureSceneController__get_BottomBorder_35f1598.txt",
+      "sha256": "e01b188a9da121e4b8ca75dca60da67dfaad5a9cc17e9e9bfb7039e69477799e"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$ArrangeTopButtons",
+      "address": "0x35f15b4",
+      "file": "AncientAdventureDialogFlowController__ArrangeTopButtons_35f15b4.txt",
+      "sha256": "36132dd25bb92e9bcda2630bbec2efabad877bdb24542341d0b9bcd40103f641"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnLevelTooltipButtonClicked",
+      "address": "0x35f1694",
+      "file": "AncientAdventureDialogFlowController__OnLevelTooltipButtonClicked_35f1694.txt",
+      "sha256": "67eab053698f2ed1c32ebdf9b3c2027e813f03a1a906e394bac4a49e06d24186"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnStageTooltipButtonClicked",
+      "address": "0x35f18f4",
+      "file": "AncientAdventureDialogFlowController__OnStageTooltipButtonClicked_35f18f4.txt",
+      "sha256": "984073cf4bf3faf3e9941b886c99c0e7362ce6e754ad6e24be2b767d801942b9"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnOrientationChange",
+      "address": "0x35f1a38",
+      "file": "AncientAdventureDialogFlowController__OnOrientationChange_35f1a38.txt",
+      "sha256": "0c5a761e0f2d62050be6fb85696ebd473d8a74f460d5458970fbad6c19b74356"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$OnOrientationChange",
+      "address": "0x35f1a88",
+      "file": "AncientAdventureSceneController__OnOrientationChange_35f1a88.txt",
+      "sha256": "6c52d3d220d65c8d04366e462b4009f76d899da78797bf18bc4ef5eca85743c8"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$DestroyPools",
+      "address": "0x35f1b0c",
+      "file": "AncientAdventureDialogFlowController__DestroyPools_35f1b0c.txt",
+      "sha256": "9781a438785511f36b9ced568a5f5124e49a01cb0546d7f43461bf53fa592c65"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$DestroyPool",
+      "address": "0x35f1b38",
+      "file": "AncientAdventureSceneController__DestroyPool_35f1b38.txt",
+      "sha256": "80996a53300f9195a309d37f197ef817220eb077663d85de8434e755b58af82a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$.ctor",
+      "address": "0x35f1b4c",
+      "file": "ctor_35f1b4c.txt",
+      "sha256": "daad1e5ab9483394980f8edd383d6e62de4560d67d9974a12bffd5c709d5db79"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController.<PlaySceneAnimationEndActions>d__27$$System.IDisposable.Dispose",
+      "address": "0x35f1b74",
+      "file": "Dispose_35f1b74.txt",
+      "sha256": "ad99fb17e9cae14cf533ad108dc658756b7462829166ead6857109fd1f339231"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController.<PlaySceneAnimationEndActions>d__27$$MoveNext",
+      "address": "0x35f1b78",
+      "file": "_PlaySceneAnimationEndActions_d__27__MoveNext_35f1b78.txt",
+      "sha256": "399881f6b6f7faebbbbcd140bfaf96e1e06bf364743046af0ba9ff5c94ce9bac"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController.<PlaySceneAnimationEndActions>d__27$$System.Collections.Generic.IEnumerator<System.Object>.get_Current",
+      "address": "0x35f1cd8",
+      "file": "get_Current_35f1cd8.txt",
+      "sha256": "e10e761ab44f50ce3ca06fd54efcfe2a4877cd8504fa9bd2bff781d330e253de"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController.<PlaySceneAnimationEndActions>d__27$$System.Collections.IEnumerator.Reset",
+      "address": "0x35f1ce0",
+      "file": "Reset_35f1ce0.txt",
+      "sha256": "58fab52842702d3df2a56678240016c1ed0c270a4dabcfedd7cca3bb8aaa9add"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController.<PlaySceneAnimationEndActions>d__27$$System.Collections.IEnumerator.get_Current",
+      "address": "0x35f1d20",
+      "file": "get_Current_35f1d20.txt",
+      "sha256": "bcc9cf12fad42ccbd5cc5fe2d13d9079bbee447fc176424c6a294baf7d7cdbe5"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$HideProgressInfoViewWithAnimation",
+      "address": "0x35f2208",
+      "file": "AncientAdventureSceneController__HideProgressInfoViewWithAnimation_35f2208.txt",
+      "sha256": "ada9518f23ca17ad43cd702240a90a37f0582fd0fa18bab1feb7b93cb6e4415e"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$PlaySceneZoomAnimation",
+      "address": "0x35f2360",
+      "file": "AncientAdventureSceneController__PlaySceneZoomAnimation_35f2360.txt",
+      "sha256": "60665b1e897fb4d9215450a22da52849f364f3008f734af07095576259d331bf"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventurePlayerView$$Init",
+      "address": "0x35fc7f4",
+      "file": "AncientAdventurePlayerView__Init_35fc7f4.txt",
+      "sha256": "8e613c24293910a9e367c574886d6564f450ecdee548f2f03918e6c424bb8cbc"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventurePlayerView$$PlayStepUpAnimation",
+      "address": "0x35fc984",
+      "file": "AncientAdventurePlayerView__PlayStepUpAnimation_35fc984.txt",
+      "sha256": "0a91b83cff46b3428baa845889ce7a9a285af0663e306cd06f50adce65ffeec3"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventurePlayerView$$UpdateMaskInteractionForFallAnimation",
+      "address": "0x35fca6c",
+      "file": "AncientAdventurePlayerView__UpdateMaskInteractionForFallAnimation_35fca6c.txt",
+      "sha256": "62d7d9eea3867ff4425514ad18d0058b929ab58fbd58824f2e6b288fb631e27e"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventurePlayerView$$CallHaptic",
+      "address": "0x35fcaa4",
+      "file": "AncientAdventurePlayerView__CallHaptic_35fcaa4.txt",
+      "sha256": "3fbb1439294af5e0a035b2c25e8fe6d7e882a44db21d40dabb07511e73a6b15c"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventurePlayerView$$.ctor",
+      "address": "0x35fcb58",
+      "file": "ctor_35fcb58.txt",
+      "sha256": "fc2b088b90f820d3d4ef163b206add44133f38a582346c67c7ed46ccbd799e16"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventurePlayerView$$.cctor",
+      "address": "0x35fcb60",
+      "file": "cctor_35fcb60.txt",
+      "sha256": "2da288aa81fec7598e3e345f000d5d2ea9b6d12804bfa34bad5ae78b7f0a39af"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$get_SceneView",
+      "address": "0x35fef18",
+      "file": "AncientAdventureSceneController__get_SceneView_35fef18.txt",
+      "sha256": "cf21098b0217cf3b1a84e46de5ee82db24cb765ace54a4adcd19fe81bd8f5ee1"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$set_SceneView",
+      "address": "0x35fef20",
+      "file": "AncientAdventureSceneController__set_SceneView_35fef20.txt",
+      "sha256": "0179948253c21889000fd25fc06a1fd5dc34363b8880e651db1e70dcb7524c63"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$get_AnimationData",
+      "address": "0x35fef28",
+      "file": "AncientAdventureSceneController__get_AnimationData_35fef28.txt",
+      "sha256": "2e5159efc6095bbd4ef1edbc863ab4d6443e887b577dfa2ba79a79379971aa0a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$set_AnimationData",
+      "address": "0x35fef3c",
+      "file": "AncientAdventureSceneController__set_AnimationData_35fef3c.txt",
+      "sha256": "336219c1dc0c9960813bc442f3f6246352095f9a9e24577c6de78500fdf23b67"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$CreateSceneView",
+      "address": "0x35fef5c",
+      "file": "AncientAdventureSceneController__CreateSceneView_35fef5c.txt",
+      "sha256": "e934a00ec6b6a9d00c33e343778c49ec79606b619c97e578818794395e96c0e8"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$SetStageBar",
+      "address": "0x35ff090",
+      "file": "AncientAdventureSceneController__SetStageBar_35ff090.txt",
+      "sha256": "9ed6237b3ed98077ba662e9993f6506a7a959bb04aab9a1bd381fe8e81ea997c"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$SetStepText",
+      "address": "0x35ff0fc",
+      "file": "AncientAdventureSceneController__SetStepText_35ff0fc.txt",
+      "sha256": "28b8c4618d323ba9cb5928ca5285172e491d568c1ebb3a7451cb55db06c49c95"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$PlayStepUpAnimations",
+      "address": "0x35ff1e4",
+      "file": "AncientAdventureSceneController__PlayStepUpAnimations_35ff1e4.txt",
+      "sha256": "0924b63654d62d7d27dddbf935cb503620b073927fa64d4f652f6ed1f96e9103"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$PlayFailAnimations",
+      "address": "0x35ff528",
+      "file": "AncientAdventureSceneController__PlayFailAnimations_35ff528.txt",
+      "sha256": "636404103ee86507c6af2564b9eb0bd77107ef45fad6b29626dac09c31d0abaf"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$UpdateLocalization",
+      "address": "0x35ff594",
+      "file": "AncientAdventureSceneController__UpdateLocalization_35ff594.txt",
+      "sha256": "c249bc000503b04b654eb524ced52f0141b66f74d20636d8c0de17e2f3f0fafd"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$.ctor",
+      "address": "0x35ff6a4",
+      "file": "ctor_35ff6a4.txt",
+      "sha256": "392ac8d720d0a63149e8182edf165fe47ad1dc6587d4e23d885af5faaa2c1470"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$<HideProgressInfoViewWithAnimation>b__39_0",
+      "address": "0x35ff6ac",
+      "file": "AncientAdventureSceneController___HideProgressInfoViewWithAnimation_b__39_0_35ff6ac.txt",
+      "sha256": "00ac630b260018bb3bfa1ba51d24d0be58a5f19f0a9762116e8237f1236c1059"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$get_IsGoingToShowLoadingSceneRightAfterClose",
+      "address": "0x38673f8",
+      "file": "AncientAdventureDialog__get_IsGoingToShowLoadingSceneRightAfterClose_38673f8.txt",
+      "sha256": "4f659f140100a5ab8ae6663c7a9d1f82686df61617a8b1971325e23b435c8cd0"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$Init",
+      "address": "0x3867428",
+      "file": "AncientAdventureDialog__Init_3867428.txt",
+      "sha256": "3843a4afa9a4ce959e7fd709b332dea73afb5f318d8265951b25d02cb7df2070"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$UpdateLocalization",
+      "address": "0x38678b0",
+      "file": "AncientAdventureDialog__UpdateLocalization_38678b0.txt",
+      "sha256": "a2faa2a67d086de9edbd625e2f19a0944842964f191d9811efbdf5cd5390f91c"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$TryArrangeLandscapeFlags",
+      "address": "0x38679dc",
+      "file": "AncientAdventureDialog__TryArrangeLandscapeFlags_38679dc.txt",
+      "sha256": "98876cfd125f232e3a04d088241da9e28016e921873ffcd6578b7e4c3548a4c1"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnOrientationChange",
+      "address": "0x3867b60",
+      "file": "AncientAdventureDialog__OnOrientationChange_3867b60.txt",
+      "sha256": "ec873cdfea29a68f0befb260948bf9991a58442a7b37db36ac4140f451cd0420"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnShow",
+      "address": "0x3868000",
+      "file": "AncientAdventureDialog__OnShow_3868000.txt",
+      "sha256": "be42302990350275a12f45d7367dd809a927ca96d3c00d975449abb48094d928"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$GetRemainingTime",
+      "address": "0x38684ec",
+      "file": "AncientAdventureDialog__GetRemainingTime_38684ec.txt",
+      "sha256": "e5b71598c99a1740317ac1d76cf08d0c3e8a3d09d027b9add99d2622e1048bc0"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnTimeFinished",
+      "address": "0x386852c",
+      "file": "AncientAdventureDialog__OnTimeFinished_386852c.txt",
+      "sha256": "576ec69f8050f9c4970737f4f2d67ce472ad37b6e54358c39a8ff97029cd7fe0"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$AnimateRemainingTimeText",
+      "address": "0x3868554",
+      "file": "AncientAdventureDialog__AnimateRemainingTimeText_3868554.txt",
+      "sha256": "e3513c3f6ef7bdb1e7f48b6cc8825c03a64ea8ab3fa6fa1a8ee02ab9df6beac9"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$TryOpenEventEndTooltip",
+      "address": "0x386884c",
+      "file": "AncientAdventureDialog__TryOpenEventEndTooltip_386884c.txt",
+      "sha256": "68daebb4ab8ea31f0347060cd4f525b5bd75acad6e14141457167d0b098d11ef"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$DarkenTitleBackgroundForZoom",
+      "address": "0x38688c0",
+      "file": "AncientAdventureDialog__DarkenTitleBackgroundForZoom_38688c0.txt",
+      "sha256": "bc1f4d47e4185e175c7650ce15fb50d94598e8aa48b82fc8beadb377c8fe7b07"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$InfoButtonClicked",
+      "address": "0x386894c",
+      "file": "AncientAdventureDialog__InfoButtonClicked_386894c.txt",
+      "sha256": "26888a090698d2a4f18734faf1729b5ce10cc2317ade7d3935d2d91809f8f75a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnClose",
+      "address": "0x38689d0",
+      "file": "AncientAdventureDialog__OnClose_38689d0.txt",
+      "sha256": "13fe2a950afa4a52b43a71c825ce8f6bfc1d7eb5f767e461647c55fc73a49f96"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$UnloadBundleWithDelay",
+      "address": "0x3868bf8",
+      "file": "AncientAdventureDialog__UnloadBundleWithDelay_3868bf8.txt",
+      "sha256": "b19aa984307f07dffbbf3f4ea0eb406cb7f391af64aea82f9c51aa6fd1575a3f"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$UnloadBundle",
+      "address": "0x3868c6c",
+      "file": "AncientAdventureDialog__UnloadBundle_3868c6c.txt",
+      "sha256": "935fefd159ba3ba501f9ee6333d007c0c727d4820a98a81ab7084c471e79ae53"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$CanClose",
+      "address": "0x3868ca4",
+      "file": "AncientAdventureDialog__CanClose_3868ca4.txt",
+      "sha256": "2d9aab77ecf489ef842bf553b1d8f3088105739e3f754e618861d6449c9088ce"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$CanCloseDialog",
+      "address": "0x3868ca8",
+      "file": "AncientAdventureDialog__CanCloseDialog_3868ca8.txt",
+      "sha256": "e2994d1df991b56a56f6841b1ce6885ec4d7b975cd0b20b2cbc213a8917eba50"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$GetConfig",
+      "address": "0x3868d54",
+      "file": "AncientAdventureDialog__GetConfig_3868d54.txt",
+      "sha256": "540200683f7160bdc93e7290007e518516f0da65c2f0051713d4772cea853051"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnDestroy",
+      "address": "0x3868e04",
+      "file": "AncientAdventureDialog__OnDestroy_3868e04.txt",
+      "sha256": "efbd2f15a1e5193ce8816965c16e11b4bf48a29456bf153fcc1ba6a4cd1c2470"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$.ctor",
+      "address": "0x3868ea8",
+      "file": "ctor_3868ea8.txt",
+      "sha256": "36d4226fe009530caac52db36778ce9bf37296eba168bb5b046cb8c81930657b"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$Init",
+      "address": "0x38d67f4",
+      "file": "AncientAdventureSceneView__Init_38d67f4.txt",
+      "sha256": "041336b4699f573c84e3c498b089b18fb3994c4a4631b6eb0d8e930267d19e49"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$PrepareStepCountForAb",
+      "address": "0x38d6b7c",
+      "file": "AncientAdventureSceneView__PrepareStepCountForAb_38d6b7c.txt",
+      "sha256": "227a774ff6a43637f5701b200564edb0631f87724f7dad39d2a577ecc079dfe6"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$SetPlayerPositionOnStep",
+      "address": "0x38d6d8c",
+      "file": "AncientAdventureSceneView__SetPlayerPositionOnStep_38d6d8c.txt",
+      "sha256": "5163b60d500f85b4a034ef6d2d4d6ec321c72559d4050cc465e6fd633fafa5fa"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$GetPlayerTargetPositionRelativeToRoot",
+      "address": "0x38d6eb4",
+      "file": "AncientAdventureSceneView__GetPlayerTargetPositionRelativeToRoot_38d6eb4.txt",
+      "sha256": "f9ed08c47918586dfce8ce2c5190bc3b4304aa28b0dc1a21b5fd836614b90d97"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$AnimatePlayerToStep",
+      "address": "0x38d6f60",
+      "file": "AncientAdventureSceneView__AnimatePlayerToStep_38d6f60.txt",
+      "sha256": "45520ea8f43c402b4da2d6a3e1ab4a61aedf0b3f03acfe8d77b60aba7af21acd"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView.<>c__DisplayClass31_0$$.ctor",
+      "address": "0x38d72dc",
+      "file": "ctor_38d72dc.txt",
+      "sha256": "4b1f3af614e418ba63f823296cb3eb127a2a30d30f5a9b3eaefd12cd94eaede1"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$PlayStepFallAnimation",
+      "address": "0x38d72e4",
+      "file": "AncientAdventureSceneView__PlayStepFallAnimation_38d72e4.txt",
+      "sha256": "c0377a93207f30e08aae5aaad5fdae52687dde4343d5482d823709ce3d8a10ed"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$PlaySceneZoomAnimation",
+      "address": "0x38d73c8",
+      "file": "AncientAdventureSceneView__PlaySceneZoomAnimation_38d73c8.txt",
+      "sha256": "250d0bf3431a9ef7c83133073a74f1bd6aab1d47890f24236235f1fa63b9e9bc"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$PlaySceneZoomedDoorOpenIdleAnimation",
+      "address": "0x38d753c",
+      "file": "AncientAdventureSceneView__PlaySceneZoomedDoorOpenIdleAnimation_38d753c.txt",
+      "sha256": "887c4d04a1c35f0564f4bbfa98f5a150145cfa3aca8266b87df35f1fd9a93d50"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$PrepareSteps",
+      "address": "0x38d75c8",
+      "file": "AncientAdventureSceneView__PrepareSteps_38d75c8.txt",
+      "sha256": "890074d7b364ed06c9868ed14620c76d0a158ea89c5f0f484dca5ccbe82ef294"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$OnPlayerReachedStep",
+      "address": "0x38d76c4",
+      "file": "AncientAdventureSceneView__OnPlayerReachedStep_38d76c4.txt",
+      "sha256": "fee4fe28a0dc4d0fc608f4ad35c85c27dac7bd0ee5023332ca9e44502165fd6e"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$TryPlayRewardCollectAnimation",
+      "address": "0x38d7704",
+      "file": "AncientAdventureSceneView__TryPlayRewardCollectAnimation_38d7704.txt",
+      "sha256": "e3b789901bfa415e27f650221b0bd40253cfafd9dd83d012734b3504015aa0b1"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$UpdateWaterSpritesWidth",
+      "address": "0x38d7778",
+      "file": "AncientAdventureSceneView__UpdateWaterSpritesWidth_38d7778.txt",
+      "sha256": "6e845abc42a0d3505e059cccfc6dc40fda4949d0e0d3b00eadde537851c6fbc9"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$OpenTooltip",
+      "address": "0x38d790c",
+      "file": "AncientAdventureSceneView__OpenTooltip_38d790c.txt",
+      "sha256": "3ace4d1000328ff10d2f65ae1cde00760e54759045dc26eae8e400da99867ada"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$.ctor",
+      "address": "0x38d7af8",
+      "file": "ctor_38d7af8.txt",
+      "sha256": "f1b0fb169eee1d783827388fa7c5706fca0ec7d8c4b72073d621988623517fdd"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView.<>c__DisplayClass31_0$$<AnimatePlayerToStep>b__0",
+      "address": "0x38d7d90",
+      "file": "__c__DisplayClass31_0___AnimatePlayerToStep_b__0_38d7d90.txt",
+      "sha256": "dd9ccecbc33afe5734dbc1d3e66f12cd7ece29c598c62e7bd288d49527215148"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView.<>c__DisplayClass31_0$$<AnimatePlayerToStep>b__1",
+      "address": "0x38d7de4",
+      "file": "__c__DisplayClass31_0___AnimatePlayerToStep_b__1_38d7de4.txt",
+      "sha256": "ca09c1c03dbe42c065907e075e0b028af072de12ee60e05bd8408dbae2adf394"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.Actions.ShowAncientAdventureDialogAction$$get_Type",
+      "address": "0x38da488",
+      "file": "ShowAncientAdventureDialogAction__get_Type_38da488.txt",
+      "sha256": "ebc1c5d3e822a64b1aa7831490952bbdaee3fb30f6b85ce1dbb229b9e1749b5e"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.Actions.ShowAncientAdventureDialogAction$$.ctor",
+      "address": "0x38da490",
+      "file": "ctor_38da490.txt",
+      "sha256": "aa3c71dc8f0a1a0b28a2b7d6594bfb705d9a8b6093aa9511b823df94c62d5a2f"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.Actions.ShowAncientAdventureDialogAction$$.ctor",
+      "address": "0x38da628",
+      "file": "ctor_38da628.txt",
+      "sha256": "31a6d6a179c5a471b80c04c5c1f3e115d7874d2f2af3590d4dddd5501bb2566c"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.Actions.ShowAncientAdventureDialogAction$$Execute",
+      "address": "0x38da814",
+      "file": "ShowAncientAdventureDialogAction__Execute_38da814.txt",
+      "sha256": "11520d1a207d73ddc49320325854dbdfe74679625710f0144348dd5b0aa593ec"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.Actions.ShowAncientAdventureDialogAction$$Cancel",
+      "address": "0x38daca0",
+      "file": "ShowAncientAdventureDialogAction__Cancel_38daca0.txt",
+      "sha256": "9593f8369eb9de4cbff33e326a51250b5338cbfad92817e49b1e99023aed69b8"
+    }
+  ],
+  "limits": [
+    "Static; no frame capture",
+    "Adjacent named boundary approximation",
+    "Linear literal/metadata annotations require manual control-flow and register validation; not a decompiler"
+  ]
+}

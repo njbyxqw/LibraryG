@@ -1,0 +1,318 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnShow
+void Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialog__OnShow (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialog_o* __this, UnityEngine_Vector3_o position, const MethodInfo* method);
+0x3868000; next named boundary 0x38684EC
+03868000 stp      d13, d12, [sp, #-0x70]!
+03868004 stp      d11, d10, [sp, #0x10]
+03868008 stp      d9, d8, [sp, #0x20]
+0386800C stp      x25, x24, [sp, #0x30]
+03868010 stp      x23, x22, [sp, #0x40]
+03868014 stp      x21, x20, [sp, #0x50]
+03868018 stp      x19, x30, [sp, #0x60]
+0386801C adrp     x20, #0x58c8000
+03868020 ldrb     w8, [x20, #0x3af]
+03868024 mov      v11.16b, v2.16b
+03868028 mov      v12.16b, v1.16b
+0386802C mov      v13.16b, v0.16b
+03868030 mov      x19, x0
+03868034 tbnz     w8, #0, #0x38680a0
+03868038 adrp     x0, #0x551a000
+0386803C ldr      x0, [x0, #0x180] ; Method$Royal.Scenes.Start.Context.Units.RoyalBundle.ARoyalBundle.LoadAsset<GameObject>()
+03868040 bl       #0x1043220
+03868044 adrp     x0, #0x54d2000
+03868048 ldr      x0, [x0, #0x238] ; DG.Tweening.DOTween_TypeInfo
+0386804C bl       #0x1043220
+03868050 adrp     x0, #0x54e2000
+03868054 ldr      x0, [x0, #0xe18] ; Method$UnityEngine.GameObject.GetComponent<AncientAdventureMainTutorial>()
+03868058 bl       #0x1043220
+0386805C adrp     x0, #0x552b000
+03868060 ldr      x0, [x0, #0x330] ; Method$UnityEngine.Object.Instantiate<GameObject>()
+03868064 bl       #0x1043220
+03868068 adrp     x0, #0x54be000
+0386806C ldr      x0, [x0, #0x3b8] ; UnityEngine.Object_TypeInfo
+03868070 bl       #0x1043220
+03868074 adrp     x0, #0x54c2000
+03868078 ldr      x0, [x0, #0x7a0] ; Method$DG.Tweening.TweenSettingsExtensions.SetEase<TweenerCore<Vector3, Vector3, VectorOptions>>()
+0386807C bl       #0x1043220
+03868080 adrp     x0, #0x5545000
+03868084 ldr      x0, [x0, #0xdc0] ; Method$DG.Tweening.TweenSettingsExtensions.SetLink<Sequence>()
+03868088 bl       #0x1043220
+0386808C adrp     x0, #0x550f000
+03868090 ldr      x0, [x0, #0xd48]
+03868094 bl       #0x1043220
+03868098 mov      w8, #1
+0386809C strb     w8, [x20, #0x3af]
+038680A0 adrp     x22, #0x58b6000
+038680A4 ldrb     w8, [x22, #0x750]
+038680A8 cbnz     w8, #0x38680c0
+038680AC adrp     x0, #0x554e000
+038680B0 ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+038680B4 bl       #0x1043220
+038680B8 mov      w8, #1
+038680BC strb     w8, [x22, #0x750]
+038680C0 adrp     x23, #0x554e000
+038680C4 ldr      x23, [x23, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+038680C8 mov      x0, x19
+038680CC mov      x1, xzr
+038680D0 ldr      x8, [x23]
+038680D4 ldr      x8, [x8, #0xb8]
+038680D8 ldp      s8, s9, [x8, #0xc]
+038680DC ldr      s10, [x8, #0x14]
+038680E0 bl       #0x3f4d5dc ; UnityEngine.Component$$get_transform
+038680E4 adrp     x21, #0x58b7000
+038680E8 ldrb     w8, [x21, #0x186]
+038680EC mov      x20, x0
+038680F0 cbnz     w8, #0x3868108
+038680F4 adrp     x0, #0x554e000
+038680F8 ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+038680FC bl       #0x1043220
+03868100 mov      w8, #1
+03868104 strb     w8, [x21, #0x186]
+03868108 cbz      x20, #0x38684e8
+0386810C ldr      x8, [x23]
+03868110 adrp     x21, #0x54d2000
+03868114 fmov     s3, #5.00000000
+03868118 mov      x0, x20
+0386811C ldr      x8, [x8, #0xb8]
+03868120 ldr      x21, [x21, #0x238] ; DG.Tweening.DOTween_TypeInfo
+03868124 mov      x1, xzr
+03868128 ldp      s0, s1, [x8, #0x54]
+0386812C ldr      s2, [x8, #0x5c]
+03868130 fmul     s0, s0, s3
+03868134 fmul     s1, s1, s3
+03868138 fmul     s2, s2, s3
+0386813C fadd     s0, s13, s0
+03868140 fadd     s1, s12, s1
+03868144 fadd     s2, s11, s2
+03868148 bl       #0x3f545c8 ; UnityEngine.Transform$$set_position
+0386814C ldrb     w8, [x22, #0x750]
+03868150 cbnz     w8, #0x3868168
+03868154 adrp     x0, #0x554e000
+03868158 ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0386815C bl       #0x1043220
+03868160 mov      w8, #1
+03868164 strb     w8, [x22, #0x750]
+03868168 ldr      x8, [x23]
+0386816C adrp     x9, #0x40d9000
+03868170 ldr      s0, [x9, #0x210] ; literal 0.00650000013 @ 0x40D9210; confirm base register before use
+03868174 adrp     x25, #0x5545000
+03868178 ldr      x8, [x8, #0xb8]
+0386817C mov      x0, x20
+03868180 mov      x1, xzr
+03868184 ldp      s1, s2, [x8, #0xc]
+03868188 ldr      s3, [x8, #0x14]
+0386818C ldr      x25, [x25, #0xdc0] ; Method$DG.Tweening.TweenSettingsExtensions.SetLink<Sequence>()
+03868190 fmul     s1, s1, s0
+03868194 fmul     s2, s2, s0
+03868198 fmul     s3, s3, s0
+0386819C fadd     s0, s8, s1
+038681A0 fadd     s1, s9, s2
+038681A4 fadd     s2, s10, s3
+038681A8 bl       #0x3f54c58 ; UnityEngine.Transform$$set_localScale
+038681AC ldr      x0, [x21]
+038681B0 ldr      w8, [x0, #0xe0]
+038681B4 cbnz     w8, #0x38681bc
+038681B8 bl       #0x1043324
+038681BC adrp     x24, #0x54c2000
+038681C0 ldr      x24, [x24, #0x7a0] ; Method$DG.Tweening.TweenSettingsExtensions.SetEase<TweenerCore<Vector3, Vector3, VectorOptions>>()
+038681C4 mov      x0, xzr
+038681C8 bl       #0x1de6544 ; DG.Tweening.DOTween$$Sequence
+038681CC mov      x21, x0
+038681D0 mov      x0, x19
+038681D4 mov      x1, xzr
+038681D8 bl       #0x3f4d618 ; UnityEngine.Component$$get_gameObject
+038681DC ldr      x2, [x25]
+038681E0 mov      x1, x0
+038681E4 mov      x0, x21
+038681E8 bl       #0x299b0c0 ; DG.Tweening.TweenSettingsExtensions$$SetLink<object>
+038681EC ldrb     w8, [x22, #0x750]
+038681F0 mov      x21, x0
+038681F4 cbnz     w8, #0x386820c
+038681F8 adrp     x0, #0x554e000
+038681FC ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+03868200 bl       #0x1043220
+03868204 mov      w8, #1
+03868208 strb     w8, [x22, #0x750]
+0386820C ldr      x8, [x23]
+03868210 adrp     x9, #0x40d9000
+03868214 ldr      s0, [x9, #0x214] ; literal 0.0120000001 @ 0x40D9214; confirm base register before use
+03868218 mov      x0, x20
+0386821C ldr      x8, [x8, #0xb8]
+03868220 mov      x1, xzr
+03868224 ldp      s1, s2, [x8, #0xc]
+03868228 ldr      s3, [x8, #0x14]
+0386822C adrp     x8, #0x40cc000
+03868230 fmul     s1, s1, s0
+03868234 fmul     s2, s2, s0
+03868238 fmul     s3, s3, s0
+0386823C fadd     s0, s8, s1
+03868240 fadd     s1, s9, s2
+03868244 fadd     s2, s10, s3
+03868248 ldr      s3, [x8, #0xb04]
+0386824C bl       #0x1debc94 ; DG.Tweening.ShortcutExtensions$$DOScale
+03868250 ldr      x2, [x24]
+03868254 mov      w1, #6
+03868258 bl       #0x299af10 ; DG.Tweening.TweenSettingsExtensions$$SetEase<object>
+0386825C mov      x1, x0
+03868260 mov      x0, x21
+03868264 mov      x2, xzr
+03868268 bl       #0x1ded6ec ; DG.Tweening.TweenSettingsExtensions$$Append
+0386826C ldrb     w8, [x22, #0x750]
+03868270 cbnz     w8, #0x3868288
+03868274 adrp     x0, #0x554e000
+03868278 ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0386827C bl       #0x1043220
+03868280 mov      w8, #1
+03868284 strb     w8, [x22, #0x750]
+03868288 ldr      x8, [x23]
+0386828C adrp     x9, #0x40d9000
+03868290 ldr      s0, [x9, #0x218] ; literal 0.00400000019 @ 0x40D9218; confirm base register before use
+03868294 mov      x0, x20
+03868298 ldr      x8, [x8, #0xb8]
+0386829C mov      x1, xzr
+038682A0 ldp      s1, s2, [x8, #0xc]
+038682A4 ldr      s3, [x8, #0x14]
+038682A8 adrp     x8, #0x40d9000
+038682AC fmul     s1, s1, s0
+038682B0 fmul     s2, s2, s0
+038682B4 fmul     s3, s3, s0
+038682B8 fsub     s0, s8, s1
+038682BC fsub     s1, s9, s2
+038682C0 fsub     s2, s10, s3
+038682C4 ldr      s3, [x8, #0x5c]
+038682C8 bl       #0x1debc94 ; DG.Tweening.ShortcutExtensions$$DOScale
+038682CC ldr      x2, [x24]
+038682D0 mov      w1, #6
+038682D4 bl       #0x299af10 ; DG.Tweening.TweenSettingsExtensions$$SetEase<object>
+038682D8 mov      x1, x0
+038682DC mov      x0, x21
+038682E0 mov      x2, xzr
+038682E4 bl       #0x1ded6ec ; DG.Tweening.TweenSettingsExtensions$$Append
+038682E8 adrp     x8, #0x40d9000
+038682EC ldr      s3, [x8, #0x60] ; literal 0.0649999976 @ 0x40D9060; confirm base register before use
+038682F0 mov      x0, x20
+038682F4 mov      v0.16b, v8.16b
+038682F8 mov      v1.16b, v9.16b
+038682FC mov      v2.16b, v10.16b
+03868300 mov      x1, xzr
+03868304 bl       #0x1debc94 ; DG.Tweening.ShortcutExtensions$$DOScale
+03868308 ldr      x2, [x24]
+0386830C mov      w1, #6
+03868310 bl       #0x299af10 ; DG.Tweening.TweenSettingsExtensions$$SetEase<object>
+03868314 mov      x1, x0
+03868318 mov      x0, x21
+0386831C mov      x2, xzr
+03868320 bl       #0x1ded6ec ; DG.Tweening.TweenSettingsExtensions$$Append
+03868324 ldr      x8, [x19, #0xd8]
+03868328 cbz      x8, #0x38684e8
+0386832C adrp     x21, #0x54be000
+03868330 ldr      x21, [x21, #0x3b8] ; UnityEngine.Object_TypeInfo
+03868334 ldr      x20, [x8, #0x18]
+03868338 ldr      x0, [x21]
+0386833C ldr      w9, [x0, #0xe0]
+03868340 cbnz     w9, #0x3868348
+03868344 bl       #0x1043324
+03868348 mov      x0, x20
+0386834C mov      x1, xzr
+03868350 mov      x2, xzr
+03868354 bl       #0x3f53b8c ; UnityEngine.Object$$op_Inequality
+03868358 tbz      w0, #0, #0x3868374
+0386835C ldr      x8, [x19, #0xd8]
+03868360 cbz      x8, #0x38684e8
+03868364 ldr      x0, [x8, #0x18]
+03868368 cbz      x0, #0x38684e8
+0386836C mov      x1, xzr
+03868370 bl       #0x3b2becc ; Royal.Scenes.Home.Areas.Scripts.AreaView$$DisableBackgroundSounds
+03868374 adrp     x20, #0x58c6000
+03868378 ldrb     w8, [x20, #0xe16]
+0386837C cbnz     w8, #0x3868394
+03868380 adrp     x0, #0x5546000
+03868384 ldr      x0, [x0, #0xed8] ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogContext_TypeInfo
+03868388 bl       #0x1043220
+0386838C mov      w8, #1
+03868390 strb     w8, [x20, #0xe16]
+03868394 adrp     x8, #0x5546000
+03868398 ldr      x8, [x8, #0xed8] ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogContext_TypeInfo
+0386839C ldr      x8, [x8]
+038683A0 ldr      x8, [x8, #0xb8]
+038683A4 ldr      x8, [x8]
+038683A8 cbz      x8, #0x38684e8
+038683AC ldrb     w8, [x8, #0x10]
+038683B0 cbz      w8, #0x38684c8
+038683B4 ldr      x0, [x19, #0xf0]
+038683B8 cbz      x0, #0x38684e8
+038683BC adrp     x8, #0x550f000
+038683C0 adrp     x9, #0x551a000
+038683C4 ldr      x8, [x8, #0xd48]
+038683C8 ldr      x9, [x9, #0x180] ; Method$Royal.Scenes.Start.Context.Units.RoyalBundle.ARoyalBundle.LoadAsset<GameObject>()
+038683CC adrp     x22, #0x552b000
+038683D0 ldr      x1, [x8]
+038683D4 ldr      x2, [x9]
+038683D8 ldr      x22, [x22, #0x330] ; Method$UnityEngine.Object.Instantiate<GameObject>()
+038683DC bl       #0x34af860 ; Royal.Scenes.Start.Context.Units.RoyalBundle.ARoyalBundle$$LoadAsset<object>
+038683E0 ldr      x8, [x21]
+038683E4 ldr      x20, [x19, #0x40]
+038683E8 mov      x21, x0
+038683EC ldr      w9, [x8, #0xe0]
+038683F0 cbnz     w9, #0x38683fc
+038683F4 mov      x0, x8
+038683F8 bl       #0x1043324
+038683FC ldr      x2, [x22]
+03868400 mov      x0, x21
+03868404 mov      x1, x20
+03868408 bl       #0x2726028 ; UnityEngine.Object$$Instantiate<object>
+0386840C cbz      x0, #0x38684e8
+03868410 adrp     x8, #0x54e2000
+03868414 ldr      x8, [x8, #0xe18] ; Method$UnityEngine.GameObject.GetComponent<AncientAdventureMainTutorial>()
+03868418 ldr      x1, [x8]
+0386841C bl       #0x26a1384 ; UnityEngine.GameObject$$GetComponent<object>
+03868420 ldr      x8, [x19, #0x50]
+03868424 cbz      x8, #0x38684e8
+03868428 ldr      x8, [x8, #0x58]
+0386842C cbz      x8, #0x38684e8
+03868430 mov      x20, x0
+03868434 ldr      x0, [x8, #0x18]
+03868438 cbz      x0, #0x38684e8
+0386843C ldr      x21, [x8, #0xa0]
+03868440 mov      x1, xzr
+03868444 bl       #0x3f4d5dc ; UnityEngine.Component$$get_transform
+03868448 ldr      x8, [x19, #0xb0]
+0386844C cbz      x8, #0x38684e8
+03868450 mov      x22, x0
+03868454 ldr      x0, [x8, #0x10]
+03868458 cbz      x0, #0x38684e8
+0386845C mov      x1, xzr
+03868460 bl       #0x2a3cb0c ; Royal.Player.Context.Data.Persistent.AncientAdventureProgress$$get_IsEventOneStage
+03868464 ldr      x8, [x19, #0xb0]
+03868468 cbz      x8, #0x38684e8
+0386846C mov      w19, w0
+03868470 ldr      x0, [x8, #0x10]
+03868474 cbz      x0, #0x38684e8
+03868478 mov      x1, xzr
+0386847C bl       #0x2a3cb0c ; Royal.Player.Context.Data.Persistent.AncientAdventureProgress$$get_IsEventOneStage
+03868480 cbz      x20, #0x38684e8
+03868484 tst      w0, #1
+03868488 and      w3, w19, #1
+0386848C mov      x0, x20
+03868490 mov      x1, x21
+03868494 mov      x2, x22
+03868498 ldp      x19, x30, [sp, #0x60]
+0386849C ldp      x21, x20, [sp, #0x50]
+038684A0 ldp      x23, x22, [sp, #0x40]
+038684A4 ldp      x25, x24, [sp, #0x30]
+038684A8 ldp      d9, d8, [sp, #0x20]
+038684AC ldp      d11, d10, [sp, #0x10]
+038684B0 mov      w8, #5
+038684B4 mov      w9, #7
+038684B8 csel     w4, w9, w8, ne
+038684BC mov      x5, xzr
+038684C0 ldp      d13, d12, [sp], #0x70
+038684C4 b        #0x35fb374 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureMainTutorial$$Show
+038684C8 ldp      x19, x30, [sp, #0x60]
+038684CC ldp      x21, x20, [sp, #0x50]
+038684D0 ldp      x23, x22, [sp, #0x40]
+038684D4 ldp      x25, x24, [sp, #0x30]
+038684D8 ldp      d9, d8, [sp, #0x20]
+038684DC ldp      d11, d10, [sp, #0x10]
+038684E0 ldp      d13, d12, [sp], #0x70
+038684E4 ret      
+038684E8 bl       #0x1043348

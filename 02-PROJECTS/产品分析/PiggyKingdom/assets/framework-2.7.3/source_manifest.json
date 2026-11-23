@@ -1,0 +1,72 @@
+[
+  {
+    "file": "07-after-opening-skip.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\07-after-opening-skip.png",
+    "caption": "首关：30步、32木箱，邻接消除教学",
+    "source_sha256": "1add7c08dd0b22178ca64acb8b362f978bfc9882831d3103d286a3085be01754",
+    "report_sha256": "d646cf96d587b185842cffd5a5ed00d44a75180b74c4c1c03124e26d78b4a68e"
+  },
+  {
+    "file": "16-victory-reward.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\16-victory-reward.png",
+    "caption": "首关通关：金币结算后展示建造徽章",
+    "source_sha256": "ca74b4eb4d7e134f011633b5220a5d7e63e30f360c18b9d0f34d857a3c66e372",
+    "report_sha256": "a32c22e9e22814f424a94c83896a8881e1c7cc5aa2f16cd61d39688c482d3960"
+  },
+  {
+    "file": "20-task-list.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\20-task-list.png",
+    "caption": "Castle任务：消耗1徽章，区域进度0/8",
+    "source_sha256": "b07fc83be7806afd225cec3e4d8ba6b6bf3c0634f2e99fdf86c3ae744af75f8b",
+    "report_sha256": "ff84ec76caba035de9d86eb6c77dd9ac5e56cd03f72acb666807ca6682fd72e3"
+  },
+  {
+    "file": "22-build-stable.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\22-build-stable.png",
+    "caption": "建造后：1/8；Bridge需1、Pools需2",
+    "source_sha256": "87b0b64198ff402b7d50a87b56af381d0fe3e62f6da590812264bebb28f4c0e4",
+    "report_sha256": "65d95a68fa75aa481ba3025d6d7c59db9ebb2f236d1dc2d951b890c7e9c5978c"
+  },
+  {
+    "file": "29-home.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\29-home.png",
+    "caption": "Home：资源栏、城堡、Level 2、建造与小鸟入口",
+    "source_sha256": "7aec52a21a731b3ebf197071175d8d29fa939b217053f6bb1fb2b6bfca0f046e",
+    "report_sha256": "22234e67e484c9245cace635a4ec9841bd7ab12b9c5f2894d40dc99ea18305e8"
+  },
+  {
+    "file": "25-left-tab.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\25-left-tab.png",
+    "caption": "Albums：43关开放预告",
+    "source_sha256": "c7c65c206cb408f2d47d75e38d897a23d9361e664e3310816f854815b4bd76fd",
+    "report_sha256": "68c314e442a7b6cc15f886c62565c8c40a3ff251a8d453ae7752dc0bf2a2ee39"
+  },
+  {
+    "file": "27-teams.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\27-teams.png",
+    "caption": "Teams：36关开放，免费奖励与生命诉求",
+    "source_sha256": "0fd5bf965ae43e9e35f0ddba201bd53c92ea065349733948c576bd0ad5352438",
+    "report_sha256": "3b5d3378910409f6e109747dd79f05039206a38bb95e425db4893faefe9f3198"
+  },
+  {
+    "file": "28-areas.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\28-areas.png",
+    "caption": "Areas：区域节点与云雾中的后续地点",
+    "source_sha256": "d1504fbf14d87a62abd413605214168becaf843820c5d9492f81f468b712bd2c",
+    "report_sha256": "9106863127a56fb37ade61a96241e90a1d4c3904ea1fc9c6cc42cbe70f7485c0"
+  },
+  {
+    "file": "24-level2-entry.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\24-level2-entry.png",
+    "caption": "战前：目标28木箱、3个锁定Booster位",
+    "source_sha256": "348e6ab66bf13ee8ace7c8d37cacb2168819553ca0d17b84612264cc55f25563",
+    "report_sha256": "00cf6429325c88c28fa53bd38905514e8a6888dfe84562d00b41f7ba55cfeb66"
+  },
+  {
+    "file": "31-shop.webp",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\31-shop.png",
+    "caption": "Shop：组合礼包优先，纯金币商品随后",
+    "source_sha256": "05239922ed97c7739435fef37b58773fc918213884595e2b58b34886c0740388",
+    "report_sha256": "5a505764d0c6f0a966b6a9cdf23e1302c1236f8f5d78b4a4027b8d1877dd68eb"
+  }
+]

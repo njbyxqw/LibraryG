@@ -1,0 +1,49 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$PrepareHeader
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog__PrepareHeader (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x3828E50; next named boundary 0x3828F08
+03828E50 str      d10, [sp, #-0x30]!
+03828E54 stp      d9, d8, [sp, #8]
+03828E58 str      x20, [sp, #0x18]
+03828E5C stp      x19, x30, [sp, #0x20]
+03828E60 mov      x19, x0
+03828E64 ldr      x0, [x0, #0x130]
+03828E68 cbz      x0, #0x3828f04
+03828E6C mov      x1, xzr
+03828E70 bl       #0x338b7a8 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetUiScaleFactor
+03828E74 ldr      x0, [x19, #0x130]
+03828E78 cbz      x0, #0x3828f04
+03828E7C mov      x1, xzr
+03828E80 mov      v8.16b, v0.16b
+03828E84 bl       #0x338aff4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeTopCenterOfCamera
+03828E88 ldr      x0, [x19, #0x130]
+03828E8C cbz      x0, #0x3828f04
+03828E90 mov      x1, xzr
+03828E94 mov      v9.16b, v1.16b
+03828E98 bl       #0x338b7a8 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetUiScaleFactor
+03828E9C ldr      x0, [x19, #0x48]
+03828EA0 cbz      x0, #0x3828f04
+03828EA4 mov      x1, xzr
+03828EA8 mov      v10.16b, v0.16b
+03828EAC bl       #0x3f4d5dc ; UnityEngine.Component$$get_transform
+03828EB0 mov      x20, x0
+03828EB4 mov      x0, x19
+03828EB8 mov      x1, xzr
+03828EBC bl       #0x3f4d5dc ; UnityEngine.Component$$get_transform
+03828EC0 cbz      x0, #0x3828f04
+03828EC4 mov      x1, xzr
+03828EC8 bl       #0x3f54528 ; UnityEngine.Transform$$get_position
+03828ECC cbz      x20, #0x3828f04
+03828ED0 adrp     x8, #0x40f1000
+03828ED4 ldr      s1, [x8, #0xc4] ; literal -1.20000005 @ 0x40F10C4; confirm base register before use
+03828ED8 mov      x0, x20
+03828EDC ldp      x19, x30, [sp, #0x20]
+03828EE0 ldr      x20, [sp, #0x18]
+03828EE4 fmul     s1, s10, s1
+03828EE8 fadd     s1, s9, s1
+03828EEC fdiv     s1, s1, s8
+03828EF0 ldp      d9, d8, [sp, #8]
+03828EF4 fmov     s2, wzr
+03828EF8 mov      x1, xzr
+03828EFC ldr      d10, [sp], #0x30
+03828F00 b        #0x3f545c8 ; UnityEngine.Transform$$set_position
+03828F04 bl       #0x1043348

@@ -1,0 +1,50 @@
+{
+  "sampled_at_utc": "2026-11-18T12:07:37.729806+00:00",
+  "business_date": "2026-11-18",
+  "device": {
+    "serial": "127.0.0.1:16416",
+    "instance_index": 1,
+    "instance_name": "产品分析",
+    "manager_info_source": "rpc",
+    "version_name": "2.7.3",
+    "version_code": 203
+  },
+  "ap": {
+    "mergeani_on": "false",
+    "mergeani_config": "null",
+    "mergeani_start": "{}",
+    "mergepass_on": "false",
+    "mergepass_config": "null",
+    "eventplan_config": "ActivityPlanConfig",
+    "eventtemplate_config": "ActivityTemplateConfig_1"
+  },
+  "state": {
+    "isOn": false,
+    "isViewed": false,
+    "roundStatus": 0,
+    "curRound": 0,
+    "startRoundTimes": 0,
+    "coins": 0,
+    "progress": 0,
+    "scene": 1,
+    "configName": "MergeAniConfig",
+    "openedFarmLandCount": 1,
+    "totalCostCoins": 0,
+    "farmLandClickCount": 0,
+    "animalClickTimesLeft": 0
+  },
+  "board_cells": 0,
+  "activity_status": {
+    "idx": "mergeani",
+    "round": 0,
+    "st": 0,
+    "et": 0,
+    "oft": 0
+  },
+  "boundaries": [
+    "非原子逐文件只读采集，不用于跨文件事件因果或并发一致性证明",
+    "初始化scene=1不证明本期主题",
+    "状态为未参加样本，未强开活动、未改等级时钟存档",
+    "未核对独立稳定账号标识，不做跨账号比较"
+  ]
+}

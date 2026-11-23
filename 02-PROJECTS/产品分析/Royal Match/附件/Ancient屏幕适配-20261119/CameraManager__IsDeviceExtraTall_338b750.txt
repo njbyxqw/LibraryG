@@ -1,0 +1,11 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceExtraTall
+bool Royal_Infrastructure_Contexts_Units_CameraManager__IsDeviceExtraTall (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x338B750; next named boundary 0x338B770
+0338B750 str      x30, [sp, #-0x10]!
+0338B754 bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+0338B758 adrp     x8, #0x40d9000
+0338B75C ldr      s1, [x8, #0x600] ; literal 0.430000007 @ 0x40D9600; confirm base register before use
+0338B760 fcmp     s0, s1
+0338B764 cset     w0, mi
+0338B768 ldr      x30, [sp], #0x10
+0338B76C ret      

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "long",
+    "pixels": [
+      1080,
+      2560
+    ],
+    "aspect": 0.421875,
+    "camera": [
+      9.3,
+      22.044444444444448
+    ],
+    "rootScale": 1.0978308986277117,
+    "rootY": -0.015642520490452227,
+    "extraTall": true,
+    "stage": 1,
+    "progress": "0/5",
+    "safeInsets": 0,
+    "parentScale": 1
+  },
+  {
+    "id": "normal",
+    "pixels": [
+      1080,
+      2160
+    ],
+    "aspect": 0.5,
+    "camera": [
+      9.3,
+      18.6
+    ],
+    "rootScale": 0.9499489274770175,
+    "rootY": 0.22395181800768782,
+    "extraTall": false,
+    "stage": 1,
+    "progress": "0/5",
+    "safeInsets": 0,
+    "parentScale": 1
+  },
+  {
+    "id": "short",
+    "pixels": [
+      1080,
+      1920
+    ],
+    "aspect": 0.5625,
+    "camera": [
+      9.3,
+      16.533333333333335
+    ],
+    "rootScale": 0.8443990466462378,
+    "rootY": 0.1990682826734993,
+    "extraTall": false,
+    "stage": 1,
+    "progress": "0/5",
+    "safeInsets": 0,
+    "parentScale": 1
+  }
+]

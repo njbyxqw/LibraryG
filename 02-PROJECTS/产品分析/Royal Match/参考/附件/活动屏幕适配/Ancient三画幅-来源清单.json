@@ -1,0 +1,38 @@
+{
+  "source": "06-PRODUCT-ASSETS\\RoyalMatch\\39781\\04-ReverseEngineering\\Ancient-Resolution-Simulation-20261119",
+  "codeBuild": 39781,
+  "resourceBuild": 38911,
+  "state": "Stage1; 0/5; gate enabled; initial Home; U=1; parentScale=1; no safe inset",
+  "render": "Original SpriteRenderer hierarchy and bitmap font. Static alpha approximation using serialized column_mask/Write; underwater sprite suppressed. No Unity material/caustics/refraction/particles evaluation. Fixed illustrative avatar and countdown. New initialization for each aspect, not a live resize replay.",
+  "files": [
+    {
+      "file": "Ancient三画幅-等宽模拟.png",
+      "sha256": "3e454e7d24ca1af33fb26693188a8a458060f540a35563964ed854ae488e6e9e"
+    },
+    {
+      "file": "Ancient三画幅-等高模拟.png",
+      "sha256": "f2cb0cd0df5fb6c857e0e903569fe9c776f6e41d6c51eed43c88a1f55e4f2710"
+    },
+    {
+      "file": "Ancient-1080x2560.webp",
+      "sha256": "9de02b05a030ca3fd89345f1d0073c28fd4ccb2f6c74a4688aacba7d6529f1dc"
+    },
+    {
+      "file": "Ancient-1080x2160.webp",
+      "sha256": "aa1cf21f446ed53df3706823522cefa41dd5167bffd19d415725f53d0ef2daf3"
+    },
+    {
+      "file": "Ancient-1080x1920.webp",
+      "sha256": "df8a437e6131306e5bb3888a82f45458022c424e72c68af5789156c29a9ecbfc"
+    },
+    {
+      "file": "Ancient三画幅-演算输入.json",
+      "sha256": "9eecdc9ba2b9a2ed63209f52a42387cbfb2e7c88a2b06165c8f5cf31cb01d996"
+    },
+    {
+      "file": "Ancient三画幅-预览验收.json",
+      "sha256": "66ac30b47b6f1f37e83696488909c161871fd21c79949760f64960be4ab64eb2"
+    }
+  ],
+  "comparisonAlignment": "Viewport bottoms aligned; image pixels and scene formulas unchanged."
+}

@@ -1,0 +1,61 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$GetConfig
+Royal_Infrastructure_UiComponents_Dialog_DialogConfig_o Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog__GetConfig (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x382BAFC; next named boundary 0x382BBE4
+0382BAFC sub      sp, sp, #0x80
+0382BB00 stp      x21, x20, [sp, #0x60]
+0382BB04 stp      x19, x30, [sp, #0x70]
+0382BB08 mrs      x21, tpidr_el0
+0382BB0C mov      x19, x8
+0382BB10 ldr      x8, [x21, #0x28]
+0382BB14 mov      x1, xzr
+0382BB18 mov      x20, x0
+0382BB1C str      x8, [sp, #0x58]
+0382BB20 mov      x8, sp
+0382BB24 stp      xzr, xzr, [sp, #0x30]
+0382BB28 str      xzr, [sp, #0x40]
+0382BB2C stur     wzr, [sp, #0x47]
+0382BB30 str      wzr, [sp, #0x28]
+0382BB34 strh     wzr, [sp, #0x2c]
+0382BB38 bl       #0x2ab5dfc ; Royal.Infrastructure.UiComponents.Dialog.UiDialog$$GetConfig
+0382BB3C ldur     q0, [sp, #2]
+0382BB40 ldur     q1, [sp, #0xd]
+0382BB44 ldur     w8, [sp, #0x1e]
+0382BB48 ldrh     w9, [sp, #0x22]
+0382BB4C str      q0, [sp, #0x30]
+0382BB50 stur     q1, [sp, #0x3b]
+0382BB54 str      w8, [sp, #0x28]
+0382BB58 strh     w9, [sp, #0x2c]
+0382BB5C ldr      w8, [x20, #0x118]
+0382BB60 mov      w9, wzr
+0382BB64 cmp      w8, #3
+0382BB68 b.eq     #0x382bb8c
+0382BB6C cmp      w8, #5
+0382BB70 b.eq     #0x382bb8c
+0382BB74 ldr      w9, [x20, #0x158]
+0382BB78 cbz      w9, #0x382bb84
+0382BB7C ldrb     w9, [x20, #0x164]
+0382BB80 cbz      w9, #0x382bb8c
+0382BB84 ldrb     w9, [x20, #0x165]
+0382BB88 eor      w9, w9, #1
+0382BB8C cmp      w8, #3
+0382BB90 strb     w9, [x19]
+0382BB94 strb     w9, [x19, #1]
+0382BB98 cset     w9, eq
+0382BB9C ldr      q0, [sp, #0x30]
+0382BBA0 ldur     q1, [sp, #0x3b]
+0382BBA4 ldrh     w8, [sp, #0x2c]
+0382BBA8 strb     w9, [x19, #0x1d]
+0382BBAC ldr      w9, [sp, #0x28]
+0382BBB0 stur     q1, [x19, #0xd]
+0382BBB4 stur     q0, [x19, #2]
+0382BBB8 strh     w8, [x19, #0x22]
+0382BBBC stur     w9, [x19, #0x1e]
+0382BBC0 ldr      x8, [x21, #0x28]
+0382BBC4 ldr      x9, [sp, #0x58]
+0382BBC8 cmp      x8, x9
+0382BBCC b.ne     #0x382bbe0
+0382BBD0 ldp      x19, x30, [sp, #0x70]
+0382BBD4 ldp      x21, x20, [sp, #0x60]
+0382BBD8 add      sp, sp, #0x80
+0382BBDC ret      
+0382BBE0 bl       #0xd363c0

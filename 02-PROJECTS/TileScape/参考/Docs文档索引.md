@@ -17,6 +17,25 @@ cat_order: 020
 
 > 本文档是 `D:\TileScape\Docs\` 与 `D:\TileScape\Doc\` 下未迁移文档的**索引清单**。文档原文仍在项目内，仅做分类整理与价值备注；后续有需求再按主题迁移进知识库。
 
+## 二合迁移背景与项目备份
+
+- **规则与逻辑主档**：[[02-PROJECTS/TileScape/游戏逻辑/背景-MT二合活动迁移|MT 二合活动迁移背景]]；2026-11-23 用户确认主要在 LG 维护，具体执行交程序。
+- **完整备份**：TS `Docs/ActivityMigration/MergeTwo/迁移背景.md`，与 LG 主档同步业务正文，页首和链接按各自位置适配；当前同步日期为 2026-11-23。项目总控及活动计划通过该副本回到 LG 主档。
+- **范围**：原始规则、状态和源码定位的静态背景；源分支差异及运行待验收项保留，不作为迁移完成报告。
+
+## 功能文档实例（2026-11-19）
+
+以下两例核对自目前 Windows TS 工作区 `D:\TileScape_fresh` 的 Git 提交。
+
+| 功能 | 团队文档入口 | 用途 |
+|---|---|---|
+| 二合迁移 | `Docs/MergeTwo_Requirements_Draft.md`（`6629a8359`） | 需求草案集中维护核心循环、术语、范围和 P01–P12 待定项。 |
+| Flow 二期 | `Assets/Module/Flow/FlowDesignPhase2.md`、`Docs/Flow二期/`（`0e60bc9d4`） | 需求与设计、源码调研、落地方案、评审及分步实施验证各有入口，便于对照版本与接手。 |
+
+该结构在竞品调研中的具体用法见 [[02-PROJECTS/产品分析/方法-竞品模块分析与持续维护#参照 TS Docs 组织功能档案|功能档案组织方法]]。
+
+二合项目调研报告已按 `feat-MergeTwo` 需求草案准备，目标位置为 TS `Docs/MergeTwo/01-调研报告-MergeFantasy.md`。当前会话的 TS 仓库权限为只读，待放入团队 Docs。[[02-PROJECTS/TileScape/参考/二合活动/01-调研报告-MergeFantasy|01-调研报告-MergeFantasy]]
+
 ## SplashQuest 数值任务与交付副本
 
 - TS `Docs/SplashQuest_Implementation_Plan.md`：活动项目交付副本；LG 持续主入口为 [[02-PROJECTS/TileScape/游戏逻辑/任务-钻石联盟每日三阶段改造]]，策划稿为 [[02-PROJECTS/TileScape/游戏逻辑/需求-钻石联盟每日三阶段活动]]。

@@ -1,0 +1,782 @@
+{
+  "version": "38911 historical resources saved 2026-10-29",
+  "records": [
+    {
+      "layout": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\activity-layouts\\ancient_adventure_dialog_v3\\layout.json",
+      "sha256": "3a839699b58cb34d29c74413f428238b65ba4d8c49d57d2dea76053340f9fd7e",
+      "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\20261029-device1\\bundles\\ancient_adventure_dialog_v3",
+      "nodes": [
+        {
+          "id": "-4673974195435453717",
+          "name": "NonTallTopBorder",
+          "path": "AncientAdventureDialog/Root/NonTallTopBorder",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -4673974195435453717
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 9.619999885559082,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 157658731137424007
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            9.619999885559082
+          ],
+          "components": []
+        },
+        {
+          "id": "-4110836309044602028",
+          "name": "Root",
+          "path": "AncientAdventureDialog/Root",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -4110836309044602028
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 2433175827481959662
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 2685748408593858907
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -1002277422531755686
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -1024377353418420351
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3073619522637296708
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 4645504817764449949
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "components": []
+        },
+        {
+          "id": "-2459775263705897309",
+          "name": "StepProgress",
+          "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StepProgress",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -2459775263705897309
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 3.11899995803833,
+              "y": 2.4449996948242188,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6958845329731013579
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4208605491302918543
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -2694445127546594400
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7906574069828991520
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -1740762448386973318
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -181408672634536997
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 4145012474900730441
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            3.11899995803833,
+            5.4969162940979
+          ],
+          "components": []
+        },
+        {
+          "id": "-2307681855728967956",
+          "name": "BottomBorder",
+          "path": "AncientAdventureDialog/Root/BottomBorder",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -2307681855728967956
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": -10.050999641418457,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 157658731137424007
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            -10.050999641418457
+          ],
+          "components": []
+        },
+        {
+          "id": "-1787215010226027860",
+          "name": "StageProgress",
+          "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StageProgress",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -1787215010226027860
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": -3.11899995803833,
+              "y": 2.4449996948242188,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -6517658499140883974
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 8436780155614710451
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 4431178402589360045
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -946242639749763209
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -1743478192178199634
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 1083127411503957032
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 4145012474900730441
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            -3.11899995803833,
+            5.4969162940979
+          ],
+          "components": []
+        },
+        {
+          "id": "-1044693120441852879",
+          "name": "TopUI",
+          "path": "AncientAdventureDialog/Root/TopUI",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -1044693120441852879
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 7.889999866485596,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -5582570690601762816
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6191183603693432025
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -2855009495177802894
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4646558749025920651
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -1316303946002032027
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 157658731137424007
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            7.889999866485596
+          ],
+          "components": []
+        },
+        {
+          "id": "780359337111196226",
+          "name": "AncientAdventureDialog",
+          "path": "AncientAdventureDialog",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 780359337111196226
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 157658731137424007
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "components": [
+            {
+              "type": "MonoBehaviour",
+              "script": "AncientAdventureDialog",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": 780359337111196226
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 0,
+                  "m_PathID": 6585038807234572240
+                },
+                "m_Name": "",
+                "zIndex": -11,
+                "root": {
+                  "m_FileID": 0,
+                  "m_PathID": 157658731137424007
+                },
+                "dialogCollider": {
+                  "m_FileID": 0,
+                  "m_PathID": -404744667202175815
+                },
+                "dialogFlowController": {
+                  "m_FileID": 0,
+                  "m_PathID": 6440237448662874741
+                },
+                "remainingTextPositioner": {
+                  "m_FileID": 0,
+                  "m_PathID": 2825979230075196993
+                },
+                "finishTooltipParent": {
+                  "m_FileID": 0,
+                  "m_PathID": 2759530588881340002
+                },
+                "titleBackgroundDarkSprite": {
+                  "m_FileID": 0,
+                  "m_PathID": -9014160995520370596
+                },
+                "titleBackgroundSprites": [
+                  {
+                    "m_FileID": 0,
+                    "m_PathID": 8611284384128556636
+                  },
+                  {
+                    "m_FileID": 0,
+                    "m_PathID": 1105053926875829514
+                  }
+                ],
+                "titleBackgroundImageTransform": {
+                  "m_FileID": 0,
+                  "m_PathID": 403259295383626706
+                },
+                "titleText": {
+                  "m_FileID": 0,
+                  "m_PathID": -1921784432157472751
+                },
+                "stageProgressParent": {
+                  "m_FileID": 0,
+                  "m_PathID": 3716029754920266845
+                },
+                "stepProgressParent": {
+                  "m_FileID": 0,
+                  "m_PathID": 2191344579112228934
+                },
+                "failTextBackground": {
+                  "m_FileID": 0,
+                  "m_PathID": 4923269242667036194
+                },
+                "failText": {
+                  "m_FileID": 0,
+                  "m_PathID": -2883135504163673137
+                }
+              }
+            },
+            {
+              "type": "MonoBehaviour",
+              "script": "AncientAdventureDialogFlowController",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": 780359337111196226
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 0,
+                  "m_PathID": -7625613598305911758
+                },
+                "m_Name": "",
+                "sceneViewParent": {
+                  "m_FileID": 0,
+                  "m_PathID": 4135063279784025195
+                },
+                "heistViewParent": {
+                  "m_FileID": 0,
+                  "m_PathID": 5970858984948941320
+                },
+                "closeButtonParent": {
+                  "m_FileID": 0,
+                  "m_PathID": -2890970367947924512
+                },
+                "infoButtonParent": {
+                  "m_FileID": 0,
+                  "m_PathID": 1167717349271109892
+                },
+                "heistController": {
+                  "m_FileID": 0,
+                  "m_PathID": -110080213324813626
+                },
+                "levelTooltipButton": {
+                  "m_FileID": 0,
+                  "m_PathID": 4148850624282705431
+                },
+                "oneStageLevelTooltipButton": {
+                  "m_FileID": 0,
+                  "m_PathID": 7727695571572434590
+                },
+                "stageTooltipButton": {
+                  "m_FileID": 0,
+                  "m_PathID": -4650716150859634064
+                },
+                "sceneController": {
+                  "m_FileID": 0,
+                  "m_PathID": 1296092553031299682
+                }
+              }
+            },
+            {
+              "type": "SortingGroup",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": 780359337111196226
+                },
+                "m_Enabled": 1,
+                "m_SortingLayerID": 2046106761,
+                "m_SortingLayer": 7,
+                "m_SortingOrder": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "4135063279784025195",
+          "name": "SceneParent",
+          "path": "AncientAdventureDialog/Root/SceneParent",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4135063279784025195
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 4550972513419871201
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 157658731137424007
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "components": []
+        },
+        {
+          "id": "5970858984948941320",
+          "name": "HeistParent",
+          "path": "AncientAdventureDialog/Root/HeistParent",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 5970858984948941320
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 157658731137424007
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "components": [
+            {
+              "type": "SortingGroup",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": 5970858984948941320
+                },
+                "m_Enabled": 1,
+                "m_SortingLayerID": 0,
+                "m_SortingLayer": 0,
+                "m_SortingOrder": 100
+              }
+            },
+            {
+              "type": "MonoBehaviour",
+              "script": "AncientAdventureHeistController",
+              "fields": {
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": 5970858984948941320
+                },
+                "m_Enabled": 1,
+                "m_Script": {
+                  "m_FileID": 0,
+                  "m_PathID": -1152460638250550177
+                },
+                "m_Name": "",
+                "heistView": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "9147799822917939096",
+          "name": "StageProgress",
+          "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/FailStateView/StageProgress",
+          "active": true,
+          "effectiveActive": false,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 9147799822917939096
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 2.4449996948242188,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -7936500590358354829
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3522480159475127247
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5881846746811283017
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": -9189706700616405719
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            5.4969162940979
+          ],
+          "components": []
+        }
+      ]
+    },
+    {
+      "layout": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\activity-layouts\\ancient_adventure_stage_1_v2\\layout.json",
+      "sha256": "c2915551ab6b2401c34ed792bd6b6e2ac3e99189de16dd404ec5f10ef8a35e8c",
+      "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\20261029-device1\\bundles\\ancient_adventure_stage_1_v2",
+      "nodes": [
+        {
+          "id": "1485219391028443268",
+          "name": "BottomBorder",
+          "path": "AncientAdventureSceneView1/Root/BottomBorder",
+          "active": true,
+          "effectiveActive": true,
+          "transform": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1485219391028443268
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": -10.071000099182129,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 3888868853817718786
+            }
+          },
+          "world2d": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            -10.071000099182129
+          ],
+          "components": []
+        }
+      ]
+    }
+  ]
+}

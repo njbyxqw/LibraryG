@@ -1,0 +1,423 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters
+void Royal_Infrastructure_Contexts_Units_CameraManager__UpdateSizeParameters (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, int32_t scene, const MethodInfo* method);
+0x3389B6C; next named boundary 0x338A1FC
+03389B6C sub      sp, sp, #0x80
+03389B70 stp      d9, d8, [sp, #0x40]
+03389B74 stp      x23, x22, [sp, #0x50]
+03389B78 stp      x21, x20, [sp, #0x60]
+03389B7C stp      x19, x30, [sp, #0x70]
+03389B80 adrp     x21, #0x58c5000
+03389B84 ldrb     w8, [x21, #0xc28]
+03389B88 mov      w20, w1
+03389B8C mov      x19, x0
+03389B90 tbnz     w8, #0, #0x3389bfc
+03389B94 adrp     x0, #0x5545000
+03389B98 ldr      x0, [x0, #0x700] ; Method$System.Array.Empty<object>()
+03389B9C bl       #0x1043220
+03389BA0 adrp     x0, #0x5527000
+03389BA4 ldr      x0, [x0, #0x218] ; int_TypeInfo
+03389BA8 bl       #0x1043220
+03389BAC adrp     x0, #0x54d9000
+03389BB0 ldr      x0, [x0, #0x1a0] ; Royal.Player.Context.Units.LevelManager_TypeInfo
+03389BB4 bl       #0x1043220
+03389BB8 adrp     x0, #0x5554000
+03389BBC ldr      x0, [x0, #0xa38] ; object[]_TypeInfo
+03389BC0 bl       #0x1043220
+03389BC4 adrp     x0, #0x552e000
+03389BC8 ldr      x0, [x0, #0x768] ; UnityEngine.Rect_TypeInfo
+03389BCC bl       #0x1043220
+03389BD0 adrp     x0, #0x5524000
+03389BD4 ldr      x0, [x0, #0xec8] ; UnityEngine.ScreenOrientation_TypeInfo
+03389BD8 bl       #0x1043220
+03389BDC adrp     x0, #0x551a000
+03389BE0 ldr      x0, [x0, #0x978] ; float_TypeInfo
+03389BE4 bl       #0x1043220
+03389BE8 adrp     x0, #0x5537000
+03389BEC ldr      x0, [x0, #0xc88]
+03389BF0 bl       #0x1043220
+03389BF4 mov      w8, #1
+03389BF8 strb     w8, [x21, #0xc28]
+03389BFC mov      x0, x19
+03389C00 bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+03389C04 adrp     x8, #0x40cc000
+03389C08 ldr      s9, [x8, #0xc5c] ; literal 0.800000012 @ 0x40CCC5C; confirm base register before use
+03389C0C fmov     s8, #0.50000000
+03389C10 fcmp     s0, s9
+03389C14 b.ge     #0x3389c20
+03389C18 mov      w21, wzr
+03389C1C b        #0x3389ca4
+03389C20 ldr      x0, [x19, #0x18]
+03389C24 cbz      x0, #0x338a1ec
+03389C28 mov      x1, xzr
+03389C2C bl       #0x3f4917c ; UnityEngine.Camera$$get_pixelHeight
+03389C30 ldr      x8, [x19, #0x18]
+03389C34 cbz      x8, #0x338a1ec
+03389C38 mov      w21, w0
+03389C3C mov      x0, x8
+03389C40 mov      x1, xzr
+03389C44 bl       #0x3f49140 ; UnityEngine.Camera$$get_pixelWidth
+03389C48 adrp     x8, #0x40cc000
+03389C4C ldr      s1, [x8, #0xa8c] ; literal 0.699999988 @ 0x40CCA8C; confirm base register before use
+03389C50 scvtf    s0, w21
+03389C54 scvtf    s2, w0
+03389C58 fmov     s3, #1.00000000
+03389C5C fmul     s0, s0, s1
+03389C60 ldr      x21, [x19, #0x18]
+03389C64 fdiv     s2, s0, s2
+03389C68 fsub     s0, s3, s2
+03389C6C fmul     s0, s0, s8
+03389C70 add      x0, sp, #0x30
+03389C74 fmov     s1, wzr
+03389C78 mov      x1, xzr
+03389C7C str      s2, [x19, #0x5c]
+03389C80 stp      xzr, xzr, [sp, #0x30]
+03389C84 bl       #0x37228f0 ; UnityEngine.Rect$$.ctor
+03389C88 cbz      x21, #0x338a1ec
+03389C8C ldp      s0, s1, [sp, #0x30]
+03389C90 ldp      s2, s3, [sp, #0x38]
+03389C94 mov      x0, x21
+03389C98 mov      x1, xzr
+03389C9C bl       #0x3f48f74 ; UnityEngine.Camera$$set_rect
+03389CA0 mov      w21, #1
+03389CA4 ldr      x0, [x19, #0x18]
+03389CA8 cbz      x0, #0x338a1ec
+03389CAC mov      x1, xzr
+03389CB0 bl       #0x3f48be0 ; UnityEngine.Camera$$get_aspect
+03389CB4 mov      x0, x19
+03389CB8 str      s0, [x19, #0x28]
+03389CBC bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+03389CC0 cmp      w20, #2
+03389CC4 b.ne     #0x3389cdc
+03389CC8 fcmp     s0, s9
+03389CCC b.lt     #0x3389cdc
+03389CD0 adrp     x8, #0x4170000
+03389CD4 ldr      s0, [x8, #0x774] ; literal 15.1190472 @ 0x4170774; confirm base register before use
+03389CD8 b        #0x3389d30
+03389CDC ldr      x0, [x19, #0x18]
+03389CE0 cbz      x0, #0x338a1ec
+03389CE4 mov      x1, xzr
+03389CE8 bl       #0x3f48be0 ; UnityEngine.Camera$$get_aspect
+03389CEC adrp     x8, #0x40cc000
+03389CF0 ldr      s9, [x8, #0xc14] ; literal 0.569999993 @ 0x40CCC14; confirm base register before use
+03389CF4 fcmp     s0, s9
+03389CF8 b.ge     #0x3389d08
+03389CFC adrp     x8, #0x4113000
+03389D00 ldr      s0, [x8, #0xc34] ; literal 9.30000019 @ 0x4113C34; confirm base register before use
+03389D04 b        #0x3389d30
+03389D08 mov      x0, x19
+03389D0C bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+03389D10 adrp     x8, #0x40cc000
+03389D14 ldr      s1, [x8, #0xb40] ; literal 0.600000024 @ 0x40CCB40; confirm base register before use
+03389D18 adrp     x8, #0x40f1000
+03389D1C ldr      s2, [x8, #0xd7c] ; literal 12.6999998 @ 0x40F1D7C; confirm base register before use
+03389D20 fcmp     s0, s1
+03389D24 fccmp    s0, s9, #8, mi
+03389D28 fmov     s0, #10.50000000
+03389D2C fcsel    s0, s2, s0, lt
+03389D30 cmp      w20, #2
+03389D34 str      s0, [x19, #0x24]
+03389D38 b.ne     #0x3389d98
+03389D3C adrp     x8, #0x54d9000
+03389D40 ldr      x8, [x8, #0x1a0] ; Royal.Player.Context.Units.LevelManager_TypeInfo
+03389D44 ldr      x0, [x8]
+03389D48 ldr      w8, [x0, #0xe0]
+03389D4C cbnz     w8, #0x3389d54
+03389D50 bl       #0x1043324
+03389D54 mov      x0, xzr
+03389D58 bl       #0x2575ad4 ; Royal.Player.Context.Units.LevelManager$$get_IsTableGameLevel
+03389D5C tbz      w0, #0, #0x3389d98
+03389D60 mov      x0, x19
+03389D64 bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+03389D68 adrp     x8, #0x40cc000
+03389D6C ldr      s1, [x8, #0xaf4] ; literal 0.649999976 @ 0x40CCAF4; confirm base register before use
+03389D70 fcmp     s0, s1
+03389D74 b.lt     #0x3389d98
+03389D78 ldr      x0, [x19, #0x18]
+03389D7C cbz      x0, #0x338a1ec
+03389D80 mov      x1, xzr
+03389D84 bl       #0x3f48be0 ; UnityEngine.Camera$$get_aspect
+03389D88 adrp     x8, #0x4170000
+03389D8C ldr      s1, [x8, #0x778] ; literal 18.2000008 @ 0x4170778; confirm base register before use
+03389D90 fmul     s0, s0, s1
+03389D94 str      s0, [x19, #0x24]
+03389D98 ldp      s0, s1, [x19, #0x24]
+03389D9C ldr      x0, [x19, #0x18]
+03389DA0 fdiv     s0, s0, s1
+03389DA4 str      s0, [x19, #0x20]
+03389DA8 cbz      x0, #0x338a1ec
+03389DAC adrp     x20, #0x5554000
+03389DB0 adrp     x22, #0x5527000
+03389DB4 ldr      x20, [x20, #0xa38] ; object[]_TypeInfo
+03389DB8 ldr      x22, [x22, #0x218] ; int_TypeInfo
+03389DBC fmul     s0, s0, s8
+03389DC0 mov      x1, xzr
+03389DC4 bl       #0x3f48a8c ; UnityEngine.Camera$$set_orthographicSize
+03389DC8 mov      x0, x19
+03389DCC bl       #0x338a2f0 ; Royal.Infrastructure.Contexts.Units.CameraManager$$SetSafeAreaOffset
+03389DD0 cbz      w21, #0x3389de8
+03389DD4 ldr      s0, [x19, #0x5c]
+03389DD8 mov      x0, x19
+03389DDC bl       #0x338a704 ; Royal.Infrastructure.Contexts.Units.CameraManager$$CreateSquareDeviceSideTouchBlocker
+03389DE0 mov      x0, x19
+03389DE4 bl       #0x338a8e0 ; Royal.Infrastructure.Contexts.Units.CameraManager$$CreateSquareDeviceFlags
+03389DE8 ldr      x0, [x20]
+03389DEC mov      w1, #0xa
+03389DF0 bl       #0x1043290
+03389DF4 mov      x20, x0
+03389DF8 mov      x0, xzr
+03389DFC bl       #0x3f4617c ; UnityEngine.Screen$$get_width
+03389E00 ldr      x8, [x22]
+03389E04 str      w0, [sp, #0x2c]
+03389E08 add      x1, sp, #0x2c
+03389E0C mov      x0, x8
+03389E10 bl       #0x104332c
+03389E14 cbz      x20, #0x338a1ec
+03389E18 mov      x21, x0
+03389E1C cbz      x0, #0x3389e34
+03389E20 ldr      x8, [x20]
+03389E24 mov      x0, x21
+03389E28 ldr      x1, [x8, #0x40]
+03389E2C bl       #0x1043328
+03389E30 cbz      x0, #0x338a1f0
+03389E34 ldr      w8, [x20, #0x18]
+03389E38 cbz      w8, #0x338a1e8
+03389E3C mov      x0, x20
+03389E40 str      x21, [x0, #0x20]!
+03389E44 mov      x1, x21
+03389E48 bl       #0x10431cc
+03389E4C mov      x0, xzr
+03389E50 bl       #0x3f461a4 ; UnityEngine.Screen$$get_height
+03389E54 ldr      x8, [x22]
+03389E58 str      w0, [sp, #0x28]
+03389E5C add      x1, sp, #0x28
+03389E60 mov      x0, x8
+03389E64 bl       #0x104332c
+03389E68 mov      x21, x0
+03389E6C cbz      x0, #0x3389e84
+03389E70 ldr      x8, [x20]
+03389E74 mov      x0, x21
+03389E78 ldr      x1, [x8, #0x40]
+03389E7C bl       #0x1043328
+03389E80 cbz      x0, #0x338a1f0
+03389E84 ldr      w8, [x20, #0x18]
+03389E88 cmp      w8, #1
+03389E8C b.ls     #0x338a1e8
+03389E90 adrp     x23, #0x5524000
+03389E94 ldr      x23, [x23, #0xec8] ; UnityEngine.ScreenOrientation_TypeInfo
+03389E98 mov      x0, x20
+03389E9C str      x21, [x0, #0x28]!
+03389EA0 mov      x1, x21
+03389EA4 bl       #0x10431cc
+03389EA8 ldr      w8, [x19, #0x2c]
+03389EAC ldr      x0, [x23]
+03389EB0 add      x1, sp, #0x24
+03389EB4 str      w8, [sp, #0x24]
+03389EB8 bl       #0x104332c
+03389EBC mov      x21, x0
+03389EC0 cbz      x0, #0x3389ed8
+03389EC4 ldr      x8, [x20]
+03389EC8 mov      x0, x21
+03389ECC ldr      x1, [x8, #0x40]
+03389ED0 bl       #0x1043328
+03389ED4 cbz      x0, #0x338a1f0
+03389ED8 ldr      w8, [x20, #0x18]
+03389EDC cmp      w8, #2
+03389EE0 b.ls     #0x338a1e8
+03389EE4 adrp     x23, #0x551a000
+03389EE8 ldr      x23, [x23, #0x978] ; float_TypeInfo
+03389EEC mov      x0, x20
+03389EF0 str      x21, [x0, #0x30]!
+03389EF4 mov      x1, x21
+03389EF8 bl       #0x10431cc
+03389EFC ldr      w8, [x19, #0x24]
+03389F00 ldr      x0, [x23]
+03389F04 add      x1, sp, #0x20
+03389F08 str      w8, [sp, #0x20]
+03389F0C bl       #0x104332c
+03389F10 mov      x21, x0
+03389F14 cbz      x0, #0x3389f2c
+03389F18 ldr      x8, [x20]
+03389F1C mov      x0, x21
+03389F20 ldr      x1, [x8, #0x40]
+03389F24 bl       #0x1043328
+03389F28 cbz      x0, #0x338a1f0
+03389F2C ldr      w8, [x20, #0x18]
+03389F30 cmp      w8, #3
+03389F34 b.ls     #0x338a1e8
+03389F38 mov      x0, x20
+03389F3C str      x21, [x0, #0x38]!
+03389F40 mov      x1, x21
+03389F44 bl       #0x10431cc
+03389F48 ldr      w8, [x19, #0x20]
+03389F4C ldr      x0, [x23]
+03389F50 add      x1, sp, #0x1c
+03389F54 str      w8, [sp, #0x1c]
+03389F58 bl       #0x104332c
+03389F5C mov      x21, x0
+03389F60 cbz      x0, #0x3389f78
+03389F64 ldr      x8, [x20]
+03389F68 mov      x0, x21
+03389F6C ldr      x1, [x8, #0x40]
+03389F70 bl       #0x1043328
+03389F74 cbz      x0, #0x338a1f0
+03389F78 ldr      w8, [x20, #0x18]
+03389F7C cmp      w8, #4
+03389F80 b.ls     #0x338a1e8
+03389F84 mov      x0, x20
+03389F88 str      x21, [x0, #0x40]!
+03389F8C mov      x1, x21
+03389F90 bl       #0x10431cc
+03389F94 ldr      x0, [x19, #0x18]
+03389F98 cbz      x0, #0x338a1ec
+03389F9C mov      x1, xzr
+03389FA0 bl       #0x3f49140 ; UnityEngine.Camera$$get_pixelWidth
+03389FA4 ldr      x8, [x22]
+03389FA8 str      w0, [sp, #0x18]
+03389FAC add      x1, sp, #0x18
+03389FB0 mov      x0, x8
+03389FB4 bl       #0x104332c
+03389FB8 mov      x21, x0
+03389FBC cbz      x0, #0x3389fd4
+03389FC0 ldr      x8, [x20]
+03389FC4 mov      x0, x21
+03389FC8 ldr      x1, [x8, #0x40]
+03389FCC bl       #0x1043328
+03389FD0 cbz      x0, #0x338a1f0
+03389FD4 ldr      w8, [x20, #0x18]
+03389FD8 cmp      w8, #5
+03389FDC b.ls     #0x338a1e8
+03389FE0 mov      x0, x20
+03389FE4 str      x21, [x0, #0x48]!
+03389FE8 mov      x1, x21
+03389FEC bl       #0x10431cc
+03389FF0 ldr      x0, [x19, #0x18]
+03389FF4 cbz      x0, #0x338a1ec
+03389FF8 mov      x1, xzr
+03389FFC bl       #0x3f4917c ; UnityEngine.Camera$$get_pixelHeight
+0338A000 ldr      x8, [x22]
+0338A004 str      w0, [sp, #0x14]
+0338A008 add      x1, sp, #0x14
+0338A00C mov      x0, x8
+0338A010 bl       #0x104332c
+0338A014 mov      x21, x0
+0338A018 cbz      x0, #0x338a030
+0338A01C ldr      x8, [x20]
+0338A020 mov      x0, x21
+0338A024 ldr      x1, [x8, #0x40]
+0338A028 bl       #0x1043328
+0338A02C cbz      x0, #0x338a1f0
+0338A030 ldr      w8, [x20, #0x18]
+0338A034 cmp      w8, #6
+0338A038 b.ls     #0x338a1e8
+0338A03C mov      x0, x20
+0338A040 str      x21, [x0, #0x50]!
+0338A044 mov      x1, x21
+0338A048 bl       #0x10431cc
+0338A04C ldr      x0, [x19, #0x18]
+0338A050 cbz      x0, #0x338a1ec
+0338A054 mov      x1, xzr
+0338A058 bl       #0x3f48be0 ; UnityEngine.Camera$$get_aspect
+0338A05C ldr      x0, [x23]
+0338A060 add      x1, sp, #0x10
+0338A064 str      s0, [sp, #0x10]
+0338A068 bl       #0x104332c
+0338A06C mov      x21, x0
+0338A070 cbz      x0, #0x338a088
+0338A074 ldr      x8, [x20]
+0338A078 mov      x0, x21
+0338A07C ldr      x1, [x8, #0x40]
+0338A080 bl       #0x1043328
+0338A084 cbz      x0, #0x338a1f0
+0338A088 ldr      w8, [x20, #0x18]
+0338A08C cmp      w8, #7
+0338A090 b.ls     #0x338a1e8
+0338A094 adrp     x23, #0x552e000
+0338A098 ldr      x23, [x23, #0x768] ; UnityEngine.Rect_TypeInfo
+0338A09C mov      x0, x20
+0338A0A0 str      x21, [x0, #0x58]!
+0338A0A4 mov      x1, x21
+0338A0A8 bl       #0x10431cc
+0338A0AC ldur     q0, [x19, #0x4c]
+0338A0B0 ldr      x0, [x23]
+0338A0B4 add      x1, sp, #0x30
+0338A0B8 str      q0, [sp, #0x30]
+0338A0BC bl       #0x104332c
+0338A0C0 mov      x21, x0
+0338A0C4 cbz      x0, #0x338a0dc
+0338A0C8 ldr      x8, [x20]
+0338A0CC mov      x0, x21
+0338A0D0 ldr      x1, [x8, #0x40]
+0338A0D4 bl       #0x1043328
+0338A0D8 cbz      x0, #0x338a1f0
+0338A0DC ldr      w8, [x20, #0x18]
+0338A0E0 cmp      w8, #8
+0338A0E4 b.ls     #0x338a1e8
+0338A0E8 mov      x0, x20
+0338A0EC str      x21, [x0, #0x60]!
+0338A0F0 mov      x1, x21
+0338A0F4 bl       #0x10431cc
+0338A0F8 mov      x0, xzr
+0338A0FC bl       #0x3f48874 ; UnityEngine.Time$$get_frameCount
+0338A100 ldr      x8, [x22]
+0338A104 str      w0, [sp, #0xc]
+0338A108 add      x1, sp, #0xc
+0338A10C mov      x0, x8
+0338A110 bl       #0x104332c
+0338A114 mov      x21, x0
+0338A118 cbz      x0, #0x338a130
+0338A11C ldr      x8, [x20]
+0338A120 mov      x0, x21
+0338A124 ldr      x1, [x8, #0x40]
+0338A128 bl       #0x1043328
+0338A12C cbz      x0, #0x338a1f0
+0338A130 ldr      w8, [x20, #0x18]
+0338A134 cmp      w8, #9
+0338A138 b.ls     #0x338a1e8
+0338A13C adrp     x22, #0x5537000
+0338A140 adrp     x23, #0x5545000
+0338A144 ldr      x22, [x22, #0xc88]
+0338A148 ldr      x23, [x23, #0x700] ; Method$System.Array.Empty<object>()
+0338A14C mov      x0, x20
+0338A150 str      x21, [x0, #0x68]!
+0338A154 mov      x1, x21
+0338A158 bl       #0x10431cc
+0338A15C ldr      x0, [x22]
+0338A160 mov      x1, x20
+0338A164 mov      x2, xzr
+0338A168 bl       #0x1dddaec ; System.String$$Format
+0338A16C ldr      x21, [x23]
+0338A170 mov      x20, x0
+0338A174 ldr      x8, [x21, #0x38]
+0338A178 ldr      x8, [x8]
+0338A17C ldrb     w9, [x8, #0x132]
+0338A180 tbnz     w9, #0, #0x338a190
+0338A184 mov      x0, x8
+0338A188 bl       #0x1011f04
+0338A18C mov      x8, x0
+0338A190 ldr      w9, [x8, #0xe0]
+0338A194 cbnz     w9, #0x338a1a0
+0338A198 mov      x0, x8
+0338A19C bl       #0x1043324
+0338A1A0 ldr      x8, [x21, #0x38]
+0338A1A4 ldr      x0, [x8]
+0338A1A8 ldrb     w8, [x0, #0x132]
+0338A1AC tbnz     w8, #0, #0x338a1b4
+0338A1B0 bl       #0x1011f04
+0338A1B4 ldr      x8, [x0, #0xb8]
+0338A1B8 mov      w1, #1
+0338A1BC mov      x0, x19
+0338A1C0 mov      x2, x20
+0338A1C4 ldr      x3, [x8]
+0338A1C8 mov      x4, xzr
+0338A1CC bl       #0x3478a9c ; Royal.Infrastructure.Services.Logs.Log$$Debug
+0338A1D0 ldp      x19, x30, [sp, #0x70]
+0338A1D4 ldp      x21, x20, [sp, #0x60]
+0338A1D8 ldp      x23, x22, [sp, #0x50]
+0338A1DC ldp      d9, d8, [sp, #0x40]
+0338A1E0 add      sp, sp, #0x80
+0338A1E4 ret      
+0338A1E8 bl       #0x1043350
+0338A1EC bl       #0x1043348
+0338A1F0 bl       #0x104336c
+0338A1F4 mov      x1, xzr
+0338A1F8 bl       #0x1043310

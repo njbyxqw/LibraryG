@@ -1,0 +1,821 @@
+{
+  "artifact": {
+    "name": "Hot.Scripts.dll",
+    "sha256": "11366a21e7c2fbdcdf5e301a9ff153dfd125b90736b64724371f2d6ed5f06954",
+    "mvid": "66876522-48c6-4f06-8c1e-6e86515a2add",
+    "build": "2.7.3 / 203"
+  },
+  "analysis_mode": "静态PE/CIL解码＋同构建ARM算术VM模拟；未加载或执行目标程序集、未修改设备。",
+  "normalization": {
+    "field_constants": 10171,
+    "rva_constants": 564,
+    "rva_strings": 552,
+    "folded_arithmetic": 2882
+  },
+  "verification": [
+    {
+      "type": "$Obfuz$RVA$0.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$1.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$2.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$3.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$4.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$5.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$6.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    },
+    {
+      "type": "$Obfuz$RVA$7.il",
+      "il_offset": "IL_0014",
+      "expected": 305419896,
+      "actual": 305419896,
+      "pass": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "merge-two-to-one",
+      "claim": "拖动两格相同可合物件后，MergeItems删除源格顶部物件，并清空目标格后放入原物件chain指定的一件新物件，因此是2合1。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e08 RVA 0x1d710c DragItemEnd",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.DragItemEnd.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "f245ea16d7cc490f0a45741d3b3460c62a2da5a73c9aa1ce3153f6a626d9614b"
+        },
+        {
+          "method": "METHOD 0x06001e0b RVA 0x1d75a8 MergeItems",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.MergeItems.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "1146894934ceedf04bddd326f2eb469e78e251272d2fa16fedff26ecbb1dc4f3"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "farm-tool-cost",
+      "claim": "采集主链物件时调用SpawnItemsToRandomEmptyCells(outputItemId, outputCount, consume=1, ...)，成功支路coins-=1，累计totalCostCoins+=1，广播OnTokenConsumed(1)。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x060010ae RVA 0x1189bc OnClickFarmPlantItem",
+          "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.OnClickFarmPlantItem.il.txt",
+          "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+          "sha256": "e7f7f9834737d61c65a9afc29ecf438e2b9e979040d73c990c6b48df1d83b03e"
+        },
+        {
+          "method": "METHOD 0x06001e19 RVA 0x1d8ea8 SpawnItemsToRandomEmptyCells",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.SpawnItemsToRandomEmptyCells.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "960a12c1f558743bbb156c46d9033cfafb6752917b6456cd4ea2620dd6dbe061"
+        }
+      ],
+      "boundary": "满盘及溢出等分支另有处理，不能只按按钮点击数统计实际消费。"
+    },
+    {
+      "id": "farm-output-scales-with-opened-count",
+      "claim": "GetGrassOutput使用userInfo.openedFarmLandCount选表，而非点击的地块编号；包内1/2/3/4档每次分别生成1/2/3/4个10101。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x060010ae RVA 0x1189bc OnClickFarmPlantItem",
+          "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.OnClickFarmPlantItem.il.txt",
+          "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+          "sha256": "e7f7f9834737d61c65a9afc29ecf438e2b9e979040d73c990c6b48df1d83b03e"
+        }
+      ],
+      "boundary": "实际选中配置可能覆盖输出数，当前账号值需运行缓存对位。"
+    },
+    {
+      "id": "feed-periodic-not-seconds",
+      "claim": "TryHitFeedLineInterval把全局farmLandClickCount加1，再按farmLandClickCount % interval == 0判定附赠饲料；interval<=0按1处理。因此5/4/3/1是采集点击周期，不是时间秒数或抽取概率。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f49 RVA 0xffa40 TryHitFeedLineInterval",
+          "normalized_evidence": "critical-methods\\MergeaniDM.TryHitFeedLineInterval.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "e1dc48433c9a671cd400b12d05ab0f26ddd1e396629394a1b88a5d7a567492a3"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "feed-output-no-extra-tool",
+      "claim": "采集触发的饲料产出调用SpawnItemsToRandomEmptyCells的consume=0，包内每次附赠30101一个，不额外消耗工具。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x060010ae RVA 0x1189bc OnClickFarmPlantItem",
+          "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.OnClickFarmPlantItem.il.txt",
+          "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+          "sha256": "e7f7f9834737d61c65a9afc29ecf438e2b9e979040d73c990c6b48df1d83b03e"
+        },
+        {
+          "method": "METHOD 0x06001e19 RVA 0x1d8ea8 SpawnItemsToRandomEmptyCells",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.SpawnItemsToRandomEmptyCells.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "960a12c1f558743bbb156c46d9033cfafb6752917b6456cd4ea2620dd6dbe061"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "feeding-max-item",
+      "claim": "TryHandleFeedAnimalFlag要求物件ability=9且链到顶（chain<=0，或chain==自身则视为末端），消耗该格顶部饲料物件后调用FeedAnimal；包内对应30105。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x060010f5 RVA 0x120ba4 TryHandleFeedAnimalFlag",
+          "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.TryHandleFeedAnimalFlag.il.txt",
+          "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+          "sha256": "cfacf1e0b74fff727a15b3f70da8f90c5ea895be1297ac891d48871aeda31fd2"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "feeding-budget",
+      "claim": "FeedAnimal令feedAnimalTimes+=1，animalClickTimesLeft+=max(1, config.clickableTimesPerFeed)；包内clickableTimesPerFeed=4。动物产出点击耗减该预算，配置产20101、count1。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f4d RVA 0xfff18 FeedAnimal",
+          "normalized_evidence": "critical-methods\\MergeaniDM.FeedAnimal.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "2db1b16cb493458ce3248714fff4f3443b7bdccf371ea34091d2d98511e25c63"
+        },
+        {
+          "method": "METHOD 0x06000f4a RVA 0xffc38 AnimalOutput",
+          "normalized_evidence": "critical-methods\\MergeaniDM.AnimalOutput.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "d1044085ddebf3196b2e3ab0aa621e26a09204e950b7987d5fa5a21ff9caf488"
+        },
+        {
+          "method": "METHOD 0x06000f90 RVA 0x1071f4 TryConsumeAnimalOutputClick",
+          "normalized_evidence": "critical-methods\\MergeaniDM.TryConsumeAnimalOutputClick.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "221d9f0874d195e93c97649a254c22f44d494ab0808f8b47bfa9c904e6a7a2bf"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "first-unlock-progress",
+      "claim": "CheckAndRecordUnlockedChainItem仅在可拖动物件ID首次进入unlockedItems时触发OnItemUnlocked；对于非奖励箱更新progress=max(progress, GetMainChainItemIdx(itemId)+1)。主链首次达到奖励组时抽取对应奖励，满主链时SendFinalReward并PassGame。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e11 RVA 0x1d8314 CheckAndRecordUnlockedChainItem",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.CheckAndRecordUnlockedChainItem.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "1bb7936615c9d0b9a5c248bb936d87b5534937d7efe53da54bee295cc1896084"
+        }
+      ],
+      "boundary": "GetMainChainItemIdx对非主链返回行为由通用配置provider决定；不把所有支线解锁当作提高主线等级。"
+    },
+    {
+      "id": "item-reward-spawns",
+      "claim": "合成后若新物件属于主线或产物线且配置itemRewards，则按数组生成指定奖励物件；随机的是落入的空格位置，数组本身不是随机池。空格不足的剩余奖励进入shelvedItems暂存。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e0b RVA 0x1d75a8 MergeItems",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.MergeItems.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "1146894934ceedf04bddd326f2eb469e78e251272d2fa16fedff26ecbb1dc4f3"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "weighted-one-draw",
+      "claim": "Rand1ItemRewards在单条时直接返回，多个候选时将每条weight交给NextIdxByWeights（排除参数null），只返回选中一条；包内70005组7项均weight100，配置条件下单次各1/7。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e1d RVA 0x1d936c Rand1ItemRewards",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.Rand1ItemRewards.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "b49ef6c7be1917f804f9a7a8d817afa3c21e8a4e32a68e541b78ec414ebc523b"
+        }
+      ],
+      "boundary": "未还原随机种子分布；未在已读方法中发现该奖励池的重抽/保底修正，不推断服务器全局不存在调控。"
+    },
+    {
+      "id": "cloud-goal",
+      "claim": "TryApplyCloudGoalsOnUnlock取得当前cloulGoalProgressId对应cloudGoal，仅当新解锁itemId等于targetItemId才应用：白云清除/黑云变白；记录cloudGoalDoneIds防重复。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f58 RVA 0x100da0 TryApplyCloudGoalsOnUnlock",
+          "normalized_evidence": "critical-methods\\MergeaniDM.TryApplyCloudGoalsOnUnlock.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "98bc5e8de52f50f3ecd53234b4da4d03f72dc8b50c60e5d81c92c195ce5c3863"
+        }
+      ],
+      "boundary": "主链物件在这条处理链中不作为提交材料消耗；其他手动交互与恢复补偿逻辑保留原方法证据。"
+    },
+    {
+      "id": "cloud-move",
+      "claim": "阶段末云目标读取moveLinesAfterAllCloudCleared；pending移动支路实际取min(待移动行数, stageHeight-viewHeight-offset)，避免越过棋盘剩余行。包内后3阶段配置2/2/1行。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f58 RVA 0x100da0 TryApplyCloudGoalsOnUnlock",
+          "normalized_evidence": "critical-methods\\MergeaniDM.TryApplyCloudGoalsOnUnlock.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "98bc5e8de52f50f3ecd53234b4da4d03f72dc8b50c60e5d81c92c195ce5c3863"
+        },
+        {
+          "method": "METHOD 0x06001e02 RVA 0x1d6640 CheckAndMoveBoardForCloudGoal",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.CheckAndMoveBoardForCloudGoal.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "94e7cd03fa38c11377235bd76b4f842e7a24b1e666180a9f1edb3e495204f56d"
+        }
+      ],
+      "boundary": null
+    },
+    {
+      "id": "generic-score-table-boundary",
+      "claim": "通用ClickCell仅在物件chain==0且item.score>0时销毁物件并将score加至活动积分，再检查progress奖励表。包内mergeani两份配置41个items全部未写score，因此单凭15档progress表不能认定本活动可达该积分轨。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e07 RVA 0x1d6c2c ClickCell",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.ClickCell.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "179ed612b8e5518e9e3d281c11425d706154c3200e36d54854ffd43964b742ac"
+        },
+        {
+          "method": "METHOD 0x06001e26 RVA 0x1d9a2c CheckAndSendScoreReward",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.CheckAndSendScoreReward.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "94f2bef20ef4d1102999467ac3e20e253504148321ddfd333653a0b1c44c024f"
+        }
+      ],
+      "boundary": "远端实际选中配置若增加score字段，行为需按该配置重新判断。"
+    },
+    {
+      "id": "unlock-from-AP",
+      "claim": "MergeaniDM.GetUnlockLevel/GetUnlockActivityDay从HotApData的Mergeani AP StartCondition读取start_level/active_day，未取得对应对象时GetValueOrDefault为0；不是在本方法中写死固定关卡。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f45 RVA 0xff6dc GetUnlockLevel",
+          "normalized_evidence": "critical-methods\\MergeaniDM.GetUnlockLevel.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "a29303d60bd5bad5255d109211509c9986c354ee2cd45406f6be1e9233900371"
+        },
+        {
+          "method": "METHOD 0x06000f46 RVA 0xff79c GetUnlockActivityDay",
+          "normalized_evidence": "critical-methods\\MergeaniDM.GetUnlockActivityDay.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "d20ef6922e52afc785806098183341444877cdcc9ea14ca3b3efa085ab4a89f1"
+        }
+      ],
+      "boundary": "当前账号实际门槛需AP缓存；不要把缺对象返回0解释为全量默认零门槛。"
+    },
+    {
+      "id": "theme-lock",
+      "claim": "GetRoundSceneConfig优先GetRoundLockedScene；活动已开且round==curRound时优先恢复已锁定scene（无completedScenes取user.scene，否则取completedScenes首项），缺失时回退GetSceneConfigByRound。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x060011d9 RVA 0x12abf4 GetRoundSceneConfig",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.GetRoundSceneConfig.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "e6c0efefbfff80c88c380c29559853ff6f1c5325251ccbec84d42dd5b06f4fcc"
+        },
+        {
+          "method": "METHOD 0x060011da RVA 0x12ac70 GetRoundLockedScene",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.GetRoundLockedScene.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "ec073c9c5fa4db12c37d7f08624d73695d5123226c7a76d4c047fc9be9f103d9"
+        }
+      ],
+      "boundary": "GetSceneConfigByRound/EffectiveScenes底层在AOT泛型provider，本分支未完整恢复，故不指定scenes_new开关或最终轮转公式。"
+    },
+    {
+      "id": "pass-cumulative",
+      "claim": "OnTokenConsumed经MergePassDM.OnMergeTokenConsumed→UpdateProgressByTaskType(type0)，UpdateTaskProgressByTrigger遍历当前所有匹配任务，并分别写progress[i]=min(requireNum, old+delta)，因此15档工具任务是并行累计阈值，末档300而不是各档需求求和。",
+      "status": "code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e19 RVA 0x1d8ea8 SpawnItemsToRandomEmptyCells",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.SpawnItemsToRandomEmptyCells.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "960a12c1f558743bbb156c46d9033cfafb6752917b6456cd4ea2620dd6dbe061"
+        },
+        {
+          "method": "METHOD 0x060015be RVA 0x167310 OnMergeTokenConsumed",
+          "normalized_evidence": "critical-methods\\MergePassDM.OnMergeTokenConsumed.il.txt",
+          "raw_evidence": "hot-il/MergePassDM.il.txt",
+          "sha256": "e1cfe918e5a403f7a53da33e392c9b60825e152dfd3831029537a1c9bb9b6fa6"
+        },
+        {
+          "method": "METHOD 0x060015c1 RVA 0x16737c UpdateTaskProgressByTrigger",
+          "normalized_evidence": "critical-methods\\MergePassDM.UpdateTaskProgressByTrigger.il.txt",
+          "raw_evidence": "hot-il/MergePassDM.il.txt",
+          "sha256": "4bdfce7f1be5fbdcbb1cd5c6412d0c18efb5b79e25f2b1b21ccab1a7b4b52b94"
+        },
+        {
+          "method": "METHOD 0x060015cb RVA 0x168268 IsTaskMatched",
+          "normalized_evidence": "critical-methods\\MergePassDM.IsTaskMatched.il.txt",
+          "raw_evidence": "hot-il/MergePassDM.il.txt",
+          "sha256": "8670e2ff1eb5beeeecb0fcfebfa7e635077756629fa2e0faab46d14f1d9e8ac8"
+        }
+      ],
+      "boundary": "taskType0匹配时不再检查requireItem；current TaskList所属活动和开关由MergePass当前状态限定。"
+    },
+    {
+      "id": "level-award-container",
+      "claim": "MergeDataModelBase.TryReceiveLevelReward(num)将num加入coins/totalGetCoins/stage.totalGetCoins，并将match3Levels+1，然后保存。此方法不会重新计算难度倍率。",
+      "status": "code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x060011ba RVA 0x129608 TryReceiveLevelReward",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.TryReceiveLevelReward.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "35d840a3ccafaaff7a09dba08b044e930fec403236980f505631de1bf6131212"
+        }
+      ],
+      "boundary": "num上游计算在AOT活动奖励框架，具体普通/困难每关发放值仍需追上游或当前AP；不能根据模板multiByDifficulty=true直接填数。"
+    },
+    {
+      "id": "AP-off-consumer",
+      "claim": "AutoPMergeani构造函数绑定mergeani_start与mergeani_on；AutoPMergeBase.IsOn读取对应AP布尔值，键不存在返回false。MergeDataModelBase.IsApOn直接返回AutoPMergeBase.IsOn。ActivityDM.UnlockBaseCheck首先检查IsApOn，false在returnFirstError路径返回开关锁定结果；随后才按flags检查关卡、活跃天数和Bundle。false不会因StartCondition空对象/门槛0而绕过总开关。",
+      "status": "native+hot-code-confirmed",
+      "evidence": [
+        {
+          "method": "AutoPMergeani._ctor",
+          "address": "0x2CB0A40",
+          "raw_evidence": "native-AutoPMergeani-_ctor-0x2CB0A40.txt"
+        },
+        {
+          "method": "AutoPMergeBase.get_IsOn",
+          "address": "0x2CB0C18",
+          "raw_evidence": "native-AutoPMergeBase-get_IsOn-0x2CB0C18.txt"
+        },
+        {
+          "method": "ActivityDM.UnlockBaseCheck",
+          "address": "0x305F860",
+          "raw_evidence": "native-ActivityDM-UnlockBaseCheck-0x305F860.txt"
+        },
+        {
+          "method": "METHOD 0x060011bb RVA 0x29db8 IsApOn",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.IsApOn.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "af1a809286529c3a70ab4fd38610b3c232b16c5f811ee98f5033cd53589429b3"
+        }
+      ],
+      "boundary": "未据此断言关闭开关会立即清空已经在进行的历史活动；当前现场roundStatus本身为0。"
+    },
+    {
+      "id": "config-null-fallback",
+      "claim": "FileHashMgr.GetAutoPConfig读取M3AutopMgr.GetAutoPJsonValue后，空字符串或字面值null均回退GetDefaultConfig。默认配置名取ConfigCache对应条目的default_config，若没有则保留传入配置名。RemoteConfigAPRelation中MergeAniConfig仅配mergeani_config而无default_config，故该包内映射的null回退基名MergeAniConfig，而非随机选_1。",
+      "status": "native+package-defaults",
+      "evidence": [
+        {
+          "method": "FileHashMgr.GetAPConfig",
+          "address": "0x34374E0",
+          "raw_evidence": "native-FileHashMgr-GetAPConfig-0x34374E0.txt"
+        },
+        {
+          "method": "FileHashMgr.GetAutoPConfig",
+          "address": "0x343763C",
+          "raw_evidence": "native-FileHashMgr-GetAutoPConfig-0x343763C.txt"
+        },
+        {
+          "method": "FileHashMgr.GetDefaultConfig",
+          "address": "0x3435E48",
+          "raw_evidence": "native-FileHashMgr-GetDefaultConfig-0x3435E48.txt"
+        }
+      ],
+      "boundary": "默认配置回退只说明数据加载来源候选，不能证明活动当前开放；provider本轮还会锁定保存的configName。"
+    },
+    {
+      "id": "initial-scene-not-active-theme",
+      "claim": "MergeaniDM.Reload在保存configName为空时写入MergeAniConfig并保存，随后即使活动未开也完成模型/Provider初始化。MergeDataModelBase.IsOpen仅由roundStatus>0判断。现场mergeani_on=false、roundStatus0、空棋盘和零起止/round表示没有可识别的活跃期；scene1仅是保存的初始化值，不能称当前主题或当前轮。",
+      "status": "code+parent-reported-runtime",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f44 RVA 0xff5cc Reload",
+          "normalized_evidence": "critical-methods\\MergeaniDM.Reload.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "f4a260695ba518ba50d267647d634d7cd99a0f2d3a3ace3f9d06255a41c52558"
+        },
+        {
+          "method": "METHOD 0x060011c0 RVA 0x29e15 IsOpen",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.IsOpen.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "b7c75d4770f67b6d7c48ed0b66592ab19207e0ad464a96cd13d17097219c18ca"
+        }
+      ],
+      "runtime_source": "主agent本轮消息提供的白名单现场解密结果；原始采集路径由主agent报告承接。",
+      "boundary": "没有通过改库/改时将活动开启；当前无法实拍自然激活的完整Merge Fantasy流程。"
+    },
+    {
+      "id": "reward-time-unit-hours",
+      "claim": "SendRewardFromResult将rnType非0奖励的rn作为time参数传给RewardItem（普通数量置0）；限时道具支路传给AddProps，后者明确将time乘3600后累加到秒数。体力支路传给EnergyDM.SetInfinite，其同样乘3600。因此本样本rnType1的rn单位为小时：0.25=15分钟、0.5=30分钟、1=60分钟。",
+      "status": "native-code-confirmed",
+      "evidence": [
+        {
+          "method": "RewardGameItemDM.SendRewardFromResult",
+          "address": "0x2F54170",
+          "raw_evidence": "native-RewardGameItemDM-SendRewardFromResult-0x2F54170.txt"
+        },
+        {
+          "method": "RewardGameItemDM.RewardItem",
+          "address": "0x2F54468",
+          "raw_evidence": "native-RewardGameItemDM-RewardItem-0x2F54468.txt"
+        },
+        {
+          "method": "RewardGameItemDM.AddProps",
+          "address": "0x2F5661C",
+          "raw_evidence": "native-RewardGameItemDM-AddProps-0x2F5661C.txt"
+        },
+        {
+          "method": "EnergyDM.SetInfinite",
+          "address": "0x2F38AF4",
+          "raw_evidence": "native-EnergyDM-SetInfinite-0x2F38AF4.txt"
+        }
+      ],
+      "float_literal_checks": [
+        {
+          "instruction": "0x2f56bec",
+          "literal_address": "0x2f56ee0",
+          "float32": 3600.0
+        },
+        {
+          "instruction": "0x2f38b58",
+          "literal_address": "0x2f38ce4",
+          "float32": 3600.0
+        }
+      ],
+      "boundary": "只确认这些时间型道具和无限体力消费者，不推导sticker的rReplace含义。"
+    },
+    {
+      "id": "collection-five-coins",
+      "claim": "collectRewardItem配置的5金币是图鉴链条物件首解奖励。GiveAllUnclaimedChainRewards遍历Config.GetChains，筛选unlockedItems包含且collectedChainRewardItemIds未包含的物件ID，先记录领取ID，再按候选ID数重复加入collectRewardItem奖励列表并发奖。ExitMatches调用CheckAndSendUnclaimedReward，其Extra回调调用GiveAll，因此退出可补领未领图鉴奖；不是按棋盘剩余物件数兑换5金币。",
+      "status": "hot-code+package-defaults",
+      "evidence": [
+        {
+          "method": "METHOD 0x06000f63 RVA 0x102c2c GiveAllUnclaimedChainRewards",
+          "normalized_evidence": "critical-methods\\MergeaniDM.GiveAllUnclaimedChainRewards.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "b3dfd2a590a0e92e8f6cb70c8a5ea0648bcf1ffba514a0a8b445e1ecd77d0d68"
+        },
+        {
+          "method": "METHOD 0x06000f62 RVA 0x102c18 OnCheckAndSendExtraUnclaimedReward",
+          "normalized_evidence": "critical-methods\\MergeaniDM.OnCheckAndSendExtraUnclaimedReward.il.txt",
+          "raw_evidence": "hot-il/MergeaniDM.il.txt",
+          "sha256": "311f7750ce4512a012ffe4e788c4616b5efbe17dff83632d2122f8cab9d374a0"
+        },
+        {
+          "method": "METHOD 0x060011d3 RVA 0x12a214 ExitMatches",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.ExitMatches.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "4acb74807646f56ba8b6fd69a7dfedc857fe20ba5d97e8299e085cb26b8e4f67"
+        },
+        {
+          "method": "METHOD 0x060011d5 RVA 0x12a554 CheckAndSendUnclaimedReward",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.CheckAndSendUnclaimedReward.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "93bad2f964918adad1708c93a440d3812600583e842e0f2f93f67cdcef667cd4"
+        }
+      ],
+      "boundary": "未声明所有26级图鉴一定在本轮自然达成；候选计数受已解锁ID和已领取记录约束。"
+    },
+    {
+      "id": "final-reward-avatar-frame",
+      "claim": "MergeGame.SendFinalReward先拷贝Config.GetFinalRewards；若userInfo.avatarFrameId非空且PersonDM.IsUnlockAvatarFrame为false，则追加RewardInfoConfig(rt=29,rn=Int32.Parse(avatarFrameId),rnType=0)，随后统一SendRewards并写hasLastRewardClaimed=true。因此最终奖与头像框存在明确的条件关联。",
+      "status": "hot-code-confirmed",
+      "evidence": [
+        {
+          "method": "METHOD 0x06001e2c RVA 0x1da2b0 SendFinalReward",
+          "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.SendFinalReward.il.txt",
+          "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+          "sha256": "7c993a4d878eefb6850265628a1b76203fd14cf5b2f209eb6599b49b0320f499"
+        },
+        {
+          "method": "METHOD 0x060011c9 RVA 0x129e84 UpdateActivityData",
+          "normalized_evidence": "critical-methods\\MergeDataModelBase_1.UpdateActivityData.il.txt",
+          "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+          "sha256": "36722dbedd8ee339c98ac5a3bac69de01dec1ad709ff6614e9751476b1b6f502"
+        }
+      ],
+      "boundary": "具体头像框ID通过活动/轮次相关PersonDM查得并保存；当前无活跃期，不能给出当前应发的某一框，也不能说每次都重复发框。"
+    }
+  ],
+  "remaining_questions": [
+    "当前账号实际AP的工具发放数量/解锁等级与活跃天数。",
+    "scenes_new选择开关、GetSceneConfigByRound的完整轮转公式。",
+    "所有异常退出/恢复/超时的结算全链路未在本分支逐一验证。",
+    "当前远端Hot.Scripts若与包内PE哈希不同须按方法/字段比对；本结果仅绑定本包版本。"
+  ],
+  "method_inventory": {
+    "MergeaniDM.il.txt:GetUnlockLevel": {
+      "method": "METHOD 0x06000f45 RVA 0xff6dc GetUnlockLevel",
+      "normalized_evidence": "critical-methods\\MergeaniDM.GetUnlockLevel.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "a29303d60bd5bad5255d109211509c9986c354ee2cd45406f6be1e9233900371"
+    },
+    "MergeaniDM.il.txt:GetUnlockActivityDay": {
+      "method": "METHOD 0x06000f46 RVA 0xff79c GetUnlockActivityDay",
+      "normalized_evidence": "critical-methods\\MergeaniDM.GetUnlockActivityDay.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "d20ef6922e52afc785806098183341444877cdcc9ea14ca3b3efa085ab4a89f1"
+    },
+    "MergeaniDM.il.txt:TryHitFeedLineInterval": {
+      "method": "METHOD 0x06000f49 RVA 0xffa40 TryHitFeedLineInterval",
+      "normalized_evidence": "critical-methods\\MergeaniDM.TryHitFeedLineInterval.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "e1dc48433c9a671cd400b12d05ab0f26ddd1e396629394a1b88a5d7a567492a3"
+    },
+    "MergeaniDM.il.txt:AnimalOutput": {
+      "method": "METHOD 0x06000f4a RVA 0xffc38 AnimalOutput",
+      "normalized_evidence": "critical-methods\\MergeaniDM.AnimalOutput.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "d1044085ddebf3196b2e3ab0aa621e26a09204e950b7987d5fa5a21ff9caf488"
+    },
+    "MergeaniDM.il.txt:FeedAnimal": {
+      "method": "METHOD 0x06000f4d RVA 0xfff18 FeedAnimal",
+      "normalized_evidence": "critical-methods\\MergeaniDM.FeedAnimal.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "2db1b16cb493458ce3248714fff4f3443b7bdccf371ea34091d2d98511e25c63"
+    },
+    "MergeaniDM.il.txt:TryApplyCloudGoalsOnUnlock": {
+      "method": "METHOD 0x06000f58 RVA 0x100da0 TryApplyCloudGoalsOnUnlock",
+      "normalized_evidence": "critical-methods\\MergeaniDM.TryApplyCloudGoalsOnUnlock.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "98bc5e8de52f50f3ecd53234b4da4d03f72dc8b50c60e5d81c92c195ce5c3863"
+    },
+    "MergeaniDM.il.txt:TryConsumeAnimalOutputClick": {
+      "method": "METHOD 0x06000f90 RVA 0x1071f4 TryConsumeAnimalOutputClick",
+      "normalized_evidence": "critical-methods\\MergeaniDM.TryConsumeAnimalOutputClick.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "221d9f0874d195e93c97649a254c22f44d494ab0808f8b47bfa9c904e6a7a2bf"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:CheckAndMoveBoardForCloudGoal": {
+      "method": "METHOD 0x06001e02 RVA 0x1d6640 CheckAndMoveBoardForCloudGoal",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.CheckAndMoveBoardForCloudGoal.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "94e7cd03fa38c11377235bd76b4f842e7a24b1e666180a9f1edb3e495204f56d"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:ClickCell": {
+      "method": "METHOD 0x06001e07 RVA 0x1d6c2c ClickCell",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.ClickCell.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "179ed612b8e5518e9e3d281c11425d706154c3200e36d54854ffd43964b742ac"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:DragItemEnd": {
+      "method": "METHOD 0x06001e08 RVA 0x1d710c DragItemEnd",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.DragItemEnd.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "f245ea16d7cc490f0a45741d3b3460c62a2da5a73c9aa1ce3153f6a626d9614b"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:MergeItems": {
+      "method": "METHOD 0x06001e0b RVA 0x1d75a8 MergeItems",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.MergeItems.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "1146894934ceedf04bddd326f2eb469e78e251272d2fa16fedff26ecbb1dc4f3"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:CheckAndRecordUnlockedChainItem": {
+      "method": "METHOD 0x06001e11 RVA 0x1d8314 CheckAndRecordUnlockedChainItem",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.CheckAndRecordUnlockedChainItem.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "1bb7936615c9d0b9a5c248bb936d87b5534937d7efe53da54bee295cc1896084"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:SpawnItemsToRandomEmptyCells": {
+      "method": "METHOD 0x06001e19 RVA 0x1d8ea8 SpawnItemsToRandomEmptyCells",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.SpawnItemsToRandomEmptyCells.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "960a12c1f558743bbb156c46d9033cfafb6752917b6456cd4ea2620dd6dbe061"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:Rand1ItemRewards": {
+      "method": "METHOD 0x06001e1d RVA 0x1d936c Rand1ItemRewards",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.Rand1ItemRewards.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "b49ef6c7be1917f804f9a7a8d817afa3c21e8a4e32a68e541b78ec414ebc523b"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:CheckAndSendScoreReward": {
+      "method": "METHOD 0x06001e26 RVA 0x1d9a2c CheckAndSendScoreReward",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.CheckAndSendScoreReward.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "94f2bef20ef4d1102999467ac3e20e253504148321ddfd333653a0b1c44c024f"
+    },
+    "MergeaniGameView_Asm.il.txt:OnClickFarmPlantItem": {
+      "method": "METHOD 0x060010ae RVA 0x1189bc OnClickFarmPlantItem",
+      "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.OnClickFarmPlantItem.il.txt",
+      "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+      "sha256": "e7f7f9834737d61c65a9afc29ecf438e2b9e979040d73c990c6b48df1d83b03e"
+    },
+    "MergeaniGameView_Asm.il.txt:OnClickAnimalProduce": {
+      "method": "METHOD 0x060010b1 RVA 0x119818 OnClickAnimalProduce",
+      "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.OnClickAnimalProduce.il.txt",
+      "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+      "sha256": "32e44281b976f077bc901ce35fb71c94ad1b2c5f77b5314277d4da901329cf33"
+    },
+    "MergeaniGameView_Asm.il.txt:TryHandleFeedAnimalFlag": {
+      "method": "METHOD 0x060010f5 RVA 0x120ba4 TryHandleFeedAnimalFlag",
+      "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.TryHandleFeedAnimalFlag.il.txt",
+      "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+      "sha256": "cfacf1e0b74fff727a15b3f70da8f90c5ea895be1297ac891d48871aeda31fd2"
+    },
+    "MergeaniGameView_Asm.il.txt:OnUnlockNewItem": {
+      "method": "METHOD 0x060010fb RVA 0x1216ec OnUnlockNewItem",
+      "normalized_evidence": "critical-methods\\MergeaniGameView_Asm.OnUnlockNewItem.il.txt",
+      "raw_evidence": "hot-il/MergeaniGameView_Asm.il.txt",
+      "sha256": "b143d6fa165a1bde8bbc8ff16c40ce000344dbe6d10339da50d70d4de2927b26"
+    },
+    "MergeDataModelBase_1.il.txt:TryReceiveLevelReward": {
+      "method": "METHOD 0x060011ba RVA 0x129608 TryReceiveLevelReward",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.TryReceiveLevelReward.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "35d840a3ccafaaff7a09dba08b044e930fec403236980f505631de1bf6131212"
+    },
+    "MergeDataModelBase_1.il.txt:GetCurOpenableScene": {
+      "method": "METHOD 0x060011d8 RVA 0x12a9b8 GetCurOpenableScene",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.GetCurOpenableScene.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "c9768a560c515620bc59e66934e2894bceda1db26f6ca0418059be9a9dccf351"
+    },
+    "MergeDataModelBase_1.il.txt:GetRoundSceneConfig": {
+      "method": "METHOD 0x060011d9 RVA 0x12abf4 GetRoundSceneConfig",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.GetRoundSceneConfig.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "e6c0efefbfff80c88c380c29559853ff6f1c5325251ccbec84d42dd5b06f4fcc"
+    },
+    "MergeDataModelBase_1.il.txt:GetRoundLockedScene": {
+      "method": "METHOD 0x060011da RVA 0x12ac70 GetRoundLockedScene",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.GetRoundLockedScene.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "ec073c9c5fa4db12c37d7f08624d73695d5123226c7a76d4c047fc9be9f103d9"
+    },
+    "MergePassDM.il.txt:OnMergeTokenConsumed": {
+      "method": "METHOD 0x060015be RVA 0x167310 OnMergeTokenConsumed",
+      "normalized_evidence": "critical-methods\\MergePassDM.OnMergeTokenConsumed.il.txt",
+      "raw_evidence": "hot-il/MergePassDM.il.txt",
+      "sha256": "e1cfe918e5a403f7a53da33e392c9b60825e152dfd3831029537a1c9bb9b6fa6"
+    },
+    "MergePassDM.il.txt:UpdateTaskProgressByTrigger": {
+      "method": "METHOD 0x060015c1 RVA 0x16737c UpdateTaskProgressByTrigger",
+      "normalized_evidence": "critical-methods\\MergePassDM.UpdateTaskProgressByTrigger.il.txt",
+      "raw_evidence": "hot-il/MergePassDM.il.txt",
+      "sha256": "4bdfce7f1be5fbdcbb1cd5c6412d0c18efb5b79e25f2b1b21ccab1a7b4b52b94"
+    },
+    "MergePassDM.il.txt:GetTaskCurrentProgress": {
+      "method": "METHOD 0x060015ca RVA 0x168170 GetTaskCurrentProgress",
+      "normalized_evidence": "critical-methods\\MergePassDM.GetTaskCurrentProgress.il.txt",
+      "raw_evidence": "hot-il/MergePassDM.il.txt",
+      "sha256": "d875ff1414909173a9f10f6faca59a66d2fb2479e37728efb1c16defd0bcdaa3"
+    },
+    "MergePassDM.il.txt:IsTaskMatched": {
+      "method": "METHOD 0x060015cb RVA 0x168268 IsTaskMatched",
+      "normalized_evidence": "critical-methods\\MergePassDM.IsTaskMatched.il.txt",
+      "raw_evidence": "hot-il/MergePassDM.il.txt",
+      "sha256": "8670e2ff1eb5beeeecb0fcfebfa7e635077756629fa2e0faab46d14f1d9e8ac8"
+    },
+    "MergeaniDM.il.txt:Reload": {
+      "method": "METHOD 0x06000f44 RVA 0xff5cc Reload",
+      "normalized_evidence": "critical-methods\\MergeaniDM.Reload.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "f4a260695ba518ba50d267647d634d7cd99a0f2d3a3ace3f9d06255a41c52558"
+    },
+    "MergeaniDM.il.txt:OnCheckAndSendExtraUnclaimedReward": {
+      "method": "METHOD 0x06000f62 RVA 0x102c18 OnCheckAndSendExtraUnclaimedReward",
+      "normalized_evidence": "critical-methods\\MergeaniDM.OnCheckAndSendExtraUnclaimedReward.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "311f7750ce4512a012ffe4e788c4616b5efbe17dff83632d2122f8cab9d374a0"
+    },
+    "MergeaniDM.il.txt:GiveAllUnclaimedChainRewards": {
+      "method": "METHOD 0x06000f63 RVA 0x102c2c GiveAllUnclaimedChainRewards",
+      "normalized_evidence": "critical-methods\\MergeaniDM.GiveAllUnclaimedChainRewards.il.txt",
+      "raw_evidence": "hot-il/MergeaniDM.il.txt",
+      "sha256": "b3dfd2a590a0e92e8f6cb70c8a5ea0648bcf1ffba514a0a8b445e1ecd77d0d68"
+    },
+    "Merge.DataModel.MergeGame_1.il.txt:SendFinalReward": {
+      "method": "METHOD 0x06001e2c RVA 0x1da2b0 SendFinalReward",
+      "normalized_evidence": "critical-methods\\Merge.DataModel.MergeGame_1.SendFinalReward.il.txt",
+      "raw_evidence": "hot-il/Merge.DataModel.MergeGame_1.il.txt",
+      "sha256": "7c993a4d878eefb6850265628a1b76203fd14cf5b2f209eb6599b49b0320f499"
+    },
+    "MergeDataModelBase_1.il.txt:IsApOn": {
+      "method": "METHOD 0x060011bb RVA 0x29db8 IsApOn",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.IsApOn.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "af1a809286529c3a70ab4fd38610b3c232b16c5f811ee98f5033cd53589429b3"
+    },
+    "MergeDataModelBase_1.il.txt:IsOpen": {
+      "method": "METHOD 0x060011c0 RVA 0x29e15 IsOpen",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.IsOpen.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "b7c75d4770f67b6d7c48ed0b66592ab19207e0ad464a96cd13d17097219c18ca"
+    },
+    "MergeDataModelBase_1.il.txt:UpdateActivityData": {
+      "method": "METHOD 0x060011c9 RVA 0x129e84 UpdateActivityData",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.UpdateActivityData.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "36722dbedd8ee339c98ac5a3bac69de01dec1ad709ff6614e9751476b1b6f502"
+    },
+    "MergeDataModelBase_1.il.txt:ExitMatches": {
+      "method": "METHOD 0x060011d3 RVA 0x12a214 ExitMatches",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.ExitMatches.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "4acb74807646f56ba8b6fd69a7dfedc857fe20ba5d97e8299e085cb26b8e4f67"
+    },
+    "MergeDataModelBase_1.il.txt:CheckAndSendUnclaimedReward": {
+      "method": "METHOD 0x060011d5 RVA 0x12a554 CheckAndSendUnclaimedReward",
+      "normalized_evidence": "critical-methods\\MergeDataModelBase_1.CheckAndSendUnclaimedReward.il.txt",
+      "raw_evidence": "hot-il/MergeDataModelBase_1.il.txt",
+      "sha256": "93bad2f964918adad1708c93a440d3812600583e842e0f2f93f67cdcef667cd4"
+    }
+  },
+  "runtime_boundary": {
+    "source": "主agent本轮现场AP/状态白名单（待主文档关联其原始采样）",
+    "mergeani_on": "false",
+    "mergeani_config": "null",
+    "mergeani_start": "{}",
+    "mergepass_on": "false",
+    "mergepass_config": "null",
+    "eventplan_config": "ActivityPlanConfig",
+    "eventtemplate_config": "ActivityTemplateConfig_1",
+    "MergeaniUserInfo": {
+      "isOn": false,
+      "roundStatus": 0,
+      "board": "empty",
+      "scene": 1,
+      "configName": "MergeAniConfig",
+      "coins": 0
+    },
+    "ActivityUserInfo.mergeani": {
+      "st": 0,
+      "et": 0,
+      "round": 0
+    },
+    "interpretation": "本轮未发现活跃期；scene1不可作为当前主题证据。"
+  },
+  "consumer_literal_checks": [
+    {
+      "instruction": "0x2cb0a80",
+      "got_slot": "0x87f665c",
+      "data_slot": "0x89621a4",
+      "literal_index": 28392,
+      "value": "mergeani_start"
+    },
+    {
+      "instruction": "0x2cb0a8c",
+      "got_slot": "0x87f6660",
+      "data_slot": "0x89621a0",
+      "literal_index": 28391,
+      "value": "mergeani_on"
+    },
+    {
+      "instruction": "0x34376ec",
+      "got_slot": "0x87e1480",
+      "data_slot": "0x8962c40",
+      "literal_index": 29071,
+      "value": "null"
+    }
+  ]
+}

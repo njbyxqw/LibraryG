@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "checks": [
+    "Equal-width viewport bottoms aligned within 1 CSS px",
+    "Equal width and equal height compare",
+    "All three individual selections",
+    "Narrow layout no horizontal overflow"
+  ]
+}

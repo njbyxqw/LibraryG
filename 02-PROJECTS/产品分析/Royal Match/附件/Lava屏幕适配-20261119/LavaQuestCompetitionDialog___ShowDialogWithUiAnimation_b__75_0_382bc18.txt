@@ -1,0 +1,9 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<ShowDialogWithUiAnimation>b__75_0
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog___ShowDialogWithUiAnimation_b__75_0 (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x382BC18; next named boundary 0x382BC30
+0382BC18 str      x30, [sp, #-0x10]!
+0382BC1C ldr      x0, [x0, #0xe8]
+0382BC20 cbz      x0, #0x382bc2c
+0382BC24 ldr      x30, [sp], #0x10
+0382BC28 b        #0x382bc30 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$FadeInProfilePictures
+0382BC2C bl       #0x1043348

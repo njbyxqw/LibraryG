@@ -1,0 +1,10 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<Init>b__44_0
+int64_t Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog___Init_b__44_0 (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x382BBF4; next named boundary 0x382BC10
+0382BBF4 str      x30, [sp, #-0x10]!
+0382BBF8 ldr      x0, [x0, #0x138]
+0382BBFC cbz      x0, #0x382bc0c
+0382BC00 mov      x1, xzr
+0382BC04 ldr      x30, [sp], #0x10
+0382BC08 b        #0x27c57c8 ; Royal.Player.Context.Units.LavaQuestManager$$get_RemainingQuestTimeInMs
+0382BC0C bl       #0x1043348

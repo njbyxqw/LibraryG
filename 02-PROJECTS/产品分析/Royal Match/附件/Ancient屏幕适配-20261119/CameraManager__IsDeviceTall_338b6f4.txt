@@ -1,0 +1,10 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceTall
+bool Royal_Infrastructure_Contexts_Units_CameraManager__IsDeviceTall (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x338B6F4; next named boundary 0x338B710
+0338B6F4 str      x30, [sp, #-0x10]!
+0338B6F8 bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+0338B6FC fmov     s1, #0.50000000
+0338B700 fcmp     s0, s1
+0338B704 cset     w0, mi
+0338B708 ldr      x30, [sp], #0x10
+0338B70C ret      

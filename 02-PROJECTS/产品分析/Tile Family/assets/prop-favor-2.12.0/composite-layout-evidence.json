@@ -1,0 +1,76 @@
+{
+  "version": "2.12.0",
+  "prefab": "IAPBannerCell105",
+  "prefab_path_id": 6965617074995054043,
+  "layout": "ArtIAPNormalNewCellPrefab / r_six",
+  "positions": {
+    "main": [
+      -3.69,
+      0.93
+    ],
+    "coins": [
+      -0.7,
+      0.895
+    ],
+    "base_rewards": [
+      3.01,
+      0.895
+    ],
+    "title": [
+      -2.088,
+      -1.556
+    ],
+    "button": [
+      3.14,
+      -1.625
+    ]
+  },
+  "cases": [
+    {
+      "name": "撤回",
+      "icon": "undo_prop_shop",
+      "first_count": 6,
+      "coins": 2000,
+      "base_count_each": 2,
+      "target_total": 8,
+      "family": "undo"
+    },
+    {
+      "name": "抓钩",
+      "icon": "crane_prop_shop",
+      "first_count": 4,
+      "coins": 4000,
+      "base_count_each": 1,
+      "target_total": 5,
+      "family": "propeller"
+    },
+    {
+      "name": "磁铁",
+      "icon": "magnet_prop_shop",
+      "first_count": 3,
+      "coins": 4000,
+      "base_count_each": 1,
+      "target_total": 4,
+      "family": "magneto"
+    },
+    {
+      "name": "洗牌",
+      "icon": "icon_shuffle_big",
+      "first_count": 4,
+      "coins": 4000,
+      "base_count_each": 1,
+      "target_total": 5,
+      "family": "shuffle"
+    },
+    {
+      "name": "加格",
+      "icon": "extraspace_prop_shop",
+      "first_count": 3,
+      "coins": 4000,
+      "base_count_each": 1,
+      "target_total": 3,
+      "family": "space"
+    }
+  ],
+  "boundary": "Original bundle images assembled deterministically. Native prefab partitions are followed; font, dynamic icon variants, grid spacing and effects are approximate, not a runtime screenshot. Prices are reference USD from historical config."
+}

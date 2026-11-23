@@ -371,6 +371,8 @@ Ancient与Lava均由续步页／主动退出确认里的`ExtraWarn`承载放弃�
 
 #### 活动页进入与胜利跳台的表现参数（39781）
 
+**屏幕适配**：主跳台页按相机高度等比缩放，并根据场景BottomBorder校正位置；极长屏另将标题缩至0.92、Stage／Levels牌内收至x=±2.65，水面与标题横条单独补宽。详见[[02-PROJECTS/产品分析/Royal Match/系统拆解-设备分辨率与横竖屏适配-38911#Ancient实例：2560／2160／1920纵屏（2026-11-19复核）|三画幅解释、公式与39781证据]]。该链不逐台重排，与单阶段AB的布局裁剪分开。
+
 2026-11-05静态核对。这里说的是动画被执行后的表现参数；哪些胜利会展示全页仍按本节前述分支，不能解读成“每赢一关都弹页跳台”。时间单位为秒，坐标为Unity单位，缩放以对应Transform为准。
 
 | 项目／动作名称 | 具体表现参数 | 来源与解释 |
@@ -479,7 +481,7 @@ Ancient与Lava均由续步页／主动退出确认里的`ExtraWarn`承载放弃�
 
 配置模型：`v` 为版本，`s[]` 为三阶段，`os` 为单阶段；Stage 中 `sgr` 为阶段奖、`str[]` 为步数奖励、`hd[]` 为 Heist 档位。`hd.oc` 是卡数，`hd.cr` 是金币。
 
-读取链：公共活动信息写入 server config；`TryEnterEvent` 把公共配置及版本复制到 user config，并记录入场模式；账号信息响应还具备更新用户配置的通道。实际 `GetHeistData`、`GetRewardsOfSteps` 使用 **userConfig**，不是每次直接读取公共配置。保存的用户版本与配置版本比较决定有效性。
+读取链：公共活动信息写入 server config；`TryEnterEvent` 把公共配置及版本复制到 user config，并记录入场模式；账号信息响应还具备更新用户配置的通道。实际 `GetHeistData`、`GetRewardsOfSteps` 使用 **userConfig**，不是每次直接读取公共配置。保存的用户版本与配置版本比较决定有效性。2026-11-16以39781进一步核定：公共配置更新不直接写userConfig；UpdateUserConfig对相同版本跳过正文，专用响应还要求请求版本等于进度版本，不能把恢复通道写成随时同版改奖。
 
 10-27早先读取的AncientAdventureTableItem公共/用户配置均为319；更新39781后均为321，公共与用户正文彼此相同，且与319语义相同。下表数值适用于这两份已采样配置；JSON本身没有v，版本来自独立缓存键，不能因缺少JSON字段就判断为版本0。
 
@@ -490,9 +492,11 @@ Ancient与Lava均由续步页／主动退出确认里的`ExtraWarn`承载放弃�
 | 三阶段 3 | 500 金币 | 3／200 | 5／500 | 4／1000 | 空 |
 | 单阶段 `os` | 200 金币 | 3／100 | 5／200 | 4／500 | 空 |
 
-这些是已保存配置，不是本次实测到账记录。基础阶段奖和 Heist 档位应按结算分支理解，不能直接把两列相加当作总奖励。
+这些是已保存配置，不是本次实测到账记录。基础阶段奖和Heist档位属于两条结算路线，不叠加。2026-11-16以39781核定：`ShowSceneView 0x35EF3E8`在待领奖且无Heist时调用`ClaimStageRewardsWithoutHeist 0x386582C`，取阶段固定奖加库存后推进阶段；Heist在`RevealHeistCard 0x35F3360`某档计数恰好达到3时调用`ClaimStageHeistReward 0x35F27E4`，仅按该档金币加库存，再由`OnHeistCompleted 0x35F0A7C`推进阶段。库存调用早于后续领奖动画完成，不以金币飞行结束为发奖时点。完整对照、条件期望与策略边界见[[02-PROJECTS/产品分析/Royal Match/数值与发奖策略-Lava Quest与Ancient Adventure]]，证据在39781 `Reward-Audit/`。
 
 **隐藏的奖励覆盖层**：`EventRewardOverrider.GetOverriddenAncientAdventureStepReward` 按 eventId、活动类型 **36** 和步数键查覆盖项。单阶段键为 `step`，三阶段键为 `stage×1000+step`；存在覆盖时替换奖励，否则返回原奖励。`GetRewardsOfSteps` 对未配基础奖励的位置也会以空原奖励查询覆盖，故 **`str=[]` 不等于最终没有中途奖励**。后续 15:17:34 +08:00 定向采样已读取集卡 CollectionConfig 版本325：两套 eventRewardOverrideConfigs 各34项；以及 TrainJourney 公共/用户配置版本46：覆盖表各22项。以上四表均未出现 Ancient 的 eventType=36，因此这些缓存表没有提供 Ancient 覆盖项。DragonNest 当前保存表未见配置键，ShortExpedition 仅有版本键；仍不能扩大成所有来源、所有时刻均无覆盖，也未实测实际领奖。证据见 CommonTools-Audit/config-snapshot/ancient-overrides.json。
+
+2026-11-16补核39781：AB146／147控制单阶段，另结合152／153控制Heist，客户端OR检查新老键，没有本地新老用户划分阈值。中途覆盖依次检查集卡→龙巢→火车→探险，受供应活动完成度／资源就绪／期次等资格约束；奖励有缓存，不承诺资格变化立即刷新。若覆盖发龙珠／车票，到账均受8191容量限制。固定终奖与Heist金额链未读消费／余额；联动卡包内部与服务端画像投放仍未知。精确条件、地址与容量算例统一见[[02-PROJECTS/产品分析/Royal Match/数值与发奖策略-Lava Quest与Ancient Adventure#6. 奖励还受什么条件影响（39781深挖）|奖励影响条件]]。
 
 ### 3.5 Heist 牌局、种子与教程策略
 

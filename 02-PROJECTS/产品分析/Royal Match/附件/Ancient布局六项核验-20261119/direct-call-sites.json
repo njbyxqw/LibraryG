@@ -1,0 +1,91 @@
+{
+  "binary_sha256": "ea4eaf596b64ff255cc042d52d32e44078ed773d70be6c3368db9459a12b3a22",
+  "sections": [
+    ".plt",
+    ".text",
+    "il2cpp"
+  ],
+  "targets": [
+    {
+      "address": "0x3388480",
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetOrientationActive",
+      "direct_count": 2
+    },
+    {
+      "address": "0x33894f0",
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$ManualUpdate",
+      "direct_count": 0
+    },
+    {
+      "address": "0x3389548",
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$ArrangeOrientation",
+      "direct_count": 0
+    },
+    {
+      "address": "0x3389b6c",
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters",
+      "direct_count": 2
+    },
+    {
+      "address": "0x338a2f0",
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetSafeAreaOffset",
+      "direct_count": 1
+    },
+    {
+      "address": "0x3867b60",
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnOrientationChange",
+      "direct_count": 1
+    }
+  ],
+  "limits": "Direct B/BL scan only; indirect callbacks not enumerated; nearest named start for ownership",
+  "rows": [
+    {
+      "callsite": "0x3388478",
+      "target": "0x3388480",
+      "target_name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetOrientationActive",
+      "owner": "Royal.Infrastructure.Contexts.Units.CameraManager$$DisableOrientation",
+      "owner_start": "0x3388424",
+      "kind": "B"
+    },
+    {
+      "callsite": "0x3388560",
+      "target": "0x3388480",
+      "target_name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetOrientationActive",
+      "owner": "Royal.Infrastructure.Contexts.Units.CameraManager$$EnableOrientation",
+      "owner_start": "0x338850c",
+      "kind": "B"
+    },
+    {
+      "callsite": "0x3389654",
+      "target": "0x3389b6c",
+      "target_name": "Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters",
+      "owner": "Royal.Infrastructure.Contexts.Units.CameraManager$$ArrangeOrientation",
+      "owner_start": "0x3389548",
+      "kind": "BL"
+    },
+    {
+      "callsite": "0x3389dcc",
+      "target": "0x338a2f0",
+      "target_name": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetSafeAreaOffset",
+      "owner": "Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters",
+      "owner_start": "0x3389b6c",
+      "kind": "BL"
+    },
+    {
+      "callsite": "0x338a2cc",
+      "target": "0x3389b6c",
+      "target_name": "Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters",
+      "owner": "Royal.Infrastructure.Contexts.Units.CameraManager$$SetSceneCamera",
+      "owner_start": "0x338a29c",
+      "kind": "B"
+    },
+    {
+      "callsite": "0x38678a8",
+      "target": "0x3867b60",
+      "target_name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnOrientationChange",
+      "owner": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$Init",
+      "owner_start": "0x3867428",
+      "kind": "B"
+    }
+  ]
+}

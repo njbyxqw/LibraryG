@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-19",
+  "source": "06-PRODUCT-ASSETS\\RoyalMatch\\39781\\04-ReverseEngineering\\Ancient-Layout-Review-20261119",
+  "files": [
+    {
+      "file": "manifest.json",
+      "sha256": "3c06187fe256ee4c4f29c428c4a6bb3d0bb129f43ba7c5a4e6b0027d27882e7b"
+    },
+    {
+      "file": "audit.py",
+      "sha256": "8ff97dda7c7076cdf9ed91e5a20bb1de0462eb3321efdba4f7d7b5d13a56c164"
+    },
+    {
+      "file": "node-bindings.json",
+      "sha256": "e503fa8756deca063cae76e5f2c7cd9d68dd1232cee8d3f6f4b0202fbb38e903"
+    },
+    {
+      "file": "input-and-start-bindings.json",
+      "sha256": "414eba0a2f6cf681c214112a6ff2b3f55fc1d6e92dcf2c621d812ef7475fb77b"
+    },
+    {
+      "file": "direct-call-sites.json",
+      "sha256": "b2ac380db4b05c13309380e4d2100071fce7550df4b97023e65bc367f8708c25"
+    }
+  ],
+  "limits": "39781 static ARM64 + 38911 historical bundle bindings; no current runtime capture"
+}

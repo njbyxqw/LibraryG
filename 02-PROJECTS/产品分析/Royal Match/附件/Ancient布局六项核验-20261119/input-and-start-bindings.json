@@ -1,0 +1,4561 @@
+[
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -8531654695331414366,
+    "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StageProgress/StageTooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -9060726790441557330
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.004434108734130859,
+        "y": 0.022702455520629883
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.1602115631103516,
+        "y": 1.3773188591003418
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -8363447001561179976,
+    "path": "AncientAdventureDialog/Root/TopUI/TopButtons/Close",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -2890970367947924512
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 1.399999976158142,
+        "y": 1.399999976158142
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -7875782550628474981,
+    "path": "AncientAdventureInfoScene",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5332308077277577725
+      },
+      "m_Enabled": 0,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -7302087719538680691,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (10)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5514489128466625458
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -7054471729216774539,
+    "path": "AncientAdventureRewardClaimPanel",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 961581618071743649
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 9.300000190734863,
+        "y": 20.0
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -6115651891165166961,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -6872337949891136265
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -5979669598346485517,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (2)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 1582995898324660193
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -5127438177362938415,
+    "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/OneStageStepProgress/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -6894745746887310899
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.009656190872192383,
+        "y": 0.3669276237487793
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 3.001791477203369,
+        "y": 1.0337600708007812
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -4691699278540660932,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (8)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4547341009885088757
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -2484641615026674671,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (1)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -1491391853878607557
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -2447513405141479084,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (11)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4664608612693102751
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -980100249051388520,
+    "path": "AncientAdventureHeistView/Environment/RewardView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -2411287747131762304
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.014752864837646484,
+        "y": 1.7110817432403564
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 6.888976097106934,
+        "y": 3.6699094772338867
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -404744667202175815,
+    "path": "AncientAdventureDialog",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 780359337111196226
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.22857142984867096,
+          "y": 0.24285714328289032,
+          "z": 0.22857142984867096,
+          "w": 0.2142857164144516
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "oldSize": {
+          "x": 1.0,
+          "y": 0.4642857015132904
+        },
+        "newSize": {
+          "x": 9.399999618530273,
+          "y": 20.200000762939453
+        },
+        "adaptiveTilingThreshold": 0.5,
+        "drawMode": 1,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 10.0,
+        "y": 21.0
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": -335323965963953811,
+    "path": "AncientAdventureDialog/Root/SceneParent/SceneView/TapToContinue",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -3125869059535217245
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 10.0,
+        "y": 21.0
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 279864609022416086,
+    "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StepProgress/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5698466196553549020
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.2100000381469727,
+        "y": 1.4199999570846558
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 3334893929187851565,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (6)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -3941061237163739602
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 3754794856052937907,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (4)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -122530231675947445
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 5129388483238642422,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (5)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -3259163355915679590
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 5213147593342196709,
+    "path": "AncientAdventureDialog/Root/TopUI/TopButtons/Info",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 1167717349271109892
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "oldSize": {
+          "x": 0.7714285850524902,
+          "y": 0.7714285850524902
+        },
+        "newSize": {
+          "x": 0.7714285850524902,
+          "y": 0.7714285850524902
+        },
+        "adaptiveTilingThreshold": 0.5,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 5536200031075097240,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (9)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -952986370301481111
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 5626474339406931917,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (3)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 3158537171643512690
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 7015802005319317328,
+    "path": "AncientAdventureHeistTutorial",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4209899917160323798
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 9.449999809265137,
+        "y": 20.149999618530273
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 7584166058693447537,
+    "path": "AncientAdventureMainTutorial",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 3513731462492988376
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 9.449999809265137,
+        "y": 20.149999618530273
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 7594834158325726424,
+    "path": "AncientAdventureHeistView/Board/HeistCardBlocker",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6552558998033540235
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 3.0015363693237305
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 8.119999885559082,
+        "y": 16.563074111938477
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "BoxCollider2D",
+    "id": 7697093742443435467,
+    "path": "AncientAdventureHeistView/Board/HeistCardsParent/StreakEventHeistCard (7)",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6710114997003274528
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.200000047683716,
+        "y": 2.200000047683716
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_dialog_v3",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureHeistView",
+    "tooltipPath": "AncientAdventureHeistView/Environment/RewardView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -2411287747131762304
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -980100249051388520
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 3744960292628867200
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureHeistView, Assembly-CSharp",
+              "m_MethodName": "OpenTooltip",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "BoxCollider2D",
+    "id": -6259213247634737110,
+    "path": "AncientAdventureSceneView1/Root/Steps/Step2/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5816480878710149894
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.008155107498168945,
+        "y": 0.2224869728088379
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.154634952545166,
+        "y": 1.5363459587097168
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "BoxCollider2D",
+    "id": -5809912914573493855,
+    "path": "AncientAdventureSceneView1/Root/Steps/Step4/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -6722106383386257760
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.008155107498168945,
+        "y": 0.2224869728088379
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.154634952545166,
+        "y": 1.5363459587097168
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "BoxCollider2D",
+    "id": 1237733978101885492,
+    "path": "AncientAdventureSceneView1/Root/Steps/Step3/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 1148469534517292174
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.008155107498168945,
+        "y": 0.2224869728088379
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.154634952545166,
+        "y": 1.5363459587097168
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "BoxCollider2D",
+    "id": 3902726495392539489,
+    "path": "AncientAdventureSceneView1/Root/Environment/PlatformParent/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5223286482423396749
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.2593111991882324
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 4.0,
+        "y": 3.518622398376465
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "BoxCollider2D",
+    "id": 6152442001006601437,
+    "path": "AncientAdventureSceneView1/Root/Steps/Step1/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5163622157610872070
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.008155107498168945,
+        "y": 0.2224869728088379
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.154634952545166,
+        "y": 1.5363459587097168
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "BoxCollider2D",
+    "id": 8463840613145055423,
+    "path": "AncientAdventureSceneView1/Root/Steps/Step5/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6149996519739009064
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.008155107498168945,
+        "y": 0.2224869728088379
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.154634952545166,
+        "y": 1.5363459587097168
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "start-art",
+    "node": {
+      "id": "-2150387316260251167",
+      "name": "Step0",
+      "path": "AncientAdventureSceneView1/Root/Steps/Step0",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -2150387316260251167
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 4.699999809265137,
+          "y": -8.6899995803833,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -2008550806416929295
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": -8932994638700045797
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.699999809265137,
+        -8.6899995803833
+      ],
+      "components": [
+        {
+          "m_Enabled": true,
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": -8633519597416620020
+          },
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_FlipX": false,
+          "m_FlipY": false,
+          "m_DrawMode": 0,
+          "m_Size": {
+            "x": 6.164285659790039,
+            "y": 3.2285714149475098
+          },
+          "m_SortingOrder": 160,
+          "m_SortingLayer": 0,
+          "m_MaskInteraction": 0,
+          "type": "SpriteRenderer",
+          "sprite": {
+            "id": "-8633519597416620020",
+            "name": "S01_main_platform",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "width": 1284.0,
+              "height": 409.0
+            },
+            "border": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "ppu": 140.0,
+            "meshBounds": {
+              "xmin": -4.585714340209961,
+              "xmax": 4.585714340209961,
+              "ymin": -1.460714340209961,
+              "ymax": 1.460714340209961
+            },
+            "file": "evidence/activity-layouts/ancient_adventure_stage_1_v2/-8633519597416620020_S01_main_platform.png",
+            "exportSize": [
+              1284,
+              409
+            ]
+          }
+        },
+        {
+          "type": "MonoBehaviour",
+          "script": "AncientAdventureSceneStep",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -2150387316260251167
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 8037103884380303495
+            },
+            "m_Name": "",
+            "unavailableFallAnimationNumbers": [],
+            "rewardViewParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "stepText": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "rewardsHolder": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "underwaterPlatform": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "frameFallParticleParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "fallRenderTextureRenderer": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "tooltipButton": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "breakAnimationStepNumberParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerPositionReference": {
+              "m_FileID": 0,
+              "m_PathID": -2008550806416929295
+            },
+            "playerScaleReference": {
+              "m_FileID": 0,
+              "m_PathID": -2008550806416929295
+            },
+            "stepWaveDistortion": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerFallParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "stepWaveSprite": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "cardRewardShadow": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "otherRewardsShadow": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerViewShadowSpriteRenderer": {
+              "m_FileID": 0,
+              "m_PathID": -4167366696420867390
+            },
+            "rewardHitParticles": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView1/Root/Steps/Step1",
+    "tooltipPath": "AncientAdventureSceneView1/Root/Steps/Step1/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5163622157610872070
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 6152442001006601437
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -5603486506651305106
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView1/Root/Steps/Step4",
+    "tooltipPath": "AncientAdventureSceneView1/Root/Steps/Step4/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -6722106383386257760
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -5809912914573493855
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -4428528310207031759
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView1/Root/Steps/Step5",
+    "tooltipPath": "AncientAdventureSceneView1/Root/Steps/Step5/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6149996519739009064
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 8463840613145055423
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 4487152883670804514
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView1/Root/Steps/Step2",
+    "tooltipPath": "AncientAdventureSceneView1/Root/Steps/Step2/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5816480878710149894
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -6259213247634737110
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 6909754167624203711
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_1_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView1/Root/Steps/Step3",
+    "tooltipPath": "AncientAdventureSceneView1/Root/Steps/Step3/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 1148469534517292174
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 1237733978101885492
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 8455464302112137195
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": -9196967301082934136,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step4/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -1573698467290142939
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": -3174396397502583559,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step2/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 9123626730641040977
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": -1825366642750785598,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step1/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -8163294849306730337
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": 3952448356809266680,
+    "path": "AncientAdventureSceneView2/Root/Environment/PlatformParent/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 610605711014638150
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.3382847309112549
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 4.0,
+        "y": 3.6765694618225098
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": 6907627292935110979,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step7/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5488320647188510561
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": 7762068379904934404,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step6/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -8933357216555775205
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": 8901108267671214114,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step5/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6576173299531763033
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "BoxCollider2D",
+    "id": 9034264809912560025,
+    "path": "AncientAdventureSceneView2/Root/Steps/Step3/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 9045941000056526534
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": -0.041728973388671875,
+        "y": 0.27690374851226807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.331148147583008,
+        "y": 1.5530855655670166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "start-art",
+    "node": {
+      "id": "-7450775245388165037",
+      "name": "Step0",
+      "path": "AncientAdventureSceneView2/Root/Steps/Step0",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -7450775245388165037
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 6.639999866485596,
+          "y": -8.8100004196167,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 4302340771187070922
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": -4901778863427539846
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        6.639999866485596,
+        -8.8100004196167
+      ],
+      "components": [
+        {
+          "type": "MonoBehaviour",
+          "script": "AncientAdventureSceneStep",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -7450775245388165037
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 8037103884380303495
+            },
+            "m_Name": "",
+            "unavailableFallAnimationNumbers": [],
+            "rewardViewParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "stepText": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "rewardsHolder": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "underwaterPlatform": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "frameFallParticleParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "fallRenderTextureRenderer": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "tooltipButton": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "breakAnimationStepNumberParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerPositionReference": {
+              "m_FileID": 0,
+              "m_PathID": 4302340771187070922
+            },
+            "playerScaleReference": {
+              "m_FileID": 0,
+              "m_PathID": 4302340771187070922
+            },
+            "stepWaveDistortion": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerFallParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "stepWaveSprite": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "cardRewardShadow": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "otherRewardsShadow": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerViewShadowSpriteRenderer": {
+              "m_FileID": 0,
+              "m_PathID": -5024418023933811367
+            },
+            "rewardHitParticles": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          }
+        },
+        {
+          "m_Enabled": true,
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 6430537687849738708
+          },
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_FlipX": false,
+          "m_FlipY": false,
+          "m_DrawMode": 0,
+          "m_Size": {
+            "x": 6.307142734527588,
+            "y": 3.3785715103149414
+          },
+          "m_SortingOrder": 400,
+          "m_SortingLayer": 0,
+          "m_MaskInteraction": 0,
+          "type": "SpriteRenderer",
+          "sprite": {
+            "id": "6430537687849738708",
+            "name": "S02_base",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "width": 1685.0,
+              "height": 381.0
+            },
+            "border": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "ppu": 140.0,
+            "meshBounds": {
+              "xmin": -6.017857074737549,
+              "xmax": 6.017857074737549,
+              "ymin": -1.360714316368103,
+              "ymax": 1.360714316368103
+            },
+            "file": "evidence/activity-layouts/ancient_adventure_stage_2_v2/6430537687849738708_S02_base.png",
+            "exportSize": [
+              1685,
+              381
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step7",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step7/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5488320647188510561
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 6907627292935110979
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -7402941160096362967
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step4",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step4/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -1573698467290142939
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -9196967301082934136
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -1055839637988593826
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step6",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step6/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -8933357216555775205
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 7762068379904934404
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -243545592630915594
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step1",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step1/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -8163294849306730337
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -1825366642750785598
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 4142273132163029774
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step5",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step5/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6576173299531763033
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 8901108267671214114
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 5076354161747823084
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step2",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step2/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 9123626730641040977
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -3174396397502583559
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 5378830803989509662
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_2_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView2/Root/Steps/Step3",
+    "tooltipPath": "AncientAdventureSceneView2/Root/Steps/Step3/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 9045941000056526534
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 9034264809912560025
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 5810296520323989973
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.StreakEvent.Scripts.StreakEventSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": -8964734520358731875,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step10/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -6880498250874906489
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": -7511746094938857404,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step5/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -7888233963302199516
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": -7437084174420874627,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step3/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 3888914067854751843
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": -6612891422365828746,
+    "path": "AncientAdventureSceneView3/Root/Environment/PlatformParent/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6885684263674303099
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.0,
+        "y": 0.5352354049682617
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 4.0,
+        "y": 3.282668113708496
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": -5331875532916562921,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step4/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4543137311802817501
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": -1334230249932565594,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step2/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 7072887385693688417
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": 4550936774283448051,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step9/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 2179687153052533839
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": 6760734767987528607,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step7/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 761762623030751757
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": 7310127988573988467,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step8/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 3681117034279730542
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": 7605429658641245233,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step1/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 395226150806095965
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "BoxCollider2D",
+    "id": 8861803000806095609,
+    "path": "AncientAdventureSceneView3/Root/Steps/Step6/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5320881977498507380
+      },
+      "m_Enabled": 1,
+      "m_Density": 1.0,
+      "m_Material": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_IsTrigger": false,
+      "m_UsedByEffector": false,
+      "m_UsedByComposite": false,
+      "m_Offset": {
+        "x": 0.011311113834381104,
+        "y": 0.28654730319976807
+      },
+      "m_SpriteTilingProperty": {
+        "border": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "oldSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "newSize": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "adaptiveTilingThreshold": 0.0,
+        "drawMode": 0,
+        "adaptiveTiling": false
+      },
+      "m_AutoTiling": false,
+      "m_Size": {
+        "x": 2.147918701171875,
+        "y": 1.5337984561920166
+      },
+      "m_EdgeRadius": 0.0
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "start-art",
+    "node": {
+      "id": "1511392044056237340",
+      "name": "Step0",
+      "path": "AncientAdventureSceneView3/Root/Steps/Step0",
+      "active": true,
+      "effectiveActive": true,
+      "transform": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 1511392044056237340
+        },
+        "m_LocalRotation": {
+          "x": -0.0,
+          "y": -0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 7.010000228881836,
+          "y": -8.979999542236328,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 432988745486835664
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": -8632185544936278758
+        }
+      },
+      "world2d": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        7.010000228881836,
+        -8.979999542236328
+      ],
+      "components": [
+        {
+          "m_Enabled": true,
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 5524868568075419850
+          },
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_FlipX": false,
+          "m_FlipY": false,
+          "m_DrawMode": 0,
+          "m_Size": {
+            "x": 6.221428394317627,
+            "y": 3.2642858028411865
+          },
+          "m_SortingOrder": 147,
+          "m_SortingLayer": 0,
+          "m_MaskInteraction": 0,
+          "type": "SpriteRenderer",
+          "sprite": {
+            "id": "5524868568075419850",
+            "name": "S03_platform",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "width": 1448.0,
+              "height": 335.0
+            },
+            "border": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 0.0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "ppu": 140.0,
+            "meshBounds": {
+              "xmin": -5.099999904632568,
+              "xmax": 5.085714340209961,
+              "ymin": -1.1964285373687744,
+              "ymax": 1.1964285373687744
+            },
+            "file": "evidence/activity-layouts/ancient_adventure_stage_3_v2/5524868568075419850_S03_platform.png",
+            "exportSize": [
+              1426,
+              335
+            ]
+          }
+        },
+        {
+          "type": "MonoBehaviour",
+          "script": "AncientAdventureSceneStep",
+          "fields": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1511392044056237340
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": 8037103884380303495
+            },
+            "m_Name": "",
+            "unavailableFallAnimationNumbers": [],
+            "rewardViewParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "stepText": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "rewardsHolder": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "underwaterPlatform": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "frameFallParticleParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "fallRenderTextureRenderer": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "tooltipButton": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "breakAnimationStepNumberParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerPositionReference": {
+              "m_FileID": 0,
+              "m_PathID": 432988745486835664
+            },
+            "playerScaleReference": {
+              "m_FileID": 0,
+              "m_PathID": 432988745486835664
+            },
+            "stepWaveDistortion": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerFallParent": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "stepWaveSprite": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "cardRewardShadow": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "otherRewardsShadow": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "playerViewShadowSpriteRenderer": {
+              "m_FileID": 0,
+              "m_PathID": -6526317870910766999
+            },
+            "rewardHitParticles": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step8",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step8/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 3681117034279730542
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 7310127988573988467
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -8007988065932609184
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step9",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step9/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 2179687153052533839
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 4550936774283448051
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -7443247176019441764
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step10",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step10/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -6880498250874906489
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -8964734520358731875
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -3524895165432819942
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step2",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step2/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 7072887385693688417
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -1334230249932565594
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -3019140508013753273
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step1",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step1/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 395226150806095965
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 7605429658641245233
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": -2366758186864501526
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step3",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step3/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 3888914067854751843
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -7437084174420874627
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 3562421134018396563
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step4",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step4/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4543137311802817501
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -5331875532916562921
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 5778531002882634797
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step5",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step5/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -7888233963302199516
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": -7511746094938857404
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 7539074462362112049
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step6",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step6/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5320881977498507380
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 8861803000806095609
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 7657748659455603077
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "bundle": "ancient_adventure_stage_3_v2",
+    "type": "tooltip-binding",
+    "owner": "AncientAdventureSceneView3/Root/Steps/Step7",
+    "tooltipPath": "AncientAdventureSceneView3/Root/Steps/Step7/Root/ColumnView/TooltipButton",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 761762623030751757
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3354703477690387963
+      },
+      "m_Name": "",
+      "zIndex": -13,
+      "scaleDown": 0,
+      "isSilentButton": 1,
+      "shouldPlayHapticNew": 1,
+      "immediateCancelOnScroll": 0,
+      "overrideScaleFactor": 0.0,
+      "colliderBox": {
+        "m_FileID": 0,
+        "m_PathID": 6760734767987528607
+      },
+      "onClick": {
+        "m_PersistentCalls": {
+          "m_Calls": [
+            {
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": 8905444124562774928
+              },
+              "m_TargetAssemblyTypeName": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneStep, Assembly-CSharp",
+              "m_MethodName": "OnStepClicked",
+              "m_Mode": 1,
+              "m_Arguments": {
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_IntArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_StringArgument": "",
+                "m_BoolArgument": 0
+              },
+              "m_CallState": 2
+            }
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "binary_sha256": "ea4eaf596b64ff255cc042d52d32e44078ed773d70be6c3368db9459a12b3a22",
+  "script_json_sha256": "e522e23f32ec092b1d6f7102d75fcf97ac0f53bdd9efa72b57dbada9192bebe7",
+  "audit_script_sha256": "95775a3b6a2177cfc4136ec024ce8d3693280927661bb4d6e93ff4676f9ab1f2",
+  "tools": {
+    "capstone": "5.0.9",
+    "pyelftools": "0.33"
+  },
+  "methods": [
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect",
+      "address": "0x33894b4",
+      "file": "CameraManager__GetPortraitAspect_33894b4.txt",
+      "sha256": "eede6aeb602e97d63cfcefd356f4a631005000ad4dada931c925cfb9d94d1034"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$UpdateSizeParameters",
+      "address": "0x3389b6c",
+      "file": "CameraManager__UpdateSizeParameters_3389b6c.txt",
+      "sha256": "0497c7f3c84a5553feb198a464aadd5dbe179abc45aa8879d74d19c4a1bc9b7b"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetHeight",
+      "address": "0x338ad30",
+      "file": "CameraManager__GetHeight_338ad30.txt",
+      "sha256": "dc504addb56fd1958ca611191ade58ae7eee1a4634939d016c229a3880fc6d8a"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetWidth",
+      "address": "0x338ad38",
+      "file": "CameraManager__GetWidth_338ad38.txt",
+      "sha256": "04100963b955a9deff05ecdb4d0c4356c9223e1976d8dda4ca30444990821cf2"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetWidthBetweenLandscapeFlags",
+      "address": "0x338ad40",
+      "file": "CameraManager__GetWidthBetweenLandscapeFlags_338ad40.txt",
+      "sha256": "9f2a52b357a463b36872c5a9358612fe23e291ff2836a1e5e4c65015fe99d4f5"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitWidthOrLandscapeFlagsGap",
+      "address": "0x338ad68",
+      "file": "CameraManager__GetPortraitWidthOrLandscapeFlagsGap_338ad68.txt",
+      "sha256": "24225707d2948ffc48d20016eb1df174c84513593f4b5cf5de1815c9a3819d88"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitWidthOrLandscapeFlagsGap",
+      "address": "0x338ad70",
+      "file": "CameraManager__GetPortraitWidthOrLandscapeFlagsGap_338ad70.txt",
+      "sha256": "9d770742524af55f1f371aad1afb5983498d033184d0da1e9cd78bf5fbdc3a62"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeTopCenterOfCamera",
+      "address": "0x338aff4",
+      "file": "CameraManager__GetSafeTopCenterOfCamera_338aff4.txt",
+      "sha256": "40e8e62fee5184f77d152c2c7e060661ae5ce564c3cb6f0aa235a76a3d5f6085"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeBottomCenterOfCamera",
+      "address": "0x338b164",
+      "file": "CameraManager__GetSafeBottomCenterOfCamera_338b164.txt",
+      "sha256": "1312e26124d70575e717cd0a7425a2b09da22514674985a44e13b27d39330785"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceTall",
+      "address": "0x338b6f4",
+      "file": "CameraManager__IsDeviceTall_338b6f4.txt",
+      "sha256": "0d34b0a8ce3a76e3c9d05f17eb4b6de9c25819472cb495f27d676e49ab5f4aa7"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceExtraTall",
+      "address": "0x338b750",
+      "file": "CameraManager__IsDeviceExtraTall_338b750.txt",
+      "sha256": "46ee1829ccee2797af3cd9f8f4f6a7561c4e4bb99f1a3a5d171b34c31f480093"
+    },
+    {
+      "name": "Royal.Infrastructure.Contexts.Units.CameraManager$$GetUiScaleFactor",
+      "address": "0x338b7a8",
+      "file": "CameraManager__GetUiScaleFactor_338b7a8.txt",
+      "sha256": "292a4492e4c63f900c7fabe0e0d7ebcd71ea12401ccedfc6d297e8da631c9b8b"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$TryPrepareWideScreenUI",
+      "address": "0x35f11dc",
+      "file": "AncientAdventureDialogFlowController__TryPrepareWideScreenUI_35f11dc.txt",
+      "sha256": "a2d720c6ebbc9781fb071fc3d3159b9ec7fd6638d19b6ecc0dc89daa41cce8f1"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$GetBottomBorderPosition",
+      "address": "0x35f1520",
+      "file": "AncientAdventureDialogFlowController__GetBottomBorderPosition_35f1520.txt",
+      "sha256": "d88df947985455036d15b672a3c0d0485edfdfaeffbc452684efe1f0d9a57b2a"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$ArrangeTopButtons",
+      "address": "0x35f15b4",
+      "file": "AncientAdventureDialogFlowController__ArrangeTopButtons_35f15b4.txt",
+      "sha256": "36132dd25bb92e9bcda2630bbec2efabad877bdb24542341d0b9bcd40103f641"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnOrientationChange",
+      "address": "0x35f1a38",
+      "file": "AncientAdventureDialogFlowController__OnOrientationChange_35f1a38.txt",
+      "sha256": "0c5a761e0f2d62050be6fb85696ebd473d8a74f460d5458970fbad6c19b74356"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$OnOrientationChange",
+      "address": "0x35f1a88",
+      "file": "AncientAdventureSceneController__OnOrientationChange_35f1a88.txt",
+      "sha256": "6c52d3d220d65c8d04366e462b4009f76d899da78797bf18bc4ef5eca85743c8"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$Init",
+      "address": "0x3867428",
+      "file": "AncientAdventureDialog__Init_3867428.txt",
+      "sha256": "3843a4afa9a4ce959e7fd709b332dea73afb5f318d8265951b25d02cb7df2070"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnOrientationChange",
+      "address": "0x3867b60",
+      "file": "AncientAdventureDialog__OnOrientationChange_3867b60.txt",
+      "sha256": "ec873cdfea29a68f0befb260948bf9991a58442a7b37db36ac4140f451cd0420"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialog$$OnShow",
+      "address": "0x3868000",
+      "file": "AncientAdventureDialog__OnShow_3868000.txt",
+      "sha256": "be42302990350275a12f45d7367dd809a927ca96d3c00d975449abb48094d928"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneView$$UpdateWaterSpritesWidth",
+      "address": "0x38d7778",
+      "file": "AncientAdventureSceneView__UpdateWaterSpritesWidth_38d7778.txt",
+      "sha256": "6e845abc42a0d3505e059cccfc6dc40fda4949d0e0d3b00eadde537851c6fbc9"
+    }
+  ],
+  "limits": [
+    "Static; no frame capture",
+    "Adjacent named boundary approximation",
+    "Linear literal/metadata annotations require manual control-flow and register validation; not a decompiler"
+  ]
+}

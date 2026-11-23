@@ -1,0 +1,245 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$Init
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog__Init (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialogData_o dialogData, Royal_Scenes_Start_Context_Units_FeatureBundle_LavaQuestCompetitionBundle_o* bundle, int32_t originType, bool isFromPrelevel, const MethodInfo* method);
+0x38289C4; next named boundary 0x3828D8C
+038289C4 stp      x27, x26, [sp, #-0x50]!
+038289C8 stp      x25, x24, [sp, #0x10]
+038289CC stp      x23, x22, [sp, #0x20]
+038289D0 stp      x21, x20, [sp, #0x30]
+038289D4 stp      x19, x30, [sp, #0x40]
+038289D8 adrp     x25, #0x58c8000
+038289DC adrp     x23, #0x54b8000
+038289E0 ldrb     w8, [x25, #0x172]
+038289E4 ldr      x23, [x23, #0x140] ; Royal.Scenes.Start.Context.ApplicationContext_TypeInfo
+038289E8 mov      w20, w3
+038289EC mov      x21, x2
+038289F0 mov      x22, x1
+038289F4 mov      x19, x0
+038289F8 and      w24, w4, #1
+038289FC tbnz     w8, #0, #0x3828a8c
+03828A00 adrp     x0, #0x5505000
+03828A04 ldr      x0, [x0, #0xa98] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<AudioManager>()
+03828A08 bl       #0x1043220
+03828A0C adrp     x0, #0x54c4000
+03828A10 ldr      x0, [x0, #0xd80] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<CameraManager>()
+03828A14 bl       #0x1043220
+03828A18 adrp     x0, #0x5563000
+03828A1C ldr      x0, [x0, #0x220] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<HapticManager>()
+03828A20 bl       #0x1043220
+03828A24 adrp     x0, #0x54b8000
+03828A28 ldr      x0, [x0, #0x140] ; Royal.Scenes.Start.Context.ApplicationContext_TypeInfo
+03828A2C bl       #0x1043220
+03828A30 adrp     x0, #0x54c0000
+03828A34 ldr      x0, [x0, #0xea0] ; Royal.Infrastructure.Contexts.Units.CameraManager_TypeInfo
+03828A38 bl       #0x1043220
+03828A3C adrp     x0, #0x54d1000
+03828A40 ldr      x0, [x0, #0x2e0] ; System.Func<long>_TypeInfo
+03828A44 bl       #0x1043220
+03828A48 adrp     x0, #0x551e000
+03828A4C ldr      x0, [x0, #0xed0] ; Method$Royal.Scenes.Home.Context.HomeContext.Get<AreaManager>()
+03828A50 bl       #0x1043220
+03828A54 adrp     x0, #0x553b000
+03828A58 ldr      x0, [x0, #0x8f8] ; Royal.Scenes.Home.Context.HomeContext_TypeInfo
+03828A5C bl       #0x1043220
+03828A60 adrp     x0, #0x54ac000
+03828A64 ldr      x0, [x0, #0x1b8] ; Method$Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog.<Init>b__44_0()
+03828A68 bl       #0x1043220
+03828A6C adrp     x0, #0x54c7000
+03828A70 ldr      x0, [x0, #0x438] ; Method$Royal.Player.Context.UserContext.Get<LavaQuestManager>()
+03828A74 bl       #0x1043220
+03828A78 adrp     x0, #0x54d2000
+03828A7C ldr      x0, [x0, #0x6f8] ; Royal.Player.Context.UserContext_TypeInfo
+03828A80 bl       #0x1043220
+03828A84 mov      w8, #1
+03828A88 strb     w8, [x25, #0x172]
+03828A8C adrp     x26, #0x54c4000
+03828A90 ldr      x26, [x26, #0xd80] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<CameraManager>()
+03828A94 ldp      q0, q1, [x22]
+03828A98 adrp     x25, #0x54d2000
+03828A9C ldr      x25, [x25, #0x6f8] ; Royal.Player.Context.UserContext_TypeInfo
+03828AA0 add      x0, x19, #0xf0
+03828AA4 mov      x1, xzr
+03828AA8 stp      q0, q1, [x19, #0xf0]
+03828AAC bl       #0x10431cc
+03828AB0 str      w20, [x19, #0x158]
+03828AB4 strb     w24, [x19, #0x169]
+03828AB8 ldr      x1, [x22, #0x10]
+03828ABC add      x0, x19, #0x110
+03828AC0 str      x1, [x19, #0x110]
+03828AC4 bl       #0x10431cc
+03828AC8 ldr      x0, [x23]
+03828ACC ldr      w8, [x0, #0xe0]
+03828AD0 cbnz     w8, #0x3828ad8
+03828AD4 bl       #0x1043324
+03828AD8 adrp     x27, #0x54c7000
+03828ADC ldr      x27, [x27, #0x438] ; Method$Royal.Player.Context.UserContext.Get<LavaQuestManager>()
+03828AE0 ldr      x1, [x26]
+03828AE4 adrp     x22, #0x5505000
+03828AE8 adrp     x23, #0x5563000
+03828AEC adrp     x24, #0x553b000
+03828AF0 ldr      x22, [x22, #0xa98] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<AudioManager>()
+03828AF4 ldr      x23, [x23, #0x220] ; Method$Royal.Scenes.Start.Context.ApplicationContext.Get<HapticManager>()
+03828AF8 ldr      x24, [x24, #0x8f8] ; Royal.Scenes.Home.Context.HomeContext_TypeInfo
+03828AFC mov      w0, #1
+03828B00 bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+03828B04 mov      x1, x0
+03828B08 add      x0, x19, #0x130
+03828B0C str      x1, [x19, #0x130]
+03828B10 bl       #0x10431cc
+03828B14 ldr      x0, [x25]
+03828B18 ldr      w8, [x0, #0xe0]
+03828B1C cbnz     w8, #0x3828b24
+03828B20 bl       #0x1043324
+03828B24 ldr      x1, [x27]
+03828B28 adrp     x25, #0x551e000
+03828B2C ldr      x25, [x25, #0xed0] ; Method$Royal.Scenes.Home.Context.HomeContext.Get<AreaManager>()
+03828B30 mov      w0, #0x22
+03828B34 bl       #0x2a617ac ; Royal.Player.Context.UserContext$$Get<object>
+03828B38 mov      x1, x0
+03828B3C add      x0, x19, #0x138
+03828B40 str      x1, [x19, #0x138]
+03828B44 bl       #0x10431cc
+03828B48 ldr      x1, [x22]
+03828B4C mov      w0, #0x12
+03828B50 bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+03828B54 add      x22, x19, #0x140
+03828B58 mov      x1, x0
+03828B5C str      x0, [x19, #0x140]
+03828B60 mov      x0, x22
+03828B64 bl       #0x10431cc
+03828B68 ldr      x1, [x23]
+03828B6C mov      w0, #0x1f
+03828B70 bl       #0x31a401c ; Royal.Scenes.Start.Context.ApplicationContext$$Get<object>
+03828B74 add      x23, x19, #0x148
+03828B78 mov      x1, x0
+03828B7C str      x0, [x19, #0x148]
+03828B80 mov      x0, x23
+03828B84 bl       #0x10431cc
+03828B88 ldr      x0, [x24]
+03828B8C ldr      w8, [x0, #0xe0]
+03828B90 cbnz     w8, #0x3828b98
+03828B94 bl       #0x1043324
+03828B98 ldr      x1, [x25]
+03828B9C adrp     x24, #0x54c0000
+03828BA0 ldr      x24, [x24, #0xea0] ; Royal.Infrastructure.Contexts.Units.CameraManager_TypeInfo
+03828BA4 mov      w0, wzr
+03828BA8 bl       #0x270cdcc ; Royal.Scenes.Home.Context.HomeContext$$Get<object>
+03828BAC mov      x1, x0
+03828BB0 add      x0, x19, #0x150
+03828BB4 str      x1, [x19, #0x150]
+03828BB8 bl       #0x10431cc
+03828BBC ldr      w8, [x19, #0x158]
+03828BC0 sub      w8, w8, #1
+03828BC4 cmp      w8, #1
+03828BC8 b.hi     #0x3828bdc
+03828BCC mov      w0, wzr
+03828BD0 mov      w1, wzr
+03828BD4 mov      x2, xzr
+03828BD8 bl       #0x3068848 ; Royal.Scenes.Home.Ui.Sections.Home.Landscape.LandscapeFlagsView$$TryShow
+03828BDC ldr      x0, [x24]
+03828BE0 adrp     x25, #0x54d1000
+03828BE4 ldr      w8, [x0, #0xe0]
+03828BE8 ldr      x25, [x25, #0x2e0] ; System.Func<long>_TypeInfo
+03828BEC cbnz     w8, #0x3828bf4
+03828BF0 bl       #0x1043324
+03828BF4 mov      w0, #0x74
+03828BF8 mov      x1, xzr
+03828BFC bl       #0x3388424 ; Royal.Infrastructure.Contexts.Units.CameraManager$$DisableOrientation
+03828C00 ldr      x0, [x25]
+03828C04 ldr      x24, [x19, #0x90]
+03828C08 bl       #0x1043338
+03828C0C cbz      x0, #0x3828d88
+03828C10 adrp     x8, #0x54ac000
+03828C14 ldr      x8, [x8, #0x1b8] ; Method$Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog.<Init>b__44_0()
+03828C18 mov      x1, x19
+03828C1C mov      x3, xzr
+03828C20 mov      x25, x0
+03828C24 ldr      x2, [x8]
+03828C28 bl       #0x2497f9c ; System.Func<long>$$.ctor
+03828C2C cbz      x24, #0x3828d88
+03828C30 mov      x0, x24
+03828C34 mov      x1, xzr
+03828C38 mov      x2, x25
+03828C3C mov      w3, wzr
+03828C40 mov      w4, wzr
+03828C44 mov      w5, wzr
+03828C48 mov      x6, xzr
+03828C4C bl       #0x2700054 ; Royal.Infrastructure.Utils.RemainingText.RemainingTextPositioner$$Init
+03828C50 add      x0, x19, #0x120
+03828C54 mov      x1, x21
+03828C58 str      x21, [x19, #0x120]
+03828C5C bl       #0x10431cc
+03828C60 cmp      w20, #1
+03828C64 cset     w8, eq
+03828C68 mov      x0, x19
+03828C6C strb     w8, [x19, #0x165]
+03828C70 bl       #0x3828da0 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$StopAreaBackgroundSounds
+03828C74 mov      x0, x19
+03828C78 bl       #0x3828ddc ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ArrangeColliders
+03828C7C mov      x0, x19
+03828C80 bl       #0x3828e50 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$PrepareHeader
+03828C84 mov      x0, x19
+03828C88 bl       #0x3828f08 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$TryArrangeLandscapeFlags
+03828C8C mov      x0, x19
+03828C90 bl       #0x38290a0 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$SetSceneState
+03828C94 mov      x0, x19
+03828C98 bl       #0x3829168 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$PrepareTopPanel
+03828C9C ldr      w8, [x19, #0x118]
+03828CA0 orr      w9, w8, #2
+03828CA4 cmp      w9, #3
+03828CA8 b.ne     #0x3828cb4
+03828CAC mov      w8, #1
+03828CB0 b        #0x3828cbc
+03828CB4 cmp      w8, #4
+03828CB8 cset     w8, eq
+03828CBC mov      x0, x19
+03828CC0 strb     w8, [x19, #0x15d]
+03828CC4 bl       #0x3829288 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ActivateSceneView
+03828CC8 mov      x0, x19
+03828CCC bl       #0x3829568 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$TryShowTutorial
+03828CD0 ldr      w8, [x19, #0x158]
+03828CD4 cbz      w8, #0x3828ce4
+03828CD8 mov      x0, x19
+03828CDC bl       #0x38295bc ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ShowDialogWithUiAnimation
+03828CE0 b        #0x3828cf0
+03828CE4 ldr      x0, [x19, #0xe8]
+03828CE8 cbz      x0, #0x3828d88
+03828CEC bl       #0x38298d8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$StartPictureAnimationsIfNecessary
+03828CF0 ldr      w8, [x19, #0x158]
+03828CF4 sub      w8, w8, #1
+03828CF8 cmp      w8, #1
+03828CFC b.hi     #0x3828d20
+03828D00 ldr      x0, [x22]
+03828D04 cbz      x0, #0x3828d88
+03828D08 mov      x1, xzr
+03828D0C bl       #0x3f1b7b0 ; Royal.Scenes.Start.Context.Units.Audio.AudioManager$$MuteOriginalSfxSourceTemporarily
+03828D10 ldr      x0, [x23]
+03828D14 cbz      x0, #0x3828d88
+03828D18 mov      x1, xzr
+03828D1C bl       #0x368f6dc ; Royal.Scenes.Start.Context.Units.Haptic.HapticManager$$DisableOriginalHaptic
+03828D20 ldr      x0, [x22]
+03828D24 cbz      x0, #0x3828d88
+03828D28 mov      x1, xzr
+03828D2C bl       #0x3f1b958 ; Royal.Scenes.Start.Context.Units.Audio.AudioManager$$UnmuteAlternativeSfxSource
+03828D30 ldr      w8, [x19, #0x158]
+03828D34 cmp      w8, #3
+03828D38 b.ne     #0x3828d70
+03828D3C ldr      x0, [x22]
+03828D40 cbz      x0, #0x3828d88
+03828D44 mov      x1, xzr
+03828D48 bl       #0x3f19d10 ; Royal.Scenes.Start.Context.Units.Audio.AudioManager$$StopHomeMusic
+03828D4C mov      x0, x19
+03828D50 bl       #0x3829c18 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ArrangeTapToContinueTextPosition
+03828D54 mov      x0, x19
+03828D58 ldp      x19, x30, [sp, #0x40]
+03828D5C ldp      x21, x20, [sp, #0x30]
+03828D60 ldp      x23, x22, [sp, #0x20]
+03828D64 ldp      x25, x24, [sp, #0x10]
+03828D68 ldp      x27, x26, [sp], #0x50
+03828D6C b        #0x382aeb4 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$AnimateTapToContinueText
+03828D70 ldp      x19, x30, [sp, #0x40]
+03828D74 ldp      x21, x20, [sp, #0x30]
+03828D78 ldp      x23, x22, [sp, #0x20]
+03828D7C ldp      x25, x24, [sp, #0x10]
+03828D80 ldp      x27, x26, [sp], #0x50
+03828D84 ret      
+03828D88 bl       #0x1043348

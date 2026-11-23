@@ -1,0 +1,1490 @@
+{
+  "version": "2.12.0 / 21200",
+  "snapshot": "2026-11-04",
+  "scope": "initial-config extracted/decrypted data; not current live selection",
+  "sources": [
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\Config\\config_server_iap.csv",
+      "sha256": "56f47005f1d66c2b3f7f7639452cb6dd2002ac61becbfc16d5bcd9b8bb1b5247"
+    },
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\Config\\config_server_shop.csv",
+      "sha256": "b9546110784fad1a88b9b7fc69c5b2fda537ea116a577062c48d8480020ba3a3"
+    },
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\Config\\config_client_iap_banner.csv",
+      "sha256": "bc3a16410c7b2292e084a3c32c97f349a8da3eb472c0053d5594268416e4be5f"
+    },
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\Config\\config_client_iap_chance.csv",
+      "sha256": "b6ebef946362d13c619129f08780d07fe348f2788f839c8ac85254b79e731c09"
+    },
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\Config\\config_server_asset.csv",
+      "sha256": "da1323e9bbe6c432c167a6d699501df4f941cee012faa8e6ab865f81066ff54b"
+    },
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\Config\\config_server_coin.csv",
+      "sha256": "755c066c0d5c5b02a0d166b64e30ba0276056698b537a6be796ae28935a4c65d"
+    },
+    {
+      "path": "05-Runtime\\2026-11-04\\decoded\\initial-config\\CMS\\cms_language_en.csv",
+      "sha256": "d61e4e7b5bc183bd35390639beeffa6b4fdb45c4325018e306ba1f0c4054333c"
+    }
+  ],
+  "directed_products": [
+    {
+      "ProductId": "com.undo.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_3;100_1000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "1.99",
+      "Des": "撤回道具礼包01",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 135,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 4,
+        "100": 1000,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_3;100_2000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "2.99",
+      "Des": "撤回道具礼包02",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 136,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 4,
+        "100": 2000,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.03.bundle",
+      "GroupId": "prop_favor_undo",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_6;100_2000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "7.99",
+      "Des": "撤回道具礼包03",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 137,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 8,
+        "100": 2000,
+        "506": 2,
+        "515": 2,
+        "503": 2
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.04.bundle",
+      "GroupId": "prop_favor_undo",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_8;100_6000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "12.99",
+      "Des": "撤回道具礼包04",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 138,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 10,
+        "100": 6000,
+        "506": 2,
+        "515": 2,
+        "503": 2
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.05.bundle",
+      "GroupId": "prop_favor_undo",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_12;100_10000;502_3;506_3;515_3;503_3",
+      "BuyPrice": "19.99",
+      "Des": "撤回道具礼包05",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 139,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 15,
+        "100": 10000,
+        "506": 3,
+        "515": 3,
+        "503": 3
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.06.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_25;100_4000;502_5;506_5;515_5;503_5",
+      "BuyPrice": "24.99",
+      "Des": "撤回道具礼包06",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 140,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 30,
+        "100": 4000,
+        "506": 5,
+        "515": 5,
+        "503": 5
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.07.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_30;100_5000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "29.99",
+      "Des": "撤回道具礼包07",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 141,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 36,
+        "100": 5000,
+        "506": 6,
+        "515": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.08.bundle",
+      "GroupId": "prop_favor_undo",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_25;100_20000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "39.99",
+      "Des": "撤回道具礼包08",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 142,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 31,
+        "100": 20000,
+        "506": 6,
+        "515": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.undo.favor.09.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "502_88;100_10000;502_8;506_8;515_8;503_8",
+      "BuyPrice": "59.99",
+      "Des": "撤回道具礼包09",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 143,
+      "family": "undo",
+      "aggregate_assets": {
+        "502": 96,
+        "100": 10000,
+        "506": 8,
+        "515": 8,
+        "503": 8
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_3;100_1000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "1.99",
+      "Des": "磁铁道具礼包01",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 144,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 4,
+        "100": 1000,
+        "502": 1,
+        "506": 1,
+        "515": 1
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_3;100_2000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "2.99",
+      "Des": "磁铁道具礼包02",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 145,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 4,
+        "100": 2000,
+        "502": 1,
+        "506": 1,
+        "515": 1
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.03.bundle",
+      "GroupId": "prop_favor_magneto",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_3;100_4000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "7.99",
+      "Des": "磁铁道具礼包03",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 146,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 4,
+        "100": 4000,
+        "502": 1,
+        "506": 1,
+        "515": 1
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.04.bundle",
+      "GroupId": "prop_favor_magneto",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_4;100_6000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "12.99",
+      "Des": "磁铁道具礼包04",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 147,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 6,
+        "100": 6000,
+        "502": 2,
+        "506": 2,
+        "515": 2
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.05.bundle",
+      "GroupId": "prop_favor_magneto",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_6;100_10000;502_3;506_3;515_3;503_3",
+      "BuyPrice": "19.99",
+      "Des": "磁铁道具礼包05",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 148,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 9,
+        "100": 10000,
+        "502": 3,
+        "506": 3,
+        "515": 3
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.06.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_12;100_4000;502_5;506_5;515_5;503_5",
+      "BuyPrice": "24.99",
+      "Des": "磁铁道具礼包06",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 149,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 17,
+        "100": 4000,
+        "502": 5,
+        "506": 5,
+        "515": 5
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.07.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_15;100_5000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "29.99",
+      "Des": "磁铁道具礼包07",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 150,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 21,
+        "100": 5000,
+        "502": 6,
+        "506": 6,
+        "515": 6
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.08.bundle",
+      "GroupId": "prop_favor_magneto",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_12;100_20000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "39.99",
+      "Des": "磁铁道具礼包08",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 151,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 18,
+        "100": 20000,
+        "502": 6,
+        "506": 6,
+        "515": 6
+      }
+    },
+    {
+      "ProductId": "com.magneto.favor.09.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "503_42;100_10000;502_8;506_8;515_8;503_8",
+      "BuyPrice": "59.99",
+      "Des": "磁铁道具礼包09",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 152,
+      "family": "magneto",
+      "aggregate_assets": {
+        "503": 50,
+        "100": 10000,
+        "502": 8,
+        "506": 8,
+        "515": 8
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_3;100_1000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "1.99",
+      "Des": "抓钩道具礼包01",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 153,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 4,
+        "100": 1000,
+        "502": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_3;100_2000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "2.99",
+      "Des": "抓钩道具礼包02",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 154,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 4,
+        "100": 2000,
+        "502": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.03.bundle",
+      "GroupId": "prop_favor_propeller",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_4;100_4000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "7.99",
+      "Des": "抓钩道具礼包03",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 155,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 5,
+        "100": 4000,
+        "502": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.04.bundle",
+      "GroupId": "prop_favor_propeller",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_6;100_6000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "12.99",
+      "Des": "抓钩道具礼包04",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 156,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 8,
+        "100": 6000,
+        "502": 2,
+        "515": 2,
+        "503": 2
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.05.bundle",
+      "GroupId": "prop_favor_propeller",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_8;100_10000;502_3;506_3;515_3;503_3",
+      "BuyPrice": "19.99",
+      "Des": "抓钩道具礼包05",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 157,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 11,
+        "100": 10000,
+        "502": 3,
+        "515": 3,
+        "503": 3
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.06.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_18;100_4000;502_5;506_5;515_5;503_5",
+      "BuyPrice": "24.99",
+      "Des": "抓钩道具礼包06",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 158,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 23,
+        "100": 4000,
+        "502": 5,
+        "515": 5,
+        "503": 5
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.07.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_20;100_5000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "29.99",
+      "Des": "抓钩道具礼包07",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 159,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 26,
+        "100": 5000,
+        "502": 6,
+        "515": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.08.bundle",
+      "GroupId": "prop_favor_propeller",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_16;100_20000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "39.99",
+      "Des": "抓钩道具礼包08",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 160,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 22,
+        "100": 20000,
+        "502": 6,
+        "515": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.propeller.favor.09.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "506_56;100_10000;502_8;506_8;515_8;503_8",
+      "BuyPrice": "59.99",
+      "Des": "抓钩道具礼包09",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 161,
+      "family": "propeller",
+      "aggregate_assets": {
+        "506": 64,
+        "100": 10000,
+        "502": 8,
+        "515": 8,
+        "503": 8
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_3;100_1000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "1.99",
+      "Des": "洗牌道具礼包01",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 162,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 4,
+        "100": 1000,
+        "502": 1,
+        "506": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_3;100_2000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "2.99",
+      "Des": "洗牌道具礼包02",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 163,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 4,
+        "100": 2000,
+        "502": 1,
+        "506": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.03.bundle",
+      "GroupId": "prop_favor_shuffle",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_4;100_4000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "7.99",
+      "Des": "洗牌道具礼包03",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 164,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 5,
+        "100": 4000,
+        "502": 1,
+        "506": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.04.bundle",
+      "GroupId": "prop_favor_shuffle",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_6;100_6000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "12.99",
+      "Des": "洗牌道具礼包04",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 165,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 8,
+        "100": 6000,
+        "502": 2,
+        "506": 2,
+        "503": 2
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.05.bundle",
+      "GroupId": "prop_favor_shuffle",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_8;100_10000;502_3;506_3;515_3;503_3",
+      "BuyPrice": "19.99",
+      "Des": "洗牌道具礼包05",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 166,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 11,
+        "100": 10000,
+        "502": 3,
+        "506": 3,
+        "503": 3
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.06.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_12;100_4000;502_5;506_5;515_5;503_5",
+      "BuyPrice": "24.99",
+      "Des": "洗牌道具礼包06",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 167,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 17,
+        "100": 4000,
+        "502": 5,
+        "506": 5,
+        "503": 5
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.07.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_15;100_5000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "29.99",
+      "Des": "洗牌道具礼包07",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 168,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 21,
+        "100": 5000,
+        "502": 6,
+        "506": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.08.bundle",
+      "GroupId": "prop_favor_shuffle",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_16;100_20000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "39.99",
+      "Des": "洗牌道具礼包08",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 169,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 22,
+        "100": 20000,
+        "502": 6,
+        "506": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.shuffle.favor.09.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "515_56;100_10000;502_8;506_8;515_8;503_8",
+      "BuyPrice": "59.99",
+      "Des": "洗牌道具礼包09",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 170,
+      "family": "shuffle",
+      "aggregate_assets": {
+        "515": 64,
+        "100": 10000,
+        "502": 8,
+        "506": 8,
+        "503": 8
+      }
+    },
+    {
+      "ProductId": "com.space.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_3;100_1000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "1.99",
+      "Des": "加一道具礼包01",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 171,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 3,
+        "100": 1000,
+        "502": 1,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.space.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_3;100_2000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "2.99",
+      "Des": "加一道具礼包02",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 172,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 3,
+        "100": 2000,
+        "502": 1,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.space.favor.03.bundle",
+      "GroupId": "prop_favor_space",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_3;100_4000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "7.99",
+      "Des": "加一道具礼包03",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 173,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 3,
+        "100": 4000,
+        "502": 1,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.space.favor.04.bundle",
+      "GroupId": "prop_favor_space",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_4;100_6000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "12.99",
+      "Des": "加一道具礼包04",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 174,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 4,
+        "100": 6000,
+        "502": 2,
+        "506": 2,
+        "515": 2,
+        "503": 2
+      }
+    },
+    {
+      "ProductId": "com.space.favor.05.bundle",
+      "GroupId": "prop_favor_space",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_6;100_10000;502_3;506_3;515_3;503_3",
+      "BuyPrice": "19.99",
+      "Des": "加一道具礼包05",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 175,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 6,
+        "100": 10000,
+        "502": 3,
+        "506": 3,
+        "515": 3,
+        "503": 3
+      }
+    },
+    {
+      "ProductId": "com.space.favor.06.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_12;100_4000;502_5;506_5;515_5;503_5",
+      "BuyPrice": "24.99",
+      "Des": "加一道具礼包06",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 176,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 12,
+        "100": 4000,
+        "502": 5,
+        "506": 5,
+        "515": 5,
+        "503": 5
+      }
+    },
+    {
+      "ProductId": "com.space.favor.07.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_15;100_5000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "29.99",
+      "Des": "加一道具礼包07",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 177,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 15,
+        "100": 5000,
+        "502": 6,
+        "506": 6,
+        "515": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.space.favor.08.bundle",
+      "GroupId": "prop_favor_space",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_12;100_20000;502_6;506_6;515_6;503_6",
+      "BuyPrice": "39.99",
+      "Des": "加一道具礼包08",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "T",
+      "_line": 178,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 12,
+        "100": 20000,
+        "502": 6,
+        "506": 6,
+        "515": 6,
+        "503": 6
+      }
+    },
+    {
+      "ProductId": "com.space.favor.09.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "508_42;100_10000;502_8;506_8;515_8;503_8",
+      "BuyPrice": "59.99",
+      "Des": "加一道具礼包09",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 179,
+      "family": "space",
+      "aggregate_assets": {
+        "508": 42,
+        "100": 10000,
+        "502": 8,
+        "506": 8,
+        "515": 8,
+        "503": 8
+      }
+    }
+  ],
+  "legacy_products": [
+    {
+      "ProductId": "com.mini.prop.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300208",
+      "AssetList": "100_1000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "1.99",
+      "Des": "道具弹窗礼包1",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 86,
+      "aggregate_assets": {
+        "100": 1000,
+        "502": 1,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.mini.prop.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300208",
+      "AssetList": "100_2000;502_1;506_1;515_1;503_1",
+      "BuyPrice": "2.99",
+      "Des": "道具弹窗礼包2",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 87,
+      "aggregate_assets": {
+        "100": 2000,
+        "502": 1,
+        "506": 1,
+        "515": 1,
+        "503": 1
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.01.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_4000;502_2;506_2;515_2;503_2",
+      "BuyPrice": "7.99",
+      "Des": "道具弹窗高级礼包1",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 88,
+      "aggregate_assets": {
+        "100": 4000,
+        "502": 2,
+        "506": 2,
+        "515": 2,
+        "503": 2
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.02.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_2500;502_5;506_5;515_5;503_5",
+      "BuyPrice": "12.99",
+      "Des": "道具弹窗高级礼包2",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 89,
+      "aggregate_assets": {
+        "100": 2500,
+        "502": 5,
+        "506": 5,
+        "515": 5,
+        "503": 5
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.03.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_3500;502_8;506_8;515_8;503_8",
+      "BuyPrice": "19.99",
+      "Des": "道具弹窗高级礼包3",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 90,
+      "aggregate_assets": {
+        "100": 3500,
+        "502": 8,
+        "506": 8,
+        "515": 8,
+        "503": 8
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.04.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_4000;502_12;506_12;515_12;503_12",
+      "BuyPrice": "22.99",
+      "Des": "道具弹窗高级礼包4",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 91,
+      "aggregate_assets": {
+        "100": 4000,
+        "502": 12,
+        "506": 12,
+        "515": 12,
+        "503": 12
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.05.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_5500;502_14;506_14;515_14;503_14",
+      "BuyPrice": "29.99",
+      "Des": "道具弹窗高级礼包5",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 92,
+      "aggregate_assets": {
+        "100": 5500,
+        "502": 14,
+        "506": 14,
+        "515": 14,
+        "503": 14
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.06.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_7000;502_18;506_18;515_18;503_18",
+      "BuyPrice": "39.99",
+      "Des": "道具弹窗高级礼包6",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 93,
+      "aggregate_assets": {
+        "100": 7000,
+        "502": 18,
+        "506": 18,
+        "515": 18,
+        "503": 18
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.07.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_8000;502_25;506_25;515_25;503_25",
+      "BuyPrice": "44.99",
+      "Des": "道具弹窗高级礼包7",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 94,
+      "aggregate_assets": {
+        "100": 8000,
+        "502": 25,
+        "506": 25,
+        "515": 25,
+        "503": 25
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.08.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_10000;502_32;506_32;515_32;503_32",
+      "BuyPrice": "59.99",
+      "Des": "道具弹窗高级礼包8",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 95,
+      "aggregate_assets": {
+        "100": 10000,
+        "502": 32,
+        "506": 32,
+        "515": 32,
+        "503": 32
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.09.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_12000;502_36;506_36;515_36;503_36",
+      "BuyPrice": "66.99",
+      "Des": "道具弹窗高级礼包9",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 96,
+      "aggregate_assets": {
+        "100": 12000,
+        "502": 36,
+        "506": 36,
+        "515": 36,
+        "503": 36
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.10.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_14000;502_45;506_45;515_45;503_45",
+      "BuyPrice": "79.99",
+      "Des": "道具弹窗高级礼包10",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 97,
+      "aggregate_assets": {
+        "100": 14000,
+        "502": 45,
+        "506": 45,
+        "515": 45,
+        "503": 45
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.11.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_15000;502_50;506_50;515_50;503_50",
+      "BuyPrice": "88.99",
+      "Des": "道具弹窗高级礼包11",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 98,
+      "aggregate_assets": {
+        "100": 15000,
+        "502": 50,
+        "506": 50,
+        "515": 50,
+        "503": 50
+      }
+    },
+    {
+      "ProductId": "com.prop.favor.12.bundle",
+      "GroupId": "not_in_use",
+      "IapType": "1",
+      "TagID": "300205",
+      "AssetList": "100_18000;502_60;506_60;515_60;503_60",
+      "BuyPrice": "99.99",
+      "Des": "道具弹窗高级礼包12",
+      "OriginalPrice": "",
+      "EnableCheckOrders": "F",
+      "_line": 99,
+      "aggregate_assets": {
+        "100": 18000,
+        "502": 60,
+        "506": 60,
+        "515": 60,
+        "503": 60
+      }
+    }
+  ],
+  "group_counts": {
+    "not_in_use": 25,
+    "prop_favor_undo": 4,
+    "prop_favor_magneto": 4,
+    "prop_favor_propeller": 4,
+    "prop_favor_shuffle": 4,
+    "prop_favor_space": 4
+  },
+  "shops": [
+    {
+      "GroupId": "prop_favor",
+      "Des": "banner 道具礼包",
+      "Switch": "1",
+      "IapUiType": "banner_general_new",
+      "ProductIdPickRules": "common_price",
+      "ProductIdPickRulesDes": "取用户 LT 内最多次付费的单价 m 从 group_id 对应 product_id 中取最接近 m 的价格",
+      "StartLevel": "30",
+      "LtCount": "-1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 19
+    },
+    {
+      "GroupId": "mini_prop_favor",
+      "Des": "废弃",
+      "Switch": "1",
+      "IapUiType": "banner_general_new",
+      "ProductIdPickRules": "com.mini.prop.favor.02.bundle",
+      "ProductIdPickRulesDes": "",
+      "StartLevel": "30",
+      "LtCount": "1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 37
+    },
+    {
+      "GroupId": "prop_favor_undo",
+      "Des": "撤回礼包",
+      "Switch": "1",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "quantile_price",
+      "ProductIdPickRulesDes": "相近于 20天内 用户50%分位消费额",
+      "StartLevel": "30",
+      "LtCount": "-1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "3|20|50|0",
+      "_line": 40
+    },
+    {
+      "GroupId": "prop_favor_magneto",
+      "Des": "磁铁礼包",
+      "Switch": "1",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "quantile_price",
+      "ProductIdPickRulesDes": "相近于 20天内 用户50%分位消费额",
+      "StartLevel": "30",
+      "LtCount": "-1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "3|20|50|0",
+      "_line": 41
+    },
+    {
+      "GroupId": "prop_favor_propeller",
+      "Des": "抓钩礼包",
+      "Switch": "1",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "quantile_price",
+      "ProductIdPickRulesDes": "相近于 20天内 用户50%分位消费额",
+      "StartLevel": "30",
+      "LtCount": "-1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "3|20|50|0",
+      "_line": 42
+    },
+    {
+      "GroupId": "prop_favor_shuffle",
+      "Des": "洗牌礼包",
+      "Switch": "1",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "quantile_price",
+      "ProductIdPickRulesDes": "相近于 20天内 用户50%分位消费额",
+      "StartLevel": "30",
+      "LtCount": "-1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "3|20|50|0",
+      "_line": 43
+    },
+    {
+      "GroupId": "prop_favor_space",
+      "Des": "加一礼包",
+      "Switch": "1",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "quantile_price",
+      "ProductIdPickRulesDes": "相近于 20天内 用户50%分位消费额",
+      "StartLevel": "30",
+      "LtCount": "-1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "3|20|50|0",
+      "_line": 44
+    },
+    {
+      "GroupId": "prop_favor_undo_mini",
+      "Des": "生涯限购一次 撤回礼包",
+      "Switch": "0",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "com.undo.favor.02.bundle",
+      "ProductIdPickRulesDes": "",
+      "StartLevel": "30",
+      "LtCount": "1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 45
+    },
+    {
+      "GroupId": "prop_favor_magneto_mini",
+      "Des": "生涯限购一次 磁铁礼包",
+      "Switch": "0",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "com.magneto.favor.02.bundle",
+      "ProductIdPickRulesDes": "",
+      "StartLevel": "30",
+      "LtCount": "1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 46
+    },
+    {
+      "GroupId": "prop_favor_propeller_mini",
+      "Des": "生涯限购一次 抓钩礼包",
+      "Switch": "0",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "com.propeller.favor.02.bundle",
+      "ProductIdPickRulesDes": "",
+      "StartLevel": "30",
+      "LtCount": "1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 47
+    },
+    {
+      "GroupId": "prop_favor_shuffle_mini",
+      "Des": "生涯限购一次 洗牌礼包",
+      "Switch": "0",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "com.shuffle.favor.02.bundle",
+      "ProductIdPickRulesDes": "",
+      "StartLevel": "30",
+      "LtCount": "1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 48
+    },
+    {
+      "GroupId": "prop_favor_space_mini",
+      "Des": "生涯限购一次 加一礼包",
+      "Switch": "0",
+      "IapUiType": "prop_favor_general",
+      "ProductIdPickRules": "com.space.favor.02.bundle",
+      "ProductIdPickRulesDes": "",
+      "StartLevel": "30",
+      "LtCount": "1",
+      "StartTime": "20221203",
+      "Duration": "-1",
+      "DurationCount": "-1",
+      "ResetCD": "-1",
+      "ProductIdPickRulesParam": "",
+      "_line": 49
+    }
+  ],
+  "asset_definitions": [
+    {
+      "AssetId": "100",
+      "Type": "0",
+      "InitialValue": "2000",
+      "UnlockLevel": "0",
+      "GuideOpportunity": "0",
+      "TargetCount": "",
+      "Des": "coin",
+      "Name": "coin",
+      "DDAAssetValue": "1",
+      "_line": 17
+    },
+    {
+      "AssetId": "502",
+      "Type": "0",
+      "InitialValue": "3",
+      "UnlockLevel": "5",
+      "GuideOpportunity": "1",
+      "TargetCount": "1",
+      "Des": "【撤回】：将背包的tile最后1个放到整理区，只能配置1个",
+      "Name": "undo",
+      "DDAAssetValue": "300",
+      "_line": 33
+    },
+    {
+      "AssetId": "503",
+      "Type": "0",
+      "InitialValue": "3",
+      "UnlockLevel": "9",
+      "GuideOpportunity": "1",
+      "TargetCount": "1",
+      "Des": "【磁铁】：从棋盘吸N组tile到背包(N为match次数），优先吸背包中有的tile",
+      "Name": "magneto",
+      "DDAAssetValue": "600",
+      "_line": 34
+    },
+    {
+      "AssetId": "506",
+      "Type": "0",
+      "InitialValue": "3",
+      "UnlockLevel": "7",
+      "GuideOpportunity": "1",
+      "TargetCount": "3",
+      "Des": "【抓钩】：从棋盘吸N个tile到整理区",
+      "Name": "propeller",
+      "DDAAssetValue": "450",
+      "_line": 37
+    },
+    {
+      "AssetId": "508",
+      "Type": "0",
+      "InitialValue": "3",
+      "UnlockLevel": "14",
+      "GuideOpportunity": "0",
+      "TargetCount": "1",
+      "Des": "【背包+1】局内：使得背包增加1格",
+      "Name": "ingame_extra_space",
+      "DDAAssetValue": "600",
+      "_line": 39
+    },
+    {
+      "AssetId": "515",
+      "Type": "0",
+      "InitialValue": "3",
+      "UnlockLevel": "11",
+      "GuideOpportunity": "0",
+      "TargetCount": "1",
+      "Des": "【洗牌】目前解锁关卡是10000关，暂不生效",
+      "Name": "shuffle",
+      "DDAAssetValue": "450",
+      "_line": 46
+    }
+  ]
+}

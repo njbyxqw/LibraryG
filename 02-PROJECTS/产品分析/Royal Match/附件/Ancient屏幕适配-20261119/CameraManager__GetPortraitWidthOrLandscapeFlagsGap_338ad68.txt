@@ -1,0 +1,5 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitWidthOrLandscapeFlagsGap
+float Royal_Infrastructure_Contexts_Units_CameraManager__GetPortraitWidthOrLandscapeFlagsGap (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x338AD68; next named boundary 0x338AD70
+0338AD68 ldr      s0, [x0, #0x24]
+0338AD6C ret      

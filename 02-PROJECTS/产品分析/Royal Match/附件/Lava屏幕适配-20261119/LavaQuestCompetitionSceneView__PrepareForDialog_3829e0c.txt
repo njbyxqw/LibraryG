@@ -1,0 +1,165 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$PrepareForDialog
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView__PrepareForDialog (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView_o* __this, Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialogData_o dialogData, Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* dialog, System_Action_o* onComplete, const MethodInfo* method);
+0x3829E0C; next named boundary 0x382A094
+03829E0C sub      sp, sp, #0x60
+03829E10 stp      d9, d8, [sp, #0x20]
+03829E14 stp      x23, x22, [sp, #0x30]
+03829E18 stp      x21, x20, [sp, #0x40]
+03829E1C stp      x19, x30, [sp, #0x50]
+03829E20 adrp     x23, #0x58c8000
+03829E24 ldrb     w8, [x23, #0x182]
+03829E28 mov      x22, x3
+03829E2C mov      x20, x2
+03829E30 mov      x21, x1
+03829E34 mov      x19, x0
+03829E38 tbnz     w8, #0, #0x3829e68
+03829E3C adrp     x0, #0x54c9000
+03829E40 ldr      x0, [x0, #0xc98] ; Method$UnityEngine.Component.GetComponent<UiButton>()
+03829E44 bl       #0x1043220
+03829E48 adrp     x0, #0x5521000
+03829E4C ldr      x0, [x0, #0x428] ; Method$System.Collections.Generic.List<AnimationLavaPictureMapping>.get_Count()
+03829E50 bl       #0x1043220
+03829E54 adrp     x0, #0x5547000
+03829E58 ldr      x0, [x0, #0x40] ; Method$System.Collections.Generic.List<AnimationLavaPictureMapping>.get_Item()
+03829E5C bl       #0x1043220
+03829E60 mov      w8, #1
+03829E64 strb     w8, [x23, #0x182]
+03829E68 ldp      q0, q1, [x21]
+03829E6C add      x0, x19, #0xe0
+03829E70 mov      x1, xzr
+03829E74 stp      q0, q1, [x19, #0xe0]
+03829E78 bl       #0x10431cc
+03829E7C mov      x23, x19
+03829E80 str      x20, [x23, #0xd8]!
+03829E84 mov      x0, x23
+03829E88 mov      x1, x20
+03829E8C bl       #0x10431cc
+03829E90 add      x0, x23, #0x30
+03829E94 mov      x1, x22
+03829E98 str      x22, [x23, #0x30]
+03829E9C bl       #0x10431cc
+03829EA0 ldr      x1, [x21, #0x10]
+03829EA4 add      x0, x23, #0x28
+03829EA8 str      x1, [x23, #0x28]
+03829EAC bl       #0x10431cc
+03829EB0 ldr      x8, [x23, #0x28]
+03829EB4 cbz      x8, #0x382a08c
+03829EB8 ldr      w9, [x8, #0x10]
+03829EBC ldr      w8, [x8, #0x18]
+03829EC0 cmp      w9, w8
+03829EC4 cset     w8, lt
+03829EC8 strb     w8, [x19, #0xb0]
+03829ECC b.ge     #0x3829ee0
+03829ED0 ldr      x0, [x19, #0x128]
+03829ED4 cbz      x0, #0x382a08c
+03829ED8 mov      x1, xzr
+03829EDC bl       #0x27c9534 ; Royal.Player.Context.Units.LavaQuestManager$$ResetCachedLeaderLists
+03829EE0 ldr      x0, [x19, #0x98]
+03829EE4 cbz      x0, #0x382a08c
+03829EE8 mov      w1, #1
+03829EEC mov      x2, xzr
+03829EF0 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+03829EF4 mov      x0, x19
+03829EF8 bl       #0x382bde8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$SetCoinText
+03829EFC ldrb     w8, [x19, #0x14d]
+03829F00 cbz      w8, #0x3829f18
+03829F04 ldrb     w8, [x19, #0x14e]
+03829F08 cbz      w8, #0x3829f2c
+03829F0C mov      x0, x19
+03829F10 bl       #0x382bf84 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$SetBackgroundIfFailScrollLevel
+03829F14 b        #0x3829f2c
+03829F18 mov      x0, x19
+03829F1C bl       #0x382bfcc ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$LoadBundle
+03829F20 mov      w1, #1
+03829F24 mov      x0, x19
+03829F28 bl       #0x382c0c0 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ArrangeScene
+03829F2C mov      x0, x19
+03829F30 mov      w1, wzr
+03829F34 bl       #0x382c3b8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ShowLevelBackgroundFade
+03829F38 ldr      x8, [x19, #0x100]
+03829F3C cbz      x8, #0x382a08c
+03829F40 ldr      w1, [x8, #0x10]
+03829F44 mov      x0, x19
+03829F48 bl       #0x382c3e8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$HidePassedStepRocks
+03829F4C mov      x0, x19
+03829F50 bl       #0x382c46c ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$InstantiateProfileCards
+03829F54 ldr      x0, [x19, #0x128]
+03829F58 cbz      x0, #0x382a08c
+03829F5C ldrb     w8, [x0, #0x18]
+03829F60 cbz      w8, #0x3829f70
+03829F64 mov      x1, xzr
+03829F68 bl       #0x27c5e44 ; Royal.Player.Context.Units.LavaQuestManager$$get_DidWin
+03829F6C tbz      w0, #0, #0x3829f78
+03829F70 mov      x0, x19
+03829F74 bl       #0x382cabc ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$PlaceProfileCards
+03829F78 ldr      x0, [x19, #0x128]
+03829F7C cbz      x0, #0x382a08c
+03829F80 mov      x1, xzr
+03829F84 bl       #0x27c5e44 ; Royal.Player.Context.Units.LavaQuestManager$$get_DidWin
+03829F88 fmov     s8, #5.00000000
+03829F8C tbz      w0, #0, #0x3829fec
+03829F90 ldr      x0, [x19, #0xd0]
+03829F94 cbz      x0, #0x382a08c
+03829F98 ldr      w8, [x0, #0x18]
+03829F9C cmp      w8, #2
+03829FA0 b.lt     #0x3829fec
+03829FA4 adrp     x8, #0x4113000
+03829FA8 adrp     x22, #0x5547000
+03829FAC ldr      s9, [x8, #0x344] ; literal 4.30000019 @ 0x4113344; confirm base register before use
+03829FB0 ldr      x22, [x22, #0x40] ; Method$System.Collections.Generic.List<AnimationLavaPictureMapping>.get_Item()
+03829FB4 mov      w21, #1
+03829FB8 ldr      x2, [x22]
+03829FBC add      x8, sp, #8
+03829FC0 mov      w1, w21
+03829FC4 bl       #0x1f85e10 ; System.Collections.Generic.List<AnimationLavaPictureMapping>$$get_Item
+03829FC8 ldrb     w8, [sp, #0x10]
+03829FCC tbnz     w8, #0, #0x3829fec
+03829FD0 ldr      x0, [x19, #0xd0]
+03829FD4 cbz      x0, #0x382a08c
+03829FD8 ldr      w8, [x0, #0x18]
+03829FDC add      w21, w21, #1
+03829FE0 cmp      w21, w8
+03829FE4 b.lt     #0x3829fb8
+03829FE8 mov      v8.16b, v9.16b
+03829FEC ldr      x8, [x19, #0x30]
+03829FF0 cbz      x8, #0x382a08c
+03829FF4 ldr      w9, [x8, #0x18]
+03829FF8 cbz      w9, #0x382a090
+03829FFC ldr      x0, [x8, #0x20]
+0382A000 cbz      x0, #0x382a08c
+0382A004 adrp     x8, #0x54c9000
+0382A008 ldr      x8, [x8, #0xc98] ; Method$UnityEngine.Component.GetComponent<UiButton>()
+0382A00C ldr      x1, [x8]
+0382A010 bl       #0x2140e2c ; UnityEngine.Component$$GetComponent<object>
+0382A014 cbz      x0, #0x382a08c
+0382A018 mov      w8, #1
+0382A01C strh     w8, [x0, #0x2a]
+0382A020 cbz      x20, #0x382a08c
+0382A024 ldr      w8, [x20, #0x118]
+0382A028 cmp      w8, #3
+0382A02C b.ne     #0x382a05c
+0382A030 ldrb     w8, [x19, #0xb0]
+0382A034 adrp     x9, #0x40cc000
+0382A038 ldr      s0, [x9, #0xc5c] ; literal 0.800000012 @ 0x40CCC5C; confirm base register before use
+0382A03C mov      x0, x19
+0382A040 cmp      w8, #0
+0382A044 fcsel    s0, s0, s8, eq
+0382A048 bl       #0x382d5a4 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$InvokeOnCompleteWithDelay
+0382A04C mov      x1, x0
+0382A050 mov      x0, x19
+0382A054 mov      x2, xzr
+0382A058 bl       #0x3f525c4 ; UnityEngine.MonoBehaviour$$StartCoroutine
+0382A05C mov      x0, x19
+0382A060 bl       #0x382d628 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$PlayDistortionsAndCaustics
+0382A064 mov      x0, x19
+0382A068 bl       #0x382d744 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$EnableBackgroundAnimations
+0382A06C mov      x0, x19
+0382A070 bl       #0x382d7a8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$InstantiateLavaFountainParticles
+0382A074 ldp      x19, x30, [sp, #0x50]
+0382A078 ldp      x21, x20, [sp, #0x40]
+0382A07C ldp      x23, x22, [sp, #0x30]
+0382A080 ldp      d9, d8, [sp, #0x20]
+0382A084 add      sp, sp, #0x60
+0382A088 ret      
+0382A08C bl       #0x1043348
+0382A090 bl       #0x1043350

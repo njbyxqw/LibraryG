@@ -1,0 +1,26 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$GetBottomBorderPosition
+float Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialogFlowController__GetBottomBorderPosition (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialogFlowController_o* __this, const MethodInfo* method);
+0x35F1520; next named boundary 0x35F157C
+035F1520 stp      x19, x30, [sp, #-0x10]!
+035F1524 mov      x19, x0
+035F1528 ldr      x0, [x0, #0x38]
+035F152C cbz      x0, #0x35f1578
+035F1530 bl       #0x35f14a8 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureHeistController$$get_IsThereHeistView
+035F1534 tbz      w0, #0, #0x35f154c
+035F1538 ldr      x8, [x19, #0x38]
+035F153C cbz      x8, #0x35f1578
+035F1540 ldr      x8, [x8, #0x18]
+035F1544 cbnz     x8, #0x35f155c
+035F1548 b        #0x35f1578
+035F154C ldr      x8, [x19, #0x58]
+035F1550 cbz      x8, #0x35f1578
+035F1554 ldr      x8, [x8, #0xa0]
+035F1558 cbz      x8, #0x35f1578
+035F155C ldr      x0, [x8, #0x18]
+035F1560 cbz      x0, #0x35f1578
+035F1564 mov      x1, xzr
+035F1568 bl       #0x3f54528 ; UnityEngine.Transform$$get_position
+035F156C mov      v0.16b, v1.16b
+035F1570 ldp      x19, x30, [sp], #0x10
+035F1574 ret      
+035F1578 bl       #0x1043348

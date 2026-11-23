@@ -1,0 +1,37 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ArrangeTapToContinueTextPosition
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog__ArrangeTapToContinueTextPosition (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x3829C18; next named boundary 0x3829CA0
+03829C18 stp      d9, d8, [sp, #-0x20]!
+03829C1C stp      x19, x30, [sp, #0x10]
+03829C20 mov      x19, x0
+03829C24 ldr      x0, [x0, #0x130]
+03829C28 cbz      x0, #0x3829c9c
+03829C2C mov      x1, xzr
+03829C30 bl       #0x338b6f4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceTall
+03829C34 tbz      w0, #0, #0x3829c44
+03829C38 ldp      x19, x30, [sp, #0x10]
+03829C3C ldp      d9, d8, [sp], #0x20
+03829C40 ret      
+03829C44 ldr      x0, [x19, #0xa0]
+03829C48 cbz      x0, #0x3829c9c
+03829C4C mov      x1, xzr
+03829C50 bl       #0x37c9c00 ; TMPro.TextMeshPro$$get_transform
+03829C54 cbz      x0, #0x3829c9c
+03829C58 mov      x1, xzr
+03829C5C bl       #0x3f54660 ; UnityEngine.Transform$$get_localPosition
+03829C60 ldr      x0, [x19, #0xa0]
+03829C64 cbz      x0, #0x3829c9c
+03829C68 mov      x1, xzr
+03829C6C mov      v8.16b, v0.16b
+03829C70 mov      v9.16b, v1.16b
+03829C74 bl       #0x37c9c00 ; TMPro.TextMeshPro$$get_transform
+03829C78 cbz      x0, #0x3829c9c
+03829C7C ldp      x19, x30, [sp, #0x10]
+03829C80 fmov     s0, #1.50000000
+03829C84 fadd     s1, s9, s0
+03829C88 fmov     s2, wzr
+03829C8C mov      v0.16b, v8.16b
+03829C90 mov      x1, xzr
+03829C94 ldp      d9, d8, [sp], #0x20
+03829C98 b        #0x3f54700 ; UnityEngine.Transform$$set_localPosition
+03829C9C bl       #0x1043348

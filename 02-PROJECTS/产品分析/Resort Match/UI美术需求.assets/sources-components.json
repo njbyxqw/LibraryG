@@ -1,0 +1,157 @@
+[
+  {
+    "file": "相册整页.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\captions-six-pages.jpg",
+    "crop": [
+      0,
+      0,
+      420,
+      747
+    ]
+  },
+  {
+    "file": "书页背景.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\BG.png",
+    "crop": null
+  },
+  {
+    "file": "故事标题.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\Logo.png",
+    "crop": null
+  },
+  {
+    "file": "信息按钮.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\Info_Button.png",
+    "crop": null
+  },
+  {
+    "file": "关闭按钮.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\Exit_Button.png",
+    "crop": null
+  },
+  {
+    "file": "翻页箭头.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\ArrowButton.png",
+    "crop": null
+  },
+  {
+    "file": "页脚组合.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\captions-six-pages.jpg",
+    "crop": [
+      85,
+      630,
+      330,
+      705
+    ]
+  },
+  {
+    "file": "照片示例.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\Photos\\01_1-1.png",
+    "crop": null
+  },
+  {
+    "file": "短标题局部.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\captions-six-pages.jpg",
+    "crop": [
+      55,
+      330,
+      205,
+      373
+    ]
+  },
+  {
+    "file": "未解锁占位.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\PhotoPlaceHolder.png",
+    "crop": null
+  },
+  {
+    "file": "资源不可用占位.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\ResortStory.Photo.Placeholder.png",
+    "crop": null
+  },
+  {
+    "file": "首页故事图标.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\story_icon.png",
+    "crop": null
+  },
+  {
+    "file": "入口圆框.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\Button_Circle_Frame.png",
+    "crop": null
+  },
+  {
+    "file": "入口底色.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\Button_Circle_purple.png",
+    "crop": null
+  },
+  {
+    "file": "进度框.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\progress_bar_frame.png",
+    "crop": null
+  },
+  {
+    "file": "进度填充.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\progress_full-2.png",
+    "crop": null
+  },
+  {
+    "file": "进度分隔.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\progress_bar_seperator_2.png",
+    "crop": null
+  },
+  {
+    "file": "提示红底.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\Notification_Red_Icon.png",
+    "crop": null
+  },
+  {
+    "file": "提示叹号.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\Notification_Exclamation_Icon.png",
+    "crop": null
+  },
+  {
+    "file": "菜单图标.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\menu_icon.png",
+    "crop": null
+  },
+  {
+    "file": "新图徽章.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\NewPhotoBadge.png",
+    "crop": null
+  },
+  {
+    "file": "照片扫光.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\PhotoShine.png",
+    "crop": null
+  },
+  {
+    "file": "文案底条.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\description_strip.png.png",
+    "crop": null
+  },
+  {
+    "file": "整本完成图标.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\StoryUI\\completed_resortstory_icon.png",
+    "crop": null
+  },
+  {
+    "file": "教学通过关卡.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\info_image1.png",
+    "crop": null
+  },
+  {
+    "file": "教学收齐页面.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\info_image2.png",
+    "crop": null
+  },
+  {
+    "file": "教学整本奖励.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\info_image3.png",
+    "crop": null
+  },
+  {
+    "file": "引导箭头.webp",
+    "source": "06-PRODUCT-ASSETS\\Resort Match\\1.18.0\\Album\\SceneUI\\arrow.png",
+    "crop": null
+  }
+]

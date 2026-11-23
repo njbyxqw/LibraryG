@@ -1,0 +1,32 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ArrangeColliders
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog__ArrangeColliders (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x3828DDC; next named boundary 0x3828E50
+03828DDC stp      d9, d8, [sp, #-0x20]!
+03828DE0 stp      x19, x30, [sp, #0x10]
+03828DE4 mov      x19, x0
+03828DE8 ldr      x0, [x0, #0x130]
+03828DEC cbz      x0, #0x3828e4c
+03828DF0 mov      x1, xzr
+03828DF4 bl       #0x338ad68 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitWidthOrLandscapeFlagsGap
+03828DF8 ldr      x0, [x19, #0x130]
+03828DFC cbz      x0, #0x3828e4c
+03828E00 ldr      s9, [x0, #0x20]
+03828E04 mov      x1, xzr
+03828E08 mov      v8.16b, v0.16b
+03828E0C bl       #0x338b7a8 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetUiScaleFactor
+03828E10 ldr      x0, [x19, #0xa8]
+03828E14 cbz      x0, #0x3828e4c
+03828E18 fdiv     s9, s9, s0
+03828E1C mov      v0.16b, v8.16b
+03828E20 mov      v1.16b, v9.16b
+03828E24 mov      x1, xzr
+03828E28 bl       #0x2dbe544 ; UnityEngine.BoxCollider2D$$set_size
+03828E2C ldr      x0, [x19, #0x40]
+03828E30 cbz      x0, #0x3828e4c
+03828E34 ldp      x19, x30, [sp, #0x10]
+03828E38 mov      v0.16b, v8.16b
+03828E3C mov      v1.16b, v9.16b
+03828E40 mov      x1, xzr
+03828E44 ldp      d9, d8, [sp], #0x20
+03828E48 b        #0x2dbe544 ; UnityEngine.BoxCollider2D$$set_size
+03828E4C bl       #0x1043348

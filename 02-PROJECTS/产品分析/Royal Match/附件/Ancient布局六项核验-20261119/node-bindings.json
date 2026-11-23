@@ -1,0 +1,1348 @@
+[
+  {
+    "bundle": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\20261029-device1\\bundles\\ancient_adventure_dialog_v3",
+    "sha256": "61e12d1f7eff7f5676cefe11c99b11e0c6085484b39d19961ee24cc4e824ca3a",
+    "bindings": [
+      {
+        "owner": "AncientAdventureDialog",
+        "script": "AncientAdventureDialog",
+        "fields": {
+          "root": {
+            "id": 157658731137424007,
+            "type": "Transform",
+            "path": "AncientAdventureDialog/Root",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": []
+          },
+          "dialogCollider": {
+            "id": -404744667202175815,
+            "type": "BoxCollider2D",
+            "path": "AncientAdventureDialog",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": [
+              "AncientAdventureDialog",
+              "AncientAdventureDialogFlowController",
+              "SortingGroup"
+            ]
+          },
+          "titleText": {
+            "id": -1921784432157472751,
+            "type": "MonoBehaviour",
+            "path": "AncientAdventureDialog/Root/TopUI/Title",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              7.889999866485596
+            ],
+            "components": [
+              "TextMeshPro"
+            ]
+          },
+          "titleBackgroundImageTransform": {
+            "id": 403259295383626706,
+            "type": "Transform",
+            "path": "AncientAdventureDialog/Root/TopUI/TitleBG/Image",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              7.773996829986572
+            ],
+            "components": [
+              "SpriteRenderer"
+            ]
+          },
+          "stageProgressParent": {
+            "id": 3716029754920266845,
+            "type": "Transform",
+            "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StageProgress",
+            "position": {
+              "x": -3.11899995803833,
+              "y": 2.4449996948242188,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              -3.11899995803833,
+              5.4969162940979
+            ],
+            "components": []
+          },
+          "stepProgressParent": {
+            "id": 2191344579112228934,
+            "type": "Transform",
+            "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StepProgress",
+            "position": {
+              "x": 3.11899995803833,
+              "y": 2.4449996948242188,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              3.11899995803833,
+              5.4969162940979
+            ],
+            "components": []
+          }
+        }
+      },
+      {
+        "owner": "AncientAdventureDialog",
+        "script": "AncientAdventureDialogFlowController",
+        "fields": {
+          "sceneViewParent": {
+            "id": 4135063279784025195,
+            "type": "GameObject",
+            "path": "AncientAdventureDialog/Root/SceneParent",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": []
+          },
+          "heistViewParent": {
+            "id": 5970858984948941320,
+            "type": "GameObject",
+            "path": "AncientAdventureDialog/Root/HeistParent",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": [
+              "SortingGroup",
+              "AncientAdventureHeistController"
+            ]
+          },
+          "closeButtonParent": {
+            "id": -2890970367947924512,
+            "type": "GameObject",
+            "path": "AncientAdventureDialog/Root/TopUI/TopButtons/Close",
+            "position": {
+              "x": 3.489000082015991,
+              "y": 0.4399999976158142,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              3.489000082015991,
+              8.32999986410141
+            ],
+            "components": [
+              "UiButton"
+            ]
+          },
+          "infoButtonParent": {
+            "id": 1167717349271109892,
+            "type": "GameObject",
+            "path": "AncientAdventureDialog/Root/TopUI/TopButtons/Info",
+            "position": {
+              "x": -3.5799999237060547,
+              "y": 0.6399999856948853,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              -3.5799999237060547,
+              8.529999852180481
+            ],
+            "components": [
+              "SpriteRenderer",
+              "UiButton"
+            ]
+          },
+          "sceneController": {
+            "id": 1296092553031299682,
+            "type": "MonoBehaviour",
+            "path": "AncientAdventureDialog/Root/SceneParent/SceneView",
+            "position": {
+              "x": 0.0,
+              "y": -0.7099999785423279,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.9250075817108154,
+              "y": 0.9250075817108154,
+              "z": 0.9250075817108154
+            },
+            "world2d": [
+              0.9250075817108154,
+              0.0,
+              0.0,
+              0.9250075817108154,
+              0.0,
+              -0.7099999785423279
+            ],
+            "components": [
+              "AncientAdventureSceneController"
+            ]
+          },
+          "stageTooltipButton": {
+            "id": -4650716150859634064,
+            "type": "MonoBehaviour",
+            "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StageProgress/StageTooltipButton",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              -3.11899995803833,
+              5.4969162940979
+            ],
+            "components": [
+              "UiButton"
+            ]
+          },
+          "levelTooltipButton": {
+            "id": 4148850624282705431,
+            "type": "MonoBehaviour",
+            "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView/StepProgress/TooltipButton",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              3.11899995803833,
+              5.4969162940979
+            ],
+            "components": [
+              "UiButton"
+            ]
+          }
+        }
+      },
+      {
+        "owner": "AncientAdventureDialog/Root/SceneParent/SceneView",
+        "script": "AncientAdventureSceneController",
+        "fields": {
+          "playerView": {
+            "id": 5070334363228159273,
+            "type": "MonoBehaviour",
+            "path": "AncientAdventureDialog/Root/SceneParent/SceneView/PlayerToken",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              0.9250075817108154,
+              0.0,
+              0.0,
+              0.9250075817108154,
+              0.0,
+              -0.7099999785423279
+            ],
+            "components": [
+              "AncientAdventurePlayerView"
+            ]
+          },
+          "tapToContinueCollider": {
+            "id": -335323965963953811,
+            "type": "BoxCollider2D",
+            "path": "AncientAdventureDialog/Root/SceneParent/SceneView/TapToContinue",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              0.9250075817108154,
+              0.0,
+              0.0,
+              0.9250075817108154,
+              0.0,
+              -0.7099999785423279
+            ],
+            "components": [
+              "UiButton"
+            ]
+          },
+          "progressInfoViewParent": {
+            "id": 1235290828661041640,
+            "type": "GameObject",
+            "path": "AncientAdventureDialog/Root/TopUI/ProgressInfoUI/ProgressInfoView",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              3.0519165992736816
+            ],
+            "components": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "bundle": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\20261029-device1\\bundles\\ancient_adventure_stage_1_v2",
+    "sha256": "9d939abd8c77efa77b55d79769583492337d0ee80afaf95117cf60147447db90",
+    "bindings": [
+      {
+        "owner": "AncientAdventureSceneView1/Root/Steps/Step0",
+        "script": "AncientAdventureSceneStep",
+        "fields": {
+          "rewardViewParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "stepText": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "animator": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "rewardsHolder": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "underwaterPlatform": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "frameFallParticleParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "fallRenderTextureRenderer": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "tooltipButton": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "breakAnimationStepNumberParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerPositionReference": {
+            "id": -2008550806416929295,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView1/Root/Steps/Step0/PlayerPositioner",
+            "position": {
+              "x": -2.5899999141693115,
+              "y": 0.3700000047683716,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.2200000286102295,
+              "y": 1.2200000286102295,
+              "z": 1.2200000286102295
+            },
+            "world2d": [
+              1.2200000286102295,
+              0.0,
+              0.0,
+              1.2200000286102295,
+              2.109999895095825,
+              -8.31999957561493
+            ],
+            "components": []
+          },
+          "playerScaleReference": {
+            "id": -2008550806416929295,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView1/Root/Steps/Step0/PlayerPositioner",
+            "position": {
+              "x": -2.5899999141693115,
+              "y": 0.3700000047683716,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.2200000286102295,
+              "y": 1.2200000286102295,
+              "z": 1.2200000286102295
+            },
+            "world2d": [
+              1.2200000286102295,
+              0.0,
+              0.0,
+              1.2200000286102295,
+              2.109999895095825,
+              -8.31999957561493
+            ],
+            "components": []
+          },
+          "stepWaveDistortion": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerFallParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "stepWaveSprite": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "cardRewardShadow": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "otherRewardsShadow": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerViewShadowSpriteRenderer": {
+            "id": -4167366696420867390,
+            "type": "SpriteRenderer",
+            "path": "AncientAdventureSceneView1/Root/Steps/Step0/PlayerPositioner/FrameShadow",
+            "position": {
+              "x": 0.0,
+              "y": -0.5199999809265137,
+              "z": 1.9529504776000977
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.2200000286102295,
+              0.0,
+              0.0,
+              1.2200000286102295,
+              2.109999895095825,
+              -8.954399567222595
+            ],
+            "components": [
+              "SpriteRenderer"
+            ]
+          },
+          "rewardHitParticles": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          }
+        }
+      },
+      {
+        "owner": "AncientAdventureSceneView1",
+        "script": "AncientAdventureSceneView",
+        "fields": {
+          "root": {
+            "id": 3888868853817718786,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView1/Root",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": [
+              "AncientAdventureSceneAnimationView"
+            ]
+          },
+          "bottomBorder": {
+            "id": -4622206500714039092,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView1/Root/BottomBorder",
+            "position": {
+              "x": 0.0,
+              "y": -10.071000099182129,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.071000099182129
+            ],
+            "components": []
+          },
+          "gateView": {
+            "id": 455360472302925843,
+            "type": "GameObject",
+            "path": "AncientAdventureSceneView1/Root/Environment/PlatformParent/GateView",
+            "position": {
+              "x": 0.0,
+              "y": -10.270000457763672,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.069999694824219
+            ],
+            "components": []
+          },
+          "platformParent": {
+            "id": 7263910016102312083,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView1/Root/Environment/PlatformParent",
+            "position": {
+              "x": 0.0,
+              "y": 10.270000457763672,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20000076293945312
+            ],
+            "components": []
+          },
+          "zoomHeistParent": {
+            "id": -6802809176743913947,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView1/Root/Environment/ZoomHeistParent",
+            "position": {
+              "x": 0.0,
+              "y": 13.765999794006348,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.14809207618236542,
+              "y": 0.14809207618236542,
+              "z": 0.14809207618236542
+            },
+            "world2d": [
+              0.14809207618236542,
+              0.0,
+              0.0,
+              0.14809207618236542,
+              0.0,
+              3.696000099182129
+            ],
+            "components": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "bundle": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\20261029-device1\\bundles\\ancient_adventure_stage_2_v2",
+    "sha256": "a8d878a57d263176c5b44ccf32b42dbb2cb514dfa948fd27ed10cdfa5f461344",
+    "bindings": [
+      {
+        "owner": "AncientAdventureSceneView2/Root/Steps/Step0",
+        "script": "AncientAdventureSceneStep",
+        "fields": {
+          "rewardViewParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "stepText": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "animator": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "rewardsHolder": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "underwaterPlatform": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "frameFallParticleParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "fallRenderTextureRenderer": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "tooltipButton": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "breakAnimationStepNumberParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerPositionReference": {
+            "id": 4302340771187070922,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView2/Root/Steps/Step0/PlayerPositioner",
+            "position": {
+              "x": -4.199999809265137,
+              "y": -0.10000000149011612,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.2200000286102295,
+              "y": 1.2200000286102295,
+              "z": 1.2200000286102295
+            },
+            "world2d": [
+              1.2200000286102295,
+              0.0,
+              0.0,
+              1.2200000286102295,
+              2.440000057220459,
+              -8.910000421106815
+            ],
+            "components": []
+          },
+          "playerScaleReference": {
+            "id": 4302340771187070922,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView2/Root/Steps/Step0/PlayerPositioner",
+            "position": {
+              "x": -4.199999809265137,
+              "y": -0.10000000149011612,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.2200000286102295,
+              "y": 1.2200000286102295,
+              "z": 1.2200000286102295
+            },
+            "world2d": [
+              1.2200000286102295,
+              0.0,
+              0.0,
+              1.2200000286102295,
+              2.440000057220459,
+              -8.910000421106815
+            ],
+            "components": []
+          },
+          "stepWaveDistortion": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerFallParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "stepWaveSprite": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "cardRewardShadow": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "otherRewardsShadow": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerViewShadowSpriteRenderer": {
+            "id": -5024418023933811367,
+            "type": "SpriteRenderer",
+            "path": "AncientAdventureSceneView2/Root/Steps/Step0/PlayerPositioner/FrameShadow",
+            "position": {
+              "x": 0.0,
+              "y": -0.5199999809265137,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.2200000286102295,
+              0.0,
+              0.0,
+              1.2200000286102295,
+              2.440000057220459,
+              -9.54440041271448
+            ],
+            "components": [
+              "SpriteRenderer"
+            ]
+          },
+          "rewardHitParticles": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          }
+        }
+      },
+      {
+        "owner": "AncientAdventureSceneView2",
+        "script": "AncientAdventureSceneView",
+        "fields": {
+          "root": {
+            "id": -6332052759702368674,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView2/Root",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": [
+              "AncientAdventureSceneAnimationView"
+            ]
+          },
+          "bottomBorder": {
+            "id": -980339662218941733,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView2/Root/BottomBorder",
+            "position": {
+              "x": 0.0,
+              "y": -10.071000099182129,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.071000099182129
+            ],
+            "components": []
+          },
+          "gateView": {
+            "id": 8810129208533032229,
+            "type": "GameObject",
+            "path": "AncientAdventureSceneView2/Root/Environment/PlatformParent/GateView",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.079999923706055
+            ],
+            "components": []
+          },
+          "platformParent": {
+            "id": -7252281874836394166,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView2/Root/Environment/PlatformParent",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.079999923706055
+            ],
+            "components": []
+          },
+          "zoomHeistParent": {
+            "id": -65782411544508631,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView2/Root/Environment/ZoomHeistParent",
+            "position": {
+              "x": 0.0,
+              "y": 14.062299728393555,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.14809207618236542,
+              "y": 0.14809207618236542,
+              "z": 0.14809207618236542
+            },
+            "world2d": [
+              0.14809207618236542,
+              0.0,
+              0.0,
+              0.14809207618236542,
+              0.0,
+              3.9822998046875
+            ],
+            "components": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "bundle": "D:\\LibraryG\\06-PRODUCT-ASSETS\\RoyalMatch\\LocalReplica\\evidence\\20261029-device1\\bundles\\ancient_adventure_stage_3_v2",
+    "sha256": "9a655a957bc9035dd35b62fd5370b6e2d3a99331383fd22e022815f088de6550",
+    "bindings": [
+      {
+        "owner": "AncientAdventureSceneView3",
+        "script": "AncientAdventureSceneView",
+        "fields": {
+          "root": {
+            "id": 4317866674360774445,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView3/Root",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "components": [
+              "AncientAdventureSceneAnimationView"
+            ]
+          },
+          "bottomBorder": {
+            "id": 6660386435537974477,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView3/Root/BottomBorder",
+            "position": {
+              "x": 0.0,
+              "y": -10.104000091552734,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.104000091552734
+            ],
+            "components": []
+          },
+          "gateView": {
+            "id": 5579146212726749292,
+            "type": "GameObject",
+            "path": "AncientAdventureSceneView3/Root/Environment/PlatformParent/GateView",
+            "position": {
+              "x": 0.0,
+              "y": -10.260000228881836,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -10.109999656677246
+            ],
+            "components": []
+          },
+          "platformParent": {
+            "id": 4979944695750627649,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView3/Root/Environment/PlatformParent",
+            "position": {
+              "x": 0.0,
+              "y": 10.260000228881836,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.15000057220458984
+            ],
+            "components": []
+          },
+          "zoomHeistParent": {
+            "id": -3687163270751817421,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView3/Root/Environment/ZoomHeistParent",
+            "position": {
+              "x": 0.0,
+              "y": 14.011480331420898,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.1480921059846878,
+              "y": 0.1480921059846878,
+              "z": 0.1480921059846878
+            },
+            "world2d": [
+              0.1480921059846878,
+              0.0,
+              0.0,
+              0.1480921059846878,
+              0.0,
+              3.9014806747436523
+            ],
+            "components": []
+          }
+        }
+      },
+      {
+        "owner": "AncientAdventureSceneView3/Root/Steps/Step0",
+        "script": "AncientAdventureSceneStep",
+        "fields": {
+          "rewardViewParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "stepText": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "animator": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "rewardsHolder": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "underwaterPlatform": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "frameFallParticleParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "fallRenderTextureRenderer": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "tooltipButton": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "breakAnimationStepNumberParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerPositionReference": {
+            "id": 432988745486835664,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView3/Root/Steps/Step0/PlayerPositioner",
+            "position": {
+              "x": -3.3600006103515625,
+              "y": -0.01999950408935547,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 1.2000000476837158,
+              "z": 1.2000000476837158
+            },
+            "world2d": [
+              1.2000000476837158,
+              0.0,
+              0.0,
+              1.2000000476837158,
+              3.6499996185302734,
+              -8.999999046325684
+            ],
+            "components": []
+          },
+          "playerScaleReference": {
+            "id": 432988745486835664,
+            "type": "Transform",
+            "path": "AncientAdventureSceneView3/Root/Steps/Step0/PlayerPositioner",
+            "position": {
+              "x": -3.3600006103515625,
+              "y": -0.01999950408935547,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 1.2000000476837158,
+              "z": 1.2000000476837158
+            },
+            "world2d": [
+              1.2000000476837158,
+              0.0,
+              0.0,
+              1.2000000476837158,
+              3.6499996185302734,
+              -8.999999046325684
+            ],
+            "components": []
+          },
+          "stepWaveDistortion": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerFallParent": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "stepWaveSprite": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "cardRewardShadow": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "otherRewardsShadow": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          },
+          "playerViewShadowSpriteRenderer": {
+            "id": -6526317870910766999,
+            "type": "SpriteRenderer",
+            "path": "AncientAdventureSceneView3/Root/Steps/Step0/PlayerPositioner/FrameShadow",
+            "position": {
+              "x": 0.0,
+              "y": -0.5199999809265137,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "world2d": [
+              1.2000000476837158,
+              0.0,
+              0.0,
+              1.2000000476837158,
+              3.6499996185302734,
+              -9.623999048233031
+            ],
+            "components": [
+              "SpriteRenderer"
+            ]
+          },
+          "rewardHitParticles": {
+            "unresolved": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+]

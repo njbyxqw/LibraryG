@@ -1,0 +1,15 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+float Royal_Infrastructure_Contexts_Units_CameraManager__GetPortraitAspect (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x33894B4; next named boundary 0x33894E4
+033894B4 str      x30, [sp, #-0x10]!
+033894B8 ldr      x0, [x0, #0x18]
+033894BC cbz      x0, #0x33894e0
+033894C0 mov      x1, xzr
+033894C4 bl       #0x3f48be0 ; UnityEngine.Camera$$get_aspect
+033894C8 fmov     s1, #1.00000000
+033894CC fdiv     s2, s1, s0
+033894D0 fcmp     s0, s1
+033894D4 fcsel    s0, s2, s0, gt
+033894D8 ldr      x30, [sp], #0x10
+033894DC ret      
+033894E0 bl       #0x1043348

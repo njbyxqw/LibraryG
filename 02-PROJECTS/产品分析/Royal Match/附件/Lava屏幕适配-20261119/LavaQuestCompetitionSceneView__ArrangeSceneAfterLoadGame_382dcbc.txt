@@ -1,0 +1,17 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ArrangeSceneAfterLoadGame
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView__ArrangeSceneAfterLoadGame (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView_o* __this, int32_t totalLevelBoardCount, const MethodInfo* method);
+0x382DCBC; next named boundary 0x382DCF4
+0382DCBC stp      x19, x30, [sp, #-0x10]!
+0382DCC0 str      w1, [x0, #0x150]
+0382DCC4 mov      w1, wzr
+0382DCC8 mov      x19, x0
+0382DCCC bl       #0x382c0c0 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ArrangeScene
+0382DCD0 ldrb     w8, [x19, #0x14e]
+0382DCD4 cbz      w8, #0x382dce4
+0382DCD8 mov      x0, x19
+0382DCDC str      wzr, [x19, #0x154]
+0382DCE0 bl       #0x382d9b8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$SetBackgroundPositionForScrollLevel
+0382DCE4 mov      w8, #1
+0382DCE8 strb     w8, [x19, #0x14d]
+0382DCEC ldp      x19, x30, [sp], #0x10
+0382DCF0 ret      

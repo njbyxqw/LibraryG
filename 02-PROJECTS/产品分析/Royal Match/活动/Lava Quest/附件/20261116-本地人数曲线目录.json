@@ -1,0 +1,76 @@
+{
+  "observed_at": "2026-11-16T16:02:20.980871+08:00",
+  "samples": [
+    {
+      "sample": "2026-10-26 historical saved round",
+      "event_id": 1124,
+      "scenario": 2,
+      "scenario_id": "l2692_8_2_v1",
+      "other_winners": 8,
+      "other_player_curve": [
+        99,
+        68,
+        52,
+        40,
+        21,
+        18,
+        16,
+        8
+      ],
+      "display_curve_including_self_on_success": [
+        100,
+        69,
+        53,
+        41,
+        22,
+        19,
+        17,
+        9
+      ],
+      "source": "06-PRODUCT-ASSETS/RoyalMatch/38911/05-Runtime/20261026-lavaquest/state-selected.json",
+      "source_sha256": "e5816b65488eb302c620628e155563803ba1ed81c01e818f4700a81a202b90c0"
+    },
+    {
+      "sample": "2026-11-16 product-analysis-1",
+      "event_id": 1133,
+      "scenario": 2,
+      "scenario_id": "l553_3_2_v1",
+      "other_winners": 3,
+      "other_player_curve": [
+        99,
+        89,
+        63,
+        28,
+        21,
+        17,
+        14,
+        3
+      ],
+      "display_curve_including_self_on_success": [
+        100,
+        90,
+        64,
+        29,
+        22,
+        18,
+        15,
+        4
+      ],
+      "source": "06-PRODUCT-ASSETS/RoyalMatch/39933/05-Runtime/20261116-lava-allocation/curve-local-inventory.json",
+      "source_sha256": "b53e9d4d789f33d5d7b98a802bb0360240382a8341215c04d793db854daaa2f7"
+    }
+  ],
+  "conclusion": "Two distinct saved assignment curves confirmed across local historical evidence and current account; no complete selectable curve catalog recovered. Current Lava table holds one QualifiedUsers key, not a per-scenario history table.",
+  "scope": [
+    "Current account App Lava keys, user table names/schema, selected Lava fields and related KeyValue keys.",
+    "Known RoyalMatch local json/csv/tsv/sql/md evidence searched for curve fields and scenario IDs.",
+    "Current installed-code-equivalent LavaQuestConfig fields and native save/load path inspected.",
+    "Plain json/csv/txt APK members <=2MB inspected (10 members); binary resources not exhaustively searched."
+  ],
+  "boundaries": [
+    "Historical display curve is inferred by adding self, not eight historical screenshots.",
+    "Both Scenario values are2, so Scenario alone is not a unique curve selector.",
+    "Two samples do not imply only two backend curves or establish generation/selection policy.",
+    "New entry overwrites current assignment fields; keep snapshots before joining another round."
+  ]
+}

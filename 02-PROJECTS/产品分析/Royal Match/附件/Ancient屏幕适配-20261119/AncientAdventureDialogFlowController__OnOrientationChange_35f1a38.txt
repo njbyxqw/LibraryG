@@ -1,0 +1,23 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$OnOrientationChange
+void Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialogFlowController__OnOrientationChange (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialogFlowController_o* __this, bool isLandscape, float rootScale, const MethodInfo* method);
+0x35F1A38; next named boundary 0x35F1A88
+035F1A38 str      d8, [sp, #-0x20]!
+035F1A3C str      x20, [sp, #8]
+035F1A40 stp      x19, x30, [sp, #0x10]
+035F1A44 and      w20, w1, #1
+035F1A48 mov      w1, w20
+035F1A4C mov      v8.16b, v0.16b
+035F1A50 mov      x19, x0
+035F1A54 bl       #0x35f15b4 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$ArrangeTopButtons
+035F1A58 mov      x0, x19
+035F1A5C mov      w1, w20
+035F1A60 mov      w2, wzr
+035F1A64 bl       #0x35f11dc ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$TryPrepareWideScreenUI
+035F1A68 ldr      x0, [x19, #0x58]
+035F1A6C cbz      x0, #0x35f1a84
+035F1A70 ldp      x19, x30, [sp, #0x10]
+035F1A74 ldr      x20, [sp, #8]
+035F1A78 mov      v0.16b, v8.16b
+035F1A7C ldr      d8, [sp], #0x20
+035F1A80 b        #0x35f1a88 ; Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureSceneController$$OnOrientationChange
+035F1A84 bl       #0x1043348

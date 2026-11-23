@@ -1,0 +1,16 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitWidthOrLandscapeFlagsGap
+float Royal_Infrastructure_Contexts_Units_CameraManager__GetPortraitWidthOrLandscapeFlagsGap (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, bool isLandscape, const MethodInfo* method);
+0x338AD70; next named boundary 0x338ADA4
+0338AD70 str      x30, [sp, #-0x10]!
+0338AD74 tbz      w1, #0, #0x338ad98
+0338AD78 bl       #0x33894b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetPortraitAspect
+0338AD7C adrp     x8, #0x4170000
+0338AD80 ldr      s1, [x8, #0x77c] ; literal -8.97142887 @ 0x417077C; confirm base register before use
+0338AD84 mov      w8, #0x418c0000
+0338AD88 fmov     s2, w8
+0338AD8C fdiv     s0, s2, s0
+0338AD90 fadd     s0, s0, s1
+0338AD94 b        #0x338ad9c
+0338AD98 ldr      s0, [x0, #0x24]
+0338AD9C ldr      x30, [sp], #0x10
+0338ADA0 ret      

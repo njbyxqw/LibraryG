@@ -1,0 +1,59 @@
+Royal.Scenes.Home.Ui.Dialogs.AncientAdventure.Scripts.AncientAdventureDialogFlowController$$ArrangeTopButtons
+void Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialogFlowController__ArrangeTopButtons (Royal_Scenes_Home_Ui_Dialogs_AncientAdventure_Scripts_AncientAdventureDialogFlowController_o* __this, bool isLandscape, const MethodInfo* method);
+0x35F15B4; next named boundary 0x35F1694
+035F15B4 stp      x21, x20, [sp, #-0x20]!
+035F15B8 stp      x19, x30, [sp, #0x10]
+035F15BC mov      x20, x0
+035F15C0 ldr      x0, [x0, #0x28]
+035F15C4 cbz      x0, #0x35f1690
+035F15C8 mov      w21, w1
+035F15CC mov      x1, xzr
+035F15D0 bl       #0x3f4fcd4 ; UnityEngine.GameObject$$get_transform
+035F15D4 mov      x19, x0
+035F15D8 tbz      w21, #0, #0x35f15f4
+035F15DC cbz      x19, #0x35f1690
+035F15E0 adrp     x8, #0x40cc000
+035F15E4 adrp     x9, #0x40d9000
+035F15E8 ldr      s0, [x8, #0xba8] ; literal 3.45000005 @ 0x40CCBA8; confirm base register before use
+035F15EC ldr      s1, [x9, #0x604] ; literal 0.319999993 @ 0x40D9604; confirm base register before use
+035F15F0 b        #0x35f1634
+035F15F4 ldr      x0, [x20, #0xa8]
+035F15F8 cbz      x0, #0x35f1690
+035F15FC mov      x1, xzr
+035F1600 bl       #0x338b710 ; Royal.Infrastructure.Contexts.Units.CameraManager$$IsDeviceShort
+035F1604 tbz      w0, #0, #0x35f1620
+035F1608 cbz      x19, #0x35f1690
+035F160C adrp     x8, #0x4188000
+035F1610 adrp     x9, #0x40e7000
+035F1614 ldr      s0, [x8, #0x318] ; literal 4.00899982 @ 0x4188318; confirm base register before use
+035F1618 ldr      s1, [x9, #0x848] ; literal 0.254000008 @ 0x40E7848; confirm base register before use
+035F161C b        #0x35f1634
+035F1620 cbz      x19, #0x35f1690
+035F1624 adrp     x8, #0x4188000
+035F1628 adrp     x9, #0x40e7000
+035F162C ldr      s0, [x8, #0x314] ; literal 3.48900008 @ 0x4188314; confirm base register before use
+035F1630 ldr      s1, [x9, #0x3a0] ; literal 0.439999998 @ 0x40E73A0; confirm base register before use
+035F1634 fmov     s2, wzr
+035F1638 mov      x0, x19
+035F163C mov      x1, xzr
+035F1640 bl       #0x3f54700 ; UnityEngine.Transform$$set_localPosition
+035F1644 adrp     x20, #0x58b6000
+035F1648 ldrb     w8, [x20, #0x750]
+035F164C cbnz     w8, #0x35f1664
+035F1650 adrp     x0, #0x554e000
+035F1654 ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+035F1658 bl       #0x1043220
+035F165C mov      w8, #1
+035F1660 strb     w8, [x20, #0x750]
+035F1664 adrp     x8, #0x554e000
+035F1668 ldr      x8, [x8, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+035F166C mov      x0, x19
+035F1670 ldp      x19, x30, [sp, #0x10]
+035F1674 mov      x1, xzr
+035F1678 ldr      x8, [x8]
+035F167C ldr      x8, [x8, #0xb8]
+035F1680 ldp      s0, s1, [x8, #0xc]
+035F1684 ldr      s2, [x8, #0x14]
+035F1688 ldp      x21, x20, [sp], #0x20
+035F168C b        #0x3f54c58 ; UnityEngine.Transform$$set_localScale
+035F1690 bl       #0x1043348

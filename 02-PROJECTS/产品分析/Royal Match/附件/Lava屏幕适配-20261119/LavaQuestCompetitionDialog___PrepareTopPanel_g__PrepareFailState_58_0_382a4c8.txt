@@ -1,0 +1,67 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<PrepareTopPanel>g__PrepareFailState|58_0
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog___PrepareTopPanel_g__PrepareFailState_58_0 (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionDialog_o* __this, const MethodInfo* method);
+0x382A4C8; next named boundary 0x382A5C8
+0382A4C8 str      x22, [sp, #-0x30]!
+0382A4CC stp      x21, x20, [sp, #0x10]
+0382A4D0 stp      x19, x30, [sp, #0x20]
+0382A4D4 mov      x19, x0
+0382A4D8 ldr      x0, [x0, #0x78]
+0382A4DC cbz      x0, #0x382a5c4
+0382A4E0 mov      w1, wzr
+0382A4E4 mov      x2, xzr
+0382A4E8 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+0382A4EC ldr      x0, [x19, #0x80]
+0382A4F0 cbz      x0, #0x382a5c4
+0382A4F4 mov      w1, wzr
+0382A4F8 mov      x2, xzr
+0382A4FC bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+0382A500 ldr      x0, [x19, #0x70]
+0382A504 cbz      x0, #0x382a5c4
+0382A508 mov      w1, #1
+0382A50C mov      x2, xzr
+0382A510 mov      w21, #1
+0382A514 bl       #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+0382A518 adrp     x22, #0x58b6000
+0382A51C ldrb     w8, [x22, #0x754]
+0382A520 ldr      x20, [x19, #0x60]
+0382A524 cbnz     w8, #0x382a538
+0382A528 adrp     x0, #0x554e000
+0382A52C ldr      x0, [x0, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0382A530 bl       #0x1043220
+0382A534 strb     w21, [x22, #0x754]
+0382A538 cbz      x20, #0x382a5c4
+0382A53C adrp     x8, #0x554e000
+0382A540 ldr      x8, [x8, #0xcf0] ; UnityEngine.Vector3_TypeInfo
+0382A544 adrp     x9, #0x418b000
+0382A548 ldr      s2, [x9, #0xcdc] ; literal 5.23000002 @ 0x418BCDC; confirm base register before use
+0382A54C mov      x0, x20
+0382A550 ldr      x8, [x8]
+0382A554 mov      x1, xzr
+0382A558 ldr      x8, [x8, #0xb8]
+0382A55C ldp      s0, s1, [x8, #0x18]
+0382A560 ldr      s3, [x8, #0x20]
+0382A564 fmul     s0, s0, s2
+0382A568 fmul     s1, s1, s2
+0382A56C fmul     s2, s3, s2
+0382A570 bl       #0x3f54700 ; UnityEngine.Transform$$set_localPosition
+0382A574 ldr      x0, [x19, #0x68]
+0382A578 cbz      x0, #0x382a5c4
+0382A57C mov      w1, #1
+0382A580 mov      x2, xzr
+0382A584 bl       #0x3f572ac ; UnityEngine.SpriteRenderer$$set_maskInteraction
+0382A588 ldr      w8, [x19, #0x118]
+0382A58C cmp      w8, #1
+0382A590 b.ne     #0x382a5b4
+0382A594 ldr      x0, [x19, #0x88]
+0382A598 cbz      x0, #0x382a5c4
+0382A59C ldp      x19, x30, [sp, #0x20]
+0382A5A0 ldp      x21, x20, [sp, #0x10]
+0382A5A4 mov      w1, wzr
+0382A5A8 mov      x2, xzr
+0382A5AC ldr      x22, [sp], #0x30
+0382A5B0 b        #0x3f4fd90 ; UnityEngine.GameObject$$SetActive
+0382A5B4 ldp      x19, x30, [sp, #0x20]
+0382A5B8 ldp      x21, x20, [sp, #0x10]
+0382A5BC ldr      x22, [sp], #0x30
+0382A5C0 ret      
+0382A5C4 bl       #0x1043348

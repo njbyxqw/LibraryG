@@ -22,6 +22,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | 需求 | 入口 |
 |---|---|
 | 任务产出与入库 | [[02-PROJECTS/Agent/工作流/规范-任务产出入库与维护|任务产出入库与维护规范]] |
+| LG 本地 Git 冲突 / pull 覆盖保护 / 暂存保留 | [[02-PROJECTS/Agent/工作流/手册-LG本地Git冲突快速处理|LG 本地 Git 冲突快速处理]]（含 2026-11-23 已验证快进方案） |
 | 本机 TS / MT 执行与 LG 桥接 | [[02-PROJECTS/Agent/工作流/规范-本机项目执行与LG知识库桥接|本机项目执行与 LG 知识库桥接规范]] |
 | 多 Agent Task / Context / Worktree / Artifact | [[02-PROJECTS/Agent/工作流/规范-多Agent任务上下文与交接|多 Agent 任务上下文与交接规范]] |
 | MOC / 导航层级 | [[02-PROJECTS/Agent/工作流/规范-MOC命名与导航层级|MOC 命名与导航层级规范]] |
@@ -52,6 +53,7 @@ source: "2026-09-03 用户确认的知识归属与 MOC 路由规则；由任务�
 | 需求 | 入口 | 状态 |
 |---|---|---|
 | LG Git 化评估 | [[02-PROJECTS/Agent/工作流/评估-LibraryG知识库Git化现状与使用规范-2026-09-03|LibraryG Git 化现状与使用规范]] | report |
+| 对话无权限选项与 ADB 恢复 | [[02-PROJECTS/Agent/工作流/复盘-Piggy任务权限误判与ADB恢复-2026-11-20|Piggy 任务权限误判与 ADB 恢复复盘]] | review / 已纠正不适用的界面指引，恢复原因边界保留 |
 | LG 结构与 AI 读取稳定性 | [[02-PROJECTS/Agent/工作流/评估-LibraryG结构与AI读取稳定性-2026-08-10|LibraryG 结构与 AI 读取稳定性评估]] | report |
 | 近期工作复盘与建议（2026-11-10） | [[01-DAILY/summaries/近期工作复盘与建议-2026-11-10|Mac／Windows 工作复盘与设计建议]] | review / 建议未转为排期；Windows源日志可见至11-02 |
 | 多项目协同阶段复盘 | [[02-PROJECTS/Agent/工作流/评估-多项目工作空间协同阶段复盘-2026-08-26|多项目工作空间协同阶段复盘]] | report |

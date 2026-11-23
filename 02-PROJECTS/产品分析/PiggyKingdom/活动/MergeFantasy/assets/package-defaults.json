@@ -1,0 +1,2537 @@
+{
+  "identity": {
+    "player_name": "Merge Fantasy",
+    "internal_type": "mergeani",
+    "activity_enum_value": 45,
+    "config_base": "MergeAniConfig",
+    "ap_key": "mergeani_config",
+    "not_same_as": {
+      "merge2": "Merge Wonders",
+      "mergedig": "Merge Adventure",
+      "mergemini": "Merge Joy",
+      "mergefeed": "Milk Farm / Chick Feast / Piggy Spa"
+    }
+  },
+  "items": [
+    {
+      "id": 10000,
+      "ability": 7,
+      "source": "mergeani_item_7_1"
+    },
+    {
+      "id": 11000,
+      "ability": 8,
+      "source": "mergeani_item_8_1"
+    },
+    {
+      "id": 10101,
+      "ability": 1,
+      "chain": 10102,
+      "nameSuffix": "{0}_item_1_1",
+      "source": "mergeani_item_1_1"
+    },
+    {
+      "id": 10102,
+      "ability": 1,
+      "chain": 10103,
+      "nameSuffix": "{0}_item_1_2",
+      "source": "mergeani_item_1_2"
+    },
+    {
+      "id": 10103,
+      "ability": 1,
+      "chain": 10104,
+      "nameSuffix": "{0}_item_1_3",
+      "source": "mergeani_item_1_3"
+    },
+    {
+      "id": 10104,
+      "ability": 1,
+      "chain": 10105,
+      "nameSuffix": "{0}_item_1_4",
+      "source": "mergeani_item_1_4"
+    },
+    {
+      "id": 10105,
+      "ability": 1,
+      "chain": 10106,
+      "nameSuffix": "{0}_item_1_5",
+      "source": "mergeani_item_1_5"
+    },
+    {
+      "id": 10106,
+      "ability": 1,
+      "chain": 10107,
+      "nameSuffix": "{0}_item_1_6",
+      "source": "mergeani_item_1_6"
+    },
+    {
+      "id": 10107,
+      "ability": 1,
+      "chain": 10108,
+      "itemRewards": [
+        60001,
+        70001
+      ],
+      "nameSuffix": "{0}_item_1_7",
+      "source": "mergeani_item_1_7"
+    },
+    {
+      "id": 10108,
+      "ability": 1,
+      "chain": 10109,
+      "itemRewards": [
+        60001,
+        70001,
+        70001
+      ],
+      "nameSuffix": "{0}_item_1_8",
+      "source": "mergeani_item_1_8"
+    },
+    {
+      "id": 10109,
+      "ability": 1,
+      "chain": 10110,
+      "itemRewards": [
+        60001,
+        60001,
+        70001,
+        70002
+      ],
+      "nameSuffix": "{0}_item_1_9",
+      "source": "mergeani_item_1_9"
+    },
+    {
+      "id": 10110,
+      "ability": 1,
+      "chain": 10111,
+      "itemRewards": [
+        60001,
+        60002,
+        70001,
+        70001,
+        70002
+      ],
+      "nameSuffix": "{0}_item_1_10",
+      "source": "mergeani_item_1_10"
+    },
+    {
+      "id": 10111,
+      "ability": 1,
+      "chain": 10112,
+      "itemRewards": [
+        60001,
+        60001,
+        60001,
+        60002,
+        70001,
+        70001,
+        70002,
+        70002
+      ],
+      "nameSuffix": "{0}_item_1_11",
+      "source": "mergeani_item_1_11"
+    },
+    {
+      "id": 10112,
+      "ability": 1,
+      "itemRewards": [
+        60001,
+        60001,
+        60001,
+        60002,
+        60002,
+        70001,
+        70001,
+        70001,
+        70001,
+        70002,
+        70002
+      ],
+      "nameSuffix": "{0}_item_1_12",
+      "source": "mergeani_item_1_12"
+    },
+    {
+      "id": 20101,
+      "ability": 10,
+      "chain": 20102,
+      "nameSuffix": "{0}_item_2_1",
+      "source": "mergeani_item_2_1"
+    },
+    {
+      "id": 20102,
+      "ability": 10,
+      "chain": 20103,
+      "nameSuffix": "{0}_item_2_2",
+      "source": "mergeani_item_2_2"
+    },
+    {
+      "id": 20103,
+      "ability": 10,
+      "chain": 20104,
+      "nameSuffix": "{0}_item_2_3",
+      "source": "mergeani_item_2_3"
+    },
+    {
+      "id": 20104,
+      "ability": 10,
+      "chain": 20105,
+      "nameSuffix": "{0}_item_2_4",
+      "source": "mergeani_item_2_4"
+    },
+    {
+      "id": 20105,
+      "ability": 10,
+      "chain": 20106,
+      "nameSuffix": "{0}_item_2_5",
+      "source": "mergeani_item_2_5"
+    },
+    {
+      "id": 20106,
+      "ability": 10,
+      "chain": 20107,
+      "nameSuffix": "{0}_item_2_6",
+      "source": "mergeani_item_2_6"
+    },
+    {
+      "id": 20107,
+      "ability": 10,
+      "chain": 20108,
+      "nameSuffix": "{0}_item_2_7",
+      "source": "mergeani_item_2_7"
+    },
+    {
+      "id": 20108,
+      "ability": 10,
+      "chain": 20109,
+      "nameSuffix": "{0}_item_2_8",
+      "source": "mergeani_item_2_8"
+    },
+    {
+      "id": 20109,
+      "ability": 10,
+      "itemRewards": [
+        60001,
+        60002,
+        60003,
+        70001,
+        70003
+      ],
+      "nameSuffix": "{0}_item_2_9",
+      "source": "mergeani_item_2_9"
+    },
+    {
+      "id": 30101,
+      "ability": 9,
+      "chain": 30102,
+      "nameSuffix": "{0}_item_3_1",
+      "source": "mergeani_item_3_1"
+    },
+    {
+      "id": 30102,
+      "ability": 9,
+      "chain": 30103,
+      "nameSuffix": "{0}_item_3_2",
+      "source": "mergeani_item_3_2"
+    },
+    {
+      "id": 30103,
+      "ability": 9,
+      "chain": 30104,
+      "nameSuffix": "{0}_item_3_3",
+      "source": "mergeani_item_3_3"
+    },
+    {
+      "id": 30104,
+      "ability": 9,
+      "chain": 30105,
+      "nameSuffix": "{0}_item_3_4",
+      "source": "mergeani_item_3_4"
+    },
+    {
+      "id": 30105,
+      "ability": 9,
+      "nameSuffix": "{0}_item_3_5",
+      "source": "mergeani_item_3_5"
+    },
+    {
+      "id": 60001,
+      "ability": 3,
+      "chain": 60002,
+      "nameSuffix": "merge_item_coin_1",
+      "source": "merge_item_coin_1"
+    },
+    {
+      "id": 60002,
+      "ability": 3,
+      "chain": 60003,
+      "nameSuffix": "merge_item_coin_2",
+      "source": "merge_item_coin_2"
+    },
+    {
+      "id": 60003,
+      "ability": 3,
+      "chain": 60004,
+      "nameSuffix": "merge_item_coin_3",
+      "source": "merge_item_coin_3"
+    },
+    {
+      "id": 60004,
+      "ability": 3,
+      "chain": 60005,
+      "nameSuffix": "merge_item_coin_4",
+      "source": "merge_item_coin_4"
+    },
+    {
+      "id": 60005,
+      "ability": 3,
+      "nameSuffix": "merge_item_coin_5",
+      "source": "merge_item_coin_5"
+    },
+    {
+      "id": 70001,
+      "ability": 3,
+      "chain": 70002,
+      "nameSuffix": "merge_item_cap_1",
+      "source": "merge_item_cap_1"
+    },
+    {
+      "id": 70002,
+      "ability": 3,
+      "chain": 70003,
+      "nameSuffix": "merge_item_cap_2",
+      "source": "merge_item_cap_2"
+    },
+    {
+      "id": 70003,
+      "ability": 3,
+      "chain": 70004,
+      "nameSuffix": "merge_item_cap_3",
+      "source": "merge_item_cap_3"
+    },
+    {
+      "id": 70004,
+      "ability": 3,
+      "chain": 70005,
+      "nameSuffix": "merge_item_cap_4",
+      "source": "merge_item_cap_4"
+    },
+    {
+      "id": 70005,
+      "ability": 3,
+      "nameSuffix": "merge_item_cap_5",
+      "source": "merge_item_cap_5"
+    },
+    {
+      "id": 110000,
+      "ability": 11,
+      "source": "mergeani_item_Cloud_White"
+    },
+    {
+      "id": 120000,
+      "ability": 12,
+      "source": "mergeani_item_Cloud_Black"
+    },
+    {
+      "id": 130000,
+      "ability": 13,
+      "source": "mergeani_item_key_1"
+    }
+  ],
+  "abilities": [
+    {
+      "id": 7,
+      "displayInChainPanel": false,
+      "draggable": false,
+      "diggable": false,
+      "receiveDigDamage": true,
+      "blockMerge": true
+    },
+    {
+      "id": 8,
+      "displayInChainPanel": false,
+      "draggable": false,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": false
+    },
+    {
+      "id": 1,
+      "displayInChainPanel": true,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 2,
+      "displayInChainPanel": true,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 3,
+      "displayInChainPanel": false,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 4,
+      "displayInChainPanel": false,
+      "draggable": false,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 5,
+      "displayInChainPanel": false,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 6,
+      "displayInChainPanel": false,
+      "draggable": false,
+      "diggable": true,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 9,
+      "displayInChainPanel": true,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 10,
+      "displayInChainPanel": true,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 11,
+      "displayInChainPanel": false,
+      "draggable": false,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 12,
+      "displayInChainPanel": false,
+      "draggable": false,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    },
+    {
+      "id": 13,
+      "displayInChainPanel": false,
+      "draggable": true,
+      "diggable": false,
+      "receiveDigDamage": false,
+      "blockMerge": true
+    }
+  ],
+  "plant_outputs": [
+    {
+      "id": 1,
+      "landIndex": 1,
+      "outputItemId": 10101,
+      "outputCount": 1
+    },
+    {
+      "id": 2,
+      "landIndex": 2,
+      "outputItemId": 10101,
+      "outputCount": 2
+    },
+    {
+      "id": 3,
+      "landIndex": 3,
+      "outputItemId": 10101,
+      "outputCount": 3
+    },
+    {
+      "id": 4,
+      "landIndex": 4,
+      "outputItemId": 10101,
+      "outputCount": 4
+    }
+  ],
+  "feedline_outputs": [
+    {
+      "id": 1,
+      "landIndex": 1,
+      "outputItemId": 30101,
+      "outputCount": 1,
+      "interval": 5
+    },
+    {
+      "id": 2,
+      "landIndex": 2,
+      "outputItemId": 30101,
+      "outputCount": 1,
+      "interval": 4
+    },
+    {
+      "id": 3,
+      "landIndex": 3,
+      "outputItemId": 30101,
+      "outputCount": 1,
+      "interval": 3
+    },
+    {
+      "id": 4,
+      "landIndex": 4,
+      "outputItemId": 30101,
+      "outputCount": 1,
+      "interval": 1
+    }
+  ],
+  "animal_outputs": [
+    {
+      "id": 1,
+      "clickableTimesPerFeed": 4,
+      "outputItemId": 20101,
+      "outputCount": 1
+    }
+  ],
+  "board": {
+    "rows": [
+      {
+        "id": 1,
+        "isRandom": false
+      },
+      {
+        "id": 2,
+        "column1": [
+          10101,
+          11000
+        ],
+        "column2": [
+          10101,
+          11000
+        ],
+        "column3": [
+          10102,
+          11000
+        ],
+        "column4": [
+          10101,
+          11000
+        ],
+        "column5": [
+          10102,
+          11000
+        ],
+        "column6": [
+          10101,
+          11000
+        ],
+        "column7": [
+          10101,
+          11000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 3,
+        "column1": [
+          30102,
+          11000,
+          110000
+        ],
+        "column2": [
+          30102,
+          11000,
+          110000
+        ],
+        "column3": [
+          30101,
+          11000
+        ],
+        "column4": [
+          10102,
+          11000
+        ],
+        "column5": [
+          30101,
+          11000
+        ],
+        "column6": [
+          30102,
+          11000,
+          120000
+        ],
+        "column7": [
+          20103,
+          11000,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 4,
+        "column1": [
+          30103,
+          11000,
+          110000
+        ],
+        "column2": [
+          10101,
+          11000,
+          110000
+        ],
+        "column3": [
+          30102,
+          11000,
+          120000
+        ],
+        "column4": [
+          130000,
+          120000
+        ],
+        "column5": [
+          10102,
+          11000,
+          120000
+        ],
+        "column6": [
+          30103,
+          11000,
+          120000
+        ],
+        "column7": [
+          70005,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 5,
+        "column1": [
+          10102,
+          10000,
+          110000
+        ],
+        "column2": [
+          10102,
+          11000,
+          10000,
+          110000
+        ],
+        "column3": [
+          10102,
+          11000,
+          10000,
+          120000
+        ],
+        "column4": [
+          30102,
+          11000,
+          10000,
+          120000
+        ],
+        "column5": [
+          10102,
+          11000,
+          10000,
+          120000
+        ],
+        "column6": [
+          10105,
+          11000,
+          120000
+        ],
+        "column7": [
+          10105,
+          11000,
+          10000,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 6,
+        "column1": [
+          30104,
+          11000,
+          120000
+        ],
+        "column2": [
+          130000,
+          120000
+        ],
+        "column3": [
+          30104,
+          11000,
+          120000
+        ],
+        "column4": [
+          10104,
+          11000,
+          120000
+        ],
+        "column5": [
+          30102,
+          11000,
+          120000
+        ],
+        "column6": [
+          30102,
+          11000,
+          120000
+        ],
+        "column7": [
+          10105,
+          11000,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 7,
+        "column1": [
+          30103,
+          11000,
+          10000,
+          120000
+        ],
+        "column2": [
+          10103,
+          11000,
+          120000
+        ],
+        "column3": [
+          30103,
+          11000,
+          120000
+        ],
+        "column4": [
+          10105,
+          11000,
+          10000,
+          120000
+        ],
+        "column5": [
+          20103,
+          11000,
+          10000,
+          120000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000,
+          120000
+        ],
+        "column7": [
+          70005,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 8,
+        "column1": [
+          60005
+        ],
+        "column2": [
+          10103,
+          11000
+        ],
+        "column3": [
+          20103,
+          11000,
+          10000
+        ],
+        "column4": [
+          20103,
+          11000,
+          120000
+        ],
+        "column5": [
+          60005,
+          120000
+        ],
+        "column6": [
+          20102,
+          11000,
+          120000
+        ],
+        "column7": [
+          20103,
+          11000,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 9,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          10106,
+          11000,
+          10000
+        ],
+        "column3": [
+          20105,
+          11000,
+          10000
+        ],
+        "column4": [
+          10103,
+          11000,
+          10000,
+          120000
+        ],
+        "column5": [
+          20105,
+          11000,
+          120000
+        ],
+        "column6": [
+          10104,
+          11000,
+          120000
+        ],
+        "column7": [
+          30102,
+          11000,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 10,
+        "column1": [
+          20105,
+          11000
+        ],
+        "column2": [
+          10105,
+          11000
+        ],
+        "column3": [
+          10105,
+          11000
+        ],
+        "column4": [
+          10106,
+          11000
+        ],
+        "column5": [
+          10104,
+          11000
+        ],
+        "column6": [
+          20105,
+          11000
+        ],
+        "column7": [
+          10104,
+          11000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 11,
+        "column1": [
+          30104,
+          11000,
+          120000
+        ],
+        "column2": [
+          10105,
+          11000,
+          120000
+        ],
+        "column3": [
+          20106,
+          11000,
+          120000
+        ],
+        "column4": [
+          130000,
+          120000
+        ],
+        "column5": [
+          20105,
+          11000,
+          120000
+        ],
+        "column6": [
+          30102,
+          11000,
+          120000
+        ],
+        "column7": [
+          10104,
+          11000,
+          120000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 12,
+        "column1": [
+          30103,
+          11000,
+          10000
+        ],
+        "column2": [
+          20103,
+          11000
+        ],
+        "column3": [
+          10102,
+          11000
+        ],
+        "column4": [
+          20106,
+          11000,
+          10000
+        ],
+        "column5": [
+          30101,
+          11000
+        ],
+        "column6": [
+          20104,
+          11000,
+          10000
+        ],
+        "column7": [
+          30102,
+          11000
+        ],
+        "isRandom": false
+      }
+    ],
+    "defined_column_cells": 77,
+    "max_columns": 7,
+    "max_row_id": 12,
+    "row1_has_no_columns": true,
+    "rendered_viewport": "not established by config alone"
+  },
+  "cloud_goals": [
+    {
+      "id": 1,
+      "targetItemId": 10105,
+      "revealWhiteCells": [
+        3,
+        1,
+        3,
+        2,
+        4,
+        1,
+        4,
+        2,
+        5,
+        1,
+        5,
+        2
+      ],
+      "promoteBlackToWhiteCells": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        3,
+        5,
+        4,
+        5,
+        5
+      ],
+      "endOfSegment": false
+    },
+    {
+      "id": 2,
+      "targetItemId": 10106,
+      "revealWhiteCells": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        3,
+        5,
+        4,
+        5,
+        5
+      ],
+      "promoteBlackToWhiteCells": [
+        3,
+        6,
+        3,
+        7,
+        4,
+        6,
+        4,
+        7,
+        5,
+        6,
+        5,
+        7
+      ],
+      "endOfSegment": false
+    },
+    {
+      "id": 3,
+      "targetItemId": 10107,
+      "revealWhiteCells": [
+        3,
+        6,
+        3,
+        7,
+        4,
+        6,
+        4,
+        7,
+        5,
+        6,
+        5,
+        7
+      ],
+      "promoteBlackToWhiteCells": [
+        6,
+        4,
+        6,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        4,
+        7,
+        5,
+        7,
+        6,
+        7,
+        7
+      ],
+      "endOfSegment": false
+    },
+    {
+      "id": 4,
+      "targetItemId": 10108,
+      "revealWhiteCells": [
+        6,
+        4,
+        6,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        4,
+        7,
+        5,
+        7,
+        6,
+        7,
+        7
+      ],
+      "promoteBlackToWhiteCells": [
+        6,
+        1,
+        6,
+        2,
+        6,
+        3,
+        7,
+        1,
+        7,
+        2,
+        7,
+        3
+      ],
+      "endOfSegment": false
+    },
+    {
+      "id": 5,
+      "targetItemId": 10109,
+      "revealWhiteCells": [
+        6,
+        1,
+        6,
+        2,
+        6,
+        3,
+        7,
+        1,
+        7,
+        2,
+        7,
+        3
+      ],
+      "promoteBlackToWhiteCells": [
+        8,
+        4,
+        8,
+        5,
+        8,
+        6,
+        8,
+        7,
+        9,
+        4,
+        9,
+        5,
+        9,
+        6,
+        9,
+        7
+      ],
+      "endOfSegment": true,
+      "moveLinesAfterAllCloudCleared": 2
+    },
+    {
+      "id": 6,
+      "targetItemId": 10110,
+      "revealWhiteCells": [
+        8,
+        4,
+        8,
+        5,
+        8,
+        6,
+        8,
+        7,
+        9,
+        4,
+        9,
+        5,
+        9,
+        6,
+        9,
+        7
+      ],
+      "promoteBlackToWhiteCells": [
+        11,
+        1,
+        11,
+        2,
+        11,
+        3,
+        11,
+        4,
+        11,
+        5,
+        11,
+        6,
+        11,
+        7
+      ],
+      "endOfSegment": true,
+      "moveLinesAfterAllCloudCleared": 2
+    },
+    {
+      "id": 7,
+      "targetItemId": 10111,
+      "revealWhiteCells": [
+        11,
+        1,
+        11,
+        2,
+        11,
+        3,
+        11,
+        4,
+        11,
+        5,
+        11,
+        6,
+        11,
+        7
+      ],
+      "endOfSegment": true,
+      "moveLinesAfterAllCloudCleared": 1
+    }
+  ],
+  "progress_rewards": [
+    {
+      "id": 1,
+      "progress": 40,
+      "reward": [
+        {
+          "rt": 9,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "bomb"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "progress": 100,
+      "reward": [
+        {
+          "rt": 2,
+          "rn": 100,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "progress": 200,
+      "reward": [
+        {
+          "rt": 1,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "lives"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "progress": 300,
+      "reward": [
+        {
+          "rt": 10,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "rocketbefore"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "progress": 450,
+      "reward": [
+        {
+          "rt": 18,
+          "rn": 2,
+          "rnType": 0,
+          "rReplace": 10,
+          "name": "sticker"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "progress": 600,
+      "reward": [
+        {
+          "rt": 6,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "fist"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "progress": 800,
+      "reward": [
+        {
+          "rt": 2,
+          "rn": 500,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "progress": 1000,
+      "reward": [
+        {
+          "rt": 18,
+          "rn": 3,
+          "rnType": 0,
+          "rReplace": 8,
+          "name": "sticker"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "progress": 1300,
+      "reward": [
+        {
+          "rt": 3,
+          "rn": 0.5,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "colorbomb"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "progress": 1600,
+      "reward": [
+        {
+          "rt": 7,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "rocket"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "progress": 2000,
+      "reward": [
+        {
+          "rt": 18,
+          "rn": 4,
+          "rnType": 0,
+          "rReplace": 7,
+          "name": "sticker"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "progress": 2400,
+      "reward": [
+        {
+          "rt": 8,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "dice"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "progress": 2900,
+      "reward": [
+        {
+          "rt": 5,
+          "rn": 2,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "hammer"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "progress": 3400,
+      "reward": [
+        {
+          "rt": 18,
+          "rn": 6,
+          "rnType": 0,
+          "rReplace": 5,
+          "name": "sticker"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "progress": 4000,
+      "reward": [
+        {
+          "rt": 2,
+          "rn": 1000,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        }
+      ]
+    }
+  ],
+  "item_reward_pools": [
+    {
+      "id": 1,
+      "group": 60005,
+      "rewards": [
+        {
+          "rt": 2,
+          "rn": 50,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 5,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "hammer"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 3,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 6,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "fist"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 4,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 7,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "rocket"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 5,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 8,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "dice"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 6,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 3,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "colorbomb"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 7,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 9,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "bomb"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 8,
+      "group": 70005,
+      "rewards": [
+        {
+          "rt": 10,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "rocketbefore"
+        }
+      ],
+      "weight": 100
+    },
+    {
+      "id": 11,
+      "group": 10108,
+      "rewards": [
+        {
+          "rt": 18,
+          "rn": 2,
+          "rnType": 0,
+          "rReplace": 99999,
+          "name": "sticker"
+        },
+        {
+          "rt": 3,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "colorbomb"
+        },
+        {
+          "rt": 9,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "bomb"
+        },
+        {
+          "rt": 10,
+          "rn": 0.25,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "rocketbefore"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "group": 10109,
+      "rewards": [
+        {
+          "rt": 18,
+          "rn": 3,
+          "rnType": 0,
+          "rReplace": 99999,
+          "name": "sticker"
+        },
+        {
+          "rt": 1,
+          "rn": 1,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "lives"
+        },
+        {
+          "rt": 3,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "colorbomb"
+        },
+        {
+          "rt": 9,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "bomb"
+        },
+        {
+          "rt": 10,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "rocketbefore"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "group": 10110,
+      "rewards": [
+        {
+          "rt": 18,
+          "rn": 4,
+          "rnType": 0,
+          "rReplace": 99999,
+          "name": "sticker"
+        },
+        {
+          "rt": 2,
+          "rn": 200,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        },
+        {
+          "rt": 5,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "hammer"
+        },
+        {
+          "rt": 6,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "fist"
+        },
+        {
+          "rt": 7,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "rocket"
+        },
+        {
+          "rt": 8,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "dice"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "group": 10111,
+      "rewards": [
+        {
+          "rt": 18,
+          "rn": 6,
+          "rnType": 0,
+          "rReplace": 99999,
+          "name": "sticker"
+        },
+        {
+          "rt": 2,
+          "rn": 500,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        },
+        {
+          "rt": 3,
+          "rn": 0.5,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "colorbomb"
+        },
+        {
+          "rt": 9,
+          "rn": 0.5,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "bomb"
+        },
+        {
+          "rt": 10,
+          "rn": 0.5,
+          "rnType": 1,
+          "rReplace": 0,
+          "name": "rocketbefore"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "group": 10112,
+      "rewards": [
+        {
+          "rt": 18,
+          "rn": 9,
+          "rnType": 0,
+          "rReplace": 99999,
+          "name": "sticker"
+        },
+        {
+          "rt": 2,
+          "rn": 1000,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        },
+        {
+          "rt": 5,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "hammer"
+        },
+        {
+          "rt": 6,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "fist"
+        },
+        {
+          "rt": 7,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "rocket"
+        },
+        {
+          "rt": 8,
+          "rn": 1,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "dice"
+        }
+      ]
+    }
+  ],
+  "misc": [
+    {
+      "id": 1,
+      "moveLines": 0,
+      "checkLines": 0,
+      "newMainLineItemDisplay": 6,
+      "collectRewardItem": [
+        {
+          "rt": 2,
+          "rn": 5,
+          "rnType": 0,
+          "rReplace": 0,
+          "name": "coins"
+        }
+      ]
+    }
+  ],
+  "variants": {
+    "files": [
+      "mergeaniconfig",
+      "mergeaniconfig_1"
+    ],
+    "different_sections": [
+      "board"
+    ],
+    "changed_rows": 9,
+    "changed_cells": 24,
+    "cell_differences": [
+      {
+        "row_id": 4,
+        "column": "column4",
+        "default": [
+          130000,
+          120000
+        ],
+        "variant_1": [
+          10101,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 4,
+        "column": "column5",
+        "default": [
+          10102,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          10104,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 5,
+        "column": "column6",
+        "default": [
+          10105,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          10102,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 6,
+        "column": "column2",
+        "default": [
+          130000,
+          120000
+        ],
+        "variant_1": [
+          10102,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 6,
+        "column": "column4",
+        "default": [
+          10104,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          10103,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 7,
+        "column": "column2",
+        "default": [
+          10103,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          130000,
+          120000
+        ]
+      },
+      {
+        "row_id": 7,
+        "column": "column6",
+        "default": [
+          10105,
+          11000,
+          10000,
+          120000
+        ],
+        "variant_1": [
+          10102,
+          11000,
+          10000,
+          120000
+        ]
+      },
+      {
+        "row_id": 7,
+        "column": "column4",
+        "default": [
+          10105,
+          11000,
+          10000,
+          120000
+        ],
+        "variant_1": [
+          10101,
+          11000,
+          10000,
+          120000
+        ]
+      },
+      {
+        "row_id": 8,
+        "column": "column2",
+        "default": [
+          10103,
+          11000
+        ],
+        "variant_1": [
+          20103,
+          11000
+        ]
+      },
+      {
+        "row_id": 8,
+        "column": "column4",
+        "default": [
+          20103,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          20105,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 9,
+        "column": "column2",
+        "default": [
+          10106,
+          11000,
+          10000
+        ],
+        "variant_1": [
+          30103,
+          11000,
+          10000
+        ]
+      },
+      {
+        "row_id": 9,
+        "column": "column6",
+        "default": [
+          10104,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          30102,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 9,
+        "column": "column1",
+        "default": [
+          10105,
+          11000,
+          10000
+        ],
+        "variant_1": [
+          10101,
+          11000,
+          10000
+        ]
+      },
+      {
+        "row_id": 9,
+        "column": "column4",
+        "default": [
+          10103,
+          11000,
+          10000,
+          120000
+        ],
+        "variant_1": [
+          30103,
+          11000,
+          10000,
+          120000
+        ]
+      },
+      {
+        "row_id": 10,
+        "column": "column2",
+        "default": [
+          10105,
+          11000
+        ],
+        "variant_1": [
+          30101,
+          11000
+        ]
+      },
+      {
+        "row_id": 10,
+        "column": "column3",
+        "default": [
+          10105,
+          11000
+        ],
+        "variant_1": [
+          10101,
+          11000
+        ]
+      },
+      {
+        "row_id": 10,
+        "column": "column7",
+        "default": [
+          10104,
+          11000
+        ],
+        "variant_1": [
+          10103,
+          11000
+        ]
+      },
+      {
+        "row_id": 10,
+        "column": "column4",
+        "default": [
+          10106,
+          11000
+        ],
+        "variant_1": [
+          130000
+        ]
+      },
+      {
+        "row_id": 10,
+        "column": "column5",
+        "default": [
+          10104,
+          11000
+        ],
+        "variant_1": [
+          10102,
+          11000
+        ]
+      },
+      {
+        "row_id": 11,
+        "column": "column2",
+        "default": [
+          10105,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          10102,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 11,
+        "column": "column3",
+        "default": [
+          20106,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          20105,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 11,
+        "column": "column4",
+        "default": [
+          130000,
+          120000
+        ],
+        "variant_1": [
+          20104,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 11,
+        "column": "column5",
+        "default": [
+          20105,
+          11000,
+          120000
+        ],
+        "variant_1": [
+          20103,
+          11000,
+          120000
+        ]
+      },
+      {
+        "row_id": 12,
+        "column": "column3",
+        "default": [
+          10102,
+          11000
+        ],
+        "variant_1": [
+          130000
+        ]
+      }
+    ],
+    "does_not_prove": "AB assignment, difficulty ordering or active selection"
+  },
+  "merge_pass": {
+    "name": "Merge Progress",
+    "task_description": "Use Tools!",
+    "tasks": [
+      {
+        "id": 27,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 5,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 2,
+            "rn": 500,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 10,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 15,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "freeBoxType": 25,
+        "paidReward": [
+          {
+            "rt": 2,
+            "rn": 200,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 20,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "freeBoxType": 25,
+        "paidReward": [
+          {
+            "rt": 10,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          },
+          {
+            "rt": 9,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 3,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          }
+        ],
+        "paidBoxType": 23
+      },
+      {
+        "id": 31,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 25,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "freeBoxType": 25,
+        "paidReward": [
+          {
+            "rt": 18,
+            "rn": 3,
+            "rnType": 0,
+            "rReplace": 8,
+            "name": "sticker"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 30,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "freeBoxType": 25,
+        "paidReward": [
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 40,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 2,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "freeBoxType": 25,
+        "paidReward": [
+          {
+            "rt": 2,
+            "rn": 300,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 60,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 2,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "freeBoxType": 25,
+        "paidReward": [
+          {
+            "rt": 1,
+            "rn": 1,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "lives"
+          },
+          {
+            "rt": 3,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ],
+        "paidBoxType": 24
+      },
+      {
+        "id": 35,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 80,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 2,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 110,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 3,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 2,
+            "rn": 1000,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 150,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 4,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 18,
+            "rn": 4,
+            "rnType": 0,
+            "rReplace": 5,
+            "name": "sticker"
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 180,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 5,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 220,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 6,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 3,
+            "rn": 2,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "colorbomb"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 260,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 7,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 18,
+            "rn": 6,
+            "rnType": 0,
+            "rReplace": 7,
+            "name": "sticker"
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "activityType": 45,
+        "taskType": 0,
+        "desc": "mergepass_ani_task_desc",
+        "requireItem": 67,
+        "requireNum": 300,
+        "freeReward": [
+          {
+            "rt": 67,
+            "rn": 8,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "mergeani"
+          }
+        ],
+        "paidReward": [
+          {
+            "rt": 2,
+            "rn": 1000,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          },
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          },
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          },
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ],
+        "paidBoxType": 25
+      }
+    ],
+    "shop_link": [
+      {
+        "activityType": 45,
+        "shopId": 93
+      }
+    ],
+    "iap": {
+      "id": 93,
+      "androidId": "piggymatch.game.mergepass_3.99",
+      "iosId": "piggymatch.game.mergepass_3.99",
+      "desc": "Merge Pass",
+      "price": "3.99",
+      "shop": 0,
+      "aType": "mergepass"
+    },
+    "total_free_tools": 45,
+    "threshold_interpretation": "requireNum raw values; cumulative-versus-per-task counter semantics need consumers",
+    "price_boundary": "package price string 3.99; currency, localized store price and current availability not observed"
+  },
+  "boundary": "包内默认，需与当前活动选表区分；progress轨可达性以正文消费者核对为准。"
+}

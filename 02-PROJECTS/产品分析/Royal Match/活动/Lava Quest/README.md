@@ -82,6 +82,8 @@ flowchart TD
 
 ## 阅读顺序
 
+头像布局速查：[[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/参考-主界面头像堆布局与层级|主界面头像堆布局与层级参考]] — 静止叠放、Step0～7完整槽位表、跳跃与跌落切层、遮罩联动及验证边界。
+
 本档案为“包体＋运行后存储＋代码/资源对位”方法的首个范例。分析其他模块时参考 [[02-PROJECTS/产品分析/方法-竞品模块分析与持续维护|通用分析方法]]；长期规划见 [[02-PROJECTS/产品分析/任务-竞品调研体系建设与持续维护|竞品调研长期任务]]，具体机制结论不跨模块直接套用。
 
 1. [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/逻辑与配置-38911|逻辑与配置]]：持续维护主文档：入组关卡、七胜状态机、模拟对手、重试与奖励、通用连胜收益、棋盘概率、续步和服务端边界。
@@ -89,6 +91,11 @@ flowchart TD
 3. [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/证据与验证-2026-10-26|证据与验证]]：本次实测、原始文件、验证范围与后续缺口。
 
 官方规则于 2026-10-26 复核：[Royal Match Help Center — Lava Quest](https://dreamgames.helpshift.com/hc/en/3-royal-match/faq/187-lava-quest/)。
+
+## 时序来源附件
+
+- [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/附件/时序参考-2026-11-09/LavaQuest-时序资料空间快照-2026-11-09|资料空间快照 sequence 1]] · [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/附件/时序参考-2026-11-09/LavaQuest-时序资料空间快照-seq7|资料空间快照 sequence 7]]，2026-11-09 的历史版本。当前结论以 [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/资源与表现-38911#胜利失败与倒计时结束的动作顺序|资源与表现专题]] 为准。
+- [[02-PROJECTS/产品分析/Royal Match/活动/Lava Quest/附件/时序参考-2026-11-09/LavaQuest-原始运动采样-2026-11-09.json|Lava Quest 原始运动采样]]，来自 [[02-PROJECTS/TileScape/游戏逻辑/任务-钻石联盟每日三阶段改造|TS 浪花夺宝项目任务]] V7 分析留存的 Lava 节点与动画数据。
 
 ## 关联
 

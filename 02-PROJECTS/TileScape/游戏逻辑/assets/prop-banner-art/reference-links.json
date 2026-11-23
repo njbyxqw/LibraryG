@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-19",
+  "status": "original_screenshots_not_materialized",
+  "reason": "download helper DNS failure",
+  "references": [
+    {
+      "url": "https://chatgpt.com/api/library/files/libfile_fde3_f-8878488922b48191a34cad8f29a653fc_c84987d778ec81918f4b532d85214c2c/download",
+      "label": "A"
+    },
+    {
+      "url": "https://chatgpt.com/api/library/files/libfile_fde3_f-e44ec194bf048191a3d34cd388ed49ad_c84987d778ec81918f4b532d85214c2c/download",
+      "label": "B"
+    }
+  ],
+  "local_icons": "../prop-offer-design/Item_11.png, Item_12.png, Item_13.png, Item_14.png",
+  "boundary": "Remote screenshot previews require authenticated access. Local icons embedded. CSS layout is schematic, not final art."
+}

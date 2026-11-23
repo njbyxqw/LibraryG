@@ -1,0 +1,273 @@
+{
+  "output": "D:\\LibraryG\\02-PROJECTS\\产品分析\\PiggyKingdom\\活动\\PiggyPass\\assets\\popup-A-ended.png",
+  "source_bundle": "ui_season_v6",
+  "prefab": "activityseasonendpanel_m2",
+  "background": "05-Runtime/20261118-framework/32-final-home.png",
+  "font": "fonts/lilitaone-regular / main APK sharedassets0.assets pathID66",
+  "limitations": [
+    "resource composite, not live capture",
+    "closed curtain pose composed from atlas; spine animation and clipping not reproduced",
+    "particle effects omitted",
+    "Unity text curve, gradient and exact rasterization approximated"
+  ],
+  "draws": [
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg",
+      "sprite_id": 5647939423635495267,
+      "name": "PiggyPass_jscg",
+      "geometry": [
+        0.0,
+        264.0,
+        930.0,
+        929.4000244140625,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "node": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg/GameObject/SkeletonGraphic (SeasonEnd)",
+      "approximation": "closed curtains from exact two atlas regions; no spine timeline/mesh rendering",
+      "geometry": [
+        0.0,
+        264.0,
+        930.0,
+        929.4000244140625,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/bg (1)",
+      "sprite_id": -653258799011710142,
+      "name": "PiggyPass_blzhd",
+      "geometry": [
+        0.0,
+        272.44000244140625,
+        933.9999999999999,
+        900.7866379310344,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (2)",
+      "sprite_id": 7474495049993895209,
+      "name": "ui_piggypass_end",
+      "geometry": [
+        -244.5,
+        31.5,
+        489.0,
+        1500.0,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (2)/Btn_Add (1)",
+      "sprite_id": 7474495049993895209,
+      "name": "ui_piggypass_end",
+      "geometry": [
+        244.5,
+        31.499969482421875,
+        489.0,
+        1500.0,
+        -1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (1)",
+      "sprite_id": -942659185304676363,
+      "name": "ui_piggypass_popup",
+      "geometry": [
+        -241.0,
+        647.0004272460938,
+        500.0,
+        290.0,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Theme/PrepareTheme0/BG_A_A_Half (1)/Btn_Add (1)",
+      "sprite_id": -942659185304676363,
+      "name": "ui_piggypass_popup",
+      "geometry": [
+        259.0,
+        647.0003967285156,
+        500.0,
+        290.0,
+        -1.0,
+        1.0,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Tx_Level",
+      "text": "Piggy Pass",
+      "font": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\ended-resources\\LilitaOne-Regular.ttf",
+      "geometry": [
+        0.0,
+        646.0,
+        660.0,
+        150.0,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ],
+      "draw_size": 120
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Tx_Desc",
+      "text": "The Piggy Pass has ended! New Piggy Pass will start soon!",
+      "font": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\ended-resources\\LilitaOne-Regular.ttf",
+      "geometry": [
+        0.0,
+        -357.0,
+        766.9000244140625,
+        198.5,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ],
+      "draw_size": 59
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg",
+      "sprite_id": -5053556436699800043,
+      "name": "ui_home_timebottom_red",
+      "geometry": [
+        21.0,
+        -213.5,
+        280.70001220703125,
+        92.76000213623047,
+        1.2000000476837158,
+        1.2000000476837158,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg/Image",
+      "sprite_id": -2919110316482389922,
+      "name": "icon_time 1",
+      "geometry": [
+        -119.880007429123,
+        -205.34081998828333,
+        78.12999725341797,
+        78.76000213623047,
+        1.2000000476837158,
+        1.2000000476837158,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg/Image/Image",
+      "sprite_id": -3480136694840265334,
+      "name": "icon_time_2",
+      "geometry": [
+        -119.880007429123,
+        -205.34081998828333,
+        56.0,
+        56.0,
+        0.9360000028610216,
+        0.9360000028610216,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/TimeBg/Image/Tx_time",
+      "text": "00:00:00",
+      "font": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\ended-resources\\LilitaOne-Regular.ttf",
+      "geometry": [
+        39.95999526023843,
+        -209.30082008841913,
+        184.5800018310547,
+        80.0,
+        1.2000000476837158,
+        1.2000000476837158,
+        0.0,
+        true
+      ],
+      "draw_size": 60
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Close/BG_A_A_Half",
+      "sprite_id": -550802830002470462,
+      "name": "btn_close",
+      "geometry": [
+        437.5000048875809,
+        695.8999878168106,
+        204.0,
+        208.0,
+        0.800000011920929,
+        0.800000011920929,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play/BG_A_A_Half",
+      "sprite_id": -6325153308138958253,
+      "name": "btn_goldbase",
+      "geometry": [
+        0.699999988079071,
+        -623.998779296875,
+        564.1400146484375,
+        260.0,
+        1.2999999523162842,
+        1.2999999523162842,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play/BG_A_A_Half (1)",
+      "sprite_id": 1654327420004697362,
+      "name": "btn_green",
+      "geometry": [
+        0.699999988079071,
+        -607.5008296966553,
+        504.760009765625,
+        198.0,
+        1.2999999523162842,
+        1.2999999523162842,
+        0.0,
+        true
+      ]
+    },
+    {
+      "path": "/ActivitySeasonEndPanel_m2/Parent/Btn_Play/Tx_Play",
+      "text": "Continue",
+      "font": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\ended-resources\\LilitaOne-Regular.ttf",
+      "geometry": [
+        0.6999997496590709,
+        -611.8000001907349,
+        480.0,
+        130.0,
+        1.0,
+        1.0,
+        0.0,
+        true
+      ],
+      "draw_size": 120
+    }
+  ]
+}

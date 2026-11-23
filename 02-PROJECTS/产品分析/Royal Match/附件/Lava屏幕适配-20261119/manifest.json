@@ -1,0 +1,112 @@
+{
+  "binary_sha256": "ea4eaf596b64ff255cc042d52d32e44078ed773d70be6c3368db9459a12b3a22",
+  "script_json_sha256": "e522e23f32ec092b1d6f7102d75fcf97ac0f53bdd9efa72b57dbada9192bebe7",
+  "audit_script_sha256": "f53aadb3519a03678e0ce8cb9d872f12e17d91c5926a79ea2de3d63ad12ad3b8",
+  "tools": {
+    "capstone": "5.0.9",
+    "pyelftools": "0.33"
+  },
+  "methods": [
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$Init",
+      "address": "0x38289c4",
+      "file": "LavaQuestCompetitionDialog__Init_38289c4.txt",
+      "sha256": "92a82e690e3034d1e3c2d2104b53d8fda92fe8e392d6a2d40fda63b3c8b89460"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ArrangeColliders",
+      "address": "0x3828ddc",
+      "file": "LavaQuestCompetitionDialog__ArrangeColliders_3828ddc.txt",
+      "sha256": "d903fef408d9449d334e319950e03c686906cf784317f2ead7e484aa17caf1bb"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$PrepareHeader",
+      "address": "0x3828e50",
+      "file": "LavaQuestCompetitionDialog__PrepareHeader_3828e50.txt",
+      "sha256": "de1f55cf1da3f7e643d759993e59560b6b5d7848f9785a48b8bb315bbef27635"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$PrepareTopPanel",
+      "address": "0x3829168",
+      "file": "LavaQuestCompetitionDialog__PrepareTopPanel_3829168.txt",
+      "sha256": "dcbd1098d9f3f7cd10ca4003b0826be1dbf06745bda965b2c0108dcbe81d578d"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ShowDialogWithUiAnimation",
+      "address": "0x38295bc",
+      "file": "LavaQuestCompetitionDialog__ShowDialogWithUiAnimation_38295bc.txt",
+      "sha256": "55573434a3c63d3fc6be7bc29270c85ebec01a265c139f3247693c094337d10f"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$ArrangeTapToContinueTextPosition",
+      "address": "0x3829c18",
+      "file": "LavaQuestCompetitionDialog__ArrangeTapToContinueTextPosition_3829c18.txt",
+      "sha256": "a7c0dbaeed9f48f0ed30a2da070e480dbaaed96e27ede9d83c73ef0b5470c4fb"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$PrepareForDialog",
+      "address": "0x3829e0c",
+      "file": "LavaQuestCompetitionSceneView__PrepareForDialog_3829e0c.txt",
+      "sha256": "3a7b85f6ceecf35c3db7097c441107ae7e364b116c9003d9f61da88e3b60dc7b"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<PrepareTopPanel>g__PrepareFailState|58_0",
+      "address": "0x382a4c8",
+      "file": "LavaQuestCompetitionDialog___PrepareTopPanel_g__PrepareFailState_58_0_382a4c8.txt",
+      "sha256": "fde62e88ad39eaf1468e0499b8665f9bc436947d917eb87dccb8c6d9130e240c"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$GetConfig",
+      "address": "0x382bafc",
+      "file": "LavaQuestCompetitionDialog__GetConfig_382bafc.txt",
+      "sha256": "30bde2dcfd4118774de5bad781fa86ea26041657d5afb72bf7880db4a3830bbe"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<Init>b__44_0",
+      "address": "0x382bbf4",
+      "file": "LavaQuestCompetitionDialog___Init_b__44_0_382bbf4.txt",
+      "sha256": "af20f845adaf6acff0203e2978144506c238adc148c4b2e2f36d39cabb356fe9"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<ShowDialogWithUiAnimation>b__75_0",
+      "address": "0x382bc18",
+      "file": "LavaQuestCompetitionDialog___ShowDialogWithUiAnimation_b__75_0_382bc18.txt",
+      "sha256": "f9ba559d416cd6e7089b9f62f4f9ee51f46360223d6b0af7e86856ee70873e03"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionDialog$$<ShowDialogWithUiAnimation>b__75_1",
+      "address": "0x382bce4",
+      "file": "LavaQuestCompetitionDialog___ShowDialogWithUiAnimation_b__75_1_382bce4.txt",
+      "sha256": "6f9bf9c9df37a8b959a39036e86ac8925fb6fe38295d2eb278dcc0e4131e1665"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ArrangeScene",
+      "address": "0x382c0c0",
+      "file": "LavaQuestCompetitionSceneView__ArrangeScene_382c0c0.txt",
+      "sha256": "aebf56ee6a88835026f8a242b92b868e95ad1b573975ff4c513a08bf4ceae8ea"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ArrangeSceneAfterLoadGame",
+      "address": "0x382dcbc",
+      "file": "LavaQuestCompetitionSceneView__ArrangeSceneAfterLoadGame_382dcbc.txt",
+      "sha256": "24b23ffc55a6da66d4ea31000cc3f6cf805f74472e14eeaefa7975f3a17f0503"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$OnOrientationChange",
+      "address": "0x382dcf4",
+      "file": "LavaQuestCompetitionSceneView__OnOrientationChange_382dcf4.txt",
+      "sha256": "6854ff8eae931fd1911002b414666cd56356ebd22970758c3c7f984798456678"
+    },
+    {
+      "name": "Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$AlignSceneBackgroundToBottom",
+      "address": "0x382dd3c",
+      "file": "LavaQuestCompetitionSceneView__AlignSceneBackgroundToBottom_382dd3c.txt",
+      "sha256": "75d95349ca0f2f37610e1fd204f65a8bed714b0ce6b9735240deef90953b1761"
+    }
+  ],
+  "limits": [
+    "Static; no frame capture",
+    "Adjacent named boundary approximation",
+    "Linear literal/metadata annotations require manual control-flow and register validation; not a decompiler"
+  ]
+}

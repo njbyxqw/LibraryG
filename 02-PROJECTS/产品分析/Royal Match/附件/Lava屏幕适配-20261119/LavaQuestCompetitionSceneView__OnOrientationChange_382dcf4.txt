@@ -1,0 +1,21 @@
+Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$OnOrientationChange
+void Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView__OnOrientationChange (Royal_Scenes_Home_Ui_Dialogs_LavaQuest_LavaQuestCompetitionSceneView_o* __this, bool isLandscape, const MethodInfo* method);
+0x382DCF4; next named boundary 0x382DD3C
+0382DCF4 str      x20, [sp, #-0x20]!
+0382DCF8 stp      x19, x30, [sp, #0x10]
+0382DCFC mov      w20, w1
+0382DD00 mov      w1, wzr
+0382DD04 mov      x19, x0
+0382DD08 bl       #0x382c0c0 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$ArrangeScene
+0382DD0C and      w1, w20, #1
+0382DD10 mov      x0, x19
+0382DD14 bl       #0x382dac8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$PrepareLevelFadeBackground
+0382DD18 ldrb     w8, [x19, #0x14e]
+0382DD1C cbz      w8, #0x382dd30
+0382DD20 mov      x0, x19
+0382DD24 ldp      x19, x30, [sp, #0x10]
+0382DD28 ldr      x20, [sp], #0x20
+0382DD2C b        #0x382d9b8 ; Royal.Scenes.Home.Ui.Dialogs.LavaQuest.LavaQuestCompetitionSceneView$$SetBackgroundPositionForScrollLevel
+0382DD30 ldp      x19, x30, [sp, #0x10]
+0382DD34 ldr      x20, [sp], #0x20
+0382DD38 ret      

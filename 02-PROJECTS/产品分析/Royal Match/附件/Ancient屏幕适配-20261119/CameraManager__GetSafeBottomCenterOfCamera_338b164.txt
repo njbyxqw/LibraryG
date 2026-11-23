@@ -1,0 +1,37 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeBottomCenterOfCamera
+UnityEngine_Vector3_o Royal_Infrastructure_Contexts_Units_CameraManager__GetSafeBottomCenterOfCamera (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x338B164; next named boundary 0x338B1EC
+0338B164 str      d12, [sp, #-0x40]!
+0338B168 stp      d11, d10, [sp, #0x10]
+0338B16C stp      d9, d8, [sp, #0x20]
+0338B170 stp      x19, x30, [sp, #0x30]
+0338B174 mov      x19, x0
+0338B178 bl       #0x338b0b4 ; Royal.Infrastructure.Contexts.Units.CameraManager$$GetSafeCenterWorldPoint
+0338B17C add      x0, x19, #0x4c
+0338B180 mov      x1, xzr
+0338B184 mov      v8.16b, v0.16b
+0338B188 mov      v10.16b, v1.16b
+0338B18C mov      v9.16b, v2.16b
+0338B190 bl       #0x3722a5c ; UnityEngine.Rect$$get_height
+0338B194 ldr      x0, [x19, #0x18]
+0338B198 cbz      x0, #0x338b1e8
+0338B19C mov      x1, xzr
+0338B1A0 mov      v11.16b, v0.16b
+0338B1A4 bl       #0x3f48a50 ; UnityEngine.Camera$$get_orthographicSize
+0338B1A8 mov      x0, xzr
+0338B1AC mov      v12.16b, v0.16b
+0338B1B0 bl       #0x3f461a4 ; UnityEngine.Screen$$get_height
+0338B1B4 ldr      s0, [x19, #0x10]
+0338B1B8 fmul     s1, s11, s12
+0338B1BC scvtf    s2, w0
+0338B1C0 fdiv     s1, s1, s2
+0338B1C4 fadd     s0, s0, s1
+0338B1C8 fsub     s1, s10, s0
+0338B1CC mov      v0.16b, v8.16b
+0338B1D0 mov      v2.16b, v9.16b
+0338B1D4 ldp      x19, x30, [sp, #0x30]
+0338B1D8 ldp      d9, d8, [sp, #0x20]
+0338B1DC ldp      d11, d10, [sp, #0x10]
+0338B1E0 ldr      d12, [sp], #0x40
+0338B1E4 ret      
+0338B1E8 bl       #0x1043348

@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tile Family · 广告策略与分配配置</title><style>
+:root{--ink:#203348;--muted:#66788a;--line:#dfe6ed;--accent:#087e85;--soft:#eaf5f4;--canvas:#f3f6f9;--surface:#fff;--navy:#17384f;--radius:14px;scroll-behavior:smooth;scroll-padding-top:0;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--canvas);font:15px/1.85 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,summary{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible,.table-scroll:focus-visible{outline:3px solid #69bfc4;outline-offset:3px}button{border:1px solid var(--line);border-radius:7px;padding:7px 14px;background:white;color:var(--ink)}button:hover{background:var(--soft)}
+.topbar{height:60px;position:sticky;top:0;z-index:20;background:#fffefdf5;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.topbar-inner{max-width:1456px;padding:0 30px;margin:auto;height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700;letter-spacing:.3px}.brand-mark{display:grid;place-items:center;width:32px;height:32px;background:var(--navy);color:white;border-radius:9px;font:700 12px/1 system-ui}.brand span:last-child{color:var(--muted);font-weight:400}.toolbar{display:flex;align-items:center;gap:16px}.version{font:12px/1.5 system-ui;color:var(--muted)}.reading-progress{height:2px;width:0;background:var(--accent);position:absolute;bottom:-1px;left:0;transition:width .15s linear}
+.layout{max-width:1456px;margin:0 auto;padding:28px 30px 60px;display:grid;grid-template-columns:226px minmax(0,1fr);gap:28px;align-items:start}.sidebar{position:sticky;top:87px;max-height:calc(100vh - 110px);overflow:auto;padding:4px 8px 18px 0;scrollbar-width:thin}.nav-title{font-size:11px;font-weight:700;letter-spacing:1.5px;color:var(--muted);padding:0 10px;margin:0 0 12px}.sidebar nav{display:grid;gap:3px}.sidebar nav a{display:flex;gap:10px;align-items:baseline;padding:9px 10px;border-radius:7px;color:#54687b;line-height:1.5;font-size:13px;border-left:2px solid transparent}.sidebar nav a:hover{text-decoration:none;background:#e9eff4;color:var(--ink)}.sidebar nav a[aria-current="location"]{background:var(--soft);border-left-color:var(--accent);color:#075f65;font-weight:700}.nav-num{font:11px/1.5 ui-monospace,Consolas,monospace;opacity:.7}.sidebar-note{margin:22px 10px 0;padding-top:18px;border-top:1px solid var(--line);font-size:12px;line-height:1.8;color:var(--muted)}.sidebar-note b{font-weight:600;color:#475f73}.sidebar .back-top{display:block;font-size:12px;margin:12px 10px 0}.content{min-width:0}.hero,.report-section{background:white;border:1px solid var(--line);border-radius:var(--radius)}.hero{padding:30px 34px 26px;border-top:4px solid var(--accent);margin-bottom:22px}.eyebrow{font:600 11px/1.6 system-ui;letter-spacing:2px;color:var(--accent);margin:0 0 10px}.hero h1{font-size:30px;line-height:1.4;margin:0 0 13px;font-weight:700;letter-spacing:-.5px;color:var(--navy)}.hero h1 span{display:block;font-size:16px;line-height:1.6;font-weight:500;color:var(--muted);letter-spacing:0;margin-bottom:4px}.meta-row{display:flex;gap:7px 14px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-bottom:20px}.meta-row span+span{border-left:1px solid var(--line);padding-left:14px}.intro-copy{font-size:14px;color:#536578}.intro-copy p{margin:10px 0}.intro-copy p:first-child{font-size:16px;line-height:1.85;color:var(--ink)}.intro-copy p:first-child strong{font-weight:600}.jump-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;padding-top:18px;border-top:1px solid #edf1f5}.jump-links a{background:#f3f7f9;border:1px solid #e4ebf0;border-radius:6px;padding:5px 11px;font-size:12px;color:#38596a}.jump-links a:hover{background:var(--soft);text-decoration:none}.mobile-nav{display:none}
+.report-section{margin:0 0 20px;padding:28px 32px 20px;position:relative;min-width:0}.section-heading{display:flex;align-items:center;gap:13px;margin:0 0 22px;padding-bottom:17px;border-bottom:1px solid #e6edf2}.section-number{display:grid;place-items:center;flex:none;width:34px;height:34px;background:var(--soft);color:var(--accent);font:700 13px/1 ui-monospace,Consolas,monospace;border-radius:8px}h2{font-size:22px;line-height:1.5;letter-spacing:-.3px;margin:0;color:var(--navy);scroll-margin-top:88px}h3{font-size:17px;line-height:1.65;color:#204a5a;margin:28px 0 12px;padding-left:11px;border-left:3px solid #8fc9c8;scroll-margin-top:88px}.legacy-anchor{position:absolute;top:0;scroll-margin-top:88px}p{margin:13px 0;overflow-wrap:break-word}strong{color:#153d52;font-weight:650}ul,ol{margin:12px 0;padding-left:24px}li{margin:5px 0;padding-left:2px}.callout{border-left:3px solid #8fc9c8;border-radius:0 6px 6px 0;background:#f1f8f7;padding:13px 16px;font-size:14px}.emphasis{color:#294457}code{font:12.5px/1.7 Consolas,"SFMono-Regular",monospace;background:#eef3f7;color:#39536c;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{background:#f0f5f8;border:1px solid #e1e9ef;border-radius:7px;padding:16px;overflow:auto;line-height:1.7}pre code{padding:0;background:none;white-space:pre;overflow-wrap:normal}hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+.table-block{margin:18px 0 22px;min-width:0}.table-scroll{overflow:auto;border:1px solid #dce6ed;border-radius:8px;scrollbar-width:thin;scrollbar-color:#b6c9d2 #f3f7f9}.table-hint{font-size:11px;color:var(--muted);margin-bottom:6px}.table-hint[hidden]{display:none}.table-hint span{margin-left:4px}table{border-collapse:separate;border-spacing:0;width:100%;table-layout:auto;font-size:13px;line-height:1.75}th{background:#eaf0f5;color:#29495e;text-align:left;font-weight:650;white-space:normal}th,td{padding:12px 14px;vertical-align:top;border-bottom:1px solid #e0e8ef;border-right:1px solid #e6edf2;overflow-wrap:anywhere}th:last-child,td:last-child{border-right:0}tbody tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:#f7fafc}tbody tr:hover{background:#eef7f7}table.cols-2 th:first-child{width:28%}table.cols-3 th:first-child{width:23%}table.cols-4 th:first-child{width:21%}table.cols-5 th:first-child{width:19%}table.cols-5,table.cols-6{min-width:780px}.comparison{table-layout:fixed}.comparison th:first-child{width:40%!important}.comparison th:not(:first-child),.comparison td:not(:first-child){text-align:center}.comparison tbody td:first-child{font-weight:500}.technical-evidence{border:1px solid #dce6ed;background:#f9fbfc;border-radius:8px;margin:18px 0}.technical-evidence summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;font-size:14px;font-weight:600}.technical-evidence summary::-webkit-details-marker{display:none}.technical-evidence summary:after{content:'＋';font-weight:400;color:var(--accent)}.technical-evidence[open] summary:after{content:'−'}.detail-meta{font-size:11px;color:var(--muted);font-weight:400;margin-left:auto}.technical-evidence .table-block{margin:0 12px 12px}.technical-evidence table{font-size:12px}.page-footer{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px;padding:8px 3px 0}.skip-link{position:fixed;top:-100px;left:20px;z-index:30;padding:10px;background:white}.skip-link:focus{top:8px}
+@media(min-width:1600px){.layout{gap:36px;grid-template-columns:236px minmax(0,1fr)}.report-section{padding:32px 40px 24px}}
+@media(max-width:1100px){.layout{padding:20px;gap:20px;grid-template-columns:196px minmax(0,1fr)}.report-section{padding:24px}.hero{padding:26px}.sidebar nav a{font-size:12px;padding:9px 7px}.topbar-inner{padding:0 20px}h2{font-size:20px}th,td{padding:10px 11px}}
+@media(max-width:820px){.layout{display:block;padding:18px 16px 36px}.sidebar{display:none}.topbar{height:54px}.topbar-inner{padding:0 16px}.brand{font-size:13px}.brand span:last-child,.toolbar .version{display:none}.toolbar button{padding:5px 10px;font-size:12px}.hero{padding:22px 22px 20px;margin-bottom:16px}.hero h1{font-size:26px}.hero h1 span{font-size:14px}.report-section{padding:22px;margin-bottom:16px}.mobile-nav{display:block;margin-bottom:16px;background:white;border:1px solid var(--line);border-radius:9px}.mobile-nav summary{cursor:pointer;padding:12px 16px;font-size:13px;font-weight:600}.mobile-nav nav{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:0 12px 12px}.mobile-nav nav a{padding:7px 8px;font-size:12px;display:flex;gap:8px;color:#3e596e}.section-heading{margin-bottom:18px;padding-bottom:14px}.meta-row{gap:6px 10px}.meta-row span+span{padding-left:10px}.table-scroll{max-width:100%}.table-scroll table{min-width:610px}.table-scroll .comparison{min-width:600px}.table-scroll table.cols-5,.table-scroll table.cols-6{min-width:780px}h2{font-size:20px}h3{font-size:16px}.detail-meta{display:none}.page-footer{font-size:11px;flex-wrap:wrap}}
+@media(max-width:480px){body{font-size:14px;line-height:1.85}.layout{padding:12px 10px 28px}.hero{padding:20px 17px}.hero h1{font-size:24px}.report-section{padding:20px 17px 14px}.section-heading{align-items:flex-start;gap:10px}h2{font-size:19px}.section-number{width:29px;height:29px;margin-top:1px}.intro-copy p:first-child{font-size:15px}.meta-row span+span{border-left:0;padding-left:0}.meta-row{column-gap:12px}.jump-links{gap:6px}.jump-links a{font-size:11px;padding:5px 8px}.callout{padding:12px;font-size:13px}.mobile-nav nav{grid-template-columns:1fr}.table-scroll table{font-size:12px}}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.reading-progress{transition:none}}
+@media print{@page{size:A4;margin:16mm 13mm}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}body{background:white;font-size:10pt;line-height:1.65}.topbar,.sidebar,.mobile-nav,.jump-links,.table-hint,.page-footer,.skip-link{display:none!important}.layout{display:block;margin:0;padding:0;max-width:none}.hero{padding:0 0 16px;border:0;border-bottom:2px solid var(--accent);border-radius:0;margin-bottom:20px}.hero h1{font-size:25pt}.meta-row{font-size:9pt}.intro-copy,.intro-copy p:first-child{font-size:10pt}.report-section{border:0;border-radius:0;padding:0;margin-bottom:22px}.section-heading{padding-bottom:8px;margin:18px 0 12px;break-after:avoid}h2{font-size:15pt}h3{font-size:12pt;break-after:avoid}p{orphans:3;widows:3}.section-number{width:26px;height:26px;font-size:10pt}.table-scroll{overflow:visible;border-radius:0}table,.table-scroll table,.table-scroll table.cols-5,.table-scroll table.cols-6{min-width:0!important;font-size:8pt;line-height:1.55}table{table-layout:fixed}th,td{padding:5px 6px}tr{break-inside:avoid}thead{display:table-header-group}code{font-size:8pt}.technical-evidence{border:0;background:none}.technical-evidence>summary{display:none}.technical-evidence>.table-block{display:block!important;margin:0}.technical-evidence{content-visibility:visible}.callout{font-size:9pt;padding:9px}.table-block{margin:12px 0}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report-content">跳转到正文</a>
+<header class="topbar"><div class="topbar-inner"><div class="brand"><div class="brand-mark" aria-hidden="true">TF</div>Tile Family<span>产品分析</span></div><div class="toolbar"><span class="version">ANDROID 2.12.0</span><button id="print-report" type="button">打印 / 保存 PDF</button></div></div><div class="reading-progress" aria-hidden="true"></div></header>
+<div class="layout"><aside class="sidebar" aria-label="报告导航"><p class="nav-title">报告目录 · 11 个主题</p><nav><a href="#chapter-01"><span class="nav-num">01</span><span>策略结论</span></a><a href="#chapter-02"><span class="nav-num">02</span><span>分配层级与 AB</span></a><a href="#chapter-03"><span class="nav-num">03</span><span>用户分组与 U2 召回</span></a><a href="#chapter-04"><span class="nav-num">04</span><span>各组广告配置</span></a><a href="#chapter-05"><span class="nav-num">05</span><span>插屏位置与节奏</span></a><a href="#chapter-06"><span class="nav-num">06</span><span>激励入口与发奖</span></a><a href="#chapter-07"><span class="nav-num">07</span><span>去广告与 Banner</span></a><a href="#chapter-08"><span class="nav-num">08</span><span>请求价格与主备池</span></a><a href="#chapter-09"><span class="nav-num">09</span><span>模型预测与风控</span></a><a href="#chapter-10"><span class="nav-num">10</span><span>对 TS 的设计参考</span></a><a href="#chapter-11"><span class="nav-num">11</span><span>来源与验证边界</span></a></nav><div class="sidebar-note"><b>阅读范围</b><br>代码版本 2.12.0 / 21200<br>配置快照 2026-11-04<br>整理日期 2026-11-16<br><br>静态规则与线上实际生效<br>在正文中分别标注。</div><a class="back-top" href="#top">返回顶部 ↑</a></aside>
+<main class="content" id="report-content"><article class="hero"><p class="eyebrow">MONETIZATION RESEARCH</p><h1><span>Tile Family</span>广告策略与分配配置</h1><div class="meta-row"><span>Android 2.12.0 / 21200</span><span>更新 2026-11-16</span><span>11 个主题 · 17 张表</span></div><div class="intro-copy"><p><strong>TF 的广告变现包含两类决策：产品层决定谁能在什么场景看广告、得到多少奖励；广告请求层决定使用哪个广告池、以什么价格区间请求并选择可播广告。</strong> 两类决策之外还有独立AB配置通道及设备/权益拦截。当前样本能确认规则分层、U2付费召回覆盖、发奖与重置链及动态价格算法，不能还原所有线上实验比例或当前账号的最终配置。</p>
+<p>本次续接既有通关激励视频分析。分析对象为 <strong>Android 2.12.0 / 21200</strong>，配置来自 <strong>2026-11-04 15:20:30 +08:00</strong> 保存的初始配置及缓存。2026-11-16重新核对同构建ARM64消费者，未重新采集线上账号、观看广告或购买商品。下文“基线”均指这批配置代入已核代码，不表示所有线上玩家共同使用。</p></div><div class="jump-links"><a href="#chapter-01">先读策略结论 ↓</a><a href="#chapter-04">对比各组配置 ↓</a><a href="#chapter-11">查看验证边界 ↓</a></div></article>
+<details class="mobile-nav"><summary>报告目录 · 跳转章节</summary><nav><a href="#chapter-01"><span class="nav-num">01</span><span>策略结论</span></a><a href="#chapter-02"><span class="nav-num">02</span><span>分配层级与 AB</span></a><a href="#chapter-03"><span class="nav-num">03</span><span>用户分组与 U2 召回</span></a><a href="#chapter-04"><span class="nav-num">04</span><span>各组广告配置</span></a><a href="#chapter-05"><span class="nav-num">05</span><span>插屏位置与节奏</span></a><a href="#chapter-06"><span class="nav-num">06</span><span>激励入口与发奖</span></a><a href="#chapter-07"><span class="nav-num">07</span><span>去广告与 Banner</span></a><a href="#chapter-08"><span class="nav-num">08</span><span>请求价格与主备池</span></a><a href="#chapter-09"><span class="nav-num">09</span><span>模型预测与风控</span></a><a href="#chapter-10"><span class="nav-num">10</span><span>对 TS 的设计参考</span></a><a href="#chapter-11"><span class="nav-num">11</span><span>来源与验证边界</span></a></nav></details>
+<section class="report-section" aria-labelledby="chapter-01"><span class="legacy-anchor" id="section"></span><div class="section-heading"><span class="section-number">01</span><h2 id="chapter-01">产品策略结论</h2></div>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="1. 产品策略结论表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>策略</th>
+<th>已取得的依据</th>
+<th>产品解读（推断）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>先保护早期体验，再引入强制广告</td>
+<td>插屏同时检查当前主线进度&gt;50、累计会话时长≥90分钟；预请求可以更早</td>
+<td>将首次体验和强制广告变现分开，保证准备广告不等于立即展示</td>
+</tr>
+<tr>
+<td>通过奖励与困难节点引导主动观看</td>
+<td>结算金币、补体力、复活、重玩加格、活动能量等入口</td>
+<td>覆盖胜利后的收益需求、失败后的解困需求及继续玩的需求</td>
+</tr>
+<tr>
+<td>对不同商业化人群配置不同广告待遇</td>
+<td>U1结算日限100、单局复活10；U2初始关闭插屏、复活和重玩加格日限3</td>
+<td>U1更偏向广告变现；U2先保留IAP空间。此为配置意图解释，不是用户价值模型的官方定义</td>
+</tr>
+<tr>
+<td>付费召回场景累计触发后，可以改用部分广告参数</td>
+<td>U2、有购买记录、距最近购买/该场景弹出至少10天、综合资产价值≤10000，进入有效弹出分支累计2次；再次购买清零</td>
+<td>面向长期未续购且资源减少的历史付费用户提供广告兜底；不是新用户连续拒绝两次付费</td>
+</tr>
+<tr>
+<td>主动看广告后暂缓插屏</td>
+<td>RV展示后至下一次插屏至少480秒；插屏彼此至少360秒</td>
+<td>减少玩家刚完成主动观看又遭强制广告的叠加压力</td>
+</tr>
+<tr>
+<td>提高每次可播机会的变现价值</td>
+<td>国家价格表、动态请求区间、主池/备用池比较eCPM</td>
+<td>在请求价格与填充之间调整；不等于已经证明收入提升效果</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>“广告很多/很少”可能同时受组别、付费状态、场景开关、时间、次数、渠道和填充影响，不能从单个玩家体验反推统一频次。</p>
+</section><section class="report-section" aria-labelledby="chapter-02"><span class="legacy-anchor" id="section-1"></span><div class="section-heading"><span class="section-number">02</span><h2 id="chapter-02">先区分不同层级的“分配”</h2></div>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="2. 先区分不同层级的“分配”表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>层级</th>
+<th>决定什么</th>
+<th>本次证据状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户组</td>
+<td>U0_0、U0_2、U1_0、U2_0</td>
+<td>默认策略及优先级已核；不是简单随机均分</td>
+</tr>
+<tr>
+<td>AB配置通道</td>
+<td>随机UserSegment、功能配置、已应用组合</td>
+<td>已核随机分段持久化及功能配置接收/保存能力；当前广告实验和权重未知</td>
+</tr>
+<tr>
+<td>配置选择</td>
+<td>使用哪一组客户端列、哪些字段改读服务端</td>
+<td>客户端映射、广告策略覆盖白名单、配置拦截器先行路径已核；全层级优先级未穷尽</td>
+</tr>
+<tr>
+<td>广告资格</td>
+<td>时机、关卡、时长、次数、免广告、设备等是否放行</td>
+<td>业务拦截器和设备/OS名单消费者已核</td>
+</tr>
+<tr>
+<td>请求与选池</td>
+<td>动态价格区间、主池与备用池的选择</td>
+<td>关键消费者与分支已核</td>
+</tr>
+<tr>
+<td>线上实验与网络流量</td>
+<td>各实验真实占比、国家/渠道实时覆盖、各广告网络竞价与填充占比</td>
+<td>未取得后台分流配置、完整请求响应和账号最终选组，不能推定</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>典型请求路径为：用户组及配置 → placement资格 → 免广告、时间和次数等拦截 → 可播广告池 → 展示 → 展示计数及奖励回调。各层并非可以互相替代；例如某组插屏开关被打开，仍可能被已购免广告资格挡住。</p>
+<h3 id="ab">独立AB通道与配置优先级边界</h3>
+<p><code>AbTestUtils.GetApSegment</code>读取偏好键<code>UserSegment</code>，缺省哨兵为100；命中哨兵时调用<code>System.Random.Next(0,100)</code>得到0～99并保存，后续读取保存值。<code>GetUserProperty</code>将它加入AB请求，<code>AbRequester.GetRequestParams</code>还组合应用、设备与自定义受众字段。设备字段含国家、语言、系统、机型和硬件信息。<strong>这证明存在独立的分流输入，不证明U组随机分配，也不代表100个等量实验组或某实验各占1%。</strong></p>
+<p><code>MFABTestManager</code>初始化会建立请求逻辑；<code>AbRequester.HandleResponse</code>处理功能配置，<code>AbUserData.SaveFeaturesToDisk</code>保存<code>AbTestConfig.json</code>，<code>GetCsvDataByFeatures</code>把功能配置转换为CSV数据，另有<code>GetAbAppliedCombList</code>及确认应用状态。仅收到/保存不能等同当前业务已应用；本批没有取得对应广告实验的响应正文、当前已应用组合与权重。</p>
+<p>本轮还跟进<code>ClientConfig.GameIntValue → 0x4c22eb4 → 0x3834094</code>：先遍历配置拦截器，接口<code>IGameConfigInterceptor.GetConfigValue</code>返回命中时直接取返回值，否则走后续通用取值路径。这只补齐一段优先顺序；具体广告键是否有拦截器、AB与远端CSV及缓存的完整覆盖顺序仍未全证，不能据静态客户端列推定所有玩家最终值。</p>
+</section><section class="report-section" aria-labelledby="chapter-03"><span class="legacy-anchor" id="section-2"></span><div class="section-heading"><span class="section-number">03</span><h2 id="chapter-03">用户分组：真实规则与优先级</h2></div>
+<p>配置为 <code>config_server_user_group.csv</code>。<code>UserGroupDefaultStrategy.CalculationUserGroupNode</code> 按 <strong>ID降序</strong> 遍历，取首个同时满足campaign、LT和IAP条件的规则。</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="3. 用户分组：真实规则与优先级表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th style="text-align: right;">优先级ID</th>
+<th>条件</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">500</td>
+<td>累计<code>iap_ltv ≥ 0.1</code>，campaign不限</td>
+<td>U2_0</td>
+</tr>
+<tr>
+<td style="text-align: right;">450</td>
+<td>campaign标签<code>u0_2</code>，安装起游戏日序号≥8</td>
+<td>U1_0</td>
+</tr>
+<tr>
+<td style="text-align: right;">400</td>
+<td>campaign标签<code>u0_2</code></td>
+<td>U0_2</td>
+</tr>
+<tr>
+<td style="text-align: right;">350</td>
+<td>campaign标签<code>u1_0</code></td>
+<td>U1_0</td>
+</tr>
+<tr>
+<td style="text-align: right;">300</td>
+<td>安装起游戏日序号≥2，campaign不限</td>
+<td>U1_0</td>
+</tr>
+<tr>
+<td style="text-align: right;">200</td>
+<td>campaign标签<code>af_initializing</code></td>
+<td>U0_0</td>
+</tr>
+<tr>
+<td style="text-align: right;">100</td>
+<td>兜底</td>
+<td>U0_0</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>因此，按默认规则：普通未付费玩家首日通常在U0_0，第2个游戏日可到U1_0；IAP买量标签u0_2玩家可先留在U0_2，第8个游戏日起转U1_0；累计IAP达到0.1会优先进入U2_0。实际变化还要等重算入口执行，不能声称到零点瞬间全部切换。0.1是内部收入字段的阈值，不在这里未经货币口径核验换算为人民币或单笔商品价。</p>
+<p class="emphasis"><strong>两处名称/备注容易误导：</strong></p>
+<ul>
+<li>表头把LT写为“生命周期绝对活跃天数”，但本构建调用<code>GetLoginDaysAbsolute</code>，实际返回<code>GetDaysAfterInstall()+1</code>，是以首次登录日期为起点的游戏日序号，不是实际登录了多少天，也不是安装后精确满24/168小时。游戏时钟的固定时区仍未核定。</li>
+<li><code>ModifyCampain</code>先Trim并保留<code>af_initializing</code>，再用<code>(.*)_([uU](\d+)(_\d+)?)$</code>提取末尾标签；未匹配走<code>all</code>。特定标签比较区分大小写，不能把规则简化成任意位置包含u0_2。</li>
+</ul>
+<p>用户组枚举映射：0→U0_0，1→U1_0，2→U2_0，3→U0_2；其他回退Value。<code>user_group_predict_switch=F</code>，且初始化分支确实选择默认规则；T时存在另一套ThinkBox预测策略。预测表和模型文件存在不能证明本批正在按预测模型分组，表内阈值50也不是“50%玩家分流”。</p>
+<p>已核重算触发包括：启动链、客户端归因成功、服务端归因合并、购买成功处理，以及特定商业化弹窗退出。归因回调带初始化状态门禁，并非每份回调都会盲覆盖；未找到据此证明第2/8游戏日零点立即切组的定时链。</p>
+<h3 id="u2">U2条件广告策略与改组不是同一件事</h3>
+<p><code>ShouldUseServerGameForAdStrategy</code>需同时满足：服务端<code>u2_ad=T</code>、当前枚举为U2、通过IAP预测标签资格、<code>popup_Scene_no_payment_show_count≥u2_ad_check_times</code>。本批阈值2；<code>iap_group_predict_switch=F</code>时标签资格直接通过，若T则要求<code>GetIAPGroupTag()==R0</code>。</p>
+<p class="callout">本批计数场景为<code>u2_ad_popup_scene=no_payment_check</code>。实际入口是首页的<code>ShowNoPaymentCheck</code>，选中<code>no_payment_bundle</code>并进入买一送一弹窗路径；相关Lua和配置把资格限定为：</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="3. 用户分组：真实规则与优先级表格" tabindex="0"><table class="cols-2">
+<thead>
+<tr>
+<th>前置条件</th>
+<th>本批实际判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前用户</td>
+<td>U2，且存在历史购买记录</td>
+</tr>
+<tr>
+<td>时间</td>
+<td>当前时间距离“最近购买”和“此action/rule上次弹出”两者中更晚者至少10×24小时</td>
+</tr>
+<tr>
+<td>库存</td>
+<td><code>allAssetWorth≤10000</code>，与时间条件同时满足</td>
+</tr>
+<tr>
+<td>展示安排</td>
+<td>首页机会、场景开关及流程调度仍需通过；Priority500，不保证立刻弹出</td>
+</tr>
+</tbody>
+</table></div></div>
+<p><code>allAssetWorth</code>是加权库存价值，不是金币余额：本批金币×1、体力×100、撤回×300、磁铁×600、抓取/洗牌×450、加格×600，Carnival三个buff各×8000；新道具另按各自资产表取值。消费者也支持限时资产按剩余分钟折算，但本批这些资产价值为0。只看金币低于10000不足以判断资格。Lua旧注释写“7天/2000”，实际参数为<code>10|10000</code>，以消费者和当前配置为准。</p>
+<p>有效商品分支先<code>SavePopupShowInfo</code>保存本次时间，再增加计数，最后打开弹窗。<strong>它不是成功曝光计数，更不是明确拒绝购买计数。</strong> 本批商品组对应<code>com.middle.favor.bundle</code>，配置价格1.99、奖励包<code>100_3000;502_1;506_1;300_60;515_1;503_1;708_30</code>；不将内部价格视为当前商店实价。</p>
+<p>条件算例：计数初始0、仅由这条场景增长、配置不变且资格始终满足时，最早约最后购买后第10天第一次、第20天第二次，达到阈值2；资产、登录和调度可进一步延后。这不是“所有付费用户20天后开始看插屏”的固定规则。</p>
+<p>购买成功处理<code>DoSuccessWithReceipt</code>进入时调用<code>ClearPopupSceneNoPaymentShowCount</code>清0，再执行购买动作与组别重算。清零可使U2重新读取基础广告参数，<strong>该覆盖可回退，不是永久转为广告用户</strong>。这里证明成功处理链的动作顺序，未实测资产到账原子性；直接调用扫描未发现每日/每次重启清零，不排除统一清库或未解开的间接路径。</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="3. 用户分组：真实规则与优先级表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>参数</th>
+<th style="text-align: right;">U2客户端值</th>
+<th style="text-align: right;">满足策略后服务端值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>插屏总开关<code>interstitial</code></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>结算金币日限</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td>复活广告日限</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>复活广告单局上限</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>重玩加格日限</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>重玩送道具日限</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20，但入口开关仍为0</td>
+</tr>
+</tbody>
+</table></div></div>
+<p class="emphasis"><strong>覆盖不是整张表替换。</strong> <code>NoChance</code>所核白名单只有结算金币、复活、重玩加格、重玩道具4项日限；复活单局和插屏总开关另有独立选表。生命、Order Merge日限不在这4项白名单中，全局RV展示100也不由此改成其他数值。</p>
+<p><code>TryToUpdateU2ToU1</code>名称并不能证明直接赋值U1；其实际触发<code>update_user_group</code>，由已注册策略重新计算。默认规则下累计IAP仍≥0.1时仍可返回U2。必须分开描述“改用广告参数”和“账号改组”。</p>
+<p class="callout">此外，U2客户端<code>all_iap_remove_ad_switch=T</code>，有有效购买记录时仍会被独立免广告拦截器阻止插屏。因此<strong>服务端把interstitial改为1不代表这个U2玩家下一次必看插屏</strong>。</p>
+</section><section class="report-section" aria-labelledby="chapter-04"><span class="legacy-anchor" id="section-3"></span><div class="section-heading"><span class="section-number">04</span><h2 id="chapter-04">广告类型与分组差异总表</h2></div>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="4. 广告类型与分组差异总表表格" tabindex="0"><table class="cols-4 comparison">
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">Value/U0_0/U0_2</th>
+<th style="text-align: right;">U1_0</th>
+<th style="text-align: right;">U2_0基础配置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SDK初始化开关</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>激励视频总开关</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>插屏总开关</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Banner总开关</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>激励视频总展示上限/日</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td>插屏总展示上限/日</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>Banner展示上限/日（启用时）</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr>
+<td>结算金币成功领取上限/日</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>复活广告成功领取上限/日</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>复活广告单局上限</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>重玩加格上限/日</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>补生命上限/日</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Order Merge广告能量配置上限（字段称日限，重置待证）</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>任意IAP去广告开关</td>
+<td style="text-align: right;">T</td>
+<td style="text-align: right;">F</td>
+<td style="text-align: right;">T</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>表中日限是资格上限而不是实际观看量。Reward、Interstitial、Banner各自计数，不是三类共用100。业务领取额度与广告展示额度也不同：广告已展示但未得到奖励回调时，可能只消耗外层展示额度。</p>
+<p>渠道屏蔽值为<code>block_rv_campaign=u0_4</code>。已核是忽略大小写的campaign后缀匹配。虽然字段名写RV，但<code>MFAdTypeConfigInterceptor.AdTypeSwitch</code>在三类广告开关通过后均调用这一判断，不能按名字把作用域仅限定到激励视频。</p>
+<p>设备另有独立名单：<code>config_device_blacklist.csv</code>共406条配置，其中402条禁插屏/Banner而保留RV，2条三类都禁，2条广告字段为空。这里是表行数，非去重机型数或玩家比例。消费者将品牌/型号移除空格并转小写，要求品牌相等且运行型号以配置型号开头，取首个匹配项；不能扩大为该品牌全部禁用。命中后加载和展示两处都拦截。<code>config_os_blacklist.csv</code>虽有<code>a-27/a-29</code>，三类字段均F，本批不能解读为禁用这两类系统的广告。</p>
+</section><section class="report-section" aria-labelledby="chapter-05"><span class="legacy-anchor" id="section-4"></span><div class="section-heading"><span class="section-number">05</span><h2 id="chapter-05">插屏：位置、保护期与节奏</h2></div>
+<h3 id="section-5">触发场景</h3>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="5. 插屏：位置、保护期与节奏表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>场景</th>
+<th style="text-align: right;">本批开关</th>
+<th>行为含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>胜利结算点击继续</td>
+<td style="text-align: right;">1</td>
+<td>进入插屏展示尝试；仍检查全部资格</td>
+</tr>
+<tr>
+<td>主玩退出确认后离开</td>
+<td style="text-align: right;">1</td>
+<td>退出路径的插屏机会</td>
+</tr>
+<tr>
+<td>退出确认点击重试</td>
+<td style="text-align: right;">0</td>
+<td>实现存在，本基线关闭</td>
+</tr>
+<tr>
+<td>胜负结果产生、结算页之前</td>
+<td style="text-align: right;">0</td>
+<td>实现存在，本基线关闭</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>这是<strong>场景触发＋时间约束</strong>，未在这些直接路径中发现统一“每3关一次”规则。单局时长不同，会使玩家体感呈现不同的“隔几关一次”。</p>
+<h3 id="section-6">同时满足的关键门槛</h3>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="5. 插屏：位置、保护期与节奏表格" tabindex="0"><table class="cols-2">
+<thead>
+<tr>
+<th>条件</th>
+<th>配置/已核代码解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总开关、当前placement开启</td>
+<td>结合用户组和U2条件选表</td>
+</tr>
+<tr>
+<td>当前主线进度&gt;50</td>
+<td><code>current_level&lt;=50</code>被拦截；完成50关后已推进51可能符合，不是进入50关就弹</td>
+</tr>
+<tr>
+<td>生命周期累计会话时长≥90分钟</td>
+<td><code>GetTotalSessionTime</code>累计在线会话；不是安装后放置90分钟</td>
+</tr>
+<tr>
+<td>当天完成关数达到0、当天会话时长达到0分钟</td>
+<td>本批无额外日内保护；有配置能力</td>
+</tr>
+<tr>
+<td>距上次插屏至少360秒</td>
+<td>INT时间在<code>OnAdWillShow</code>记录</td>
+</tr>
+<tr>
+<td>距上次激励广告至少480秒</td>
+<td>RV时间在展示回调记录，不等待奖励到账</td>
+</tr>
+<tr>
+<td>当日插屏展示&lt;30</td>
+<td>与RV额度独立</td>
+</tr>
+<tr>
+<td>没有命中免广告、渠道或其他拦截</td>
+<td>开关为1也可能不展示</td>
+</tr>
+<tr>
+<td>广告系统可用、广告已准备好</td>
+<td>无填充时不保证出现</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>上次INT/RV时间写入偏好存储，不能假设重启立即绕过间隔。480秒是<strong>RV后限制下一次插屏</strong>，不是两次RV之间必须等8分钟。</p>
+<h3 id="section-7">预请求早于展示</h3>
+<p>插屏提前请求量为45关和80分钟。已核首次请求检查要求等级、时间两个标记都成立，代入基线为 <strong>当前关卡≥5且累计会话时长≥10分钟</strong>，再经过初始化、总开关等条件。预请求使后续有机会可播，不产生玩家展示事件。</p>
+<p>激励预请求取已开启时机中最早门槛，再减<code>reward_request_advance_level=12</code>；本批纳入的最早门槛是结算12。此等级条件可以很早成立，但不能因此声称第0关已发出网络请求，或断言预加载的目的就是用户eCPM分组。</p>
+</section><section class="report-section" aria-labelledby="chapter-06"><span class="legacy-anchor" id="section-8"></span><div class="section-heading"><span class="section-number">06</span><h2 id="chapter-06">激励视频：奖励与经济入口</h2></div>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="6. 激励视频：奖励与经济入口表格" tabindex="0"><table class="cols-4">
+<thead>
+<tr>
+<th>入口</th>
+<th>资格门槛/状态</th>
+<th>玩家获得什么</th>
+<th>其他约束与证据边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通关金币</td>
+<td>资格12；30关起奖励金额非0</td>
+<td><strong>额外300金币</strong></td>
+<td>普通金币另算；单个结算页成功后隐藏按钮</td>
+</tr>
+<tr>
+<td>补生命</td>
+<td>20关起</td>
+<td>正常未满时补满5点体力</td>
+<td>成功动作传入8，资产层按上限5截断；不是一天8次或实得8点</td>
+</tr>
+<tr>
+<td>广告复活弹簧</td>
+<td>20关起，另检查资产解锁</td>
+<td>手牌区末尾最多2张搬到暂存区，释放槽位继续本局</td>
+<td>509→PropBagSpring→继承PropSpring.DoHandle，TargetCount=2；不是永久消除或随机放回棋盘；暂存区表现未实拍</td>
+</tr>
+<tr>
+<td>重玩加一格</td>
+<td>20关起，真实重玩及其他资格</td>
+<td>本局背包额外1格，回调<code>508_1</code></td>
+<td>需要扩容开关、资产资格、无有效对应无限道具及可播状态</td>
+</tr>
+<tr>
+<td>重玩送道具</td>
+<td>开关0，本基线关闭</td>
+<td>若开启，配置为洗牌515×1</td>
+<td>与重玩加格方案替换；use_type=1，不累计，清关销毁全链未核</td>
+</tr>
+<tr>
+<td>Order Merge活动能量</td>
+<td>广告资格1，活动另有开启要求</td>
+<td>配置单次10点活动能量</td>
+<td>当前活动资格、能量到账/截断及额度每日恢复未核；不能说主线第1关已有入口</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>上述是所核中央RV时机分发器识别的6类，不排除其他模块有独立路径。日限对照上一节；U2覆盖的范围见第3节。</p>
+<p class="emphasis"><strong>奖励强度的产品意义：</strong> 普通通关金币从30关起按<code>50,10,10,10,10,10,30,10,10,10</code>循环；广告始终额外300，是当次普通奖励的6～30倍。它为主动观看提供明显的收益差，而非通常意义的“双倍领取”。能否支撑复活或道具消耗，仍要结合物价、领取率和消耗行为，不能仅用最高次数估计每日实际产币。</p>
+<p>入口显示并不统一：结算和重玩加格读取<code>CanShowRewardAndReady</code>；体力和复活初始化读取<code>CanShowReward</code>，没有这一步额外Ready检查。所以“按钮显示/不显示”与广告当前可播状态的关系需逐入口核对。</p>
+<p>重玩奖励选择优先判断<code>reward_retry_props==1</code>，否则读<code>retry_extra_space_type</code>（本批ad，可配coin），不是同一弹窗并列提供两个广告奖励。</p>
+<p>业务成功领取计数键分别为金币100、生命200、复活509、加格508、Order Merge能量15014；外层全部RV展示共用100次。比如结算成功10次、复活成功5次且各展示一次：金币入口用10，复活入口用5，总RV展示用15。</p>
+<h3 id="section-9">发奖信号与防重边界</h3>
+<p><code>ShowRewarded</code>实际注册普通广告、激励奖励、收益三种监听；<code>OnUserRewarded</code>与<code>onAdRevenuePaid</code>都可单独进入<code>TryReceiveReward</code>，继而执行业务成功委托。<strong>成功领取并不严格等于SDK已经确认完整看完激励视频。</strong> 收益事件也能启动这条链；不能因此反向保证玩家提前退出必然领奖，SDK何时发送事件与实际播放行为未观测。</p>
+<p>wrapper用实例布尔<code>hasReceivedReward</code>防止顺次重复处理，标记在业务回调返回后设置并注销监听。它不是持久交易ID或崩溃原子性保证，重入、异常及重复事件的运行表现未实测。未准备好/显示失败走失败清理；已经扣掉的展示次数并不因此自动回退。</p>
+<p class="callout">还有事件归属边界：dispatcher把Banner、Interstitial和Rewarded的收益事件交给同一收益监听列表；其共享遍历和wrapper中未按本次RV的AdUnitId、placement或广告类型过滤，两个成功入口甚至不读取事件参数。已用原始泛型映射补核这段派发，不只依赖方法名。由此不能把一次业务成功严格归因为“本次RV的完整观看”；是否发生其他广告迟到事件导致误领奖仍无实测，不能直接定性为已发生的线上漏洞。</p>
+<p>等待逻辑为两轮2秒调度，底层是Unity <code>WaitForSeconds</code>：成功信号取消等待，否则第二轮触发<code>OnRewardCloseBeforeRewarded</code>并清理。wrapper继承的<code>OnAdHidden</code>为空，不能写成广告关闭事件本身立即判领奖失败；Unity执行、暂停及时间缩放未实测，也不能把调度参数直接称为墙钟4秒超时。</p>
+<h3 id="section-10">业务领取与全局展示的换日不同</h3>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="6. 激励视频：奖励与经济入口表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>计数层</th>
+<th>已核重置路径</th>
+<th>保留边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>业务领取字典</td>
+<td>属性<code>CanReset=true</code>、Reset_Time=1；Pigat初始化和游戏时钟跨日回调均执行重置</td>
+<td>固定时区、校时与前后台恢复时点未实测</td>
+</tr>
+<tr>
+<td>本次日界明确清零的键</td>
+<td>200、509、100、508、502、503、506、515</td>
+<td>包括体力、复活、结算金币、重玩加格等对应计数</td>
+</tr>
+<tr>
+<td>Order Merge键15014</td>
+<td>不在上述清零名单中</td>
+<td>其模块独立重置/奖励写入尚未定位，不能确认每天恢复3/10次</td>
+</tr>
+<tr>
+<td>SDK全局展示数</td>
+<td>已核广告系统初始化时比较游戏日序号并清零</td>
+<td>持续在线跨日是否另由重建SDK等路径刷新仍未知，不能套用业务字典定时器</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>完整来源继续维护于 通关结算激励视频专题。这些是静态消费链结论，不是已实测北京时间0点恢复；两层计数可能存在刷新时点差异。</p>
+</section><section class="report-section" aria-labelledby="chapter-07"><span class="legacy-anchor" id="banner"></span><div class="section-heading"><span class="section-number">07</span><h2 id="chapter-07">去广告商品与Banner</h2></div>
+<h3 id="section-11">去广告保护的范围</h3>
+<p><code>MFAdIAPInterceptor</code>只处理Banner/Interstitial，Reward直接通过，因此购买去广告不等于关闭所有自愿激励入口。该对象同时注册到加载和展示列表：满足权益后，后续加载也经过免广告检查；不能据此推定关闭整个SDK、即时清除缓存或销毁已加载广告。</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="7. 去广告商品与Banner表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>当前客户端开关</th>
+<th>判断依据</th>
+<th>本批组别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>all_iap_remove_ad_switch=T</code></td>
+<td><code>iap.products_buy_times</code>集合存在购买记录</td>
+<td>Value/U0_0/U0_2/U2_0</td>
+</tr>
+<tr>
+<td><code>all_iap_remove_ad_switch=F</code></td>
+<td>专门的<code>iap.remove_ad_purchased</code>状态</td>
+<td>U1_0</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>所以不能概括为“所有玩家任何付费都免广告”，也不能概括为“只有购买专门去广告才免广告”。服务端同名配置标记Abandoned=T，已核消费者读客户端表；不要用该废弃项覆盖组别差异。最终权益仍与组别变化和购买历史恢复相联系。</p>
+<p><code>config_server_iap.csv</code>存在<code>com.no.ads.bundle</code>、no_ads组、BuyPrice=1.99；同组3.99/5.99条目备注“未启用”。这些是样本配置，不能当成当前地区结账价格或已实施的价格AB。</p>
+<p>去广告弹窗：<code>remove_ad_level_trigger</code>开启，参数50，要求未记录对应触发；首页流程优先级570。活动副本StartLevel=51与此大致衔接，但最终合并模板起点未在本轮重核全链。<code>remove_ad_int_trigger</code>虽有“首次插屏后弹出”实现，本配置Switch=F。不能把能力存在写成当前销售路径。</p>
+<h3 id="banner-1">Banner是保留能力，本批关闭</h3>
+<p>所有组<code>banner=0</code>。起点50关、日限400、AdMob资源刷新29秒/其他19秒、离开主玩隐藏而非销毁等参数均存在，但未启用时不代表玩家真的看到横幅。Hide/Destroy分支已核；29/19秒仅配置层，完整刷新回调未重核。IAP商品轮播字段中的banner不是广告横幅频次。</p>
+</section><section class="report-section" aria-labelledby="chapter-08"><span class="legacy-anchor" id="section-12"></span><div class="section-heading"><span class="section-number">08</span><h2 id="chapter-08">广告请求价格与主备池：另一套“分层”</h2></div>
+<h3 id="max">8.1 新MAX动态区间是本批选择的主策略</h3>
+<p><code>MFAdTypeStrategyController.CreateMainAdUnitIdStrategy</code>先创建原有分层策略，若对应<code>*_max_switch=T</code>则改用<code>MFAdTypeDynamicStrategy</code>。本批插屏、激励均T，Banner为F。因此不能直接把旧三档Ad Unit、每2次升级等参数当成本批主策略的全部行为。</p>
+<p><code>GetMatchCountryRequestConfig</code>从<code>GetOriginalCountryCodeBySimThenSettings</code>取得国家，匹配<code>config_client_request_ecpm.csv</code>，缺失回退other。已核不是在此处按IP实时判国，也不是按U1/U2列选择这张表。选中对象在模块内缓存。</p>
+<p>下表列新请求策略的国家基线。数值是eCPM价格口径参数，不是给玩家的货币，也不是保证成交收入。</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="8. 广告请求价格与主备池：另一套“分层”表格" tabindex="0"><table class="cols-5">
+<thead>
+<tr>
+<th>国家组举例</th>
+<th>INT中价 / floor长度 / ceiling长度</th>
+<th>INT初始请求区间</th>
+<th>RV中价 / floor长度 / ceiling长度</th>
+<th>RV初始请求区间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>美国</td>
+<td>20 / 3 / 12</td>
+<td>[17,32]</td>
+<td>30 / 15 / 15</td>
+<td>[15,45]</td>
+</tr>
+<tr>
+<td>日本、澳大利亚、加拿大、韩国</td>
+<td>15 / 2.25 / 10</td>
+<td>[12.75,25]</td>
+<td>20 / 10 / 10</td>
+<td>[10,30]</td>
+</tr>
+<tr>
+<td>英国、德国、法国、台湾等</td>
+<td>7.5 / 1.12 / 5</td>
+<td>[6.38,12.5]</td>
+<td>10 / 5 / 10</td>
+<td>[5,20]</td>
+</tr>
+<tr>
+<td>意大利、西班牙、巴西、印尼等</td>
+<td>5 / 0.75 / 3.5</td>
+<td>[4.25,8.5]</td>
+<td>7 / 3 / 6</td>
+<td>[4,13]</td>
+</tr>
+<tr>
+<td>other</td>
+<td>2 / 0.3 / 1.2</td>
+<td>[1.7,3.2]</td>
+<td>4 / 1 / 2</td>
+<td>[3,6]</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>初始区间按<code>middle-floorLength</code>到<code>middle+ceilingLength</code>计算，再受min等边界处理。每次变价保存中价，偏好键为<code>unit_id_middle_price_key_</code>＋广告类型，键内没有国家、U组或具体AdUnitId；初始化已有保存值时直接恢复，不能保证每次启动回国家表初值。所核初始化/回调内没有日切或组变更清零，但未穷尽全应用删键路径，不宣布永久不重置。</p>
+<p>关键行为已核：</p>
+<ul>
+<li><code>OnAdLoaded</code>读取加载结果eCPM更新区间，不应照配置备注一概称“展示两次后才更新”。facebook网络分支在此函数跳过更新。</li>
+<li><code>*_request_up_type=T</code>时，将这次eCPM作为下一次floor；例如美国RV加载结果eCPM=30，候选新区间为[30,60]。这是代码代入示例，不是现场广告报价。</li>
+<li><code>*_request_ceiling_type=F</code>，此分支允许向表中max之上继续请求；所以美国RV的request_max=200不能当成所有情况下硬上限。</li>
+<li><code>*_request_down_type=1</code>：合规加载失败时向下调整，当前floor成为新的ceiling，再保留区间长度；最终仍受min保护。错误码-1000/-1001/-1009排除在降级依据之外。</li>
+<li>floor/ceiling通过<code>MaxSdkAndroid.SetInterstitialExtraParameter</code>、<code>SetRewardedAdExtraParameter</code>传入请求，同时记录<code>request_floor</code>/<code>request_ceiling</code>数据。</li>
+<li><code>MFAdExtened.Ecpm</code>从非负收入字段乘1000，已核原生常量1000；不应把每次展示收入与eCPM混用。</li>
+</ul>
+<h3 id="section-13">8.2 主池与备用池</h3>
+<p><code>interstitial_winner_switch=T</code>、<code>reward_winner_switch=T</code>，有独立备用Ad Unit配置。控制器创建主、备用策略；一边Ready时可走该边，两边Ready且信息有效时比较eCPM，选更高者，相等保留主池。</p>
+<p>这是<strong>可播结果比较机制</strong>，不是已发现“主池70%、备用池30%”的分配比例。广告网络内部的竞价、底价生效、收益估计精度和最终网络占比仍由SDK/平台及实际流量决定，现有材料不能恢复完整后台瀑布流。</p>
+<p>主备ID都被加入首次加载列表，由加载服务依次提交；只能确认同轮准备，不能保证底层网络严格同时发出。备用池也影响主池定价：备用加载eCPM高于主策略当前<strong>中价</strong>时，<code>OnAlternateSuccess</code>触发向上更新。本批up_type=T，例如美国RV初始中价30/区间[15,45]，备用eCPM35可使主池候选区间变成[35,65]。这是代码算例，说明备用池兼具填充补充与提价参照作用，不是现场报价。</p>
+<h3 id="section-14">8.3 旧三档与备用能力</h3>
+<p>旧策略保留3个正式Ad Unit；初始tier=3；初始评估、升级和降级各配置2次；session最大升级3次；升级计数类型F表示连续；冷启动base重置间隔=-1表示关闭。美国旧档升级阈值为INT <code>5|14</code>、RV <code>5|23</code>，来自另一张<code>config_adunit_ecpm.csv</code>，不能与新请求区间[17,32]/[15,45]混用。</p>
+<p>这些参数在旧分支仍有意义，但本批新MAX开关T优先选择动态价格主策略。新用户专用广告ID开关INT/RV均F，不能因为存在“前2次展示/2次无填充”参数就认定本批启用新客专池。</p>
+<h3 id="section-15">8.4 失败重试与空池补充</h3>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="8. 广告请求价格与主备池：另一套“分层”表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>状态</th>
+<th>已核行为</th>
+<th>易误判之处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>动态价格尚未降到最低floor</td>
+<td>普通失败先按规则降价，再快速请求；<code>-1009</code>在此分支另延3秒</td>
+<td>某错误不参加降价，不代表不重试</td>
+</tr>
+<tr>
+<td>已到最低floor</td>
+<td>判断<code>abs(floor-min)&lt;0.001</code>，走2、4、8、16、32、64、64…秒退避</td>
+<td>配置6是指数上限，不是最多尝试6次</td>
+</tr>
+<tr>
+<td>成功加载</td>
+<td>对应策略重试计数归零</td>
+<td>主备各有自己的RetryPolicy，不共用失败次数</td>
+</tr>
+<tr>
+<td>广告池持续未准备好</td>
+<td>每30秒检查，距上次请求开始&gt;63999毫秒时尝试<code>empty_pool</code>补请求</td>
+<td>字段虽叫lastLoadFailTimestamp，实际在请求开始写入；不是玩家必须等64秒</td>
+</tr>
+<tr>
+<td>广告关闭／显示失败</td>
+<td>重新加载对应策略，仍经过加载拦截器</td>
+<td>加载次数不等于展示次数，也不绕过免广告/设备屏蔽</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>本批INT/RV/Banner首次请求额外延迟配置均0，但业务预请求门槛仍在。空池检查的轮询相位、前后台暂停与SDK内部队列会改变实际网络时间；网络并发、超时、最终价格接受和实际填充效果尚未观测。</p>
+</section><section class="report-section" aria-labelledby="chapter-09"><span class="legacy-anchor" id="section-16"></span><div class="section-heading"><span class="section-number">09</span><h2 id="chapter-09">模型预测与风控：存在什么，开启什么</h2></div>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="9. 模型预测与风控：存在什么，开启什么表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>功能</th>
+<th>本批开关</th>
+<th>能确认的边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户组预测</td>
+<td>F</td>
+<td>默认规则分组；不能宣称按预测LTV或eCPM决定U组</td>
+</tr>
+<tr>
+<td>IAP分组预测</td>
+<td>F</td>
+<td>U2广告策略的R0资格判断在本批绕过；模型能力存在</td>
+</tr>
+<tr>
+<td>主池RV/INT floor预测</td>
+<td>均F</td>
+<td>有AdFloorStrategy调用链，本批不启用模型价格结果</td>
+</tr>
+<tr>
+<td>备用池RV/INT floor预测</td>
+<td>均F</td>
+<td>同上，主备池各自可配</td>
+</tr>
+<tr>
+<td>新客专用Ad Unit</td>
+<td>均F</td>
+<td>属于可配置能力，不能认定生效</td>
+</tr>
+<tr>
+<td>客户端广告防护</td>
+<td>F</td>
+<td>有10次/5分钟、屏蔽3天参数，但本批开关关闭</td>
+</tr>
+<tr>
+<td>服务端广告风控</td>
+<td>T</td>
+<td>配置存在并开启；服务端判定模型、名单与当前命中未知</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>floor预测分支已核：不可用时回调Disabled；开启且可用才发起预测。本批配置提价系数130、降价系数80、连续未填充窗口3、最多5档。<code>AdFloorCalculator</code>计算<code>step=min(floor(noFillStreak/3),5)</code>，floor为预测eCPM×1.3×0.8^step；这是<strong>关闭分支的已证算法能力</strong>，不是本批真实请求价格。主备池及INT/RV使用各自前缀、状态，不能把所有失败次数共用。</p>
+<p>另外存在garbage/malicious专用广告ID配置。仅此不能证明普通低付费玩家会被归入这些状态；当前账号命中、服务端规则和分配比例均未取得。本文不把SDK字段名称升级成已观察到的人群策略。</p>
+</section><section class="report-section" aria-labelledby="chapter-10"><span class="legacy-anchor" id="ts"></span><div class="section-heading"><span class="section-number">10</span><h2 id="chapter-10">对TS有价值的设计参考</h2></div>
+<p>以下为基于TF证据的设计推断，<strong>不是已确认的TS实施方案</strong>。</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="10. 对TS有价值的设计参考表格" tabindex="0"><table class="cols-3">
+<thead>
+<tr>
+<th>值得参考的部分</th>
+<th>对TS的具体意义</th>
+<th>不宜直接照搬的数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>分开配置广告资格与奖励强度</td>
+<td>将早期体验保护、金币投放节奏、广告预请求分别控制</td>
+<td>12/20/30/50关来自TF进度和经济，不能平移</td>
+</tr>
+<tr>
+<td>用场景额度＋全局展示额度</td>
+<td>避免结算金币、复活、活动能量各自扩张后叠加失控</td>
+<td>日100是资格上限，不能当作合理人均观看目标</td>
+</tr>
+<tr>
+<td>主动广告后暂停插屏</td>
+<td>玩家刚付出观看时间后获得一段免打扰时间</td>
+<td>480秒需要结合TS局长、留存与收入验证</td>
+</tr>
+<tr>
+<td>按商业化意向调整解困机会</td>
+<td>可比较道具直购、金币复活与RV自救的替代/增量关系</td>
+<td>U1单局10次复活可能影响难度与付费，不能只看广告收入</td>
+</tr>
+<tr>
+<td>先核付费权益再改广告开关</td>
+<td>避免“开关开启却永远被免广告拦截”造成误判</td>
+<td>任意IAP免广告与专门免广告两种方案需统一权益口径</td>
+</tr>
+<tr>
+<td>产品分组与广告价格策略分开记录</td>
+<td>分清展示量变化来自产品曝光，还是来自填充和eCPM</td>
+<td>无法从竞品表恢复真实网络预算、AB占比和价格效果</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>若后续以实验验证，应把广告展示、SDK激励奖励事件、收益事件、业务发奖与成功到账分开观察，再结合广义自救转化、金币净产销、IAP收入和留存。特别是本构建收益事件也能进入业务成功，不能把业务领取率直接当完整观看率。不能仅用广告ARPDAU上升判定整体收益更好；本轮没有这些真实效果数据。</p>
+</section><section class="report-section" aria-labelledby="chapter-11"><span class="legacy-anchor" id="section-17"></span><div class="section-heading"><span class="section-number">11</span><h2 id="chapter-11">来源、验证覆盖与继续入口</h2></div>
+<h3 id="section-18">证据等级</h3>
+<p>本文分别使用“代码已核”“配置存在”“产品推断”“线上未知”，不把静态配置当现场生效。首次配置为可读明文副本，原始密文与解密/重加密一致性记录仍保留。账号状态JSON未解码，当前RemoteCSV目录及文件存在不等于最终覆盖已经选中。</p>
+<div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="11. 来源、验证覆盖与继续入口表格" tabindex="0"><table class="cols-2">
+<thead>
+<tr>
+<th>问题</th>
+<th>完成程度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>广告类型与主要触发场景</td>
+<td>已回答关键中央路径；未保证穷举所有独立模块</td>
+</tr>
+<tr>
+<td>解锁、保护期、间隔和次数</td>
+<td>关键条件已回答；持续在线跨日与时区未实测</td>
+</tr>
+<tr>
+<td>RV奖励与额度</td>
+<td>已核双信号发奖、实例防重、业务日界重置及509搬牌；活动能量到账/重置仍未知</td>
+</tr>
+<tr>
+<td>用户组规则、配置映射、U2条件覆盖</td>
+<td>已核默认规则、重算触发、10天/综合库存召回条件和购买清计数；当前账号未知</td>
+</tr>
+<tr>
+<td>新MAX动态价格、主备池</td>
+<td>已核主备反馈、中价持久化、到底退避和空池补请求；线上成交/收益未知</td>
+</tr>
+<tr>
+<td>模型能力与开关</td>
+<td>已区分关闭分支与当前基线；模型精度与开启比例未知</td>
+</tr>
+<tr>
+<td>AB通道、在线实验权重、网络投放分配</td>
+<td>已核独立随机分段及功能配置通道；具体广告实验、权重和当前组合未取得</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3 id="section-19">精确定位</h3>
+<p>分析根为<code>06-PRODUCT-ASSETS/TileFamily/2.12.0/</code>，完整包名、来源及哈希见 02-PROJECTS/产品分析/Tile Family/资源路径索引。本次重算ARM64 SHA-256与既有索引一致：<code>c9a2163af064d82b4542ea73810470c4abb072a1477cd48e83395f382679a3af</code>。</p>
+<details class="technical-evidence"><summary><span>方法地址与原始证据</span><span class="detail-meta">18 项定位 · 点击展开</span></summary><div class="table-block"><div class="table-hint" hidden>左右滑动查看完整表格 <span aria-hidden="true">↔</span></div><div class="table-scroll" role="region" aria-label="11. 来源、验证覆盖与继续入口表格" tabindex="0"><table class="cols-2">
+<thead>
+<tr>
+<th>证据主题</th>
+<th>方法/地址或文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>默认分组</td>
+<td><code>CalculationUserGroupNode 0x62b21ac</code>；<code>GetLoginDaysAbsolute 0x3329440</code>；<code>InitUserGroup 0x6731d20</code>；列选择<code>Predicate 0x6434948</code></td>
+</tr>
+<tr>
+<td>U2广告选表</td>
+<td><code>ShouldUseServerGameForAdStrategy 0x62b2b84</code>；<code>NoChance 0x646e0dc</code>；<code>IncreasePopupSceneNoPaymentShowCount 0x649dd78</code></td>
+</tr>
+<tr>
+<td>插屏资格</td>
+<td>等级<code>0x64742ac</code>；累计时长<code>0x6474454</code>；当天时长<code>0x6473f8c</code>；间隔<code>0x625c904</code></td>
+</tr>
+<tr>
+<td>插屏预请求</td>
+<td><code>OnLevelChangeInterstitial 0x646e874</code>；<code>OnTimeChangeInterstitial 0x646ea24</code>；<code>InterstitialFirstTimeRequestCheck 0x646eeb8</code></td>
+</tr>
+<tr>
+<td>IAP保护</td>
+<td><code>ShouldInterceptByIAP 0x6473dd8</code>；<code>HasRemovedAd 0x649a288</code></td>
+</tr>
+<tr>
+<td>激励入口</td>
+<td><code>OnRewardAdShowInterceptor 0x6473808</code>；<code>CanShowBagSpringAd 0x63077a8</code>；<code>UserAsset.ChangeAssetByCount 0x626df38</code></td>
+</tr>
+<tr>
+<td>请求策略选择</td>
+<td><code>CreateMainAdUnitIdStrategy 0x53ff954</code>；<code>GetDynamicAdTypeSwitch 0x53fa828</code></td>
+</tr>
+<tr>
+<td>国家价格表选择</td>
+<td><code>GetMatchCountryRequestConfig 0x6467fa4</code>；<code>GetAdTypeDynamicConfig 0x6468398</code></td>
+</tr>
+<tr>
+<td>动态区间</td>
+<td><code>InitParams 0x53fda64</code>；<code>GeneratePriceRange 0x53fe1bc</code>；<code>OnAdLoaded 0x53fe038</code>；<code>OnAdLoadFailed 0x53fdf9c</code>；<code>SetRequestPrice 0x53fe4e0</code></td>
+</tr>
+<tr>
+<td>主备池比较</td>
+<td><code>GetReadyUnitID 0x5400044</code>；<code>GetLoadedEcpmMaxAdUnitId 0x540049c</code></td>
+</tr>
+<tr>
+<td>模型floor分支</td>
+<td><code>AdFloorConfig.Load 0x6222af0</code>；<code>AdFloorStrategy.OnAdRequest 0x62252c4</code>；<code>AdFloorCalculator.Calculate 0x622259c</code>、<code>CalculateStep 0x62226ac</code></td>
+</tr>
+<tr>
+<td>U2召回与重置</td>
+<td>Lua <code>ae5d1819fcc84e72.txt</code>、<code>042512b5d8357031.txt</code>；库存价值<code>0x6286394</code>；弹出协程<code>0x64a3924</code>；购买清计数<code>0x677c668</code></td>
+</tr>
+<tr>
+<td>RV信号、日界与509效果</td>
+<td>ShowRewarded<code>0x53f71c4</code>；TryReceiveReward<code>0x5419640</code>；业务日界<code>0x528bd9c</code>；属性/vtable绑定见<code>ads-deep-reward-bindings.json</code></td>
+</tr>
+<tr>
+<td>设备、持久化与重试</td>
+<td>设备匹配<code>0x54135cc</code>；备用反馈<code>0x53fe104</code>；价格恢复<code>0x53fdb4c</code>；失败分流<code>0x5400ffc</code>；重试<code>0x5416630</code></td>
+</tr>
+<tr>
+<td>独立AB与取值前置拦截</td>
+<td>随机分段<code>0x526c1a4</code>；请求参数<code>0x5271200</code>；响应<code>0x5270d60</code>；功能保存<code>0x52703fc</code>；CSV构造<code>0x5272204</code>；配置取值<code>0x3834094</code></td>
+</tr>
+<tr>
+<td>配置原表</td>
+<td><code>05-Runtime/2026-11-04/decoded/initial-config/Config/</code>下client_game、server_game、server_user_group、client_request_ecpm、adunit_ecpm、server_asset、server_iap等CSV</td>
+</tr>
+<tr>
+<td>分主题取证</td>
+<td><code>04-ReverseEngineering/ads-segment-*</code>、<code>ads-interstitial-*</code>、<code>ads-reward-*</code>、<code>ads-delivery-*</code>；各findings/calls/逐方法指令/脚本</td>
+</tr>
+<tr>
+<td>补充分支证据</td>
+<td>同目录<code>ads-deep-group-*</code>、<code>ads-deep-reward-*</code>、<code>ads-deep-delivery-*</code>、<code>ads-deep-config-*</code>；各findings及属性/类型绑定验证保留</td>
+</tr>
+</tbody>
+</table></div></div></details>
+<p>实际使用既有REA metadata＋Capstone 5.0.7/pyelftools按ELF PT_LOAD重读。当前REA未配置原生深度反编译器，没有将方法名或伪代码缺口当成执行事实。方法边界依下一已知地址并设截断上限，可能含padding；字符串注释限相邻ADRP/LDR，泛型和虚调用并未全部命名。</p>
+<p>外部资料只用于身份与对外口径：<a href="https://play.google.com/store/apps/details?id=com.tile.match.blockpuzzle&amp;hl=en">Google Play产品页</a>标注含广告及内购；<a href="https://apps.apple.com/us/app/tile-family-match-puzzle-game/id6444056676">App Store产品页</a>为跨平台对照，不能替代Android内部规则。MAX的<a href="https://support.axon.ai/en/max/advanced-features/s2s-impression-level-api">逐展示收入说明</a>说明收益数据可有不同精度，不足以证明TF具体线上收益。公开资料查询日期2026-11-16。</p>
+<p>下一步若要判断“某账号为何没有广告/为何突然增多”，最小补证是同一账号、同一版本同时取得组别、选中配置、免广告资格、场景计数、当日展示数及Ready状态；不能只补一张截图。若只用于产品机制参考，本篇已给出当前可复用的静态基线。</p>
+</section><section class="report-section" aria-labelledby="related"><span class="legacy-anchor" id="section-20"></span><div class="section-heading"><h2 id="related">关联</h2></div>
+<ul>
+<li>TF产品分析入口</li>
+<li>资源与证据路径索引</li>
+<li>通关结算激励视频专题</li>
+</ul>
+</section><footer class="page-footer"><span>Tile Family · 广告策略研究</span><a href="#top">返回顶部 ↑</a></footer></main></div><script>
+const navLinks=[...document.querySelectorAll('.sidebar nav a')];
+const tracked=navLinks.map(a=>document.querySelector(a.getAttribute('href')));
+function updateReading(){let active=0;tracked.forEach((e,i)=>{if(e.getBoundingClientRect().top<=150)active=i});navLinks.forEach((a,i)=>{if(i===active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('.reading-progress').style.width=(max>0?scrollY/max*100:0)+'%'}
+let queued=false;addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(()=>{updateReading();queued=false})}},{passive:true});
+function updateTables(){document.querySelectorAll('.table-scroll').forEach(e=>{const hint=e.previousElementSibling;if(hint&&hint.classList.contains('table-hint'))hint.hidden=e.scrollWidth<=e.clientWidth+2})}
+addEventListener('resize',()=>{updateTables();updateReading()});
+document.querySelector('.mobile-nav nav').addEventListener('click',e=>{if(e.target.closest('a'))document.querySelector('.mobile-nav').open=false});
+document.querySelectorAll('.technical-evidence').forEach(d=>d.addEventListener('toggle',()=>{d.querySelector('.detail-meta').textContent=d.open?'点击收起':'点击展开';updateTables()}));
+let printState=[];addEventListener('beforeprint',()=>{printState=[...document.querySelectorAll('.technical-evidence')].map(d=>[d,d.open]);printState.forEach(([d])=>d.open=true)});addEventListener('afterprint',()=>printState.forEach(([d,open])=>d.open=open));
+document.querySelector('#print-report').addEventListener('click',()=>window.print());updateTables();updateReading();
+</script></body></html>

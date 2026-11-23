@@ -1,0 +1,57 @@
+{
+  "kind": "resource-composite-not-runtime-screenshot",
+  "version": "2.7.3 / 203",
+  "background": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261118-framework\\32-final-home.png",
+  "prefabs": [
+    "prefabs/ui/rewardboxpanel",
+    "prefabs/ui/rewardboxes/coin_box",
+    "prefabs/ui/rewardgridpanel"
+  ],
+  "source_index": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\reward-visuals\\sprite-index.json",
+  "layout_source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\reward-visuals\\layout-summary.json",
+  "font": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\04-ReverseEngineering\\piggy-pass\\reward-visuals\\LilitaOne-Regular.ttf",
+  "B": {
+    "title": "Bonus Bank",
+    "box_type": 20,
+    "sprite": "0_00.png",
+    "view": "closed bank static illustration"
+  },
+  "C": {
+    "title": "Piggy Pass\nReward!",
+    "sample_rewards": [
+      {
+        "icon": "coin.png",
+        "value": 500
+      },
+      {
+        "icon": "ColorBomb.png",
+        "value": 2
+      }
+    ]
+  },
+  "limitations": [
+    "Not an emulator capture.",
+    "Uses a historical Home screenshot as compositing background, not a qualifying Pass account.",
+    "Title and Tap to Continue text are source-backed; title shader, outlines and background dimming approximated.",
+    "Box flight/opening animations and particles not reproduced; runtime actor/grid positions approximated.",
+    "C rewards are illustrative only and do not establish fixed rewards or a player balance."
+  ],
+  "outputs": [
+    {
+      "file": "popup-B-bank.png",
+      "sha256": "948fc91180a058156543bd023c017a323a47d3a17456e61b873f2557def1fbb1",
+      "size": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "file": "popup-C-rewards.png",
+      "sha256": "d94ce851ae1fa8416a93688860db9b5913f94f87f9357bc670e8e1618e74f541",
+      "size": [
+        1080,
+        1920
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Royal.Infrastructure.Contexts.Units.CameraManager$$GetHeight
+float Royal_Infrastructure_Contexts_Units_CameraManager__GetHeight (Royal_Infrastructure_Contexts_Units_CameraManager_o* __this, const MethodInfo* method);
+0x338AD30; next named boundary 0x338AD38
+0338AD30 ldr      s0, [x0, #0x20]
+0338AD34 ret      

@@ -1,0 +1,273 @@
+{
+  "date": "2026-11-18",
+  "root": "D:\\TileScape_fresh",
+  "verification": "static worktree read; git revision unavailable; no runtime verification",
+  "sources": [
+    {
+      "path": "Assets/Game/TileV2/Res/Game/Texture/TileUI/Common/Item_11.png",
+      "sha256": "901319d217451a1c73de86edd7c97f24c69c64995fffd5b7ba1fc30a7a6e6476",
+      "copy": "Item_11.png"
+    },
+    {
+      "path": "Assets/Game/TileV2/Res/Game/Texture/TileUI/Common/Item_12.png",
+      "sha256": "f006afc36cbd06cf66ae8569923e26a4946f1d2cc9185e600ebc3c0e32b3521a",
+      "copy": "Item_12.png"
+    },
+    {
+      "path": "Assets/Game/TileV2/Res/Game/Texture/TileUI/Common/Item_13.png",
+      "sha256": "8e5f5e79e35dd8980dd2770aa5334d294d0c5b714a6a4b9b08ab6b7cd20a3f57",
+      "copy": "Item_13.png"
+    },
+    {
+      "path": "Assets/Game/TileV2/Res/Game/Texture/TileUI/Common/Item_14.png",
+      "sha256": "d4cbfe3fac78119ae09501e9b689a91f7fd3376beb1a7edcc2223c44a0bc5024",
+      "copy": "Item_14.png"
+    },
+    {
+      "path": "Assets/Game/TileV2/Scripts/UI/UIGamePanel/TileGamePanelPropController.cs",
+      "sha256": "96ac299d86e7264d2df3d4f19a7405810cb2407cd93ee62849a1a9f4ac155622",
+      "matches": [
+        {
+          "line": 408,
+          "text": "private void OnPropClicked(TileGamePanelPropButton button)"
+        },
+        {
+          "line": 436,
+          "text": "private void OnPurchaseClicked(TileGamePanelPropButton button)"
+        },
+        {
+          "line": 259,
+          "text": "_itemSystem.AddChanged(button.Definition.ItemId, OnInventoryItemChanged);"
+        },
+        {
+          "line": 273,
+          "text": "_itemSystem.RemoveChanged(itemId, OnInventoryItemChanged);"
+        },
+        {
+          "line": 325,
+          "text": "bool hasInventory = accessState.IsFree || _inventory.CanConsume(definition);"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Game/TileV2/Scripts/UI/UIGamePanel/TileGamePanelPropBuyService.cs",
+      "sha256": "f87b8166385fbd09c7e613fe10a9470b199bf7929b7133ca4b31a0ee010daadf",
+      "matches": [
+        {
+          "line": 82,
+          "text": "public bool TryPurchase(int itemId)"
+        },
+        {
+          "line": 123,
+          "text": "private static void RouteCurrencyShortage(int costItemId)"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Game/TileV2/Scripts/UI/UIPropBuyPanel/UIPropBuyPanel.cs",
+      "sha256": "8c74ccaec075f3afcfae6accc674c2cd5822ee9370af9e4a8ef1c5eac6b894ac",
+      "matches": [
+        {
+          "line": 334,
+          "text": "private void TryPurchaseAndClose()"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Game/TileV2/Scripts/UI/UIGamePanel/TileGamePanelPropDefinition.cs",
+      "sha256": "76493b3f430c95b6651f8fb9a28bd2ca3255d821d9f39a532dc9863ee5d89c5d",
+      "matches": [
+        {
+          "line": 23,
+          "text": "public static readonly TileGamePanelPropDefinition[] DefaultDefinitions ="
+        },
+        {
+          "line": 154,
+          "text": "public bool CanConsume(TileGamePanelPropDefinition definition)"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Game/TileV2/Scripts/Interface/DTOs/ItemIdConst.cs",
+      "sha256": "cce72bdf08f40eb56f230b419a5b69682798bad191b19145311df11a9829d5f8",
+      "matches": [
+        {
+          "line": 6,
+          "text": "public const int DIAMOND = 1;"
+        },
+        {
+          "line": 21,
+          "text": "public const int REMOVE_ONE = 11;"
+        },
+        {
+          "line": 24,
+          "text": "public const int SHUFFLE = 12;"
+        },
+        {
+          "line": 27,
+          "text": "public const int HINT = 13;"
+        },
+        {
+          "line": 30,
+          "text": "public const int REMOVE = 14;"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Item/Scripts/Logic/ItemSystem.cs",
+      "sha256": "d98893b5cecb5853735a905ecea3202362433c75e157945d48d9f53b2cf945f8",
+      "matches": [
+        {
+          "line": 376,
+          "text": "public bool CanUse(int id, int count)"
+        },
+        {
+          "line": 154,
+          "text": "MaintainRequestedItems(requests, now, _changedItemIds);"
+        },
+        {
+          "line": 380,
+          "text": "MaintainRequestedItems(requests, now, _changedItemIds);"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Item/Scripts/Logic/Consume/ConsumePlanner.cs",
+      "sha256": "db468999e006f1c3ddf15b1e60e5325370b66926592badec4a67466e86efcc7e",
+      "matches": [
+        {
+          "line": 60,
+          "text": "if (_effectStore.TryGetActive(plan.ItemId, ItemEffectIds.Unlimited, now, out ulong unlimitedExpireAt))"
+        },
+        {
+          "line": 68,
+          "text": "_stackStore.CollectConsumeCandidates(plan.ItemId, _candidates);"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/Route/RouteActionShopPanel.cs",
+      "sha256": "332d84bf5f621185878b8bb1b061b3809d6d5cd3c671629eed6b7df0d946b645",
+      "matches": [
+        {
+          "line": 19,
+          "text": "public bool Execute(Dictionary<string, object> parameters)"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/Core/Data/ShopOpenContext.cs",
+      "sha256": "1225787457de531ef52dc1cd4fb9da97f3703c68f8382ed2678712c1dbbe1e9e",
+      "matches": [
+        {
+          "line": 8,
+          "text": "public ShopOpenSource OpenSource { get; set; } = ShopOpenSource.Home;"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/Core/ShopModule.cs",
+      "sha256": "593c115610ef555167fb26700b97becac581fbd23274147e9bf351df5566ddf5",
+      "matches": [
+        {
+          "line": 238,
+          "text": "public List<IShopOfferData> CollectBannerOffers(ShopOpenContext openContext)"
+        },
+        {
+          "line": 286,
+          "text": "private static int CompareOfferPriority(IShopOfferData left, IShopOfferData right)"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/UI/Banner/ShopCardBanner.cs",
+      "sha256": "1f0b74c098e13a3f72807756a6fbc5c28223768ea436fcb91ef92f2c52c99188",
+      "matches": [
+        {
+          "line": 29,
+          "text": "private const float AutoScrollIntervalSeconds = 3f;"
+        },
+        {
+          "line": 270,
+          "text": "_nextAutoScrollTime = Time.time + AutoScrollIntervalSeconds;"
+        },
+        {
+          "line": 30,
+          "text": "private const float AutoScrollDuration = 0.45f;"
+        },
+        {
+          "line": 204,
+          "text": "new UIScrollMotionSpec(AutoScrollDuration, UIEasing.Linear),"
+        },
+        {
+          "line": 48,
+          "text": "public override void Bind(IShopOfferData offer)"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/UI/Banner/Prefab/BannerScrollView.prefab",
+      "sha256": "b6cbc0ffb133642cecbc97aa2f448b2df504d390548251535162c50e766f7500",
+      "matches": [
+        {
+          "line": 116,
+          "text": "m_SizeDelta: {x: 1080, y: 550}"
+        },
+        {
+          "line": 364,
+          "text": "m_SizeDelta: {x: 1080, y: 550}"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/UI/Panel/UIShopPanel.cs",
+      "sha256": "f09f2363d8d397e94b344f7c61092fa6ebadbb5f45cbb7003511fe0cb871b019",
+      "matches": [
+        {
+          "line": 109,
+          "text": "private void OnPurchaseSucceeded(int _)"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Shop/UI/Presenter/ShopPanelPresenter.cs",
+      "sha256": "b365adb526b32d6cbbdf151d246c8788192c2dd61f099e645ae2647d9463166a",
+      "matches": [
+        {
+          "line": 104,
+          "text": "public void ShowPage()"
+        },
+        {
+          "line": 182,
+          "text": "private void OnPurchaseClicked(IShopOfferData offerData, Action onSettled)"
+        },
+        {
+          "line": 278,
+          "text": "internal static void ApplyRewardPresentation("
+        },
+        {
+          "line": 345,
+          "text": "private static void CloseOverlayShop()"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Module/Trade/Fulfillment/TradeRewardFulfillment.cs",
+      "sha256": "761c5ef0910bec99c4743746dcca6a3d16edca5573712b35e3b50a94b1f1f219",
+      "matches": [
+        {
+          "line": 148,
+          "text": "public static bool TryShowRewards(ITradeOffer offer, TradeContext context, out bool showOk)"
+        },
+        {
+          "line": 203,
+          "text": "}, context?.OnRewardPresentationCompleted, out _);"
+        }
+      ]
+    }
+  ],
+  "preserved_tf_reference_sha256": {
+    "Prop Favor-道具礼包奖励定价与触发-2.12.0.md": "1b02653e3312117bf922e620df0f81969c3604d24ce1a12b3e4444f26a1fd152",
+    "TileFamily_Prop_Favor_2.12.0.html": "809cdf3c9ecd77af488bf69de4c90c41d8d3406f4ce3cbce3cb2216d9ea7b40b"
+  }
+}
