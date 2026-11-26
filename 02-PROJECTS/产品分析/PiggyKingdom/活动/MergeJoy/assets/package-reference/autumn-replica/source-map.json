@@ -1,0 +1,611 @@
+{
+  "theme": 29,
+  "source_config": "cached MergeMiniConfig scenes_new id1029, round52; not proof of the screenshot round",
+  "reference_image": "assets/20261123-user-screenshots/S01-main-progress.jpg",
+  "logical_stage": [
+    1080,
+    2338
+  ],
+  "layout_evidence": "dimensions.json, MergeBoard and RectTransform; major composition positions adjusted against S01",
+  "not_implemented": [
+    "Spine animation",
+    "real countdown",
+    "payments",
+    "persistent game state",
+    "full merge gameplay"
+  ],
+  "approximations": [
+    "title font",
+    "countdown decoration",
+    "help button drawing",
+    "gift-node drawings",
+    "outer room background",
+    "some assembly positions and scale"
+  ],
+  "board_fixture_top_to_bottom": [
+    [
+      "cover",
+      "cover",
+      "cover",
+      "cover",
+      "cover",
+      "cover"
+    ],
+    [
+      "cover",
+      "cover",
+      "cover",
+      "cover",
+      "cover",
+      "cover"
+    ],
+    [
+      "cover",
+      "cover",
+      "cover",
+      "cover",
+      "cover",
+      "cover"
+    ],
+    [
+      "cover",
+      "item_5:half",
+      "cap_3:half",
+      "item_7:half",
+      "item_7:half",
+      "cover"
+    ],
+    [
+      "coin_4:half",
+      "item_6",
+      "",
+      "item_8",
+      "",
+      "item_5:half"
+    ],
+    [
+      "cap_2",
+      "item_5:half",
+      "item_2",
+      "",
+      "",
+      ""
+    ],
+    [
+      "item_3",
+      "item_2",
+      "",
+      "coin_2",
+      "",
+      ""
+    ],
+    [
+      "cap_1",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "images": {
+    "frame": {
+      "file": "assets/package-reference/autumn-replica/frame.png",
+      "bundle": "mergemini_scene_29",
+      "path_id": -6445270310066212473,
+      "name": "ui_mergemini_kuang",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\ui_mergemini_kuang__-6445270310066212473.png",
+      "png_size": [
+        761,
+        1018
+      ],
+      "sha256": "6201022eddd1d78b80e3b876f072fe59d79ae36f3721a413ed3e55e63bb479f3",
+      "kind": "unaltered exported Sprite"
+    },
+    "window": {
+      "file": "assets/package-reference/autumn-replica/window.png",
+      "bundle": "mergemini_scene_29",
+      "path_id": 6753057443491015021,
+      "name": "ui_mergemini_bg_1",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\ui_mergemini_bg_1__6753057443491015021.png",
+      "png_size": [
+        985,
+        628
+      ],
+      "sha256": "70cb16b3a384a8e697ac5317ddf617667dedfecd5b6dc2df27194c6132bf74aa",
+      "kind": "unaltered exported Sprite"
+    },
+    "table": {
+      "file": "assets/package-reference/autumn-replica/table.png",
+      "bundle": "mergemini_scene_29",
+      "path_id": -1878061217531169902,
+      "name": "ui_mergemini_bg_5",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\ui_mergemini_bg_5__-1878061217531169902.png",
+      "png_size": [
+        1024,
+        270
+      ],
+      "sha256": "768258eb05c9cbc67d619fa2f6b24be44b92edc7418cb1ed48de3bac99c0e08b",
+      "kind": "unaltered exported Sprite"
+    },
+    "banner": {
+      "file": "assets/package-reference/autumn-replica/banner.png",
+      "bundle": "mergemini_scene_29",
+      "path_id": 6212919585441586120,
+      "name": "ui_mergemini_bg_2",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\ui_mergemini_bg_2__6212919585441586120.png",
+      "png_size": [
+        806,
+        239
+      ],
+      "sha256": "91152f771311e98fb3a08b9fcb40da19395b1290c786785722dd4f995ee6285e",
+      "kind": "unaltered exported Sprite"
+    },
+    "jug": {
+      "file": "assets/package-reference/autumn-replica/jug.png",
+      "bundle": "mergemini_scene_29",
+      "path_id": 1969247578284742985,
+      "name": "ui_mergemini_bg_3",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\ui_mergemini_bg_3__1969247578284742985.png",
+      "png_size": [
+        215,
+        209
+      ],
+      "sha256": "8fa6195250f73e2712d6d1548412083cfa332b4164dd2abe6f792d4dfd024d6b",
+      "kind": "unaltered exported Sprite"
+    },
+    "sauce": {
+      "file": "assets/package-reference/autumn-replica/sauce.png",
+      "bundle": "mergemini_scene_29",
+      "path_id": 6082733021454106852,
+      "name": "ui_mergemini_bg_4",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\ui_mergemini_bg_4__6082733021454106852.png",
+      "png_size": [
+        163,
+        103
+      ],
+      "sha256": "7596428d805755c9b884ca2da1e2025ea38bba1d4aabb657961c70e530d3d997",
+      "kind": "unaltered exported Sprite"
+    },
+    "close": {
+      "file": "assets/package-reference/autumn-replica/close.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -550802830002470462,
+      "name": "btn_close",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\btn_close__-550802830002470462.png",
+      "png_size": [
+        204,
+        208
+      ],
+      "sha256": "4ed6c4aa7b5c52cb569db60caa64b17ce709a6e02e37cd7fc5e84b748be9bea5",
+      "kind": "unaltered exported Sprite"
+    },
+    "bp": {
+      "file": "assets/package-reference/autumn-replica/bp.png",
+      "bundle": "merge_common_ui_v1",
+      "path_id": 5158393702461966471,
+      "name": "ui_mergepass_rukou_pink",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\merge_common_ui_v1\\ui_mergepass_rukou_pink__5158393702461966471.png",
+      "png_size": [
+        149,
+        143
+      ],
+      "sha256": "016c27b43ad1d4d709e900a752500cd0b92af0b2f321da4ded5b660436c44da3",
+      "kind": "unaltered exported Sprite"
+    },
+    "button_gold": {
+      "file": "assets/package-reference/autumn-replica/button_gold.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -6325153308138958253,
+      "name": "btn_goldbase",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\btn_goldbase__-6325153308138958253.png",
+      "png_size": [
+        240,
+        255
+      ],
+      "sha256": "327434bbfe7b8be7af3d34b8703cea7f75fc0d3676cc202f91140b739e847664",
+      "kind": "unaltered exported Sprite"
+    },
+    "button_green": {
+      "file": "assets/package-reference/autumn-replica/button_green.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": 1654327420004697362,
+      "name": "btn_green",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\btn_green__1654327420004697362.png",
+      "png_size": [
+        182,
+        198
+      ],
+      "sha256": "9b152fec82a6e50ab5834147b2855c2fcad2028bbbbd47bdcebe5cd3ce305cd7",
+      "kind": "unaltered exported Sprite"
+    },
+    "bubble": {
+      "file": "assets/package-reference/autumn-replica/bubble.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": 6904203331674374101,
+      "name": "ui_mergemini_bubbles",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\ui_mergemini_bubbles__6904203331674374101.png",
+      "png_size": [
+        237,
+        231
+      ],
+      "sha256": "71c822dace14ffad2cf33e15fe06cc62a0d2846bc06745795b3306c0e2f2e251",
+      "kind": "unaltered exported Sprite"
+    },
+    "leaf": {
+      "file": "assets/package-reference/autumn-replica/leaf.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 7324549128586016132,
+      "name": "mergemini_item_1_1",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_1__7324549128586016132.png",
+      "png_size": [
+        229,
+        220
+      ],
+      "sha256": "3919b5fcb851320fcd71ed96f35b17c42d2f722062cc1cac2ce1951a81d0e98f",
+      "kind": "unaltered exported Sprite"
+    },
+    "cover": {
+      "file": "assets/package-reference/autumn-replica/cover.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 4347711934237386144,
+      "name": "mergemini_item_7_1",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_7_1__4347711934237386144.png",
+      "png_size": [
+        152,
+        150
+      ],
+      "sha256": "79b08a1280025cd515a60e82716431700c18f0a4166f360c9df85d4c319d6f5e",
+      "kind": "unaltered exported Sprite"
+    },
+    "half": {
+      "file": "assets/package-reference/autumn-replica/half.png",
+      "bundle": "mergemini_item_29",
+      "path_id": -570037154973989690,
+      "name": "mergemini_item_8_1",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_8_1__-570037154973989690.png",
+      "png_size": [
+        152,
+        67
+      ],
+      "sha256": "ae7be93b2d8841c65cfcef08e63e9a23e603f492d6203c1fc26a8f0bc3408ea0",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_1": {
+      "file": "assets/package-reference/autumn-replica/item_1.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 7324549128586016132,
+      "name": "mergemini_item_1_1",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_1__7324549128586016132.png",
+      "png_size": [
+        229,
+        220
+      ],
+      "sha256": "3919b5fcb851320fcd71ed96f35b17c42d2f722062cc1cac2ce1951a81d0e98f",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_2": {
+      "file": "assets/package-reference/autumn-replica/item_2.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 2976279064515766648,
+      "name": "mergemini_item_1_2",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_2__2976279064515766648.png",
+      "png_size": [
+        286,
+        278
+      ],
+      "sha256": "75439382ff55a3a00e84dae21b920506e9c7beddca52140962e23c0649a8d996",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_3": {
+      "file": "assets/package-reference/autumn-replica/item_3.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 7928703392879027073,
+      "name": "mergemini_item_1_3",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_3__7928703392879027073.png",
+      "png_size": [
+        312,
+        291
+      ],
+      "sha256": "296648f0cc8870a1282c22bfa03c30b5c16de4b951a7d7b52f82e83657d6e7fa",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_4": {
+      "file": "assets/package-reference/autumn-replica/item_4.png",
+      "bundle": "mergemini_item_29",
+      "path_id": -874541102212921229,
+      "name": "mergemini_item_1_4",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_4__-874541102212921229.png",
+      "png_size": [
+        300,
+        324
+      ],
+      "sha256": "4f0e0f7c6f3df3daac8f632eca39a1b8cfdb4ca7c8ba8037ab0ff49b55d4c740",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_5": {
+      "file": "assets/package-reference/autumn-replica/item_5.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 689925012962055490,
+      "name": "mergemini_item_1_5",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_5__689925012962055490.png",
+      "png_size": [
+        315,
+        339
+      ],
+      "sha256": "602f0a6b17eec8a8687ba4eac16993b5cd0271bbffcb2e81c28b837856af3c03",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_6": {
+      "file": "assets/package-reference/autumn-replica/item_6.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 6430122273121271418,
+      "name": "mergemini_item_1_6",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_6__6430122273121271418.png",
+      "png_size": [
+        341,
+        357
+      ],
+      "sha256": "79e2bd5ee6597f3334856b0bf359e48444c3ae6942eeb99158491d655b347df8",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_7": {
+      "file": "assets/package-reference/autumn-replica/item_7.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 3121436328847596877,
+      "name": "mergemini_item_1_7",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_7__3121436328847596877.png",
+      "png_size": [
+        349,
+        333
+      ],
+      "sha256": "b3847cd0dbaeb792e9bced9aac9b4bc2ae492ec53f2923ebd65079c315d902b9",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_8": {
+      "file": "assets/package-reference/autumn-replica/item_8.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 8208792706508293317,
+      "name": "mergemini_item_1_8",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_8__8208792706508293317.png",
+      "png_size": [
+        352,
+        348
+      ],
+      "sha256": "2e541cdf704303107098bce5cebd4db1c3340e4ae2a5542a158889278a1f25eb",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_9": {
+      "file": "assets/package-reference/autumn-replica/item_9.png",
+      "bundle": "mergemini_item_29",
+      "path_id": -8658846204797901459,
+      "name": "mergemini_item_1_9",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_9__-8658846204797901459.png",
+      "png_size": [
+        398,
+        375
+      ],
+      "sha256": "1963a3690d27a015688799ba0e66e072090fd9e3290a9744e4fe4ea4f069a6ba",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_10": {
+      "file": "assets/package-reference/autumn-replica/item_10.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 7863202212213332092,
+      "name": "mergemini_item_1_10",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_10__7863202212213332092.png",
+      "png_size": [
+        432,
+        418
+      ],
+      "sha256": "e23cb03a9e7c52659ad8759f1ea02aaeb0a98f306101724209199b1604c458ea",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_11": {
+      "file": "assets/package-reference/autumn-replica/item_11.png",
+      "bundle": "mergemini_item_29",
+      "path_id": -9041919484931847878,
+      "name": "mergemini_item_1_11",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_11__-9041919484931847878.png",
+      "png_size": [
+        438,
+        446
+      ],
+      "sha256": "f629fa2cc0582a3686582205f51c629b09d55c7f7591428466296a7eb302bcda",
+      "kind": "unaltered exported Sprite"
+    },
+    "item_12": {
+      "file": "assets/package-reference/autumn-replica/item_12.png",
+      "bundle": "mergemini_item_29",
+      "path_id": -7897391368735886166,
+      "name": "mergemini_item_1_12",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_12__-7897391368735886166.png",
+      "png_size": [
+        426,
+        446
+      ],
+      "sha256": "a70015af843f3d493df884b994e6aad8995caf06d6bf57e5f460b462a0fdf85f",
+      "kind": "unaltered exported Sprite"
+    },
+    "gray_9": {
+      "file": "assets/package-reference/autumn-replica/gray_9.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 5752549215564606849,
+      "name": "mergemini_item_1_9_gray",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_9_gray__5752549215564606849.png",
+      "png_size": [
+        64,
+        60
+      ],
+      "sha256": "148d00d71127a00be783fd2ff9a51f565729cedb26ccfbecf11ae54a0f2399f7",
+      "kind": "unaltered exported Sprite"
+    },
+    "gray_10": {
+      "file": "assets/package-reference/autumn-replica/gray_10.png",
+      "bundle": "mergemini_item_29",
+      "path_id": 137956726959886607,
+      "name": "mergemini_item_1_10_gray",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_10_gray__137956726959886607.png",
+      "png_size": [
+        64,
+        61
+      ],
+      "sha256": "c812b33a22f3f3bc7c748d0f1690865ce529cd9a83d14b2eed77b7cc61d5e4a8",
+      "kind": "unaltered exported Sprite"
+    },
+    "gray_11": {
+      "file": "assets/package-reference/autumn-replica/gray_11.png",
+      "bundle": "mergemini_item_29",
+      "path_id": -4775177904494942725,
+      "name": "mergemini_item_1_11_gray",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_item_29\\mergemini_item_1_11_gray__-4775177904494942725.png",
+      "png_size": [
+        60,
+        64
+      ],
+      "sha256": "15af6ada86064a9cb1a67ed40966a0bce189efa069e9c60c372fc21bd0f2e689",
+      "kind": "unaltered exported Sprite"
+    },
+    "cap_1": {
+      "file": "assets/package-reference/autumn-replica/cap_1.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -3547154456718105265,
+      "name": "mergemini_item_cap_1",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\mergemini_item_cap_1__-3547154456718105265.png",
+      "png_size": [
+        117,
+        112
+      ],
+      "sha256": "aa71a4835555524e8fc25d1eb6ec98ec5278b9ef58ac37ff0271cb51d851f2a2",
+      "kind": "unaltered exported Sprite"
+    },
+    "cap_2": {
+      "file": "assets/package-reference/autumn-replica/cap_2.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -8945405795350268853,
+      "name": "mergemini_item_cap_2",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\mergemini_item_cap_2__-8945405795350268853.png",
+      "png_size": [
+        122,
+        122
+      ],
+      "sha256": "aabdf55e68367252952e859aa82c96aa733f574ca28277d089875c03335ce298",
+      "kind": "unaltered exported Sprite"
+    },
+    "cap_3": {
+      "file": "assets/package-reference/autumn-replica/cap_3.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -5877431751335558401,
+      "name": "mergemini_item_cap_3",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\mergemini_item_cap_3__-5877431751335558401.png",
+      "png_size": [
+        125,
+        134
+      ],
+      "sha256": "100837130125083a397018689dd03d8aaed66baa10508265b7d1908b0e3defcb",
+      "kind": "unaltered exported Sprite"
+    },
+    "coin_2": {
+      "file": "assets/package-reference/autumn-replica/coin_2.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -6529386094016230250,
+      "name": "mergemini_item_coin_2",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\mergemini_item_coin_2__-6529386094016230250.png",
+      "png_size": [
+        132,
+        125
+      ],
+      "sha256": "62f3092ba767781b022210dcab58fede931249f0a39977e64a1b1515fc32336c",
+      "kind": "unaltered exported Sprite"
+    },
+    "coin_4": {
+      "file": "assets/package-reference/autumn-replica/coin_4.png",
+      "bundle": "ui_mergemini_v1",
+      "path_id": -1470723948027783869,
+      "name": "mergemini_item_coin_4",
+      "source_png": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\ui_mergemini_v1\\mergemini_item_coin_4__-1470723948027783869.png",
+      "png_size": [
+        134,
+        145
+      ],
+      "sha256": "76e54614b732af4bb8e6397d788aa5975d4250d33526c114b710b7669e7a9b36",
+      "kind": "unaltered exported Sprite"
+    },
+    "turkey": {
+      "file": "assets/package-reference/autumn-replica/turkey.png",
+      "bundle": "mergemini_scene_29",
+      "texture_path_id": -6991856895581718530,
+      "atlas_region": "3",
+      "atlas_bounds_xywh": [
+        5,
+        6,
+        396,
+        305
+      ],
+      "source_texture": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\mini29__-6991856895581718530.png",
+      "png_size": [
+        396,
+        305
+      ],
+      "sha256": "d13f731426dedb60ed149e86bf5d49113a55778f907540afbd67fac955a80117",
+      "kind": "exact rectangular crop from Spine atlas region; no resampling"
+    },
+    "candle": {
+      "file": "assets/package-reference/autumn-replica/candle.png",
+      "bundle": "mergemini_scene_29",
+      "texture_path_id": -6991856895581718530,
+      "atlas_region": "4",
+      "atlas_bounds_xywh": [
+        622,
+        104,
+        120,
+        207
+      ],
+      "source_texture": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\mini29__-6991856895581718530.png",
+      "png_size": [
+        120,
+        207
+      ],
+      "sha256": "79e1ecca39b03faf0283e5e2bda08028f75d4b1b79edd0e4061f70ab6b8731eb",
+      "kind": "exact rectangular crop from Spine atlas region; no resampling"
+    },
+    "flower_left": {
+      "file": "assets/package-reference/autumn-replica/flower_left.png",
+      "bundle": "mergemini_scene_29",
+      "texture_path_id": -6991856895581718530,
+      "atlas_region": "7_1",
+      "atlas_bounds_xywh": [
+        747,
+        115,
+        175,
+        196
+      ],
+      "source_texture": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\mini29__-6991856895581718530.png",
+      "png_size": [
+        175,
+        196
+      ],
+      "sha256": "ab7cc4f1fd21f7907cdd86f547aa686139e804ada23b6b11714b689abd620d8c",
+      "kind": "exact rectangular crop from Spine atlas region; no resampling"
+    },
+    "flower_right": {
+      "file": "assets/package-reference/autumn-replica/flower_right.png",
+      "bundle": "mergemini_scene_29",
+      "texture_path_id": -6991856895581718530,
+      "atlas_region": "8_1",
+      "atlas_bounds_xywh": [
+        927,
+        126,
+        153,
+        185
+      ],
+      "source_texture": "06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\02-Art\\merge-joy\\mergemini_scene_29\\mini29__-6991856895581718530.png",
+      "png_size": [
+        153,
+        185
+      ],
+      "sha256": "f99ef36984f7a9a1d3c1caa450810bf78e54e324a10f2256b4fdc7dc0d424c2d",
+      "kind": "exact rectangular crop from Spine atlas region; no resampling"
+    }
+  }
+}

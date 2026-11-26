@@ -1,0 +1,332 @@
+[
+  {
+    "bundle": "merge_common_ui_v1",
+    "text_assets": [],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "ui_mergepass_v1",
+    "text_assets": [
+      {
+        "name": "mergepass_npc.atlas",
+        "path_id": -7850278287138565434,
+        "sha256": "3674477158c54721f0dbae9dc45c44ffed1a6192b4def44f43dae85a65f59a4e",
+        "bytes": 299
+      },
+      {
+        "name": "mergepass_npc.skel",
+        "path_id": 8316083207414977109,
+        "sha256": "4cb514fc2cd59c073069c26ac860cfe04ace9f188a6ccff1b5ef43bf45c30d4d",
+        "bytes": 29436
+      }
+    ],
+    "audio": [],
+    "animations": [
+      {
+        "name": "disappear",
+        "path_id": -8145712595443781928
+      },
+      {
+        "name": "common_breathe",
+        "path_id": -4101258273531031226
+      },
+      {
+        "name": "common_shine",
+        "path_id": -2882251237867825752
+      },
+      {
+        "name": "common_normal",
+        "path_id": -2509088990907607370
+      },
+      {
+        "name": "normal_btn",
+        "path_id": -960034642400834090
+      },
+      {
+        "name": "normal_vip",
+        "path_id": 5249345897672833414
+      }
+    ]
+  },
+  {
+    "bundle": "mergemini_board_28",
+    "text_assets": [],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "mergemini_board_29",
+    "text_assets": [],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "mergemini_entrance_28",
+    "text_assets": [],
+    "audio": [],
+    "animations": [
+      {
+        "name": "mergemini",
+        "path_id": -9003332863500828181
+      }
+    ]
+  },
+  {
+    "bundle": "mergemini_entrance_29",
+    "text_assets": [],
+    "audio": [],
+    "animations": [
+      {
+        "name": "mergemini",
+        "path_id": -9003332863500828181
+      }
+    ]
+  },
+  {
+    "bundle": "mergemini_item_1_v1",
+    "text_assets": [],
+    "audio": [],
+    "animations": [
+      {
+        "name": "EleItem_light",
+        "path_id": -5861989267478398366
+      },
+      {
+        "name": "EleItem_merge",
+        "path_id": -2710122781631467418
+      },
+      {
+        "name": "EleItem_idle",
+        "path_id": -2525526806179750862
+      },
+      {
+        "name": "EleItem_jump",
+        "path_id": 2978706029662498428
+      },
+      {
+        "name": "EleItem_fly",
+        "path_id": 5789592580730180477
+      },
+      {
+        "name": "EleItem_touch",
+        "path_id": 6614677122448593485
+      },
+      {
+        "name": "EleItem_disappear",
+        "path_id": 7196863837203546040
+      }
+    ]
+  },
+  {
+    "bundle": "mergemini_item_28",
+    "text_assets": [],
+    "audio": [],
+    "animations": [
+      {
+        "name": "EleItem_light",
+        "path_id": -5861989267478398366
+      },
+      {
+        "name": "EleItem_merge",
+        "path_id": -2710122781631467418
+      },
+      {
+        "name": "EleItem_idle",
+        "path_id": -2525526806179750862
+      },
+      {
+        "name": "EleItem_jump",
+        "path_id": 2978706029662498428
+      },
+      {
+        "name": "EleItem_fly",
+        "path_id": 5789592580730180477
+      },
+      {
+        "name": "EleItem_touch",
+        "path_id": 6614677122448593485
+      },
+      {
+        "name": "EleItem_disappear",
+        "path_id": 7196863837203546040
+      }
+    ]
+  },
+  {
+    "bundle": "mergemini_item_29",
+    "text_assets": [],
+    "audio": [],
+    "animations": [
+      {
+        "name": "EleItem_light",
+        "path_id": -5861989267478398366
+      },
+      {
+        "name": "EleItem_merge",
+        "path_id": -2710122781631467418
+      },
+      {
+        "name": "EleItem_idle",
+        "path_id": -2525526806179750862
+      },
+      {
+        "name": "EleItem_jump",
+        "path_id": 2978706029662498428
+      },
+      {
+        "name": "EleItem_fly",
+        "path_id": 5789592580730180477
+      },
+      {
+        "name": "EleItem_touch",
+        "path_id": 6614677122448593485
+      },
+      {
+        "name": "EleItem_disappear",
+        "path_id": 7196863837203546040
+      }
+    ]
+  },
+  {
+    "bundle": "mergemini_scene_28",
+    "text_assets": [
+      {
+        "name": "28.skel",
+        "path_id": -5714372314837733227,
+        "sha256": "34c6c762f18df45515c341b52f141959af2fa52cdfe0a1fe93e794666cae2747",
+        "bytes": 34194
+      },
+      {
+        "name": "28.atlas",
+        "path_id": 6099079200049291832,
+        "sha256": "2e482fbc3275137b59dd993d6a0eec74f04d4baad44cdf1942b1c7e9af697896",
+        "bytes": 746
+      }
+    ],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "mergemini_scene_29",
+    "text_assets": [
+      {
+        "name": "mini29.skel",
+        "path_id": 479780261467060220,
+        "sha256": "5b6395eba18f42af6aa424de369f82c1a8856a4deb384d6362ec02724851d8d5",
+        "bytes": 25764
+      },
+      {
+        "name": "mini29.atlas",
+        "path_id": 7507236270064560276,
+        "sha256": "68e8a7752687a542525e8cd917fd5ce008d41003f52256062c354bd610f32ce0",
+        "bytes": 756
+      }
+    ],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "mergemini_ui_28",
+    "text_assets": [],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "mergemini_ui_29",
+    "text_assets": [],
+    "audio": [],
+    "animations": []
+  },
+  {
+    "bundle": "merge_common_items_v1",
+    "text_assets": [],
+    "audio": [],
+    "animations": [
+      {
+        "name": "EleItem_light",
+        "path_id": -5861989267478398366
+      },
+      {
+        "name": "EleItem_merge",
+        "path_id": -2710122781631467418
+      },
+      {
+        "name": "EleItem_idle",
+        "path_id": -2525526806179750862
+      },
+      {
+        "name": "EleItem_jump",
+        "path_id": 2978706029662498428
+      },
+      {
+        "name": "EleItem_fly",
+        "path_id": 5789592580730180477
+      },
+      {
+        "name": "EleItem_touch",
+        "path_id": 6614677122448593485
+      },
+      {
+        "name": "EleItem_disappear",
+        "path_id": 7196863837203546040
+      }
+    ]
+  },
+  {
+    "bundle": "ui_mergemini_v1",
+    "text_assets": [],
+    "audio": [
+      {
+        "name": "merge_collect_task",
+        "path_id": -9152305982859641740
+      },
+      {
+        "name": "merge_pick_up",
+        "path_id": -5736751313791419658
+      },
+      {
+        "name": "merge_ele_merge",
+        "path_id": -2548995039857062205
+      },
+      {
+        "name": "merge_heal_fly",
+        "path_id": 5730717835338814068
+      }
+    ],
+    "animations": [
+      {
+        "name": "EleItem_light",
+        "path_id": -5861989267478398366
+      },
+      {
+        "name": "Guide_4",
+        "path_id": -4506320279909344828
+      },
+      {
+        "name": "EleItem_merge",
+        "path_id": -2710122781631467418
+      },
+      {
+        "name": "EleItem_idle",
+        "path_id": -2525526806179750862
+      },
+      {
+        "name": "EleItem_jump",
+        "path_id": 2978706029662498428
+      },
+      {
+        "name": "EleItem_fly",
+        "path_id": 5789592580730180477
+      },
+      {
+        "name": "EleItem_touch",
+        "path_id": 6614677122448593485
+      },
+      {
+        "name": "EleItem_disappear",
+        "path_id": 7196863837203546040
+      }
+    ]
+  }
+]

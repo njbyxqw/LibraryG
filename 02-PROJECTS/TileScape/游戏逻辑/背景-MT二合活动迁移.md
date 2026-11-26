@@ -1,7 +1,7 @@
 ---
 title: MT 二合活动迁移背景
 date: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 type: background
 status: current
 lifecycle: current
@@ -14,7 +14,9 @@ source: "MT dev 静态源码与本地导出配置；本次对话整理；2026-11
 
 # MT 二合活动迁移背景
 
-> **主要维护入口：LG。** 本文承接本侧的规则、流程、逻辑与产品取舍；具体迁移及验证由程序执行。更新先写本主档，再同步到 [项目 Docs 完整备份](../../../../TileScape_fresh/Docs/ActivityMigration/MergeTwo/迁移背景.md)，同步日期为 2026-11-23；Docs 副本不独立演进。
+> **主要维护入口：LG。** 本文保存MT原始规则与流程，具体迁移及验证由程序执行。项目中的`Docs/ActivityMigration/MergeTwo/迁移背景.md`是2026-11-23本地备份，截至2026-11-24尚未提交，本轮Joy需求无需补交。后续仅在用户明确要求时同步，项目副本不独立维护。
+
+> 11月24日仅整理维护边界与执行入口，未重做源代码调研。正文的V5.2决定、源版本及数值保留其历史口径；当前迁移进度与文档用途见[[02-PROJECTS/TileScape/参考/Docs文档索引#二合迁移文档用途与维护边界（2026-11-24）|项目文档索引]]，Joy功能范围见[[02-PROJECTS/TileScape/游戏逻辑/需求-MergeJoy参考下的二合功能修改|需求主档]]。
 
 > 核对日期：2026-11-23。本文保存源端规则、业务流程、数据归属及定位依据，供产品讨论和程序迁移使用。具体实现、导表、资源处理与运行验收由程序执行，顺序与交付以现有迁移计划为准。
 
@@ -24,13 +26,13 @@ source: "MT dev 静态源码与本地导出配置；本次对话整理；2026-11
 
 | 要了解的问题 | 本文入口 | 后续执行入口 |
 | --- | --- | --- |
-| MT 原本有哪些功能 | [功能模块](#功能模块) | [活动迁移计划](../../../../TileScape_fresh/Assets/Module/Activity/MergeTwo/MergeTwo活动迁移.md) |
+| MT 原本有哪些功能 | [功能模块](#功能模块) | [当前活动迁移方案](../../../../TileScape_fresh/Docs/ActivityMigration/MergeTwo/活动迁移方案.md) |
 | 进入、推进、退出和到期如何衔接 | [活动流程](#活动流程)、[到期与结算](#到期与结算) | 活动计划 A1、A2 |
 | 六阶段、倍率、体力和商业化数值 | [规则与数值](#规则与数值) | 活动配置及 Item、Purchase 接入 |
-| 状态由谁保存，恢复时依赖什么 | [数据与状态归属](#数据与状态归属) | [玩法迁移计划](../../../../TileScape_fresh/Assets/Game/MergeTwo/MergeTwo玩法迁移.md) G2、活动 A1 |
-| 哪些源端功能在目标排除 | [迁移范围与既有决定](#迁移范围与既有决定) | [迁移总控](../../../../TileScape_fresh/Assets/Game/MergeTwo/二合迁移总控.md) |
-| 引导与弹窗为什么不能各自独立接入 | [界面与引导](#界面与引导) | [引导迁移计划](../../../../TileScape_fresh/Assets/Game/MergeTwo/MergeTwo玩法引导迁移.md) |
-| 后续从哪里重新查代码 | [源码定位索引](#源码定位索引) | [公共契约与最终验收](../../../../TileScape_fresh/Assets/Game/MergeTwo/MergeTwo公共契约迁移.md) |
+| 状态由谁保存，恢复时依赖什么 | [数据与状态归属](#数据与状态归属) | [当前玩法迁移方案](../../../../TileScape_fresh/Docs/ActivityMigration/MergeTwo/玩法迁移方案.md)、活动方案的存档与生命周期章节 |
+| 哪些源端功能在目标排除 | [迁移范围与既有决定](#迁移范围与既有决定) | [当前迁移总方案](../../../../TileScape_fresh/Docs/ActivityMigration/MergeTwo/二合迁移总方案.md) |
+| 引导与弹窗为什么不能各自独立接入 | [界面与引导](#界面与引导) | [当前引导迁移方案](../../../../TileScape_fresh/Docs/ActivityMigration/MergeTwo/引导迁移方案.md) |
+| 后续从哪里重新查代码 | [源码定位索引](#源码定位索引) | [当前公共接口方案](../../../../TileScape_fresh/Docs/ActivityMigration/MergeTwo/公共接口迁移方案.md) |
 
 本文是背景快照，不承载实施进度，不把代码存在、旧测试记录或迁移计划中的预期结果视为本轮验收通过。
 

@@ -1,0 +1,1105 @@
+{
+  "sample": "Piggy Kingdom Android2.7.3/203",
+  "analyzed_on": "2026-11-26",
+  "source_sha256": {
+    "mergeminiconfig": "2161948c8fff3c55752d72b7f73917b8be77126fc80e54ee99c742eb83a689c4",
+    "mergeminiconfig_1": "09506ff4504f2a8b0aa96853b824fe15959d09a26891568a76ce6d82b589fef5",
+    "mergepassconfig": "95a9d092a33e3cfc9b03d3979e5a9c7f4e645ef90be754378978ce9b7028a659",
+    "mergepassconfig_1": "cc93cac6cd2b4684ba98e9ab3f11ec4a9a45f972e9b0897479ffef7ff84112cd",
+    "remoteconfigaprelation": "e35d67e40da90971feb48905f8483096a63d4e61ac7bc4101a40cae7b49c4d9c"
+  },
+  "board_diff": [
+    {
+      "path": "/board/6/column1/0",
+      "base": 10109,
+      "variant": 10107
+    }
+  ],
+  "boards": [
+    {
+      "main_item_count": 39,
+      "counts": {
+        "10101": 5,
+        "10102": 4,
+        "10103": 4,
+        "10105": 12,
+        "10107": 12,
+        "10109": 2
+      },
+      "lv1_equivalent": 1501
+    },
+    {
+      "main_item_count": 39,
+      "counts": {
+        "10101": 5,
+        "10102": 4,
+        "10103": 4,
+        "10105": 12,
+        "10107": 13,
+        "10109": 1
+      },
+      "lv1_equivalent": 1309
+    }
+  ],
+  "pass": [
+    {
+      "config": "mergepassconfig",
+      "tasks": [
+        {
+          "id": 16,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10102,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 2,
+              "rn": 500,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "coins"
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10103,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 8,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "dice"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10104,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 2,
+              "rn": 300,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "coins"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10105,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 18,
+              "rn": 4,
+              "rnType": 0,
+              "rReplace": 99999,
+              "name": "sticker"
+            },
+            {
+              "rt": 10,
+              "rn": 0.5,
+              "rnType": 1,
+              "rReplace": 0,
+              "name": "rocketbefore"
+            },
+            {
+              "rt": 9,
+              "rn": 0.5,
+              "rnType": 1,
+              "rReplace": 0,
+              "name": "bomb"
+            },
+            {
+              "rt": 3,
+              "rn": 0.5,
+              "rnType": 1,
+              "rReplace": 0,
+              "name": "colorbomb"
+            }
+          ],
+          "paidBoxType": 23
+        },
+        {
+          "id": 20,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10106,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 4,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "freeBoxType": 24,
+          "paidReward": [
+            {
+              "rt": 5,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "hammer"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10107,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 4,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "freeBoxType": 24,
+          "paidReward": [
+            {
+              "rt": 7,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "rocket"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10108,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 6,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "freeBoxType": 24,
+          "paidReward": [
+            {
+              "rt": 2,
+              "rn": 1200,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "coins"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10109,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 8,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "freeBoxType": 24,
+          "paidReward": [
+            {
+              "rt": 18,
+              "rn": 6,
+              "rnType": 0,
+              "rReplace": 99999,
+              "name": "sticker"
+            },
+            {
+              "rt": 1,
+              "rn": 1,
+              "rnType": 1,
+              "rReplace": 0,
+              "name": "lives"
+            },
+            {
+              "rt": 3,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "colorbomb"
+            },
+            {
+              "rt": 9,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "bomb"
+            },
+            {
+              "rt": 10,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "rocketbefore"
+            }
+          ],
+          "paidBoxType": 24
+        },
+        {
+          "id": 24,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10110,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 10,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "freeBoxType": 24,
+          "paidReward": [
+            {
+              "rt": 6,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "fist"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10111,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 12,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "freeBoxType": 24,
+          "paidReward": [
+            {
+              "rt": 2,
+              "rn": 1000,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "coins"
+            },
+            {
+              "rt": 5,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "hammer"
+            },
+            {
+              "rt": 6,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "fist"
+            },
+            {
+              "rt": 7,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "rocket"
+            },
+            {
+              "rt": 8,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "dice"
+            }
+          ],
+          "paidBoxType": 25
+        }
+      ],
+      "shop": [
+        {
+          "activityType": 37,
+          "shopId": 93
+        }
+      ],
+      "free_joy_tokens": 50,
+      "paid_joy_tokens": 0,
+      "paid_totals_by_type_unit": [
+        {
+          "rt": 1,
+          "rnType": 1,
+          "sum": 1
+        },
+        {
+          "rt": 2,
+          "rnType": 0,
+          "sum": 3000
+        },
+        {
+          "rt": 3,
+          "rnType": 0,
+          "sum": 1
+        },
+        {
+          "rt": 3,
+          "rnType": 1,
+          "sum": 0.5
+        },
+        {
+          "rt": 5,
+          "rnType": 0,
+          "sum": 3
+        },
+        {
+          "rt": 6,
+          "rnType": 0,
+          "sum": 3
+        },
+        {
+          "rt": 7,
+          "rnType": 0,
+          "sum": 3
+        },
+        {
+          "rt": 8,
+          "rnType": 0,
+          "sum": 3
+        },
+        {
+          "rt": 9,
+          "rnType": 0,
+          "sum": 1
+        },
+        {
+          "rt": 9,
+          "rnType": 1,
+          "sum": 0.5
+        },
+        {
+          "rt": 10,
+          "rnType": 0,
+          "sum": 1
+        },
+        {
+          "rt": 10,
+          "rnType": 1,
+          "sum": 0.5
+        },
+        {
+          "rt": 18,
+          "rnType": 0,
+          "sum": 10
+        }
+      ]
+    },
+    {
+      "config": "mergepassconfig_1",
+      "tasks": [
+        {
+          "id": 16,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10102,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10103,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 1,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 3,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10104,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 5,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10105,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 2,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 10,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10106,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 4,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 15,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10107,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 4,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 20,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10108,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 6,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 25,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10109,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 8,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 30,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10110,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 10,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 40,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "activityType": 37,
+          "taskType": 2,
+          "desc": "mergepass_mini_task_desc",
+          "requireItem": 10111,
+          "requireNum": 1,
+          "freeReward": [
+            {
+              "rt": 42,
+              "rn": 12,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ],
+          "paidReward": [
+            {
+              "rt": 42,
+              "rn": 50,
+              "rnType": 0,
+              "rReplace": 0,
+              "name": "mergemini"
+            }
+          ]
+        }
+      ],
+      "shop": [
+        {
+          "activityType": 37,
+          "shopId": 93
+        }
+      ],
+      "free_joy_tokens": 50,
+      "paid_joy_tokens": 200,
+      "paid_totals_by_type_unit": [
+        {
+          "rt": 42,
+          "rnType": 0,
+          "sum": 200
+        }
+      ]
+    }
+  ],
+  "joy_pass_diff": [
+    {
+      "path": "/0/paidReward/0/name",
+      "base": "coins",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/0/paidReward/0/rn",
+      "base": 500,
+      "variant": 2
+    },
+    {
+      "path": "/0/paidReward/0/rt",
+      "base": 2,
+      "variant": 42
+    },
+    {
+      "path": "/1/paidReward/0/name",
+      "base": "dice",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/1/paidReward/0/rn",
+      "base": 2,
+      "variant": 3
+    },
+    {
+      "path": "/1/paidReward/0/rt",
+      "base": 8,
+      "variant": 42
+    },
+    {
+      "path": "/2/paidReward/0/name",
+      "base": "coins",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/2/paidReward/0/rn",
+      "base": 300,
+      "variant": 5
+    },
+    {
+      "path": "/2/paidReward/0/rt",
+      "base": 2,
+      "variant": 42
+    },
+    {
+      "path": "/3/paidBoxType",
+      "base": 23,
+      "variant": null
+    },
+    {
+      "path": "/3/paidReward/length",
+      "base": 4,
+      "variant": 1
+    },
+    {
+      "path": "/3/paidReward/0/name",
+      "base": "sticker",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/3/paidReward/0/rReplace",
+      "base": 99999,
+      "variant": 0
+    },
+    {
+      "path": "/3/paidReward/0/rn",
+      "base": 4,
+      "variant": 10
+    },
+    {
+      "path": "/3/paidReward/0/rt",
+      "base": 18,
+      "variant": 42
+    },
+    {
+      "path": "/4/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/4/paidReward/0/name",
+      "base": "hammer",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/4/paidReward/0/rn",
+      "base": 2,
+      "variant": 15
+    },
+    {
+      "path": "/4/paidReward/0/rt",
+      "base": 5,
+      "variant": 42
+    },
+    {
+      "path": "/5/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/5/paidReward/0/name",
+      "base": "rocket",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/5/paidReward/0/rn",
+      "base": 2,
+      "variant": 20
+    },
+    {
+      "path": "/5/paidReward/0/rt",
+      "base": 7,
+      "variant": 42
+    },
+    {
+      "path": "/6/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/6/paidReward/0/name",
+      "base": "coins",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/6/paidReward/0/rn",
+      "base": 1200,
+      "variant": 25
+    },
+    {
+      "path": "/6/paidReward/0/rt",
+      "base": 2,
+      "variant": 42
+    },
+    {
+      "path": "/7/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/7/paidBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/7/paidReward/length",
+      "base": 5,
+      "variant": 1
+    },
+    {
+      "path": "/7/paidReward/0/name",
+      "base": "sticker",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/7/paidReward/0/rReplace",
+      "base": 99999,
+      "variant": 0
+    },
+    {
+      "path": "/7/paidReward/0/rn",
+      "base": 6,
+      "variant": 30
+    },
+    {
+      "path": "/7/paidReward/0/rt",
+      "base": 18,
+      "variant": 42
+    },
+    {
+      "path": "/8/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/8/paidReward/0/name",
+      "base": "fist",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/8/paidReward/0/rn",
+      "base": 2,
+      "variant": 40
+    },
+    {
+      "path": "/8/paidReward/0/rt",
+      "base": 6,
+      "variant": 42
+    },
+    {
+      "path": "/9/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/9/paidBoxType",
+      "base": 25,
+      "variant": null
+    },
+    {
+      "path": "/9/paidReward/length",
+      "base": 5,
+      "variant": 1
+    },
+    {
+      "path": "/9/paidReward/0/name",
+      "base": "coins",
+      "variant": "mergemini"
+    },
+    {
+      "path": "/9/paidReward/0/rn",
+      "base": 1000,
+      "variant": 50
+    },
+    {
+      "path": "/9/paidReward/0/rt",
+      "base": 2,
+      "variant": 42
+    }
+  ],
+  "ap_relations": [
+    {
+      "config": "MergeMiniConfig",
+      "ap_key": [
+        "mergemini_config"
+      ]
+    },
+    {
+      "config": "MergePassConfig",
+      "ap_key": [
+        "mergepass_config"
+      ]
+    }
+  ],
+  "cached_20261124_comparison": {
+    "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-mergejoy-resources\\MergeMiniConfig.json",
+    "sha256": "3c37261cb9e0280b5cf6d938606dba227b236993620b0773456c44b7b39feccf",
+    "equal_sections": {
+      "abilities": true,
+      "items": true,
+      "board": true,
+      "rewards": true,
+      "misc": true
+    },
+    "scene_new_count": 30
+  },
+  "ideal_mass_bounds": [
+    {
+      "config": "MergeMiniConfig",
+      "preseed_lv1_equivalent": 1501,
+      "target_lv12_equivalent": 2048,
+      "gap_before_opening_and_bp": 547,
+      "gap_after_opening2_and_free_bp50": 495,
+      "gap_after_opening2_and_resource_bp_free50_paid200": 295
+    },
+    {
+      "config": "MergeMiniConfig_1",
+      "preseed_lv1_equivalent": 1309,
+      "target_lv12_equivalent": 2048,
+      "gap_before_opening_and_bp": 739,
+      "gap_after_opening2_and_free_bp50": 687,
+      "gap_after_opening2_and_resource_bp_free50_paid200": 487
+    }
+  ],
+  "bounds_assumptions": [
+    "One Lv12 requires2048 Lv1 equivalents under two-for-one same-level merging.",
+    "All preseed main-chain pieces, including covered ones, are fully recovered and used; only their main-chain mass counted.",
+    "Includes fixed opening2 and separately specified full eligible BP token totals; excludes real-play blockage, inaccessible pieces, reward retention, inventory losses, timing and extra events.",
+    "These are optimistic conservation bounds, not simulated completion cost, actual level count or live user difficulty."
+  ],
+  "segmentation_unknowns": [
+    "No evidence assigning variants to spend/age/level cohorts.",
+    "Main-game and BP AP keys are independent; do not assume variant suffixes must pair or all Cartesian pairs are deployed.",
+    "No live Joy-open sample or2026-11-26 server response; package variants and2026-11-24 cache only."
+  ],
+  "box_type_differences": [
+    {
+      "path": "/3/paidBoxType",
+      "base": 23,
+      "variant": null
+    },
+    {
+      "path": "/4/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/5/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/6/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/7/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/7/paidBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/8/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/9/freeBoxType",
+      "base": 24,
+      "variant": null
+    },
+    {
+      "path": "/9/paidBoxType",
+      "base": 25,
+      "variant": null
+    }
+  ],
+  "rea_identity_evidence": {
+    "artifact_summary": "ev_89c9e63095011f289299af10e3bcb9640a65642c3ce4b655513d57bb93b3b990",
+    "selected_member_summary": "ev_c601e9e221aef6261f435e6bc7aef4cdbf7c13c5b0a607f6e981b2dbfbf08ed9",
+    "assembly_sha256": "11366a21e7c2fbdcdf5e301a9ff153dfd125b90736b64724371f2d6ed5f06954",
+    "mvid": "66876522-48c6-4f06-8c1e-6e86515a2add",
+    "boundary": "REA verified assembly identity and selected declaring types; consumer checks reuse previously normalized same-assembly CIL, not a live execution trace."
+  },
+  "consumer_file_hashes": [
+    {
+      "path": "04-ReverseEngineering\\merge-fantasy\\hot-il-normalized\\MergeDataModelBase_1.il.txt",
+      "sha256": "be94536f0ba4d4c014c6fb100c5fe5dd5f89982ca928e4d454b869da0c8b6544"
+    },
+    {
+      "path": "04-ReverseEngineering\\merge-fantasy\\hot-il-normalized\\MergePassDM.il.txt",
+      "sha256": "e784638b0bf9c8471e6045d507539ed5a13a0305a7feb3575dc1c7daaaf6a9f4"
+    },
+    {
+      "path": "04-ReverseEngineering\\merge-fantasy\\hot-il-normalized\\MergePassView.il.txt",
+      "sha256": "40b92a6ba5f19d25ee9cff6274eaef12923ca0369b68937a99a79bea63da84db"
+    },
+    {
+      "path": "04-ReverseEngineering\\merge-fantasy\\native-FileHashMgr-GetAPConfig-0x34374E0.txt",
+      "sha256": "ad0d052fb4f9afe32eab7a3da7da54a17caff53d035d810543c02a059d70c20c"
+    },
+    {
+      "path": "04-ReverseEngineering\\merge-fantasy\\native-FileHashMgr-GetAutoPConfig-0x343763C.txt",
+      "sha256": "ac5c908f6946599bae6a4c97a8026736725a34bb671b85559a7740f83ba3a9b6"
+    }
+  ]
+}

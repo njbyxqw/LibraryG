@@ -1,0 +1,16 @@
+{
+  "product": "Tile Yard",
+  "version": "1.15.0 (9872)",
+  "date": "2026-11-24",
+  "source": "User XAPK",
+  "xapk_sha256": "158aef95a7dadb405f836b053cc0481fe9007760d454e34ef0663c55e9def4e2",
+  "evidence": "static serialized values + native consumers; no runtime observation",
+  "counts": {
+    "core_components": 38,
+    "particle_systems": 93,
+    "trail_renderers": 11,
+    "audio_sources": 41,
+    "gift_animation_clips": 13
+  },
+  "curve_evaluation": "Hermite with slopes; weighted Bezier if weightedMode requests it. Main MonoBehaviour curves are unweighted. Plots are formula evaluation, not game footage."
+}

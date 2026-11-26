@@ -125,6 +125,7 @@
 </table></div>
 <p><code>propeller</code>是本批代码/商品中的抓钩标识；不要仅按英文单词翻译成另一种道具。<code>space</code>指资产508局内加格，不等同于失败页的移牌复活。普通金币购买与现金礼包在同一需求场景中衔接，但不是相同交易。[E1,E4]</p>
 <p><strong>入口链路。</strong> <code>PropView.OnClick</code>先经过道具解锁、免费引导、库存和限时道具等检查；普通库存不足且无可用限时道具时进入<code>ClickForBuy</code>。该方法再次检查道具剩余数，剩余数&gt;0直接返回，否则构造<code>BuyPropPopupParam</code>，以<code>coin_buy_prop</code>加道具入口序号构成chance。<code>BuyPropPopup.OnInit</code>调用<code>TriggerShowIAPBanner</code>，由<code>IAPHelper.ShowIAPBanner</code>收集可购买商品、过滤并创建页内Banner。[E4]</p>
+<p><strong>2026-11-24触发复核：金币不足不是TF这条Prop Favor入口的必要条件。</strong>已解锁、无普通库存且无可用限时道具，没有被免费教学等前置分支截走时，点击道具打开购买页即请求Banner，无需再点击金币购买。金币足够也不因此排除礼包；金币不足后转商城是后续另一条分支，应与TS拟采用的“点击直购且金币不足→商店首位Banner”分开描述。依据：重读PropView.ClickForBuy、BuyPropPopup.OnInit及Banner金币过滤指令。[E1,E4]</p>
 <div class="table-wrap" tabindex="0"><table>
 <thead>
 <tr>
@@ -599,6 +600,7 @@
 </tbody>
 </table></div>
 <p><code>PigatProductController.LimitConfigAvailable</code>检查配置存在、开关、主线等级、生涯限购、时间资格及期内次数；次数字段&lt;1时不执行对应上限拦截。<code>IAPBannerManager.RegenerateMetas</code>先检查组可买，再取具体商品；<code>GetBannerMetasByChance</code>还有<code>PurchaseProduct.CanBuy</code>和规则过滤。因此“配置开着”不能替代完整曝光条件。</p>
+<p><strong>2026-11-24限购复核：五种常规定向礼包均未设置生涯或期间购买次数上限。</strong>shop原表40–44行均为LtCount=-1、DurationCount=-1；LimitConfigAvailable仅在字段≥1时进入限购比较。未见本入口专属每日/单局上限或购后冷却，不外推为绕过全局IAP资格或远端限制。买后有库存时先走道具使用；待库存再次耗尽、无可用限时道具且其他资格仍通过，才再次由底部入口进入购买页。这是库存驱动的再次出现条件，不是购买次数封顶。五个低价mini组为LtCount=1、Switch=0，不能与常规组混淆。[E1,E4]</p>
 <div class="table-wrap" tabindex="0"><table>
 <thead>
 <tr>
@@ -613,7 +615,7 @@
 <td>Weekend Deal</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
-<td>商店组Switch=0，不能仅凭Banner行说它会展示</td>
+<td>weekend_deal组Switch=1；special_deal才是0。仍需满足展示资格（2026-11-24据原始配置纠正）</td>
 </tr>
 <tr>
 <td>对应Prop Favor</td>

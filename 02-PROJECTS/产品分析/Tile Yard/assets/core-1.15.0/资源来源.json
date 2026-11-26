@@ -1,0 +1,77 @@
+{
+  "source": "data.unity3d",
+  "version": "1.15.0",
+  "status": "exported-assets-not-runtime",
+  "items": [
+    {
+      "file": "sharedassets2.assets",
+      "id": 241,
+      "name": "tile_ice_256",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\sharedassets2.assets_241_tile_ice_256.png",
+      "label": "冰层"
+    },
+    {
+      "file": "resources.assets",
+      "id": 4258,
+      "name": "whole_rock",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_4258_whole_rock.png",
+      "label": "可入槽石头"
+    },
+    {
+      "file": "resources.assets",
+      "id": 3963,
+      "name": "whole_rock_locked",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_3963_whole_rock_locked.png",
+      "label": "固定石头"
+    },
+    {
+      "file": "resources.assets",
+      "id": 4056,
+      "name": "uni_icon_undo",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_4056_uni_icon_undo.png",
+      "label": "撤回"
+    },
+    {
+      "file": "resources.assets",
+      "id": 4206,
+      "name": "uni_icon_return_3",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_4206_uni_icon_return_3.png",
+      "label": "退回三张"
+    },
+    {
+      "file": "resources.assets",
+      "id": 4216,
+      "name": "chain",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_4216_chain.png",
+      "label": "链条 / Rope"
+    },
+    {
+      "file": "resources.assets",
+      "id": 4123,
+      "name": "pickax",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_4123_pickax.png",
+      "label": "镐子"
+    },
+    {
+      "file": "resources.assets",
+      "id": 3915,
+      "name": "flipper",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_3915_flipper.png",
+      "label": "问号牌 / Flipper"
+    },
+    {
+      "file": "resources.assets",
+      "id": 3864,
+      "name": "whole_cookie",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_3864_whole_cookie.png",
+      "label": "饼干 / ShelfBox"
+    },
+    {
+      "file": "resources.assets",
+      "id": 4001,
+      "name": "uni_icon_hint",
+      "path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\TileYard\\1.15.0\\02-Art\\core-mechanics\\resources.assets_4001_uni_icon_hint.png",
+      "label": "魔杖"
+    }
+  ]
+}

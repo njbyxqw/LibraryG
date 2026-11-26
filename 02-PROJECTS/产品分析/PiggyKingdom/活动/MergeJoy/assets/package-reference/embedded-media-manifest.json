@@ -1,0 +1,731 @@
+{
+  "kind": "single-file HTML; images/CSS/JS embedded",
+  "unique_images": 51,
+  "image_uses": 85,
+  "original_image_bytes": 9769112,
+  "compressed_image_bytes": 2230018,
+  "html_bytes": 3082763,
+  "html_sha256": "58f90d5a5c5012cd90c480d79b097b28ccd0f69bcfa275b63b49255a3280df4d",
+  "compression": "WebP quality88, method6, original dimensions retained; original PNG kept if smaller. Image data deduplicated.",
+  "external_optional_attachments": [
+    "original PNG ZIP",
+    "research Markdown",
+    "provenance JSON"
+  ],
+  "images": [
+    {
+      "key": "image0",
+      "source": "assets/package-reference/autumn-replica/frame.png",
+      "original_bytes": 278791,
+      "embedded_image_bytes": 18072,
+      "mime": "image/webp",
+      "pixel_size": [
+        761,
+        1018
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "6201022eddd1d78b80e3b876f072fe59d79ae36f3721a413ed3e55e63bb479f3",
+      "embedded_sha256": "6188aa776b51730854d937fe44aadb218a54b619ea744ec7903689c646c4968e"
+    },
+    {
+      "key": "image1",
+      "source": "assets/package-reference/autumn-replica/window.png",
+      "original_bytes": 439699,
+      "embedded_image_bytes": 47562,
+      "mime": "image/webp",
+      "pixel_size": [
+        985,
+        628
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "70cb16b3a384a8e697ac5317ddf617667dedfecd5b6dc2df27194c6132bf74aa",
+      "embedded_sha256": "06977f371c6de5e06bf67001f2769c4d9a960a6610fe29ff497871c094af3bc5"
+    },
+    {
+      "key": "image2",
+      "source": "assets/package-reference/autumn-replica/table.png",
+      "original_bytes": 206455,
+      "embedded_image_bytes": 17916,
+      "mime": "image/webp",
+      "pixel_size": [
+        1024,
+        270
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "768258eb05c9cbc67d619fa2f6b24be44b92edc7418cb1ed48de3bac99c0e08b",
+      "embedded_sha256": "69e17594630c4f54598a8b640edd6d3acf397aa68af9323e2b91f9cd2a0378dd"
+    },
+    {
+      "key": "image3",
+      "source": "assets/package-reference/autumn-replica/turkey.png",
+      "original_bytes": 147798,
+      "embedded_image_bytes": 22000,
+      "mime": "image/webp",
+      "pixel_size": [
+        396,
+        305
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "d13f731426dedb60ed149e86bf5d49113a55778f907540afbd67fac955a80117",
+      "embedded_sha256": "a70e6bc81671f183638e65c7c81a641ff9642ce384d48820a15b0739c2e38e77"
+    },
+    {
+      "key": "image4",
+      "source": "assets/package-reference/autumn-replica/candle.png",
+      "original_bytes": 20076,
+      "embedded_image_bytes": 4824,
+      "mime": "image/webp",
+      "pixel_size": [
+        120,
+        207
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "79e1ecca39b03faf0283e5e2bda08028f75d4b1b79edd0e4061f70ab6b8731eb",
+      "embedded_sha256": "3e93abb1467d01be40043b90f10ad28a970c0ce0406ffd95bcfbb719cb2ff3dc"
+    },
+    {
+      "key": "image5",
+      "source": "assets/package-reference/autumn-replica/jug.png",
+      "original_bytes": 56541,
+      "embedded_image_bytes": 11606,
+      "mime": "image/webp",
+      "pixel_size": [
+        215,
+        209
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "8fa6195250f73e2712d6d1548412083cfa332b4164dd2abe6f792d4dfd024d6b",
+      "embedded_sha256": "983f2db2f0b76d033f00b6fa78072c13d1079da8310caea1cc037ef484cd1ab5"
+    },
+    {
+      "key": "image6",
+      "source": "assets/package-reference/autumn-replica/sauce.png",
+      "original_bytes": 21092,
+      "embedded_image_bytes": 4492,
+      "mime": "image/webp",
+      "pixel_size": [
+        163,
+        103
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "7596428d805755c9b884ca2da1e2025ea38bba1d4aabb657961c70e530d3d997",
+      "embedded_sha256": "c1ba6ec36b44240781bd5be829dfb8f4fa0cbd66cc18e246efd511bb317aeb34"
+    },
+    {
+      "key": "image7",
+      "source": "assets/package-reference/autumn-replica/flower_left.png",
+      "original_bytes": 44230,
+      "embedded_image_bytes": 8234,
+      "mime": "image/webp",
+      "pixel_size": [
+        175,
+        196
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "ab7cc4f1fd21f7907cdd86f547aa686139e804ada23b6b11714b689abd620d8c",
+      "embedded_sha256": "0040d75b9678548a5605cfadb3cbc740f0615544dabf1506bb7502d8787c8b68"
+    },
+    {
+      "key": "image8",
+      "source": "assets/package-reference/autumn-replica/flower_right.png",
+      "original_bytes": 37317,
+      "embedded_image_bytes": 7320,
+      "mime": "image/webp",
+      "pixel_size": [
+        153,
+        185
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "f99ef36984f7a9a1d3c1caa450810bf78e54e324a10f2256b4fdc7dc0d424c2d",
+      "embedded_sha256": "25fd2de79030e4ffdf4c638c6aac243f8992109e2a73f91179d7f4b2fce4687e"
+    },
+    {
+      "key": "image9",
+      "source": "assets/package-reference/autumn-replica/banner.png",
+      "original_bytes": 114407,
+      "embedded_image_bytes": 19722,
+      "mime": "image/webp",
+      "pixel_size": [
+        806,
+        239
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "91152f771311e98fb3a08b9fcb40da19395b1290c786785722dd4f995ee6285e",
+      "embedded_sha256": "28ed2cccb896a2c24b4a9c55d69a2e95a78af42c78f4d72b970ce4c21524fd18"
+    },
+    {
+      "key": "image10",
+      "source": "assets/package-reference/autumn-replica/close.png",
+      "original_bytes": 39930,
+      "embedded_image_bytes": 10538,
+      "mime": "image/webp",
+      "pixel_size": [
+        204,
+        208
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "4ed6c4aa7b5c52cb569db60caa64b17ce709a6e02e37cd7fc5e84b748be9bea5",
+      "embedded_sha256": "9832b77fe74daada16ace1b781b2c3ac61c258d2fc13743aa01d473d37946441"
+    },
+    {
+      "key": "image11",
+      "source": "assets/package-reference/autumn-replica/bp.png",
+      "original_bytes": 23557,
+      "embedded_image_bytes": 5212,
+      "mime": "image/webp",
+      "pixel_size": [
+        149,
+        143
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "016c27b43ad1d4d709e900a752500cd0b92af0b2f321da4ded5b660436c44da3",
+      "embedded_sha256": "de2560ade2012c1023be4964262696ececc8974cacfb7b9252a147c6ffb02738"
+    },
+    {
+      "key": "image12",
+      "source": "assets/package-reference/autumn-replica/item_6.png",
+      "original_bytes": 136524,
+      "embedded_image_bytes": 26066,
+      "mime": "image/webp",
+      "pixel_size": [
+        341,
+        357
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "79e2bd5ee6597f3334856b0bf359e48444c3ae6942eeb99158491d655b347df8",
+      "embedded_sha256": "65702c7faff471dced9402fc65c62ef6dd1bfee80c38f0063b1ffa3a539be879"
+    },
+    {
+      "key": "image13",
+      "source": "assets/package-reference/autumn-replica/item_7.png",
+      "original_bytes": 140708,
+      "embedded_image_bytes": 22164,
+      "mime": "image/webp",
+      "pixel_size": [
+        349,
+        333
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "b3847cd0dbaeb792e9bced9aac9b4bc2ae492ec53f2923ebd65079c315d902b9",
+      "embedded_sha256": "6b9f3ab412dafa66a28a0854948c891ef168d527912e96696722996c43cf0321"
+    },
+    {
+      "key": "image14",
+      "source": "assets/package-reference/autumn-replica/item_8.png",
+      "original_bytes": 145705,
+      "embedded_image_bytes": 25468,
+      "mime": "image/webp",
+      "pixel_size": [
+        352,
+        348
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "2e541cdf704303107098bce5cebd4db1c3340e4ae2a5542a158889278a1f25eb",
+      "embedded_sha256": "92ec82e80191787f0bf7571019944dfdd938ff28f173755d0a13e67ee2a5f5ee"
+    },
+    {
+      "key": "image15",
+      "source": "assets/package-reference/autumn-replica/gray_9.png",
+      "original_bytes": 2664,
+      "embedded_image_bytes": 1058,
+      "mime": "image/webp",
+      "pixel_size": [
+        64,
+        60
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "148d00d71127a00be783fd2ff9a51f565729cedb26ccfbecf11ae54a0f2399f7",
+      "embedded_sha256": "e7566259704574be11ba54d40c0e97c7003778401cb2abb20496ebdc73efbd92"
+    },
+    {
+      "key": "image16",
+      "source": "assets/package-reference/autumn-replica/gray_10.png",
+      "original_bytes": 2781,
+      "embedded_image_bytes": 1102,
+      "mime": "image/webp",
+      "pixel_size": [
+        64,
+        61
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "c812b33a22f3f3bc7c748d0f1690865ce529cd9a83d14b2eed77b7cc61d5e4a8",
+      "embedded_sha256": "7490b73da7631a1e499873fccc51704c5714fdaedb4089e302cd78b1a7321c67"
+    },
+    {
+      "key": "image17",
+      "source": "assets/package-reference/autumn-replica/gray_11.png",
+      "original_bytes": 2758,
+      "embedded_image_bytes": 1220,
+      "mime": "image/webp",
+      "pixel_size": [
+        60,
+        64
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "15af6ada86064a9cb1a67ed40966a0bce189efa069e9c60c372fc21bd0f2e689",
+      "embedded_sha256": "cacf8b3d8035747e9124b957c2549d37dec65dabe63f52e7c220872592b2ebec"
+    },
+    {
+      "key": "image18",
+      "source": "assets/package-reference/autumn-replica/cover.png",
+      "original_bytes": 42134,
+      "embedded_image_bytes": 8780,
+      "mime": "image/webp",
+      "pixel_size": [
+        152,
+        150
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "79b08a1280025cd515a60e82716431700c18f0a4166f360c9df85d4c319d6f5e",
+      "embedded_sha256": "c6a4ca6c1e9bcb137360d202ec6cefe2ec2640e29347b0e886bb20dccda1d8b0"
+    },
+    {
+      "key": "image19",
+      "source": "assets/package-reference/autumn-replica/item_5.png",
+      "original_bytes": 125805,
+      "embedded_image_bytes": 20664,
+      "mime": "image/webp",
+      "pixel_size": [
+        315,
+        339
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "602f0a6b17eec8a8687ba4eac16993b5cd0271bbffcb2e81c28b837856af3c03",
+      "embedded_sha256": "04b1980f2d3c5a7b7a6dcfab2fadabb47f34c81b3f5c59ec5aa091939fb7dc31"
+    },
+    {
+      "key": "image20",
+      "source": "assets/package-reference/autumn-replica/half.png",
+      "original_bytes": 18071,
+      "embedded_image_bytes": 4892,
+      "mime": "image/webp",
+      "pixel_size": [
+        152,
+        67
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "ae7be93b2d8841c65cfcef08e63e9a23e603f492d6203c1fc26a8f0bc3408ea0",
+      "embedded_sha256": "c1a118af633d0f039983c136503f17930379df6091dea2375e992452a7219356"
+    },
+    {
+      "key": "image21",
+      "source": "assets/package-reference/autumn-replica/cap_3.png",
+      "original_bytes": 20155,
+      "embedded_image_bytes": 6730,
+      "mime": "image/webp",
+      "pixel_size": [
+        125,
+        134
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "100837130125083a397018689dd03d8aaed66baa10508265b7d1908b0e3defcb",
+      "embedded_sha256": "d9964775f436de0454d566f2ba6300b795432c4daee87450cbf211821ad5aefe"
+    },
+    {
+      "key": "image22",
+      "source": "assets/package-reference/autumn-replica/coin_4.png",
+      "original_bytes": 27571,
+      "embedded_image_bytes": 7730,
+      "mime": "image/webp",
+      "pixel_size": [
+        134,
+        145
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "76e54614b732af4bb8e6397d788aa5975d4250d33526c114b710b7669e7a9b36",
+      "embedded_sha256": "da06294f6915d4a1528b08356988912220b86eaed69e4dc39b4681ffe59868df"
+    },
+    {
+      "key": "image23",
+      "source": "assets/package-reference/autumn-replica/cap_2.png",
+      "original_bytes": 16855,
+      "embedded_image_bytes": 5948,
+      "mime": "image/webp",
+      "pixel_size": [
+        122,
+        122
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "aabdf55e68367252952e859aa82c96aa733f574ca28277d089875c03335ce298",
+      "embedded_sha256": "5503a61a45d69c248dbbed124acaa7d81feae2ddcdf670e9e0e05f77bd27655f"
+    },
+    {
+      "key": "image24",
+      "source": "assets/package-reference/autumn-replica/item_2.png",
+      "original_bytes": 73807,
+      "embedded_image_bytes": 14576,
+      "mime": "image/webp",
+      "pixel_size": [
+        286,
+        278
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "75439382ff55a3a00e84dae21b920506e9c7beddca52140962e23c0649a8d996",
+      "embedded_sha256": "4d98e3ee86631714871b418e1aaaa3ceb841e6dfea0d7f0471e0331d59175c9e"
+    },
+    {
+      "key": "image25",
+      "source": "assets/package-reference/autumn-replica/item_3.png",
+      "original_bytes": 93520,
+      "embedded_image_bytes": 15418,
+      "mime": "image/webp",
+      "pixel_size": [
+        312,
+        291
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "296648f0cc8870a1282c22bfa03c30b5c16de4b951a7d7b52f82e83657d6e7fa",
+      "embedded_sha256": "01e9c58e392cbaef37b5b549f60ef4746ac8fef774152b8f6e6d9cd202057101"
+    },
+    {
+      "key": "image26",
+      "source": "assets/package-reference/autumn-replica/coin_2.png",
+      "original_bytes": 22776,
+      "embedded_image_bytes": 6428,
+      "mime": "image/webp",
+      "pixel_size": [
+        132,
+        125
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "62f3092ba767781b022210dcab58fede931249f0a39977e64a1b1515fc32336c",
+      "embedded_sha256": "9b94fbe32a17f74dc907c6adb026ddd97f47b12560211178d695207ab4fb63dd"
+    },
+    {
+      "key": "image27",
+      "source": "assets/package-reference/autumn-replica/cap_1.png",
+      "original_bytes": 14672,
+      "embedded_image_bytes": 4856,
+      "mime": "image/webp",
+      "pixel_size": [
+        117,
+        112
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "aa71a4835555524e8fc25d1eb6ec98ec5278b9ef58ac37ff0271cb51d851f2a2",
+      "embedded_sha256": "b4a4f436b4d21b95ed017186483cfdbe1332ea723354cd88d4b0e1282453d106"
+    },
+    {
+      "key": "image28",
+      "source": "assets/package-reference/autumn-replica/button_gold.png",
+      "original_bytes": 19790,
+      "embedded_image_bytes": 8342,
+      "mime": "image/webp",
+      "pixel_size": [
+        240,
+        255
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "327434bbfe7b8be7af3d34b8703cea7f75fc0d3676cc202f91140b739e847664",
+      "embedded_sha256": "f0398d1a2a7d9b2fe660e7d2ac5ec98b5193f40b846a71066da34eb0defc6a92"
+    },
+    {
+      "key": "image29",
+      "source": "assets/package-reference/autumn-replica/button_green.png",
+      "original_bytes": 22182,
+      "embedded_image_bytes": 4184,
+      "mime": "image/webp",
+      "pixel_size": [
+        182,
+        198
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "9b152fec82a6e50ab5834147b2855c2fcad2028bbbbd47bdcebe5cd3ce305cd7",
+      "embedded_sha256": "6139b6905163c5f2dc6215677d7314254050ca356f3c9d0c9ac9dc40c0a8101e"
+    },
+    {
+      "key": "image30",
+      "source": "assets/package-reference/autumn-replica/bubble.png",
+      "original_bytes": 47621,
+      "embedded_image_bytes": 14728,
+      "mime": "image/webp",
+      "pixel_size": [
+        237,
+        231
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "71c822dace14ffad2cf33e15fe06cc62a0d2846bc06745795b3306c0e2f2e251",
+      "embedded_sha256": "a95b34273e0051491c3b0dc39377fdc71011247cf6ef70d32e963ca7046da68f"
+    },
+    {
+      "key": "image31",
+      "source": "assets/package-reference/autumn-replica/leaf.png",
+      "original_bytes": 57258,
+      "embedded_image_bytes": 12326,
+      "mime": "image/webp",
+      "pixel_size": [
+        229,
+        220
+      ],
+      "preserves_transparency": true,
+      "original_sha256": "3919b5fcb851320fcd71ed96f35b17c42d2f722062cc1cac2ce1951a81d0e98f",
+      "embedded_sha256": "a19527ae27375f0948df1e27e91e2337429df67ee12f15526e1d32d8128196ae"
+    },
+    {
+      "key": "image32",
+      "source": "assets/20261123-user-screenshots/S01-main-progress.jpg",
+      "original_bytes": 1431800,
+      "embedded_image_bytes": 296404,
+      "mime": "image/webp",
+      "pixel_size": [
+        1080,
+        2376
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "ed7ff5fd61beceba868cf3822203110c18341ce6085184eec6e9904ba0222ad6",
+      "embedded_sha256": "b6508017ea845017c1db3ba1957d88cd074e5ec0034a6135d29f4bd74ea489db"
+    },
+    {
+      "key": "image33",
+      "source": "assets/package-reference/main-chains-28-29.png",
+      "original_bytes": 739361,
+      "embedded_image_bytes": 160596,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        940
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "d66c33959493aaad21fc12a68412df9a2ac32f7680ae9c45a4136195244f6864",
+      "embedded_sha256": "89ec26289f1ebd3a60063695f97e63dcff66cfa72971df5471f49e23019870c7"
+    },
+    {
+      "key": "image34",
+      "source": "assets/package-reference/reward-chains.png",
+      "original_bytes": 221218,
+      "embedded_image_bytes": 63122,
+      "mime": "image/webp",
+      "pixel_size": [
+        1090,
+        550
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "9423a48b3c448fa25afafc4cd2fb130154b90a77ceab1c4869ee2a412e821660",
+      "embedded_sha256": "029d5d4007f44762cd74a8f91752f20fbbbc3ed346a0a77e3e304064c827c37b"
+    },
+    {
+      "key": "image35",
+      "source": "assets/package-reference/cover-states.png",
+      "original_bytes": 99180,
+      "embedded_image_bytes": 26326,
+      "mime": "image/webp",
+      "pixel_size": [
+        880,
+        355
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "fb034756e10134eb4e115a372058dcd78b3297af332593fd52354514dddfd6ae",
+      "embedded_sha256": "194ca05c40c0a861ea3515e945619586bd802e957189361b8aaff50d3d46fcde"
+    },
+    {
+      "key": "image36",
+      "source": "assets/package-reference/theme-ui-28-29.png",
+      "original_bytes": 241451,
+      "embedded_image_bytes": 54378,
+      "mime": "image/webp",
+      "pixel_size": [
+        670,
+        830
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "8756d272ea789c5297234f482354f06db6c893e1ff3c9aa8014c495e67e8d2c6",
+      "embedded_sha256": "e8a4dad1b0b6ad824ad080831d9550d9528b21863db8e3d9fa11101602ecc305"
+    },
+    {
+      "key": "image37",
+      "source": "assets/package-reference/merge_common_ui_v1-sprites.png",
+      "original_bytes": 191536,
+      "embedded_image_bytes": 57898,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        745
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "efe0c2b768be89bd69f3681327ad061a99609e82698ad0ee037d6a100087c249",
+      "embedded_sha256": "3a114b7f5b728a4681eae25ee1cd3d2386e9432a6e980152145c47127570b8ac"
+    },
+    {
+      "key": "image38",
+      "source": "assets/package-reference/ui_mergepass_v1-sprites.png",
+      "original_bytes": 642957,
+      "embedded_image_bytes": 175104,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        2035
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "e14cdc9d828b2d77ced14ca2c53183b90a993bd62a0f918cadc62433a0c8be0c",
+      "embedded_sha256": "913caf4934817ddf5681602823f0e9d4218b16685db1160aba43ee59ad24d4e5"
+    },
+    {
+      "key": "image39",
+      "source": "assets/package-reference/mergemini_board_28-sprites.png",
+      "original_bytes": 23027,
+      "embedded_image_bytes": 10040,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        315
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "884a75182465afd9795cf73c5b53580716b6c90a5495891adde6234ebff30925",
+      "embedded_sha256": "7a7c3c29da66a44e79de728dcda3cbbdbf79fcc7f39fe8c63046da2c32b54211"
+    },
+    {
+      "key": "image40",
+      "source": "assets/package-reference/mergemini_board_29-sprites.png",
+      "original_bytes": 22706,
+      "embedded_image_bytes": 10188,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        315
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "4fbb980081294f0032da1541fed4d6743b3fe326e92df68dfb184d0b6b801a4e",
+      "embedded_sha256": "341ad8550301c9e49fbe8140146b07aea53a4aaaa07747f47a2f3fa4696d02f0"
+    },
+    {
+      "key": "image41",
+      "source": "assets/package-reference/mergemini_entrance_28-sprites.png",
+      "original_bytes": 186780,
+      "embedded_image_bytes": 46902,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        530
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "4e76536ee971461eb5551a7f263fd8afdde4e671a4ea01616d7123cf26dfad5f",
+      "embedded_sha256": "a490981749b85cc319a1c25f731ffb7f9c330e008944a292fb5e9d267779323f"
+    },
+    {
+      "key": "image42",
+      "source": "assets/package-reference/mergemini_entrance_29-sprites.png",
+      "original_bytes": 185743,
+      "embedded_image_bytes": 42134,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        530
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "dbdd44dc4e00306a79f3ce974254740178503f5822a11fdbd0618c23f35f8643",
+      "embedded_sha256": "2d8051f98cc32eebc1481758f0b89d54e4a6f0d631e5d40c817dcfcb7c00a244"
+    },
+    {
+      "key": "image43",
+      "source": "assets/package-reference/mergemini_item_28-sprites.png",
+      "original_bytes": 866443,
+      "embedded_image_bytes": 248260,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        2035
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "160bcfa9cc2c156c82273d4494ad9054ea262d9b84d90cd6ccc46aa39527fce2",
+      "embedded_sha256": "befa35b1fe7d09b81b64ed7979841b9504d88569983ae4bbbbb5546b05feb658"
+    },
+    {
+      "key": "image44",
+      "source": "assets/package-reference/mergemini_item_29-sprites.png",
+      "original_bytes": 981573,
+      "embedded_image_bytes": 252780,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        2035
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "c80e998ee0803e56472a8426c58104153c15f1e1f4663b2f777acecb82da7c11",
+      "embedded_sha256": "04a49c3bb718e0662c7a54c41316c66861b246bae5a6b212cf98c8fd6568fb44"
+    },
+    {
+      "key": "image45",
+      "source": "assets/package-reference/mergemini_scene_28-sprites.png",
+      "original_bytes": 32100,
+      "embedded_image_bytes": 10424,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        315
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "68e7445547046ce1dc714c2f41349706360879623ae0938936df2e8f33eba4e8",
+      "embedded_sha256": "5929815f82ccca4c5f935ff1f299c67f1d0a92186199467247d9fc848889a6c2"
+    },
+    {
+      "key": "image46",
+      "source": "assets/package-reference/mergemini_scene_29-sprites.png",
+      "original_bytes": 124250,
+      "embedded_image_bytes": 28232,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        315
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "c669af88b3ff28426c894512358eb22fe64f6a7d59f3832d69f31156805c699b",
+      "embedded_sha256": "b7d1b2c81a86f2936f51a3712aaa38797120d925751fdf072fcaec4735632dcf"
+    },
+    {
+      "key": "image47",
+      "source": "assets/package-reference/mergemini_ui_28-sprites.png",
+      "original_bytes": 112287,
+      "embedded_image_bytes": 35346,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        530
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "2bfaa6b6506c4eff3fd50252d7f716420cdbbf884cf0981ffe467e3b09201820",
+      "embedded_sha256": "2b814b538a91880f10acca299415af2f5e266d325437875e7a287ae746352115"
+    },
+    {
+      "key": "image48",
+      "source": "assets/package-reference/mergemini_ui_29-sprites.png",
+      "original_bytes": 113931,
+      "embedded_image_bytes": 34946,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        530
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "7a4f65e851411e38978079660b6343b167dd13fc4ed664087a133482b275af82",
+      "embedded_sha256": "baa081925ecf328e3fdb1d3cfb7905c3a28f89df0bed9ce7be4fed8e3296c39e"
+    },
+    {
+      "key": "image49",
+      "source": "assets/package-reference/merge_common_items_v1-sprites.png",
+      "original_bytes": 361244,
+      "embedded_image_bytes": 98960,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        960
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "3a62db57cdb8e9ecd1edfe6eb2b6f37f48355259f42c2964f9fc79ca6a0749c2",
+      "embedded_sha256": "bd351afcf60c8187a5488f95ed439fbcaa3f169a63a0214afb9641deb7bf5ed5"
+    },
+    {
+      "key": "image50",
+      "source": "assets/package-reference/ui_mergemini_v1-sprites.png",
+      "original_bytes": 728275,
+      "embedded_image_bytes": 187800,
+      "mime": "image/webp",
+      "pixel_size": [
+        1300,
+        1390
+      ],
+      "preserves_transparency": false,
+      "original_sha256": "a49de3b9065358f4950fc41026f32e08887594709c3a51f4396396dfd80e2c09",
+      "embedded_sha256": "0e8d1eacd4847880fc14a0c790d9884c2a0c4129504078ef3d3e5dd1080fffe3"
+    }
+  ]
+}

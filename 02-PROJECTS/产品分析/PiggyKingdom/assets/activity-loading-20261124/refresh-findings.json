@@ -1,0 +1,246 @@
+{
+  "captured_date": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "identity": {
+    "serial": "127.0.0.1:16416",
+    "instance": 1,
+    "package": "com.olleyo.piggy.king.free",
+    "version": "2.7.3/203",
+    "abi": "arm64-v8a",
+    "runtime_pid_80": 9381,
+    "runtime_pid_106": 10948
+  },
+  "live_refresh_80": {
+    "events": {
+      "before": {
+        "time": 1795510888302,
+        "counter": "7",
+        "logged": 0,
+        "open": 0,
+        "net": "0x771e36b97c80",
+        "stash": "0x771e35eb72d0",
+        "data": "0x0",
+        "capacity": 0,
+        "offset": 0,
+        "size": 0,
+        "position": 0
+      },
+      "after": {
+        "time": 1795510915447,
+        "counter": "14",
+        "logged": 1,
+        "open": 1,
+        "net": "0x771e36b97c80",
+        "stash": "0x771e35eb72d0",
+        "data": "0x0",
+        "capacity": 0,
+        "offset": 0,
+        "size": 0,
+        "position": 0
+      },
+      "cleanup": {
+        "restored_log": 0
+      }
+    },
+    "start": "2026-11-24T17:01:28.302000+08:00",
+    "end": "2026-11-24T17:01:55.447000+08:00",
+    "selected_packet": {
+      "file": "refresh80-resume\\buffer-008.bin",
+      "sha256": "b90a410c00df71257ca00e0f8cd6cf08a53a2d6dcee4b98dbcc3d82aaa30161a",
+      "bytes": 5038,
+      "json_complete": true,
+      "response_code": 0,
+      "is_end": false,
+      "mode": 1,
+      "config_key_count": 52,
+      "selected": {
+        "mergemini_on": "false",
+        "mergemini_config": "null",
+        "mergemini_start": "{}",
+        "merge2_on": "true",
+        "merge2_config": "MergeConfig_1",
+        "merge2_start": "{\"level\": 106, \"day\": 1}"
+      }
+    },
+    "terminal_packet": {
+      "file": "refresh80-resume\\buffer-010.bin",
+      "sha256": "906ae5e0b52a5da64b09646e11dbd53da32c63acbcaa091dd1c268f8c34b80ee",
+      "bytes": 272,
+      "json_complete": true,
+      "response_code": 0,
+      "is_end": true,
+      "mode": 1,
+      "config_key_count": 3,
+      "selected": {}
+    },
+    "source": "Read the live M3Network.stash receive buffer in the target process, after TLS; not a file-cache replay. Partial packet capture, not all protocol messages."
+  },
+  "refresh_106": {
+    "events": {
+      "before": {
+        "time": 1795511351613,
+        "counter": "14",
+        "logged": 1,
+        "open": 1,
+        "net": "0x771e3870dc80",
+        "stash": "0x771e37f0ac90",
+        "data": "0x0",
+        "capacity": 0,
+        "offset": 0,
+        "size": 0,
+        "position": 0
+      },
+      "after": {
+        "time": 1795511378750,
+        "counter": "14",
+        "logged": 1,
+        "open": 1,
+        "net": "0x771e3870dc80",
+        "stash": "0x771e37f0ac90",
+        "data": "0x0",
+        "capacity": 0,
+        "offset": 0,
+        "size": 0,
+        "position": 0
+      },
+      "cleanup": {
+        "restored_log": 0
+      }
+    },
+    "boundary": "Runtime success counter reached14 after reconnect. That transition occurred between observers; the106 capture did not retain the AutoP body containing the selected keys. Use the post-refresh cache for values, not as a new direct response."
+  },
+  "counter_boundary": "Callback increments only when its Boolean result is true; batch size50 and response is_end indicate segmented delivery.7increments are not7complete refresh cycles.",
+  "arm64_runtime_methods": [
+    {
+      "name": "ReceiveAutop",
+      "runtime_address": "0x771ef6e7af38",
+      "first_instructions_to_first_ret_or_64byte_cap": [
+        "771ef6e7af38: str x30, [sp, #-0x30]!",
+        "771ef6e7af3c: stp x22, x21, [sp, #0x10]",
+        "771ef6e7af40: stp x20, x19, [sp, #0x20]",
+        "771ef6e7af44: adrp x20, #0x771efbfbc000",
+        "771ef6e7af48: ldrb w8, [x20, #0x365]",
+        "771ef6e7af4c: mov x19, x0",
+        "771ef6e7af50: tbnz w8, #0, #0x771ef6e7af8c",
+        "771ef6e7af54: adrp x0, #0x771efb9c8000",
+        "771ef6e7af58: ldr x0, [x0, #0x598]",
+        "771ef6e7af5c: bl #0x771ef608b60c",
+        "771ef6e7af60: adrp x0, #0x771efba13000",
+        "771ef6e7af64: ldr x0, [x0, #0xb50]",
+        "771ef6e7af68: bl #0x771ef608b60c",
+        "771ef6e7af6c: adrp x0, #0x771efba13000",
+        "771ef6e7af70: ldr x0, [x0, #0xb58]",
+        "771ef6e7af74: bl #0x771ef608b60c"
+      ]
+    },
+    {
+      "name": "<ReceiveAutop>b__7_0",
+      "runtime_address": "0x771ef6e7f458",
+      "first_instructions_to_first_ret_or_64byte_cap": [
+        "771ef6e7f458: tbz w1, #0, #0x771ef6e7f468",
+        "771ef6e7f45c: ldr x8, [x0, #0x18]",
+        "771ef6e7f460: add x8, x8, #1",
+        "771ef6e7f464: str x8, [x0, #0x18]",
+        "771ef6e7f468: ret "
+      ]
+    },
+    {
+      "name": "Code",
+      "runtime_address": "0x771ef6e77e9c",
+      "first_instructions_to_first_ret_or_64byte_cap": [
+        "771ef6e77e9c: mov w0, #0x2710",
+        "771ef6e77ea0: ret "
+      ]
+    },
+    {
+      "name": "NetworkResultJsonData",
+      "runtime_address": "0x771ef6e77eac",
+      "first_instructions_to_first_ret_or_64byte_cap": [
+        "771ef6e77eac: str x30, [sp, #-0x30]!",
+        "771ef6e77eb0: stp x22, x21, [sp, #0x10]",
+        "771ef6e77eb4: stp x20, x19, [sp, #0x20]",
+        "771ef6e77eb8: adrp x22, #0x771efbfbc000",
+        "771ef6e77ebc: adrp x21, #0x771efb9f9000",
+        "771ef6e77ec0: ldrb w8, [x22, #0x355]",
+        "771ef6e77ec4: ldr x21, [x21, #0x3b0]",
+        "771ef6e77ec8: mov x20, x1",
+        "771ef6e77ecc: mov x19, x0",
+        "771ef6e77ed0: tbnz w8, #0, #0x771ef6e77f24",
+        "771ef6e77ed4: adrp x0, #0x771efb9c8000",
+        "771ef6e77ed8: ldr x0, [x0, #0xcc0]",
+        "771ef6e77edc: bl #0x771ef608b60c",
+        "771ef6e77ee0: adrp x0, #0x771efb9f9000",
+        "771ef6e77ee4: ldr x0, [x0, #0x3b0]",
+        "771ef6e77ee8: bl #0x771ef608b60c"
+      ]
+    }
+  ],
+  "post_refresh_106": {
+    "autoP": {
+      "mergemini_config": "null",
+      "mergemini_on": "false",
+      "mergemini_start": "{}",
+      "merge2_config": "MergeConfig_1",
+      "merge2_on": "true",
+      "merge2_start": "{\"level\": 106, \"day\": 1}"
+    },
+    "system_open": [
+      {
+        "system_name": "merge2",
+        "start_time": 1794816000,
+        "end_time": 1796023799,
+        "round": 77,
+        "status": 1
+      }
+    ],
+    "participant": [
+      {
+        "idx": "merge2",
+        "round": 105,
+        "st": 1795420800,
+        "et": 1796023799,
+        "oft": 0
+      },
+      {
+        "idx": "mergemini",
+        "round": 0,
+        "st": 0,
+        "et": 0,
+        "oft": 0
+      }
+    ],
+    "user": {
+      "level": 106,
+      "gold": 3206,
+      "energy": 5,
+      "build": 2,
+      "curActivityDay": 1
+    }
+  },
+  "runtime_validation": "Actual ARM64 callback reads and increments field offset0x18 only when w1 low bit true; Code returns10000. Bytes read through live MethodInfo; no ARM method hooks or injected business-method invocation.",
+  "local_schedule": {
+    "helper": "ActivityHelper.GetSystemOpenItem",
+    "armv7_rva": "0x3146534",
+    "schedule_check_parameter": "checkScheduleConfig=true",
+    "behavior": "Calls ActivityPlanConfigProvider.ToOpenItem first; returns it when non-null; only then consults M3NetGameData.openInfo.",
+    "sample_round": 105,
+    "sample_start": 1795420800,
+    "sample_end": 1796023799,
+    "cached_server_round": 77,
+    "boundary": "Same-build ARMv7 static branch and observed ARM64 sample agree; exact helper invocation was not hooked."
+  },
+  "other_device": "User identifies a normally played physical-device account; version and matched-account control not provided. No cause assigned to emulator detection or an AB group.",
+  "mutations": [
+    "User-authorized UserInfo.level80->106 only; fresh private/external backups and exact field/hash checks; gold3206,energy5,build2 unchanged by patch.",
+    "Controlled shutdown of target-app production sockets and normal background/resume reconnect; one initial attempt affected another app-backend connection and did not trigger the target reconnect.",
+    "A diagnostic log flag was temporarily enabled in the80 attempt, then restored0. Other observers used read-only memory sampling.",
+    "Task-owned Frida17.16.4 helper and tcp27047 forward stopped/removed; game left running."
+  ],
+  "unverified": [
+    "Server cohort/eligibility implementation",
+    "Other-device version and configuration",
+    "Exact local-schedule call trace",
+    "Natural completion of mainline106",
+    "Whether same account/version on physical hardware would receive Joy"
+  ]
+}

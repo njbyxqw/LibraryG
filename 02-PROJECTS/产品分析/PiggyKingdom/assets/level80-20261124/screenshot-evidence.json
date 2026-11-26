@@ -1,0 +1,166 @@
+[
+  {
+    "evidence_id": "ev_fc8f8481f3b95b929c691ff453d39144a35886b8480bf30c4d7f435d9dc918a7",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "36.0.0-13206524"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "127.0.0.1:16416",
+      "output_directory": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\before-screen"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "E:\\MuMuPlayer\\nx_main\\adb.exe",
+        "path_source": "environment",
+        "version": "36.0.0-13206524",
+        "installed_path": "E:\\MuMuPlayer\\nx_main\\adb.exe"
+      },
+      "serial": "127.0.0.1:16416",
+      "local_path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\before-screen\\screen.png",
+      "bytes": 1853580,
+      "sha256": "c71faf8842802e97e2fc66543c4c4f0f170f1c69f5d71c3e4b54c1cab7691726",
+      "width": 1080,
+      "height": 1920
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_0efb2827c2bc168e8fe02de61b613fe4c8a17933d3d3c482bb42344aa5894134",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "36.0.0-13206524"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "127.0.0.1:16416",
+      "output_directory": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\after-first-start"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "E:\\MuMuPlayer\\nx_main\\adb.exe",
+        "path_source": "environment",
+        "version": "36.0.0-13206524",
+        "installed_path": "E:\\MuMuPlayer\\nx_main\\adb.exe"
+      },
+      "serial": "127.0.0.1:16416",
+      "local_path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\after-first-start\\screen.png",
+      "bytes": 2610765,
+      "sha256": "4a7577397841a0ae914273862cb9c6ca4a32126d554508c2661b4e3c92910bfb",
+      "width": 1080,
+      "height": 1920
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_9d671fa17ec763b30ecacaef063e45898f4db37669172bfdbefdda1848197969",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "36.0.0-13206524"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "127.0.0.1:16416",
+      "output_directory": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\after-first-loaded"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "E:\\MuMuPlayer\\nx_main\\adb.exe",
+        "path_source": "environment",
+        "version": "36.0.0-13206524",
+        "installed_path": "E:\\MuMuPlayer\\nx_main\\adb.exe"
+      },
+      "serial": "127.0.0.1:16416",
+      "local_path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\after-first-loaded\\screen.png",
+      "bytes": 824929,
+      "sha256": "34c7f819c50355f440a3efe95b7abfaeada849f1e758dafd21cbb6110c6d5fb8",
+      "width": 1080,
+      "height": 1920
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_257e5eb181c8c5698a7b66feadf1a750a2cd196687ad060dda3133f4fec4d6ad",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "36.0.0-13206524"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "127.0.0.1:16416",
+      "output_directory": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\after-second-start"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "E:\\MuMuPlayer\\nx_main\\adb.exe",
+        "path_source": "environment",
+        "version": "36.0.0-13206524",
+        "installed_path": "E:\\MuMuPlayer\\nx_main\\adb.exe"
+      },
+      "serial": "127.0.0.1:16416",
+      "local_path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level80\\after-second-start\\screen.png",
+      "bytes": 776530,
+      "sha256": "7ab5638aad0e77f035b8c350873b24457fa0a0ef4b9803bace56ecb9d49a572d",
+      "width": 1080,
+      "height": 1920
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+]

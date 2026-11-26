@@ -1,0 +1,430 @@
+{
+  "sampled_at": "2026-11-24 16:26 +08:00",
+  "device": {
+    "abi": "arm64-v8a",
+    "name": "产品分析",
+    "version": "2.7.3/203",
+    "android_user": 0,
+    "serial": "127.0.0.1:16416",
+    "package": "com.olleyo.piggy.king.free",
+    "instance": 1
+  },
+  "phases": [
+    {
+      "hashes": [
+        {
+          "file": "M3.M3AutoPInfo_FIXK.txt",
+          "sha256": "1658fcd05583878f6580f7bcf8cf13f56b0899ee291d8a63ecffd9f2dd3670db"
+        },
+        {
+          "file": "M3.M3SystemOpenInfo_FIXK.txt",
+          "sha256": "30157f4820762c2340334e593dd93d7e1d200c358be448e907e81086eb7528a5"
+        },
+        {
+          "file": "ActivityUserInfo_FIXK.txt",
+          "sha256": "72e7b8aa3052ea9e6cb88be3f5db860fd188fa15231e7dfad8b27490e84f40a7"
+        }
+      ],
+      "system_open": [
+        {
+          "system_name": "merge2",
+          "start_time": 1794816000,
+          "end_time": 1796023799,
+          "round": 77,
+          "status": 1
+        }
+      ],
+      "phase": "prejump",
+      "participant_state": [
+        {
+          "idx": "merge2",
+          "round": -1,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergepass",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergeani",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergemini",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergedig2",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergefeed",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        }
+      ],
+      "autoP": {
+        "mergemini_on": "false",
+        "mergemini_config": "null",
+        "mergemini_start": "{}",
+        "merge2_on": "true",
+        "merge2_config": "MergeConfig_1",
+        "merge2_start": "{\"level\": 106, \"day\": 1}",
+        "eventplan_config": "ActivityPlanConfig",
+        "eventtemplate_config": "ActivityTemplateConfig_1"
+      }
+    },
+    {
+      "hashes": [
+        {
+          "file": "M3.M3AutoPInfo_FIXK.txt",
+          "sha256": "1658fcd05583878f6580f7bcf8cf13f56b0899ee291d8a63ecffd9f2dd3670db"
+        },
+        {
+          "file": "M3.M3SystemOpenInfo_FIXK.txt",
+          "sha256": "413ee8365bb206bf14e3f8903c03e4f808c8369bf4d31c3af1c7ffce029a0700"
+        },
+        {
+          "file": "ActivityUserInfo_FIXK.txt",
+          "sha256": "95583385a9300022eada3ca203969ec2ba925a950219abd6e3fdaadb88d495f2"
+        }
+      ],
+      "system_open": [
+        {
+          "system_name": "merge2",
+          "start_time": 1794816000,
+          "end_time": 1796023799,
+          "round": 77,
+          "status": 1
+        }
+      ],
+      "phase": "current",
+      "participant_state": [
+        {
+          "idx": "merge2",
+          "round": -1,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergepass",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergeani",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergemini",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergedig2",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        },
+        {
+          "idx": "mergefeed",
+          "round": 0,
+          "st": 0,
+          "et": 0,
+          "oft": 0
+        }
+      ],
+      "autoP": {
+        "mergemini_on": "false",
+        "mergemini_config": "null",
+        "mergemini_start": "{}",
+        "merge2_on": "true",
+        "merge2_config": "MergeConfig_1",
+        "merge2_start": "{\"level\": 106, \"day\": 1}",
+        "eventplan_config": "ActivityPlanConfig",
+        "eventtemplate_config": "ActivityTemplateConfig_1"
+      }
+    }
+  ],
+  "autoP_config_text_identical_before_after": true,
+  "manifest": [
+    {
+      "config": "MergeMiniConfig",
+      "ver": "64",
+      "miniAppVer": "",
+      "md5": "bcfbb00839df41a31ee4720ec41c8b96",
+      "date": "",
+      "remote": "1",
+      "ap": "mergemini_config",
+      "onlyInGroupC": "False"
+    }
+  ],
+  "manifest_md5_boundary": "The manifest digest is a 31-character value, not a complete local MD5; not used as a full-file integrity match.",
+  "cached_theme_rows": [
+    {
+      "id": 1028,
+      "scene": 28,
+      "openRounds": [
+        51
+      ]
+    },
+    {
+      "id": 1029,
+      "scene": 29,
+      "openRounds": [
+        52
+      ]
+    },
+    {
+      "id": 1030,
+      "scene": 30,
+      "openRounds": [
+        53
+      ]
+    }
+  ],
+  "packaged_theme_last_ids": [
+    1026,
+    1027,
+    1028
+  ],
+  "cached_config_sha256": "8b24b8226faaf8d4123ac74ebc7f7a50f1f3051f49d1be9d4a0e7dbb903252c6",
+  "static_code": {
+    "binary": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\01-Decoded\\arm\\libil2cpp.so",
+    "sha256": "f2d03e18384b94369cefcc79d78a276d5e1035248308c5cd59158d83a606780d",
+    "methods": [
+      {
+        "type": "BundleDM",
+        "method": "CanLoadBundle",
+        "address": "0x2E205E0",
+        "bytes": "0x8",
+        "output": "BundleDM-CanLoadBundle-0x2E205E0.txt"
+      },
+      {
+        "type": "BundleDM",
+        "method": "HasBundle",
+        "address": "0x2E18BD8",
+        "bytes": "0x178",
+        "output": "BundleDM-HasBundle-0x2E18BD8.txt"
+      },
+      {
+        "type": "BundleDM",
+        "method": "CheckLoadBundle",
+        "address": "0x2E20640",
+        "bytes": "0x184",
+        "output": "BundleDM-CheckLoadBundle-0x2E20640.txt"
+      },
+      {
+        "type": "ActivityDM",
+        "method": "IsApOn",
+        "address": "0x305FA70",
+        "bytes": "0x8",
+        "output": "ActivityDM-IsApOn-0x305FA70.txt"
+      },
+      {
+        "type": "ActivityDM",
+        "method": "GetUnlockLevel",
+        "address": "0x305FA78",
+        "bytes": "0x8",
+        "output": "ActivityDM-GetUnlockLevel-0x305FA78.txt"
+      },
+      {
+        "type": "ActivityDM",
+        "method": "GetUnlockActivityDay",
+        "address": "0x305FA80",
+        "bytes": "0x8",
+        "output": "ActivityDM-GetUnlockActivityDay-0x305FA80.txt"
+      },
+      {
+        "type": "MergeDM",
+        "method": "IsApOn",
+        "address": "0x3412F4C",
+        "bytes": "0x34",
+        "output": "MergeDM-IsApOn-0x3412F4C.txt"
+      },
+      {
+        "type": "MergeDM",
+        "method": "GetUnlockLevel",
+        "address": "0x3412F80",
+        "bytes": "0x50",
+        "output": "MergeDM-GetUnlockLevel-0x3412F80.txt"
+      },
+      {
+        "type": "MergeDM",
+        "method": "GetUnlockActivityDay",
+        "address": "0x3412FD0",
+        "bytes": "0x50",
+        "output": "MergeDM-GetUnlockActivityDay-0x3412FD0.txt"
+      },
+      {
+        "type": "M3NetAutopData",
+        "method": "NetworkResultJsonData",
+        "address": "0x33E9804",
+        "bytes": "0x208",
+        "output": "M3NetAutopData-NetworkResultJsonData-0x33E9804.txt"
+      },
+      {
+        "type": "M3NetSystemOpen",
+        "method": "NetworkResultJsonData",
+        "address": "0x33ECDAC",
+        "bytes": "0x554",
+        "output": "M3NetSystemOpen-NetworkResultJsonData-0x33ECDAC.txt"
+      },
+      {
+        "type": "M3AutopMgr",
+        "method": "SetAutoP",
+        "address": "0x33F69A0",
+        "bytes": "0x80",
+        "output": "M3AutopMgr-SetAutoP-0x33F69A0.txt"
+      },
+      {
+        "type": "M3AutopMgr",
+        "method": "SetAutoP_Step",
+        "address": "0x33E9A0C",
+        "bytes": "0x498",
+        "output": "M3AutopMgr-SetAutoP_Step-0x33E9A0C.txt"
+      },
+      {
+        "type": "M3AutopMgr",
+        "method": "get_AutopJson",
+        "address": "0x33F6A20",
+        "bytes": "0x1DC",
+        "output": "M3AutopMgr-get_AutopJson-0x33F6A20.txt"
+      },
+      {
+        "type": "M3AutopMgr",
+        "method": "ReloadAutopJson",
+        "address": "0x33F6BFC",
+        "bytes": "0xC",
+        "output": "M3AutopMgr-ReloadAutopJson-0x33F6BFC.txt"
+      },
+      {
+        "type": "M3NetLogin",
+        "method": "Send",
+        "address": "0x33F7E60",
+        "bytes": "0x4D4",
+        "output": "M3NetLogin-Send-0x33F7E60.txt"
+      },
+      {
+        "type": "M3NetLogin",
+        "method": "CheckAutoPKey",
+        "address": "0x33F8334",
+        "bytes": "0x8",
+        "output": "M3NetLogin-CheckAutoPKey-0x33F8334.txt"
+      },
+      {
+        "type": "M3NetLogin",
+        "method": "NetworkResultJsonData",
+        "address": "0x33F833C",
+        "bytes": "0x4FC",
+        "output": "M3NetLogin-NetworkResultJsonData-0x33F833C.txt"
+      },
+      {
+        "type": "M3NetUserId",
+        "method": "NetworkResult",
+        "address": "0x34167AC",
+        "bytes": "0x4AC",
+        "output": "M3NetUserId-NetworkResult-0x34167AC.txt"
+      },
+      {
+        "type": "M3NetUserId",
+        "method": "NetworkResultJsonData",
+        "address": "0x3416C58",
+        "bytes": "0x1C",
+        "output": "M3NetUserId-NetworkResultJsonData-0x3416C58.txt"
+      },
+      {
+        "type": "FileHashMgr",
+        "method": "IsUseRemoteConfig",
+        "address": "0x3436708",
+        "bytes": "0x1AC",
+        "output": "FileHashMgr-IsUseRemoteConfig-0x3436708.txt"
+      },
+      {
+        "type": "FileHashMgr",
+        "method": "IsConfigAppVersionUnsupported",
+        "address": "0x3436988",
+        "bytes": "0x110",
+        "output": "FileHashMgr-IsConfigAppVersionUnsupported-0x3436988.txt"
+      },
+      {
+        "type": "FileHashMgr",
+        "method": "GetRemoteFileVersionInfoForAP",
+        "address": "0x3437248",
+        "bytes": "0x298",
+        "output": "FileHashMgr-GetRemoteFileVersionInfoForAP-0x3437248.txt"
+      },
+      {
+        "type": "FileHashMgr",
+        "method": "CompareHashInfo",
+        "address": "0x3437730",
+        "bytes": "0x9F4",
+        "output": "FileHashMgr-CompareHashInfo-0x3437730.txt"
+      },
+      {
+        "type": "FileHashMgr",
+        "method": "CompareConfigVersion",
+        "address": "0x3436C78",
+        "bytes": "0x20C",
+        "output": "FileHashMgr-CompareConfigVersion-0x3436C78.txt"
+      },
+      {
+        "type": "FileHashMgr",
+        "method": "ShouldCheckDownloadConfig",
+        "address": "0x3438638",
+        "bytes": "0x320",
+        "output": "FileHashMgr-ShouldCheckDownloadConfig-0x3438638.txt"
+      },
+      {
+        "type": "<CheckDownloadGameBundles>d__7",
+        "method": "MoveNext",
+        "address": "0x31EA734",
+        "bytes": "0x11BC",
+        "output": "_CheckDownloadGameBundles_d__7-MoveNext-0x31EA734.txt"
+      }
+    ],
+    "boundary": "Original ARMv7 shipped binary, direct branches resolved with existing Cpp2IL index and limited thunk decoding. Not runtime execution; indirect call targets and ARM64 addresses unverified.",
+    "tool": {
+      "capstone": "5.0.7"
+    }
+  },
+  "observations": [
+    "User reports Merge Joy on other device and Merge Wonders after the prior jump; no other-device version/account/response collected.",
+    "Joy switch false before and after jump; Wonders true, start level106/day1.",
+    "Only Wonders round77 in captured merge system-open records; neither gameplay is active in captured participant state.",
+    "New Joy rows1029/1030 exist in cache; package rows end1028; existence does not prove current consumption.",
+    "No app progress, switches, account, clock or network settings mutated during this loading investigation."
+  ],
+  "limitations": [
+    "Before snapshot is from the prior level80 task external-before.tgz at level4; current snapshot was collected live without stopping the app, non-atomic across files.",
+    "No capture linking the current cached AutoP to a specific live response. Unchanged AutoP values cannot prove no request occurred.",
+    "Native static code is original ARMv7; same base APK/resources verified in preceding task, ARM64 addresses and live hot assembly not compared.",
+    "No server experiment/cohort selector visible; cause of inter-device difference remains unresolved.",
+    "ConfigVersionManifest decrypted to CSV; the general JSON helper initially rejected the payload, which was then explicitly parsed as CSV."
+  ]
+}

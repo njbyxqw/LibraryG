@@ -1,0 +1,84 @@
+[
+  {
+    "evidence_id": "ev_ed48c0c27dc2715ec8e40e58794c1f38c3dafcbc0ffeef1f039c9594a3d36b98",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "36.0.0-13206524"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "127.0.0.1:16416",
+      "output_directory": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level106\\after-cup-close"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "E:\\MuMuPlayer\\nx_main\\adb.exe",
+        "path_source": "environment",
+        "version": "36.0.0-13206524",
+        "installed_path": "E:\\MuMuPlayer\\nx_main\\adb.exe"
+      },
+      "serial": "127.0.0.1:16416",
+      "local_path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level106\\after-cup-close\\screen.png",
+      "bytes": 2063627,
+      "sha256": "8218c32eb1b86f3820a5c9995c58fef302c069641aac3613950640eda95be8a0",
+      "width": 1080,
+      "height": 1920
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_e7da6235e539656c06ebdac46d5021103dbe40d8f8a1a7c2e0358fe15fc26d31",
+    "subject": null,
+    "provider": {
+      "id": "adb",
+      "name": "Android Debug Bridge",
+      "version": "36.0.0-13206524"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "capture_adb_screen",
+    "parameters": {
+      "serial": "127.0.0.1:16416",
+      "output_directory": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level106\\wonders-open"
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "client": {
+        "binary_path": "E:\\MuMuPlayer\\nx_main\\adb.exe",
+        "path_source": "environment",
+        "version": "36.0.0-13206524",
+        "installed_path": "E:\\MuMuPlayer\\nx_main\\adb.exe"
+      },
+      "serial": "127.0.0.1:16416",
+      "local_path": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261124-level106\\wonders-open\\screen.png",
+      "bytes": 2498043,
+      "sha256": "17f760f1c83acff5ad867971cdbddaabfda9410aa84a7be6f0cc20c650d2c184",
+      "width": 1080,
+      "height": 1920
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The capture is one frame at read time; no recording or interaction occurred"
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+]
