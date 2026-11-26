@@ -1,7 +1,7 @@
 ---
 title: 产品分析 MOC
 date: 2026-10-21
-updated: 2026-11-19
+updated: 2026-11-24
 type: index
 status: current
 lifecycle: current
@@ -27,6 +27,7 @@ aliases:
 | [[02-PROJECTS/产品分析/Resort Match/_MOC\|Resort Match]] | 剧情相册、照片解锁和逐页奖励 |
 | [[02-PROJECTS/产品分析/Royal Match/_MOC\|Royal Match]] | 关卡与主场景、弹窗编排、活动和运营配置 |
 | [[02-PROJECTS/产品分析/Tile Family/_MOC\|Tile Family（TF）]] | 系统与活动框架、关卡回流、广告和礼包 |
+| [[02-PROJECTS/产品分析/Tile Yard/_MOC\|Tile Yard]] | 关内道具、障碍、滑动规则；动画参数、缩放速度曲线和命中反馈 |
 | [[02-PROJECTS/产品分析/Tile Kingdom/资源与逻辑分析总览-1.58\|Tile Kingdom]] | 资源与逻辑总览、Tile Temple 和弹窗框架 |
 | [[02-PROJECTS/产品分析/Toy Story Drop/Collection内容拆解-1.20.0\|Toy Story Drop（玩具总动员大世界）]] | Collection 的四个页签、套组、背包与成就 |
 

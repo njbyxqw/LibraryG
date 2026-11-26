@@ -1,0 +1,5818 @@
+{
+  "package_default": {
+    "scenes": [
+      {
+        "id": 1,
+        "scene": 1,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          27
+        ],
+        "isLoop": true,
+        "map": 1,
+        "entrance": 1,
+        "element": 1,
+        "ui": 1,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 3,
+        "closeButtonType": 2,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 2,
+        "scene": 2,
+        "delay": 0,
+        "duration": 0,
+        "isLoop": true,
+        "map": 2,
+        "entrance": 2,
+        "element": 2,
+        "ui": 2,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 3,
+        "scene": 3,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          25
+        ],
+        "isLoop": true,
+        "map": 3,
+        "entrance": 3,
+        "element": 3,
+        "ui": 3,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 2,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 4,
+        "scene": 4,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          26
+        ],
+        "isLoop": true,
+        "map": 4,
+        "entrance": 4,
+        "element": 4,
+        "ui": 4,
+        "popupColorType": 9,
+        "clockType": 9,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 5,
+        "scene": 5,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          28
+        ],
+        "isLoop": true,
+        "map": 5,
+        "entrance": 5,
+        "element": 5,
+        "ui": 5,
+        "popupColorType": 4,
+        "clockType": 3,
+        "endCurtainType": 3,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 6,
+        "scene": 6,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          29
+        ],
+        "isLoop": true,
+        "map": 6,
+        "entrance": 6,
+        "element": 6,
+        "ui": 6,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 7,
+        "scene": 7,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          30
+        ],
+        "isLoop": true,
+        "map": 7,
+        "entrance": 7,
+        "element": 7,
+        "ui": 7,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 8,
+        "scene": 8,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          31
+        ],
+        "isLoop": true,
+        "map": 8,
+        "entrance": 8,
+        "element": 8,
+        "ui": 8,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 9,
+        "scene": 9,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          32
+        ],
+        "isLoop": true,
+        "map": 9,
+        "entrance": 9,
+        "element": 9,
+        "ui": 9,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 10,
+        "scene": 10,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          33
+        ],
+        "isLoop": true,
+        "map": 10,
+        "entrance": 10,
+        "element": 10,
+        "ui": 10,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 11,
+        "scene": 11,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          34
+        ],
+        "isLoop": true,
+        "map": 11,
+        "entrance": 11,
+        "element": 11,
+        "ui": 11,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 12,
+        "scene": 12,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          35
+        ],
+        "isLoop": true,
+        "map": 12,
+        "entrance": 12,
+        "element": 12,
+        "ui": 12,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 13,
+        "scene": 13,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          36
+        ],
+        "isLoop": true,
+        "map": 13,
+        "entrance": 13,
+        "element": 13,
+        "ui": 13,
+        "popupColorType": 9,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 14,
+        "scene": 14,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          37
+        ],
+        "isLoop": true,
+        "map": 14,
+        "entrance": 14,
+        "element": 14,
+        "ui": 14,
+        "popupColorType": 4,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 15,
+        "scene": 15,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          38
+        ],
+        "isLoop": true,
+        "map": 15,
+        "entrance": 15,
+        "element": 15,
+        "ui": 15,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 16,
+        "scene": 16,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          39
+        ],
+        "isLoop": true,
+        "map": 16,
+        "entrance": 16,
+        "element": 16,
+        "ui": 16,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 4,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 17,
+        "scene": 17,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          40
+        ],
+        "isLoop": true,
+        "map": 17,
+        "entrance": 17,
+        "element": 17,
+        "ui": 17,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 18,
+        "scene": 18,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          41
+        ],
+        "isLoop": true,
+        "map": 18,
+        "entrance": 18,
+        "element": 18,
+        "ui": 18,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 19,
+        "scene": 19,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          42
+        ],
+        "isLoop": true,
+        "map": 19,
+        "entrance": 19,
+        "element": 19,
+        "ui": 19,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 20,
+        "scene": 20,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          43
+        ],
+        "isLoop": true,
+        "map": 20,
+        "entrance": 20,
+        "element": 20,
+        "ui": 20,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 21,
+        "scene": 21,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          44
+        ],
+        "isLoop": true,
+        "map": 21,
+        "entrance": 21,
+        "element": 21,
+        "ui": 21,
+        "popupColorType": 4,
+        "clockType": 5,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 22,
+        "scene": 22,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          45
+        ],
+        "isLoop": true,
+        "map": 22,
+        "entrance": 22,
+        "element": 22,
+        "ui": 22,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1023,
+        "scene": 1023,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          46
+        ],
+        "isLoop": true,
+        "map": 1023,
+        "entrance": 1023,
+        "element": 1023,
+        "ui": 1023,
+        "popupColorType": 2,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1024,
+        "scene": 1024,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          47
+        ],
+        "isLoop": true,
+        "map": 1024,
+        "entrance": 1024,
+        "element": 1024,
+        "ui": 1024,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 2,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1025,
+        "scene": 1025,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          48
+        ],
+        "isLoop": true,
+        "map": 1025,
+        "entrance": 1025,
+        "element": 1025,
+        "ui": 1025,
+        "popupColorType": 3,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      }
+    ],
+    "scenes_new": [
+      {
+        "id": 1,
+        "scene": 1,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          27
+        ],
+        "isLoop": true,
+        "map": 1,
+        "entrance": 1,
+        "element": 1,
+        "ui": 1,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 3,
+        "closeButtonType": 2,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 2,
+        "scene": 2,
+        "delay": 0,
+        "duration": 0,
+        "isLoop": true,
+        "map": 2,
+        "entrance": 2,
+        "element": 2,
+        "ui": 2,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 3,
+        "scene": 3,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          25
+        ],
+        "isLoop": true,
+        "map": 3,
+        "entrance": 3,
+        "element": 3,
+        "ui": 3,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 2,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 4,
+        "scene": 4,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          26
+        ],
+        "isLoop": true,
+        "map": 4,
+        "entrance": 4,
+        "element": 4,
+        "ui": 4,
+        "popupColorType": 9,
+        "clockType": 9,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 5,
+        "scene": 5,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          28
+        ],
+        "isLoop": true,
+        "map": 5,
+        "entrance": 5,
+        "element": 5,
+        "ui": 5,
+        "popupColorType": 4,
+        "clockType": 3,
+        "endCurtainType": 3,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 6,
+        "scene": 6,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          29
+        ],
+        "isLoop": true,
+        "map": 6,
+        "entrance": 6,
+        "element": 6,
+        "ui": 6,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 7,
+        "scene": 7,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          30
+        ],
+        "isLoop": true,
+        "map": 7,
+        "entrance": 7,
+        "element": 7,
+        "ui": 7,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 8,
+        "scene": 8,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          31
+        ],
+        "isLoop": true,
+        "map": 8,
+        "entrance": 8,
+        "element": 8,
+        "ui": 8,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 9,
+        "scene": 9,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          32
+        ],
+        "isLoop": true,
+        "map": 9,
+        "entrance": 9,
+        "element": 9,
+        "ui": 9,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 10,
+        "scene": 10,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          33
+        ],
+        "isLoop": true,
+        "map": 10,
+        "entrance": 10,
+        "element": 10,
+        "ui": 10,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 11,
+        "scene": 11,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          34
+        ],
+        "isLoop": true,
+        "map": 11,
+        "entrance": 11,
+        "element": 11,
+        "ui": 11,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 12,
+        "scene": 12,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          35
+        ],
+        "isLoop": true,
+        "map": 12,
+        "entrance": 12,
+        "element": 12,
+        "ui": 12,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 13,
+        "scene": 13,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          36
+        ],
+        "isLoop": true,
+        "map": 13,
+        "entrance": 13,
+        "element": 13,
+        "ui": 13,
+        "popupColorType": 9,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 14,
+        "scene": 14,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          37
+        ],
+        "isLoop": true,
+        "map": 14,
+        "entrance": 14,
+        "element": 14,
+        "ui": 14,
+        "popupColorType": 4,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 15,
+        "scene": 15,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          38
+        ],
+        "isLoop": true,
+        "map": 15,
+        "entrance": 15,
+        "element": 15,
+        "ui": 15,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 16,
+        "scene": 16,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          39
+        ],
+        "isLoop": true,
+        "map": 16,
+        "entrance": 16,
+        "element": 16,
+        "ui": 16,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 4,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 17,
+        "scene": 17,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          40
+        ],
+        "isLoop": true,
+        "map": 17,
+        "entrance": 17,
+        "element": 17,
+        "ui": 17,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 18,
+        "scene": 18,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          41
+        ],
+        "isLoop": true,
+        "map": 18,
+        "entrance": 18,
+        "element": 18,
+        "ui": 18,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 19,
+        "scene": 19,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          42
+        ],
+        "isLoop": true,
+        "map": 19,
+        "entrance": 19,
+        "element": 19,
+        "ui": 19,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 20,
+        "scene": 20,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          43
+        ],
+        "isLoop": true,
+        "map": 20,
+        "entrance": 20,
+        "element": 20,
+        "ui": 20,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 21,
+        "scene": 21,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          44
+        ],
+        "isLoop": true,
+        "map": 21,
+        "entrance": 21,
+        "element": 21,
+        "ui": 21,
+        "popupColorType": 4,
+        "clockType": 5,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 22,
+        "scene": 22,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          45
+        ],
+        "isLoop": true,
+        "map": 22,
+        "entrance": 22,
+        "element": 22,
+        "ui": 22,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1023,
+        "scene": 23,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          46
+        ],
+        "isLoop": true,
+        "map": 23,
+        "entrance": 23,
+        "element": 23,
+        "ui": 23,
+        "popupColorType": 2,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1024,
+        "scene": 24,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          47
+        ],
+        "isLoop": true,
+        "map": 24,
+        "entrance": 24,
+        "element": 24,
+        "ui": 24,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 2,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1025,
+        "scene": 25,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          48
+        ],
+        "isLoop": true,
+        "map": 25,
+        "entrance": 25,
+        "element": 25,
+        "ui": 25,
+        "popupColorType": 3,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1026,
+        "scene": 26,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          49
+        ],
+        "isLoop": true,
+        "map": 26,
+        "entrance": 26,
+        "element": 26,
+        "ui": 26,
+        "popupColorType": 7,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1027,
+        "scene": 27,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          50
+        ],
+        "isLoop": true,
+        "map": 27,
+        "entrance": 27,
+        "element": 27,
+        "ui": 27,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1028,
+        "scene": 28,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          51
+        ],
+        "isLoop": true,
+        "map": 28,
+        "entrance": 28,
+        "element": 28,
+        "ui": 28,
+        "popupColorType": 9,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 4,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      }
+    ],
+    "abilities": [
+      {
+        "id": 7,
+        "displayInChainPanel": false,
+        "draggable": false,
+        "diggable": false,
+        "receiveDigDamage": true,
+        "blockMerge": true
+      },
+      {
+        "id": 8,
+        "displayInChainPanel": false,
+        "draggable": false,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": false
+      },
+      {
+        "id": 1,
+        "displayInChainPanel": true,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 2,
+        "displayInChainPanel": true,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 3,
+        "displayInChainPanel": false,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 5,
+        "displayInChainPanel": false,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 6,
+        "displayInChainPanel": false,
+        "draggable": false,
+        "diggable": true,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      }
+    ],
+    "items": [
+      {
+        "id": 10000,
+        "ability": 7,
+        "source": "mergemini_item_7_1"
+      },
+      {
+        "id": 11000,
+        "ability": 8,
+        "source": "mergemini_item_8_1"
+      },
+      {
+        "id": 10101,
+        "ability": 1,
+        "chain": 10102,
+        "nameSuffix": "{0}_item_1_1",
+        "source": "mergemini_item_1_1"
+      },
+      {
+        "id": 10102,
+        "ability": 1,
+        "chain": 10103,
+        "nameSuffix": "{0}_item_1_2",
+        "source": "mergemini_item_1_2"
+      },
+      {
+        "id": 10103,
+        "ability": 1,
+        "chain": 10104,
+        "nameSuffix": "{0}_item_1_3",
+        "source": "mergemini_item_1_3"
+      },
+      {
+        "id": 10104,
+        "ability": 1,
+        "chain": 10105,
+        "nameSuffix": "{0}_item_1_4",
+        "source": "mergemini_item_1_4"
+      },
+      {
+        "id": 10105,
+        "ability": 1,
+        "chain": 10106,
+        "nameSuffix": "{0}_item_1_5",
+        "source": "mergemini_item_1_5"
+      },
+      {
+        "id": 10106,
+        "ability": 1,
+        "chain": 10107,
+        "nameSuffix": "{0}_item_1_6",
+        "source": "mergemini_item_1_6"
+      },
+      {
+        "id": 10107,
+        "ability": 1,
+        "chain": 10108,
+        "itemRewards": [
+          60001,
+          70001
+        ],
+        "nameSuffix": "{0}_item_1_7",
+        "source": "mergemini_item_1_7"
+      },
+      {
+        "id": 10108,
+        "ability": 1,
+        "chain": 10109,
+        "itemRewards": [
+          60001,
+          70001,
+          70001
+        ],
+        "nameSuffix": "{0}_item_1_8",
+        "source": "mergemini_item_1_8"
+      },
+      {
+        "id": 10109,
+        "ability": 1,
+        "chain": 10110,
+        "itemRewards": [
+          60001,
+          60001,
+          70001,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_9",
+        "source": "mergemini_item_1_9"
+      },
+      {
+        "id": 10110,
+        "ability": 1,
+        "chain": 10111,
+        "itemRewards": [
+          60001,
+          60002,
+          70001,
+          70001,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_10",
+        "source": "mergemini_item_1_10"
+      },
+      {
+        "id": 10111,
+        "ability": 1,
+        "chain": 10112,
+        "itemRewards": [
+          60001,
+          60001,
+          60001,
+          60002,
+          70001,
+          70001,
+          70002,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_11",
+        "source": "mergemini_item_1_11"
+      },
+      {
+        "id": 10112,
+        "ability": 1,
+        "itemRewards": [
+          60001,
+          60001,
+          60001,
+          60002,
+          60002,
+          70001,
+          70001,
+          70001,
+          70001,
+          70002,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_12",
+        "source": "mergemini_item_1_12"
+      },
+      {
+        "id": 60001,
+        "ability": 3,
+        "chain": 60002,
+        "nameSuffix": "{0}_item_6_1",
+        "source": "mergemini_item_coin_1"
+      },
+      {
+        "id": 60002,
+        "ability": 3,
+        "chain": 60003,
+        "nameSuffix": "{0}_item_6_2",
+        "source": "mergemini_item_coin_2"
+      },
+      {
+        "id": 60003,
+        "ability": 3,
+        "chain": 60004,
+        "nameSuffix": "{0}_item_6_3",
+        "source": "mergemini_item_coin_3"
+      },
+      {
+        "id": 60004,
+        "ability": 3,
+        "chain": 60005,
+        "nameSuffix": "{0}_item_6_4",
+        "source": "mergemini_item_coin_4"
+      },
+      {
+        "id": 60005,
+        "ability": 3,
+        "nameSuffix": "{0}_item_6_5",
+        "source": "mergemini_item_coin_5"
+      },
+      {
+        "id": 70001,
+        "ability": 3,
+        "chain": 70002,
+        "nameSuffix": "{0}_item_7_1",
+        "source": "mergemini_item_cap_1"
+      },
+      {
+        "id": 70002,
+        "ability": 3,
+        "chain": 70003,
+        "nameSuffix": "{0}_item_7_2",
+        "source": "mergemini_item_cap_2"
+      },
+      {
+        "id": 70003,
+        "ability": 3,
+        "chain": 70004,
+        "nameSuffix": "{0}_item_7_3",
+        "source": "mergemini_item_cap_3"
+      },
+      {
+        "id": 70004,
+        "ability": 3,
+        "chain": 70005,
+        "nameSuffix": "{0}_item_7_4",
+        "source": "mergemini_item_cap_4"
+      },
+      {
+        "id": 70005,
+        "ability": 3,
+        "nameSuffix": "{0}_item_7_5",
+        "source": "mergemini_item_cap_5"
+      }
+    ],
+    "board": [
+      {
+        "id": 1,
+        "column1": [
+          10101,
+          11000
+        ],
+        "column6": [
+          10101,
+          11000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 2,
+        "column1": [
+          10102,
+          11000,
+          10000
+        ],
+        "column2": [
+          10102,
+          11000,
+          10000
+        ],
+        "column3": [
+          10101,
+          11000,
+          10000
+        ],
+        "column4": [
+          10101,
+          11000,
+          10000
+        ],
+        "column5": [
+          10102,
+          11000,
+          10000
+        ],
+        "column6": [
+          10102,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 3,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          10103,
+          11000,
+          10000
+        ],
+        "column3": [
+          10103,
+          11000,
+          10000
+        ],
+        "column4": [
+          10105,
+          11000,
+          10000
+        ],
+        "column5": [
+          10103,
+          11000,
+          10000
+        ],
+        "column6": [
+          10103,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 4,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          10105,
+          11000,
+          10000
+        ],
+        "column3": [
+          60004,
+          11000,
+          10000
+        ],
+        "column4": [
+          10101,
+          11000,
+          10000
+        ],
+        "column5": [
+          10107,
+          11000,
+          10000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 5,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          70003,
+          11000,
+          10000
+        ],
+        "column3": [
+          10107,
+          11000,
+          10000
+        ],
+        "column4": [
+          10105,
+          11000,
+          10000
+        ],
+        "column5": [
+          10107,
+          11000,
+          10000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 6,
+        "column1": [
+          10107,
+          11000,
+          10000
+        ],
+        "column2": [
+          10105,
+          11000,
+          10000
+        ],
+        "column3": [
+          10107,
+          11000,
+          10000
+        ],
+        "column4": [
+          70003,
+          11000,
+          10000
+        ],
+        "column5": [
+          10105,
+          11000,
+          10000
+        ],
+        "column6": [
+          10107,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 7,
+        "column1": [
+          10109,
+          11000,
+          10000
+        ],
+        "column2": [
+          10107,
+          11000,
+          10000
+        ],
+        "column3": [
+          60003,
+          11000,
+          10000
+        ],
+        "column4": [
+          10107,
+          11000,
+          10000
+        ],
+        "column5": [
+          10107,
+          11000,
+          10000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 8,
+        "column1": [
+          10107,
+          11000,
+          10000
+        ],
+        "column2": [
+          10105,
+          11000,
+          10000
+        ],
+        "column3": [
+          10109,
+          11000,
+          10000
+        ],
+        "column4": [
+          10107,
+          11000,
+          10000
+        ],
+        "column5": [
+          60003,
+          11000,
+          10000
+        ],
+        "column6": [
+          10107,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      }
+    ],
+    "rewards": [
+      {
+        "id": 1,
+        "group": 60005,
+        "rewards": [
+          {
+            "rt": 2,
+            "rn": 100,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 3,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 4,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 5,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 6,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 3,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 7,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 9,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 8,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 10,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 11,
+        "group": 10108,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 2,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 3,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "group": 10109,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 3,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 1,
+            "rn": 1,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "lives"
+          },
+          {
+            "rt": 3,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "group": 10110,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 4,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 2,
+            "rn": 200,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          },
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          },
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          },
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "group": 10111,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 6,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 2,
+            "rn": 500,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 3,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "group": 10112,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 9,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 2,
+            "rn": 1000,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          },
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          },
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          },
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ]
+      }
+    ],
+    "misc": [
+      {
+        "id": 1,
+        "moveLines": 0,
+        "checkLines": 0,
+        "newMainLineItemDisplay": 6
+      }
+    ]
+  },
+  "cached_20261124": {
+    "scenes": [
+      {
+        "id": 1,
+        "scene": 1,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          27
+        ],
+        "isLoop": true,
+        "map": 1,
+        "entrance": 1,
+        "element": 1,
+        "ui": 1,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 3,
+        "closeButtonType": 2,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 2,
+        "scene": 2,
+        "delay": 0,
+        "duration": 0,
+        "isLoop": true,
+        "map": 2,
+        "entrance": 2,
+        "element": 2,
+        "ui": 2,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 3,
+        "scene": 3,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          25
+        ],
+        "isLoop": true,
+        "map": 3,
+        "entrance": 3,
+        "element": 3,
+        "ui": 3,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 2,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 4,
+        "scene": 4,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          26
+        ],
+        "isLoop": true,
+        "map": 4,
+        "entrance": 4,
+        "element": 4,
+        "ui": 4,
+        "popupColorType": 9,
+        "clockType": 9,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 5,
+        "scene": 5,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          28
+        ],
+        "isLoop": true,
+        "map": 5,
+        "entrance": 5,
+        "element": 5,
+        "ui": 5,
+        "popupColorType": 4,
+        "clockType": 3,
+        "endCurtainType": 3,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 6,
+        "scene": 6,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          29
+        ],
+        "isLoop": true,
+        "map": 6,
+        "entrance": 6,
+        "element": 6,
+        "ui": 6,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 7,
+        "scene": 7,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          30
+        ],
+        "isLoop": true,
+        "map": 7,
+        "entrance": 7,
+        "element": 7,
+        "ui": 7,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 8,
+        "scene": 8,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          31
+        ],
+        "isLoop": true,
+        "map": 8,
+        "entrance": 8,
+        "element": 8,
+        "ui": 8,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 9,
+        "scene": 9,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          32
+        ],
+        "isLoop": true,
+        "map": 9,
+        "entrance": 9,
+        "element": 9,
+        "ui": 9,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 10,
+        "scene": 10,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          33
+        ],
+        "isLoop": true,
+        "map": 10,
+        "entrance": 10,
+        "element": 10,
+        "ui": 10,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 11,
+        "scene": 11,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          34
+        ],
+        "isLoop": true,
+        "map": 11,
+        "entrance": 11,
+        "element": 11,
+        "ui": 11,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 12,
+        "scene": 12,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          35
+        ],
+        "isLoop": true,
+        "map": 12,
+        "entrance": 12,
+        "element": 12,
+        "ui": 12,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 13,
+        "scene": 13,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          36
+        ],
+        "isLoop": true,
+        "map": 13,
+        "entrance": 13,
+        "element": 13,
+        "ui": 13,
+        "popupColorType": 9,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 14,
+        "scene": 14,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          37
+        ],
+        "isLoop": true,
+        "map": 14,
+        "entrance": 14,
+        "element": 14,
+        "ui": 14,
+        "popupColorType": 4,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 15,
+        "scene": 15,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          38
+        ],
+        "isLoop": true,
+        "map": 15,
+        "entrance": 15,
+        "element": 15,
+        "ui": 15,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 16,
+        "scene": 16,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          39
+        ],
+        "isLoop": true,
+        "map": 16,
+        "entrance": 16,
+        "element": 16,
+        "ui": 16,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 4,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 17,
+        "scene": 17,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          40
+        ],
+        "isLoop": true,
+        "map": 17,
+        "entrance": 17,
+        "element": 17,
+        "ui": 17,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 18,
+        "scene": 18,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          41
+        ],
+        "isLoop": true,
+        "map": 18,
+        "entrance": 18,
+        "element": 18,
+        "ui": 18,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 19,
+        "scene": 19,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          42
+        ],
+        "isLoop": true,
+        "map": 19,
+        "entrance": 19,
+        "element": 19,
+        "ui": 19,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 20,
+        "scene": 20,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          43
+        ],
+        "isLoop": true,
+        "map": 20,
+        "entrance": 20,
+        "element": 20,
+        "ui": 20,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 21,
+        "scene": 21,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          44
+        ],
+        "isLoop": true,
+        "map": 21,
+        "entrance": 21,
+        "element": 21,
+        "ui": 21,
+        "popupColorType": 4,
+        "clockType": 5,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 22,
+        "scene": 22,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          45
+        ],
+        "isLoop": true,
+        "map": 22,
+        "entrance": 22,
+        "element": 22,
+        "ui": 22,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1023,
+        "scene": 1023,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          46
+        ],
+        "isLoop": true,
+        "map": 1023,
+        "entrance": 1023,
+        "element": 1023,
+        "ui": 1023,
+        "popupColorType": 2,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1024,
+        "scene": 1024,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          47
+        ],
+        "isLoop": true,
+        "map": 1024,
+        "entrance": 1024,
+        "element": 1024,
+        "ui": 1024,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 2,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1025,
+        "scene": 1025,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          48
+        ],
+        "isLoop": true,
+        "map": 1025,
+        "entrance": 1025,
+        "element": 1025,
+        "ui": 1025,
+        "popupColorType": 3,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      }
+    ],
+    "scenes_new": [
+      {
+        "id": 1,
+        "scene": 1,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          27
+        ],
+        "isLoop": true,
+        "map": 1,
+        "entrance": 1,
+        "element": 1,
+        "ui": 1,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 3,
+        "closeButtonType": 2,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 2,
+        "scene": 2,
+        "delay": 0,
+        "duration": 0,
+        "isLoop": true,
+        "map": 2,
+        "entrance": 2,
+        "element": 2,
+        "ui": 2,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 3,
+        "scene": 3,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          25
+        ],
+        "isLoop": true,
+        "map": 3,
+        "entrance": 3,
+        "element": 3,
+        "ui": 3,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 2,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 4,
+        "scene": 4,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          26
+        ],
+        "isLoop": true,
+        "map": 4,
+        "entrance": 4,
+        "element": 4,
+        "ui": 4,
+        "popupColorType": 9,
+        "clockType": 9,
+        "endCurtainType": 9,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 5,
+        "scene": 5,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          28
+        ],
+        "isLoop": true,
+        "map": 5,
+        "entrance": 5,
+        "element": 5,
+        "ui": 5,
+        "popupColorType": 4,
+        "clockType": 3,
+        "endCurtainType": 3,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 6,
+        "scene": 6,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          29
+        ],
+        "isLoop": true,
+        "map": 6,
+        "entrance": 6,
+        "element": 6,
+        "ui": 6,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 7,
+        "scene": 7,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          30
+        ],
+        "isLoop": true,
+        "map": 7,
+        "entrance": 7,
+        "element": 7,
+        "ui": 7,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 8,
+        "scene": 8,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          31
+        ],
+        "isLoop": true,
+        "map": 8,
+        "entrance": 8,
+        "element": 8,
+        "ui": 8,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 9,
+        "scene": 9,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          32
+        ],
+        "isLoop": true,
+        "map": 9,
+        "entrance": 9,
+        "element": 9,
+        "ui": 9,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 10,
+        "scene": 10,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          33
+        ],
+        "isLoop": true,
+        "map": 10,
+        "entrance": 10,
+        "element": 10,
+        "ui": 10,
+        "popupColorType": 6,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 11,
+        "scene": 11,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          34
+        ],
+        "isLoop": true,
+        "map": 11,
+        "entrance": 11,
+        "element": 11,
+        "ui": 11,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 12,
+        "scene": 12,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          35
+        ],
+        "isLoop": true,
+        "map": 12,
+        "entrance": 12,
+        "element": 12,
+        "ui": 12,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 5,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 13,
+        "scene": 13,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          36
+        ],
+        "isLoop": true,
+        "map": 13,
+        "entrance": 13,
+        "element": 13,
+        "ui": 13,
+        "popupColorType": 9,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 5,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 14,
+        "scene": 14,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          37
+        ],
+        "isLoop": true,
+        "map": 14,
+        "entrance": 14,
+        "element": 14,
+        "ui": 14,
+        "popupColorType": 4,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 15,
+        "scene": 15,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          38
+        ],
+        "isLoop": true,
+        "map": 15,
+        "entrance": 15,
+        "element": 15,
+        "ui": 15,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 5,
+        "progressType": 7,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 16,
+        "scene": 16,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          39
+        ],
+        "isLoop": true,
+        "map": 16,
+        "entrance": 16,
+        "element": 16,
+        "ui": 16,
+        "popupColorType": 9,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 4,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 17,
+        "scene": 17,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          40
+        ],
+        "isLoop": true,
+        "map": 17,
+        "entrance": 17,
+        "element": 17,
+        "ui": 17,
+        "popupColorType": 2,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 18,
+        "scene": 18,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          41
+        ],
+        "isLoop": true,
+        "map": 18,
+        "entrance": 18,
+        "element": 18,
+        "ui": 18,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 19,
+        "scene": 19,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          42
+        ],
+        "isLoop": true,
+        "map": 19,
+        "entrance": 19,
+        "element": 19,
+        "ui": 19,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 20,
+        "scene": 20,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          43
+        ],
+        "isLoop": true,
+        "map": 20,
+        "entrance": 20,
+        "element": 20,
+        "ui": 20,
+        "popupColorType": 2,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 2,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 21,
+        "scene": 21,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          44
+        ],
+        "isLoop": true,
+        "map": 21,
+        "entrance": 21,
+        "element": 21,
+        "ui": 21,
+        "popupColorType": 4,
+        "clockType": 5,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 22,
+        "scene": 22,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          45
+        ],
+        "isLoop": true,
+        "map": 22,
+        "entrance": 22,
+        "element": 22,
+        "ui": 22,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 7,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1023,
+        "scene": 23,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          46
+        ],
+        "isLoop": true,
+        "map": 23,
+        "entrance": 23,
+        "element": 23,
+        "ui": 23,
+        "popupColorType": 2,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 2,
+        "passPanelType": 2,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1024,
+        "scene": 24,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          47
+        ],
+        "isLoop": true,
+        "map": 24,
+        "entrance": 24,
+        "element": 24,
+        "ui": 24,
+        "popupColorType": 3,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 2,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1025,
+        "scene": 25,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          48
+        ],
+        "isLoop": true,
+        "map": 25,
+        "entrance": 25,
+        "element": 25,
+        "ui": 25,
+        "popupColorType": 3,
+        "clockType": 7,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 5,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1026,
+        "scene": 26,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          49
+        ],
+        "isLoop": true,
+        "map": 26,
+        "entrance": 26,
+        "element": 26,
+        "ui": 26,
+        "popupColorType": 7,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1027,
+        "scene": 27,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          50
+        ],
+        "isLoop": true,
+        "map": 27,
+        "entrance": 27,
+        "element": 27,
+        "ui": 27,
+        "popupColorType": 4,
+        "clockType": 2,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 4,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1028,
+        "scene": 28,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          51
+        ],
+        "isLoop": true,
+        "map": 28,
+        "entrance": 28,
+        "element": 28,
+        "ui": 28,
+        "popupColorType": 9,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 9,
+        "progressType": 4,
+        "passEntranceType": 9,
+        "passPanelType": 9,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1029,
+        "scene": 29,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          52
+        ],
+        "isLoop": true,
+        "map": 29,
+        "entrance": 29,
+        "element": 29,
+        "ui": 29,
+        "popupColorType": 3,
+        "clockType": 3,
+        "endCurtainType": 8,
+        "closeButtonType": 1,
+        "entranceType": 7,
+        "progressType": 4,
+        "passEntranceType": 3,
+        "passPanelType": 3,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      },
+      {
+        "id": 1030,
+        "scene": 30,
+        "delay": 0,
+        "duration": 0,
+        "openRounds": [
+          53
+        ],
+        "isLoop": true,
+        "map": 30,
+        "entrance": 30,
+        "element": 30,
+        "ui": 30,
+        "popupColorType": 3,
+        "clockType": 3,
+        "endCurtainType": 6,
+        "closeButtonType": 1,
+        "entranceType": 3,
+        "progressType": 4,
+        "passEntranceType": 4,
+        "passPanelType": 4,
+        "elementSourceRes": [
+          "mergemini_item_7_1",
+          "mergemini_item_8_1",
+          "mergemini_item_1_1",
+          "mergemini_item_1_2",
+          "mergemini_item_1_3",
+          "mergemini_item_1_4",
+          "mergemini_item_1_5",
+          "mergemini_item_1_6",
+          "mergemini_item_1_7",
+          "mergemini_item_1_8",
+          "mergemini_item_1_9",
+          "mergemini_item_1_10",
+          "mergemini_item_1_11",
+          "mergemini_item_1_12"
+        ]
+      }
+    ],
+    "abilities": [
+      {
+        "id": 7,
+        "displayInChainPanel": false,
+        "draggable": false,
+        "diggable": false,
+        "receiveDigDamage": true,
+        "blockMerge": true
+      },
+      {
+        "id": 8,
+        "displayInChainPanel": false,
+        "draggable": false,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": false
+      },
+      {
+        "id": 1,
+        "displayInChainPanel": true,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 2,
+        "displayInChainPanel": true,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 3,
+        "displayInChainPanel": false,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 5,
+        "displayInChainPanel": false,
+        "draggable": true,
+        "diggable": false,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      },
+      {
+        "id": 6,
+        "displayInChainPanel": false,
+        "draggable": false,
+        "diggable": true,
+        "receiveDigDamage": false,
+        "blockMerge": true
+      }
+    ],
+    "items": [
+      {
+        "id": 10000,
+        "ability": 7,
+        "source": "mergemini_item_7_1"
+      },
+      {
+        "id": 11000,
+        "ability": 8,
+        "source": "mergemini_item_8_1"
+      },
+      {
+        "id": 10101,
+        "ability": 1,
+        "chain": 10102,
+        "nameSuffix": "{0}_item_1_1",
+        "source": "mergemini_item_1_1"
+      },
+      {
+        "id": 10102,
+        "ability": 1,
+        "chain": 10103,
+        "nameSuffix": "{0}_item_1_2",
+        "source": "mergemini_item_1_2"
+      },
+      {
+        "id": 10103,
+        "ability": 1,
+        "chain": 10104,
+        "nameSuffix": "{0}_item_1_3",
+        "source": "mergemini_item_1_3"
+      },
+      {
+        "id": 10104,
+        "ability": 1,
+        "chain": 10105,
+        "nameSuffix": "{0}_item_1_4",
+        "source": "mergemini_item_1_4"
+      },
+      {
+        "id": 10105,
+        "ability": 1,
+        "chain": 10106,
+        "nameSuffix": "{0}_item_1_5",
+        "source": "mergemini_item_1_5"
+      },
+      {
+        "id": 10106,
+        "ability": 1,
+        "chain": 10107,
+        "nameSuffix": "{0}_item_1_6",
+        "source": "mergemini_item_1_6"
+      },
+      {
+        "id": 10107,
+        "ability": 1,
+        "chain": 10108,
+        "itemRewards": [
+          60001,
+          70001
+        ],
+        "nameSuffix": "{0}_item_1_7",
+        "source": "mergemini_item_1_7"
+      },
+      {
+        "id": 10108,
+        "ability": 1,
+        "chain": 10109,
+        "itemRewards": [
+          60001,
+          70001,
+          70001
+        ],
+        "nameSuffix": "{0}_item_1_8",
+        "source": "mergemini_item_1_8"
+      },
+      {
+        "id": 10109,
+        "ability": 1,
+        "chain": 10110,
+        "itemRewards": [
+          60001,
+          60001,
+          70001,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_9",
+        "source": "mergemini_item_1_9"
+      },
+      {
+        "id": 10110,
+        "ability": 1,
+        "chain": 10111,
+        "itemRewards": [
+          60001,
+          60002,
+          70001,
+          70001,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_10",
+        "source": "mergemini_item_1_10"
+      },
+      {
+        "id": 10111,
+        "ability": 1,
+        "chain": 10112,
+        "itemRewards": [
+          60001,
+          60001,
+          60001,
+          60002,
+          70001,
+          70001,
+          70002,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_11",
+        "source": "mergemini_item_1_11"
+      },
+      {
+        "id": 10112,
+        "ability": 1,
+        "itemRewards": [
+          60001,
+          60001,
+          60001,
+          60002,
+          60002,
+          70001,
+          70001,
+          70001,
+          70001,
+          70002,
+          70002
+        ],
+        "nameSuffix": "{0}_item_1_12",
+        "source": "mergemini_item_1_12"
+      },
+      {
+        "id": 60001,
+        "ability": 3,
+        "chain": 60002,
+        "nameSuffix": "{0}_item_6_1",
+        "source": "mergemini_item_coin_1"
+      },
+      {
+        "id": 60002,
+        "ability": 3,
+        "chain": 60003,
+        "nameSuffix": "{0}_item_6_2",
+        "source": "mergemini_item_coin_2"
+      },
+      {
+        "id": 60003,
+        "ability": 3,
+        "chain": 60004,
+        "nameSuffix": "{0}_item_6_3",
+        "source": "mergemini_item_coin_3"
+      },
+      {
+        "id": 60004,
+        "ability": 3,
+        "chain": 60005,
+        "nameSuffix": "{0}_item_6_4",
+        "source": "mergemini_item_coin_4"
+      },
+      {
+        "id": 60005,
+        "ability": 3,
+        "nameSuffix": "{0}_item_6_5",
+        "source": "mergemini_item_coin_5"
+      },
+      {
+        "id": 70001,
+        "ability": 3,
+        "chain": 70002,
+        "nameSuffix": "{0}_item_7_1",
+        "source": "mergemini_item_cap_1"
+      },
+      {
+        "id": 70002,
+        "ability": 3,
+        "chain": 70003,
+        "nameSuffix": "{0}_item_7_2",
+        "source": "mergemini_item_cap_2"
+      },
+      {
+        "id": 70003,
+        "ability": 3,
+        "chain": 70004,
+        "nameSuffix": "{0}_item_7_3",
+        "source": "mergemini_item_cap_3"
+      },
+      {
+        "id": 70004,
+        "ability": 3,
+        "chain": 70005,
+        "nameSuffix": "{0}_item_7_4",
+        "source": "mergemini_item_cap_4"
+      },
+      {
+        "id": 70005,
+        "ability": 3,
+        "nameSuffix": "{0}_item_7_5",
+        "source": "mergemini_item_cap_5"
+      }
+    ],
+    "board": [
+      {
+        "id": 1,
+        "column1": [
+          10101,
+          11000
+        ],
+        "column6": [
+          10101,
+          11000
+        ],
+        "isRandom": false
+      },
+      {
+        "id": 2,
+        "column1": [
+          10102,
+          11000,
+          10000
+        ],
+        "column2": [
+          10102,
+          11000,
+          10000
+        ],
+        "column3": [
+          10101,
+          11000,
+          10000
+        ],
+        "column4": [
+          10101,
+          11000,
+          10000
+        ],
+        "column5": [
+          10102,
+          11000,
+          10000
+        ],
+        "column6": [
+          10102,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 3,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          10103,
+          11000,
+          10000
+        ],
+        "column3": [
+          10103,
+          11000,
+          10000
+        ],
+        "column4": [
+          10105,
+          11000,
+          10000
+        ],
+        "column5": [
+          10103,
+          11000,
+          10000
+        ],
+        "column6": [
+          10103,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 4,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          10105,
+          11000,
+          10000
+        ],
+        "column3": [
+          60004,
+          11000,
+          10000
+        ],
+        "column4": [
+          10101,
+          11000,
+          10000
+        ],
+        "column5": [
+          10107,
+          11000,
+          10000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 5,
+        "column1": [
+          10105,
+          11000,
+          10000
+        ],
+        "column2": [
+          70003,
+          11000,
+          10000
+        ],
+        "column3": [
+          10107,
+          11000,
+          10000
+        ],
+        "column4": [
+          10105,
+          11000,
+          10000
+        ],
+        "column5": [
+          10107,
+          11000,
+          10000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 6,
+        "column1": [
+          10107,
+          11000,
+          10000
+        ],
+        "column2": [
+          10105,
+          11000,
+          10000
+        ],
+        "column3": [
+          10107,
+          11000,
+          10000
+        ],
+        "column4": [
+          70003,
+          11000,
+          10000
+        ],
+        "column5": [
+          10105,
+          11000,
+          10000
+        ],
+        "column6": [
+          10107,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 7,
+        "column1": [
+          10109,
+          11000,
+          10000
+        ],
+        "column2": [
+          10107,
+          11000,
+          10000
+        ],
+        "column3": [
+          60003,
+          11000,
+          10000
+        ],
+        "column4": [
+          10107,
+          11000,
+          10000
+        ],
+        "column5": [
+          10107,
+          11000,
+          10000
+        ],
+        "column6": [
+          10105,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      },
+      {
+        "id": 8,
+        "column1": [
+          10107,
+          11000,
+          10000
+        ],
+        "column2": [
+          10105,
+          11000,
+          10000
+        ],
+        "column3": [
+          10109,
+          11000,
+          10000
+        ],
+        "column4": [
+          10107,
+          11000,
+          10000
+        ],
+        "column5": [
+          60003,
+          11000,
+          10000
+        ],
+        "column6": [
+          10107,
+          11000,
+          10000
+        ],
+        "isRandom": true
+      }
+    ],
+    "rewards": [
+      {
+        "id": 1,
+        "group": 60005,
+        "rewards": [
+          {
+            "rt": 2,
+            "rn": 100,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 3,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 4,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 5,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 6,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 3,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 7,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 9,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 8,
+        "group": 70005,
+        "rewards": [
+          {
+            "rt": 10,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ],
+        "weight": 100
+      },
+      {
+        "id": 11,
+        "group": 10108,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 2,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 3,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 0.25,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "group": 10109,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 3,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 1,
+            "rn": 1,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "lives"
+          },
+          {
+            "rt": 3,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "group": 10110,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 4,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 2,
+            "rn": 200,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          },
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          },
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          },
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "group": 10111,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 6,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 2,
+            "rn": 500,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 3,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "colorbomb"
+          },
+          {
+            "rt": 9,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "bomb"
+          },
+          {
+            "rt": 10,
+            "rn": 0.5,
+            "rnType": 1,
+            "rReplace": 0,
+            "name": "rocketbefore"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "group": 10112,
+        "rewards": [
+          {
+            "rt": 18,
+            "rn": 9,
+            "rnType": 0,
+            "rReplace": 99999,
+            "name": "sticker"
+          },
+          {
+            "rt": 2,
+            "rn": 1000,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "coins"
+          },
+          {
+            "rt": 5,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "hammer"
+          },
+          {
+            "rt": 6,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "fist"
+          },
+          {
+            "rt": 7,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "rocket"
+          },
+          {
+            "rt": 8,
+            "rn": 1,
+            "rnType": 0,
+            "rReplace": 0,
+            "name": "dice"
+          }
+        ]
+      }
+    ],
+    "misc": [
+      {
+        "id": 1,
+        "moveLines": 0,
+        "checkLines": 0,
+        "newMainLineItemDisplay": 6
+      }
+    ]
+  },
+  "comparison": {
+    "scenes": true,
+    "scenes_new": false,
+    "abilities": true,
+    "items": true,
+    "board": true,
+    "rewards": true,
+    "misc": true
+  },
+  "boundary": "Cache content read from instance 1, Android 2.7.3/203 arm64; not proof selected or shown. Code sample is source XAPK armeabi-v7a."
+}

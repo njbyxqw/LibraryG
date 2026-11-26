@@ -1,0 +1,576 @@
+{
+  "date": "2026-11-24",
+  "version": "1.15.0",
+  "source_sha256": "158aef95a7dadb405f836b053cc0481fe9007760d454e34ef0663c55e9def4e2",
+  "boundary": "static only, no runtime observation",
+  "tutorials": [
+    {
+      "file": "resources.assets",
+      "path_id": 66642,
+      "gameobject": "automove",
+      "level_default": 0,
+      "remote_key": "",
+      "bytes": 76,
+      "parsed_bytes": 76,
+      "raw_hex": "0000000089200000000000000100000001000000e102000000000000000000000000000072ac00000000000000000000704101000000000000000000ddca0000000000000000000000000000"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 68371,
+      "gameobject": "dropbar",
+      "level_default": 2,
+      "remote_key": "core_tutorial_dropbar_level",
+      "bytes": 104,
+      "parsed_bytes": 104,
+      "raw_hex": "00000000cd240000000000000100000001000000e102000000000000000000000000000034b200000000000000000000413901000000000000000000a7cd000000000000020000001b000000636f72655f7475746f7269616c5f64726f706261725f6c6576656c00"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 69380,
+      "gameobject": "powerup_hint",
+      "level_default": 7,
+      "remote_key": "core_tutorial_powerup_hint_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "000000008b160000000000000100000001000000e1020000000000000000000000000000efb500000000000000000000c93401000000000000000000a4c00000000000000700000020000000636f72655f7475746f7269616c5f706f77657275705f68696e745f6c6576656c"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 70227,
+      "gameobject": "progress",
+      "level_default": 0,
+      "remote_key": "core_tutorial_CoreTutorial_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "0000000089180000000000000100000001000000e10200000000000000000000000000002db900000000000000000000b33201000000000000000000b2c30000000000000000000020000000636f72655f7475746f7269616c5f436f72655475746f7269616c5f6c6576656c"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 70228,
+      "gameobject": "match3tiles",
+      "level_default": 1,
+      "remote_key": "",
+      "bytes": 76,
+      "parsed_bytes": 76,
+      "raw_hex": "000000008a180000000000000100000001000000e10200000000000000000000000000002eb900000000000000000000b43201000000000000000000b3c30000000000000100000000000000"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 71004,
+      "gameobject": "extra_slot",
+      "level_default": 15,
+      "remote_key": "core_tutorial_extra_slot_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "00000000521b0000000000000100000001000000e1020000000000000000000000000000d7bb000000000000000000000130010000000000000000000dc60000000000000f0000001e000000636f72655f7475746f7269616c5f65787472615f736c6f745f6c6576656c0000"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 71883,
+      "gameobject": "powerup_undo",
+      "level_default": 3,
+      "remote_key": "core_tutorial_powerup_undo_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "00000000fb300000000000000100000001000000e1020000000000000000000000000000adbe00000000000000000000e258010000000000000000002cb30000000000000300000020000000636f72655f7475746f7269616c5f706f77657275705f756e646f5f6c6576656c"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 72988,
+      "gameobject": "dropbar_undo",
+      "level_default": 23,
+      "remote_key": "core_tutorial_dropbar_undo_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "0000000003370000000000000100000001000000e1020000000000000000000000000000fdc100000000000000000000dc540100000000000000000060b90000000000001700000020000000636f72655f7475746f7269616c5f64726f706261725f756e646f5f6c6576656c"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 74482,
+      "gameobject": "powerup_drop3",
+      "level_default": 9,
+      "remote_key": "core_tutorial_powerup_drop3_level",
+      "bytes": 112,
+      "parsed_bytes": 112,
+      "raw_hex": "00000000cd280000000000000100000001000000e1020000000000000000000000000000d1c600000000000000000000554f01000000000000000000d4aa0000000000000900000021000000636f72655f7475746f7269616c5f706f77657275705f64726f70335f6c6576656c000000"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 75993,
+      "gameobject": "undo",
+      "level_default": 0,
+      "remote_key": "",
+      "bytes": 76,
+      "parsed_bytes": 76,
+      "raw_hex": "00000000f32d0000000000000100000001000000e10200000000000000000000000000008ecb00000000000000000000964901000000000000000000e7af0000000000000000000000000000"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 79347,
+      "gameobject": "slide3tiles",
+      "level_default": 4,
+      "remote_key": "",
+      "bytes": 76,
+      "parsed_bytes": 76,
+      "raw_hex": "0000000033490000000000000100000001000000e1020000000000000000000000000000dfd600000000000000000000f80f01000000000000000000ecf20000000000000400000000000000"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 80956,
+      "gameobject": "special_tile",
+      "level_default": 8,
+      "remote_key": "core_tutorial_special_tile_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "000000006c3e0000000000000100000001000000e1020000000000000000000000000000afdc0000000000000000000003080100000000000000000043e70000000000000800000020000000636f72655f7475746f7269616c5f7370656369616c5f74696c655f6c6576656c"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 81957,
+      "gameobject": "powerup_rand",
+      "level_default": 5,
+      "remote_key": "core_tutorial_powerup_rand_level",
+      "bytes": 108,
+      "parsed_bytes": 108,
+      "raw_hex": "0000000078400000000000000100000001000000e102000000000000000000000000000090df00000000000000000000ee050100000000000000000063ea0000000000000500000020000000636f72655f7475746f7269616c5f706f77657275705f72616e645f6c6576656c"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 87126,
+      "gameobject": "cat",
+      "level_default": -1,
+      "remote_key": "core_tutorial_cat_level",
+      "bytes": 100,
+      "parsed_bytes": 100,
+      "raw_hex": "00000000e3510000000000000100000001000000e102000000000000000000000000000023f0000000000000000000008e1f01000000000000000000f3d4000000000000ffffffff17000000636f72655f7475746f7269616c5f6361745f6c6576656c00"
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 88366,
+      "gameobject": "StartButton",
+      "level_default": 0,
+      "remote_key": "",
+      "bytes": 76,
+      "parsed_bytes": 76,
+      "raw_hex": "000000006d570000000000000100000001000000e102000000000000000000000000000000000000000000000000000028190100000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "localization": [
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 783721422848,
+      "key": "TUTORIAL_1",
+      "text": "Tap three identical tiles in succession to remove them. Clear the whole field!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 130592792576,
+      "key": "TUTORIAL_0",
+      "text": "Tap three identical tiles in succession to remove them. Clear the whole field!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 899828146176,
+      "key": "TUTORIAL_2",
+      "text": "Don’t fill the shelf completely – you’ll lose the level!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 987455545344,
+      "key": "TUTORIAL_3",
+      "text": "Try \"Undo\" – it helps you take back your last move!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 1070578262016,
+      "key": "TUTORIAL_4",
+      "text": "Try \"Dice\" – it shuffles all the tiles!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 1138479849472,
+      "key": "TUTORIAL_5",
+      "text": "Try the \"Magic Wand\" – it will make a move for you!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 1220923088896,
+      "key": "TUTORIAL_6",
+      "text": "Try the \"Tile Return\" – it puts 3 collected tiles back on the field!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 1285611839488,
+      "key": "TUTORIAL_7",
+      "text": "Yellow tiles are bonuses – one tap is enough to use them!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 1398426034176,
+      "key": "TUTORIAL_9",
+      "text": "You can move any tile from the shelf back onto the field."
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 86844040908103680,
+      "key": "TUTORIAL_11",
+      "text": "Tap here to go to the Shop!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 273564299269496832,
+      "key": "TUTORIAL_8",
+      "text": "You can add an extra slot on the shelf for diamonds."
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 276089583399067648,
+      "key": "TUTORIAL_12",
+      "text": "Tap to collect the remaining tiles quicker."
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -3501739656209280710,
+      "table": "CoreTutorial_en",
+      "id": 425291362095874048,
+      "key": "TUTORIAL_10",
+      "text": "Move your finger over identical tiles to remove them. You may like playing this way!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -416585973553530914,
+      "table": "UI_en",
+      "id": 314896875292450818,
+      "key": "BOOSTER_EXTRA_SLOT_BUY",
+      "text": "Start a level with an extra slot on the shelf!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -416585973553530914,
+      "table": "UI_en",
+      "id": 317431746879545344,
+      "key": "BOOSTER_EXTRA_SLOT_LEVELBUY",
+      "text": "Continue a level with an extra slot on the shelf!"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": -416585973553530914,
+      "table": "UI_en",
+      "id": 378327571159470080,
+      "key": "BOOSTER_REMOVE_COLOR_BUY",
+      "text": "Removes {0} tiles from the field."
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 52742316032,
+      "key": "PowerupUndoComponent.Title",
+      "text": "Undo"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 713949175808,
+      "key": "PowerupUndoComponent.Description",
+      "text": "Cancels your last move"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 5490409988096,
+      "key": "PowerupRandComponent.Description",
+      "text": "Shuffles the tiles on the field"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 5447791665152,
+      "key": "PowerupRandComponent.Title",
+      "text": "Dice"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 5503072591872,
+      "key": "PowerupHintComponent.Title",
+      "text": "Magic Wand"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 5507996704768,
+      "key": "PowerupHintComponent.Description",
+      "text": "Makes one effective move"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 289730579433410560,
+      "key": "PowerupDrop3Component.Title",
+      "text": "Tile Return"
+    },
+    {
+      "bundle": "localization-string-tables-english(en)_assets_all.bundle",
+      "object_id": 3193496905244245036,
+      "table": "Powerups_en",
+      "id": 289730579496325120,
+      "key": "PowerupDrop3Component.Description",
+      "text": "Returns 3 collected tiles to the field"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 130592792576,
+      "key": "TUTORIAL_0",
+      "text": "连续点击三个一模一样的瓷砖去除它们。清理整个场地！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 783721422848,
+      "key": "TUTORIAL_1",
+      "text": "连续点击三个一模一样的瓷砖去除它们。清理整个场地！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 899828146176,
+      "key": "TUTORIAL_2",
+      "text": "不要把架子完全填满——你会输掉这一关！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 987455545344,
+      "key": "TUTORIAL_3",
+      "text": "试试“撤销”——它可以帮你收回上一步操作！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 1070578262016,
+      "key": "TUTORIAL_4",
+      "text": "试试「Dice」——它会打乱所有方块！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 1138479849472,
+      "key": "TUTORIAL_5",
+      "text": "试试「魔法棒」——它会帮你走一步！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 1220923088896,
+      "key": "TUTORIAL_6",
+      "text": "试试「退牌」——它会把收集的3块牌放回场上！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 1285611839488,
+      "key": "TUTORIAL_7",
+      "text": "黄色瓷砖是奖励——点击一次即可使用！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 1398426034176,
+      "key": "TUTORIAL_9",
+      "text": "你可以把架子上的任意方块移回到场上。"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 86844040908103680,
+      "key": "TUTORIAL_11",
+      "text": "点击这里前往商店！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 273564299269496832,
+      "key": "TUTORIAL_8",
+      "text": "你可以在架子上增加一个额外的槽位用于钻石。"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 276089583399067648,
+      "key": "TUTORIAL_12",
+      "text": "点击以更快收集剩余的瓷砖。"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 2055990762816530872,
+      "table": "CoreTutorial_zh",
+      "id": 425291362095874048,
+      "key": "TUTORIAL_10",
+      "text": "将手指移动到相同的瓷砖上移除它们。你可能会喜欢这种玩法！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 3180611251565336606,
+      "table": "UI_zh",
+      "id": 314896875292450818,
+      "key": "BOOSTER_EXTRA_SLOT_BUY",
+      "text": "以在架子上的额外槽位开始关卡！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 3180611251565336606,
+      "table": "UI_zh",
+      "id": 317431746879545344,
+      "key": "BOOSTER_EXTRA_SLOT_LEVELBUY",
+      "text": "以在架子上的额外槽位继续关卡！"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 3180611251565336606,
+      "table": "UI_zh",
+      "id": 378327571159470080,
+      "key": "BOOSTER_REMOVE_COLOR_BUY",
+      "text": "从场地中移除{0}块瓷砖。"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 52742316032,
+      "key": "PowerupUndoComponent.Title",
+      "text": "撤销"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 713949175808,
+      "key": "PowerupUndoComponent.Description",
+      "text": "取消上一步"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 5447791665152,
+      "key": "PowerupRandComponent.Title",
+      "text": "骰子"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 5490409988096,
+      "key": "PowerupRandComponent.Description",
+      "text": "重新整理场上的瓷砖"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 5503072591872,
+      "key": "PowerupHintComponent.Title",
+      "text": "魔术棒"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 5507996704768,
+      "key": "PowerupHintComponent.Description",
+      "text": "做出有效的一步"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 289730579433410560,
+      "key": "PowerupDrop3Component.Title",
+      "text": "瓷砖归位"
+    },
+    {
+      "bundle": "localization-string-tables-chinese(simplified)(zh)_assets_all.bundle",
+      "object_id": 6104839649750790155,
+      "table": "Powerups_zh",
+      "id": 289730579496325120,
+      "key": "PowerupDrop3Component.Description",
+      "text": "将收集到的3块瓷砖放回场地"
+    }
+  ],
+  "layout_census": {
+    "files": 3215,
+    "feature_instances": {
+      "bm9": 656,
+      "reg": 6589,
+      "flp": 7938,
+      "shbx": 4701,
+      "hint": 1835,
+      "fly": 11624,
+      "resh": 508,
+      "rock": 2043,
+      "pick": 3776,
+      "glu": 4177,
+      "ice": 17261,
+      "rop": 6223,
+      "rklk": 1722,
+      "gft": 15233,
+      "cur": 24,
+      "spdr": 24
+    }
+  },
+  "slide_interface": {
+    "GOT": "0x42a2740",
+    "relative_addend": "0x4361ae0",
+    "encoded_usage": "0x2000dc61",
+    "il2cpp_type_index": 28208,
+    "type_definition_index": 2273,
+    "name": "IFlycatcherFeature",
+    "method_slot": 2,
+    "method": "get_IsClosed",
+    "interpretation": "Closed window enters standard activation attempt; does not bypass lock."
+  }
+}

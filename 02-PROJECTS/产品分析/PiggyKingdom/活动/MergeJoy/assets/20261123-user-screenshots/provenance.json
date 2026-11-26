@@ -1,0 +1,52 @@
+{
+  "received_date": "2026-11-23",
+  "source": "用户于本轮提供的新一期Merge Joy实机截图",
+  "capture_date": "unknown",
+  "app_version": "unknown",
+  "round": "unknown",
+  "edits": "none; original bytes copied",
+  "images": [
+    {
+      "source_attachment": "codex-clipboard-0ff6b2ab-a015-43c3-83e3-d92e7dd76f2a.jpg",
+      "file": "S01-main-progress.jpg",
+      "subject": "进行中主界面与成长进度",
+      "sha256": "ed7ff5fd61beceba868cf3822203110c18341ce6085184eec6e9904ba0222ad6",
+      "bytes": 1431800
+    },
+    {
+      "source_attachment": "codex-clipboard-2d4e6513-04ba-4ffa-812f-197824a52dfb.png",
+      "file": "S02-help.png",
+      "subject": "帮助页",
+      "sha256": "89fad6086b24a0d374c4636b79040521f175f429ac6fbfbcd62c187e5badc56f",
+      "bytes": 2360767
+    },
+    {
+      "source_attachment": "codex-clipboard-17c2f007-282b-4662-9937-706751258c62.jpg",
+      "file": "S03-main-board.jpg",
+      "subject": "进行中棋盘",
+      "sha256": "32e2818850159aa0559bf741f86b49279af4c69f672894c21c6c5d0a179fa53a",
+      "bytes": 1417660
+    },
+    {
+      "source_attachment": "codex-clipboard-8063d9b1-abb5-43bb-a709-7ae347a6a426.jpg",
+      "file": "S04-bp.jpg",
+      "subject": "物品解锁型双轨BP",
+      "sha256": "0931f052c06767bf9cbba8aa26d9a01f6ac63a47772d6cd09bd6ba1d46d9cef7",
+      "bytes": 1055949
+    },
+    {
+      "source_attachment": "codex-clipboard-38e2ac7a-85fe-4af4-acc1-f9f05a206f5b.jpg",
+      "file": "S05-main-early.jpg",
+      "subject": "较早进度棋盘",
+      "sha256": "579905f91ec6a434337c84f0487b4fb119e8611ed928e4a8c5096c75fc92cd68",
+      "bytes": 1625904
+    },
+    {
+      "source_attachment": "codex-clipboard-e4890f4d-c375-4efb-9adf-78c810c834a3.jpg",
+      "file": "S06-reward-preview.jpg",
+      "subject": "奖励预览与投放提示",
+      "sha256": "5090e72617318ebee0d0b229e48775c0229b087f195345f65767c776aec0c2df",
+      "bytes": 1618005
+    }
+  ]
+}

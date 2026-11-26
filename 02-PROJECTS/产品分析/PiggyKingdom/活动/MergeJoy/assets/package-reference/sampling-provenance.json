@@ -1,0 +1,17 @@
+{
+  "sampled_date": "2026-11-24",
+  "instance": 1,
+  "instance_name": "产品分析",
+  "manager_source": "rpc",
+  "serial": "127.0.0.1:16416",
+  "android_user": 0,
+  "package": "com.olleyo.piggy.king.free",
+  "version": "2.7.3",
+  "version_code": 203,
+  "installed_abi": "arm64-v8a",
+  "device_path": "/storage/emulated/0/Android/data/com.olleyo.piggy.king.free/files/config/MergeMiniConfig.txt",
+  "original_sha256": "8b24b8226faaf8d4123ac74ebc7f7a50f1f3051f49d1be9d4a0e7dbb903252c6",
+  "decoded_sha256": "3c37261cb9e0280b5cf6d938606dba227b236993620b0773456c44b7b39feccf",
+  "changes": "Emulator initially stopped, launched via MuMuManager. No app launch, game navigation, account/storage edits or purchase commands issued.",
+  "consistency": "Single configuration file copied; no atomic runtime state snapshot. Cached file is not evidence of current selection."
+}

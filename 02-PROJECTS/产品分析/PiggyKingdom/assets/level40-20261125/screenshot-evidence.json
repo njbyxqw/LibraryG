@@ -1,0 +1,14 @@
+[
+  {
+    "file": "before-level2.png",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261125-level40\\before\\screen.png",
+    "sha256": "ea58c6988c229db485d20699990ec2386c2507cbf547d29880b5c115dc0dd942",
+    "rea_evidence": "ev_ff74478ccae776baef7bccd1563edfa7633e3da6353dde582df14cd03b0ce424"
+  },
+  {
+    "file": "after-level40.png",
+    "source": "D:\\LibraryG\\06-PRODUCT-ASSETS\\PiggyKingdom\\2.7.3\\05-Runtime\\20261125-level40\\after-second-start\\screen.png",
+    "sha256": "9ce0efd218b574a4d8aaf39b64d6835d31e8ee9677b8760f79d0daf6549def5f",
+    "rea_evidence": "ev_be8f41213daa3faeecc8ce1736b3138614ffef4e0ed3b963a7f0009d326b10c2"
+  }
+]

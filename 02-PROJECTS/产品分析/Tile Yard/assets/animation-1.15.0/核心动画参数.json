@@ -1,0 +1,4117 @@
+{
+  "manifest": {
+    "product": "Tile Yard",
+    "version": "1.15.0 (9872)",
+    "date": "2026-11-24",
+    "source": "User XAPK",
+    "xapk_sha256": "158aef95a7dadb405f836b053cc0481fe9007760d454e34ef0663c55e9def4e2",
+    "evidence": "static serialized values + native consumers; no runtime observation",
+    "counts": {
+      "core_components": 38,
+      "particle_systems": 93,
+      "trail_renderers": 11,
+      "audio_sources": 41,
+      "gift_animation_clips": 13
+    },
+    "curve_evaluation": "Hermite with slopes; weighted Bezier if weightedMode requests it. Main MonoBehaviour curves are unweighted. Plots are formula evaluation, not game footage."
+  },
+  "components": [
+    {
+      "file": "level1",
+      "path_id": 363,
+      "class": "RippleEffect",
+      "name": "",
+      "gameobject": "Main Camera",
+      "bytes": 432,
+      "serialized_sha256": "b43bd38edc6bfed45320b440a8f940625d07d7c3cf7dc44f65931cd88d832a7b",
+      "schema": [
+        [
+          "AnimationCurve",
+          "_waveform"
+        ],
+        [
+          "AnimationCurve",
+          "_fadeform"
+        ],
+        [
+          "Color",
+          "_reflectionColor"
+        ],
+        [
+          "float",
+          "_reflectionStrength"
+        ],
+        [
+          "float",
+          "_speed"
+        ],
+        [
+          "float",
+          "_power"
+        ],
+        [
+          "float",
+          "_radius"
+        ],
+        [
+          "float",
+          "_scale"
+        ],
+        [
+          "Shader",
+          "shader"
+        ],
+        [
+          "string",
+          "_path"
+        ],
+        [
+          "Texture2D",
+          "_gradTexture"
+        ],
+        [
+          "Texture2D",
+          "_fadeTexture"
+        ]
+      ],
+      "data": {
+        "_waveform": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            },
+            {
+              "time": 0.009999999776482582,
+              "value": 0.0,
+              "inSlope": -0.03090485744178295,
+              "outSlope": -0.03090485744178295,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 1.0
+            },
+            {
+              "time": 0.10469666123390198,
+              "value": 0.21021229028701782,
+              "inSlope": 6.564480781555176,
+              "outSlope": 6.564480781555176,
+              "weightedMode": 0,
+              "inWeight": 0.12700118124485016,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.23326659202575684,
+              "value": 0.6000000238418579,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            },
+            {
+              "time": 0.3878442347049713,
+              "value": 0.19926315546035767,
+              "inSlope": -4.650182723999023,
+              "outSlope": -4.650182723999023,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.15566888451576233
+            },
+            {
+              "time": 0.5,
+              "value": 0.0,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_fadeform": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 4.047170162200928,
+              "outSlope": 4.047170162200928,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.022727271541953087
+            },
+            {
+              "time": 0.8708255290985107,
+              "value": 0.2659244239330292,
+              "inSlope": -3.205441474914551,
+              "outSlope": -3.205441474914551,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": -0.7745042443275452,
+              "outSlope": -0.7745042443275452,
+              "weightedMode": 0,
+              "inWeight": 0.47330939769744873,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_reflectionColor": [
+          0.8207547068595886,
+          0.8207547068595886,
+          0.8207547068595886,
+          1.0
+        ],
+        "_reflectionStrength": 1.0,
+        "_speed": 1.2999999523162842,
+        "_power": 0.029999999329447746,
+        "_radius": 0.4000000059604645,
+        "_scale": 0.5,
+        "shader": {
+          "file_id": 3,
+          "path_id": 6
+        },
+        "_path": "tilematch",
+        "_gradTexture": {
+          "file_id": 3,
+          "path_id": 4
+        },
+        "_fadeTexture": {
+          "file_id": 3,
+          "path_id": 3
+        }
+      },
+      "field_byte_ranges": {
+        "_waveform": [
+          32,
+          244
+        ],
+        "_fadeform": [
+          244,
+          344
+        ],
+        "_reflectionColor": [
+          344,
+          360
+        ],
+        "_reflectionStrength": [
+          360,
+          364
+        ],
+        "_speed": [
+          364,
+          368
+        ],
+        "_power": [
+          368,
+          372
+        ],
+        "_radius": [
+          372,
+          376
+        ],
+        "_scale": [
+          376,
+          380
+        ],
+        "shader": [
+          380,
+          392
+        ],
+        "_path": [
+          392,
+          408
+        ],
+        "_gradTexture": [
+          408,
+          420
+        ],
+        "_fadeTexture": [
+          420,
+          432
+        ]
+      },
+      "parsed_bytes": 432
+    },
+    {
+      "file": "level1",
+      "path_id": 364,
+      "class": "DropField",
+      "name": "",
+      "gameobject": "DropField",
+      "bytes": 80,
+      "serialized_sha256": "2eeeb3d409a878a2817b2718d23e089420d60bc7d9cb86d3c1c136e516420013",
+      "schema": [
+        [
+          "GameObject",
+          "_reactObject"
+        ],
+        [
+          "DropTile",
+          "_droptile"
+        ],
+        [
+          "DropTile",
+          "_dropTileRemoveColor"
+        ],
+        [
+          "DropTile",
+          "_dropTileLast"
+        ]
+      ],
+      "data": {
+        "_reactObject": {
+          "file_id": 0,
+          "path_id": 89
+        },
+        "_droptile": {
+          "file_id": 0,
+          "path_id": 428
+        },
+        "_dropTileRemoveColor": {
+          "file_id": 0,
+          "path_id": 426
+        },
+        "_dropTileLast": {
+          "file_id": 0,
+          "path_id": 436
+        }
+      },
+      "field_byte_ranges": {
+        "_reactObject": [
+          32,
+          44
+        ],
+        "_droptile": [
+          44,
+          56
+        ],
+        "_dropTileRemoveColor": [
+          56,
+          68
+        ],
+        "_dropTileLast": [
+          68,
+          80
+        ]
+      },
+      "parsed_bytes": 80
+    },
+    {
+      "file": "level1",
+      "path_id": 373,
+      "class": "SoundRandomPitch",
+      "name": "",
+      "gameobject": "item_fall",
+      "bytes": 44,
+      "serialized_sha256": "c3e3a289cbbcf850ae608effc3a0f15ee573d62c0223aebfb2dd7ac8c7824644",
+      "schema": [
+        [
+          "Vector2",
+          "_pitchRange"
+        ],
+        [
+          "bool",
+          "_randomEveryShot"
+        ]
+      ],
+      "data": {
+        "_pitchRange": [
+          0.800000011920929,
+          1.0
+        ],
+        "_randomEveryShot": false
+      },
+      "field_byte_ranges": {
+        "_pitchRange": [
+          32,
+          40
+        ],
+        "_randomEveryShot": [
+          40,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "level1",
+      "path_id": 374,
+      "class": "Field",
+      "name": "",
+      "gameobject": "Field",
+      "bytes": 424,
+      "serialized_sha256": "dc3a4a3a008fcbd8df0f37d79a255cd202c8a6a572a80e87c4081468b452ca71",
+      "schema": [
+        [
+          "GameObject[]",
+          "_safeAreaObjects"
+        ],
+        [
+          "string",
+          "_levelsPackName"
+        ],
+        [
+          "GameObject",
+          "_backObject"
+        ],
+        [
+          "GameObject",
+          "_tapTileEffect"
+        ],
+        [
+          "GameObject[]",
+          "_matchSounds"
+        ],
+        [
+          "GameObject",
+          "_levelStartSound"
+        ],
+        [
+          "GameObject",
+          "_matchAddSound"
+        ],
+        [
+          "GameObject",
+          "_levelCompleteSound"
+        ],
+        [
+          "GameObject",
+          "_levelFailedSound"
+        ],
+        [
+          "GameObject",
+          "_comboReset"
+        ],
+        [
+          "int",
+          "_showPowerUpsFromLevel"
+        ],
+        [
+          "int",
+          "_showCatFromLevel"
+        ],
+        [
+          "float",
+          "_maxTileSize"
+        ],
+        [
+          "float",
+          "_automoveSpeed"
+        ],
+        [
+          "TileMatchBehaviour",
+          "_tileMatchBehaviour"
+        ],
+        [
+          "ProfileBehaviour",
+          "_profile"
+        ],
+        [
+          "GameObject",
+          "_tile"
+        ],
+        [
+          "Camera",
+          "_cam"
+        ],
+        [
+          "GameObject",
+          "_dropfield"
+        ],
+        [
+          "DropFieldCollector",
+          "_dropfieldfunc"
+        ],
+        [
+          "Score",
+          "_scoreFunc"
+        ],
+        [
+          "Transform",
+          "_powerUps"
+        ],
+        [
+          "bool",
+          "StepByStep"
+        ],
+        [
+          "int",
+          "NextStep"
+        ]
+      ],
+      "data": {
+        "_safeAreaObjects": [
+          {
+            "file_id": 0,
+            "path_id": 22
+          }
+        ],
+        "_levelsPackName": "Levels",
+        "_backObject": {
+          "file_id": 0,
+          "path_id": 25
+        },
+        "_tapTileEffect": {
+          "file_id": 2,
+          "path_id": 24804
+        },
+        "_matchSounds": [
+          {
+            "file_id": 0,
+            "path_id": 84
+          },
+          {
+            "file_id": 0,
+            "path_id": 72
+          },
+          {
+            "file_id": 0,
+            "path_id": 23
+          },
+          {
+            "file_id": 0,
+            "path_id": 86
+          },
+          {
+            "file_id": 0,
+            "path_id": 58
+          },
+          {
+            "file_id": 0,
+            "path_id": 38
+          },
+          {
+            "file_id": 0,
+            "path_id": 40
+          },
+          {
+            "file_id": 0,
+            "path_id": 82
+          },
+          {
+            "file_id": 0,
+            "path_id": 3
+          },
+          {
+            "file_id": 0,
+            "path_id": 66
+          },
+          {
+            "file_id": 0,
+            "path_id": 52
+          },
+          {
+            "file_id": 0,
+            "path_id": 51
+          },
+          {
+            "file_id": 0,
+            "path_id": 19
+          },
+          {
+            "file_id": 0,
+            "path_id": 43
+          }
+        ],
+        "_levelStartSound": {
+          "file_id": 0,
+          "path_id": 87
+        },
+        "_matchAddSound": {
+          "file_id": 0,
+          "path_id": 18
+        },
+        "_levelCompleteSound": {
+          "file_id": 0,
+          "path_id": 49
+        },
+        "_levelFailedSound": {
+          "file_id": 0,
+          "path_id": 56
+        },
+        "_comboReset": {
+          "file_id": 0,
+          "path_id": 27
+        },
+        "_showPowerUpsFromLevel": 3,
+        "_showCatFromLevel": 3,
+        "_maxTileSize": 0.26499998569488525,
+        "_automoveSpeed": 0.25999999046325684,
+        "_tileMatchBehaviour": {
+          "file_id": 0,
+          "path_id": 356
+        },
+        "_profile": {
+          "file_id": 0,
+          "path_id": 349
+        },
+        "_tile": {
+          "file_id": 2,
+          "path_id": 24931
+        },
+        "_cam": {
+          "file_id": 0,
+          "path_id": 219
+        },
+        "_dropfield": {
+          "file_id": 0,
+          "path_id": 22
+        },
+        "_dropfieldfunc": {},
+        "_scoreFunc": {
+          "file_id": 0,
+          "path_id": 369
+        },
+        "_powerUps": {
+          "file_id": 0,
+          "path_id": 127
+        },
+        "StepByStep": false,
+        "NextStep": 0
+      },
+      "field_byte_ranges": {
+        "_safeAreaObjects": [
+          32,
+          48
+        ],
+        "_levelsPackName": [
+          48,
+          60
+        ],
+        "_backObject": [
+          60,
+          72
+        ],
+        "_tapTileEffect": [
+          72,
+          84
+        ],
+        "_matchSounds": [
+          84,
+          256
+        ],
+        "_levelStartSound": [
+          256,
+          268
+        ],
+        "_matchAddSound": [
+          268,
+          280
+        ],
+        "_levelCompleteSound": [
+          280,
+          292
+        ],
+        "_levelFailedSound": [
+          292,
+          304
+        ],
+        "_comboReset": [
+          304,
+          316
+        ],
+        "_showPowerUpsFromLevel": [
+          316,
+          320
+        ],
+        "_showCatFromLevel": [
+          320,
+          324
+        ],
+        "_maxTileSize": [
+          324,
+          328
+        ],
+        "_automoveSpeed": [
+          328,
+          332
+        ],
+        "_tileMatchBehaviour": [
+          332,
+          344
+        ],
+        "_profile": [
+          344,
+          356
+        ],
+        "_tile": [
+          356,
+          368
+        ],
+        "_cam": [
+          368,
+          380
+        ],
+        "_dropfield": [
+          380,
+          392
+        ],
+        "_dropfieldfunc": [
+          392,
+          392
+        ],
+        "_scoreFunc": [
+          392,
+          404
+        ],
+        "_powerUps": [
+          404,
+          416
+        ],
+        "StepByStep": [
+          416,
+          420
+        ],
+        "NextStep": [
+          420,
+          424
+        ]
+      },
+      "parsed_bytes": 424
+    },
+    {
+      "file": "level1",
+      "path_id": 424,
+      "class": "ShadowObject",
+      "name": "",
+      "gameobject": "tileshadow",
+      "bytes": 32,
+      "serialized_sha256": "5226baff1501b101ef0674d82a93992529c3394c7beac3c9307b9d79d175a703",
+      "schema": [],
+      "data": {},
+      "field_byte_ranges": {},
+      "parsed_bytes": 32
+    },
+    {
+      "file": "level1",
+      "path_id": 425,
+      "class": "ShadowObject",
+      "name": "",
+      "gameobject": "tileshadow",
+      "bytes": 32,
+      "serialized_sha256": "ba71109c57ddf041d163fb1fe50530fed7d0ef595a121e173d4e26dc54614d13",
+      "schema": [],
+      "data": {},
+      "field_byte_ranges": {},
+      "parsed_bytes": 32
+    },
+    {
+      "file": "level1",
+      "path_id": 426,
+      "class": "DropTileRemoveColor",
+      "name": "",
+      "gameobject": "DropTileColorRemove",
+      "bytes": 356,
+      "serialized_sha256": "6cc613149e593f107bcd1baec9e4aec713724a71e8e027df98fdb33658fa37d2",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_rotationProbability"
+        ],
+        [
+          "float",
+          "_dropFlightTime"
+        ],
+        [
+          "float",
+          "_undoFlightTime"
+        ],
+        [
+          "float",
+          "_destroyTime"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "AnimationCurve",
+          "_zoomCurve"
+        ],
+        [
+          "float",
+          "_upForce"
+        ],
+        [
+          "AnimationCurve",
+          "_UpForceCurve"
+        ],
+        [
+          "EASETYPE",
+          "_moveEasing"
+        ],
+        [
+          "string",
+          "_dropFieldReaction"
+        ],
+        [
+          "GameObject",
+          "_effectDestroyMatchTile"
+        ],
+        [
+          "GameObject",
+          "_StartSound"
+        ],
+        [
+          "GameObject",
+          "_EndSound"
+        ],
+        [
+          "GameObject",
+          "_StartUndoSound"
+        ],
+        [
+          "GameObject",
+          "_EndUndoSound"
+        ],
+        [
+          "ParticleSystem",
+          "_undoParticle"
+        ],
+        [
+          "Transform",
+          "_tileObject"
+        ],
+        [
+          "ShadowObject",
+          "_shadowObject"
+        ],
+        [
+          "float",
+          "_appearTime"
+        ],
+        [
+          "float",
+          "_pauseTime"
+        ],
+        [
+          "GameObject",
+          "_effectAppear"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 0.6000000238418579,
+        "_rotationProbability": 0.0,
+        "_dropFlightTime": 1.0,
+        "_undoFlightTime": 0.5299999713897705,
+        "_destroyTime": 0.10000000149011612,
+        "_flightZoom": 0.25,
+        "_zoomCurve": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 7.372389316558838,
+              "outSlope": 7.372389316558838,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.05518588423728943
+            },
+            {
+              "time": 0.27629268169403076,
+              "value": 0.9011517763137817,
+              "inSlope": 0.9377928376197815,
+              "outSlope": 0.9377928376197815,
+              "weightedMode": 0,
+              "inWeight": 0.17638900876045227,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.5,
+              "value": 1.0,
+              "inSlope": -0.0,
+              "outSlope": -0.0,
+              "weightedMode": 0,
+              "inWeight": 0.10916581004858017,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.7019569277763367,
+              "value": 0.8913758993148804,
+              "inSlope": -1.0630085468292236,
+              "outSlope": -1.0630085468292236,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.1633511185646057
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": -5.207152843475342,
+              "outSlope": -5.207152843475342,
+              "weightedMode": 0,
+              "inWeight": 0.06471487879753113,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_upForce": 0.0,
+        "_UpForceCurve": {
+          "keys": [],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_moveEasing": 6,
+        "_dropFieldReaction": "",
+        "_effectDestroyMatchTile": {
+          "file_id": 2,
+          "path_id": 8527
+        },
+        "_StartSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_EndSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_StartUndoSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_EndUndoSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_undoParticle": {
+          "file_id": 2,
+          "path_id": 28329
+        },
+        "_tileObject": {
+          "file_id": 0,
+          "path_id": 197
+        },
+        "_shadowObject": {
+          "file_id": 0,
+          "path_id": 429
+        },
+        "_appearTime": 0.07000000029802322,
+        "_pauseTime": 0.20000000298023224,
+        "_effectAppear": {
+          "file_id": 2,
+          "path_id": 24804
+        }
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_rotationProbability": [
+          36,
+          40
+        ],
+        "_dropFlightTime": [
+          40,
+          44
+        ],
+        "_undoFlightTime": [
+          44,
+          48
+        ],
+        "_destroyTime": [
+          48,
+          52
+        ],
+        "_flightZoom": [
+          52,
+          56
+        ],
+        "_zoomCurve": [
+          56,
+          212
+        ],
+        "_upForce": [
+          212,
+          216
+        ],
+        "_UpForceCurve": [
+          216,
+          232
+        ],
+        "_moveEasing": [
+          232,
+          236
+        ],
+        "_dropFieldReaction": [
+          236,
+          240
+        ],
+        "_effectDestroyMatchTile": [
+          240,
+          252
+        ],
+        "_StartSound": [
+          252,
+          264
+        ],
+        "_EndSound": [
+          264,
+          276
+        ],
+        "_StartUndoSound": [
+          276,
+          288
+        ],
+        "_EndUndoSound": [
+          288,
+          300
+        ],
+        "_undoParticle": [
+          300,
+          312
+        ],
+        "_tileObject": [
+          312,
+          324
+        ],
+        "_shadowObject": [
+          324,
+          336
+        ],
+        "_appearTime": [
+          336,
+          340
+        ],
+        "_pauseTime": [
+          340,
+          344
+        ],
+        "_effectAppear": [
+          344,
+          356
+        ]
+      },
+      "parsed_bytes": 356
+    },
+    {
+      "file": "level1",
+      "path_id": 428,
+      "class": "DropTile",
+      "name": "",
+      "gameobject": "DropTile",
+      "bytes": 344,
+      "serialized_sha256": "882a00ae2fe6553bd2fb369a7837d3e5acb58057d6b6a637a77b74738f9b5db6",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_rotationProbability"
+        ],
+        [
+          "float",
+          "_dropFlightTime"
+        ],
+        [
+          "float",
+          "_undoFlightTime"
+        ],
+        [
+          "float",
+          "_destroyTime"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "AnimationCurve",
+          "_zoomCurve"
+        ],
+        [
+          "float",
+          "_upForce"
+        ],
+        [
+          "AnimationCurve",
+          "_UpForceCurve"
+        ],
+        [
+          "EASETYPE",
+          "_moveEasing"
+        ],
+        [
+          "string",
+          "_dropFieldReaction"
+        ],
+        [
+          "GameObject",
+          "_effectDestroyMatchTile"
+        ],
+        [
+          "GameObject",
+          "_StartSound"
+        ],
+        [
+          "GameObject",
+          "_EndSound"
+        ],
+        [
+          "GameObject",
+          "_StartUndoSound"
+        ],
+        [
+          "GameObject",
+          "_EndUndoSound"
+        ],
+        [
+          "ParticleSystem",
+          "_undoParticle"
+        ],
+        [
+          "Transform",
+          "_tileObject"
+        ],
+        [
+          "ShadowObject",
+          "_shadowObject"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 0.6000000238418579,
+        "_rotationProbability": 0.0,
+        "_dropFlightTime": 0.41999998688697815,
+        "_undoFlightTime": 0.5299999713897705,
+        "_destroyTime": 0.10000000149011612,
+        "_flightZoom": 0.25,
+        "_zoomCurve": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 7.372389316558838,
+              "outSlope": 7.372389316558838,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.05518588423728943
+            },
+            {
+              "time": 0.27629268169403076,
+              "value": 0.9011517763137817,
+              "inSlope": 0.9377928376197815,
+              "outSlope": 0.9377928376197815,
+              "weightedMode": 0,
+              "inWeight": 0.17638900876045227,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.5,
+              "value": 1.0,
+              "inSlope": -0.0,
+              "outSlope": -0.0,
+              "weightedMode": 0,
+              "inWeight": 0.10916581004858017,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.7019569277763367,
+              "value": 0.8913758993148804,
+              "inSlope": -1.0630085468292236,
+              "outSlope": -1.0630085468292236,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.1633511185646057
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": -5.207152843475342,
+              "outSlope": -5.207152843475342,
+              "weightedMode": 0,
+              "inWeight": 0.06471487879753113,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_upForce": 0.0,
+        "_UpForceCurve": {
+          "keys": [],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_moveEasing": 6,
+        "_dropFieldReaction": "bulk2",
+        "_effectDestroyMatchTile": {
+          "file_id": 2,
+          "path_id": 8527
+        },
+        "_StartSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_EndSound": {
+          "file_id": 0,
+          "path_id": 31
+        },
+        "_StartUndoSound": {
+          "file_id": 0,
+          "path_id": 78
+        },
+        "_EndUndoSound": {
+          "file_id": 0,
+          "path_id": 24
+        },
+        "_undoParticle": {
+          "file_id": 2,
+          "path_id": 28329
+        },
+        "_tileObject": {
+          "file_id": 0,
+          "path_id": 210
+        },
+        "_shadowObject": {
+          "file_id": 0,
+          "path_id": 424
+        }
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_rotationProbability": [
+          36,
+          40
+        ],
+        "_dropFlightTime": [
+          40,
+          44
+        ],
+        "_undoFlightTime": [
+          44,
+          48
+        ],
+        "_destroyTime": [
+          48,
+          52
+        ],
+        "_flightZoom": [
+          52,
+          56
+        ],
+        "_zoomCurve": [
+          56,
+          212
+        ],
+        "_upForce": [
+          212,
+          216
+        ],
+        "_UpForceCurve": [
+          216,
+          232
+        ],
+        "_moveEasing": [
+          232,
+          236
+        ],
+        "_dropFieldReaction": [
+          236,
+          248
+        ],
+        "_effectDestroyMatchTile": [
+          248,
+          260
+        ],
+        "_StartSound": [
+          260,
+          272
+        ],
+        "_EndSound": [
+          272,
+          284
+        ],
+        "_StartUndoSound": [
+          284,
+          296
+        ],
+        "_EndUndoSound": [
+          296,
+          308
+        ],
+        "_undoParticle": [
+          308,
+          320
+        ],
+        "_tileObject": [
+          320,
+          332
+        ],
+        "_shadowObject": [
+          332,
+          344
+        ]
+      },
+      "parsed_bytes": 344
+    },
+    {
+      "file": "level1",
+      "path_id": 429,
+      "class": "ShadowObject",
+      "name": "",
+      "gameobject": "tileshadow",
+      "bytes": 32,
+      "serialized_sha256": "05e310cd02b51a04f4bd4b2721658f97c274c537d753a03d57cb153196fc042a",
+      "schema": [],
+      "data": {},
+      "field_byte_ranges": {},
+      "parsed_bytes": 32
+    },
+    {
+      "file": "level1",
+      "path_id": 436,
+      "class": "DropTileLast",
+      "name": "",
+      "gameobject": "DropTileLast",
+      "bytes": 312,
+      "serialized_sha256": "80e5591d294a088c6ab4baf5bd847b38d9229534e3a5bbe4fb93fcad46755842",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_rotationProbability"
+        ],
+        [
+          "float",
+          "_dropFlightTime"
+        ],
+        [
+          "float",
+          "_undoFlightTime"
+        ],
+        [
+          "float",
+          "_destroyTime"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "AnimationCurve",
+          "_zoomCurve"
+        ],
+        [
+          "float",
+          "_upForce"
+        ],
+        [
+          "AnimationCurve",
+          "_UpForceCurve"
+        ],
+        [
+          "EASETYPE",
+          "_moveEasing"
+        ],
+        [
+          "string",
+          "_dropFieldReaction"
+        ],
+        [
+          "GameObject",
+          "_effectDestroyMatchTile"
+        ],
+        [
+          "GameObject",
+          "_StartSound"
+        ],
+        [
+          "GameObject",
+          "_EndSound"
+        ],
+        [
+          "GameObject",
+          "_StartUndoSound"
+        ],
+        [
+          "GameObject",
+          "_EndUndoSound"
+        ],
+        [
+          "ParticleSystem",
+          "_undoParticle"
+        ],
+        [
+          "Transform",
+          "_tileObject"
+        ],
+        [
+          "ShadowObject",
+          "_shadowObject"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 0.6000000238418579,
+        "_rotationProbability": 0.0,
+        "_dropFlightTime": 0.5600000023841858,
+        "_undoFlightTime": 0.5299999713897705,
+        "_destroyTime": 0.10000000149011612,
+        "_flightZoom": 0.8999999761581421,
+        "_zoomCurve": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            },
+            {
+              "time": 0.6000000238418579,
+              "value": 1.0,
+              "inSlope": -0.038715314120054245,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.01247265562415123
+            },
+            {
+              "time": 0.8500000238418579,
+              "value": 1.0,
+              "inSlope": 0.0,
+              "outSlope": -0.035114727914333344,
+              "weightedMode": 0,
+              "inWeight": 0.015044041909277439,
+              "outWeight": 0.1003102958202362
+            },
+            {
+              "time": 0.9986572265625,
+              "value": -0.00235748291015625,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_upForce": 0.0,
+        "_UpForceCurve": {
+          "keys": [],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_moveEasing": 6,
+        "_dropFieldReaction": "bulk",
+        "_effectDestroyMatchTile": {
+          "file_id": 2,
+          "path_id": 8527
+        },
+        "_StartSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_EndSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_StartUndoSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_EndUndoSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_undoParticle": {
+          "file_id": 2,
+          "path_id": 28329
+        },
+        "_tileObject": {
+          "file_id": 0,
+          "path_id": 209
+        },
+        "_shadowObject": {
+          "file_id": 0,
+          "path_id": 425
+        }
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_rotationProbability": [
+          36,
+          40
+        ],
+        "_dropFlightTime": [
+          40,
+          44
+        ],
+        "_undoFlightTime": [
+          44,
+          48
+        ],
+        "_destroyTime": [
+          48,
+          52
+        ],
+        "_flightZoom": [
+          52,
+          56
+        ],
+        "_zoomCurve": [
+          56,
+          184
+        ],
+        "_upForce": [
+          184,
+          188
+        ],
+        "_UpForceCurve": [
+          188,
+          204
+        ],
+        "_moveEasing": [
+          204,
+          208
+        ],
+        "_dropFieldReaction": [
+          208,
+          216
+        ],
+        "_effectDestroyMatchTile": [
+          216,
+          228
+        ],
+        "_StartSound": [
+          228,
+          240
+        ],
+        "_EndSound": [
+          240,
+          252
+        ],
+        "_StartUndoSound": [
+          252,
+          264
+        ],
+        "_EndUndoSound": [
+          264,
+          276
+        ],
+        "_undoParticle": [
+          276,
+          288
+        ],
+        "_tileObject": [
+          288,
+          300
+        ],
+        "_shadowObject": [
+          300,
+          312
+        ]
+      },
+      "parsed_bytes": 312
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 65697,
+      "class": "Nevosoft.TY.Core.Boom9ConfigSO",
+      "name": "Boom9Feature",
+      "gameobject": null,
+      "bytes": 56,
+      "serialized_sha256": "4075b630da364c5946013f0bfd4aa044281fa150ad6d2e197dab0a7b8527f7fc",
+      "schema": [
+        [
+          "SpecialTileBehaviour",
+          "_template"
+        ]
+      ],
+      "data": {
+        "_template": {
+          "file_id": 0,
+          "path_id": 71596
+        }
+      },
+      "field_byte_ranges": {
+        "_template": [
+          44,
+          56
+        ]
+      },
+      "parsed_bytes": 56
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 65701,
+      "class": "Nevosoft.TY.Core.GiftConfigSO",
+      "name": "GiftFeature",
+      "gameobject": null,
+      "bytes": 56,
+      "serialized_sha256": "3066878a5a2921ef4ac5af1d322153371a738fa3014c575fd9bffa10d5f029c6",
+      "schema": [
+        [
+          "GiftBehaviour",
+          "_template"
+        ]
+      ],
+      "data": {
+        "_template": {
+          "file_id": 0,
+          "path_id": 71990
+        }
+      },
+      "field_byte_ranges": {
+        "_template": [
+          44,
+          56
+        ]
+      },
+      "parsed_bytes": 56
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 65703,
+      "class": "Nevosoft.TY.Core.HintConfigSO",
+      "name": "HintFeature",
+      "gameobject": null,
+      "bytes": 56,
+      "serialized_sha256": "73f1d8e0f42069111b4d7a7b940ef01af7426e39d0ce78a9ca19c5f9a3d00dab",
+      "schema": [
+        [
+          "SpecialTileBehaviour",
+          "_template"
+        ]
+      ],
+      "data": {
+        "_template": {
+          "file_id": 0,
+          "path_id": 88588
+        }
+      },
+      "field_byte_ranges": {
+        "_template": [
+          44,
+          56
+        ]
+      },
+      "parsed_bytes": 56
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 65705,
+      "class": "Nevosoft.TY.Core.PickaxConfigSO",
+      "name": "PickaxFeature",
+      "gameobject": null,
+      "bytes": 72,
+      "serialized_sha256": "bb99b446ebd340aabc73800e0b2458adae977ad7b3d411335d3b77c9bf62fc5f",
+      "schema": [
+        [
+          "SpecialTileBehaviour",
+          "_template"
+        ],
+        [
+          "Sprite",
+          "_grayPicture"
+        ]
+      ],
+      "data": {
+        "_template": {
+          "file_id": 0,
+          "path_id": 88587
+        },
+        "_grayPicture": {
+          "file_id": 0,
+          "path_id": 4090
+        }
+      },
+      "field_byte_ranges": {
+        "_template": [
+          48,
+          60
+        ],
+        "_grayPicture": [
+          60,
+          72
+        ]
+      },
+      "parsed_bytes": 72
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 65707,
+      "class": "Nevosoft.TY.Core.ReshuffleConfigSO",
+      "name": "ReshuffleFeature",
+      "gameobject": null,
+      "bytes": 60,
+      "serialized_sha256": "5ae4d26e0e2008ea494c4458a377e93bb97fa9f8ae0605d7a1f2b4c372a6f198",
+      "schema": [
+        [
+          "SpecialTileBehaviour",
+          "_template"
+        ]
+      ],
+      "data": {
+        "_template": {
+          "file_id": 0,
+          "path_id": 76213
+        }
+      },
+      "field_byte_ranges": {
+        "_template": [
+          48,
+          60
+        ]
+      },
+      "parsed_bytes": 60
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 67122,
+      "class": "ShadowObject",
+      "name": "",
+      "gameobject": "tileshadow",
+      "bytes": 32,
+      "serialized_sha256": "bac36c7f7704b8bef3c723c7a407a743af9a097c6c841e62e673350235e967f8",
+      "schema": [],
+      "data": {},
+      "field_byte_ranges": {},
+      "parsed_bytes": 32
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 67660,
+      "class": "SpecialTileBehaviour",
+      "name": "",
+      "gameobject": "AutomoveSpecialTile",
+      "bytes": 84,
+      "serialized_sha256": "b8075f696812d3ae839ef6beb846993882e62be9e85a4327cc50545883db6e63",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "GameObject",
+          "_effectIfNotUsed"
+        ],
+        [
+          "GameObject",
+          "_effectTemplate"
+        ],
+        [
+          "GameObject[]",
+          "_whooshSpecialSounds"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 1.0,
+        "_flightSpeed": 1.5,
+        "_flightZoom": 1.0,
+        "_effectIfNotUsed": {
+          "file_id": 0,
+          "path_id": 22887
+        },
+        "_effectTemplate": {
+          "file_id": 0,
+          "path_id": 4628
+        },
+        "_whooshSpecialSounds": [
+          {
+            "file_id": 0,
+            "path_id": 9273
+          }
+        ]
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_flightSpeed": [
+          36,
+          40
+        ],
+        "_flightZoom": [
+          40,
+          44
+        ],
+        "_effectIfNotUsed": [
+          44,
+          56
+        ],
+        "_effectTemplate": [
+          56,
+          68
+        ],
+        "_whooshSpecialSounds": [
+          68,
+          84
+        ]
+      },
+      "parsed_bytes": 84
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 70606,
+      "class": "DropPowerUp",
+      "name": "",
+      "gameobject": "DropBooster",
+      "bytes": 80,
+      "serialized_sha256": "013c1bc276700a89054c3c44a66124e5c290068f6d66c152a7cd9951bbf6a741",
+      "schema": [
+        [
+          "TrailRenderer",
+          "_trail"
+        ],
+        [
+          "SpriteRenderer",
+          "_shadow"
+        ],
+        [
+          "SpriteRenderer",
+          "_icon"
+        ],
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ]
+      ],
+      "data": {
+        "_trail": {
+          "file_id": 0,
+          "path_id": 28288
+        },
+        "_shadow": {
+          "file_id": 0,
+          "path_id": 29215
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 29184
+        },
+        "_deflectionForceInFlight": 0.4000000059604645,
+        "_flightSpeed": 1.7000000476837158,
+        "_flightZoom": 0.30000001192092896
+      },
+      "field_byte_ranges": {
+        "_trail": [
+          32,
+          44
+        ],
+        "_shadow": [
+          44,
+          56
+        ],
+        "_icon": [
+          56,
+          68
+        ],
+        "_deflectionForceInFlight": [
+          68,
+          72
+        ],
+        "_flightSpeed": [
+          72,
+          76
+        ],
+        "_flightZoom": [
+          76,
+          80
+        ]
+      },
+      "parsed_bytes": 80
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 71127,
+      "class": "DropPowerUp",
+      "name": "",
+      "gameobject": "DropPowerUp",
+      "bytes": 80,
+      "serialized_sha256": "f777d3432136a6a9d5e70f8009576021426a58ba21f4ff8030fca4bcbd5a7fa8",
+      "schema": [
+        [
+          "TrailRenderer",
+          "_trail"
+        ],
+        [
+          "SpriteRenderer",
+          "_shadow"
+        ],
+        [
+          "SpriteRenderer",
+          "_icon"
+        ],
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ]
+      ],
+      "data": {
+        "_trail": {
+          "file_id": 0,
+          "path_id": 28287
+        },
+        "_shadow": {
+          "file_id": 0,
+          "path_id": 29226
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 29179
+        },
+        "_deflectionForceInFlight": 0.4000000059604645,
+        "_flightSpeed": 1.7000000476837158,
+        "_flightZoom": 0.6000000238418579
+      },
+      "field_byte_ranges": {
+        "_trail": [
+          32,
+          44
+        ],
+        "_shadow": [
+          44,
+          56
+        ],
+        "_icon": [
+          56,
+          68
+        ],
+        "_deflectionForceInFlight": [
+          68,
+          72
+        ],
+        "_flightSpeed": [
+          72,
+          76
+        ],
+        "_flightZoom": [
+          76,
+          80
+        ]
+      },
+      "parsed_bytes": 80
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 71596,
+      "class": "SpecialTileBehaviour",
+      "name": "",
+      "gameobject": "Boom9",
+      "bytes": 84,
+      "serialized_sha256": "326ac3aab2fb188f368c6b13720b7ad8dfa1a455e8d75e2be5e1e9764974cab5",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "GameObject",
+          "_effectIfNotUsed"
+        ],
+        [
+          "GameObject",
+          "_effectTemplate"
+        ],
+        [
+          "GameObject[]",
+          "_whooshSpecialSounds"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 1.0,
+        "_flightSpeed": 1.5,
+        "_flightZoom": 1.0,
+        "_effectIfNotUsed": {
+          "file_id": 0,
+          "path_id": 22887
+        },
+        "_effectTemplate": {
+          "file_id": 0,
+          "path_id": 4634
+        },
+        "_whooshSpecialSounds": [
+          {
+            "file_id": 0,
+            "path_id": 13283
+          }
+        ]
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_flightSpeed": [
+          36,
+          40
+        ],
+        "_flightZoom": [
+          40,
+          44
+        ],
+        "_effectIfNotUsed": [
+          44,
+          56
+        ],
+        "_effectTemplate": [
+          56,
+          68
+        ],
+        "_whooshSpecialSounds": [
+          68,
+          84
+        ]
+      },
+      "parsed_bytes": 84
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 71990,
+      "class": "Nevosoft.TY.Core.GiftBehaviour",
+      "name": "",
+      "gameobject": "GiftBehaviour",
+      "bytes": 44,
+      "serialized_sha256": "9e909a5e84bf42a86cfdf092da7fdffaa2fc884e8b84e97a5391cfea1615831b",
+      "schema": [
+        [
+          "Animator",
+          "_animator"
+        ]
+      ],
+      "data": {
+        "_animator": {
+          "file_id": 0,
+          "path_id": 28202
+        }
+      },
+      "field_byte_ranges": {
+        "_animator": [
+          32,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 74379,
+      "class": "SoundRandomPitch",
+      "name": "",
+      "gameobject": "Special & Powerup (57)",
+      "bytes": 44,
+      "serialized_sha256": "9afd6611fb201d041ddb7518df19f7db2f433a580f013d21fa59c7537420a245",
+      "schema": [
+        [
+          "Vector2",
+          "_pitchRange"
+        ],
+        [
+          "bool",
+          "_randomEveryShot"
+        ]
+      ],
+      "data": {
+        "_pitchRange": [
+          0.5,
+          0.800000011920929
+        ],
+        "_randomEveryShot": false
+      },
+      "field_byte_ranges": {
+        "_pitchRange": [
+          32,
+          40
+        ],
+        "_randomEveryShot": [
+          40,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 74380,
+      "class": "SoundRandomPitch",
+      "name": "",
+      "gameobject": "Special & Powerup (57)",
+      "bytes": 44,
+      "serialized_sha256": "a25d1146aafa70fcfae65af51562eb9061f734734658cb26e1b30ca2a06abad8",
+      "schema": [
+        [
+          "Vector2",
+          "_pitchRange"
+        ],
+        [
+          "bool",
+          "_randomEveryShot"
+        ]
+      ],
+      "data": {
+        "_pitchRange": [
+          0.5,
+          0.800000011920929
+        ],
+        "_randomEveryShot": false
+      },
+      "field_byte_ranges": {
+        "_pitchRange": [
+          32,
+          40
+        ],
+        "_randomEveryShot": [
+          40,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 74551,
+      "class": "Nevosoft.TY.Core.Tile",
+      "name": "",
+      "gameobject": "Tile",
+      "bytes": 104,
+      "serialized_sha256": "abe93ee0dad4d4f3106c0b6d4669ef3a616357adccf23c1f8551bbff21d8b179",
+      "schema": [
+        [
+          "float",
+          "_emersionSpeed"
+        ],
+        [
+          "float",
+          "_changeColorSpeed"
+        ],
+        [
+          "float",
+          "_wrongAnimationSpeed"
+        ],
+        [
+          "float",
+          "_wrongAnimationAmplitude"
+        ],
+        [
+          "float",
+          "_reshuffleSpeed"
+        ],
+        [
+          "float",
+          "_reshuffleZoom"
+        ],
+        [
+          "float",
+          "_reshuffleDivPower"
+        ],
+        [
+          "float",
+          "_darkColorTile"
+        ],
+        [
+          "Vector3",
+          "_pos"
+        ],
+        [
+          "Quaternion",
+          "_rot"
+        ],
+        [
+          "Vector3",
+          "_scale"
+        ]
+      ],
+      "data": {
+        "_emersionSpeed": 1.399999976158142,
+        "_changeColorSpeed": 2.0,
+        "_wrongAnimationSpeed": 3.0,
+        "_wrongAnimationAmplitude": 0.20000000298023224,
+        "_reshuffleSpeed": 2.0,
+        "_reshuffleZoom": 0.17000000178813934,
+        "_reshuffleDivPower": 0.3499999940395355,
+        "_darkColorTile": 0.6000000238418579,
+        "_pos": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "_rot": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "_scale": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "field_byte_ranges": {
+        "_emersionSpeed": [
+          32,
+          36
+        ],
+        "_changeColorSpeed": [
+          36,
+          40
+        ],
+        "_wrongAnimationSpeed": [
+          40,
+          44
+        ],
+        "_wrongAnimationAmplitude": [
+          44,
+          48
+        ],
+        "_reshuffleSpeed": [
+          48,
+          52
+        ],
+        "_reshuffleZoom": [
+          52,
+          56
+        ],
+        "_reshuffleDivPower": [
+          56,
+          60
+        ],
+        "_darkColorTile": [
+          60,
+          64
+        ],
+        "_pos": [
+          64,
+          76
+        ],
+        "_rot": [
+          76,
+          92
+        ],
+        "_scale": [
+          92,
+          104
+        ]
+      },
+      "parsed_bytes": 104
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 75048,
+      "class": "UIPowerUp",
+      "name": "",
+      "gameobject": "UIUndo",
+      "bytes": 204,
+      "serialized_sha256": "1caef2508768906852dd1710b87e9e9b4adbe4ae98840417558cf0be79fb1d37",
+      "schema": [
+        [
+          "UIPowerUpProperties",
+          "_properties"
+        ],
+        [
+          "GameObject",
+          "_icon"
+        ],
+        [
+          "GameObject",
+          "_lock"
+        ],
+        [
+          "GameObject",
+          "_endless"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counter"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterPlus"
+        ],
+        [
+          "Image",
+          "_counterImage"
+        ],
+        [
+          "Sprite",
+          "_counterSpritePlus"
+        ],
+        [
+          "Sprite",
+          "_counterSpriteNormal"
+        ],
+        [
+          "TimePanel",
+          "_endlessTimer"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterEndless"
+        ]
+      ],
+      "data": {
+        "_properties": {
+          "_powerupType": 0,
+          "_flightObj": {
+            "file_id": 0,
+            "path_id": 71127
+          },
+          "_effectUse": {
+            "file_id": 0,
+            "path_id": 0
+          },
+          "_effectTap": {
+            "file_id": 0,
+            "path_id": 28438
+          },
+          "_StartSound": {
+            "file_id": 0,
+            "path_id": 26019
+          }
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 14283
+        },
+        "_lock": {
+          "file_id": 0,
+          "path_id": 14888
+        },
+        "_endless": {
+          "file_id": 0,
+          "path_id": 14124
+        },
+        "_counter": {
+          "file_id": 0,
+          "path_id": 81545
+        },
+        "_counterPlus": {
+          "file_id": 0,
+          "path_id": 88243
+        },
+        "_counterImage": {
+          "file_id": 0,
+          "path_id": 67496
+        },
+        "_counterSpritePlus": {
+          "file_id": 0,
+          "path_id": 4319
+        },
+        "_counterSpriteNormal": {
+          "file_id": 0,
+          "path_id": 4157
+        },
+        "_endlessTimer": {
+          "file_id": 0,
+          "path_id": 83949
+        },
+        "_counterEndless": {
+          "file_id": 0,
+          "path_id": 68938
+        }
+      },
+      "field_byte_ranges": {
+        "_properties": [
+          32,
+          84
+        ],
+        "_icon": [
+          84,
+          96
+        ],
+        "_lock": [
+          96,
+          108
+        ],
+        "_endless": [
+          108,
+          120
+        ],
+        "_counter": [
+          120,
+          132
+        ],
+        "_counterPlus": [
+          132,
+          144
+        ],
+        "_counterImage": [
+          144,
+          156
+        ],
+        "_counterSpritePlus": [
+          156,
+          168
+        ],
+        "_counterSpriteNormal": [
+          168,
+          180
+        ],
+        "_endlessTimer": [
+          180,
+          192
+        ],
+        "_counterEndless": [
+          192,
+          204
+        ]
+      },
+      "parsed_bytes": 204
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 76213,
+      "class": "SpecialTileBehaviour",
+      "name": "",
+      "gameobject": "Reshuffle",
+      "bytes": 84,
+      "serialized_sha256": "0aa0d6212d54491633aa4ca13f41d106f0b528abb2ee3ac9e78c98d2fe024e64",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "GameObject",
+          "_effectIfNotUsed"
+        ],
+        [
+          "GameObject",
+          "_effectTemplate"
+        ],
+        [
+          "GameObject[]",
+          "_whooshSpecialSounds"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 1.0,
+        "_flightSpeed": 1.5,
+        "_flightZoom": 1.0,
+        "_effectIfNotUsed": {
+          "file_id": 0,
+          "path_id": 22887
+        },
+        "_effectTemplate": {
+          "file_id": 0,
+          "path_id": 8445
+        },
+        "_whooshSpecialSounds": [
+          {
+            "file_id": 0,
+            "path_id": 12303
+          }
+        ]
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_flightSpeed": [
+          36,
+          40
+        ],
+        "_flightZoom": [
+          40,
+          44
+        ],
+        "_effectIfNotUsed": [
+          44,
+          56
+        ],
+        "_effectTemplate": [
+          56,
+          68
+        ],
+        "_whooshSpecialSounds": [
+          68,
+          84
+        ]
+      },
+      "parsed_bytes": 84
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 77401,
+      "class": "DropTile",
+      "name": "",
+      "gameobject": "DropTile",
+      "bytes": 400,
+      "serialized_sha256": "48135d39015e1924418c980af56e335725d828c099e12d6db77ba2a0b40fe2de",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_rotationProbability"
+        ],
+        [
+          "float",
+          "_dropFlightTime"
+        ],
+        [
+          "float",
+          "_undoFlightTime"
+        ],
+        [
+          "float",
+          "_destroyTime"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "AnimationCurve",
+          "_zoomCurve"
+        ],
+        [
+          "float",
+          "_upForce"
+        ],
+        [
+          "AnimationCurve",
+          "_UpForceCurve"
+        ],
+        [
+          "EASETYPE",
+          "_moveEasing"
+        ],
+        [
+          "string",
+          "_dropFieldReaction"
+        ],
+        [
+          "GameObject",
+          "_effectDestroyMatchTile"
+        ],
+        [
+          "GameObject",
+          "_StartSound"
+        ],
+        [
+          "GameObject",
+          "_EndSound"
+        ],
+        [
+          "GameObject",
+          "_StartUndoSound"
+        ],
+        [
+          "GameObject",
+          "_EndUndoSound"
+        ],
+        [
+          "ParticleSystem",
+          "_undoParticle"
+        ],
+        [
+          "Transform",
+          "_tileObject"
+        ],
+        [
+          "ShadowObject",
+          "_shadowObject"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 0.6000000238418579,
+        "_rotationProbability": 0.0,
+        "_dropFlightTime": 0.41999998688697815,
+        "_undoFlightTime": 0.5299999713897705,
+        "_destroyTime": 0.10000000149011612,
+        "_flightZoom": 0.30000001192092896,
+        "_zoomCurve": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 0.3207867443561554,
+              "outSlope": 0.3207867443561554,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.7450860142707825
+            },
+            {
+              "time": 0.27629268169403076,
+              "value": 0.9011517763137817,
+              "inSlope": 1.6449834108352661,
+              "outSlope": 1.6449834108352661,
+              "weightedMode": 0,
+              "inWeight": 0.16651396453380585,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.5,
+              "value": 1.0,
+              "inSlope": -0.0,
+              "outSlope": -0.0,
+              "weightedMode": 0,
+              "inWeight": 0.10916581004858017,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.7019569277763367,
+              "value": 0.8913758993148804,
+              "inSlope": -1.0630085468292236,
+              "outSlope": -1.0630085468292236,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.1633511185646057
+            },
+            {
+              "time": 1.0,
+              "value": 0.0,
+              "inSlope": -5.207152843475342,
+              "outSlope": -5.207152843475342,
+              "weightedMode": 0,
+              "inWeight": 0.06471487879753113,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_upForce": 0.75,
+        "_UpForceCurve": {
+          "keys": [
+            {
+              "time": 0.0,
+              "value": 0.0,
+              "inSlope": 6.721245765686035,
+              "outSlope": 6.721245765686035,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.12377394735813141
+            },
+            {
+              "time": 0.9979248046875,
+              "value": -0.00235748291015625,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.0
+            }
+          ],
+          "preInfinity": 2,
+          "postInfinity": 2,
+          "rotationOrder": 4
+        },
+        "_moveEasing": 9,
+        "_dropFieldReaction": "bulk2",
+        "_effectDestroyMatchTile": {
+          "file_id": 0,
+          "path_id": 8527
+        },
+        "_StartSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_EndSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_StartUndoSound": {
+          "file_id": 0,
+          "path_id": 13111
+        },
+        "_EndUndoSound": {
+          "file_id": 0,
+          "path_id": 0
+        },
+        "_undoParticle": {
+          "file_id": 0,
+          "path_id": 28329
+        },
+        "_tileObject": {
+          "file_id": 0,
+          "path_id": 25510
+        },
+        "_shadowObject": {
+          "file_id": 0,
+          "path_id": 67122
+        }
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_rotationProbability": [
+          36,
+          40
+        ],
+        "_dropFlightTime": [
+          40,
+          44
+        ],
+        "_undoFlightTime": [
+          44,
+          48
+        ],
+        "_destroyTime": [
+          48,
+          52
+        ],
+        "_flightZoom": [
+          52,
+          56
+        ],
+        "_zoomCurve": [
+          56,
+          212
+        ],
+        "_upForce": [
+          212,
+          216
+        ],
+        "_UpForceCurve": [
+          216,
+          288
+        ],
+        "_moveEasing": [
+          288,
+          292
+        ],
+        "_dropFieldReaction": [
+          292,
+          304
+        ],
+        "_effectDestroyMatchTile": [
+          304,
+          316
+        ],
+        "_StartSound": [
+          316,
+          328
+        ],
+        "_EndSound": [
+          328,
+          340
+        ],
+        "_StartUndoSound": [
+          340,
+          352
+        ],
+        "_EndUndoSound": [
+          352,
+          364
+        ],
+        "_undoParticle": [
+          364,
+          376
+        ],
+        "_tileObject": [
+          376,
+          388
+        ],
+        "_shadowObject": [
+          388,
+          400
+        ]
+      },
+      "parsed_bytes": 400
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 77923,
+      "class": "ExtraSlotBoosterApplier",
+      "name": "",
+      "gameobject": "ExtraSlotApplier",
+      "bytes": 120,
+      "serialized_sha256": "33fa1998624337158f6737c394dbc30bab0c5c67f2a8ed69c4cb299846b01249",
+      "schema": [
+        [
+          "Image",
+          "_backLight"
+        ],
+        [
+          "ImageWithShadow",
+          "_icon"
+        ],
+        [
+          "UIPowerUpProperties",
+          "_properties"
+        ],
+        [
+          "GameObject",
+          "_effectAppear"
+        ]
+      ],
+      "data": {
+        "_backLight": {
+          "file_id": 0,
+          "path_id": 72076
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 87321
+        },
+        "_properties": {
+          "_powerupType": 0,
+          "_flightObj": {
+            "file_id": 0,
+            "path_id": 70606
+          },
+          "_effectUse": {
+            "file_id": 0,
+            "path_id": 0
+          },
+          "_effectTap": {
+            "file_id": 0,
+            "path_id": 0
+          },
+          "_StartSound": {
+            "file_id": 0,
+            "path_id": 26806
+          }
+        },
+        "_effectAppear": {
+          "file_id": 0,
+          "path_id": 10699
+        }
+      },
+      "field_byte_ranges": {
+        "_backLight": [
+          32,
+          44
+        ],
+        "_icon": [
+          44,
+          56
+        ],
+        "_properties": [
+          56,
+          108
+        ],
+        "_effectAppear": [
+          108,
+          120
+        ]
+      },
+      "parsed_bytes": 120
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 78536,
+      "class": "SoundRandomPitch",
+      "name": "",
+      "gameobject": "Special & Powerup (57)",
+      "bytes": 44,
+      "serialized_sha256": "307d89d63b56d440c5e8921f0bd89eced0ca6bae131d71859d5113b8c732f717",
+      "schema": [
+        [
+          "Vector2",
+          "_pitchRange"
+        ],
+        [
+          "bool",
+          "_randomEveryShot"
+        ]
+      ],
+      "data": {
+        "_pitchRange": [
+          0.5,
+          0.800000011920929
+        ],
+        "_randomEveryShot": false
+      },
+      "field_byte_ranges": {
+        "_pitchRange": [
+          32,
+          40
+        ],
+        "_randomEveryShot": [
+          40,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 81287,
+      "class": "UIPowerUp",
+      "name": "",
+      "gameobject": "UIHint",
+      "bytes": 204,
+      "serialized_sha256": "befb466c325c1eb061aea1e1a6c28a54bd1dff443be65f28916e9328433db95f",
+      "schema": [
+        [
+          "UIPowerUpProperties",
+          "_properties"
+        ],
+        [
+          "GameObject",
+          "_icon"
+        ],
+        [
+          "GameObject",
+          "_lock"
+        ],
+        [
+          "GameObject",
+          "_endless"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counter"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterPlus"
+        ],
+        [
+          "Image",
+          "_counterImage"
+        ],
+        [
+          "Sprite",
+          "_counterSpritePlus"
+        ],
+        [
+          "Sprite",
+          "_counterSpriteNormal"
+        ],
+        [
+          "TimePanel",
+          "_endlessTimer"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterEndless"
+        ]
+      ],
+      "data": {
+        "_properties": {
+          "_powerupType": 2,
+          "_flightObj": {
+            "file_id": 0,
+            "path_id": 71127
+          },
+          "_effectUse": {
+            "file_id": 0,
+            "path_id": 28328
+          },
+          "_effectTap": {
+            "file_id": 0,
+            "path_id": 28438
+          },
+          "_StartSound": {
+            "file_id": 0,
+            "path_id": 27236
+          }
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 19139
+        },
+        "_lock": {
+          "file_id": 0,
+          "path_id": 10925
+        },
+        "_endless": {
+          "file_id": 0,
+          "path_id": 19591
+        },
+        "_counter": {
+          "file_id": 0,
+          "path_id": 74573
+        },
+        "_counterPlus": {
+          "file_id": 0,
+          "path_id": 71032
+        },
+        "_counterImage": {
+          "file_id": 0,
+          "path_id": 85424
+        },
+        "_counterSpritePlus": {
+          "file_id": 0,
+          "path_id": 4319
+        },
+        "_counterSpriteNormal": {
+          "file_id": 0,
+          "path_id": 4157
+        },
+        "_endlessTimer": {
+          "file_id": 0,
+          "path_id": 66168
+        },
+        "_counterEndless": {
+          "file_id": 0,
+          "path_id": 87457
+        }
+      },
+      "field_byte_ranges": {
+        "_properties": [
+          32,
+          84
+        ],
+        "_icon": [
+          84,
+          96
+        ],
+        "_lock": [
+          96,
+          108
+        ],
+        "_endless": [
+          108,
+          120
+        ],
+        "_counter": [
+          120,
+          132
+        ],
+        "_counterPlus": [
+          132,
+          144
+        ],
+        "_counterImage": [
+          144,
+          156
+        ],
+        "_counterSpritePlus": [
+          156,
+          168
+        ],
+        "_counterSpriteNormal": [
+          168,
+          180
+        ],
+        "_endlessTimer": [
+          180,
+          192
+        ],
+        "_counterEndless": [
+          192,
+          204
+        ]
+      },
+      "parsed_bytes": 204
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 82430,
+      "class": "UIPowerUp",
+      "name": "",
+      "gameobject": "UIDrop3",
+      "bytes": 204,
+      "serialized_sha256": "477d0fc47f1bff56b69f201867c507f2919be4b079cf6674f8bb09bf42fcacc2",
+      "schema": [
+        [
+          "UIPowerUpProperties",
+          "_properties"
+        ],
+        [
+          "GameObject",
+          "_icon"
+        ],
+        [
+          "GameObject",
+          "_lock"
+        ],
+        [
+          "GameObject",
+          "_endless"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counter"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterPlus"
+        ],
+        [
+          "Image",
+          "_counterImage"
+        ],
+        [
+          "Sprite",
+          "_counterSpritePlus"
+        ],
+        [
+          "Sprite",
+          "_counterSpriteNormal"
+        ],
+        [
+          "TimePanel",
+          "_endlessTimer"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterEndless"
+        ]
+      ],
+      "data": {
+        "_properties": {
+          "_powerupType": 3,
+          "_flightObj": {
+            "file_id": 0,
+            "path_id": 71127
+          },
+          "_effectUse": {
+            "file_id": 0,
+            "path_id": 28327
+          },
+          "_effectTap": {
+            "file_id": 0,
+            "path_id": 28438
+          },
+          "_StartSound": {
+            "file_id": 0,
+            "path_id": 27393
+          }
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 17888
+        },
+        "_lock": {
+          "file_id": 0,
+          "path_id": 12334
+        },
+        "_endless": {
+          "file_id": 0,
+          "path_id": 18025
+        },
+        "_counter": {
+          "file_id": 0,
+          "path_id": 76062
+        },
+        "_counterPlus": {
+          "file_id": 0,
+          "path_id": 69439
+        },
+        "_counterImage": {
+          "file_id": 0,
+          "path_id": 84217
+        },
+        "_counterSpritePlus": {
+          "file_id": 0,
+          "path_id": 4319
+        },
+        "_counterSpriteNormal": {
+          "file_id": 0,
+          "path_id": 4157
+        },
+        "_endlessTimer": {
+          "file_id": 0,
+          "path_id": 67837
+        },
+        "_counterEndless": {
+          "file_id": 0,
+          "path_id": 88699
+        }
+      },
+      "field_byte_ranges": {
+        "_properties": [
+          32,
+          84
+        ],
+        "_icon": [
+          84,
+          96
+        ],
+        "_lock": [
+          96,
+          108
+        ],
+        "_endless": [
+          108,
+          120
+        ],
+        "_counter": [
+          120,
+          132
+        ],
+        "_counterPlus": [
+          132,
+          144
+        ],
+        "_counterImage": [
+          144,
+          156
+        ],
+        "_counterSpritePlus": [
+          156,
+          168
+        ],
+        "_counterSpriteNormal": [
+          168,
+          180
+        ],
+        "_endlessTimer": [
+          180,
+          192
+        ],
+        "_counterEndless": [
+          192,
+          204
+        ]
+      },
+      "parsed_bytes": 204
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 83189,
+      "class": "RemoveColorBooster",
+      "name": "",
+      "gameobject": "RemoveColorApplier",
+      "bytes": 124,
+      "serialized_sha256": "9cdf38d6c320e27d42a67b8be22ad27b97c4ef3e06a4a963105aa1b9134f7fd3",
+      "schema": [
+        [
+          "Image",
+          "_backLight"
+        ],
+        [
+          "ImageWithShadow",
+          "_icon"
+        ],
+        [
+          "UIPowerUpProperties",
+          "_properties"
+        ],
+        [
+          "GameObject",
+          "_effectAppear"
+        ],
+        [
+          "float",
+          "_speed"
+        ]
+      ],
+      "data": {
+        "_backLight": {
+          "file_id": 0,
+          "path_id": 68140
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 86940
+        },
+        "_properties": {
+          "_powerupType": 1,
+          "_flightObj": {
+            "file_id": 0,
+            "path_id": 70606
+          },
+          "_effectUse": {
+            "file_id": 0,
+            "path_id": 28327
+          },
+          "_effectTap": {
+            "file_id": 0,
+            "path_id": 0
+          },
+          "_StartSound": {
+            "file_id": 0,
+            "path_id": 27433
+          }
+        },
+        "_effectAppear": {
+          "file_id": 0,
+          "path_id": 10699
+        },
+        "_speed": 0.05000000074505806
+      },
+      "field_byte_ranges": {
+        "_backLight": [
+          32,
+          44
+        ],
+        "_icon": [
+          44,
+          56
+        ],
+        "_properties": [
+          56,
+          108
+        ],
+        "_effectAppear": [
+          108,
+          120
+        ],
+        "_speed": [
+          120,
+          124
+        ]
+      },
+      "parsed_bytes": 124
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 85617,
+      "class": "SoundRandomPitch",
+      "name": "",
+      "gameobject": "Special & Powerup (57)",
+      "bytes": 44,
+      "serialized_sha256": "68a88f9d4023455de55201a316868877905a3fa6c7e389f45a58ba412eac0fa9",
+      "schema": [
+        [
+          "Vector2",
+          "_pitchRange"
+        ],
+        [
+          "bool",
+          "_randomEveryShot"
+        ]
+      ],
+      "data": {
+        "_pitchRange": [
+          0.5,
+          0.800000011920929
+        ],
+        "_randomEveryShot": false
+      },
+      "field_byte_ranges": {
+        "_pitchRange": [
+          32,
+          40
+        ],
+        "_randomEveryShot": [
+          40,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 85841,
+      "class": "UIPowerUp",
+      "name": "",
+      "gameobject": "UIRand",
+      "bytes": 204,
+      "serialized_sha256": "aaf1262472fd44b802a2de4cb33ea562a68f705cb4cc00ae059e67fe7f8d5631",
+      "schema": [
+        [
+          "UIPowerUpProperties",
+          "_properties"
+        ],
+        [
+          "GameObject",
+          "_icon"
+        ],
+        [
+          "GameObject",
+          "_lock"
+        ],
+        [
+          "GameObject",
+          "_endless"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counter"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterPlus"
+        ],
+        [
+          "Image",
+          "_counterImage"
+        ],
+        [
+          "Sprite",
+          "_counterSpritePlus"
+        ],
+        [
+          "Sprite",
+          "_counterSpriteNormal"
+        ],
+        [
+          "TimePanel",
+          "_endlessTimer"
+        ],
+        [
+          "TextMeshProUGUI",
+          "_counterEndless"
+        ]
+      ],
+      "data": {
+        "_properties": {
+          "_powerupType": 1,
+          "_flightObj": {
+            "file_id": 0,
+            "path_id": 71127
+          },
+          "_effectUse": {
+            "file_id": 0,
+            "path_id": 28423
+          },
+          "_effectTap": {
+            "file_id": 0,
+            "path_id": 28438
+          },
+          "_StartSound": {
+            "file_id": 0,
+            "path_id": 26733
+          }
+        },
+        "_icon": {
+          "file_id": 0,
+          "path_id": 20164
+        },
+        "_lock": {
+          "file_id": 0,
+          "path_id": 9355
+        },
+        "_endless": {
+          "file_id": 0,
+          "path_id": 20976
+        },
+        "_counter": {
+          "file_id": 0,
+          "path_id": 67538
+        },
+        "_counterPlus": {
+          "file_id": 0,
+          "path_id": 72731
+        },
+        "_counterImage": {
+          "file_id": 0,
+          "path_id": 81495
+        },
+        "_counterSpritePlus": {
+          "file_id": 0,
+          "path_id": 4319
+        },
+        "_counterSpriteNormal": {
+          "file_id": 0,
+          "path_id": 4157
+        },
+        "_endlessTimer": {
+          "file_id": 0,
+          "path_id": 76072
+        },
+        "_counterEndless": {
+          "file_id": 0,
+          "path_id": 79619
+        }
+      },
+      "field_byte_ranges": {
+        "_properties": [
+          32,
+          84
+        ],
+        "_icon": [
+          84,
+          96
+        ],
+        "_lock": [
+          96,
+          108
+        ],
+        "_endless": [
+          108,
+          120
+        ],
+        "_counter": [
+          120,
+          132
+        ],
+        "_counterPlus": [
+          132,
+          144
+        ],
+        "_counterImage": [
+          144,
+          156
+        ],
+        "_counterSpritePlus": [
+          156,
+          168
+        ],
+        "_counterSpriteNormal": [
+          168,
+          180
+        ],
+        "_endlessTimer": [
+          180,
+          192
+        ],
+        "_counterEndless": [
+          192,
+          204
+        ]
+      },
+      "parsed_bytes": 204
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 86313,
+      "class": "UIExtraSlot",
+      "name": "",
+      "gameobject": "UITileButtonGreen",
+      "bytes": 48,
+      "serialized_sha256": "43fe4fcc712c48f17d8113a4c506f89c283a62dfb8b5035061ab1c08bef81d8e",
+      "schema": [
+        [
+          "float",
+          "_speedOff"
+        ],
+        [
+          "GameObject",
+          "_effectDestroyExtraSlot"
+        ]
+      ],
+      "data": {
+        "_speedOff": 8.0,
+        "_effectDestroyExtraSlot": {
+          "file_id": 0,
+          "path_id": 16894
+        }
+      },
+      "field_byte_ranges": {
+        "_speedOff": [
+          32,
+          36
+        ],
+        "_effectDestroyExtraSlot": [
+          36,
+          48
+        ]
+      },
+      "parsed_bytes": 48
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 86876,
+      "class": "SoundRandomPitch",
+      "name": "",
+      "gameobject": "Special & Powerup (57)",
+      "bytes": 44,
+      "serialized_sha256": "17fb37e06efa89b808bf0130d9aad4d2ecf3f591468c73f16c46cfe53754f4fe",
+      "schema": [
+        [
+          "Vector2",
+          "_pitchRange"
+        ],
+        [
+          "bool",
+          "_randomEveryShot"
+        ]
+      ],
+      "data": {
+        "_pitchRange": [
+          0.5,
+          0.800000011920929
+        ],
+        "_randomEveryShot": false
+      },
+      "field_byte_ranges": {
+        "_pitchRange": [
+          32,
+          40
+        ],
+        "_randomEveryShot": [
+          40,
+          44
+        ]
+      },
+      "parsed_bytes": 44
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 88587,
+      "class": "SpecialTileBehaviour",
+      "name": "",
+      "gameobject": "Pickax",
+      "bytes": 84,
+      "serialized_sha256": "bd67e4acb1ba9b6bba4d94e83df42bc7472db07372b7bcadc6ecc603bb201230",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "GameObject",
+          "_effectIfNotUsed"
+        ],
+        [
+          "GameObject",
+          "_effectTemplate"
+        ],
+        [
+          "GameObject[]",
+          "_whooshSpecialSounds"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 1.0,
+        "_flightSpeed": 1.5,
+        "_flightZoom": 1.0,
+        "_effectIfNotUsed": {
+          "file_id": 0,
+          "path_id": 22887
+        },
+        "_effectTemplate": {
+          "file_id": 0,
+          "path_id": 19645
+        },
+        "_whooshSpecialSounds": [
+          {
+            "file_id": 0,
+            "path_id": 21671
+          }
+        ]
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_flightSpeed": [
+          36,
+          40
+        ],
+        "_flightZoom": [
+          40,
+          44
+        ],
+        "_effectIfNotUsed": [
+          44,
+          56
+        ],
+        "_effectTemplate": [
+          56,
+          68
+        ],
+        "_whooshSpecialSounds": [
+          68,
+          84
+        ]
+      },
+      "parsed_bytes": 84
+    },
+    {
+      "file": "resources.assets",
+      "path_id": 88588,
+      "class": "SpecialTileBehaviour",
+      "name": "",
+      "gameobject": "Hint",
+      "bytes": 84,
+      "serialized_sha256": "90d9ae521b527abcf627b3b21f306d52a7a5892d74c64c498f048d1ddfbd0273",
+      "schema": [
+        [
+          "float",
+          "_deflectionForceInFlight"
+        ],
+        [
+          "float",
+          "_flightSpeed"
+        ],
+        [
+          "float",
+          "_flightZoom"
+        ],
+        [
+          "GameObject",
+          "_effectIfNotUsed"
+        ],
+        [
+          "GameObject",
+          "_effectTemplate"
+        ],
+        [
+          "GameObject[]",
+          "_whooshSpecialSounds"
+        ]
+      ],
+      "data": {
+        "_deflectionForceInFlight": 1.0,
+        "_flightSpeed": 1.5,
+        "_flightZoom": 1.0,
+        "_effectIfNotUsed": {
+          "file_id": 0,
+          "path_id": 22887
+        },
+        "_effectTemplate": {
+          "file_id": 0,
+          "path_id": 4629
+        },
+        "_whooshSpecialSounds": [
+          {
+            "file_id": 0,
+            "path_id": 21672
+          }
+        ]
+      },
+      "field_byte_ranges": {
+        "_deflectionForceInFlight": [
+          32,
+          36
+        ],
+        "_flightSpeed": [
+          36,
+          40
+        ],
+        "_flightZoom": [
+          40,
+          44
+        ],
+        "_effectIfNotUsed": [
+          44,
+          56
+        ],
+        "_effectTemplate": [
+          56,
+          68
+        ],
+        "_whooshSpecialSounds": [
+          68,
+          84
+        ]
+      },
+      "parsed_bytes": 84
+    }
+  ],
+  "curve_keyframes": {
+    "level1:363:_waveform": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        },
+        {
+          "time": 0.009999999776482582,
+          "value": 0.0,
+          "inSlope": -0.03090485744178295,
+          "outSlope": -0.03090485744178295,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 1.0
+        },
+        {
+          "time": 0.10469666123390198,
+          "value": 0.21021229028701782,
+          "inSlope": 6.564480781555176,
+          "outSlope": 6.564480781555176,
+          "weightedMode": 0,
+          "inWeight": 0.12700118124485016,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.23326659202575684,
+          "value": 0.6000000238418579,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        },
+        {
+          "time": 0.3878442347049713,
+          "value": 0.19926315546035767,
+          "inSlope": -4.650182723999023,
+          "outSlope": -4.650182723999023,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 0.15566888451576233
+        },
+        {
+          "time": 0.5,
+          "value": 0.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        },
+        {
+          "time": 1.0,
+          "value": 0.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:363:_fadeform": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 4.047170162200928,
+          "outSlope": 4.047170162200928,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.022727271541953087
+        },
+        {
+          "time": 0.8708255290985107,
+          "value": 0.2659244239330292,
+          "inSlope": -3.205441474914551,
+          "outSlope": -3.205441474914551,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 1.0,
+          "value": 0.0,
+          "inSlope": -0.7745042443275452,
+          "outSlope": -0.7745042443275452,
+          "weightedMode": 0,
+          "inWeight": 0.47330939769744873,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:426:_zoomCurve": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 7.372389316558838,
+          "outSlope": 7.372389316558838,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.05518588423728943
+        },
+        {
+          "time": 0.27629268169403076,
+          "value": 0.9011517763137817,
+          "inSlope": 0.9377928376197815,
+          "outSlope": 0.9377928376197815,
+          "weightedMode": 0,
+          "inWeight": 0.17638900876045227,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.5,
+          "value": 1.0,
+          "inSlope": -0.0,
+          "outSlope": -0.0,
+          "weightedMode": 0,
+          "inWeight": 0.10916581004858017,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.7019569277763367,
+          "value": 0.8913758993148804,
+          "inSlope": -1.0630085468292236,
+          "outSlope": -1.0630085468292236,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 0.1633511185646057
+        },
+        {
+          "time": 1.0,
+          "value": 0.0,
+          "inSlope": -5.207152843475342,
+          "outSlope": -5.207152843475342,
+          "weightedMode": 0,
+          "inWeight": 0.06471487879753113,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:426:_UpForceCurve": {
+      "keys": [],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:428:_zoomCurve": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 7.372389316558838,
+          "outSlope": 7.372389316558838,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.05518588423728943
+        },
+        {
+          "time": 0.27629268169403076,
+          "value": 0.9011517763137817,
+          "inSlope": 0.9377928376197815,
+          "outSlope": 0.9377928376197815,
+          "weightedMode": 0,
+          "inWeight": 0.17638900876045227,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.5,
+          "value": 1.0,
+          "inSlope": -0.0,
+          "outSlope": -0.0,
+          "weightedMode": 0,
+          "inWeight": 0.10916581004858017,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.7019569277763367,
+          "value": 0.8913758993148804,
+          "inSlope": -1.0630085468292236,
+          "outSlope": -1.0630085468292236,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 0.1633511185646057
+        },
+        {
+          "time": 1.0,
+          "value": 0.0,
+          "inSlope": -5.207152843475342,
+          "outSlope": -5.207152843475342,
+          "weightedMode": 0,
+          "inWeight": 0.06471487879753113,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:428:_UpForceCurve": {
+      "keys": [],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:436:_zoomCurve": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        },
+        {
+          "time": 0.6000000238418579,
+          "value": 1.0,
+          "inSlope": -0.038715314120054245,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 0.01247265562415123
+        },
+        {
+          "time": 0.8500000238418579,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": -0.035114727914333344,
+          "weightedMode": 0,
+          "inWeight": 0.015044041909277439,
+          "outWeight": 0.1003102958202362
+        },
+        {
+          "time": 0.9986572265625,
+          "value": -0.00235748291015625,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "level1:436:_UpForceCurve": {
+      "keys": [],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "resources.assets:77401:_zoomCurve": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 0.3207867443561554,
+          "outSlope": 0.3207867443561554,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.7450860142707825
+        },
+        {
+          "time": 0.27629268169403076,
+          "value": 0.9011517763137817,
+          "inSlope": 1.6449834108352661,
+          "outSlope": 1.6449834108352661,
+          "weightedMode": 0,
+          "inWeight": 0.16651396453380585,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.5,
+          "value": 1.0,
+          "inSlope": -0.0,
+          "outSlope": -0.0,
+          "weightedMode": 0,
+          "inWeight": 0.10916581004858017,
+          "outWeight": 0.3333333432674408
+        },
+        {
+          "time": 0.7019569277763367,
+          "value": 0.8913758993148804,
+          "inSlope": -1.0630085468292236,
+          "outSlope": -1.0630085468292236,
+          "weightedMode": 0,
+          "inWeight": 0.3333333432674408,
+          "outWeight": 0.1633511185646057
+        },
+        {
+          "time": 1.0,
+          "value": 0.0,
+          "inSlope": -5.207152843475342,
+          "outSlope": -5.207152843475342,
+          "weightedMode": 0,
+          "inWeight": 0.06471487879753113,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    },
+    "resources.assets:77401:_UpForceCurve": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inSlope": 6.721245765686035,
+          "outSlope": 6.721245765686035,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.12377394735813141
+        },
+        {
+          "time": 0.9979248046875,
+          "value": -0.00235748291015625,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+        }
+      ],
+      "preInfinity": 2,
+      "postInfinity": 2,
+      "rotationOrder": 4
+    }
+  }
+}

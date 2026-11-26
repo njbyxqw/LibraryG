@@ -1,0 +1,652 @@
+{
+  "sample": {
+    "version": "2.7.3/203",
+    "abi": "armeabi-v7a",
+    "hot_scripts_sha256": "11366a21e7c2fbdcdf5e301a9ff153dfd125b90736b64724371f2d6ed5f06954"
+  },
+  "tool": "System.Reflection.Metadata/PEReader + restricted existing Obfuz static normalizer + Capstone ARM",
+  "rea_status": "Transport closed twice; no new REA Evidence IDs",
+  "logic": {
+    "sample": "Piggy Kingdom Android 2.7.3/203",
+    "created": "2026-11-24",
+    "method": "PEReader metadata + CIL decoding, same preexisting Obfuz constants normalization; Capstone ARM for listed native consumer helpers",
+    "target_execution": false,
+    "rea_status": "Transport closed twice; fallback only, no new REA Evidence ID",
+    "hot_assembly_sha256": "11366a21e7c2fbdcdf5e301a9ff153dfd125b90736b64724371f2d6ed5f06954",
+    "configuration_sha256": "2161948c8fff3c55752d72b7f73917b8be77126fc80e54ee99c742eb83a689c4",
+    "checks": {
+      "default_board_rows": 8,
+      "default_board_stage_markers": 0,
+      "default_max_columns": 6,
+      "default_moveLines": 0,
+      "main_chain_count": 12,
+      "cap_reward_candidate_count": 7,
+      "cap_total_weight": 700
+    },
+    "methods": [
+      {
+        "file": "Merge.DataModel.MergeGame_1-CheckAndCompleteStage.txt",
+        "token": "0x06001e04",
+        "rva": "0x1d6858",
+        "method": "CheckAndCompleteStage",
+        "sha256": "ab20b76519a7b4e58d1913e13e878f3fc5e79d43ab0614fcbf2a18b5533a3a54"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-CheckAndRecordUnlockedChainItem.txt",
+        "token": "0x06001e11",
+        "rva": "0x1d8314",
+        "method": "CheckAndRecordUnlockedChainItem",
+        "sha256": "99b732be7970d8c7e96413e091be483bff19adfc47d7d69ddecf6df1ad8532d6"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-CheckMoveBoard.txt",
+        "token": "0x06001e06",
+        "rva": "0x1d6ad4",
+        "method": "CheckMoveBoard",
+        "sha256": "8059f77bbbce7863ae9b26dc2d97857223e4107386cd879a65fcac1d9f28cd09"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-ClickCell.txt",
+        "token": "0x06001e07",
+        "rva": "0x1d6c2c",
+        "method": "ClickCell",
+        "sha256": "43bc15051cc1527ca19f032b5bc3eb73adeb6dd46f126314e419fbdb4661aab0"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-ConvertCoinToDefaultItem.txt",
+        "token": "0x06001e18",
+        "rva": "0x1d8cec",
+        "method": "ConvertCoinToDefaultItem",
+        "sha256": "939e89225c102fcd2cb0b35055a65f7a7508914b09598f1bc06084f54e849228"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-DelayCheck.txt",
+        "token": "0x06001e2e",
+        "rva": "0x1da398",
+        "method": "DelayCheck",
+        "sha256": "a804052fe9a6b2940a455842c66e8c24d2e94d17f28745eec83937c05f75c627"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-DestroyTopItem.txt",
+        "token": "0x06001e0d",
+        "rva": "0x1d7dc4",
+        "method": "DestroyTopItem",
+        "sha256": "3789ac3cd549bbf340fd3048c981b5d01f626200555267a6a09abb1af7170053"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-DigDamage.txt",
+        "token": "0x06001e0f",
+        "rva": "0x1d8028",
+        "method": "DigDamage",
+        "sha256": "41f4aa19f2369ec47c3eeff40838dd69bb68f1e3e992c3930fbd2936bc03a1e3"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-DragItemEnd.txt",
+        "token": "0x06001e08",
+        "rva": "0x1d710c",
+        "method": "DragItemEnd",
+        "sha256": "bd0104927e27db4dd87e50535b87976d200538d0f4b32f544c8dd61308095f6f"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-EnterGame.txt",
+        "token": "0x06001df8",
+        "rva": "0x1d5aac",
+        "method": "EnterGame",
+        "sha256": "bc43ad8a8d952a1ca609a3fd2f61e36d378a65a413adbd8aa145d41bd8f2331f"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-GetFirstMergeableItem.txt",
+        "token": "0x06001e1b",
+        "rva": "0x1d9258",
+        "method": "GetFirstMergeableItem",
+        "sha256": "5c096975a2d989dba9c3fb28b6a54df2c2ceb54c391434dd0df9060064e3910a"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-InitBoard.txt",
+        "token": "0x06001dfe",
+        "rva": "0x1d60d0",
+        "method": "InitBoard",
+        "sha256": "868701d6dfd8b08bf202f7a89c9e0c4fef1126936cc56df53cae600c5fc56979"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-InitBoardRow.txt",
+        "token": "0x06001dff",
+        "rva": "0x1d6448",
+        "method": "InitBoardRow",
+        "sha256": "76679e83751ddf1d15bbfdcc8b6b7ef71dc17af33174638ad6cd7f0712a93d32"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-MergeItems.txt",
+        "token": "0x06001e0b",
+        "rva": "0x1d75a8",
+        "method": "MergeItems",
+        "sha256": "1112903b967e67874deebcae0d42f3dfa19fedbf42330c002a76609f78d36b60"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-NextStage.txt",
+        "token": "0x06001e05",
+        "rva": "0x1d6984",
+        "method": "NextStage",
+        "sha256": "fbfca14a4f9103616ed0127a53dd7bea894a2aab96829913b8f866fb50ba7833"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-Rand1ItemRewards.txt",
+        "token": "0x06001e1d",
+        "rva": "0x1d936c",
+        "method": "Rand1ItemRewards",
+        "sha256": "9e19fa436c0f7719e0b45e00fffcffc08de9912d53b430b2eb367667fd750c2f"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-RemoveTopItem.txt",
+        "token": "0x06001e0e",
+        "rva": "0x1d7f28",
+        "method": "RemoveTopItem",
+        "sha256": "9c7639b32ca4ce9ac526df06e3755a8b2876b81d7a6e4e63a2c440c4f1e93eed"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-Send1ItemReward.txt",
+        "token": "0x06001e1c",
+        "rva": "0x1d9344",
+        "method": "Send1ItemReward",
+        "sha256": "e95db450aa62ee2a4cf6ca5791dc7563804128101932496a9899960689367c69"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-SpawnItem.txt",
+        "token": "0x06001e10",
+        "rva": "0x1d82a8",
+        "method": "SpawnItem",
+        "sha256": "8afadd6f838b620f8391d59c75292e7bfcf038e1e30bdc64e1e6c667f8bd148a"
+      },
+      {
+        "file": "Merge.DataModel.MergeGame_1-UnShelveItem.txt",
+        "token": "0x06001e17",
+        "rva": "0x1d8b80",
+        "method": "UnShelveItem",
+        "sha256": "f4bd752ce34fc9736cb0687bb0229558c5993dd3e0061b154a91fbef540c810d"
+      },
+      {
+        "file": "MergeminiGameView_Asm-CheckAndSpawnNextItem.txt",
+        "token": "0x0600155a",
+        "rva": "0x1614e0",
+        "method": "CheckAndSpawnNextItem",
+        "sha256": "dfe751dcc0da4d0590fd825de5889851981f1b25fc48d40aaf9d6486d5611b49"
+      },
+      {
+        "file": "MergeminiGameView_Asm-GetItemRewards.txt",
+        "token": "0x0600156d",
+        "rva": "0x163b8c",
+        "method": "GetItemRewards",
+        "sha256": "b70ca97c3f9be3a48a78e6bc85b9cb7cf503ca591d2f83cf8f8eca01b23fe482"
+      },
+      {
+        "file": "MergeminiGameView_Asm-MergeItems.txt",
+        "token": "0x0600155f",
+        "rva": "0x161dac",
+        "method": "MergeItems",
+        "sha256": "a8ee95562755517872f2e2f158044ae8ef158d01cdfcf725cf7b932308ced3d5"
+      },
+      {
+        "file": "MergeminiGameView_Asm-OnBoardInput.txt",
+        "token": "0x0600154c",
+        "rva": "0x15faa0",
+        "method": "OnBoardInput",
+        "sha256": "ca7576a354c899d119a7cb6b0ddf9bd46e1aa06ad8312bc06787baa21e5d2257"
+      },
+      {
+        "file": "MergeminiGameView_Asm-OnCellClick.txt",
+        "token": "0x06001554",
+        "rva": "0x160630",
+        "method": "OnCellClick",
+        "sha256": "787098845ea81cb7679391ae3770db8809fa6c5e465f4a3a4ebbc573799c6f8f"
+      },
+      {
+        "file": "MergeminiGameView_Asm-OnShelf.txt",
+        "token": "0x06001548",
+        "rva": "0x15f8c0",
+        "method": "OnShelf",
+        "sha256": "5912f8dcd7b8df4e8187f852ff229239918c222e3e1b3950f5f3bb8c9f45d647"
+      },
+      {
+        "file": "MergeminiGameView_Asm-OnUnlockNewItem.txt",
+        "token": "0x06001550",
+        "rva": "0x15fccc",
+        "method": "OnUnlockNewItem",
+        "sha256": "c0dfe55b7bb00219933f70c6d5653b5c66a89fad45074848fe295e4b27ec9443"
+      },
+      {
+        "file": "MergeminiGameView_Asm-ShowFinalReward.txt",
+        "token": "0x06001561",
+        "rva": "0x1623e8",
+        "method": "ShowFinalReward",
+        "sha256": "679ed4fbca5fa724ab1953b4181dc2780a1832fe345defe06f840685e982f79a"
+      },
+      {
+        "file": "MergeminiGameView_Asm-SpawnItemRewards.txt",
+        "token": "0x0600155b",
+        "rva": "0x161760",
+        "method": "SpawnItemRewards",
+        "sha256": "766d08bc662a68e1b3104158007997c0da982db691cca7955bb1f2d051bee41d"
+      },
+      {
+        "file": "MergeminiGameView_Asm-UnShelveItem.txt",
+        "token": "0x06001569",
+        "rva": "0x163268",
+        "method": "UnShelveItem",
+        "sha256": "44f6d3c95c5641c8864079f175ed8f4cad4ac1c0193fbeedcc68825ed139d10e"
+      },
+      {
+        "file": "MergeminiGameView_Asm-UpdateShelveInfo.txt",
+        "token": "0x0600156a",
+        "rva": "0x163670",
+        "method": "UpdateShelveInfo",
+        "sha256": "dc4b808ec799377d758dae32c1c7ce7a3d533c67fea599cb74f54d258a212159"
+      }
+    ],
+    "native_index": "native/native_evidence_index.json",
+    "raw_il": "raw/",
+    "normalized_il": "normalized/",
+    "limitations": [
+      "Static behavior, not active user configuration or observed screen transitions.",
+      "RandUtil.NextIdxByWeights final primitive not independently recovered.",
+      "Terminal Lv12 click-reward branch exists but user reachability after final reward flow is unverified."
+    ]
+  },
+  "level_rewards": {
+    "source_abi": "armeabi-v7a",
+    "package": "2.7.3/203",
+    "source_binary": "01-Decoded/arm/libil2cpp.so",
+    "source_binary_sha256": "f2d03e18384b94369cefcc79d78a276d5e1035248308c5cd59158d83a606780d",
+    "boundary": "offline Capstone ARM; direct mapped calls and static field offsets; current ARM64 device not treated as identical native code",
+    "files": [
+      {
+        "path": "level-native/native-ActivityDM-GetActivityMultipleType-0x305F63C.txt",
+        "sha256": "bd310f53756f2e00546a573c6883a8cddc1501a13d2db93691b27ab063af4eb4"
+      },
+      {
+        "path": "level-native/native-ActivityDM-Init-0x305F750.txt",
+        "sha256": "87a36858bb3f9e465dbd5f4430494619848f198b90237bdbce28ef5b6ec1b4e5"
+      },
+      {
+        "path": "level-native/native-ActivityDM-OnActivityChangeLevelState-0x30602FC.txt",
+        "sha256": "f3236eb74ade24767dc349831b6c9e6a965a5ec308018c884d37ef660c4fd0ef"
+      },
+      {
+        "path": "level-native/native-ActivityDM-_ctor-0x3060CD4.txt",
+        "sha256": "c88985876782d1e674b61642bfbb801c2425c19dfdb28f1d77428da675a4a381"
+      },
+      {
+        "path": "level-native/native-ActivityLevelStateHandler-OnChangeLevelState-0x31484EC.txt",
+        "sha256": "e8e15f89d5eee0a9dfb1729aec2041a46aa533ede152245a98d330e1a990a2b4"
+      },
+      {
+        "path": "level-native/native-ActivityLevelStateHandler-_ctor-0x31484CC.txt",
+        "sha256": "d74a860aa521805f7b7459d3f08d2df17783e17cf84910775a2b6bde3793aba5"
+      },
+      {
+        "path": "level-native/native-ActivityTemplateConfigProvider-CreateTemplateDict-0x2CD1254.txt",
+        "sha256": "a9141ff028e7c2241d44f297cc0373a0b9678b39410ea9ae83678af13fa6752a"
+      },
+      {
+        "path": "level-native/native-ActivityTemplateConfigProvider-GetLevelReward-0x2CD194C.txt",
+        "sha256": "4ea67a65ae3679180257a016fa69a07afbccad38ae2403cc3009688c5b59a812"
+      },
+      {
+        "path": "level-native/native-BaseActivity-CreateRewardPlayer-0x314884C.txt",
+        "sha256": "7fb09eba3b22473d0392520bd21513f627e292f3fcbaadd3a7d606db31fcddf4"
+      },
+      {
+        "path": "level-native/native-BaseActivity-GetLevelMultipleType-0x314B434.txt",
+        "sha256": "41cd746e8f6747f750243c35f174b85477675f44747e326179479fb95a19f52a"
+      },
+      {
+        "path": "level-native/native-BaseActivity-Init-0x3148C24.txt",
+        "sha256": "4cb2e6674e30ea56d55052f28e5e9c7e40c708ca05e9c3d8e4f67610f4b28625"
+      },
+      {
+        "path": "level-native/native-LevelHelper-GetLevelRewardScale-0x31476BC.txt",
+        "sha256": "e15e18865785f3d990bc429f63b4f948e88df7ba4f34a7c260d69573237de302"
+      },
+      {
+        "path": "level-native/native-LevelTypeNameHelper-GetLvMultipleReward-0x32D212C.txt",
+        "sha256": "a976d9fa2cbbafa186ba5d9df7bc0508582f5cb4fd8b65b8693284fa7353e6cf"
+      },
+      {
+        "path": "level-native/native-MergeminiLevelRewardItem-Start-0x2EB1048.txt",
+        "sha256": "4f2b245a89587db54d135de553936bc35c9e301ac354f14c47fbb20cbab2cd54"
+      },
+      {
+        "path": "level-native/native-MergeminiLevelRewardItem-_ctor-0x2EB11C8.txt",
+        "sha256": "142b7f668955223f988084a5e6fd0c223159d7f53fea5caccf81cf89cd451072"
+      }
+    ]
+  },
+  "lifecycle": {
+    "input_sha256": "11366a21e7c2fbdcdf5e301a9ff153dfd125b90736b64724371f2d6ed5f06954",
+    "algorithm": "EncryptorBase.Decrypt(float) @0x750A7F8: finite float bits XOR (VM.Decrypt(0xabcd,ops,salt) & 0x7fffff). Static simulation, no app execution.",
+    "source_method": "MergeDataModelBase<T>.CheckAndSendUnclaimedReward 0x060011D5 IL018A-019A",
+    "constant_value": 1.0,
+    "native_algorithm_file": "merge-fantasy/native-EncryptorBase-Decrypt-0x750A7F8.txt",
+    "normalization_coverage": {
+      "field_constants": 2789,
+      "rva_constants": 72,
+      "rva_strings": 162,
+      "folded_arithmetic": 756
+    },
+    "selected_method_count": 45,
+    "boundary": "Static same-build managed IL with integer/string normalization. Other float/double instructions remain encoded unless separately verified."
+  },
+  "unlock_methods": [
+    {
+      "source": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "header": "METHOD 0x060011bb RVA 0x29db8 IsApOn"
+    },
+    {
+      "source": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "header": "METHOD 0x060011bc RVA 0x29dc5 GetUnlockLevel"
+    },
+    {
+      "source": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "header": "METHOD 0x060011bd RVA 0x29dd7 GetUnlockActivityDay"
+    },
+    {
+      "source": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "header": "METHOD 0x060011c1 RVA 0x29e2f IsRoundCanOpen"
+    },
+    {
+      "source": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "header": "METHOD 0x060011c2 RVA 0x1296ec OpenRound"
+    },
+    {
+      "source": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "header": "METHOD 0x060011d4 RVA 0x12a318 CheckAndOpenNextScene"
+    },
+    {
+      "source": "merge-joy/lifecycle/hot-il-normalized/M3Client.MergeminiActivity.il.txt",
+      "header": "METHOD 0x06001f2c RVA 0x1e4e08 IsHomeItemEnabled"
+    },
+    {
+      "source": "merge-joy/lifecycle/hot-il-normalized/M3Client.MergeminiActivity.il.txt",
+      "header": "METHOD 0x06001f32 RVA 0x1e53bc IsPopUpStartPanel"
+    },
+    {
+      "source": "merge-joy/lifecycle/hot-il-normalized/MergeminiGameView_Asm.il.txt",
+      "header": "METHOD 0x0600156e RVA 0x163cd4 ShowGuide"
+    },
+    {
+      "source": "merge-joy/logic/normalized/Merge.DataModel.MergeGame_1.il.txt",
+      "header": "METHOD 0x06001df8 RVA 0x1d5aac EnterGame"
+    }
+  ],
+  "lifecycle_methods": [
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015b9",
+      "rva": "0x1670c4",
+      "method": "CloseRound"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015bd",
+      "rva": "0x1672dc",
+      "method": "OnMergeItemUnlocked"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015c1",
+      "rva": "0x16737c",
+      "method": "UpdateTaskProgressByTrigger"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015c2",
+      "rva": "0x1675b8",
+      "method": "SyncUnlockedItems"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015c7",
+      "rva": "0x167d2c",
+      "method": "GetFreeItemState"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015c8",
+      "rva": "0x167e78",
+      "method": "GetPaidItemStateInternal"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015c9",
+      "rva": "0x1680ec",
+      "method": "IsItemCollected"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015cb",
+      "rva": "0x168268",
+      "method": "IsTaskMatched"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015cc",
+      "rva": "0x168338",
+      "method": "ClaimReward"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015cd",
+      "rva": "0x168830",
+      "method": "CollectAllUnclaimedRewards"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015d2",
+      "rva": "0x1691d0",
+      "method": "OnPurchaseSucceed"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015d4",
+      "rva": "0x169518",
+      "method": "TryApplyPendingPurchase"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergePassDM.il.txt",
+      "token": "0x060015d5",
+      "rva": "0x169620",
+      "method": "OnPurchaseComplete"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/M3Client.MergeminiActivity.il.txt",
+      "token": "0x06001f34",
+      "rva": "0x1e544c",
+      "method": "IsPopUpEndPanel"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/M3Client.MergeminiActivity.il.txt",
+      "token": "0x06001f35",
+      "rva": "0x1e558c",
+      "method": "PopUpEndPanel"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergeminiDM.il.txt",
+      "token": "0x06001504",
+      "rva": "0x15ca90",
+      "method": "GetSettlementItemType"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergeminiEndView_Asm.il.txt",
+      "token": "0x06001536",
+      "rva": "0x15e35c",
+      "method": "OnOpen"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergeminiEndView_Asm.il.txt",
+      "token": "0x06001537",
+      "rva": "0x15e4b0",
+      "method": "OnClose"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergeminiGameView_Asm.il.txt",
+      "token": "0x06001561",
+      "rva": "0x1623e8",
+      "method": "ShowFinalReward"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergeminiGameView_Asm.il.txt",
+      "token": "0x06001572",
+      "rva": "0x164904",
+      "method": "<ShowFinalReward>b__51_0"
+    },
+    {
+      "file": "merge-joy/lifecycle/hot-il-normalized/MergeminiGameView_Asm.il.txt",
+      "token": "0x06001573",
+      "rva": "0x164950",
+      "method": "<ShowFinalReward>b__51_1"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011ba",
+      "rva": "0x129608",
+      "method": "TryReceiveLevelReward"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011be",
+      "rva": "0x29de9",
+      "method": "IsCompleted"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011bf",
+      "rva": "0x29e08",
+      "method": "IsFinishConfirmed"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011c0",
+      "rva": "0x29e15",
+      "method": "IsOpen"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011c3",
+      "rva": "0x129a4c",
+      "method": "TryCloseRoundInternal"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011c4",
+      "rva": "0x129b5c",
+      "method": "CloseRound"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011ca",
+      "rva": "0x129f4c",
+      "method": "HasUnclaimedRewards"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011ce",
+      "rva": "0x12a040",
+      "method": "SetFinishConfirmed"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011cf",
+      "rva": "0x12a0bc",
+      "method": "MarkEndShown"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011d0",
+      "rva": "0x12a11c",
+      "method": "IsLastChance"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011d3",
+      "rva": "0x12a214",
+      "method": "ExitMatches"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011d4",
+      "rva": "0x12a318",
+      "method": "CheckAndOpenNextScene"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011d5",
+      "rva": "0x12a554",
+      "method": "CheckAndSendUnclaimedReward"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011d6",
+      "rva": "0x12a7a8",
+      "method": "PassGame"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/MergeDataModelBase_1.il.txt",
+      "token": "0x060011d8",
+      "rva": "0x12a9b8",
+      "method": "GetCurOpenableScene"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001d9a",
+      "rva": "0x2a3a4",
+      "method": "OnClose"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001d9e",
+      "rva": "0x2a3a4",
+      "method": "OnApplicationQuit"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001d9f",
+      "rva": "0x1d2f58",
+      "method": "OnBtnClose"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001da0",
+      "rva": "0x1d3060",
+      "method": "TryShowMergePassOnEnd"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001da1",
+      "rva": "0x2a3dc",
+      "method": "OnCloseQuit"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001da3",
+      "rva": "0x1d3118",
+      "method": "ShowRewardSettlement"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2.il.txt",
+      "token": "0x06001dce",
+      "rva": "0x1d48b8",
+      "method": "OpenStayView"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.View.MergeGameViewBase_2._WaitCloseQuit_d__34.il.txt",
+      "token": "0x06001dea",
+      "rva": "0x1d57fc",
+      "method": "MoveNext"
+    },
+    {
+      "file": "merge-fantasy/hot-il-normalized/Merge.DataModel.MergeGame_1.il.txt",
+      "token": "0x06001e2c",
+      "rva": "0x1da2b0",
+      "method": "SendFinalReward"
+    }
+  ]
+}
