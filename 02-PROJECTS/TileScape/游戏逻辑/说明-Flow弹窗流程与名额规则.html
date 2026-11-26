@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TS Flow 弹窗流程与配置说明</title>
+<style>
+:root{--ink:#172e38;--muted:#536b75;--paper:#f3f6f7;--line:#d5e0e4;--blue:#176785;--bluebg:#e7f3fa;--green:#176346;--greenbg:#e9f5ee;--amber:#86510b;--amberbg:#fff3db;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}a{color:var(--blue)}
+.wrap{max-width:1200px;margin:auto;padding:48px 30px 80px}header{margin-bottom:36px}h1{font-size:36px;line-height:1.3;letter-spacing:-1px;margin:8px 0 14px}h2{font-size:25px;margin:0 0 12px}h3{font-size:18px;margin:0 0 9px}p{margin:8px 0 16px}.meta{font-size:13px;color:var(--muted)}.lead{max-width:850px;font-size:18px}.section{padding:30px;background:var(--white);border:1px solid var(--line);border-radius:16px;margin-top:24px}.sub{color:var(--muted);font-size:14px}.nav{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0 0}.nav a{text-decoration:none;font-size:14px}code{font:13px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;background:#edf2f4;padding:2px 5px;border-radius:4px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.tables-map{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;gap:8px;align-items:stretch}.table-card{padding:18px;border:1px solid var(--line);border-radius:10px}.table-card strong{font-size:19px;display:block}.table-card p{font-size:14px;margin-bottom:6px}.connector{display:flex;align-items:center;justify-content:center;font-size:25px;color:var(--muted)}.condition{margin-top:12px;padding:16px 20px;background:var(--greenbg);border-radius:10px}.condition p{margin:5px 0}.fields{margin-top:18px}.fields summary{cursor:pointer;color:var(--blue);font-weight:600}table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0}th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#f4f7f8;font-weight:600}.table-scroll{overflow-x:auto}.legend{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.tag{display:inline-flex;align-items:center;white-space:nowrap;border-radius:5px;font-size:12px;padding:3px 8px;font-weight:650}.popup .tag,.tag.popup{background:var(--bluebg);color:var(--blue)}.action .tag,.tag.action{background:var(--greenbg);color:var(--green)}.chain .tag,.tag.chain{background:var(--amberbg);color:var(--amber)}.outside .tag,.tag.outside{background:#edf0f2;color:#52616b}.tabs{display:flex;gap:6px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);padding:8px 15px}button[aria-selected=true]{background:var(--ink);color:white;border-color:var(--ink)}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #66b3d0;outline-offset:3px}[hidden]{display:none!important}.scenario{padding-top:22px}.scenario-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}.budget{font-size:15px;color:var(--blue);font-weight:650}.lane{padding:18px;background:#f6f9fa;border-radius:10px;margin:12px 0}.lane-title{display:flex;gap:12px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}.sequence{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}.node{flex:1 1 135px;min-width:0;padding:13px;background:white;border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:7px}.node.action{border-top-color:var(--green)}.node.chain{border-top-color:var(--amber)}.node.outside{border-top-color:#7b8a92}.node b{display:block;font-size:15px;margin:5px 0}.node small{display:block;color:var(--muted);font-size:12px;margin-top:5px}.node-id{color:var(--muted);font-size:12px}.step-arrow{display:flex;align-items:center;color:var(--muted);font-size:20px}.down{text-align:center;color:var(--muted);line-height:1.2;padding:5px}.note{border-left:3px solid var(--blue);padding:10px 16px;background:var(--bluebg);margin:16px 0;font-size:14px}.note p{margin:0}.branch{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}.branch>div{padding:16px;border:1px dashed var(--line);border-radius:8px}.branch-label{font-size:13px;font-weight:650;color:var(--muted);margin-bottom:10px}.stack .node{margin:8px 0}.check-list{margin:8px 0 0;padding-left:23px;font-size:14px}.counter{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--bluebg);border-radius:10px;gap:18px}.counter strong{font-size:27px}.dots{display:flex;gap:5px}.dot{width:25px;height:10px;background:#d2e1e8;border-radius:3px}.dot.on{background:var(--blue)}.choices{display:grid;grid-template-columns:1fr 1fr;gap:7px 18px;margin:16px 0}.choices label{display:flex;align-items:center;gap:9px;padding:8px 0;font-size:14px}.choices input{width:18px;height:18px;accent-color:var(--blue)}.simrows{border-top:1px solid var(--line)}.simrow{display:grid;grid-template-columns:1fr 100px 100px;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}.simrow.dim{color:var(--muted)}.simrow .result{font-weight:600}.foot{font-size:13px;color:var(--muted);margin-top:26px}.pillline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.scope{font-size:14px;color:var(--muted)}.compact{font-size:14px}.compact td{padding:8px 10px}
+@media(max-width:760px){.wrap{padding:25px 14px 50px}h1{font-size:28px}.section{padding:20px 15px}.tables-map{grid-template-columns:1fr}.connector{transform:rotate(90deg);height:24px}.grid2,.branch,.choices{grid-template-columns:1fr}.sequence{display:block}.node{margin:8px 0}.step-arrow{justify-content:center;transform:rotate(90deg);height:24px}.simrow{grid-template-columns:1fr 80px 65px;font-size:13px}.scenario-head{display:block}}
+@media print{body{background:white;font-size:11pt}.wrap{padding:0;max-width:none}.section{border:0;padding:16px 0;break-inside:auto}.nav,.tabs,.choices{display:none}.scenario[hidden]{display:block!important}.node,.lane,.table-card,tr{break-inside:avoid}h2{break-after:avoid}.scenario{page-break-before:auto}button{display:none}.foot{font-size:9pt}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+<div class="meta">TILESCAPE · 配置基线 2026-11-25 · bugfix-flowconfig@3cc3d243d</div>
+<h1>弹窗流程与名额规则</h1>
+<p class="lead">四张配置表决定何时启动流程、按什么顺序判断候选，以及一轮最多展示多少个根弹窗。业务状态决定候选是否具备展示资格。</p>
+<div class="scope">依据 2026-11-25 Flow 四表快照，叠加本次已导出的额度调整。线上三处额度已读回核对。当前配置采用关卡不限额、首页每轮 4 个。关卡与首页分别计数，跨场景共享额度尚未实现。设备验收需核对实际加载的配置版本。成长礼包按现有 220 行说明。</div>
+<nav class="nav" aria-label="文档导航"><a href="#tables">四表关系</a><a href="#scenes">场景流程</a><a href="#quota">名额计算</a><a href="#reference">配置对照</a><a href="#acceptance">验收标准</a></nav>
+</header>
+
+<section class="section" id="tables">
+<h2>四张表如何配合</h2>
+<div class="tables-map">
+<div class="table-card"><strong>Trigger</strong><h3>何时开始</h3><p>业务事件选择一个根组。</p><code>Home → 1000</code><p class="sub">进入首页且界面准备完成后启动。</p></div>
+<div class="connector" aria-hidden="true">→</div>
+<div class="table-card"><strong>Group</strong><h3>按什么顺序</h3><p>排列条目或子组，并设置名额。</p><code>1000 → -1001,-1010,210</code><p class="sub">先首页进度，再运营弹窗，最后邮件。</p></div>
+<div class="connector" aria-hidden="true">→</div>
+<div class="table-card"><strong>FlowItems</strong><h3>具体执行什么</h3><p>ID 对应程序已经接入的弹窗或动作。</p><code>219 → 每日奖励领取页</code><p class="sub">Kind 决定是否占名额，ConditionMode 决定如何判断资格。</p></div>
+</div>
+<div class="condition"><strong>Condition · 声明可以使用的条件</strong><p>Group 或 FlowItems 的 Conditions 引用这里声明的条件。例如 <code>LevelPass / int</code> 配合 <code>[["LevelPass",60]]</code>，表示已通关至少 60 关。</p><p class="sub">当前正式组和正式条目的 Conditions 都为空，正式条目均用 ConditionMode=1，由业务代码判断资格。</p></div>
+<details class="fields"><summary>字段与读取方法</summary><table><thead><tr><th>表格</th><th>字段</th><th>含义</th></tr></thead><tbody>
+<tr><td>Trigger</td><td>Timing / RootGroupId</td><td>触发时机与根组。新增时机需要程序实际调用。</td></tr>
+<tr><td>Group</td><td>Members</td><td>英文逗号分隔。正数引用 FlowItems，负数引用子组。例如 <code>1</code> 是金牌条目，<code>-1001</code> 是首页进度组。</td></tr>
+<tr><td>Group</td><td>PopupLimit</td><td>正数为本轮上限，空、0、负数表示不限。子组同时受祖先组限制。</td></tr>
+<tr><td>FlowItems</td><td>ImplementationId</td><td>程序绑定的业务标识。按行 ID 查询，表格物理行号不决定优先级。</td></tr>
+<tr><td>FlowItems</td><td>Kind</td><td>0 为根弹窗，实际展示计 1 次。1 为动作，计 0 次。</td></tr>
+<tr><td>FlowItems</td><td>ConditionMode</td><td>0 仅表条件。1 仅业务条件。2 两者同时满足。增加额外门槛通常采用 2。</td></tr>
+<tr><td>Group / FlowItems</td><td>Conditions</td><td>多个条件按 AND 判断。名称和参数必须符合 Condition 声明。</td></tr>
+<tr><td>Condition</td><td>ConditionId / ParameterTypes</td><td>条件名称及有序参数类型。声明需要配套程序处理器。</td></tr>
+<tr><td>通用</td><td>note</td><td>阅读备注。字段类型为 note 时不参与业务导出。</td></tr>
+</tbody></table></details>
+</section>
+
+<section class="section" id="scenes">
+<h2>不同场景下的流程</h2>
+<p class="sub">图中顺序为候选优先级。资格不满足时跳过，根弹窗及其后续链结束后从根组重新判断。</p>
+<div class="legend"><span class="tag popup">根弹窗 · 占 1 个</span><span class="tag action">动作 · 占 0 个</span><span class="tag chain">链内后续 · 不另计</span><span class="tag outside">组外业务 · 不占该组名额</span></div>
+<div class="tabs" role="tablist" aria-label="场景">
+<button id="tab-home" role="tab" aria-controls="home" aria-selected="true" type="button">登录／返回首页</button>
+<button id="tab-win" role="tab" aria-controls="win" aria-selected="false" type="button">关卡胜利</button>
+<button id="tab-fail" role="tab" aria-controls="fail" aria-selected="false" type="button">关卡失败</button>
+<button id="tab-bp" role="tab" aria-controls="bp" aria-selected="false" type="button">BP 结算接续</button>
+<button id="tab-idle" role="tab" aria-controls="idle" aria-selected="false" type="button">首页补充触发</button>
+</div>
+<div class="scenario" id="home" role="tabpanel" aria-labelledby="tab-home">
+<div class="scenario-head"><h3>Home → 1000</h3><div class="budget">一轮总额 4 · 包含章节提示、运营弹窗与邮件</div></div>
+<div class="lane"><div class="lane-title"><h3>1001 · 首页进度与引导</h3><span class="sub">依账号待处理状态执行</span></div>
+<div id="home-pre"></div></div><div class="down" aria-hidden="true">↓</div>
+<div class="lane"><h3>1011 · 每日奖励与活动结果</h3><div class="sequence" id="home-settle"></div></div><div class="down" aria-hidden="true">↓</div>
+<div class="lane"><h3>1012 · 活动开启</h3><div class="sequence" id="home-start"></div></div><div class="down" aria-hidden="true">↓</div>
+<div class="lane"><h3>1013 · 礼包开启</h3><div class="sequence" id="home-offers"></div></div><div class="down" aria-hidden="true">↓</div>
+<div class="sequence" id="home-mail"></div>
+<div class="note">1001、1011、1012、1013 当前均未单独限额，所有根弹窗共享 1000 的 4 个名额。达到上限后，后续根弹窗跳过，动作仍可执行。顺序靠后不保证本轮一定出现。</div>
+<p class="sub">射箭 2 可承接首次参加后的特定主界面展示。浪花夺宝 3 按恢复状态路由，部分 Ready 分支也可能进入开场。BP 221 还包含进行期间的购买奖励补展示。</p>
+</div>
+
+<div class="scenario" id="win" role="tabpanel" aria-labelledby="tab-win" hidden>
+<div class="scenario-head"><h3>TileV2.LevelSuccess → 2000</h3><div class="budget">本轮不限额 · 当前有 3 个根弹窗候选</div></div>
+<div class="lane"><div class="sequence" id="win-flow"></div></div>
+<div class="down" aria-hidden="true">↓</div><div class="node outside"><span class="tag">场景切换</span><b>胜利流程正常结束后返回首页</b><small>首页入场完成，再触发 Home。</small></div><div class="down" aria-hidden="true">↓</div>
+<div class="node popup"><span class="tag">新一轮 · 已用 0 / 4</span><b>执行 1000 首页流程</b><small>胜利组的名额不会累计到首页。2000 无需引用 -1000。</small></div>
+<div class="note">胜利组不设数量上限，合格的结算项完整执行。示例中三个根弹窗都展示时记 3 次，插屏记 0 次。回首页后独立启动 Home，最多再展示 4 个根弹窗。</div>
+<p class="sub">祝贺、插屏和浪花夺宝结果均需满足各自条件。225 的“胜利”表示关卡触发来源，活动结果页面由自身状态决定。新手连续关中间关和试用关有专门流程。</p>
+</div>
+
+<div class="scenario" id="fail" role="tabpanel" aria-labelledby="tab-fail" hidden>
+<div class="scenario-head"><h3>失败后的选择与返回</h3><div class="budget">2001 不限额 · 当前有 2 个根弹窗候选</div></div>
+<div class="node outside"><span class="tag">组外业务 · 不占 2001 名额</span><b>关卡失败 → 复活页</b><small>由关卡失败事件直接打开。</small></div>
+<div class="branch"><div><div class="branch-label">复活成功</div><div class="node outside"><span class="tag">继续关卡</span><b>继续本局</b><small>此时不启动失败结算组。</small></div></div><div><div class="branch-label">放弃复活／确认主动退出</div><div class="node outside"><span class="tag">启动失败组</span><b>TileV2.LevelFailed → 2001</b><small>主动退出可在退出确认后进入此路径。</small></div></div></div>
+<div class="lane"><h3>放弃复活或确认退出后的失败结算</h3><div class="sequence" id="fail-flow"></div></div>
+<div class="branch"><div><div class="branch-label">TryAgain 点重试</div><div class="node chain"><span class="tag">体力不足子窗 · 不另计</span><b>必要时处理体力不足</b></div><div class="down" aria-hidden="true">↓</div><div class="node outside"><span class="tag">重新进关</span><b>条件满足后重新进入本关</b></div></div><div><div class="branch-label">关闭 TryAgain</div><div class="node outside"><span class="tag">返回首页</span><b>首页就绪后启动 Home</b></div><div class="down" aria-hidden="true">↓</div><div class="node popup"><span class="tag">新一轮 · 已用 0 / 4</span><b>执行 1000 首页流程</b></div></div></div>
+<div class="note">226 展示使用 1 个名额，232 展示再使用 1 个。普通失败组及 TryAgain 重试链当前没有插屏项。普通 LevelEntry 开始按钮另有开局插屏资格检查。</div>
+</div>
+
+<div class="scenario" id="bp" role="tabpanel" aria-labelledby="tab-bp" hidden>
+<div class="scenario-head"><h3>233 · BP 旧期结算</h3><div class="budget">实际展示根项时计 1 次</div></div>
+<div class="node popup"><span class="tag">根弹窗 · 占 1 个</span><b>BP 赛季结束页</b><small>到期购买奖励补展示可从购买成功页进入本链，同样计本根项一次。</small></div>
+<div class="branch"><div><div class="branch-label">有可领取奖励</div><div class="node chain"><span class="tag">不另计</span><b>结算领奖页</b></div><div class="down" aria-hidden="true">↓</div><p class="compact">未购买且仍处于结算阶段 → 挽留。已购买按业务完成结算收尾。</p></div><div><div class="branch-label">无可领取奖励</div><p class="compact">未购买 → 挽留。<br>已购买 → 完成旧期处理。</p></div></div>
+<div class="lane"><h3>符合挽留条件时</h3><div class="node chain"><span class="tag">不另计</span><b>挽留页</b></div><div class="branch"><div><div class="branch-label">选择关闭</div><div class="node chain"><span class="tag">不另计</span><b>放弃确认</b><small>取消放弃返回挽留。确认放弃结束旧期。</small></div></div><div><div class="branch-label">选择购买且成功</div><div class="node chain"><span class="tag">不另计</span><b>购买成功 → 结算奖励</b><small>支付取消或失败按业务规则继续处理。</small></div></div></div></div>
+<div class="down" aria-hidden="true">↓</div><div class="node action"><span class="tag">占 0 个</span><b>本链收尾，重新扫描根组</b><small>其他根弹窗在结算链完成前等待。</small></div><div class="down" aria-hidden="true">↓</div><div class="node popup"><span class="tag">独立根弹窗 · 再占 1 个</span><b>221 · BP 新期开启</b><small>新期满足资格且本轮有剩余名额时，在开启组的位置参与判断。</small></div>
+<div class="note">结算 → 领奖 → 挽留 → 确认即使出现多个页面，也共同使用 233 的一个根名额。新期开启 221 独立计数。当前配置没有“必须等下一关再开启”的门槛。</div>
+</div>
+
+<div class="scenario" id="idle" role="tabpanel" aria-labelledby="tab-idle" hidden>
+<div class="grid2"><div class="lane"><h3>新邮件 · Home.Mail → 1003</h3><div class="node outside"><span class="tag">等待空闲</span><b>首页真正收到新待弹邮件</b><small>当前流程已含邮件项时由当前轮次承接。</small></div><div class="down" aria-hidden="true">↓</div><div class="node popup"><span class="tag">每封根详情占 1 个</span><b>210 · 待弹邮件详情</b><small>1003 当前不限额。独立轮次重新计数。</small></div><p class="sub">仅有积压邮件不会在一轮结束后不断自启新轮。展示后未领取的邮件，重进首页后可以再次成为候选。</p></div><div class="lane"><h3>主引导 · Home.Tutorial → 1002</h3><div class="node outside"><span class="tag">首页就绪</span><b>产生待处理主引导请求</b><small>完整 Home 中由原有 209 承接。</small></div><div class="down" aria-hidden="true">↓</div><div class="node action"><span class="tag">动作 · 占 0 个</span><b>209 · 执行主引导</b><small>引导完成后再处理后续工作。</small></div></div></div>
+</div>
+</section>
+
+<section class="section" id="quota">
+<h2>名额怎样扣除</h2>
+<p>名额按本轮实际展示的 <strong>Flow 根弹窗</strong>计数。显示前失败或取消计 0 次。根项后续的领奖、挽留、确认计入该根项。每个根弹窗同时占用所在组与祖先组的额度。</p>
+<div class="grid2"><div><h3>计数示例 · 首页上限 4</h3><p class="sub">勾选表示该示例中的候选符合业务条件，最终是否展示还取决于剩余名额。页面仅演示计数，候选资格固定，不模拟活动状态变化或重扫。</p><div class="choices" id="quota-choices"></div></div><div><div class="counter"><div>本轮已使用 <strong id="quota-total">0 / 4</strong></div><div class="dots" id="quota-dots" aria-hidden="true"></div></div><div class="simrows" id="quota-results" aria-live="polite"></div></div></div>
+<div class="note">示例中的飞奖和主引导始终计 0。若章节提示也展示，它会先占一个名额，后面的活动或礼包可用额度随之减少。</div>
+<table><thead><tr><th>内容</th><th>计数</th><th>原因</th></tr></thead><tbody><tr><td>章节提示、每日奖励、活动开启、礼包、邮件、胜利结算、TryAgain</td><td>根窗口展示 +1</td><td>对应 FlowItems 的 Kind=0。</td></tr><tr><td>关卡按钮、飞奖、活动入口表现、宝箱动作、地图聚焦、主引导、插屏</td><td>+0</td><td>对应 Kind=1。动作内部可能出现奖励界面，仍按该动作分类计数。</td></tr><tr><td>BP 结算内领奖／挽留／确认、TryAgain 体力子窗</td><td>不另计</td><td>作为已经开始的根项后续处理。</td></tr><tr><td>复活页、普通关前入口、更新或存档冲突提示</td><td>不占 1000／2000／2001 的根项额度</td><td>由业务直接触发，当前未作为这些组的根条目配置。</td></tr></tbody></table>
+<p class="compact">例如 1000=4、1010=2 时，运营弹窗既受父组 4 个总额限制，也受自身 2 个限制。邮件 210 在 1010 之外，仍可在父组有余量时显示。当前线上 1010 没有单独限额。</p>
+</section>
+
+<section class="section" id="reference"><h2>当前配置对照</h2><div class="table-scroll"><table id="group-table"><thead><tr><th>Group</th><th>Members</th><th>上限</th></tr></thead><tbody></tbody></table></div><details class="fields"><summary>全部 FlowItems 名称与计数类型</summary><div class="table-scroll"><table id="items-table"><thead><tr><th>ID</th><th>内容</th><th>类型</th><th>ImplementationId</th></tr></thead><tbody></tbody></table></div></details><p class="sub">样例 Trigger Flow.Step1.Sample 对应组 1／10。条目 101 是样例，正式首页就绪通知使用 208。230／231 为未引用的收尾条目，当前收尾由程序负责。</p></section>
+
+<section class="section" id="acceptance"><h2>验收标准</h2><div class="grid2"><div><h3>顺序与资格</h3><ul class="check-list"><li>测试前记录活动期次、参与／购买状态、待领奖、AB 分组、资源和已展示记录。</li><li>同时合格的候选按配置顺序判断。无资格跳过。链结束后重扫按新的业务状态选择。</li><li>BP 旧期结算与新期开启使用独立入口。挽留、确认、购买奖励期间其他根项等待。</li><li>失败复活、放弃、TryAgain 重试与关闭回首页分别覆盖。</li></ul></div><div><h3>计数与连续性</h3><ul class="check-list"><li>首页累计最多 4 个根弹窗。章节提示计数，Action 不计。</li><li>弹窗显示前失败／取消不扣额。已经开始的结算子链完整收尾。</li><li>连续根弹窗与二级接续无闪底。最后关窗后正确恢复输入。</li><li>胜败返回首页后重新启动 Home，重新计算首页额度。</li></ul></div></div><p class="compact">异常记录包括实际页面顺序、对应 ID、本轮已用根名额、账号状态、客户端和配置版本、完整录屏及日志。</p></section>
+<footer class="foot"><p>配置调整已提交为 0fd9d6d71，测试期望同步已提交为 3cc3d243d，均已推送至 bugfix-flowconfig。客户端运行验收待完成。</p><p>正式配置通过云端修改 → Unity 导表 → 资源构建与发布 → 客户端加载生效。验收应确认设备使用的配置版本。</p><p><a href="https://docs.google.com/spreadsheets/d/1QolcRqCcaq4J5rA9SyccCqjCUDc4cOda6GIKccf_gjo/edit">Flow 云端配置表</a> · 依据 2026-11-25 配置快照及本次额度更新，35 条流程项。图示解释配置与代码行为，运行结果以实际验收记录为准。</p></footer>
+</main>
+<script id="flow-data" type="application/json">{"names": {"200": "关卡按钮表现", "201": "等待过关奖励就绪", "202": "过关奖励飞入", "203": "通关宝箱表现", "204": "退出无尽后的章节提示", "205": "章节解锁／进入无尽", "206": "镜头聚焦当前关卡", "207": "到达宝箱表现", "208": "首次首页就绪通知", "209": "待办主引导", "210": "待弹邮件详情", "101": "首页就绪通知（样例）", "102": "活动入口表现", "1": "金牌活动开启", "2": "射箭结算／特定进度页", "3": "浪花夺宝恢复／结果", "4": "首充礼包", "5": "破冰礼包", "6": "无尽礼包", "218": "天选礼包", "219": "每日奖励", "220": "成长礼包（现有入口）", "221": "BP 开启／购买补展示", "222": "去广告礼包", "223": "射箭开局提示", "224": "浪花夺宝阶段／新期开场", "225": "浪花夺宝胜利后结果", "226": "浪花夺宝失败后结果", "227": "过关祝贺", "228": "过关插屏", "229": "胜利结算", "230": "胜利收尾（未引用）", "231": "失败收尾（未引用）", "232": "TryAgain 重试页", "233": "BP 赛季结算"}, "items": [{"Id": 200, "ImplementationId": "Home.Progress.LevelButton", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 201, "ImplementationId": "Home.Reward.WaitReady", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 202, "ImplementationId": "Home.Reward.Present", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 203, "ImplementationId": "Home.Progress.CompletionChest", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 204, "ImplementationId": "Home.Progress.EndlessExitChapter", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 205, "ImplementationId": "Home.Progress.ChapterUnlock", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 206, "ImplementationId": "Home.Progress.Focus", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 207, "ImplementationId": "Home.Progress.ArrivalChest", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 101, "ImplementationId": "Tutorial.FirstHomeReady", "Kind": 1, "ConditionMode": 0, "Conditions": "[[\"Flow.Sample.Multi\",2,\"a,b\",true]]"}, {"Id": 209, "ImplementationId": "Tutorial.PendingMain", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 210, "ImplementationId": "Mail.PendingPopup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 102, "ImplementationId": "Activity.EntryAnimation", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 1, "ImplementationId": "Activity.GoldCard.ContinuePopup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 2, "ImplementationId": "Activity.Archery.SettleOrProgress", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 3, "ImplementationId": "Activity.SplashQuest.HomeResume", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 4, "ImplementationId": "Activity.FirstPay.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 5, "ImplementationId": "Activity.IceBreak.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 6, "ImplementationId": "Activity.Endless.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 218, "ImplementationId": "Activity.ChosenOne.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 219, "ImplementationId": "Activity.DailyReward.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 220, "ImplementationId": "Activity.GrowthPack.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 221, "ImplementationId": "Activity.BattlePass.StartPopup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 222, "ImplementationId": "Activity.RemoveAdsPack.Popup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 223, "ImplementationId": "Activity.Archery.StartOrPreview", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 224, "ImplementationId": "Activity.SplashQuest.AutomaticOpening", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 225, "ImplementationId": "Activity.SplashQuest.LevelSuccessSettlement", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 226, "ImplementationId": "Activity.SplashQuest.LevelFailedSettlement", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 227, "ImplementationId": "Tile.Success.Congratulate", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 228, "ImplementationId": "Tile.Success.Interstitial", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 229, "ImplementationId": "Tile.Success.Win", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 230, "ImplementationId": "Tile.Success.Completion", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 231, "ImplementationId": "Tile.Failure.Completion", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 208, "ImplementationId": "Tutorial.FirstHomeReady", "Kind": 1, "ConditionMode": 1, "Conditions": ""}, {"Id": 232, "ImplementationId": "Tile.Failure.TryAgain", "Kind": 0, "ConditionMode": 1, "Conditions": ""}, {"Id": 233, "ImplementationId": "Activity.BattlePass.SettlementPopup", "Kind": 0, "ConditionMode": 1, "Conditions": ""}], "groups": [{"Id": 1, "Members": [1, -10, 5, 6, 101, 102], "PopupLimit": 4, "Conditions": ""}, {"Id": 10, "Members": [2, 3, 4], "PopupLimit": 3, "Conditions": ""}, {"Id": 1000, "Members": [-1001, -1010, 210], "PopupLimit": 4, "Conditions": ""}, {"Id": 1001, "Members": [200, 201, 202, 102, 203, 204, 205, 206, 207, 208, 209], "PopupLimit": 0, "Conditions": ""}, {"Id": 1010, "Members": [-1011, -1012, -1013], "PopupLimit": 0, "Conditions": ""}, {"Id": 1011, "Members": [219, 2, 3, 233], "PopupLimit": 0, "Conditions": ""}, {"Id": 1012, "Members": [1, 221, 223, 224], "PopupLimit": 0, "Conditions": ""}, {"Id": 1013, "Members": [4, 5, 6, 218, 220, 222], "PopupLimit": 0, "Conditions": ""}, {"Id": 1002, "Members": [209], "PopupLimit": 0, "Conditions": ""}, {"Id": 1003, "Members": [210], "PopupLimit": 0, "Conditions": ""}, {"Id": 2000, "Members": [227, 228, 229, 225], "PopupLimit": 0, "Conditions": ""}, {"Id": 2001, "Members": [226, 232], "PopupLimit": 0, "Conditions": ""}]}</script>
+<script>
+const data = JSON.parse(document.getElementById('flow-data').textContent);
+const names = data.names;
+const itemMap = new Map(data.items.map(item => [item.Id, item]));
+function nodeMarkup(id) {
+  const item = itemMap.get(id);
+  const kind = item.Kind === 0 ? 'popup' : 'action';
+  const label = item.Kind === 0 ? '根弹窗 · 占 1 个' : '动作 · 占 0 个';
+  return `<div class="node ${kind}"><span class="node-id">ID ${id}</span><b>${names[id]}</b><span class="tag">${label}</span></div>`;
+}
+function sequence(target, ids) {
+  document.getElementById(target).innerHTML = ids.map(nodeMarkup).join('<div class="step-arrow" aria-hidden="true">→</div>');
+}
+document.getElementById('home-pre').innerHTML = [[200,201,202,102,203],[204,205],[206,207,208,209]].map(ids => '<div class="sequence">' + ids.map(nodeMarkup).join('<div class="step-arrow" aria-hidden="true">→</div>') + '</div>').join('<div class="down" aria-hidden="true">↓</div>');
+sequence('home-settle',[219,2,3,233]);
+sequence('home-start',[1,221,223,224]);
+sequence('home-offers',[4,5,6,218,220,222]);
+sequence('home-mail',[210]);
+sequence('win-flow',[227,228,229,225]);
+sequence('fail-flow',[226,232]);
+const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+function activateTab(tab) {
+  tabs.forEach(button => {
+    const active = button === tab;
+    button.setAttribute('aria-selected',String(active));
+    button.tabIndex = active ? 0 : -1;
+    document.getElementById(button.getAttribute('aria-controls')).hidden = !active;
+  });
+}
+tabs.forEach((tab,index) => {
+  tab.tabIndex = index === 0 ? 0 : -1;
+  tab.addEventListener('click',() => activateTab(tab));
+  tab.addEventListener('keydown',event => {
+    if (!['ArrowRight','ArrowLeft','Home','End'].includes(event.key)) return;
+    event.preventDefault();
+    let next = index;
+    if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+    if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+    if (event.key === 'Home') next = 0;
+    if (event.key === 'End') next = tabs.length - 1;
+    activateTab(tabs[next]);
+    tabs[next].focus();
+  });
+});
+const homeLimit = data.groups.find(group => group.Id === 1000).PopupLimit;
+const quotaCandidates = [205,219,2,233,1,223,4,210];
+document.getElementById('quota-choices').innerHTML = quotaCandidates.map(id => `<label><input type="checkbox" value="${id}" ${id===205?'':'checked'}>${names[id]} <code>${id}</code></label>`).join('');
+function updateQuota() {
+  const selected = new Set(Array.from(document.querySelectorAll('#quota-choices input:checked'),input => Number(input.value)));
+  let used = 0;
+  const rows = [];
+  const ordered = [202,205,209,219,2,233,1,223,4,210];
+  ordered.forEach(id => {
+    const action = itemMap.get(id).Kind === 1;
+    let result = '条件不满足';
+    let delta = '+0';
+    let dim = true;
+    if (action) { result = '执行动作'; dim = false; }
+    else if (selected.has(id) && used < homeLimit) { used++; result = '展示'; delta = '+1'; dim = false; }
+    else if (selected.has(id)) result = '名额已满';
+    rows.push(`<div class="simrow ${dim?'dim':''}"><span>${names[id]} <code>${id}</code></span><span class="result">${result}</span><span>${delta}</span></div>`);
+  });
+  document.getElementById('quota-total').textContent = `${used} / ${homeLimit}`;
+  document.getElementById('quota-dots').innerHTML = Array.from({length:homeLimit},(_,i) => `<span class="dot ${i<used?'on':''}"></span>`).join('');
+  document.getElementById('quota-results').innerHTML = rows.join('');
+}
+document.getElementById('quota-choices').addEventListener('change',updateQuota);
+updateQuota();
+document.querySelector('#group-table tbody').innerHTML = data.groups.filter(group => group.Id>10).map(group => `<tr><td><code>${group.Id}</code></td><td><code>${group.Members.join(',')}</code></td><td>${group.PopupLimit>0?group.PopupLimit:([1002,1003,2000,2001].includes(group.Id)?'不限':'本组不限，受父组限制')}</td></tr>`).join('');
+document.querySelector('#items-table tbody').innerHTML = data.items.map(item => `<tr><td>${item.Id}</td><td>${names[item.Id]}</td><td>${item.Kind===0?'Popup · 根展示 +1':'Action · +0'}</td><td><code>${item.ImplementationId}</code></td></tr>`).join('');
+</script>
+</body>
+</html>
